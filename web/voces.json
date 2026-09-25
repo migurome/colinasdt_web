@@ -1,0 +1,58 @@
+{
+  "_leeme": "Versiones de texto para el comparador de voz (web/gen-voz.py). A sale de la etiqueta v0.14 y B del fichero de datos vivo; aquí sólo van C y D. La barra vertical separa párrafos.",
+
+  "d962": {
+    "C": "Antes de que hubiera monasterio, antes de que hubiera señor y mucho antes de que el sitio se llamara Colinas, aquí había una viña de una aranzada junto al riachuelo Almucera.|Rauper y Mansuara se la habían comprado a Donelo; ahora se la pasan a Nuño Sarracíniz y a Gudigeva. Y el escriba, para que no haya dudas mañana, anota por dónde linda: con la viña de un tal Iahia, con el término de Amor, con el de Fortes.|Eso es todo. Un trato entre vecinos por un pedazo de tierra. <b>La primera vez que este lugar aparece escrito no aparece como propiedad de nadie importante</b>: aparece como una viña con vecinos alrededor.",
+    "D": "Una viña de una aranzada, junto al riachuelo Almucera. A un lado, la viña de un tal Iahia. Al otro, el término de Amor. Más allá, el de Fortes.|Rauper y Mansuara se la habían comprado a Donelo. Hoy se la pasan a Nuño Sarracíniz y a su mujer, Gudigeva. Alguien lo anota.|Eso es todo lo que hay en el año 962. <b>Ni iglesia, ni monasterio, ni señor.</b> Cuatro nombres y una viña."
+  },
+
+  "d963": {
+    "C": "Un año después de aquella viña, otro matrimonio hace cuentas con la eternidad. Adrico y Faquilo, con sus hijos, le entregan a la catedral de Astorga todo lo que tienen aquí: <b>la mitad ahora, el resto cuando se mueran</b>.|A cambio de qué, no lo sabemos: de este documento no se conserva el texto, sólo un resumen de unas líneas copiado siglos más tarde.|Lo que sí se ve es el efecto. En dos años, Castroferrol ha pasado de ser cosa de vecinos a tener dentro a la Iglesia. Y ya no la va a echar.",
+    "D": "Adrico y Faquilo tienen hijos y tienen tierras. Reparten las dos cosas.|A la catedral de Astorga le dan lo que tienen en Castroferrol: la mitad hoy, el resto el día que falten.|Del papel original no queda nada. Queda un resumen de unas líneas, copiado seis siglos y medio más tarde por un escribano que iba a otra cosa. Y en ese resumen, <b>la Iglesia entrando en el valle</b>."
+  },
+
+  "bermudo": {
+    "C": "En algún momento del reinado de Bermudo II —el año exacto no se sabe— se funda aquí una casa donde viven monjes y monjas juntos, bajo un solo gobierno.|La familia que la funda no había comprado la villa. Se la había dado el rey, y se la había dado <b>en compensación por unas tierras que ese mismo rey les había confiscado antes</b>, en el Bierzo.|De modo que el monasterio de Castroferrol nace de un agravio reparado: alguien perdió algo lejos de aquí, y lo que le dieron a cambio fue este valle.",
+    "D": "El rey Bermudo les quita unas tierras en el Bierzo. Luego, para compensarlos, les da esta villa.|Con ella fundan una casa de monjes y monjas, juntos, bajo un mismo gobierno.|<b>Nadie apuntó el año.</b> Sabemos que fue en su reinado, y poco más."
+  },
+
+  "d1006": {
+    "C": "Oma Iuve entrega al monasterio todo lo que tiene, y no lo hace sola: firman con ella su hijo Veila y la mujer de su hijo, Gontrode. En la lista de lo donado hay molinos, hay pesqueras y hay <b>linares</b>, campos de lino.|Y entonces el latín dice dos cosas seguidas, casi de pasada, que valen más que toda la hacienda. Que la iglesia está dedicada a San Salvador. Y que allí hay «yugo de hermanos y hermanas» bajo una abadesa que se llama Bendicta.|<b>Una mujer gobernando una casa de hombres y de mujeres</b>, a orillas del Tera, en el año 1006. De ella sabemos eso: el nombre y el cargo. No hay más, y no va a haberlo.",
+    "D": "Molinos. Pesqueras. Linares.|Eso es lo que Oma Iuve, su hijo Veila y Gontrode, la mujer de su hijo, entregan al monasterio.|Y en mitad del latín, sin darle importancia, el documento suelta dos cosas: que la iglesia es de San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta.|<b>Una mujer manda aquí.</b> Se llama Bendicta. Es lo único que sabremos nunca de ella."
+  },
+
+  "d1015": {
+    "C": "Un escriba está copiando la lista de testigos de una donación cualquiera. Lleva ya unos cuantos nombres cuando hace algo que nadie le había pedido: separa a nueve de ellos y les añade cuatro palabras. <i>Id sit habitantes de Castroferronio</i>. <b>Éstos son de aquí.</b>|No sabemos por qué le pareció que había que decirlo. Pero por esas cuatro palabras conocemos hoy a nueve personas que vivían en este término el 22 de enero de 1015, y la mitad de esos nombres son árabes, escritos en la misma línea que otros godos sin que el escriba haga notar nada.|Iban de testigos. Nadie los estaba contando. <b>Son, por accidente, los vecinos más antiguos de los que sabemos el nombre.</b>",
+    "D": "22 de enero. El escriba va por la mitad de la lista de testigos.|Entonces se detiene, separa a nueve nombres y escribe cuatro palabras que nadie le ha pedido: <i>id sit habitantes de Castroferronio</i>.|<b>Éstos son de aquí.</b>|Muza. Absub. Hauiue. Nazarus. Y al lado, Veila, Gundisaluo. Nombres árabes y nombres godos en la misma línea, sin una nota, sin una explicación.|Iban de testigos a una donación que no era suya. Por eso los conocemos."
+  },
+
+  "d1060": {
+    "C": "Alguien está repartiendo una herencia grande. Se dividen las villas y las tierras que fueron de Osorio Fernández y de su mujer, doña Visclávara, y la lista va bajando: esto para uno, aquello para otro.|Cuando llega a Castroferrol escribe un nombre —Diego Muñoz— y pasa a la línea siguiente.|En el valle no se entera nadie. <b>El lugar ha cambiado de dueño como cambia de mano un prado</b>, y los que viven en él no salen en el papel ni siquiera para ser contados.",
+    "D": "Se reparte lo que fue de Osorio Fernández y de doña Visclávara. Una villa por aquí, unas tierras por allá.|Le toca el turno a Castroferrol. Se escribe: Diego Muñoz. Se pasa a la siguiente.|En el valle, nadie sabe nada. Nadie ha preguntado. <b>Los que viven allí no están en el papel ni como cifra.</b>"
+  },
+
+  "d1073": {
+    "C": "En un diploma de la catedral de León, entre otras muchas propiedades, hay cuatro palabras: <i>uilla que dicunt Colinas</i>. La villa que llaman Colinas, en la ribera del Tera.|No es una noticia: es una mención de paso, de las que sirven para situar otra cosa. Y sin embargo es el momento en que <b>el pueblo aparece por primera vez con su nombre</b>, ciento once años después de aquella viña junto al Almucera.|Durante un tiempo los dos nombres van a convivir en los papeles. Uno de ellos acabará en despoblado. El otro es el que sigue ahí.",
+    "D": "<i>uilla que dicunt Colinas.</i>|Cuatro palabras en un diploma de la catedral de León, puestas ahí para situar otra propiedad que sí importaba.|<b>Es la primera vez que el nombre existe por escrito.</b> 1073.|De los dos nombres que van a convivir un tiempo, Castroferrol acabará en despoblado. Colinas sigue ahí."
+  },
+
+  "d1129": {
+    "C": "Para confirmar el coto del monasterio de Santa Marta de Tera, Alfonso VII tiene que decir por dónde va exactamente la raya, «según la fijó su bisabuelo Fernando I». Así que el documento se pone a andar.|Sale de Castro Ferronnio <b>por una vereda</b>, llega a un carbajal, tuerce por una carral, pasa por San Pelayo, por la carral de Comdesa, por Villa Aceif, y termina en el término de Axarifes.|Una vereda es un camino de ganado. Éste, el que baja del enclave, es <b>el camino más antiguo de este término del que tenemos noticia</b>: en 1129 ya estaba hecho y ya tenía nombre.",
+    "D": "El rey tiene que decir por dónde va la raya, así que el documento echa a andar.|Sale de Castro Ferronnio por una vereda. Llega a un carbajal. Tuerce por una carral. San Pelayo. La carral de Comdesa. Villa Aceif. Axarifes.|Una vereda es por donde pasa el ganado. Ésa bajaba del enclave, y en 1129 ya tenía nombre: <b>es el camino más antiguo que conocemos de este término</b>."
+  },
+
+  "d1170": {
+    "C": "Cuarenta y un años más tarde, otro rey vuelve a firmar la misma raya. Palabra por palabra, el coto no cambia.|Lo que ha cambiado está fuera del documento: para entonces el monasterio ya ha pasado a los bienes de la mitra de Astorga. <b>Ha dejado de ser una casa donde vive gente y se ha convertido en una partida de ingresos.</b>|Es también la última vez que Castroferrol aparece en un papel medieval. Probablemente las dos cosas tengan que ver.",
+    "D": "Otro rey. La misma raya. Ni una palabra distinta.|Pero el monasterio ya no es el monasterio: ha pasado a la mitra de Astorga. Donde hubo una casa con gente, hay ahora <b>una línea en un libro de rentas</b>.|Es la última vez que Castroferrol se escribe en la Edad Media."
+  },
+
+  "sala": {
+    "C": "Lo primero que apareció al excavar fue el fuego: <b>cinco centímetros de carbones</b>, extendidos como una tapa sobre todo lo demás.|Debajo había una sala de cinco metros por ocho. Los muros, de piedra encajada sin argamasa, con contrafuertes. El suelo, de arcilla roja apisonada. Encima, teja curva sobre tapial. Entre los carbones quedó cerámica con retícula incisa, y eso la fecha en el siglo XI.|<b>Ardió, y nadie volvió a levantarla.</b> Quién vivía dentro, y por qué se quemó, no lo dice nada.",
+    "D": "Primero apareció el fuego. Cinco centímetros de carbón, tapándolo todo.|Debajo, una sala de cinco por ocho. Piedra sin argamasa. Contrafuertes. Suelo de arcilla roja. Teja curva sobre tapial.|Entre los carbones, cacharros con retícula incisa: siglo XI.|<b>Ardió. No la volvieron a levantar.</b> Quién estaba dentro, no lo sabe nadie."
+  },
+
+  "_silencio": {
+    "C": "Y aquí se apaga todo. Tres siglos y medio sin un solo documento localizado.|Entra por un lado una villa que alguien nombró de paso en 1073, y sale por el otro un lugar del señorío de Benavente con veinticinco vecinos que pagan pecho.|Lo que pasó en medio —cuándo se acabó el monasterio, cuándo se vació Castroferrol, cómo terminó Colinas siendo del conde— no lo sabemos. <b>El hueco también es un dato</b>, y éste es el más grande de toda la línea.",
+    "D": "Aquí no hay nada.|Tres siglos y medio, ni un papel.|Entra una villa nombrada de paso en 1073. Sale, en 1526, un lugar del conde de Benavente con veinticinco vecinos que pagan pecho.|Lo de en medio no lo sabemos. Y eso, en este proyecto, <b>también se cuenta</b>."
+  }
+}

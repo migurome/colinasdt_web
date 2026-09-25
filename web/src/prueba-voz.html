@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Prueba · la voz de la línea</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..600&display=swap">
+<style>
+/* ═══ COMPARADOR DE VOZ — generado, no se edita a mano ═════════════════
+   Lo hace web/gen-voz.py. Arriba y abajo, la era de Castroferrol; al lado,
+   cuatro redacciones de la misma entrada. Sin imágenes y sin tratamientos:
+   aquí sólo se juzga el texto. noindex y sin enlace desde el sitio.
+   ═══════════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════════════════════
+   COLINAS DE TRASMONTE
+   Sistema de estilo aprobado el 23-IX-2026 (web/estilo/index.html):
+   papel antiguo, UNA SOLA tipografía (EB Garamond) y tintas con código.
+   Sin modo oscuro.
+
+   CINCO REGISTROS, y ninguna otra declaración de font-family:
+     1. título   grande, almagre        — portada, eras, hitos
+     2. texto    el cuerpo
+     3. rótulo   versalitas espaciadas  — índice, eras, marcas, años
+     4. nota     cursiva, sepia clara   — cautelas y silencios
+     5. fuente   pequeño, apagado       — la referencia de archivo
+
+   En teléfono la línea temporal se lee como un FEED: una entrada por
+   pantalla, lo accesorio en carrusel lateral y la propia línea del
+   tiempo haciendo de barra de desplazamiento.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root{
+  /* — el papel — */
+  --papel:#F4E8CC; --papel-alto:#FAF2DE; --papel-hondo:#EADCBB;
+  /* — las tintas — */
+  --tinta:#241C14; --tinta-2:#3B2E20; --apunte:#6B4E2E; --tenue:#8C795C;
+  /* — los rojos, que son varios y significan — */
+  --almagre:#6E2417; --teja:#8C2318; --granza:#A8422A;
+  /* — las otras dos tintas, que llevan el código de materia — */
+  --anil:#2C4668; --oliva:#4A5524;
+  /* — filetes — */
+  --filo:#CDBA92; --filo-fuerte:#A8916A;
+
+  --f:"EB Garamond",Georgia,"Times New Roman",serif;
+  --col-anno:8.5rem; --col-mk:1.6rem; --gap-tl:1.4rem;
+  color-scheme:light;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:2rem}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+body{margin:0;background-color:var(--papel);color:var(--tinta);font-family:var(--f);
+  font-size:1.25rem;line-height:1.58;-webkit-font-smoothing:antialiased}
+
+/* ——— El grano: una sola tesela de 160 px, repetida ——— */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,92,48,.13) 100%)}
+.capa{position:relative;z-index:1}
+/* mientras el feed ocupa la pantalla, el cuerpo no se desplaza detrás */
+body.feed-fijo{overflow:hidden}
+
+.wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(18px,4.5vw,48px)}
+a{color:var(--teja);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{color:var(--granza);text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--teja);outline-offset:3px}
+h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0}
+img{max-width:100%}
+
+/* ——— REGISTRO 3: el rótulo ——— */
+.caps,.rotulo{font-size:.75rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.18em;color:var(--tenue)}
+/* ——— REGISTRO 5: la referencia de archivo ——— */
+.fuente{font-size:.8125rem;line-height:1.5;color:var(--tenue)}
+/* ——— REGISTRO 4: la nota al margen ——— */
+.nota{margin-top:.8em;padding-left:.95em;border-left:2px solid var(--filo-fuerte);
+  font-size:.9375rem;font-style:italic;color:var(--apunte);max-width:58ch}
+.nota b{display:block;font-style:normal;font-weight:600;color:var(--tinta-2);
+  font-size:.75rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:.25em}
+.mono{font-family:var(--f);font-style:italic}
+
+/* ═══════════ PORTADA ═══════════ */
+.portada{padding-block:clamp(34px,7vw,84px) clamp(20px,3vw,34px);text-align:center}
+.floron{display:block;margin:0 auto clamp(14px,2.4vw,22px);width:38px;height:38px;color:var(--teja)}
+.portada .rotulo{display:block;margin-bottom:clamp(18px,3.4vw,34px);letter-spacing:.3em;color:var(--apunte)}
+.portada h1{color:var(--almagre);line-height:.9;letter-spacing:-.01em}
+.portada h1 .grande{display:block;font-size:clamp(3.4rem,14vw,9rem)}
+.portada h1 .chico{display:block;font-size:clamp(1.15rem,3.6vw,2rem);letter-spacing:.2em;
+  text-transform:uppercase;color:var(--teja);margin-top:clamp(6px,1vw,12px)}
+.portada .lema{font-style:italic;font-size:clamp(1.1rem,2.3vw,1.4rem);color:var(--tinta-2);
+  max-width:48ch;margin:clamp(18px,3vw,30px) auto 0}
+
+/* el sello de versión */
+.version{display:inline-flex;align-items:center;gap:8px;margin-top:clamp(18px,2.6vw,26px);
+  border:1px solid var(--filo-fuerte);background:var(--papel-alto);
+  padding:5px 12px;text-decoration:none;color:var(--tinta-2)}
+.version:hover{border-color:var(--teja);color:var(--almagre)}
+.version .n{font-size:1rem;font-weight:600;color:var(--teja);letter-spacing:.04em}
+.version .t{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--tenue)}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   VISTAS — la página principal es la línea temporal; el resto se pincha
+   ═══════════════════════════════════════════════════════════════════════ */
+.vista{display:none}
+.vista.vista-on{display:block}
+.vista-sec .sec{border-top:0;padding-top:clamp(10px,1.6vw,18px)}
+.volver{padding-top:clamp(52px,7vw,76px);margin:0}
+.volver a{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  text-decoration:none;color:var(--tenue)}
+.volver a:hover{color:var(--almagre)}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MENÚ — fijo en la esquina, siempre a mano
+   En teléfono se queda arriba en la primera pantalla y se retira en
+   cuanto se empieza a recorrer el feed.
+   ═══════════════════════════════════════════════════════════════════════ */
+.menu{position:fixed;top:clamp(10px,2vw,20px);right:clamp(10px,2vw,20px);z-index:30;
+  transition:opacity .28s ease, transform .28s ease}
+.menu.oculto{opacity:0;transform:translateY(-10px);pointer-events:none}
+.menu-bt{display:flex;align-items:center;gap:10px;font-family:var(--f);
+  font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  color:var(--tinta-2);background:var(--papel-alto);border:1px solid var(--filo-fuerte);
+  padding:9px 14px;cursor:pointer;box-shadow:0 1px 0 rgba(120,92,48,.2)}
+.menu-bt:hover{border-color:var(--teja);color:var(--almagre)}
+.menu-bt[aria-expanded="true"]{background:var(--teja);border-color:var(--teja);color:var(--papel-alto)}
+.menu-ico{width:15px;height:11px;flex:none;
+  background:linear-gradient(currentColor,currentColor) 0 0/100% 1.5px no-repeat,
+             linear-gradient(currentColor,currentColor) 0 50%/100% 1.5px no-repeat,
+             linear-gradient(currentColor,currentColor) 0 100%/100% 1.5px no-repeat}
+.menu-lista{position:absolute;top:calc(100% + 7px);right:0;min-width:15.5rem;
+  background:var(--papel-alto);border:1px solid var(--filo-fuerte);padding:6px;
+  box-shadow:0 3px 0 rgba(120,92,48,.2);display:grid}
+/* el atributo hidden tiene que ganar: si no, el menú se queda abierto */
+.menu-lista[hidden]{display:none}
+.menu-lista a{display:block;padding:9px 13px;text-decoration:none;color:var(--tinta-2);
+  font-size:1rem;line-height:1.3}
+.menu-lista a:hover{background:var(--papel-hondo);color:var(--almagre)}
+.menu-lista a[aria-current="page"]{color:var(--teja);font-weight:600}
+.menu-lista a[aria-current="page"]::before{content:"— ";color:var(--filo-fuerte)}
+/* sólo las tres rayas: el texto queda para el lector de pantalla */
+.menu-bt span:not(.menu-ico){position:absolute;width:1px;height:1px;overflow:hidden;
+  clip-path:inset(50%);white-space:nowrap}
+.menu-bt{gap:0;padding:11px 13px}
+/* Las cinco eras, para saltar de un tiempo a otro sin ocupar pantalla */
+.menu-eras{display:grid;margin-top:5px;padding-top:5px;border-top:1px solid var(--filo)}
+.menu-eras[hidden]{display:none}
+.menu-eras .caps{padding:6px 13px 5px;color:var(--tenue)}
+.menu-eras button{display:grid;gap:1px;text-align:left;font-family:var(--f);
+  font-size:.9375rem;line-height:1.25;padding:7px 13px;cursor:pointer;
+  background:none;border:0;color:var(--tinta-2)}
+.menu-eras button:hover{background:var(--papel-hondo);color:var(--almagre)}
+.menu-eras button .sp{font-size:.6875rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--tenue)}
+.menu-eras button:hover .sp{color:var(--apunte)}
+@media (max-width:760px){.menu-lista{min-width:14rem}}
+
+/* ═══════════ MARCADORES — el código de prueba ═══════════ */
+.mk{display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;
+  background:var(--papel-alto);border:2px solid var(--tinta)}
+.mk-visto{background:var(--tinta)}
+.mk-sinleer{background:radial-gradient(circle,var(--tinta) 0 2.5px,var(--papel-alto) 3px)}
+.mk-cotejar{border-color:var(--anil)}
+.mk-sinref{border-style:dashed;border-color:var(--tenue)}
+.mk-interp{border-radius:1px;transform:rotate(45deg) scale(.82);border-color:var(--teja)}
+.mk-propuesto{border-radius:2px;background:var(--anil);border-color:var(--anil)}
+.mk-contexto{border-radius:1px;width:10px;height:10px;margin:2px;background:var(--oliva);border-color:var(--oliva)}
+
+/* ═══════════ APERTURA ═══════════ */
+.lede{display:block;padding-block:clamp(26px,4.4vw,52px)}
+.lede-txt{display:grid;gap:.85em;max-width:52ch}
+.lede-txt p:first-child{font-size:1.125em;color:var(--tinta)}
+.lede-txt p{color:var(--tinta-2);font-size:1.0625rem}
+.leyenda{border:1px solid var(--filo-fuerte);background:var(--papel-alto);padding:14px 16px 16px;
+  display:grid;gap:11px}
+.leyenda>.caps{padding-bottom:8px;border-bottom:1px solid var(--filo)}
+.leyenda dl{margin:0;display:grid;gap:11px}
+.leyenda .grupo{display:grid;gap:7px}
+.leyenda .grupo>.caps{color:var(--apunte);letter-spacing:.14em}
+.leyenda dt{display:flex;align-items:center;gap:10px;font-size:.875rem;font-weight:600;color:var(--tinta-2)}
+.leyenda dd{margin:0 0 0 24px;font-size:.8125rem;color:var(--apunte);line-height:1.38}
+
+/* ═══════════ SECCIONES ═══════════ */
+.sec{padding-block:clamp(34px,6vw,76px);border-top:1px solid var(--filo-fuerte)}
+.sec-head{display:grid;gap:9px;margin-bottom:clamp(20px,3.4vw,36px);max-width:60ch}
+.sec-head h2{color:var(--almagre);font-size:clamp(1.9rem,4.6vw,3rem);line-height:1}
+.sec-head p{color:var(--tinta-2);font-size:1.0625rem}
+
+/* ═══════════ ESCALA GRÁFICA DEL TIEMPO ═══════════ */
+.escala{margin-bottom:20px}
+.escala svg{display:block;width:100%;height:auto;overflow:visible}
+.escala .seg-a{fill:var(--papel-hondo)}
+.escala .seg-b{fill:var(--filo)}
+.escala .marco{fill:none;stroke:var(--filo-fuerte);stroke-width:1}
+.escala .tick{font-family:var(--f);font-size:13px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;fill:var(--tenue)}
+.escala .hueco{font-family:var(--f);font-size:13px;font-style:italic;fill:var(--apunte)}
+.escala .brk{stroke:var(--filo-fuerte);stroke-width:1.4;fill:none}
+.escala .ev-mk{cursor:pointer}
+.escala .ev-mk.off{opacity:.18}
+.escala .ev-mk:hover circle,.escala .ev-mk:focus-visible circle{stroke:var(--granza)}
+
+/* ═══════════ FILTROS ═══════════ */
+.filtros{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:clamp(18px,3vw,30px)}
+.chip{font-family:var(--f);font-size:.8125rem;font-weight:600;letter-spacing:.06em;
+  display:inline-flex;align-items:center;gap:8px;padding:5px 11px;cursor:pointer;
+  border:1px solid var(--filo);background:var(--papel-alto);color:var(--tinta-2)}
+.chip:hover{border-color:var(--filo-fuerte)}
+.chip[aria-pressed="true"]{border-color:var(--teja);background:var(--papel-hondo);color:var(--almagre)}
+.chip .n{color:var(--tenue);font-size:.75rem}
+
+/* ═══════════ LÍNEA TEMPORAL — modo documento ═══════════ */
+.tl{list-style:none;margin:0;padding:0}
+.tl>li{display:grid;grid-template-columns:var(--col-anno) var(--col-mk) minmax(0,1fr);
+  gap:0 var(--gap-tl);position:relative}
+/* cada hito lleva SU tramo de línea: el rojo se construye al bajar */
+.tl>li::before{content:"";grid-column:2;grid-row:1;justify-self:center;align-self:stretch;
+  width:2px;background:var(--teja);transform:scaleY(0);transform-origin:top center;
+  transition:transform .85s cubic-bezier(.22,.61,.36,1)}
+.tl>li.on::before{transform:scaleY(1)}
+/* el fantasma: el trazo entero, tenue */
+.tl>li::after{content:"";grid-column:2;grid-row:1;justify-self:center;align-self:stretch;
+  width:2px;background:var(--filo);z-index:-1}
+
+.ev{padding-block:clamp(16px,2.4vw,28px)}
+.ev-when{grid-column:1;grid-row:1;text-align:right;padding-top:.1em}
+.ev-year{display:block;font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1;color:var(--teja)}
+.ev-date{display:block;margin-top:.7em;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.18em;color:var(--apunte)}
+.ev>.mk{grid-column:2;grid-row:1;justify-self:center;margin-top:.55em;position:relative;z-index:2;
+  outline:5px solid var(--papel);opacity:0;transform:scale(.4);
+  transition:opacity .5s ease .25s, transform .5s cubic-bezier(.34,1.56,.64,1) .25s}
+.ev.on>.mk{opacity:1;transform:scale(1)}
+.ev.on>.mk-interp{transform:rotate(45deg) scale(.82)}
+.ev-body{grid-column:3;grid-row:1;min-width:0;opacity:0;transform:translateY(14px);
+  transition:opacity .7s ease .12s, transform .7s cubic-bezier(.22,.61,.36,1) .12s}
+.ev.on .ev-body{opacity:1;transform:none}
+.ev-body .nivel{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tenue);margin-bottom:.5em}
+.ev-body .nivel .mk{width:11px;height:11px;border-width:1.5px}
+.ev-body h4{font-size:clamp(1.25rem,2.6vw,1.7rem);line-height:1.16;color:var(--almagre);margin-bottom:.35em}
+.ev-body>p{max-width:62ch}
+.ev-body .fuente{margin-top:.9em;max-width:70ch}
+.cita{margin:.6em 0 .8em;padding:.85em 1.1em;max-width:58ch;background:var(--papel-hondo);
+  border-left:3px solid var(--teja);font-size:1.0625rem;line-height:1.5}
+
+/* el silencio documental */
+.silencio{padding-block:clamp(20px,3vw,36px)}
+.tl>li.silencio::before{background-color:transparent;
+  background-image:linear-gradient(var(--teja) 55%,transparent 0);
+  background-size:2px 13px;background-repeat:repeat-y}
+.tl>li.silencio::after{background-color:transparent;
+  background-image:linear-gradient(var(--filo) 55%,transparent 0);
+  background-size:2px 13px;background-repeat:repeat-y}
+.silencio .ev-when{grid-column:1;grid-row:1}
+.silencio>p{grid-column:3;grid-row:1;font-style:italic;color:var(--apunte);max-width:52ch;
+  opacity:0;transition:opacity .8s ease .2s}
+.silencio.on>p{opacity:1}
+
+/* separador de era */
+.tl>li.era{padding-block:clamp(28px,4.4vw,52px) clamp(8px,1.4vw,16px)}
+.tl>li.era::before{display:none}
+.era .span{grid-column:1;grid-row:1;text-align:right;align-self:center;
+  font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--tenue)}
+.era h3{grid-column:3;grid-row:1;font-size:1rem;text-transform:uppercase;letter-spacing:.2em;
+  font-weight:600;color:var(--teja)}
+
+/* figuras dentro de una entrada */
+.ev-fig{margin:1.1em 0 0;max-width:44rem;background:var(--papel-alto);padding:10px 10px 0;
+  border:1px solid var(--filo-fuerte);box-shadow:0 1px 0 rgba(120,92,48,.18)}
+.ev-fig img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+.ev-fig figcaption{padding:9px 2px 10px;font-size:.875rem;line-height:1.45;color:var(--tinta-2)}
+.ev-fig figcaption b{color:var(--almagre);font-weight:600}
+/* una ilustracion no es un facsimil: el pie lo dice en tinta de interpretado */
+.ev-ilu{border:1px solid var(--filo)}
+.ev-ilu figcaption b{color:var(--teja)}
+
+@media (max-width:760px){
+  :root{--col-anno:0px;--gap-tl:.9rem}
+  .tl>li{grid-template-columns:var(--col-mk) minmax(0,1fr)}
+  .tl>li::before,.tl>li::after{grid-column:1}
+  .ev>.mk{grid-column:1}
+  .ev-body,.silencio>p{grid-column:2}
+  .ev-when{grid-column:2;grid-row:auto;text-align:left;margin-bottom:.25em}
+  .ev-date{display:inline;margin:0 0 0 .7em}
+  .era .span{grid-column:2;text-align:left}
+  .era h3{grid-column:2}
+  body{font-size:1.1875rem}
+}
+
+/* ═══════════ EL TÉRMINO ═══════════ */
+.plano{margin:0 0 clamp(18px,3vw,30px);background:var(--papel-alto);padding:10px 10px 0;
+  border:1px solid var(--filo-fuerte);box-shadow:0 1px 0 rgba(120,92,48,.18)}
+.plano-img{overflow-x:auto}
+.plano-img img{display:block;width:100%;height:auto;min-width:36rem;mix-blend-mode:multiply}
+.plano figcaption{padding:9px 2px 11px;font-size:.8125rem;line-height:1.5;color:var(--tenue)}
+.dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3.4vw,44px)}
+.dos.mt{margin-top:clamp(22px,3.6vw,46px)}
+.blq{display:grid;gap:.7em;align-content:start;min-width:0}
+.blq h3{color:var(--almagre);font-size:1.3rem;line-height:1.2}
+.blq p{font-size:1.0625rem;color:var(--tinta-2);max-width:56ch}
+@media (max-width:900px){.dos{grid-template-columns:1fr}.plano-img img{min-width:28rem}}
+
+.tabla-scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9375rem}
+th,td{text-align:left;padding:7px 10px 7px 0;border-bottom:1px solid var(--filo);vertical-align:baseline}
+th{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--tenue);white-space:nowrap}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.lindes td.add{color:var(--teja);font-weight:600}
+
+.usos{display:grid;gap:7px}
+.uso{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:12px;align-items:center;font-size:.9375rem}
+.uso-lbl{color:var(--tinta-2)}
+.uso-bar{display:flex;align-items:center;gap:9px;min-width:0}
+.uso-bar i{display:block;height:11px;background:var(--filo-fuerte);flex:none}
+.uso-bar i.hl{background:var(--oliva)}
+.uso-bar span{font-size:.8125rem;color:var(--tenue);white-space:nowrap}
+@media (max-width:480px){.uso{grid-template-columns:1fr;gap:2px}}
+
+/* ═══════════ LA GENTE ═══════════ */
+.graf{margin:0;position:relative}
+.graf-ley{display:flex;flex-wrap:wrap;gap:6px 22px;margin-bottom:12px}
+.graf-ley span{display:inline-flex;align-items:center;gap:8px;font-size:.8125rem;color:var(--tinta-2)}
+.graf-ley i{width:15px;height:3px;flex:none}
+#pob{display:block;width:100%;height:auto;overflow:visible}
+#pob .grid{stroke:var(--filo);stroke-width:1;stroke-dasharray:2 4}
+#pob .base{stroke:var(--filo-fuerte);stroke-width:1}
+#pob .ax{font-family:var(--f);font-size:13px;fill:var(--tenue)}
+#pob .dl{font-family:var(--f);font-size:15px;font-weight:600;fill:var(--tinta-2)}
+#pob .dl2{font-family:var(--f);font-size:12px;font-style:italic;fill:var(--apunte)}
+#pob .hueco-txt{font-family:var(--f);font-size:12px;font-style:italic;fill:var(--tenue)}
+#pob .cross{stroke:var(--filo-fuerte);stroke-width:1;stroke-dasharray:3 3}
+.graf figcaption{margin-top:12px;font-size:.8125rem;line-height:1.5;color:var(--tenue);max-width:74ch}
+.tip{position:absolute;z-index:5;pointer-events:none;background:var(--papel-alto);
+  border:1px solid var(--filo-fuerte);padding:8px 11px;font-size:.875rem;line-height:1.35;
+  box-shadow:0 2px 0 rgba(120,92,48,.18);max-width:17rem}
+.tip .t-note{display:block;margin-top:5px;font-style:italic;font-size:.8125rem;color:var(--apunte)}
+details{margin-top:clamp(16px,2.6vw,26px)}
+summary{cursor:pointer;font-size:.75rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.18em;color:var(--tenue);padding-block:8px}
+summary:hover{color:var(--almagre)}
+.cautelas{display:grid;gap:14px;margin-top:clamp(20px,3.4vw,36px);
+  grid-template-columns:repeat(auto-fit,minmax(20rem,1fr))}
+.cautelas .nota{margin-top:0}
+
+/* ═══════════ EL EMBLEMA ═══════════ */
+.muestras{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
+  margin-bottom:clamp(22px,3.6vw,44px)}
+.muestra{display:grid;grid-template-columns:auto minmax(0,1fr);gap:13px;align-items:start;
+  background:var(--papel-alto);border:1px solid var(--filo-fuerte);padding:13px 15px}
+.sw{width:42px;height:42px;flex:none;border:1px solid rgba(36,28,20,.28)}
+.muestra h4{font-size:1.0625rem;color:var(--almagre);font-weight:600}
+.muestra p{font-size:.875rem;line-height:1.42;color:var(--tinta-2);margin-top:3px}
+.tramas{display:grid;gap:clamp(18px,3vw,34px);grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
+.tramas .ev-fig{margin:0;max-width:none}
+
+/* ═══════════ LO QUE FALTA ═══════════ */
+.falta{margin:0;padding:0 0 0 1.4em;display:grid;gap:clamp(14px,2.2vw,22px);max-width:64ch}
+.falta li{padding-left:.3em}
+.falta li::marker{color:var(--teja);font-weight:600}
+.falta b{display:block;color:var(--almagre);font-size:1.125rem;font-weight:600;margin-bottom:.15em}
+.falta p{font-size:1rem;color:var(--tinta-2)}
+
+/* ═══════════ VERSIONES ═══════════ */
+/* Este apartado se oculta poniendo VERSIONES_VISIBLE = false en los datos. */
+.versiones{display:grid;gap:clamp(18px,3vw,30px);max-width:62ch}
+.vsn{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:0 var(--gap-tl);
+  padding-bottom:clamp(16px,2.4vw,24px);border-bottom:1px solid var(--filo)}
+.vsn:last-child{border-bottom:0;padding-bottom:0}
+.vsn-n{grid-column:1;text-align:right}
+.vsn-n b{display:block;font-size:1.5rem;line-height:1;color:var(--teja);font-weight:600}
+.vsn-n span{display:block;margin-top:.5em;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--apunte)}
+.vsn-c{grid-column:2;display:grid;gap:.45em;min-width:0}
+.vsn-c h3{font-size:1.2rem;color:var(--almagre);line-height:1.2;margin-bottom:.1em}
+.vsn-c ul{margin:0;padding-left:1.1em;display:grid;gap:.3em}
+.vsn-c li{font-size:1rem;color:var(--tinta-2)}
+.vsn-c li::marker{color:var(--filo-fuerte)}
+.vsn-c li b{font-weight:600;color:var(--tinta)}
+@media (max-width:640px){
+  .vsn{grid-template-columns:1fr;gap:.6em}
+  .vsn-n{text-align:left;display:flex;align-items:baseline;gap:12px}
+  .vsn-n span{margin-top:0}
+}
+
+/* ═══════════ LAS FUENTES ═══════════
+   La firma de archivo salió de la lámina del teléfono —ocupaba media
+   pantalla en cada entrada— y vive aquí entera, agrupada por eras. */
+.fuentes{display:grid;gap:clamp(13px,2vw,20px);max-width:74ch}
+.fu-era{display:flex;gap:14px;align-items:baseline;font-size:1rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.2em;color:var(--teja);
+  margin-top:clamp(14px,2.4vw,28px);padding-bottom:7px;border-bottom:1px solid var(--filo-fuerte)}
+.fu-era:first-child{margin-top:0}
+.fu-era span{margin-left:auto;font-size:.75rem;font-weight:600;letter-spacing:.14em;
+  color:var(--tenue);white-space:nowrap}
+.fu{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:0 var(--gap-tl)}
+.fu-a{grid-column:1;text-align:right;color:var(--teja);font-size:1.25rem;line-height:1.25}
+.fu-c{grid-column:2;min-width:0;display:grid;gap:.25em}
+.fu-c h4{font-size:1.0625rem;line-height:1.25;color:var(--almagre)}
+.fu-c .nivel{display:inline-flex;align-items:center;gap:8px;font-size:.6875rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tenue)}
+.fu-c .nivel .mk{width:10px;height:10px;border-width:1.5px}
+.fu-c .fuente{max-width:none}
+@media (max-width:640px){
+  .fu{grid-template-columns:1fr;gap:.2em}
+  .fu-a{grid-column:1;text-align:left;font-size:1.4rem}
+  .fu-c{grid-column:1}
+}
+
+/* ═══════════ PIE ═══════════ */
+.pie{padding-block:clamp(30px,5vw,64px);border-top:1px solid var(--filo-fuerte);
+  display:grid;gap:.7em;max-width:78ch}
+.pie p{font-size:.8125rem;line-height:1.55;color:var(--tenue)}
+.pie>.caps{margin-bottom:.3em}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MODO FEED — sólo en teléfono, y sólo para la línea temporal
+   Una entrada por pantalla; lo accesorio, en carrusel lateral; la línea
+   del tiempo, de barra de desplazamiento.
+   ═══════════════════════════════════════════════════════════════════════ */
+.feed-wrap{display:none}
+
+@media (max-width:760px){
+  /* en modo feed no queda nada del documento: la pantalla es el feed */
+  .sec.feed-on .sec-head,
+  .sec.feed-on .escala,
+  .sec.feed-on .tl,
+  .vista-on .lede.vacia{display:none}
+  .sec.feed-on{padding:0;border-top:0}
+  .sec.feed-on .feed-wrap{display:block;position:fixed;inset:0;z-index:10;
+    height:100svh;background:var(--papel)}
+
+  /* la portada, como primera lámina */
+  .post-portada .lam{padding-top:clamp(26px,9vw,52px)}
+  .post-portada .l-cubierta .lam-cuerpo{align-content:center;text-align:center;gap:18px}
+  .post-portada .portada{padding:0;text-align:center}
+  .post-portada .portada h1 .grande{font-size:clamp(3rem,17vw,5rem)}
+  .post-portada .portada .lema{font-size:1.05rem;margin-top:16px;max-width:38ch}
+  .post-portada .portada .rotulo{margin-bottom:16px}
+  .post-portada .floron{margin-bottom:12px;width:32px;height:32px}
+  .post-portada .filtros{justify-content:center;margin:0;gap:6px}
+  .post-portada .chip{font-size:.75rem;padding:4px 9px}
+  .post-portada .l-presenta .lede-txt{display:grid;gap:.8em;max-width:none}
+  .post-portada .l-presenta p{font-size:1.0625rem;line-height:1.5;color:var(--tinta-2)}
+  .post-portada .lam-pie .t{color:var(--apunte);font-style:italic}
+
+  .feed{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;
+    scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}
+  .feed::-webkit-scrollbar{display:none}
+  /* sin raíl, la lámina recupera los 28 px que tenía reservados a la derecha */
+  .feed.sin-rail{padding-right:0}
+  .post{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative}
+  .post[hidden]{display:none}
+
+  .puntos{position:absolute;top:9px;left:17px;z-index:3;display:flex;gap:6px;pointer-events:none}
+  .punto{width:17px;height:1.5px;background:var(--filo)}
+  .punto.on{background:var(--teja);height:2px}
+
+  .carrusel{display:flex;height:100%;overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scroll-behavior:smooth;
+    scrollbar-width:none}
+  .carrusel::-webkit-scrollbar{display:none}
+  .lam{position:relative;overflow:hidden;flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
+    display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
+
+  .lam-top,.lam-cuerpo,.lam-pie{position:relative;z-index:3}
+  .lam-top{display:flex;align-items:center;gap:9px;min-width:0}
+  .lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+    color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
+  .lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--apunte)}
+  .lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:center;gap:12px}
+  .lam-cuerpo.arriba{align-content:start}
+  .lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline}
+  .lam-pie .a{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--teja);flex:none}
+  .lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+  /* ═══ Tratamientos de ilustración ══════════════════════════════════
+     Cuatro maneras de meter un dibujo en la lámina, elegibles entrada por
+     entrada con el campo `tr` de los datos:
+       caja     — con su marco y su pie, como una figura del texto
+       vineta   — a sangre por abajo, deshecha en el papel por arriba
+       aguada   — de fondo, rebajada, con el texto encima
+       portada  — la ilustración es el campo y el texto va escrito sobre ella
+     Se eligen para cualquier imagen. Cuando no es `caja`, la imagen pasa a
+     ser el fondo y pierde su marco, así que su pie baja al texto de la
+     lámina: la referencia no se pierde. Y un facsímil, que es papel claro y
+     no un dibujo en penumbra, lleva además la clase `t-doc`.
+     El grano y la viñeta del papel van fijos POR ENCIMA de todo, también
+     del dibujo: es lo que hace que parezca impreso en la misma hoja y no
+     pegado sobre ella. */
+  .ilu{position:absolute;z-index:1;pointer-events:none;overflow:hidden}
+  .ilu img{display:block;width:100%;height:100%;object-fit:cover}
+  /* el grano del papel, también sobre el dibujo. El de body::before queda
+     detrás del contenido, así que aquí se repite dentro de la capa: es lo
+     que hace que parezca impresa en la hoja y no pegada encima. */
+  .ilu::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+    opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+  .ilu::after{z-index:3}
+
+  /* el pie de la imagen, cuando la imagen es el fondo y ya no tiene marco */
+  .lam .pie-ilu{margin:0}
+  .lam .pie-ilu b{color:var(--teja);font-weight:600}
+  .t-portada .pie-ilu b{color:#E8C9B4}
+
+  .t-vineta .ilu{left:0;right:0;bottom:0;height:64%;mix-blend-mode:multiply}
+  /* el texto se para antes de la viñeta: lo que no quepa abre otra lámina */
+  .t-vineta .lam-cuerpo{padding-bottom:30svh}
+  .t-vineta .ilu img{object-position:50% 30%;
+    -webkit-mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%);
+    mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%)}
+
+  .t-aguada .ilu{inset:0;opacity:.3;mix-blend-mode:multiply}
+  .t-aguada .ilu img{object-position:50% 40%}
+  .t-aguada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(244,232,204,.55),rgba(244,232,204,.15))}
+
+  .t-portada .ilu{inset:0}
+  .t-portada .ilu img{object-position:46% 42%}
+  .t-portada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(20,14,8,.72) 0%,rgba(20,14,8,.34) 38%,
+      rgba(20,14,8,.46) 68%,rgba(20,14,8,.80) 100%)}
+
+  /* tinta de papel donde el texto cae sobre el dibujo */
+  .t-portada .era-n,.t-portada .sello span{color:rgba(244,232,204,.74)}
+  .t-portada .sello .mk{outline:1px solid rgba(244,232,204,.45);outline-offset:1px}
+  .t-portada .cab-ev .anio{color:#E8C9B4}
+  .t-portada .cab-ev .dia{color:rgba(244,232,204,.68)}
+  .t-portada .cab-ev h4{color:var(--papel-alto)}
+  .t-portada .prosa{color:rgba(244,232,204,.92)}
+  .t-portada .nota{border-left-color:rgba(244,232,204,.42);color:rgba(244,232,204,.82)}
+  .t-portada .nota b{color:var(--papel-alto)}
+  .t-portada .cita{background:rgba(20,14,8,.45);border-left-color:#D9B9A8;
+    color:var(--papel-alto)}
+  .t-portada .fuente{color:rgba(244,232,204,.78)}
+  .t-portada .lam-pie,.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.34)}
+  .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
+  .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
+  .t-portada .lam-pie .sigue,.t-vineta .lam-pie .sigue{color:rgba(244,232,204,.72)}
+
+  /* Un facsímil es papel claro, no un dibujo en penumbra: necesita más velo
+     para que el texto lea, y en viñeta el pie se queda en tinta normal. */
+  .t-portada.t-doc .ilu::after{
+    background:linear-gradient(to bottom,rgba(20,14,8,.88) 0%,rgba(20,14,8,.64) 38%,
+      rgba(20,14,8,.72) 68%,rgba(20,14,8,.90) 100%)}
+  .t-vineta.t-doc .lam-pie{border-top-color:var(--filo)}
+  .t-vineta.t-doc .lam-pie .a{color:var(--teja)}
+  .t-vineta.t-doc .lam-pie .t{color:var(--tenue)}
+  .t-vineta.t-doc .lam-pie .sigue{color:var(--apunte)}
+
+  /* Una entrada, una lámina: fecha, título, texto, cita, imagen, cautela y
+     fuente juntos mientras quepan. Lo que desborda abre la lámina siguiente. */
+  .cab-ev{display:grid;gap:5px}
+  .cab-ev .anio{color:var(--teja);font-size:clamp(1.9rem,9vw,2.7rem);line-height:.95}
+  .cab-ev .dia{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--apunte)}
+  .cab-ev h4{color:var(--almagre);font-size:clamp(1.15rem,5vw,1.5rem);line-height:1.15;margin-top:3px}
+  .prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
+  .prosa.sigo::before{content:"…";color:var(--filo-fuerte);margin-right:.25em}
+  .lam-pie .sigue{margin-left:auto;flex:none;font-size:.6875rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--apunte)}
+  .lam .cita{margin:0;max-width:none;padding:.7em .9em;font-size:clamp(1rem,4.1vw,1.15rem)}
+  .lam .nota{margin:0;max-width:none;font-size:.9375rem}
+  .lam .fuente.enlace{margin:0}
+  .lam .ev-fig{margin:0;max-width:none}
+  .lam .ev-fig img{max-height:52svh;object-fit:contain}
+  .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
+  .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
+  .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
+  .l-sil p{font-style:italic;color:var(--apunte)}
+
+  /* el raíl: el trazo recorrido en teja, el que falta en filo */
+  .rail{position:absolute;top:0;right:0;bottom:0;width:28px;z-index:4;
+    touch-action:none;cursor:ns-resize}
+  .rail svg{display:block;width:100%;height:100%}
+  .rail .fantasma{stroke:var(--filo);stroke-width:2;fill:none}
+  .rail .hecho{stroke:var(--teja);stroke-width:2;fill:none}
+  .rail .vacio{stroke:var(--filo);stroke-width:2;fill:none;stroke-dasharray:7 6}
+  .rail .quiebre{stroke:var(--filo-fuerte);stroke-width:1.1;fill:none}
+  .rail .tk{fill:var(--tinta)}
+  .rail .tk.off{opacity:.15}
+  .rail .tk-an{fill:var(--anil)}
+  .rail .tk-tj{fill:var(--teja)}
+  .rail .tk-ol{fill:var(--oliva)}
+  .rail .tk-te{fill:var(--tenue)}
+  #pulgar{fill:var(--teja);stroke:var(--papel);stroke-width:2}
+  .rail-lbl{position:absolute;right:32px;z-index:6;background:var(--teja);color:var(--papel-alto);
+    font-size:.8125rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    padding:4px 10px;white-space:nowrap;transform:translateY(-50%);pointer-events:none;
+    opacity:0;transition:opacity .14s ease}
+  .rail-lbl.on{opacity:1}
+}
+@keyframes vaiven{0%,100%{transform:translateX(0);opacity:.5}50%{transform:translateX(8px);opacity:1}}
+
+/* el bloque de teléfono, sin media query: igual en el portátil y en el móvil */
+/* en modo feed no queda nada del documento: la pantalla es el feed */
+  .sec.feed-on .sec-head,
+  .sec.feed-on .escala,
+  .sec.feed-on .tl,
+  .vista-on .lede.vacia{display:none}
+  .sec.feed-on{padding:0;border-top:0}
+  .sec.feed-on .feed-wrap{display:block;position:fixed;inset:0;z-index:10;
+    height:100svh;background:var(--papel)}
+
+  /* la portada, como primera lámina */
+  .post-portada .lam{padding-top:clamp(26px,9vw,52px)}
+  .post-portada .l-cubierta .lam-cuerpo{align-content:center;text-align:center;gap:18px}
+  .post-portada .portada{padding:0;text-align:center}
+  .post-portada .portada h1 .grande{font-size:clamp(3rem,17vw,5rem)}
+  .post-portada .portada .lema{font-size:1.05rem;margin-top:16px;max-width:38ch}
+  .post-portada .portada .rotulo{margin-bottom:16px}
+  .post-portada .floron{margin-bottom:12px;width:32px;height:32px}
+  .post-portada .filtros{justify-content:center;margin:0;gap:6px}
+  .post-portada .chip{font-size:.75rem;padding:4px 9px}
+  .post-portada .l-presenta .lede-txt{display:grid;gap:.8em;max-width:none}
+  .post-portada .l-presenta p{font-size:1.0625rem;line-height:1.5;color:var(--tinta-2)}
+  .post-portada .lam-pie .t{color:var(--apunte);font-style:italic}
+
+  .feed{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;
+    scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}
+  .feed::-webkit-scrollbar{display:none}
+  /* sin raíl, la lámina recupera los 28 px que tenía reservados a la derecha */
+  .feed.sin-rail{padding-right:0}
+  .post{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative}
+  .post[hidden]{display:none}
+
+  .puntos{position:absolute;top:9px;left:17px;z-index:3;display:flex;gap:6px;pointer-events:none}
+  .punto{width:17px;height:1.5px;background:var(--filo)}
+  .punto.on{background:var(--teja);height:2px}
+
+  .carrusel{display:flex;height:100%;overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scroll-behavior:smooth;
+    scrollbar-width:none}
+  .carrusel::-webkit-scrollbar{display:none}
+  .lam{position:relative;overflow:hidden;flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
+    display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
+
+  .lam-top,.lam-cuerpo,.lam-pie{position:relative;z-index:3}
+  .lam-top{display:flex;align-items:center;gap:9px;min-width:0}
+  .lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+    color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
+  .lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--apunte)}
+  .lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:center;gap:12px}
+  .lam-cuerpo.arriba{align-content:start}
+  .lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline}
+  .lam-pie .a{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--teja);flex:none}
+  .lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+  /* ═══ Tratamientos de ilustración ══════════════════════════════════
+     Cuatro maneras de meter un dibujo en la lámina, elegibles entrada por
+     entrada con el campo `tr` de los datos:
+       caja     — con su marco y su pie, como una figura del texto
+       vineta   — a sangre por abajo, deshecha en el papel por arriba
+       aguada   — de fondo, rebajada, con el texto encima
+       portada  — la ilustración es el campo y el texto va escrito sobre ella
+     Se eligen para cualquier imagen. Cuando no es `caja`, la imagen pasa a
+     ser el fondo y pierde su marco, así que su pie baja al texto de la
+     lámina: la referencia no se pierde. Y un facsímil, que es papel claro y
+     no un dibujo en penumbra, lleva además la clase `t-doc`.
+     El grano y la viñeta del papel van fijos POR ENCIMA de todo, también
+     del dibujo: es lo que hace que parezca impreso en la misma hoja y no
+     pegado sobre ella. */
+  .ilu{position:absolute;z-index:1;pointer-events:none;overflow:hidden}
+  .ilu img{display:block;width:100%;height:100%;object-fit:cover}
+  /* el grano del papel, también sobre el dibujo. El de body::before queda
+     detrás del contenido, así que aquí se repite dentro de la capa: es lo
+     que hace que parezca impresa en la hoja y no pegada encima. */
+  .ilu::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+    opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+  .ilu::after{z-index:3}
+
+  /* el pie de la imagen, cuando la imagen es el fondo y ya no tiene marco */
+  .lam .pie-ilu{margin:0}
+  .lam .pie-ilu b{color:var(--teja);font-weight:600}
+  .t-portada .pie-ilu b{color:#E8C9B4}
+
+  .t-vineta .ilu{left:0;right:0;bottom:0;height:64%;mix-blend-mode:multiply}
+  /* el texto se para antes de la viñeta: lo que no quepa abre otra lámina */
+  .t-vineta .lam-cuerpo{padding-bottom:30svh}
+  .t-vineta .ilu img{object-position:50% 30%;
+    -webkit-mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%);
+    mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%)}
+
+  .t-aguada .ilu{inset:0;opacity:.3;mix-blend-mode:multiply}
+  .t-aguada .ilu img{object-position:50% 40%}
+  .t-aguada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(244,232,204,.55),rgba(244,232,204,.15))}
+
+  .t-portada .ilu{inset:0}
+  .t-portada .ilu img{object-position:46% 42%}
+  .t-portada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(20,14,8,.72) 0%,rgba(20,14,8,.34) 38%,
+      rgba(20,14,8,.46) 68%,rgba(20,14,8,.80) 100%)}
+
+  /* tinta de papel donde el texto cae sobre el dibujo */
+  .t-portada .era-n,.t-portada .sello span{color:rgba(244,232,204,.74)}
+  .t-portada .sello .mk{outline:1px solid rgba(244,232,204,.45);outline-offset:1px}
+  .t-portada .cab-ev .anio{color:#E8C9B4}
+  .t-portada .cab-ev .dia{color:rgba(244,232,204,.68)}
+  .t-portada .cab-ev h4{color:var(--papel-alto)}
+  .t-portada .prosa{color:rgba(244,232,204,.92)}
+  .t-portada .nota{border-left-color:rgba(244,232,204,.42);color:rgba(244,232,204,.82)}
+  .t-portada .nota b{color:var(--papel-alto)}
+  .t-portada .cita{background:rgba(20,14,8,.45);border-left-color:#D9B9A8;
+    color:var(--papel-alto)}
+  .t-portada .fuente{color:rgba(244,232,204,.78)}
+  .t-portada .lam-pie,.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.34)}
+  .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
+  .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
+  .t-portada .lam-pie .sigue,.t-vineta .lam-pie .sigue{color:rgba(244,232,204,.72)}
+
+  /* Un facsímil es papel claro, no un dibujo en penumbra: necesita más velo
+     para que el texto lea, y en viñeta el pie se queda en tinta normal. */
+  .t-portada.t-doc .ilu::after{
+    background:linear-gradient(to bottom,rgba(20,14,8,.88) 0%,rgba(20,14,8,.64) 38%,
+      rgba(20,14,8,.72) 68%,rgba(20,14,8,.90) 100%)}
+  .t-vineta.t-doc .lam-pie{border-top-color:var(--filo)}
+  .t-vineta.t-doc .lam-pie .a{color:var(--teja)}
+  .t-vineta.t-doc .lam-pie .t{color:var(--tenue)}
+  .t-vineta.t-doc .lam-pie .sigue{color:var(--apunte)}
+
+  /* Una entrada, una lámina: fecha, título, texto, cita, imagen, cautela y
+     fuente juntos mientras quepan. Lo que desborda abre la lámina siguiente. */
+  .cab-ev{display:grid;gap:5px}
+  .cab-ev .anio{color:var(--teja);font-size:clamp(1.9rem,9vw,2.7rem);line-height:.95}
+  .cab-ev .dia{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--apunte)}
+  .cab-ev h4{color:var(--almagre);font-size:clamp(1.15rem,5vw,1.5rem);line-height:1.15;margin-top:3px}
+  .prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
+  .prosa.sigo::before{content:"…";color:var(--filo-fuerte);margin-right:.25em}
+  .lam-pie .sigue{margin-left:auto;flex:none;font-size:.6875rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--apunte)}
+  .lam .cita{margin:0;max-width:none;padding:.7em .9em;font-size:clamp(1rem,4.1vw,1.15rem)}
+  .lam .nota{margin:0;max-width:none;font-size:.9375rem}
+  .lam .fuente.enlace{margin:0}
+  .lam .ev-fig{margin:0;max-width:none}
+  .lam .ev-fig img{max-height:52svh;object-fit:contain}
+  .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
+  .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
+  .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
+  .l-sil p{font-style:italic;color:var(--apunte)}
+
+  /* el raíl: el trazo recorrido en teja, el que falta en filo */
+  .rail{position:absolute;top:0;right:0;bottom:0;width:28px;z-index:4;
+    touch-action:none;cursor:ns-resize}
+  .rail svg{display:block;width:100%;height:100%}
+  .rail .fantasma{stroke:var(--filo);stroke-width:2;fill:none}
+  .rail .hecho{stroke:var(--teja);stroke-width:2;fill:none}
+  .rail .vacio{stroke:var(--filo);stroke-width:2;fill:none;stroke-dasharray:7 6}
+  .rail .quiebre{stroke:var(--filo-fuerte);stroke-width:1.1;fill:none}
+  .rail .tk{fill:var(--tinta)}
+  .rail .tk.off{opacity:.15}
+  .rail .tk-an{fill:var(--anil)}
+  .rail .tk-tj{fill:var(--teja)}
+  .rail .tk-ol{fill:var(--oliva)}
+  .rail .tk-te{fill:var(--tenue)}
+  #pulgar{fill:var(--teja);stroke:var(--papel);stroke-width:2}
+  .rail-lbl{position:absolute;right:32px;z-index:6;background:var(--teja);color:var(--papel-alto);
+    font-size:.8125rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    padding:4px 10px;white-space:nowrap;transform:translateY(-50%);pointer-events:none;
+    opacity:0;transition:opacity .14s ease}
+  .rail-lbl.on{opacity:1}
+
+.feed{position:static;height:100svh;overflow-y:auto;overflow-x:hidden;
+  scroll-snap-type:y mandatory;padding-right:0;scrollbar-width:none}
+.post{max-width:27rem;margin-inline:auto;border-inline:1px solid var(--filo)}
+.lam-cuerpo{gap:.75em}
+.lam-cuerpo .prosa + .prosa{margin-top:0}
+.chapa{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:60;
+  background:rgba(36,28,20,.88);color:var(--papel-alto);border-radius:999px;
+  padding:6px 15px;font-size:.75rem;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;pointer-events:none;white-space:nowrap}
+.chapa b{color:#E8C9B4;font-weight:600}
+</style>
+</head>
+<body>
+<div class="feed" id="feed">
+<article class="post" data-y="962"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="962: Una viña en «villa Kastro Ferronio»"><section class="lam" aria-label="962 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">962</span><span class="dia">1 de marzo</span><h4>Una viña en «villa Kastro Ferronio»</h4></div><p class="prosa">Rauper y su mujer Mansuara donan a Nuño Sarracíniz y a su mujer Gudigeva una viña que habían comprado a Donelo, «cerca del riachuelo Almucera». Linda con la viña de Iahia, con el término de Amor y con el de Fortes, y mide una aranzada. Es la mención más antigua del lugar, y todavía no hay monasterio: es un trato entre particulares.</p></div><div class="lam-pie"><span class="a">962</span><span class="t">la original</span></div></section><section class="lam" aria-label="962 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">962</span><span class="dia">1 de marzo</span><h4>Una viña en «villa Kastro Ferronio»</h4></div><p class="prosa">Un matrimonio, Rauper y Mansuara, le pasa a otro una viña que ellos mismos habían comprado. Mide una aranzada y está cerca del riachuelo Almucera. Es la primera vez que este sitio aparece escrito, y aparece <b>sin monasterio, sin señor y sin iglesia</b>: un trato entre vecinos por un pedazo de tierra.</p></div><div class="lam-pie"><span class="a">962</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="962 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">962</span><span class="dia">1 de marzo</span><h4>Una viña en «villa Kastro Ferronio»</h4></div><p class="prosa">Antes de que hubiera monasterio, antes de que hubiera señor y mucho antes de que el sitio se llamara Colinas, aquí había una viña de una aranzada junto al riachuelo Almucera.</p><p class="prosa">Rauper y Mansuara se la habían comprado a Donelo; ahora se la pasan a Nuño Sarracíniz y a Gudigeva. Y el escriba, para que no haya dudas mañana, anota por dónde linda: con la viña de un tal Iahia, con el término de Amor, con el de Fortes.</p><p class="prosa">Eso es todo. Un trato entre vecinos por un pedazo de tierra. <b>La primera vez que este lugar aparece escrito no aparece como propiedad de nadie importante</b>: aparece como una viña con vecinos alrededor.</p></div><div class="lam-pie"><span class="a">962</span><span class="t">narrada</span></div></section><section class="lam" aria-label="962 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">962</span><span class="dia">1 de marzo</span><h4>Una viña en «villa Kastro Ferronio»</h4></div><p class="prosa">Una viña de una aranzada, junto al riachuelo Almucera. A un lado, la viña de un tal Iahia. Al otro, el término de Amor. Más allá, el de Fortes.</p><p class="prosa">Rauper y Mansuara se la habían comprado a Donelo. Hoy se la pasan a Nuño Sarracíniz y a su mujer, Gudigeva. Alguien lo anota.</p><p class="prosa">Eso es todo lo que hay en el año 962. <b>Ni iglesia, ni monasterio, ni señor.</b> Cuatro nombres y una viña.</p></div><div class="lam-pie"><span class="a">962</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="963"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="963: Adrico y Faquilo donan cuanto tienen en Castroferrol"><section class="lam" aria-label="963 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">963</span><h4>Adrico y Faquilo donan cuanto tienen en Castroferrol</h4></div><p class="prosa">Con sus hijos, donan a la catedral de Astorga toda su heredad en Castroferrol: la mitad en vida, el resto al morir.</p></div><div class="lam-pie"><span class="a">963</span><span class="t">la original</span></div></section><section class="lam" aria-label="963 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">963</span><h4>Adrico y Faquilo donan cuanto tienen en Castroferrol</h4></div><p class="prosa">Adrico y Faquilo, con sus hijos, le dan a la catedral de Astorga todo lo que tienen aquí. La mitad ahora; el resto, cuando se mueran. Un año después de la viña, <b>la Iglesia entra en Castroferrol</b>: ya no es sólo cosa de vecinos.</p></div><div class="lam-pie"><span class="a">963</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="963 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">963</span><h4>Adrico y Faquilo donan cuanto tienen en Castroferrol</h4></div><p class="prosa">Un año después de aquella viña, otro matrimonio hace cuentas con la eternidad. Adrico y Faquilo, con sus hijos, le entregan a la catedral de Astorga todo lo que tienen aquí: <b>la mitad ahora, el resto cuando se mueran</b>.</p><p class="prosa">A cambio de qué, no lo sabemos: de este documento no se conserva el texto, sólo un resumen de unas líneas copiado siglos más tarde.</p><p class="prosa">Lo que sí se ve es el efecto. En dos años, Castroferrol ha pasado de ser cosa de vecinos a tener dentro a la Iglesia. Y ya no la va a echar.</p></div><div class="lam-pie"><span class="a">963</span><span class="t">narrada</span></div></section><section class="lam" aria-label="963 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">963</span><h4>Adrico y Faquilo donan cuanto tienen en Castroferrol</h4></div><p class="prosa">Adrico y Faquilo tienen hijos y tienen tierras. Reparten las dos cosas.</p><p class="prosa">A la catedral de Astorga le dan lo que tienen en Castroferrol: la mitad hoy, el resto el día que falten.</p><p class="prosa">Del papel original no queda nada. Queda un resumen de unas líneas, copiado seis siglos y medio más tarde por un escribano que iba a otra cosa. Y en ese resumen, <b>la Iglesia entrando en el valle</b>.</p></div><div class="lam-pie"><span class="a">963</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="985–999"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="985–999: Nace un monasterio dúplice"><section class="lam" aria-label="985–999 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">985–999</span><h4>Nace un monasterio dúplice</h4></div><p class="prosa">Monjes y monjas bajo un solo gobierno, en el reinado de Bermudo II. La familia fundadora había recibido la villa del rey a cambio de unas tierras que le confiscó en el Bierzo.</p></div><div class="lam-pie"><span class="a">985–999</span><span class="t">la original</span></div></section><section class="lam" aria-label="985–999 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">985–999</span><h4>Nace un monasterio dúplice</h4></div><p class="prosa">Monjes y monjas en la misma casa y bajo el mismo gobierno, en el reinado de Bermudo II. La villa no la compró la familia fundadora: se la dio el rey, <b>a cambio de unas tierras que antes les había confiscado</b> en el Bierzo. El monasterio nace de una compensación.</p></div><div class="lam-pie"><span class="a">985–999</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="985–999 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">985–999</span><h4>Nace un monasterio dúplice</h4></div><p class="prosa">En algún momento del reinado de Bermudo II —el año exacto no se sabe— se funda aquí una casa donde viven monjes y monjas juntos, bajo un solo gobierno.</p><p class="prosa">La familia que la funda no había comprado la villa. Se la había dado el rey, y se la había dado <b>en compensación por unas tierras que ese mismo rey les había confiscado antes</b>, en el Bierzo.</p><p class="prosa">De modo que el monasterio de Castroferrol nace de un agravio reparado: alguien perdió algo lejos de aquí, y lo que le dieron a cambio fue este valle.</p></div><div class="lam-pie"><span class="a">985–999</span><span class="t">narrada</span></div></section><section class="lam" aria-label="985–999 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">985–999</span><h4>Nace un monasterio dúplice</h4></div><p class="prosa">El rey Bermudo les quita unas tierras en el Bierzo. Luego, para compensarlos, les da esta villa.</p><p class="prosa">Con ella fundan una casa de monjes y monjas, juntos, bajo un mismo gobierno.</p><p class="prosa"><b>Nadie apuntó el año.</b> Sabemos que fue en su reinado, y poco más.</p></div><div class="lam-pie"><span class="a">985–999</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="1006"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1006: La abadesa Bendicta y la iglesia de San Salvador"><section class="lam" aria-label="1006 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1006</span><span class="dia">26 de junio</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div><p class="prosa">Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira» y «fundado bajo la ciudad de Astorga». El latín dice dos cosas seguidas: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta. Entre lo donado, junto a molinos y pesqueras, hay linares.</p></div><div class="lam-pie"><span class="a">1006</span><span class="t">la original</span></div></section><section class="lam" aria-label="1006 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1006</span><span class="dia">26 de junio</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div><p class="prosa">Oma Iuve entrega al monasterio cuanto tiene, con su hijo Veila y la mujer de éste, Gontrode. Entre lo donado, además de molinos y pesqueras, hay <b>linares</b>. El latín dice luego dos cosas seguidas, y las dos importan: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo una abadesa, Bendicta. <b>Una mujer al frente de una casa de hombres y mujeres</b>, junto al Tera, en el año 1006.</p></div><div class="lam-pie"><span class="a">1006</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="1006 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1006</span><span class="dia">26 de junio</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div><p class="prosa">Oma Iuve entrega al monasterio todo lo que tiene, y no lo hace sola: firman con ella su hijo Veila y la mujer de su hijo, Gontrode. En la lista de lo donado hay molinos, hay pesqueras y hay <b>linares</b>, campos de lino.</p><p class="prosa">Y entonces el latín dice dos cosas seguidas, casi de pasada, que valen más que toda la hacienda. Que la iglesia está dedicada a San Salvador. Y que allí hay «yugo de hermanos y hermanas» bajo una abadesa que se llama Bendicta.</p><p class="prosa"><b>Una mujer gobernando una casa de hombres y de mujeres</b>, a orillas del Tera, en el año 1006. De ella sabemos eso: el nombre y el cargo. No hay más, y no va a haberlo.</p></div><div class="lam-pie"><span class="a">1006</span><span class="t">narrada</span></div></section><section class="lam" aria-label="1006 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1006</span><span class="dia">26 de junio</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div><p class="prosa">Molinos. Pesqueras. Linares.</p><p class="prosa">Eso es lo que Oma Iuve, su hijo Veila y Gontrode, la mujer de su hijo, entregan al monasterio.</p><p class="prosa">Y en mitad del latín, sin darle importancia, el documento suelta dos cosas: que la iglesia es de San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta.</p><p class="prosa"><b>Una mujer manda aquí.</b> Se llama Bendicta. Es lo único que sabremos nunca de ella.</p></div><div class="lam-pie"><span class="a">1006</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="1015"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1015: Nueve nombres, y la fecha exacta"><section class="lam" aria-label="1015 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1015</span><span class="dia">22 de enero</span><h4>Nueve nombres, y la fecha exacta</h4></div><p class="prosa">Son los testigos que el escriba separa de los demás con cuatro palabras: «id sit habitantes de Castroferronio», esto es, habitantes de Castroferrol. Nueve personas, en este término, el 22 de enero de 1015. Y la mitad de esos nombres son árabes, conviviendo con otros godos. El documento por el que aparecen es la donación que hacen María y sus hijos Galindo y Juan Ciprianiz del lugar «edificado en honor de San Miguel Arcángel y Santa María siempre virgen», en la villa «por donde discurre el riachuelo Tera y de la otra parte el Almucera», con su iglesia, viñas, prados, aguas y cauces de molino, y un ajuar de cruz, caja, corona, cáliz, patena, dalmáticas y libros.</p></div><div class="lam-pie"><span class="a">1015</span><span class="t">la original</span></div></section><section class="lam" aria-label="1015 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1015</span><span class="dia">22 de enero</span><h4>Nueve nombres, y la fecha exacta</h4></div><p class="prosa">El escriba está anotando los testigos y, en mitad de la lista, separa a nueve con cuatro palabras: «id sit habitantes de Castroferronio». Son de aquí. Nueve personas con nombre, en este término, el 22 de enero de 1015. Y la mitad de esos nombres son árabes, escritos en la misma línea que otros godos. Aparecen <b>de refilón</b>: nadie los estaba contando, iban de testigos en la donación que hacen María y sus hijos de un lugar «edificado en honor de San Miguel Arcángel y Santa María siempre virgen», con su iglesia, sus viñas y un ajuar de cruz, cáliz y libros.</p></div><div class="lam-pie"><span class="a">1015</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="1015 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1015</span><span class="dia">22 de enero</span><h4>Nueve nombres, y la fecha exacta</h4></div><p class="prosa">Un escriba está copiando la lista de testigos de una donación cualquiera. Lleva ya unos cuantos nombres cuando hace algo que nadie le había pedido: separa a nueve de ellos y les añade cuatro palabras. <i>Id sit habitantes de Castroferronio</i>. <b>Éstos son de aquí.</b></p><p class="prosa">No sabemos por qué le pareció que había que decirlo. Pero por esas cuatro palabras conocemos hoy a nueve personas que vivían en este término el 22 de enero de 1015, y la mitad de esos nombres son árabes, escritos en la misma línea que otros godos sin que el escriba haga notar nada.</p><p class="prosa">Iban de testigos. Nadie los estaba contando. <b>Son, por accidente, los vecinos más antiguos de los que sabemos el nombre.</b></p></div><div class="lam-pie"><span class="a">1015</span><span class="t">narrada</span></div></section><section class="lam" aria-label="1015 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1015</span><span class="dia">22 de enero</span><h4>Nueve nombres, y la fecha exacta</h4></div><p class="prosa">22 de enero. El escriba va por la mitad de la lista de testigos.</p><p class="prosa">Entonces se detiene, separa a nueve nombres y escribe cuatro palabras que nadie le ha pedido: <i>id sit habitantes de Castroferronio</i>.</p><p class="prosa"><b>Éstos son de aquí.</b></p><p class="prosa">Muza. Absub. Hauiue. Nazarus. Y al lado, Veila, Gundisaluo. Nombres árabes y nombres godos en la misma línea, sin una nota, sin una explicación.</p><p class="prosa">Iban de testigos a una donación que no era suya. Por eso los conocemos.</p></div><div class="lam-pie"><span class="a">1015</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="1060"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1060: Castroferrol en las particiones de Diego Muñoz"><section class="lam" aria-label="1060 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1060</span><h4>Castroferrol en las particiones de Diego Muñoz</h4></div><p class="prosa">El lugar figura entre las villas y heredades que caen en manos de Diego Muñoz al dividirse las de Osorio Fernández y doña Visclávara.</p></div><div class="lam-pie"><span class="a">1060</span><span class="t">la original</span></div></section><section class="lam" aria-label="1060 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1060</span><h4>Castroferrol en las particiones de Diego Muñoz</h4></div><p class="prosa">Se reparten los bienes de Osorio Fernández y de su mujer, doña Visclávara, y en la lista, entre villas y tierras, está Castroferrol. Le toca a Diego Muñoz. Nadie pregunta a los que viven allí: <b>el lugar cambia de dueño como cambia de mano un prado</b>.</p></div><div class="lam-pie"><span class="a">1060</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="1060 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1060</span><h4>Castroferrol en las particiones de Diego Muñoz</h4></div><p class="prosa">Alguien está repartiendo una herencia grande. Se dividen las villas y las tierras que fueron de Osorio Fernández y de su mujer, doña Visclávara, y la lista va bajando: esto para uno, aquello para otro.</p><p class="prosa">Cuando llega a Castroferrol escribe un nombre —Diego Muñoz— y pasa a la línea siguiente.</p><p class="prosa">En el valle no se entera nadie. <b>El lugar ha cambiado de dueño como cambia de mano un prado</b>, y los que viven en él no salen en el papel ni siquiera para ser contados.</p></div><div class="lam-pie"><span class="a">1060</span><span class="t">narrada</span></div></section><section class="lam" aria-label="1060 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1060</span><h4>Castroferrol en las particiones de Diego Muñoz</h4></div><p class="prosa">Se reparte lo que fue de Osorio Fernández y de doña Visclávara. Una villa por aquí, unas tierras por allá.</p><p class="prosa">Le toca el turno a Castroferrol. Se escribe: Diego Muñoz. Se pasa a la siguiente.</p><p class="prosa">En el valle, nadie sabe nada. Nadie ha preguntado. <b>Los que viven allí no están en el papel ni como cifra.</b></p></div><div class="lam-pie"><span class="a">1060</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="1073"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1073: Colinas aparece por su nombre"><section class="lam" aria-label="1073 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-sinleer"></span><span>Catalogada, sin leer</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1073</span><h4>Colinas aparece por su nombre</h4></div><p class="prosa">La villa que llaman Colinas, en la ribera del Tera. Es la <b>mención más antigua del pueblo por su nombre</b> que el proyecto conoce: cuatrocientos cincuenta y tres años antes del Censo de Pecheros, y cuatrocientos setenta y ocho antes de Martín Alonso. Hasta aquí las fuentes sólo habían nombrado Castroferrol; a partir de aquí los dos nombres conviven.</p></div><div class="lam-pie"><span class="a">1073</span><span class="t">la original</span></div></section><section class="lam" aria-label="1073 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-sinleer"></span><span>Catalogada, sin leer</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1073</span><h4>Colinas aparece por su nombre</h4></div><p class="prosa">La villa que llaman Colinas, en la ribera del Tera. Es <b>la primera vez que el pueblo aparece escrito con su nombre</b>. Hasta esta línea las fuentes sólo habían dicho Castroferrol; a partir de aquí los dos nombres conviven, y el que va a durar es éste. Cuatrocientos setenta y ocho años antes que Martín Alonso, que era el primer Colinas que este proyecto conocía.</p></div><div class="lam-pie"><span class="a">1073</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="1073 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-sinleer"></span><span>Catalogada, sin leer</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1073</span><h4>Colinas aparece por su nombre</h4></div><p class="prosa">En un diploma de la catedral de León, entre otras muchas propiedades, hay cuatro palabras: <i>uilla que dicunt Colinas</i>. La villa que llaman Colinas, en la ribera del Tera.</p><p class="prosa">No es una noticia: es una mención de paso, de las que sirven para situar otra cosa. Y sin embargo es el momento en que <b>el pueblo aparece por primera vez con su nombre</b>, ciento once años después de aquella viña junto al Almucera.</p><p class="prosa">Durante un tiempo los dos nombres van a convivir en los papeles. Uno de ellos acabará en despoblado. El otro es el que sigue ahí.</p></div><div class="lam-pie"><span class="a">1073</span><span class="t">narrada</span></div></section><section class="lam" aria-label="1073 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-sinleer"></span><span>Catalogada, sin leer</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1073</span><h4>Colinas aparece por su nombre</h4></div><p class="prosa"><i>uilla que dicunt Colinas.</i></p><p class="prosa">Cuatro palabras en un diploma de la catedral de León, puestas ahí para situar otra propiedad que sí importaba.</p><p class="prosa"><b>Es la primera vez que el nombre existe por escrito.</b> 1073.</p><p class="prosa">De los dos nombres que van a convivir un tiempo, Castroferrol acabará en despoblado. Colinas sigue ahí.</p></div><div class="lam-pie"><span class="a">1073</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="1129"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1129: Una vereda que baja de Castroferrol"><section class="lam" aria-label="1129 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1129</span><h4>Una vereda que baja de Castroferrol</h4></div><p class="prosa">Castro Ferronnio es uno de los mojones del coto del monasterio de Santa Marta de Tera, que Alfonso VII confirma «según los fijó su bisabuelo Fernando I». Es un deslinde, y por tanto geografía: nombra la vereda que baja del enclave, un carbajal, una carral, San Pelayo de Armentario Fláiniz, la carral de Comdesa, Villa Aceif y el término de Axarifes.</p></div><div class="lam-pie"><span class="a">1129</span><span class="t">la original</span></div></section><section class="lam" aria-label="1129 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1129</span><h4>Una vereda que baja de Castroferrol</h4></div><p class="prosa">Alfonso VII confirma el coto del monasterio de Santa Marta de Tera «según los fijó su bisabuelo Fernando I», y para eso hay que decir por dónde va la raya. Castro Ferronnio es uno de los mojones. Un deslinde es geografía, y aquí la geografía habla: la raya sigue <b>una vereda que baja del enclave</b>. Una vereda es un camino de ganado, y éste es el más antiguo que el proyecto tiene en este término.</p></div><div class="lam-pie"><span class="a">1129</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="1129 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1129</span><h4>Una vereda que baja de Castroferrol</h4></div><p class="prosa">Para confirmar el coto del monasterio de Santa Marta de Tera, Alfonso VII tiene que decir por dónde va exactamente la raya, «según la fijó su bisabuelo Fernando I». Así que el documento se pone a andar.</p><p class="prosa">Sale de Castro Ferronnio <b>por una vereda</b>, llega a un carbajal, tuerce por una carral, pasa por San Pelayo, por la carral de Comdesa, por Villa Aceif, y termina en el término de Axarifes.</p><p class="prosa">Una vereda es un camino de ganado. Éste, el que baja del enclave, es <b>el camino más antiguo de este término del que tenemos noticia</b>: en 1129 ya estaba hecho y ya tenía nombre.</p></div><div class="lam-pie"><span class="a">1129</span><span class="t">narrada</span></div></section><section class="lam" aria-label="1129 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1129</span><h4>Una vereda que baja de Castroferrol</h4></div><p class="prosa">El rey tiene que decir por dónde va la raya, así que el documento echa a andar.</p><p class="prosa">Sale de Castro Ferronnio por una vereda. Llega a un carbajal. Tuerce por una carral. San Pelayo. La carral de Comdesa. Villa Aceif. Axarifes.</p><p class="prosa">Una vereda es por donde pasa el ganado. Ésa bajaba del enclave, y en 1129 ya tenía nombre: <b>es el camino más antiguo que conocemos de este término</b>.</p></div><div class="lam-pie"><span class="a">1129</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="1170"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1170: Fernando II revalida esos límites"><section class="lam" aria-label="1170 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1170</span><h4>Fernando II revalida esos límites</h4></div><p class="prosa">Un privilegio de confirmación repite el coto. Para entonces el monasterio ya se ha incorporado a los bienes de la mitra de Astorga, y eso debió precipitar su final como comunidad.</p></div><div class="lam-pie"><span class="a">1170</span><span class="t">la original</span></div></section><section class="lam" aria-label="1170 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1170</span><h4>Fernando II revalida esos límites</h4></div><p class="prosa">Cuarenta y un años después, otro rey vuelve a firmar la misma raya y el coto no cambia. Lo que ha cambiado es de quién es el monasterio: ya ha pasado a los bienes de la mitra de Astorga. <b>Deja de ser una casa con vida propia y empieza a ser una renta</b>, y eso es, probablemente, el principio de su final.</p></div><div class="lam-pie"><span class="a">1170</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="1170 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1170</span><h4>Fernando II revalida esos límites</h4></div><p class="prosa">Cuarenta y un años más tarde, otro rey vuelve a firmar la misma raya. Palabra por palabra, el coto no cambia.</p><p class="prosa">Lo que ha cambiado está fuera del documento: para entonces el monasterio ya ha pasado a los bienes de la mitra de Astorga. <b>Ha dejado de ser una casa donde vive gente y se ha convertido en una partida de ingresos.</b></p><p class="prosa">Es también la última vez que Castroferrol aparece en un papel medieval. Probablemente las dos cosas tengan que ver.</p></div><div class="lam-pie"><span class="a">1170</span><span class="t">narrada</span></div></section><section class="lam" aria-label="1170 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1170</span><h4>Fernando II revalida esos límites</h4></div><p class="prosa">Otro rey. La misma raya. Ni una palabra distinta.</p><p class="prosa">Pero el monasterio ya no es el monasterio: ha pasado a la mitra de Astorga. Donde hubo una casa con gente, hay ahora <b>una línea en un libro de rentas</b>.</p><p class="prosa">Es la última vez que Castroferrol se escribe en la Edad Media.</p></div><div class="lam-pie"><span class="a">1170</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="ss. XI–XIII"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="ss. XI–XIII: La sala que ardió"><section class="lam" aria-label="ss. XI–XIII · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">ss. XI–XIII</span><h4>La sala que ardió</h4></div><p class="prosa">Una estancia de 5 × 8 metros, de mampostería en seco con contrafuertes y suelo de arcilla roja, cubierta de teja curva sobre muros de tapial. La sella un nivel de incendio de cinco centímetros de carbones. La cerámica de retícula incisa la fecha en el siglo XI.</p></div><div class="lam-pie"><span class="a">ss. XI–XIII</span><span class="t">la original</span></div></section><section class="lam" aria-label="ss. XI–XIII · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">ss. XI–XIII</span><h4>La sala que ardió</h4></div><p class="prosa"><b>Cinco centímetros de carbones</b> sellan el suelo. Lo que había debajo era una sala de cinco metros por ocho, con los muros de piedra colocada en seco, contrafuertes, el piso de arcilla roja y encima teja curva sobre tapial. Ardió, y nadie volvió a levantarla. La cerámica de retícula incisa que quedó dentro la fecha en el siglo XI.</p></div><div class="lam-pie"><span class="a">ss. XI–XIII</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="ss. XI–XIII · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">ss. XI–XIII</span><h4>La sala que ardió</h4></div><p class="prosa">Lo primero que apareció al excavar fue el fuego: <b>cinco centímetros de carbones</b>, extendidos como una tapa sobre todo lo demás.</p><p class="prosa">Debajo había una sala de cinco metros por ocho. Los muros, de piedra encajada sin argamasa, con contrafuertes. El suelo, de arcilla roja apisonada. Encima, teja curva sobre tapial. Entre los carbones quedó cerámica con retícula incisa, y eso la fecha en el siglo XI.</p><p class="prosa"><b>Ardió, y nadie volvió a levantarla.</b> Quién vivía dentro, y por qué se quemó, no lo dice nada.</p></div><div class="lam-pie"><span class="a">ss. XI–XIII</span><span class="t">narrada</span></div></section><section class="lam" aria-label="ss. XI–XIII · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">ss. XI–XIII</span><h4>La sala que ardió</h4></div><p class="prosa">Primero apareció el fuego. Cinco centímetros de carbón, tapándolo todo.</p><p class="prosa">Debajo, una sala de cinco por ocho. Piedra sin argamasa. Contrafuertes. Suelo de arcilla roja. Teja curva sobre tapial.</p><p class="prosa">Entre los carbones, cacharros con retícula incisa: siglo XI.</p><p class="prosa"><b>Ardió. No la volvieron a levantar.</b> Quién estaba dentro, no lo sabe nadie.</p></div><div class="lam-pie"><span class="a">ss. XI–XIII</span><span class="t">frase corta</span></div></section></div></article>
+<article class="post" data-y="1170 → 1526"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1170 → 1526: silencio"><section class="lam" aria-label="1170 → 1526 · A · Técnica"><div class="lam-top"><span class="era-n">Castroferrol</span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1170 → 1526</span><h4>Silencio documental</h4></div><p class="prosa">Tres siglos y medio sin un solo documento localizado. No sabemos cuándo se abandonó el monasterio ni cómo pasó Colinas de ser una villa nombrada de paso en 1073 a un lugar del señorío de Benavente.</p></div><div class="lam-pie"><span class="a">1170 → 1526</span><span class="t">la original</span></div></section><section class="lam" aria-label="1170 → 1526 · B · Sobria"><div class="lam-top"><span class="era-n">Castroferrol</span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1170 → 1526</span><h4>Silencio documental</h4></div><p class="prosa">Tres siglos y medio sin un solo documento localizado. Entra una villa nombrada de paso en 1073 y sale un lugar del señorío de Benavente. Lo que pasó en medio —cuándo se abandonó el monasterio, cuándo se vació Castroferrol— no lo sabemos.</p></div><div class="lam-pie"><span class="a">1170 → 1526</span><span class="t">la publicada</span></div></section><section class="lam" aria-label="1170 → 1526 · C · Microhistoria"><div class="lam-top"><span class="era-n">Castroferrol</span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1170 → 1526</span><h4>Silencio documental</h4></div><p class="prosa">Y aquí se apaga todo. Tres siglos y medio sin un solo documento localizado.</p><p class="prosa">Entra por un lado una villa que alguien nombró de paso en 1073, y sale por el otro un lugar del señorío de Benavente con veinticinco vecinos que pagan pecho.</p><p class="prosa">Lo que pasó en medio —cuándo se acabó el monasterio, cuándo se vació Castroferrol, cómo terminó Colinas siendo del conde— no lo sabemos. <b>El hueco también es un dato</b>, y éste es el más grande de toda la línea.</p></div><div class="lam-pie"><span class="a">1170 → 1526</span><span class="t">narrada</span></div></section><section class="lam" aria-label="1170 → 1526 · D · Escena"><div class="lam-top"><span class="era-n">Castroferrol</span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1170 → 1526</span><h4>Silencio documental</h4></div><p class="prosa">Aquí no hay nada.</p><p class="prosa">Tres siglos y medio, ni un papel.</p><p class="prosa">Entra una villa nombrada de paso en 1073. Sale, en 1526, un lugar del conde de Benavente con veinticinco vecinos que pagan pecho.</p><p class="prosa">Lo de en medio no lo sabemos. Y eso, en este proyecto, <b>también se cuenta</b>.</p></div><div class="lam-pie"><span class="a">1170 → 1526</span><span class="t">frase corta</span></div></section></div></article>
+</div>
+<div class="chapa" id="chapa"></div>
+<script>
+(function () {
+  var V = [["A", "A \u00b7 T\u00e9cnica", "la original"], ["B", "B \u00b7 Sobria", "la publicada"], ["C", "C \u00b7 Microhistoria", "narrada"], ["D", "D \u00b7 Escena", "frase corta"]];
+  var chapa = document.getElementById('chapa');
+  var posts = Array.prototype.slice.call(document.querySelectorAll('.post'));
+  var actual = posts[0];
+  function pinta() {
+    if (!actual) return;
+    var car = actual.querySelector('.carrusel');
+    var n = car.clientWidth ? Math.round(car.scrollLeft / car.clientWidth) : 0;
+    n = Math.max(0, Math.min(V.length - 1, n));
+    var pts = actual.querySelectorAll('.punto');
+    for (var j = 0; j < pts.length; j++) pts[j].classList.toggle('on', j === n);
+    chapa.innerHTML = actual.dataset.y + ' \u00b7 <b>' + V[n][1] + '</b> \u00b7 ' + V[n][2];
+  }
+  posts.forEach(function (p) {
+    var car = p.querySelector('.carrusel'), t = null;
+    car.addEventListener('scroll', function () {
+      if (t) return;
+      t = requestAnimationFrame(function () { t = null; if (actual === p) pinta(); });
+    }, { passive: true });
+  });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { actual = e.target; pinta(); } });
+  }, { threshold: 0.6 });
+  posts.forEach(function (p) { io.observe(p); });
+  pinta();
+})();
+</script>
+</body>
+</html>

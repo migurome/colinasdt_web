@@ -24,6 +24,22 @@ falta el para qué. Era una lista con verbos: no se leía, se consultaba.
 
 ---
 
+> ⚠️ **La voz no está decidida.** La «sobria narrativa» que se describe abajo se probó en la era
+> de Castroferrol (v0.15) y **se quedó corta**: comprimía la prosa, pero seguía empezando por el
+> hecho y no por nadie. Hay un **comparador lateral** con cuatro redacciones de las mismas once
+> entradas, para elegir a la vista antes de tocar las otras cuarenta y nueve:
+> `web/src/prueba-voz.html`, que genera `web/gen-voz.py`.
+>
+> | | Voz | De dónde sale |
+> |---|---|---|
+> | **A** | Técnica | la redacción original, etiqueta `v0.14` |
+> | **B** | Sobria | la publicada hoy, `v0.15` —la de abajo— |
+> | **C** | Microhistoria | narrada, con escena y consecuencia |
+> | **D** | Escena | frase corta, presente, más silencio |
+>
+> C y D están en `web/voces.json` y **no han entrado en la línea**. A y B se leen de los datos de
+> verdad, así que el comparador no puede desincronizarse.
+
 ## La voz: sobria narrativa
 
 Lo que ya hacían las mejores entradas del propio proyecto, aplicado a todas. El modelo interno
