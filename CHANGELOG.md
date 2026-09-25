@@ -13,6 +13,18 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.6 — 25 de septiembre de 2026
+### Marcas más finas en el raíl
+
+- **Las marcas de evento de la línea de desplazamiento del teléfono se acortan.** Medían 16 de
+  los 28 de ancho del raíl —ocho veces el grosor del trazo— y le comían el protagonismo a la
+  propia línea. Pasan a 9, centradas sobre el trazo: se ven sin taparlo.
+
+> ⚠️ **Estado del contenido, sin cambios**: faltan por incorporar a la línea **1073, 1526, 1591,
+> 1694, 1756 y 1768**.
+
+---
+
 ## v0.5 — 25 de septiembre de 2026
 ### Una entrada, una lámina
 

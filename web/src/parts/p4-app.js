@@ -439,8 +439,9 @@
       s += `<path class="fantasma" d="M14 ${y2.toFixed(1)} V${RH - RP}"/>`;
       s += `<path class="hecho" id="hecho" d="M14 ${RP} V${RP}"/>`;
       s += `<path class="quiebre" d="M7 ${AY + 9} L21 ${AY + 3} M7 ${AY + 17} L21 ${AY + 11}"/>`;
+      /* la marca cruza el trazo, no lo tapa: 9 de los 28 de ancho */
       orden.forEach((e) => {
-        s += `<rect class="${FORMA[e.n] || 'tk'}" data-n="${e.n}" x="6" y="${(this.rY(e.s) - 1).toFixed(1)}" width="16" height="2"/>`;
+        s += `<rect class="${FORMA[e.n] || 'tk'}" data-n="${e.n}" x="9.5" y="${(this.rY(e.s) - 1).toFixed(1)}" width="9" height="2"/>`;
       });
       s += `<circle id="pulgar" cx="14" cy="${RP}" r="5.4"/>`;
       svg.setAttribute('viewBox', `0 0 28 ${RH}`);

@@ -988,10 +988,15 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.5';
+const VERSION = '0.6';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.6', f: '25 de septiembre de 2026', t: 'Marcas más finas en el raíl',
+    c: [
+      '<b>Las marcas de la línea de desplazamiento del teléfono se acortan</b>: cruzaban el raíl casi de lado a lado y pesaban más que el propio trazo. Ahora ocupan nueve de los veintiocho de ancho, lo justo para verse sin taparlo.'
+    ],
+    p: 'Sigue pendiente lo mismo: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.5', f: '25 de septiembre de 2026', t: 'Una entrada, una lámina',
     c: [
       '<b>Las láminas se colapsan en una sola.</b> Antes cada campo —texto, cita, imagen, cautela, fuente— se llevaba una pantalla entera, aunque fuese una línea: había entradas con cuatro láminas casi vacías. Ahora todo va junto mientras quepa, y <b>sólo lo que desborda</b> abre la lámina siguiente.',
@@ -1478,8 +1483,9 @@ const VERSIONES = [
       s += `<path class="fantasma" d="M14 ${y2.toFixed(1)} V${RH - RP}"/>`;
       s += `<path class="hecho" id="hecho" d="M14 ${RP} V${RP}"/>`;
       s += `<path class="quiebre" d="M7 ${AY + 9} L21 ${AY + 3} M7 ${AY + 17} L21 ${AY + 11}"/>`;
+      /* la marca cruza el trazo, no lo tapa: 9 de los 28 de ancho */
       orden.forEach((e) => {
-        s += `<rect class="${FORMA[e.n] || 'tk'}" data-n="${e.n}" x="6" y="${(this.rY(e.s) - 1).toFixed(1)}" width="16" height="2"/>`;
+        s += `<rect class="${FORMA[e.n] || 'tk'}" data-n="${e.n}" x="9.5" y="${(this.rY(e.s) - 1).toFixed(1)}" width="9" height="2"/>`;
       });
       s += `<circle id="pulgar" cx="14" cy="${RP}" r="5.4"/>`;
       svg.setAttribute('viewBox', `0 0 28 ${RH}`);

@@ -238,10 +238,15 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.5';
+const VERSION = '0.6';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.6', f: '25 de septiembre de 2026', t: 'Marcas más finas en el raíl',
+    c: [
+      '<b>Las marcas de la línea de desplazamiento del teléfono se acortan</b>: cruzaban el raíl casi de lado a lado y pesaban más que el propio trazo. Ahora ocupan nueve de los veintiocho de ancho, lo justo para verse sin taparlo.'
+    ],
+    p: 'Sigue pendiente lo mismo: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.5', f: '25 de septiembre de 2026', t: 'Una entrada, una lámina',
     c: [
       '<b>Las láminas se colapsan en una sola.</b> Antes cada campo —texto, cita, imagen, cautela, fuente— se llevaba una pantalla entera, aunque fuese una línea: había entradas con cuatro láminas casi vacías. Ahora todo va junto mientras quepa, y <b>sólo lo que desborda</b> abre la lámina siguiente.',
