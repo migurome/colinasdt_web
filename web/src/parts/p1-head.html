@@ -461,7 +461,14 @@ summary:hover{color:var(--almagre)}
     opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
   .ilu::after{z-index:3}
 
+  /* el pie de la imagen, cuando la imagen es el fondo y ya no tiene marco */
+  .lam .pie-ilu{margin:0}
+  .lam .pie-ilu b{color:var(--teja);font-weight:600}
+  .t-portada .pie-ilu b{color:#E8C9B4}
+
   .t-vineta .ilu{left:0;right:0;bottom:0;height:64%;mix-blend-mode:multiply}
+  /* el texto se para antes de la viñeta: lo que no quepa abre otra lámina */
+  .t-vineta .lam-cuerpo{padding-bottom:30svh}
   .t-vineta .ilu img{object-position:50% 30%;
     -webkit-mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%);
     mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%)}
@@ -495,6 +502,16 @@ summary:hover{color:var(--almagre)}
   .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
   .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
   .t-portada .lam-pie .sigue,.t-vineta .lam-pie .sigue{color:rgba(244,232,204,.72)}
+
+  /* Un facsímil es papel claro, no un dibujo en penumbra: necesita más velo
+     para que el texto lea, y en viñeta el pie se queda en tinta normal. */
+  .t-portada.t-doc .ilu::after{
+    background:linear-gradient(to bottom,rgba(20,14,8,.88) 0%,rgba(20,14,8,.64) 38%,
+      rgba(20,14,8,.72) 68%,rgba(20,14,8,.90) 100%)}
+  .t-vineta.t-doc .lam-pie{border-top-color:var(--filo)}
+  .t-vineta.t-doc .lam-pie .a{color:var(--teja)}
+  .t-vineta.t-doc .lam-pie .t{color:var(--tenue)}
+  .t-vineta.t-doc .lam-pie .sigue{color:var(--apunte)}
 
   /* Una entrada, una lámina: fecha, título, texto, cita, imagen, cautela y
      fuente juntos mientras quepan. Lo que desborda abre la lámina siguiente. */

@@ -13,6 +13,28 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.8 — 25 de septiembre de 2026
+### Cada entrada, con su tratamiento
+
+- **Las siete entradas que llevan imagen tienen ya tratamiento elegido**, una por una: III milenio
+  a.C., 1006 y 1752 a **portada**; 1876 a **viñeta**; siglos IV–V, siglos XI–XIII y 1993 en
+  **caja**.
+- **Cuando la imagen pasa a ser el fondo pierde su marco, así que su pie baja al texto de la
+  lámina.** La signatura del Catastro, el número de figura o la leyenda del sello siguen escritos
+  en todos los tratamientos: la referencia no se pierde por cambiar de presentación.
+- El tratamiento deja de ser cosa sólo de la ilustración. Con `tr` se elige para cualquier imagen,
+  y con `pos` se ajusta el encuadre si el de por defecto no sirve.
+- **Un facsímil es papel claro, no un dibujo en penumbra.** Lleva más velo para que el texto se
+  lea encima, y en viñeta el pie se queda en tinta normal, porque sobre papel claro la tinta clara
+  no se ve.
+- En viñeta **el texto se para antes de llegar al dibujo**: lo que no quepa abre lámina nueva en
+  vez de escribirse encima.
+
+> ⚠️ **Estado del contenido, sin cambios**: faltan por incorporar a la línea **1073, 1526, 1591,
+> 1694, 1756 y 1768**.
+
+---
+
 ## v0.7 — 25 de septiembre de 2026
 ### La ilustración entra en la lámina
 

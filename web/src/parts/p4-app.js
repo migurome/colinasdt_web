@@ -183,14 +183,19 @@
       if (e.p) B.push(`<p class="prosa">${e.p}</p>`);
       if (e.link) B.push(`<p class="fuente enlace">En esta página: ${e.link.t}</p>`);
       if (e.q) B.push(`<p class="cita">${e.q}</p>`);
+      const caja = this.trato(e) === 'caja';
       if (e.img) {
-        B.push(`<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${
-          e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`);
+        B.push(caja
+          ? `<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${
+            e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
+          : `<p class="fuente pie-ilu">${e.img.cap}</p>`);
       }
-      if (e.ilu && this.trato(e) === 'caja') {
-        B.push(`<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
-          e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
-          e.ilu.cap}</figcaption></figure>`);
+      if (e.ilu) {
+        B.push(caja
+          ? `<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
+            e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
+            e.ilu.cap}</figcaption></figure>`
+          : `<p class="fuente pie-ilu"><b>Ilustración interpretada.</b> ${e.ilu.cap}</p>`);
       }
       if (e.nota) B.push(`<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>`);
       if (e.f) {
@@ -222,14 +227,17 @@
       if (buf.trim()) out.push(buf.trim());
       return out;
     },
-    /* El tratamiento es cosa de la ilustracion: un facsimil va siempre en caja */
+    /* Se elige entrada por entrada. Si no es 'caja', la imagen pasa a ser el
+       fondo de la lamina y su pie baja al texto: la referencia no se pierde. */
     trato(e) {
-      return e.ilu ? (e.tr || 'caja') : 'caja';
+      return (e.ilu || e.img) ? (e.tr || 'caja') : 'caja';
     },
     capa(e, primera) {
-      if (!e.ilu || this.trato(e) === 'caja') return '';
-      return `<div class="ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
-        e.ilu.h}" alt="${primera ? esc(e.ilu.alt) : ''}"></div>`;
+      const im = e.ilu || e.img;
+      if (!im || this.trato(e) === 'caja') return '';
+      const pos = e.pos ? ` style="object-position:${e.pos}"` : '';
+      return `<div class="ilu"><img src="${im.src}" width="${im.w}" height="${
+        im.h}"${pos} alt="${primera ? esc(im.alt) : ''}"></div>`;
     },
     firmaCorta(f) {
       const t = String(f).split('·')[0].trim();
@@ -264,7 +272,8 @@
         }
         /* una lamina de partida con todo dentro; repartir() decide si desborda */
         const tr = this.trato(e);
-        const ct = tr === 'caja' ? '' : ' t-' + tr;
+        /* un documento es papel claro y pide mas velo que una ilustracion */
+        const ct = tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc');
         const lam = `<section class="lam lam-1${ct}" aria-label="${esc(e.y + ' · ' + e.t)}">${
           this.capa(e, true)}${this.cabecera(e, true)}<div class="lam-cuerpo arriba">${
           this.bloques(e).join('')}</div>${this.pie(e)}</section>`;
@@ -404,7 +413,7 @@
       const d = document.createElement('section');
       const tr = this.trato(e);
       /* la continuacion no cambia de fondo a media entrada */
-      d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr);
+      d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc'));
       d.setAttribute('aria-label', e.y + ' · continuación');
       /* sin sello: el grado de prueba se dice una vez, arriba del todo */
       d.innerHTML = this.capa(e, false) + this.cabecera(e, false) +

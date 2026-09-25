@@ -22,6 +22,7 @@ const EVENTOS = [
     p: 'Al norte del pueblo, al pie del promontorio en el que están horadadas las bodegas —y que da nombre al pago—, cuatro hoyos-silo de la Edad del Cobre, de metro y medio de hondo y casi dos metros de diámetro, y una gran zanja de diez metros de ancho. La cerámica es lisa y de cocción reductora, con un motivo que los excavadores dan por inédito en la zona: pastillas en relieve.',
     nota: 'La zanja no está explicada: los autores barajan vertedero, drenaje de los silos, foso defensivo o el cauce fosilizado de un arroyo. Y la fecha viene por comparación con el yacimiento vecino de Los Bajos, no de una datación propia.',
     img: { src: 'img/bodegas-fig12-ceramica.jpg', w: 900, h: 1204, alt: 'Dibujos arqueológicos de cuencos y vasos calcolíticos lisos, con perfiles y numeración de inventario.', cap: 'Cerámica lisa y decorada de «Las Bodegas» (fig. 12). Piezas 93/24.' },
+    tr: 'portada',
     f: 'Pérez Rodríguez et al., «Algunos aspectos de la Edad del Cobre en el Valle medio del río Tera», Anuario 1993, IEZ «Florián de Ocampo», pp. 49-78' },
 
   { id: 'petavonium', era: 1, y: '19 a.C.', s: -19, n: 'contexto',
@@ -122,6 +123,7 @@ const EVENTOS = [
     q: '«no pueden dar razón en virtud de qué privilegio goza estos derechos»',
     nota: 'Así responden los vecinos (28.ª) cuando se les pregunta por el título de lo que cobra el conde. Nadie en el pueblo sabía por qué pagaba.',
     img: { src: 'img/catastro-1752-f372.jpg', w: 720, h: 1054, scan: true, alt: 'Página manuscrita del Catastro de Ensenada de Colinas de Trasmonte, en letra caligráfica del siglo XVIII.', cap: 'Final de la respuesta 3.ª, con los lindes del término, e inicio de la 4.ª (AGS, libro 654, imagen 0372).' },
+    tr: 'portada',
     f: 'AGS, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas Generales, libro 654, ff. 368-407 · ed. CEB «Ledo del Pozo», pp. 238-243' },
 
   { id: 'floridablanca', era: 3, y: '1787', s: 1787, n: 'visto',
@@ -164,6 +166,7 @@ const EVENTOS = [
     q: '«va estampado el único que existe y ha existido en este municipio»',
     p: 'El alcalde remite al Gobernador Civil el sello del Ayuntamiento Constitucional. Lleva las armas reales de España, y el archivo municipal no guarda noticia de ningún otro. Colinas nunca tuvo escudo propio: cualquier emblema será el primero.',
     img: { src: 'img/sello-1876.png', w: 560, h: 642, alt: 'Impronta oval del sello con la leyenda Ayuntamiento Constitucional de Colinas de Trasmonte y las armas reales bajo corona.', cap: 'Impronta del sello, ampliada. Leyenda: AYUNTAM.TO CONSTIT.L DE COLINAS DE TRASMONTE.' },
+    tr: 'vineta',
     f: 'AHN, SIGIL-TINTA_ZAMORA,20,N.31' },
 
   { id: 'max1950', era: 4, y: '1950', s: 1950, n: 'cotejar',
@@ -245,18 +248,31 @@ const USOS = [
            Se muestra entera y con su pie. No se recorta ni se escribe encima.
      ilu — ilustración interpretada. No es prueba de nada: el pie lo dice
            siempre, y lleva `gen` con el modelo y la fecha, que es su firma.
-     tr  — sólo para `ilu`: cómo se integra en la lámina del teléfono.
-           'caja' (por defecto), 'vineta', 'aguada' o 'portada'.
+     tr  — cómo se integra la imagen en la lámina del teléfono, elegido
+           entrada por entrada: 'caja' (por defecto), 'vineta', 'aguada' o
+           'portada'. Cuando no es 'caja' la imagen pasa a ser el fondo y
+           pierde su marco, así que su pie baja al texto de la lámina: la
+           referencia no se pierde nunca.
+     pos — encuadre de esa imagen de fondo, si el de por defecto no sirve.
+           Lo que lleva object-position, p. ej. '50% 20%'.
 
    VERSIONES_VISIBLE — ponlo en false y el apartado «Versiones» desaparece
                        de la web (también su enlace en el índice). El registro
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.7';
+const VERSION = '0.8';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.8', f: '25 de septiembre de 2026', t: 'Cada entrada, con su tratamiento',
+    c: [
+      '<b>Las siete entradas con imagen tienen ya tratamiento elegido</b>, una por una: el III milenio, 1006 y 1752 a portada; 1876 a viñeta; los siglos IV–V, XI–XIII y 1993 en caja.',
+      '<b>Cuando la imagen pasa a ser el fondo pierde su marco, así que su pie baja al texto de la lámina.</b> La referencia —la signatura del Catastro, el número de figura, la leyenda del sello— no se pierde en ningún tratamiento.',
+      'Un facsímil es papel claro y no un dibujo en penumbra, así que <b>lleva más velo</b> para que el texto se lea encima; y en viñeta el pie se queda en tinta normal, que sobre papel claro la tinta clara no se ve.',
+      'En viñeta <b>el texto se para antes de llegar al dibujo</b>: lo que no quepa abre lámina nueva en lugar de escribirse encima.'
+    ],
+    p: 'Sigue pendiente lo mismo: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.7', f: '25 de septiembre de 2026', t: 'La ilustración entra en la lámina',
     c: [
       '<b>Una ilustración no es un facsímil, y ahora los datos lo distinguen.</b> Las imágenes van en dos campos: uno para la reproducción documental y otro para la ilustración interpretada. Cualquier lámina que lleve la segunda <b>escribe «ilustración interpretada» en el pie</b>, la vea quien la vea: en un feed una lámina se comparte suelta.',

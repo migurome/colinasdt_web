@@ -74,7 +74,7 @@ TRATOS = [('caja', 'A \u00b7 Caja'), ('vineta', 'B \u00b7 Vi\u00f1eta a sangre')
 def lamina(e, clave, rot):
     im = e['ilu'] or e['img']
     es_ilu = bool(e['ilu'])
-    ct = '' if clave == 'caja' else ' t-' + clave
+    ct = '' if clave == 'caja' else ' t-' + clave + ('' if es_ilu else ' t-doc')
     capa = ''
     if clave != 'caja':
         capa = (u'<div class="ilu"><img src="%s" width="%d" height="%d" alt=""></div>'

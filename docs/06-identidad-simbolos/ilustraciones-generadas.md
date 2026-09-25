@@ -33,9 +33,22 @@ El campo `tr` elige el tratamiento. Están los cuatro implementados, aunque sól
 | `aguada` | De fondo, rebajada, con el texto encima. |
 | `portada` | La ilustración es el campo entero y el texto va escrito sobre ella. |
 
-**Sólo se aplican a `ilu`.** Una reproducción documental va siempre en `caja`: recortar un
-facsímil a sangre y escribir texto encima lo convierte en decoración y lo hace ilegible, que es
-justo lo contrario de para lo que está.
+**Se aplican a cualquier imagen**, `img` o `ilu`, y se eligen entrada por entrada.
+
+> **Esto cambió el 25-IX-2026, y conviene que conste por qué.** Al principio los tratamientos a
+> sangre quedaron reservados a `ilu`: recortar un facsímil y escribir encima lo convierte en
+> decoración. La elección, hecha imagen por imagen, resultó ser otra y estar bien razonada: a
+> **portada** fueron los dos que funcionan como campo —los dibujos de cerámica del III milenio y
+> la página del Catastro, que en el feed nunca fueron legibles como documento—, a **viñeta** el
+> sello, que es un objeto único emergiendo, y en **caja** se quedaron los tres que hay que leer
+> enteros: la planta de la sala, los materiales tardorromanos y las ollas de 1993.
+>
+> Para que el cambio no costara la referencia, **el pie de la imagen baja al texto de la lámina**
+> cuando la imagen pasa a ser el fondo. La signatura del Catastro, el número de figura o la
+> leyenda del sello siguen escritos en todos los tratamientos.
+
+Un facsímil, además, es papel claro y no un dibujo en penumbra: lleva la clase `t-doc`, que le
+pone más velo para que el texto lea encima y deja el pie en tinta normal.
 
 Para verlos y comparar: `web/src/prueba-ilustracion.html` —arriba y abajo se recorre la línea, al
 lado los cuatro tratamientos de la misma entrada—. Es una herramienta de decisión, va con
