@@ -11,7 +11,7 @@ const NIVELES = {
 const ERAS = [
   { id: 1, t: 'Antes del nombre', span: 'III milenio a.C. – s. V' },
   { id: 2, t: 'Castroferrol', span: '962 – 1170' },
-  { id: 3, t: 'Lugar del conde de Benavente', span: '1551 – 1826' },
+  { id: 3, t: 'Lugar del conde de Benavente', span: '1526 – 1826' },
   { id: 4, t: 'El ayuntamiento', span: '1833 – 1970' },
   { id: 5, t: 'La pedanía', span: '1970 – hoy' }
 ];
@@ -79,6 +79,13 @@ const EVENTOS = [
     p: 'El lugar figura entre las villas y heredades que caen en manos de Diego Muñoz al dividirse las de Osorio Fernández y doña Visclávara.',
     f: 'ed. Ruiz Asencio, Col. doc. de la catedral de León, vol. IV (1032-1109), doc. 1121 · localizado por González Rodríguez, Brigecio 10 (2000), nota 24' },
 
+  { id: 'd1073', era: 2, y: '1073', s: 1073, n: 'sinleer',
+    t: 'Colinas aparece por su nombre',
+    q: '«uilla que dicunt Colinas, in riba de Teira»',
+    p: 'La villa que llaman Colinas, en la ribera del Tera. Es la <b>mención más antigua del pueblo por su nombre</b> que el proyecto conoce: cuatrocientos cincuenta y tres años antes del Censo de Pecheros, y cuatrocientos setenta y ocho antes de Martín Alonso. Hasta aquí las fuentes sólo habían nombrado Castroferrol; a partir de aquí los dos nombres conviven.',
+    nota: 'La cita viene de un artículo, no del facsímil: falta ir al diploma 1186 de la colección de la catedral de León y verlo con los propios ojos. Y el documento escribe <b>«Colinas» a secas</b>: el «de Trasmonte» no está ahí.',
+    f: 'RUIZ ASENCIO, Col. doc. de la catedral de León, IV (1032-1109), León 1989, doc. 1186 · cit. GONZÁLEZ RODRÍGUEZ, Brigecio 17 (2007)' },
+
   { id: 'd1129', era: 2, y: '1129', s: 1129, n: 'cotejar',
     t: 'Una vereda que baja de Castroferrol',
     q: '«per illam veredam quae discurrit de Castro Ferronio, et ad Carvalio… et tornat inde per ipsam veredam quae discurrit ad Villa Aceif, et deinde per terminum de Axarifes»',
@@ -98,13 +105,25 @@ const EVENTOS = [
     img: { src: 'img/excavacion-fig1-planta.jpg', w: 900, h: 1076, alt: 'Planta arqueológica de la estructura rectangular con sus muros y contrafuertes.', cap: 'Planta de la estructura rectangular, unidades A y B (fig. 1).' },
     f: 'Martín Carbajo et al., Anuario 1993, pp. 37-48' },
 
-  { sil: true, era: 2, y: '1170 → 1551',
-    p: 'Casi cuatro siglos sin un solo documento localizado. No sabemos cuándo se abandonó el monasterio ni cuándo nace el pueblo de Colinas.' },
+  { sil: true, era: 2, y: '1170 → 1526',
+    p: 'Tres siglos y medio sin un solo documento localizado. No sabemos cuándo se abandonó el monasterio ni cómo pasó Colinas de ser una villa nombrada de paso en 1073 a un lugar del señorío de Benavente.' },
+
+  { id: 'pecheros1526', era: 3, y: '1526', s: 1526, n: 'visto',
+    t: 'Veinticinco vecinos pecheros',
+    p: 'La <b>medición de población más antigua</b> que el proyecto tiene de Colinas, sesenta y cinco años anterior al vecindario de 1591. El lugar aparece escrito «Colinas» entre los 274 asientos de la villa de Benavente y su tierra, que suman 3.681 pecheros: exactamente la cifra que el propio censo escribe en su fila de totales.',
+    nota: 'En la misma lista hay dos lugares que nadie ha identificado: «Vezinas», con 21 vecinos, y «Vecilla del Chantre», con 16. La hipótesis de que esa Vecilla fuera la de Trasmonte queda <b>descartada</b>: en 1591 las dos aparecen por separado en la misma lista.',
+    f: 'INE, Censo de Pecheros. Carlos I, 1528, t. II, fol. 505 vº, inscr. 45' },
 
   { id: 'p1551', era: 3, y: '1551', s: 1551, n: 'sinleer',
     t: 'Martín Alonso, vecino de Colinas, va a pleito',
     p: 'Contra Pedro Alonso de Soguillo, vecino de Quintanilla de Urz. Es el vecino de Colinas más antiguo cuyo nombre conocemos.',
     f: 'Real Chancillería de Valladolid, PL Civiles, Taboada (OLV), caja 726, 1' },
+
+  { id: 'c1591', era: 3, y: '1591', s: 1591, n: 'visto',
+    t: 'Veintiocho vecinos, y el lugar mediano de la provincia',
+    p: 'Veintisiete pecheros, ningún hidalgo y un clérigo, en la provincia de las tierras del conde de Benavente. Y es <b>exactamente el lugar mediano</b>: la mediana de los 117 lugares de la provincia es de 28 vecinos. Colinas no es ni grande ni pequeño; está en el centro justo de su comarca.',
+    nota: 'Cotejados los 115 lugares del señorío en 1526 con los 117 de 1591, <b>no desaparece ninguno</b>. La villa de Benavente crece un 73 %; su tierra, un 9 %; Colinas, de 25 a 27 pecheros, un 8 %. Dentro del campo no hay tendencia: 57 lugares pierden y 56 ganan.',
+    f: 'Censo de la Corona de Castilla, 1591 · vecindario de las tierras del conde de Benavente' },
 
   { id: 'p1600', era: 3, y: '1600–1608', s: 1604, n: 'sinleer',
     t: 'Concejo contra concejo: Colinas y Vecilla',
@@ -117,6 +136,13 @@ const EVENTOS = [
     nota: 'El autor del artículo de referencia lo llama «una tergiversación absolutamente interesada». No fue un descuido: era el modo de agregar la parroquia a las rentas de la Corona. El error siguió en pie en la bibliografía hasta el año 2000.',
     f: 'AHN, ms. 1195B · González Rodríguez, Brigecio 10 (2000)' },
 
+  { id: 'apela1694', era: 3, y: '1694', d: '30 de enero', s: 1694, n: 'visto',
+    t: 'El cura de Colinas apela',
+    q: '«lo obedece con el respeto debido […] y que en cuanto a su cumplimiento no ha lugar, y desde luego de este Despacho y sus autos APELA»',
+    p: 'Once días antes, en Madrid, el Nuncio de Su Santidad había dado al provisor de Astorga <b>veinticuatro horas</b> para retirar sus autos, so pena de excomunión mayor y doscientos ducados, y mandado que se le denunciase por público excomulgado desde los púlpitos. El pleito va por los diezmos de la «Casa que llaman de Rey». Cuando el despacho llega a Colinas, el cura obedece por fórmula y no cumple: es la <b>primera resistencia escrita de alguien de Colinas</b> a una orden del señor.',
+    nota: 'En este papel el cura no tiene nombre. Lo tiene cuatro meses después: el 12 de mayo se le notifica en persona al Licenciado D. Antonio García Bernardo de Quirós [?], «Cura de este Lug[ar]», por el notario Francisco Domínguez, vecino de Benavente. El [?] queda sólo en «Quirós».',
+    f: 'AHNOB, OSUNA, C.466, D.90, img. 49-50 (copia limpia de 1842) · el nombre, en OSUNA, C.466, D.89, img. 28-29, y D.90, img. 55' },
+
   { id: 'catastro', era: 3, y: '1752', d: '9 de noviembre', s: 1752, n: 'visto',
     t: 'El Catastro de Ensenada: el primer retrato completo',
     p: '27 vecinos, el cura incluido, y 26 casas, diez de ellas inhabitables. Un término de 2.372 fanegas, un tercio de monte. El concejo tiene molino harinero y casa de fragua; hay un solo herrero, Santiago Zerrón. El río Tera es del conde de Benavente, y le rinde 200 reales al año.',
@@ -125,6 +151,20 @@ const EVENTOS = [
     img: { src: 'img/catastro-1752-f372.jpg', w: 720, h: 1054, scan: true, alt: 'Página manuscrita del Catastro de Ensenada de Colinas de Trasmonte, en letra caligráfica del siglo XVIII.', cap: 'Final de la respuesta 3.ª, con los lindes del término, e inicio de la 4.ª (AGS, libro 654, imagen 0372).' },
     tr: 'portada',
     f: 'AGS, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas Generales, libro 654, ff. 368-407 · ed. CEB «Ledo del Pozo», pp. 238-243' },
+
+  { id: 'ermita1756', era: 3, y: '1756', d: '6 de abril', s: 1756, n: 'visto',
+    t: 'Hay una ermita en el término',
+    q: '«componer la Ermita que ay en su territorio respectivo y ponerla decente de Ornatos»',
+    p: 'El obispo de Astorga escribe al conde-duque de Benavente: don Matheo Villalva, prestamero del de San Juan de Colinas de Trasmonte y <b>ahijado del propio conde-duque</b>, tiene que arreglarla. Y hay dada orden de retenerle «la Cota de 200 r[eale]s cada año» para pagar la obra.',
+    nota: 'La carta <b>no dice de qué advocación es la ermita</b>. El «San Juan Bautista» que trae el catálogo de PARES es del catálogo, no del papel. Y no se ha buscado todavía dónde estuvo ni cuándo se perdió.',
+    f: 'AHNOB, OSUNA, CT.271, D.21 · Astorga, 6 de abril de 1756' },
+
+  { id: 'aranda1768', era: 3, y: '1768', d: '1 de noviembre', s: 1768, n: 'visto',
+    t: 'Ciento catorce almas, contadas por el cura',
+    q: '«Parroquia de San Juan»',
+    p: 'Sesenta y un varones y cincuenta y tres hembras, con desglose por edad y estado. Ningún hidalgo. Tres eclesiásticos y un administrador del Estanco del Tabaco. La relación la escribe y la firma <b>el propio párroco</b>, y al poner el nombre de su parroquia hace retroceder <b>setenta y nueve años</b> la advocación de San Juan, que hasta ahora se tenía por Madoz y su diccionario de 1847. En los veintiuno de los veintitrés lugares del valle que traen desglose, varones más hembras da exactamente el total que el escribano anota al margen: ni un descuadre.',
+    nota: 'El documento dice <b>«San Juan» a secas</b>: el «Bautista» lo añade Madoz. Y San Juan es advocación corriente en el valle —tres parroquias de veintitrés—, así que el nombre no distingue nada: le quita al topónimo San Juan del término todo valor como indicio. La fecha de la relación, «en 1.º de noviembre de 1768», lleva [?].',
+    f: 'INE, Censo de Aranda, obispado de Astorga, asiento 173, R.A.H. 01-181' },
 
   { id: 'floridablanca', era: 3, y: '1787', s: 1787, n: 'visto',
     t: 'Ciento cincuenta y seis personas, y ningún hidalgo',
@@ -261,7 +301,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.9';
+const VERSION = '0.10';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -269,6 +309,16 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.10', f: '25 de septiembre de 2026', t: 'Seis entradas que cambian lo que la línea dice',
+    c: [
+      '🚨 <b>1073: Colinas aparece por su nombre.</b> «uilla que dicunt Colinas, in riba de Teira». Es la mención más antigua del pueblo que el proyecto conoce, <b>cuatrocientos setenta y ocho años</b> antes de lo que la línea daba por primero. Entra como <b>catalogada, sin leer</b>: la cita viene de un artículo, no del facsímil.',
+      '<b>1526: veinticinco vecinos pecheros.</b> La medición de población más antigua, sesenta y cinco años anterior al vecindario de 1591. <b>1591: veintiocho vecinos</b>, y exactamente el lugar mediano de los 117 de la provincia.',
+      '<b>1694: el cura de Colinas apela.</b> Obedece por fórmula y no cumple una orden del señor, con el Nuncio amenazando de excomunión. Es la primera resistencia escrita de alguien de Colinas.',
+      '<b>1756: hay una ermita en el término</b>, y hay dada orden de retener 200 reales al año para arreglarla. La carta no dice de qué advocación es.',
+      '<b>1768: ciento catorce almas, contadas por el cura.</b> Al escribir «Parroquia de San Juan» de su mano, la advocación retrocede <b>setenta y nueve años</b> respecto a Madoz.',
+      'El silencio documental se acorta: ya no va de 1170 a 1551, sino <b>de 1170 a 1526</b>. Y la escala lo calcula sola a partir de los datos, en vez de llevarlo escrito a mano.'
+    ],
+    p: 'De 33 entradas a <b>39</b>. Quedan dos tandas: el resto del pleito del Nuncio con el bloque eclesiástico, y la cola administrativa de 1834 a 2003.' },
   { v: '0.9', f: '25 de septiembre de 2026', t: 'Fuera el raíl del teléfono',
     c: [
       '<b>Se retira la barra de desplazamiento lateral</b> del teléfono —la línea del tiempo que hacía de scroll y se arrastraba—. La lámina recupera los 28 píxeles que tenía reservados a la derecha.',

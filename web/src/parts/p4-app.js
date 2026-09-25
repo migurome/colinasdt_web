@@ -3,7 +3,15 @@
   const $ = (s) => document.querySelector(s);
   const mk = (n) => `<span class="mk mk-${n}" aria-hidden="true"></span>`;
   const fmt = (v, d = 0) => v.toLocaleString('es-ES', { maximumFractionDigits: d, minimumFractionDigits: d });
-  const NOTA_T = { catastro: 'Respuesta 28.ª' };
+  const NOTA_T = {
+    catastro: 'Respuesta 28.ª',
+    d1073: 'Localizado, no leído',
+    pecheros1526: 'Dos lugares sin identificar',
+    c1591: 'La comarca, medida dos veces',
+    apela1694: 'El nombre, cuatro meses después',
+    ermita1756: 'La advocación no consta',
+    aranda1768: 'San Juan no distingue nada'
+  };
   const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
   /* Estado compartido: en teléfono y en la vista de la línea, el feed
@@ -139,9 +147,13 @@
     s += `<rect class="marco" x="${escX(X0)}" y="${barY}" width="${escX(X1) - escX(X0)}" height="8"/>`;
     for (let a = 200; a <= 2000; a += 200) s += `<text class="tick" x="${escX(a)}" y="${barY + 24}" text-anchor="middle">${a}</text>`;
     s += `<text class="tick" x="${escX(0)}" y="${barY + 24}" text-anchor="middle">a.C. | d.C.</text>`;
-    const g1 = escX(1170), g2 = escX(1551), gy = barY + 34;
+    /* el hueco sale del propio silencio de los datos: si entra un documento
+       dentro, la escala se estrecha sola y el rotulo cuenta bien */
+    const sil = EVENTOS.find((e) => e.sil);
+    const hv = sil ? String(sil.y).match(/\d+/g).map(Number) : [1170, 1526];
+    const g1 = escX(hv[0]), g2 = escX(hv[1]), gy = barY + 34;
     s += `<path class="brk" d="M${g1} ${gy} v6 H${g2} v-6"/>`;
-    s += `<text class="hueco" x="${(g1 + g2) / 2}" y="${gy + 20}" text-anchor="middle">381 años sin documentos</text>`;
+    s += `<text class="hueco" x="${(g1 + g2) / 2}" y="${gy + 20}" text-anchor="middle">${hv[1] - hv[0]} años sin documentos</text>`;
     orden.forEach((e) => {
       const cx = escX(e.s), cy = top + (R - 1 - e._fila) * RH + 6;
       let shape;
@@ -476,7 +488,9 @@
       this.RH = RH; this.RP = RP;
       const FORMA = { visto: 'tk', sinleer: 'tk', cotejar: 'tk tk-an', sinref: 'tk tk-te',
                       interp: 'tk tk-tj', propuesto: 'tk tk-an', contexto: 'tk tk-ol' };
-      const y1 = this.rY(1170), y2 = this.rY(1551);
+      const sl = EVENTOS.find((e) => e.sil);
+      const hv = sl ? String(sl.y).match(/\d+/g).map(Number) : [1170, 1526];
+      const y1 = this.rY(hv[0]), y2 = this.rY(hv[1]);
       let s = '';
       s += `<path class="fantasma" d="M14 ${RP} V${y1.toFixed(1)}"/>`;
       s += `<path class="vacio" d="M14 ${y1.toFixed(1)} V${y2.toFixed(1)}"/>`;

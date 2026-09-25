@@ -13,6 +13,36 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.10 — 25 de septiembre de 2026
+### Seis entradas que cambian lo que la línea dice
+
+Primera tanda del trabajo de poner la línea al día con la investigación. De **33 entradas a 39**.
+
+- 🚨 **1073: Colinas aparece por su nombre.** «*uilla que dicunt Colinas, in riba de Teira*». Es
+  la mención más antigua del pueblo que el proyecto conoce —**cuatrocientos setenta y ocho años**
+  antes de Martín Alonso, que era lo que la línea tenía por primero—. Entra marcada **catalogada,
+  sin leer**: la cita viene de un artículo, no del facsímil, y el diploma escribe «Colinas» a
+  secas.
+- **1526: veinticinco vecinos pecheros**, la medición de población más antigua. Y **1591:
+  veintiocho vecinos**, que es exactamente la mediana de los 117 lugares de la provincia.
+- **1694: el cura de Colinas apela.** Obedece por fórmula y no cumple, con el Nuncio amenazando de
+  excomunión mayor al provisor de Astorga. Primera resistencia escrita de alguien de Colinas a una
+  orden del señor.
+- **1756: hay una ermita en el término**, con 200 reales al año retenidos para arreglarla.
+- **1768: ciento catorce almas, contadas por el cura.** Al escribir «Parroquia de San Juan» de su
+  mano, la advocación retrocede **setenta y nueve años** respecto a Madoz. Y en veintiuno de los
+  veintitrés lugares del valle, varones más hembras cuadra con el total que el escribano anota al
+  margen.
+- **El silencio documental se acorta**: de 1170–1551 pasa a **1170–1526**, 356 años. La escala lo
+  calcula ahora a partir de los datos en vez de llevarlo escrito a mano, así que no vuelve a
+  quedarse viejo.
+
+> **Lo que falta.** El cotejo contra `docs/cronologia.md` dio **93 filas documentadas** frente a las
+> 34 entradas que había. Quedan **la tanda 2** —resto del pleito del Nuncio, 1757, 1772, 1804— y
+> **la tanda 3** —la cola administrativa de 1834 a 2003—.
+
+---
+
 ## v0.9 — 25 de septiembre de 2026
 ### Fuera el raíl del teléfono
 

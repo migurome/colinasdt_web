@@ -196,22 +196,24 @@ Los dos registros están pensados para trabajarse **por identificador**, sin reh
 
 ## 7. La web, y por qué va por detrás
 
-**Por decisión expresa: `web/src/` no se toca hasta nueva orden.** No es un descuido, y conviene
-tener medida la distancia.
+> **Puesto al día el 25-IX-2026.** La línea publicada tiene ya **39 entradas**: entró la
+> **tanda 1**, las seis que cambian lo que la línea dice —~~1073~~, ~~1526~~, ~~1591~~, ~~1694~~,
+> ~~1756~~ y ~~1768~~, tachadas abajo—. El cotejo completo contra `cronologia.md` dio **93 filas
+> documentadas frente a 34 entradas**: quedan por incorporar el resto del pleito del Nuncio y el
+> bloque eclesiástico (tanda 2) y la cola administrativa de 1834 a 2003 (tanda 3).
 
-La línea temporal publicada tiene **33 entradas** y refleja el estado del **22 de septiembre**. Desde
-entonces la investigación ha producido, entre otras cosas, **material para una veintena de entradas
-nuevas** que la web todavía no conoce:
+La línea temporal reflejaba el estado del **22 de septiembre**. La investigación había producido,
+entre otras cosas, **material para una veintena de entradas nuevas** que la web no conocía:
 
 | Lo que la línea no sabe | Peso |
 |---|---|
-| **1073** — Colinas por su nombre, «in riba de Teira» | 🚨🚨🚨 sería la entrada más antigua del pueblo |
+| ✅ ~~**1073** — Colinas por su nombre, «in riba de Teira» ~~ | 🚨🚨🚨 sería la entrada más antigua del pueblo |
 | **s. X** — la catedral de León con intereses en Colinas | ★★ |
-| **1526** · **1561/65** · **1571** · **1587** · **1591** | 🚨 **cinco recuentos y la mención más antigua en imagen**: hoy la línea salta de 1613 a 1752 |
-| **1694** — el Nuncio, la excomunión del provisor y **el cura de Colinas que apela** | 🚨🚨 |
-| **1756** — la carta del obispo y la ermita dotada con 200 reales | 🚨🚨 |
+| ✅ ~~**1526**~~ · **1561/65** · **1571** · **1587** · ✅ ~~**1591**~~ — entraron los dos recuentos, faltan los tres del medio | 🚨 |
+| ✅ ~~**1694** — el Nuncio, la excomunión del provisor y **el cura de Colinas que apela** ~~ | 🚨🚨 |
+| ✅ ~~**1756** — la carta del obispo y la ermita dotada con 200 reales ~~ | 🚨🚨 |
 | **1757** · **1772** · **1804** — las tres ejecutorias | ★★ |
-| **1768** — el Censo de Aranda: 114 almas, y el valle entero cuadrado | ★★ |
+| ✅ ~~**1768** — el Censo de Aranda: 114 almas, y el valle entero cuadrado ~~ | ★★ |
 | **1842** · **1848** — la copia y el cotejo judicial ante la Hacienda | ★★ |
 | **1860-1889** — la venta de los bienes de propios | ★ |
 
