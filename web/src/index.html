@@ -571,6 +571,26 @@ summary:hover{color:var(--almagre)}
   .lam .ev-fig{margin:0;max-width:none}
   .lam .ev-fig img{max-height:52svh;object-fit:contain}
   .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
+  /* ═══ Lámina de retrato ═════════════════════════════════════════
+     La cara sola, sin una palabra encima, en una banda diagonal sobre el
+     papel. Sólo aparece en las entradas que traen retrato, y siempre al
+     final del carrusel: se lee la entrada y luego se mira la cara.
+     El pie con el crédito va en la lámina del texto, no aquí: «limpio»
+     quiere decir limpio. */
+  .lam-ret{padding:0;grid-template-rows:1fr;background:var(--papel)}
+  .lam-ret .ret{position:absolute;inset:0;z-index:1;overflow:hidden;
+    clip-path:polygon(15% 0, 100% 0, 85% 100%, 0 100%)}
+  .lam-ret .ret img{display:block;width:100%;height:100%;object-fit:cover;
+    object-position:50% 20%}
+  /* el mismo grano del papel, también sobre la cara */
+  .lam-ret .ret::after{content:"";position:absolute;inset:0;pointer-events:none;
+    opacity:.42;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+  /* El filo de la diagonal: una capa del mismo recorte, un pelo más grande,
+     debajo de la imagen. Así el hilo sigue al corte sea cual sea la pantalla
+     —una línea girada un ángulo fijo no lo seguiría—. */
+  .lam-ret .ret-filo{position:absolute;inset:-1.5px;z-index:0;background:var(--filo-fuerte);
+    clip-path:polygon(15% 0, 100% 0, 85% 100%, 0 100%)}
+
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
   .l-sil p{font-style:italic;color:var(--apunte)}
@@ -1474,7 +1494,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.16';
+const VERSION = '0.17';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1482,6 +1502,14 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.17', f: '25 de septiembre de 2026', t: 'La cara sola, en diagonal',
+    c: [
+      '<b>Las seis entradas con retrato ganan una lámina más</b>: la cara sola, recortada en una banda diagonal sobre el papel, <b>sin una palabra encima</b>. Va la última del carrusel: primero se lee la entrada, luego se mira la cara.',
+      'El crédito —autor, obra, licencia— sigue estando, pero en la lámina del texto. Aquí «limpio» quiere decir limpio.',
+      'El grano del papel cae también sobre el retrato, como en las ilustraciones: así la cara parece impresa en la hoja y no pegada encima.',
+      'El filo de la diagonal es <b>una capa del mismo recorte</b>, un pelo más grande y puesta debajo. Una línea girada un ángulo fijo no seguiría al corte al cambiar de pantalla; esto sí.'
+    ],
+    p: 'Sólo la tienen las entradas con retrato de personaje: 1170, 1526, 1613, 1694, 1768 y 1787.' },
   { v: '0.16', f: '25 de septiembre de 2026', t: 'Seis caras para seis documentos',
     c: [
       '<b>Entran seis retratos de contexto</b>, todos en dominio público y traídos de Wikimedia Commons: Fernando II en el Tumbo A (1170), Carlos I por Tiziano (1526), Felipe III por Velázquez (1613), Inocencio XII (1694), el conde de Aranda (1768) y Floridablanca por Goya (1787).',
@@ -2006,7 +2034,7 @@ const VERSIONES = [
         if (base.querySelector('.lam-cuerpo').clientHeight < 80) return;
         const e = EVENTOS[i];
         /* se empieza de cero: fuera lo que dejo el reparto anterior */
-        Array.prototype.slice.call(car.querySelectorAll('.lam-cont')).forEach((x) => x.remove());
+        Array.prototype.slice.call(car.querySelectorAll('.lam-cont, .lam-ret')).forEach((x) => x.remove());
         Array.prototype.slice.call(car.querySelectorAll('.sigue')).forEach((x) => x.remove());
         let cuerpo = base.querySelector('.lam-cuerpo');
         cuerpo.innerHTML = '';
@@ -2048,9 +2076,22 @@ const VERSIONES = [
             cuerpo.appendChild(el);
           }
         });
+        /* Si la entrada trae retrato, una lamina mas al final: la cara sola,
+           en diagonal y sin texto. Va despues del reparto para que quede la
+           ultima, detras de las continuaciones. */
+        if (e.img && e.img.ctx) {
+          const r = document.createElement('section');
+          r.className = 'lam lam-ret';
+          r.setAttribute('aria-label', esc(e.img.alt));
+          r.innerHTML = '<div class="ret-filo" aria-hidden="true"></div>' +
+            '<div class="ret"><img src="' + e.img.src + '" width="' + e.img.w +
+            '" height="' + e.img.h + '" loading="lazy" alt=""></div>';
+          car.appendChild(r);
+        }
         const lams = car.querySelectorAll('.lam');
         lams.forEach((l, j) => {
           if (j === lams.length - 1) return;
+          if (!l.querySelector('.lam-pie')) return;   /* la del retrato no lleva pie */
           const av = document.createElement('span');
           av.className = 'sigue';
           av.textContent = 'sigue →';

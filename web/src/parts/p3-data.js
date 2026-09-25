@@ -601,7 +601,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.16';
+const VERSION = '0.17';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -609,6 +609,14 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.17', f: '25 de septiembre de 2026', t: 'La cara sola, en diagonal',
+    c: [
+      '<b>Las seis entradas con retrato ganan una lámina más</b>: la cara sola, recortada en una banda diagonal sobre el papel, <b>sin una palabra encima</b>. Va la última del carrusel: primero se lee la entrada, luego se mira la cara.',
+      'El crédito —autor, obra, licencia— sigue estando, pero en la lámina del texto. Aquí «limpio» quiere decir limpio.',
+      'El grano del papel cae también sobre el retrato, como en las ilustraciones: así la cara parece impresa en la hoja y no pegada encima.',
+      'El filo de la diagonal es <b>una capa del mismo recorte</b>, un pelo más grande y puesta debajo. Una línea girada un ángulo fijo no seguiría al corte al cambiar de pantalla; esto sí.'
+    ],
+    p: 'Sólo la tienen las entradas con retrato de personaje: 1170, 1526, 1613, 1694, 1768 y 1787.' },
   { v: '0.16', f: '25 de septiembre de 2026', t: 'Seis caras para seis documentos',
     c: [
       '<b>Entran seis retratos de contexto</b>, todos en dominio público y traídos de Wikimedia Commons: Fernando II en el Tumbo A (1170), Carlos I por Tiziano (1526), Felipe III por Velázquez (1613), Inocencio XII (1694), el conde de Aranda (1768) y Floridablanca por Goya (1787).',

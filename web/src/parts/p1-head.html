@@ -566,6 +566,26 @@ summary:hover{color:var(--almagre)}
   .lam .ev-fig{margin:0;max-width:none}
   .lam .ev-fig img{max-height:52svh;object-fit:contain}
   .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
+  /* ═══ Lámina de retrato ═════════════════════════════════════════
+     La cara sola, sin una palabra encima, en una banda diagonal sobre el
+     papel. Sólo aparece en las entradas que traen retrato, y siempre al
+     final del carrusel: se lee la entrada y luego se mira la cara.
+     El pie con el crédito va en la lámina del texto, no aquí: «limpio»
+     quiere decir limpio. */
+  .lam-ret{padding:0;grid-template-rows:1fr;background:var(--papel)}
+  .lam-ret .ret{position:absolute;inset:0;z-index:1;overflow:hidden;
+    clip-path:polygon(15% 0, 100% 0, 85% 100%, 0 100%)}
+  .lam-ret .ret img{display:block;width:100%;height:100%;object-fit:cover;
+    object-position:50% 20%}
+  /* el mismo grano del papel, también sobre la cara */
+  .lam-ret .ret::after{content:"";position:absolute;inset:0;pointer-events:none;
+    opacity:.42;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+  /* El filo de la diagonal: una capa del mismo recorte, un pelo más grande,
+     debajo de la imagen. Así el hilo sigue al corte sea cual sea la pantalla
+     —una línea girada un ángulo fijo no lo seguiría—. */
+  .lam-ret .ret-filo{position:absolute;inset:-1.5px;z-index:0;background:var(--filo-fuerte);
+    clip-path:polygon(15% 0, 100% 0, 85% 100%, 0 100%)}
+
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
   .l-sil p{font-style:italic;color:var(--apunte)}

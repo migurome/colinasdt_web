@@ -13,6 +13,25 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.17 — 25 de septiembre de 2026
+### La cara sola, en diagonal
+
+- **Las seis entradas con retrato ganan una lámina más**: la cara sola, recortada en una banda
+  diagonal sobre el papel, **sin una palabra encima**. Va la última del carrusel —primero se lee
+  la entrada, después se mira la cara— y sólo aparece donde hay retrato de personaje: 1170, 1526,
+  1613, 1694, 1768 y 1787.
+- **El crédito no se pierde**: autor, obra y licencia siguen escritos en la lámina del texto de la
+  misma entrada. Aquí «limpio» quiere decir limpio, y la lámina no lleva ni pie ni sello.
+- El grano del papel cae también sobre el retrato, como ya caía sobre la ilustración de 1006: es
+  lo que hace que la cara parezca impresa en la hoja y no pegada encima.
+- **El filo de la diagonal es una capa del mismo recorte**, un pelo más grande y puesta debajo. La
+  primera versión usaba dos líneas giradas un ángulo fijo, y eso no podía funcionar: el ángulo
+  real del corte depende de la proporción de la pantalla, y las líneas se habrían despegado del
+  borde en cuanto cambiara.
+- El aviso de «sigue» no se escribe en la lámina del retrato, que no tiene pie donde ponerlo.
+
+---
+
 ## v0.16 — 25 de septiembre de 2026
 ### Seis caras para seis documentos
 

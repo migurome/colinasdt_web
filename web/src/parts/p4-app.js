@@ -383,7 +383,7 @@
         if (base.querySelector('.lam-cuerpo').clientHeight < 80) return;
         const e = EVENTOS[i];
         /* se empieza de cero: fuera lo que dejo el reparto anterior */
-        Array.prototype.slice.call(car.querySelectorAll('.lam-cont')).forEach((x) => x.remove());
+        Array.prototype.slice.call(car.querySelectorAll('.lam-cont, .lam-ret')).forEach((x) => x.remove());
         Array.prototype.slice.call(car.querySelectorAll('.sigue')).forEach((x) => x.remove());
         let cuerpo = base.querySelector('.lam-cuerpo');
         cuerpo.innerHTML = '';
@@ -425,9 +425,22 @@
             cuerpo.appendChild(el);
           }
         });
+        /* Si la entrada trae retrato, una lamina mas al final: la cara sola,
+           en diagonal y sin texto. Va despues del reparto para que quede la
+           ultima, detras de las continuaciones. */
+        if (e.img && e.img.ctx) {
+          const r = document.createElement('section');
+          r.className = 'lam lam-ret';
+          r.setAttribute('aria-label', esc(e.img.alt));
+          r.innerHTML = '<div class="ret-filo" aria-hidden="true"></div>' +
+            '<div class="ret"><img src="' + e.img.src + '" width="' + e.img.w +
+            '" height="' + e.img.h + '" loading="lazy" alt=""></div>';
+          car.appendChild(r);
+        }
         const lams = car.querySelectorAll('.lam');
         lams.forEach((l, j) => {
           if (j === lams.length - 1) return;
+          if (!l.querySelector('.lam-pie')) return;   /* la del retrato no lleva pie */
           const av = document.createElement('span');
           av.className = 'sigue';
           av.textContent = 'sigue →';
