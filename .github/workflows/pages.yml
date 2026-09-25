@@ -1,0 +1,62 @@
+name: Publicar la web en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  montar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Montar el sitio
+        run: |
+          set -eu
+          mkdir -p _site
+          # La portada, que reparte a las tres piezas
+          cp web/pages-index.html _site/index.html
+          # La web propiamente dicha, tal cual está en web/src
+          mkdir -p _site/sitio
+          cp -r web/src/. _site/sitio/
+          # El prototipo de estilo aprobado
+          mkdir -p _site/estilo
+          cp -r web/estilo/. _site/estilo/
+          # La prueba de lectura en el móvil
+          mkdir -p _site/movil
+          cp -r web/prueba-movil/. _site/movil/
+          # Fuera del sitio publicado: piezas de trabajo, no de lectura
+          rm -f _site/movil/plantilla.html _site/movil/artifact.html _site/movil/build-prueba.py
+          rm -f _site/estilo/index.html.bak
+          rm -rf _site/sitio/parts
+          # Sin Jekyll: el sitio es HTML plano
+          touch _site/.nojekyll
+          echo "— montado —"
+          find _site -maxdepth 2 -type d | sort
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  publicar:
+    needs: montar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4

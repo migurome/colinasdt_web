@@ -1,4 +1,12 @@
-# Ficheros temporales de los scripts de edición (se escriben .tmp y se mueven)
+# El proyecto entra entero en el repositorio: facsímiles, cartografía,
+# bibliografía y trabajo propio. La procedencia de cada pieza está en
+# CREDITOS.md y, con su signatura, en docs/facsimiles.md.
+#
+# ⚠️ PENDIENTE: acreditar cada reproducción junto a la imagen, y fijar la
+# licencia del trabajo propio. Registrado como TAR-24 y TAR-25 en
+# docs/03-archivos/material-pendiente.tsv.
+
+# Temporales de los scripts de edición (se escribe .tmp y se mueve)
 *.tmp
 
 # Basura del sistema
@@ -6,7 +14,7 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
-# Entornos y cachés de Python, si alguna vez se usan
+# Python
 __pycache__/
 *.pyc
 .venv/
