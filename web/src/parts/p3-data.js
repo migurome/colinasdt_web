@@ -274,7 +274,7 @@ const EVENTOS = [
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 1865, ctx: true,
       alt: 'Retrato del conde de Aranda con casaca azul bordada y banda roja, sobre una cartela con su título.',
-      cap: 'El conde de Aranda, presidente del Consejo de Castilla. El recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <span class="mono"> · Wikimedia Commons, Public domain</span>' },
+      cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>No es un retrato del natural</b>: es una copia decimonónica, de hacia 1878, del que pintó Joaquín Inza. <span class="mono">Francisco Jover y Casanova · Museo del Prado, P003445 · Wikimedia Commons, dominio público</span>' },
     tr: 'portada',
     f: 'INE, Censo de Aranda, obispado de Astorga, asiento 173, R.A.H. 01-181' },
 
@@ -601,7 +601,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.21';
+const VERSION = '0.22';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -609,6 +609,13 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.22', f: '25 de septiembre de 2026', t: 'Quién pintó al conde de Aranda',
+    c: [
+      '⚠️ <b>El retrato de 1768 no es del natural</b>, y ahora lo dice. Es una <b>copia decimonónica</b>, de hacia 1878, que Francisco Jover y Casanova hizo del retrato de Joaquín Inza. Museo del Prado, P003445.',
+      'El crédito estaba incompleto por un fallo mío: el catálogo de Commons devolvía <b>autor y fecha en blanco</b> para ese fichero, y el descargador se lo creyó. Los datos estaban en la página, no en el catálogo.',
+      'La mirada extraña que tiene se explica sola: es la de un copista de 1878 mirando otro cuadro, ochenta años después de morir el retratado.'
+    ],
+    p: 'No es una imagen generada. Conviene decirlo porque la pregunta era razonable.' },
   { v: '0.21', f: '25 de septiembre de 2026', t: 'El texto empieza arriba del todo',
     c: [
       '<b>Fuera la banda de arriba de la lámina</b> —el rótulo de la era y el sello de grado de prueba—. El texto arranca en lo alto y gana esa franja entera.',

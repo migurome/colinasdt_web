@@ -13,6 +13,24 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.22 — 25 de septiembre de 2026
+### Quién pintó al conde de Aranda
+
+- ⚠️ **El retrato de 1768 no es un retrato del natural**, y ahora la web lo dice. Es una
+  **copia decimonónica**, de hacia 1878, que **Francisco Jover y Casanova** hizo del retrato
+  de **Joaquín Inza** conservado en la Colección de la Casa de Alba. Museo del Prado,
+  **P003445**, depositado en el Instituto de España.
+- **El crédito estaba incompleto por un fallo del descargador.** El catálogo de Commons
+  devolvía **autor y fecha en blanco** para ese fichero, y `gen-retratos.py` escribió lo que
+  le dieron sin comprobarlo. Los datos sí estaban, pero en la página del fichero, no en los
+  metadatos. Corregido en la web y en
+  [`docs/03-archivos/retratos-commons.tsv`](docs/03-archivos/retratos-commons.tsv).
+- **No es una imagen generada.** La pregunta era razonable —la mirada es rara— y la
+  explicación está en la propia ficha: es la de un copista de 1878 mirando otro cuadro,
+  ochenta años después de morir el retratado.
+
+---
+
 ## v0.21 — 25 de septiembre de 2026
 ### El texto empieza arriba del todo
 
