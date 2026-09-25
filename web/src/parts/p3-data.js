@@ -238,10 +238,19 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.4';
+const VERSION = '0.5';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.5', f: '25 de septiembre de 2026', t: 'Una entrada, una lámina',
+    c: [
+      '<b>Las láminas se colapsan en una sola.</b> Antes cada campo —texto, cita, imagen, cautela, fuente— se llevaba una pantalla entera, aunque fuese una línea: había entradas con cuatro láminas casi vacías. Ahora todo va junto mientras quepa, y <b>sólo lo que desborda</b> abre la lámina siguiente.',
+      'El texto se parte por frases, y <b>sin romper los realces</b>: el corte nunca cae dentro de una palabra marcada.',
+      '<b>El sello de grado de prueba sale una sola vez</b>, arriba a la derecha de la primera lámina. Antes se repetía en cada lámina y otra vez junto a la fuente.',
+      'La fuente completa va dentro de la lámina, así que <b>el pie deja de repetirla</b> ahí donde ya está.',
+      'El reparto se rehace también <b>al cambiar de filtro</b>: una entrada oculta no se puede medir.'
+    ],
+    p: 'Sigue pendiente lo mismo: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.4', f: '25 de septiembre de 2026', t: 'La lámina lleva ya la entrada entera',
     c: [
       '⚠️ <b>Corregido: el menú se quedaba abierto.</b> Una regla de estilo le ganaba al atributo que lo oculta, así que la lista se veía sin haberla pulsado. Ahora sólo se despliega al pulsar las tres rayas.',

@@ -168,24 +168,47 @@
      Las láminas no se inventan: cada una es un campo que la entrada ya tiene. */
   const Feed = {
     montado: false,
-    laminasDe(e) {
-      const L = ['texto'];                 /* fecha + titulo + prosa */
-      if (e.q) L.push('cita');
-      if (e.img) L.push('imagen');
-      if (e.nota) L.push('nota');
-      if (e.f) L.push('firma');
-      return L;
+    /* Los bloques de una entrada, en orden. No se inventa ninguno: cada uno
+       es un campo que la entrada ya tenia. Van todos juntos mientras quepan. */
+    bloques(e) {
+      const B = [];
+      B.push(`<div class="cab-ev"><span class="anio">${esc(e.y)}</span>${
+        e.d ? `<span class="dia">${esc(e.d)}</span>` : ''}<h4>${e.t}</h4></div>`);
+      if (e.p) B.push(`<p class="prosa">${e.p}</p>`);
+      if (e.link) B.push(`<p class="fuente enlace">En esta página: ${e.link.t}</p>`);
+      if (e.q) B.push(`<p class="cita">${e.q}</p>`);
+      if (e.img) {
+        B.push(`<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${
+          e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`);
+      }
+      if (e.nota) B.push(`<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>`);
+      if (e.f) {
+        B.push(`<div class="bl-firma"><span class="caps">Fuente</span><p class="fuente">${e.f}</p></div>`);
+      }
+      return B;
     },
-    /* Parte un texto en frases, sin lookbehind: no todos los telefonos
-       lo admiten todavia. */
+    /* Parte en frases sin romper el marcado: no corta dentro de una etiqueta
+       ni con un <b> abierto. Sin lookbehind, que no todos los telefonos lo
+       admiten todavia. */
     frases(t) {
-      const out = [];
-      let buf = '';
-      String(t).split(' ').forEach((w) => {
-        buf += (buf ? ' ' : '') + w;
-        if (/[.:;»!?]$/.test(w)) { out.push(buf); buf = ''; }
-      });
-      if (buf) out.push(buf);
+      const s = String(t), out = [];
+      let buf = '', dentro = false, abiertas = 0, cierra = false;
+      for (let i = 0; i < s.length; i++) {
+        const c = s.charAt(i);
+        buf += c;
+        if (c === '<') { dentro = true; cierra = s.charAt(i + 1) === '/'; continue; }
+        if (c === '>') {
+          dentro = false;
+          if (cierra) abiertas--; else if (s.charAt(i - 1) !== '/') abiertas++;
+          continue;
+        }
+        if (dentro || abiertas > 0) continue;
+        if (/[.:;»!?]/.test(c) && (i + 1 >= s.length || s.charAt(i + 1) === ' ')) {
+          if (buf.trim()) out.push(buf.trim());
+          buf = '';
+        }
+      }
+      if (buf.trim()) out.push(buf.trim());
       return out;
     },
     firmaCorta(f) {
@@ -194,41 +217,15 @@
       const c = t.slice(0, 66);
       return c.slice(0, c.lastIndexOf(' ')) + '…';
     },
-    cabecera(e) {
+    /* El sello de grado de prueba sale una sola vez, en la primera lamina */
+    cabecera(e, sello) {
       const era = eraDe(e.era);
-      return `<div class="lam-top"><span class="era-n">${esc(era ? era.t : '')}</span>
-        <span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span></div>`;
+      return `<div class="lam-top"><span class="era-n">${esc(era ? era.t : '')}</span>${
+        sello ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : ''}</div>`;
     },
     pie(e) {
       return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>
         <span class="t">${esc(this.firmaCorta(e.f || ''))}</span></div>`;
-    },
-    cuerpo(e, k) {
-      switch (k) {
-        case 'texto':
-          return `<div class="lam-cuerpo arriba">
-            <div class="cab-ev">
-              <span class="anio">${esc(e.y)}</span>
-              ${e.d ? `<span class="dia">${esc(e.d)}</span>` : ''}
-              <h4>${e.t}</h4>
-            </div>
-            <p class="prosa">${e.p}</p>
-            ${e.link ? `<p class="fuente">En esta página: ${e.link.t}</p>` : ''}
-          </div>`;
-        case 'cita':
-          return `<div class="lam-cuerpo l-cita"><p class="cita">${e.q}</p></div>`;
-        case 'imagen':
-          return `<div class="lam-cuerpo l-img"><figure class="ev-fig">
-            <img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}">
-            <figcaption>${e.img.cap}</figcaption></figure></div>`;
-        case 'nota':
-          return `<div class="lam-cuerpo l-nota arriba"><p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p></div>`;
-        case 'firma':
-          return `<div class="lam-cuerpo l-firma arriba"><span class="caps">Fuente</span>
-            <p class="fuente">${e.f}</p>
-            <p class="grado">${mk(e.n)}${NIVELES[e.n].t}</p></div>`;
-      }
-      return '';
     },
     montar() {
       if (this.montado) return;
@@ -243,12 +240,13 @@
           </div></div></article>`;
           return;
         }
-        const L = this.laminasDe(e);
-        const lams = L.map((k) => `<section class="lam lam-${k}" aria-label="${esc(e.y + ' · ' + k)}">${
-          this.cabecera(e)}${this.cuerpo(e, k)}${this.pie(e)}</section>`).join('');
+        /* una lamina de partida con todo dentro; repartir() decide si desborda */
+        const lam = `<section class="lam lam-1" aria-label="${esc(e.y + ' · ' + e.t)}">${
+          this.cabecera(e, true)}<div class="lam-cuerpo arriba">${
+          this.bloques(e).join('')}</div>${this.pie(e)}</section>`;
         h += `<article class="post" id="post-${e.id}" data-i="${i}" data-n="${e.n}">
           <div class="puntos" aria-hidden="true"></div>
-          <div class="carrusel" tabindex="0" aria-label="${esc(e.y + ': ' + e.t)}">${lams}</div></article>`;
+          <div class="carrusel" tabindex="0" aria-label="${esc(e.y + ': ' + e.t)}">${lam}</div></article>`;
       });
       h = `<article class="post post-portada" data-i="-1">
           <div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span></div>
@@ -303,53 +301,77 @@
       this.filtrar(filtroActual);
       this.pinta(0);
     },
-    /* Lo que no cabe en la pantalla pasa al carrusel. Se mide sobre la
-       lamina ya dispuesta: si el texto desborda, se retiran frases y se
-       abren laminas de continuacion. */
+    /* Todo lo de la entrada va en una sola lamina mientras quepa. El reparto
+       se mide sobre la pantalla real: lo que desborda abre la siguiente, el
+       texto partido por frases y los demas bloques enteros. */
     repartir() {
       if (!this.montado) return;
-      const sonda = this.feed.querySelector('.lam-texto .lam-cuerpo');
-      if (!sonda || sonda.clientHeight < 80) return;      /* aun sin disponer */
+      const nodo = (h) => {
+        const d = document.createElement('div');
+        d.innerHTML = h;
+        return d.firstElementChild;
+      };
       this.posts.forEach((post) => {
         const i = +post.dataset.i;
-        if (i < 0) return;
+        if (i < 0 || post.classList.contains('post-sil')) return;
         const car = post.querySelector('.carrusel');
-        const base = car.querySelector('.lam-texto');
+        const base = car.querySelector('.lam-1');
         if (!base) return;
+        /* oculta por el filtro, o aun sin disponer: no hay nada que medir */
+        if (base.querySelector('.lam-cuerpo').clientHeight < 80) return;
         const e = EVENTOS[i];
+        /* se empieza de cero: fuera lo que dejo el reparto anterior */
         Array.prototype.slice.call(car.querySelectorAll('.lam-cont')).forEach((x) => x.remove());
         Array.prototype.slice.call(car.querySelectorAll('.sigue')).forEach((x) => x.remove());
-
-        const pro = base.querySelector('.prosa');
-        if (!pro) return;
-        const fr = this.frases(e.p);
-        const ref = base.nextSibling;
-        let lam = base, destino = pro, idx = 0, guarda = 0;
-        destino.textContent = '';
-        while (idx < fr.length && guarda < 12) {
-          const cuerpo = lam.querySelector('.lam-cuerpo');
-          const antes = destino.textContent;
-          destino.textContent = antes + (antes ? ' ' : '') + fr[idx];
-          if (cuerpo.scrollHeight > cuerpo.clientHeight + 1) {
-            if (!antes) { idx++; continue; }   /* una frase sola que no cabe: se deja */
-            destino.textContent = antes;
-            lam = this.laminaCont(e);
-            car.insertBefore(lam, ref);
-            destino = lam.querySelector('.prosa');
-            destino.textContent = '';
-            guarda++;
-          } else {
-            idx++;
+        let cuerpo = base.querySelector('.lam-cuerpo');
+        cuerpo.innerHTML = '';
+        let abiertas = 0;
+        const cabe = () => cuerpo.scrollHeight <= cuerpo.clientHeight + 1;
+        /* tope de laminas por entrada: antes de perder texto, la lamina rueda */
+        const nueva = () => {
+          if (abiertas >= 14) return false;
+          abiertas++;
+          const l = this.laminaCont(e);
+          car.appendChild(l);
+          cuerpo = l.querySelector('.lam-cuerpo');
+          return true;
+        };
+        this.bloques(e).forEach((html) => {
+          let el = nodo(html);
+          cuerpo.appendChild(el);
+          if (cabe()) return;
+          if (el.classList.contains('prosa')) {
+            const fr = this.frases(el.innerHTML);
+            el.innerHTML = '';
+            let j = 0;
+            while (j < fr.length) {
+              const antes = el.innerHTML;
+              el.innerHTML = antes + (antes ? ' ' : '') + fr[j];
+              /* una frase sola que no cabe se deja: rueda antes que desaparecer */
+              if (cabe() || !antes) { j++; continue; }
+              el.innerHTML = antes;
+              if (!nueva()) { el.innerHTML = antes + ' ' + fr.slice(j).join(' '); break; }
+              el = nodo('<p class="prosa sigo"></p>');
+              cuerpo.appendChild(el);
+            }
+            return;
           }
-        }
-        const textos = car.querySelectorAll('.lam-texto, .lam-cont');
-        textos.forEach((t, j) => {
-          if (j < textos.length - 1) {
-            const av = document.createElement('span');
-            av.className = 'sigue';
-            av.textContent = 'sigue →';
-            t.querySelector('.lam-pie').appendChild(av);
+          /* cita, imagen, cautela y fuente no se parten: pasan enteras */
+          if (cuerpo.children.length > 1) {
+            cuerpo.removeChild(el);
+            nueva();                         /* si no cabe otra lamina, vuelve a esta */
+            cuerpo.appendChild(el);
           }
+        });
+        const lams = car.querySelectorAll('.lam');
+        lams.forEach((l, j) => {
+          /* la firma entera ya esta en la lamina: el pie no la repite */
+          l.classList.toggle('con-firma', !!l.querySelector('.bl-firma'));
+          if (j === lams.length - 1) return;
+          const av = document.createElement('span');
+          av.className = 'sigue';
+          av.textContent = 'sigue →';
+          l.querySelector('.lam-pie').appendChild(av);
         });
       });
       this.puntos();
@@ -357,9 +379,10 @@
     laminaCont(e) {
       const d = document.createElement('section');
       d.className = 'lam lam-cont';
-      d.setAttribute('aria-label', e.y + ' · continuacion');
-      d.innerHTML = this.cabecera(e) +
-        '<div class="lam-cuerpo arriba"><p class="prosa"></p></div>' + this.pie(e);
+      d.setAttribute('aria-label', e.y + ' · continuación');
+      /* sin sello: el grado de prueba se dice una vez, arriba del todo */
+      d.innerHTML = this.cabecera(e, false) +
+        '<div class="lam-cuerpo arriba"></div>' + this.pie(e);
       return d;
     },
     puntos() {
@@ -511,6 +534,8 @@
       this.feed.scrollTop = 0;
       this.actual = -1;
       this.pinta(0);
+      /* las que estaban ocultas no se pudieron medir: se reparten al salir */
+      if (Estado.movil) requestAnimationFrame(() => this.repartir());
     }
   };
 
@@ -520,7 +545,7 @@
     const sec = $('#linea'), p = $('#linea-p');
     const TXT = {
       doc: 'La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.',
-      feed: 'Una entrada por pantalla: desliza hacia arriba para pasar a la siguiente y hacia el lado para ver la cita, la imagen, la cautela y la fuente. La línea del tiempo de la derecha es la barra de desplazamiento: arrástrala.'
+      feed: 'Una entrada por pantalla, entera: desliza hacia arriba para pasar a la siguiente. Sólo cuando no cabe —porque el texto es largo o lleva cita o imagen— continúa al lado. La línea del tiempo de la derecha es la barra de desplazamiento: arrástrala.'
     };
     function ajustar() {
       Estado.movil = mq.matches;

@@ -13,6 +13,31 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.5 — 25 de septiembre de 2026
+### Una entrada, una lámina
+
+- **Las láminas se colapsan en una sola.** Cada campo de la entrada —texto, cita, imagen, cautela,
+  fuente— se llevaba antes una pantalla entera aunque fuese una línea: había entradas con cuatro
+  láminas casi vacías. Ahora **todos los bloques van juntos mientras quepan**, y sólo lo que
+  desborda abre la lámina siguiente. Con 33 entradas que llevan firma, eso eliminaba por sí solo
+  una lámina en cada una.
+- El reparto **no se calcula, se mide**: se van añadiendo bloques hasta que la lámina desborda. El
+  texto se parte por frases; la cita, la imagen, la cautela y la fuente pasan enteras.
+- El partidor de frases **respeta el marcado**: no corta dentro de una etiqueta ni con un realce
+  abierto, así que los destacados del texto dejan de perderse al repartir.
+- ⚠️ **El sello de grado de prueba sale una sola vez**, arriba a la derecha de la primera lámina.
+  Antes se repetía en todas y, además, junto a la fuente. Esto deshace en parte lo decidido en la
+  0.1 —que el sello viajase en cada lámina, porque una lámina se comparte suelta—; al ir la entrada
+  entera en una sola lámina, el sello sigue yendo con ella.
+- La fuente completa va ahora dentro de la lámina, así que **el pie deja de repetirla** donde ya
+  está escrita.
+- El reparto se rehace también **al cambiar de filtro**: una entrada oculta no se puede medir.
+
+> ⚠️ **Estado del contenido, sin cambios**: faltan por incorporar a la línea **1073, 1526, 1591,
+> 1694, 1756 y 1768**.
+
+---
+
 ## v0.4 — 25 de septiembre de 2026
 ### La lámina lleva ya la entrada entera
 
