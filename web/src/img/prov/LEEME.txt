@@ -1,0 +1,4 @@
+Imágenes provisionales, generadas por web/gen-dummies.py.
+No son ilustraciones ni documentos: son marcadores de sitio.
+El color es la era; la trama, el grado de prueba.
+Se sustituyen borrando el fichero y poniendo la imagen buena.

@@ -13,6 +13,32 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.14 — 25 de septiembre de 2026
+### Las fuentes, a su propia página
+
+- **La firma de archivo sale de la lámina del teléfono.** Ocupaba media pantalla en cada entrada.
+  Vive ahora entera en **«Las fuentes»**, una página propia del menú, agrupada por eras y con el
+  grado de prueba de cada una: **sesenta entradas, sesenta firmas**. No se pierde ninguna por
+  haber cambiado de sitio.
+- ⚠️ **Lo que no sale de la lámina es el sello del grado de prueba**, ni la cautela de que un
+  dibujo no es prueba. Esto deshace en parte lo decidido en la 0.1 —que la fuente viajase en cada
+  lámina—, y conviene decir por qué se puede: lo que impedía que una propuesta circulase como un
+  hecho no era la signatura, era **el sello**. Y el sello sigue arriba a la derecha.
+- En pantalla grande, **la línea sigue llevando su fuente junto a cada entrada**. Ahí es un
+  documento y la firma está en su sitio; el problema era el feed.
+- **Las sesenta entradas tienen ya imagen.** Cincuenta y tres son **provisionales**, y lo dicen en
+  el pie de la lámina. Son tramas abstractas **sin una sola letra**, para que no puedan
+  confundirse con un facsímil: el **color es la era** —de la paleta de «Materia para un
+  emblema»— y la **trama es el grado de prueba**. Las tres tramas —pastilla, roseta y
+  retícula— no se inventan: son las tres únicas ornamentaciones que ha devuelto el suelo de
+  Colinas.
+- Las genera [`web/gen-dummies.py`](web/gen-dummies.py) y se sustituyen una a una: basta poner la
+  imagen buena en su sitio.
+- El antiguo «Fuentes y créditos» pasa a llamarse **«Créditos y permisos»**, para no confundirse
+  con la página nueva.
+
+---
+
 ## v0.13 — 25 de septiembre de 2026
 ### Saltar de un tiempo a otro
 

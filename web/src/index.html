@@ -386,6 +386,30 @@ summary:hover{color:var(--almagre)}
   .vsn-n span{margin-top:0}
 }
 
+/* ═══════════ LAS FUENTES ═══════════
+   La firma de archivo salió de la lámina del teléfono —ocupaba media
+   pantalla en cada entrada— y vive aquí entera, agrupada por eras. */
+.fuentes{display:grid;gap:clamp(13px,2vw,20px);max-width:74ch}
+.fu-era{display:flex;gap:14px;align-items:baseline;font-size:1rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.2em;color:var(--teja);
+  margin-top:clamp(14px,2.4vw,28px);padding-bottom:7px;border-bottom:1px solid var(--filo-fuerte)}
+.fu-era:first-child{margin-top:0}
+.fu-era span{margin-left:auto;font-size:.75rem;font-weight:600;letter-spacing:.14em;
+  color:var(--tenue);white-space:nowrap}
+.fu{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:0 var(--gap-tl)}
+.fu-a{grid-column:1;text-align:right;color:var(--teja);font-size:1.25rem;line-height:1.25}
+.fu-c{grid-column:2;min-width:0;display:grid;gap:.25em}
+.fu-c h4{font-size:1.0625rem;line-height:1.25;color:var(--almagre)}
+.fu-c .nivel{display:inline-flex;align-items:center;gap:8px;font-size:.6875rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tenue)}
+.fu-c .nivel .mk{width:10px;height:10px;border-width:1.5px}
+.fu-c .fuente{max-width:none}
+@media (max-width:640px){
+  .fu{grid-template-columns:1fr;gap:.2em}
+  .fu-a{grid-column:1;text-align:left;font-size:1.4rem}
+  .fu-c{grid-column:1}
+}
+
 /* ═══════════ PIE ═══════════ */
 .pie{padding-block:clamp(30px,5vw,64px);border-top:1px solid var(--filo-fuerte);
   display:grid;gap:.7em;max-width:78ch}
@@ -515,8 +539,6 @@ summary:hover{color:var(--almagre)}
   .t-portada .cita{background:rgba(20,14,8,.45);border-left-color:#D9B9A8;
     color:var(--papel-alto)}
   .t-portada .fuente{color:rgba(244,232,204,.78)}
-  .t-portada .bl-firma{border-top-color:rgba(244,232,204,.32)}
-  .t-portada .bl-firma .caps{color:rgba(244,232,204,.66)}
   .t-portada .lam-pie,.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.34)}
   .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
   .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
@@ -549,11 +571,6 @@ summary:hover{color:var(--almagre)}
   .lam .ev-fig{margin:0;max-width:none}
   .lam .ev-fig img{max-height:52svh;object-fit:contain}
   .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
-  .bl-firma{display:grid;gap:4px;border-top:1px solid var(--filo);padding-top:9px}
-  .bl-firma .caps{color:var(--tenue)}
-  .bl-firma .fuente{margin:0;font-size:.8125rem;color:var(--tinta-2)}
-  /* la fuente entera ya está en la lámina: el pie no la repite */
-  .lam.con-firma .lam-pie .t{display:none}
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
   .l-sil p{font-style:italic;color:var(--apunte)}
@@ -596,7 +613,8 @@ summary:hover{color:var(--almagre)}
     <a href="#emblema" data-v="emblema">Materia para un emblema</a>
     <a href="#falta" data-v="falta">Lo que falta</a>
     <a href="#versiones" data-v="versiones" id="idx-versiones">Versiones</a>
-    <a href="#creditos" data-v="creditos">Fuentes y créditos</a>
+    <a href="#fuentes" data-v="fuentes">Las fuentes</a>
+    <a href="#creditos" data-v="creditos">Créditos y permisos</a>
     <div class="menu-eras" id="menu-eras" hidden></div>
   </nav>
 </div>
@@ -823,11 +841,23 @@ summary:hover{color:var(--almagre)}
   <div class="versiones" id="lista-versiones"></div>
 </section>
 </div>
+<div class="vista vista-sec" id="v-fuentes">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
+<section class="wrap sec" id="fuentes" aria-labelledby="fuentes-t">
+  <div class="sec-head">
+    <span class="caps" id="fuentes-n">—</span>
+    <h2 id="fuentes-t">Las fuentes</h2>
+    <p>De dónde sale cada entrada de la línea, con su signatura y su grado de prueba. En el teléfono la lectura va sin ellas, porque una firma de archivo ocupa media pantalla; pero no se pierden: están aquí enteras, y ninguna entrada se queda sin la suya.</p>
+  </div>
+  <div class="fuentes" id="fuentes-lista"></div>
+</section>
+</div>
+
 </main>
 <div class="vista vista-sec" id="v-creditos">
   <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <footer class="wrap pie">
-  <span class="caps">Fuentes y créditos</span>
+  <span class="caps">Créditos y permisos</span>
   <p>Archivo General de Simancas, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas Generales, libro 654, ff. 368-407 (PARES, Ministerio de Cultura). Texto según la edición de P. A. de Diego González y F. Manzano Ledesma, Centro de Estudios Benaventanos «Ledo del Pozo», pp. 238-243.</p>
   <p>Censo de 1787 «Floridablanca», edición del Instituto Nacional de Estadística (Madrid, 1989), tomo 3-B, provincia de Zamora, pueblo nº 103. Sebastián de Miñano, Diccionario geográfico-estadístico de España y Portugal, tomo III (Madrid, 1826), p. 142, por el ejemplar digitalizado de la Universidad de Granada.</p>
   <p>Los diplomas de Castroferrol se citan por Rafael González Rodríguez, «Castroferrol, un enclave monástico altomedieval en el valle del Tera», Brigecio. Revista de Estudios de Benavente y sus Tierras, 10 (2000), pp. 33-44, cuyo apéndice documental sigue —con correcciones del autor— las ediciones de E. Sáez y C. Sáez Sánchez (Catedral de León, II, 1990) y de G. Cavero Domínguez y E. Martín López (Catedral de Astorga, I, 1999). Las menciones de 1060, 1129 y 1170 remiten a J. M. Ruiz Asencio (Catedral de León, IV) y a A. Quintana Prieto, Santa Marta de Tera (1991). Ninguna de esas ediciones se ha consultado directamente todavía.</p>
@@ -871,6 +901,9 @@ const EVENTOS = [
   { id: 'petavonium', era: 1, y: '19 a.C.', s: -19, n: 'contexto',
     t: 'Petavonium, a quince kilómetros',
     p: 'Campamento de la Legio X Gemina en Rosinos de Vidriales, y después del Ala II Flavia, hasta mediados del siglo III. No es Colinas: es el mundo romano que la rodea, y así hay que contarlo.',
+    ilu: { src: 'img/prov/petavonium.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Contexto regional · inventario, §9' },
 
   { id: 'tardorromano', era: 1, y: 's. IV–V', s: 400, n: 'visto',
@@ -883,17 +916,26 @@ const EVENTOS = [
     t: 'Una viña en «villa Kastro Ferronio»',
     p: 'Rauper y su mujer Mansuara donan a Nuño Sarracíniz y a su mujer Gudigeva una viña que habían comprado a Donelo, «cerca del riachuelo Almucera». Linda con la viña de Iahia, con el término de Amor y con el de Fortes, y mide una aranzada. Es la mención más antigua del lugar, y todavía no hay monasterio: es un trato entre particulares.',
     nota: 'Que la viña esté junto al Almucera es lo que descarta Villaferrueña, que está junto al Eria. La confusión venía de ahí.',
+    ilu: { src: 'img/prov/d962.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'GONZÁLEZ RODRÍGUEZ, «Castroferrol, un enclave monástico altomedieval en el valle del Tera», Brigecio 10 (2000), apéndice documental · ed. Sáez y Sáez, Col. doc. de la Catedral de León, II, doc. 353' },
 
   { id: 'd963', era: 2, y: '963', s: 963, n: 'cotejar',
     t: 'Adrico y Faquilo donan cuanto tienen en Castroferrol',
     p: 'Con sus hijos, donan a la catedral de Astorga toda su heredad en Castroferrol: la mitad en vida, el resto al morir.',
     nota: 'De este diploma no se conserva el texto, sólo un breve extracto en el Tumbo Negro. Sigue sin edición crítica.',
+    ilu: { src: 'img/prov/d963.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'BNE, ms. 4357, Tumbo Negro de Astorga, fol. 51v · localizado por González Rodríguez, Brigecio 10 (2000), nota 9' },
 
   { id: 'bermudo', era: 2, y: '985–999', s: 992, n: 'cotejar',
     t: 'Nace un monasterio dúplice',
     p: 'Monjes y monjas bajo un solo gobierno, en el reinado de Bermudo II. La familia fundadora había recibido la villa del rey a cambio de unas tierras que le confiscó en el Bierzo.',
+    ilu: { src: 'img/prov/bermudo.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Síntesis de la bibliografía sobre el documento de 1015' },
 
   { id: 'd1006', era: 2, y: '1006', d: '26 de junio', s: 1006, n: 'cotejar',
@@ -915,11 +957,17 @@ const EVENTOS = [
     q: '«Frater Joanis, Veila, Absub, Evite Monde, Muza, Gundisaluo, Hauiue, Nazarus, Amorum»',
     p: 'Son los testigos que el escriba separa de los demás con cuatro palabras: «id sit habitantes de Castroferronio», esto es, habitantes de Castroferrol. Nueve personas, en este término, el 22 de enero de 1015. Y la mitad de esos nombres son árabes, conviviendo con otros godos. El documento por el que aparecen es la donación que hacen María y sus hijos Galindo y Juan Ciprianiz del lugar «edificado en honor de San Miguel Arcángel y Santa María siempre virgen», en la villa «por donde discurre el riachuelo Tera y de la otra parte el Almucera», con su iglesia, viñas, prados, aguas y cauces de molino, y un ajuar de cruz, caja, corona, cáliz, patena, dalmáticas y libros.',
     nota: 'Hasta hoy, el vecino más antiguo del término que conocíamos por su nombre era Martín Alonso, en 1551. Estos son quinientos treinta y seis años anteriores. Pero son habitantes de Castroferrol, el despoblado, no de Colinas: el pueblo actual todavía no existe en las fuentes. Y la fórmula «de la otra parte» describe una franja entre dos cursos de agua, no una confluencia: los dos no se juntan hasta siete kilómetros aguas abajo.',
+    ilu: { src: 'img/prov/d1015.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'GONZÁLEZ RODRÍGUEZ, «Castroferrol, un enclave monástico altomedieval en el valle del Tera», Brigecio 10 (2000), apéndice documental · AHN, ms. 1195B, ff. 686v-687r · ed. Cavero Domínguez y Martín López, op. cit., doc. 214' },
 
   { id: 'd1060', era: 2, y: '1060', s: 1060, n: 'cotejar',
     t: 'Castroferrol en las particiones de Diego Muñoz',
     p: 'El lugar figura entre las villas y heredades que caen en manos de Diego Muñoz al dividirse las de Osorio Fernández y doña Visclávara.',
+    ilu: { src: 'img/prov/d1060.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'ed. Ruiz Asencio, Col. doc. de la catedral de León, vol. IV (1032-1109), doc. 1121 · localizado por González Rodríguez, Brigecio 10 (2000), nota 24' },
 
   { id: 'd1073', era: 2, y: '1073', s: 1073, n: 'sinleer',
@@ -927,6 +975,9 @@ const EVENTOS = [
     q: '«uilla que dicunt Colinas, in riba de Teira»',
     p: 'La villa que llaman Colinas, en la ribera del Tera. Es la <b>mención más antigua del pueblo por su nombre</b> que el proyecto conoce: cuatrocientos cincuenta y tres años antes del Censo de Pecheros, y cuatrocientos setenta y ocho antes de Martín Alonso. Hasta aquí las fuentes sólo habían nombrado Castroferrol; a partir de aquí los dos nombres conviven.',
     nota: 'La cita viene de un artículo, no del facsímil: falta ir al diploma 1186 de la colección de la catedral de León y verlo con los propios ojos. Y el documento escribe <b>«Colinas» a secas</b>: el «de Trasmonte» no está ahí.',
+    ilu: { src: 'img/prov/d1073.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'RUIZ ASENCIO, Col. doc. de la catedral de León, IV (1032-1109), León 1989, doc. 1186 · cit. GONZÁLEZ RODRÍGUEZ, Brigecio 17 (2007)' },
 
   { id: 'd1129', era: 2, y: '1129', s: 1129, n: 'cotejar',
@@ -934,11 +985,17 @@ const EVENTOS = [
     q: '«per illam veredam quae discurrit de Castro Ferronio, et ad Carvalio… et tornat inde per ipsam veredam quae discurrit ad Villa Aceif, et deinde per terminum de Axarifes»',
     p: 'Castro Ferronnio es uno de los mojones del coto del monasterio de Santa Marta de Tera, que Alfonso VII confirma «según los fijó su bisabuelo Fernando I». Es un deslinde, y por tanto geografía: nombra la vereda que baja del enclave, un carbajal, una carral, San Pelayo de Armentario Fláiniz, la carral de Comdesa, Villa Aceif y el término de Axarifes.',
     nota: 'Una «vereda» es una vía pecuaria. Ésta sale de Castroferrol en 1129, y es el testimonio más antiguo que tiene el proyecto de un camino de ganado en el término. Los nombres de los mojones vuelven a sonar a árabe: Aceif, Axarifes.',
+    ilu: { src: 'img/prov/d1129.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'ed. Quintana Prieto, Santa Marta de Tera, Zamora, 1991, doc. XI · texto latino en la nota 25 de González Rodríguez, Brigecio 10 (2000)' },
 
   { id: 'd1170', era: 2, y: '1170', s: 1170, n: 'cotejar',
     t: 'Fernando II revalida esos límites',
     p: 'Un privilegio de confirmación repite el coto. Para entonces el monasterio ya se ha incorporado a los bienes de la mitra de Astorga, y eso debió precipitar su final como comunidad.',
+    ilu: { src: 'img/prov/d1170.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'ed. Quintana Prieto, Santa Marta de Tera, Zamora, 1991, doc. XII · localizado por González Rodríguez, Brigecio 10 (2000), nota 26' },
 
   { id: 'sala', era: 2, y: 'ss. XI–XIII', s: 1175, n: 'visto',
@@ -955,34 +1012,52 @@ const EVENTOS = [
     t: 'Veinticinco vecinos pecheros',
     p: 'La <b>medición de población más antigua</b> que el proyecto tiene de Colinas, sesenta y cinco años anterior al vecindario de 1591. El lugar aparece escrito «Colinas» entre los 274 asientos de la villa de Benavente y su tierra, que suman 3.681 pecheros: exactamente la cifra que el propio censo escribe en su fila de totales.',
     nota: 'En la misma lista hay dos lugares que nadie ha identificado: «Vezinas», con 21 vecinos, y «Vecilla del Chantre», con 16. La hipótesis de que esa Vecilla fuera la de Trasmonte queda <b>descartada</b>: en 1591 las dos aparecen por separado en la misma lista.',
+    ilu: { src: 'img/prov/pecheros1526.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'INE, Censo de Pecheros. Carlos I, 1528, t. II, fol. 505 vº, inscr. 45' },
 
   { id: 'p1551', era: 3, y: '1551', s: 1551, n: 'sinleer',
     t: 'Martín Alonso, vecino de Colinas, va a pleito',
     p: 'Contra Pedro Alonso de Soguillo, vecino de Quintanilla de Urz. Es el vecino de Colinas más antiguo cuyo nombre conocemos.',
+    ilu: { src: 'img/prov/p1551.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Real Chancillería de Valladolid, PL Civiles, Taboada (OLV), caja 726, 1' },
 
   { id: 'c1591', era: 3, y: '1591', s: 1591, n: 'visto',
     t: 'Veintiocho vecinos, y el lugar mediano de la provincia',
     p: 'Veintisiete pecheros, ningún hidalgo y un clérigo, en la provincia de las tierras del conde de Benavente. Y es <b>exactamente el lugar mediano</b>: la mediana de los 117 lugares de la provincia es de 28 vecinos. Colinas no es ni grande ni pequeño; está en el centro justo de su comarca.',
     nota: 'Cotejados los 115 lugares del señorío en 1526 con los 117 de 1591, <b>no desaparece ninguno</b>. La villa de Benavente crece un 73 %; su tierra, un 9 %; Colinas, de 25 a 27 pecheros, un 8 %. Dentro del campo no hay tendencia: 57 lugares pierden y 56 ganan.',
+    ilu: { src: 'img/prov/c1591.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Censo de la Corona de Castilla, 1591 · vecindario de las tierras del conde de Benavente' },
 
   { id: 'p1600', era: 3, y: '1600–1608', s: 1604, n: 'sinleer',
     t: 'Concejo contra concejo: Colinas y Vecilla',
     p: 'Los pleitos entre pueblos vecinos suelen describir mojones y aprovechamientos, a veces con planos. Es la fuente más prometedora para el término antiguo, y está por pedir.',
+    ilu: { src: 'img/prov/p1600.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Real Chancillería de Valladolid, PL Civiles, Alonso Rodríguez (OLV), caja 368, 1' },
 
   { id: 'c1613', era: 3, y: '1613', s: 1613, n: 'cotejar',
     t: 'Chirivoga copia el Tumbo Negro, y mueve el monasterio de sitio',
     p: 'Felipe III envía al deán de Salamanca a averiguar qué iglesias del obispado de Astorga son del Real Patronato. Su equipo copia el Tumbo Negro —hoy es el único testimonio de los diplomas de 1006 y 1015— y, al encontrarse con un monasterio de Castroferrol del que ya nadie se acordaba, se lo adjudica a Villaferrueña, un pueblo de nombre parecido y no lejos del Tera. Llegan a rebautizarlo «Castroferrueña». Su iglesia pasa al patronato real como heredera del monasterio.',
     nota: 'El autor del artículo de referencia lo llama «una tergiversación absolutamente interesada». No fue un descuido: era el modo de agregar la parroquia a las rentas de la Corona. El error siguió en pie en la bibliografía hasta el año 2000.',
+    ilu: { src: 'img/prov/c1613.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'AHN, ms. 1195B · González Rodríguez, Brigecio 10 (2000)' },
 
   { id: 'diezmos1693', era: 3, y: '1693', d: '16 de diciembre', s: 1693, n: 'visto',
     t: 'El Nuncio manda, y Astorga no obedece',
     p: 'El Nuncio de Su Santidad libra mandamiento para que los curas del obispado de Astorga restituyan al conde-duque de Benavente los diezmos de las «casas de Rey» —la misma casa diezmera que el Catastro declarará en Colinas cincuenta y nueve años después—. <b>El provisor de Astorga no lo cumple</b>, alegando letras inhibitorias del «Metropolitano de Salamanca» [?].',
     nota: 'No es la primera vez que el Nuncio actúa: el despacho remite a sus propios autos de «primero de Octubre del año pasado de mil y seiscientos y noventa y tres», dos meses y medio antes. Los juristas que lo mueven tienen nombre: el abogado Ldo. D. Juan Gutiérrez Coronel y el procurador Francisco de Maza, que en la lectura de la misma plana se había leído antes «Malaza».',
+    ilu: { src: 'img/prov/diezmos1693.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 45-46 y 38 (copia de 1842)' },
 
   { id: 'nuncio1694', era: 3, y: '1694', d: '19 de enero', s: 1694, n: 'visto',
@@ -990,6 +1065,9 @@ const EVENTOS = [
     q: '«recoger las agravatorias que tiene libradas» y «reducir sus mandamientos a simple citación»',
     p: 'Desde Madrid, D. Federico Caccia [?] —Arzobispo de Milán, Nuncio y Colector General Apostólico bajo Inocencio XII— le da al provisor de Astorga <b>veinticuatro horas</b>, so pena de excomunión mayor <i>latae sententiae</i> y doscientos ducados, y manda que se le <b>denuncie por público excomulgado desde los púlpitos</b>. Y no manda sentenciar: <b>manda deshacer</b>, sin embargo de cualesquiera autos del Ordinario y del Metropolitano. Es el papel que se leerá en Colinas once días después.',
     nota: 'El tribunal, por dentro: firma «el Señor Auditor = Guido Antonius Torna[nus]» [?], ante el notario Baltasar Hernández Men[tero]º [?]. Y se deshace aquí una contradicción del propio proyecto: el papel no dice que haya un metropolitano <i>de</i> Salamanca, sino «el Metropolitano <b>que reside en</b> la Salamanca Vieja» —dónde se sienta el juez, no de qué sede es—. Qué sea «la Salamanca Vieja» sigue sin entenderse.',
+    ilu: { src: 'img/prov/nuncio1694.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 39, 41, 44 y 46-47 (copia de 1842)' },
 
   { id: 'apela1694', era: 3, y: '1694', d: '30 de enero', s: 1694, n: 'visto',
@@ -997,18 +1075,27 @@ const EVENTOS = [
     q: '«lo obedece con el respeto debido […] y que en cuanto a su cumplimiento no ha lugar, y desde luego de este Despacho y sus autos APELA»',
     p: 'Once días antes, en Madrid, el Nuncio de Su Santidad había dado al provisor de Astorga <b>veinticuatro horas</b> para retirar sus autos, so pena de excomunión mayor y doscientos ducados, y mandado que se le denunciase por público excomulgado desde los púlpitos. El pleito va por los diezmos de la «Casa que llaman de Rey». Cuando el despacho llega a Colinas, el cura obedece por fórmula y no cumple: es la <b>primera resistencia escrita de alguien de Colinas</b> a una orden del señor.',
     nota: 'En este papel el cura no tiene nombre. Lo tiene cuatro meses después: el 12 de mayo se le notifica en persona al Licenciado D. Antonio García Bernardo de Quirós [?], «Cura de este Lug[ar]», por el notario Francisco Domínguez, vecino de Benavente. El [?] queda sólo en «Quirós».',
+    ilu: { src: 'img/prov/apela1694.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 49-50 (copia limpia de 1842) · el nombre, en OSUNA, C.466, D.89, img. 28-29, y D.90, img. 55' },
 
   { id: 'curas1694', era: 3, y: '1694', d: 'mayo', s: 1694, n: 'visto',
     t: 'Doce curas, y un tribunal inhibido',
     p: 'El despacho recorre la comarca y <b>doce curas quedan con nombre y respuesta</b>: Grijalba, Santibáñez de Vidriales, Ginestacio, San Román del Valle, Villaveza de Valverde, Morales de Valverde, San Pedro de la Viña, Fuente Encalada, Villageriz [?]… En Santibáñez el notario va <b>tres veces</b> a casa del cura. El de San Pedro de la Viña contesta con la carta guardada: el provisor de Astorga está inhibido por letras del «Metropolitano de Salamanca» [?], «como con efecto lo está inhibido». <b>El tribunal que firma el despacho no tenía jurisdicción para firmarlo.</b> Los curas recurren a la Real Chancillería de Valladolid por vía de fuerza, y al menos uno gana Real Provisión y se niega a entregar los diezmos.',
     nota: 'La lectura del metropolitano es dudosa, y varios topónimos y apellidos del vaciado llevan [?]. <b>El pleito de la Chancillería sigue sin localizar</b>: es uno de los frentes abiertos del proyecto.',
+    ilu: { src: 'img/prov/curas1694.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 49-57 · vaciado en curas-1694.tsv · el obispo es D. Fray Antonio de Sanjurjo y Miranda; su provisor, el Dr. D. Antonio de Miranda' },
 
   { id: 'apeo1706', era: 3, y: '1706', s: 1706, n: 'visto',
     t: 'Un pago que se llama San Pelayo',
     p: 'El apeo del término de Vecilla de Trasmonte orienta sus parcelas con cuatro referencias —«azia la vega», «azia Vezilla», <b>«azia Pobladura»</b> y <b>«azia Colinas»</b>—: trata a Pobladura y a Colinas como dos vecinos distintos, y deja a Pobladura <b>fuera</b> del término de Colinas. Y registra un pago llamado <b>San Pelayo</b>, el mismo nombre que un mojón del deslinde de 1129.',
     nota: 'Que el nombre se repita en 1129, en 1706 y en 1768 no prueba que sean el mismo sitio: <b>San Pelayo es advocación corriente de esta ribera</b> —Vega de Tera es parroquia de San Pelayo en el Censo de Aranda—. Ninguno de los tres prueba nada sobre los otros.',
+    ilu: { src: 'img/prov/apeo1706.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'MARTÍN BENITO, «El término de Vecilla de Tramonte en un documento de 1706», Brigecio 10 (2000), pp. 133-152' },
 
   { id: 'catastro', era: 3, y: '1752', d: '9 de noviembre', s: 1752, n: 'visto',
@@ -1025,12 +1112,18 @@ const EVENTOS = [
     q: '«componer la Ermita que ay en su territorio respectivo y ponerla decente de Ornatos»',
     p: 'El obispo de Astorga escribe al conde-duque de Benavente: don Matheo Villalva, prestamero del de San Juan de Colinas de Trasmonte y <b>ahijado del propio conde-duque</b>, tiene que arreglarla. Y hay dada orden de retenerle «la Cota de 200 r[eale]s cada año» para pagar la obra.',
     nota: 'La carta <b>no dice de qué advocación es la ermita</b>. El «San Juan Bautista» que trae el catálogo de PARES es del catálogo, no del papel. Y no se ha buscado todavía dónde estuvo ni cuándo se perdió.',
+    ilu: { src: 'img/prov/ermita1756.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'AHNOB, OSUNA, CT.271, D.21 · Astorga, 6 de abril de 1756' },
 
   { id: 'arcipreste1757', era: 3, y: '1757', s: 1757, n: 'visto',
     t: 'La cabeza eclesiástica de tres valles vive aquí',
     q: '«Cura del Lugar de Colinas y Arcipreste del Arciprestazgo de Vidriales, Tera y Valverde»',
     p: 'Así se titula <b>don Francisco Escudero</b> en una ejecutoria de la Chancillería. Un pueblo de ciento y pico almas, sin hidalgos y sin ayuntamiento propio, es la residencia del arcipreste de <b>los tres valles</b>. La parroquia pesa más que el lugar.',
+    ilu: { src: 'img/prov/arcipreste1757.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'ARCHV, Registro de Ejecutorias, caja 3250, 23 (leído dos veces en la misma plana)' },
 
   { id: 'aranda1768', era: 3, y: '1768', d: '1 de noviembre', s: 1768, n: 'visto',
@@ -1038,35 +1131,53 @@ const EVENTOS = [
     q: '«Parroquia de San Juan»',
     p: 'Sesenta y un varones y cincuenta y tres hembras, con desglose por edad y estado. Ningún hidalgo. Tres eclesiásticos y un administrador del Estanco del Tabaco. La relación la escribe y la firma <b>el propio párroco</b>, y al poner el nombre de su parroquia hace retroceder <b>setenta y nueve años</b> la advocación de San Juan, que hasta ahora se tenía por Madoz y su diccionario de 1847. En los veintiuno de los veintitrés lugares del valle que traen desglose, varones más hembras da exactamente el total que el escribano anota al margen: ni un descuadre.',
     nota: 'El documento dice <b>«San Juan» a secas</b>: el «Bautista» lo añade Madoz. Y San Juan es advocación corriente en el valle —tres parroquias de veintitrés—, así que el nombre no distingue nada: le quita al topónimo San Juan del término todo valor como indicio. La fecha de la relación, «en 1.º de noviembre de 1768», lleva [?].',
+    ilu: { src: 'img/prov/aranda1768.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'INE, Censo de Aranda, obispado de Astorga, asiento 173, R.A.H. 01-181' },
 
   { id: 'pobladura', era: 3, y: '1591 → 1768', s: 1768, n: 'visto',
     t: 'Pobladura de Trasmonte desaparece',
     p: 'En 1526 el escribano lo había anotado de su mano: <b>«Pobladura de Trasmonte — Despoblado por la peste»</b>, quince pecheros. Pero no fue el final: en 1591 sigue viva, con once vecinos. En el Censo de Aranda, el obispado de Astorga cuenta <b>cinco Pobladuras y ninguna «de Trasmonte»</b>. Entre las dos fechas el lugar se acaba, esta vez para siempre. <b>El hueco también es un dato</b>: se despobló, se rehizo y volvió a desaparecer.',
     nota: 'No se sabe ni el año ni la causa del final. El asiento de 1526 tampoco dice <b>qué</b> peste. Y la identificación moderna que hace el INE de aquel asiento —49.236, Vidayanes— contradice la localización que este proyecto defiende; el apeo de 1706 la sitúa al lado de Colinas, no a treinta kilómetros.',
+    ilu: { src: 'img/prov/pobladura.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'INE, Censo de Pecheros. Carlos I, 1528, t. II, fol. 507 rº, inscr. 102 · Censo de 1591 · Censo de Aranda, «Relación de pueblos»' },
 
   { id: 'aniversarios1772', era: 3, y: '1772', s: 1772, n: 'visto',
     t: 'Tres aniversarios, y un pleito por el segundo',
     p: 'La iglesia parroquial de Colinas tiene <b>tres aniversarios dotados y fundados</b> por «el B.r D.n Pedro Prieto, cura que fue de…»: es la primera fundación piadosa documentada de la parroquia. Sobre el segundo de ellos obtiene ejecutoria <b>Simón Prieto Montero</b>, clérigo de menores, contra Francisco Gutiérrez, de Friera de Valverde.',
     nota: 'El nombre del fundador lleva [?]: el catálogo de PARES lee «Bartolomé» donde el facsímil parece decir «bachiller».',
+    ilu: { src: 'img/prov/aniversarios1772.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'ARCHV, Registro de Ejecutorias, caja 3359, 51' },
 
   { id: 'floridablanca', era: 3, y: '1787', s: 1787, n: 'visto',
     t: 'Ciento cincuenta y seis personas, y ningún hidalgo',
     p: 'El censo de Floridablanca cuenta el pueblo uno a uno: 156 habitantes, 90 varones y 66 mujeres. Los clasifica por oficio y deja dieciocho casillas vacías: ni escribano, ni abogado, ni comerciante, ni estudiante, ni sacristán, ni un solo hidalgo. Hay un cura, 16 labradores, 14 jornaleros, 6 artesanos y 8 criados. Casi tantos jornaleros como labradores: la mitad de los hombres con oficio no trabajaba tierra propia.',
     nota: 'El desglose por tramos de edad dentro de cada estado civil no es verosímil —ningún soltero entre 25 y 40 años y diecisiete entre 40 y 50—: el impreso se rellenó por bloques. Los totales, en cambio, cuadran los tres.',
+    ilu: { src: 'img/prov/floridablanca.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Censo de 1787 «Floridablanca», ed. INE (1989), t. 3-B, prov. de Zamora, pueblo nº 103, pp. 2.858, 2.887 y 2.932' },
 
   { id: 'casa1804', era: 3, y: '1804', s: 1804, n: 'visto',
     t: 'Domingo Bernardo pleitea por una casa vinculada',
     p: 'Contra Alonso Gavilla y su mujer, de Morales del Rey, sobre la vinculación de una casa. Es la tercera y última de las ejecutorias de la Chancillería que el proyecto tiene de este término.',
     nota: 'El [?] está en quién era vecino de dónde: el catálogo no lo deja claro y el facsímil no se ha leído entero.',
+    ilu: { src: 'img/prov/casa1804.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'ARCHV, Registro de Ejecutorias, caja 3767, 43' },
 
   { id: 'incendio1814', era: 3, y: '1814', s: 1814, n: 'cotejar',
     t: 'Arde el archivo de la catedral de Astorga',
     p: 'Con él se pierde el Tumbo Negro, el cartulario que copiaba los diplomas de Castroferrol. Desde entonces, lo que sabemos del monasterio depende de una copia del siglo XVII de un libro perdido.',
+    ilu: { src: 'img/prov/incendio1814.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Bibliografía sobre la transmisión del corpus · inventario, §8.1' },
 
   { id: 'minano', era: 3, y: '1826', s: 1826, n: 'visto',
@@ -1074,11 +1185,17 @@ const EVENTOS = [
     p: 'Miñano lo llama Colinas a secas, sin «de Trasmonte»: aldea de señorío con alcalde pedáneo, provincia de Valladolid, partido de Benavente, obispado de Astorga. 55 vecinos, 226 habitantes. Una parroquia y un pósito —el granero del común, que no aparece en ninguna otra fuente—. Con el molino y la fragua de 1752, son tres las casas que el concejo sostenía por su cuenta.',
     q: '«Sit. al S. del valle de Vidriales, á la orilla del rio Tera, 2 leguas al S. O. de la villa de Benavente, cercado de colinas»',
     nota: 'Los vecindarios de Miñano se tienen por menos fiables que los de Madoz, y sus 226 habitantes siguen sin cotejar. El obispado de Astorga, en cambio, queda dicho por escrito veintiún años antes que Madoz.',
+    ilu: { src: 'img/prov/minano.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Miñano, Diccionario geográfico-estadístico de España y Portugal, t. III, Madrid, 1826, p. 142 (ejemplar digitalizado de la Universidad de Granada)' },
 
   { id: 'provincia', era: 4, y: '1833', d: '30 de noviembre', s: 1833, n: 'contexto',
     t: 'Provincia de Zamora',
     p: 'La nueva división territorial adscribe Colinas a Zamora, y en 1834 al partido judicial de Benavente. En 1752 se había catastrado bajo Valladolid.',
+    ilu: { src: 'img/prov/provincia.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Real Decreto de 30 de noviembre de 1833' },
 
   { id: 'matricula1842', era: 4, y: '1842', s: 1842, n: 'visto',
@@ -1086,6 +1203,9 @@ const EVENTOS = [
     q: '«sin rigor, por el procedimiento de imputaciones»',
     p: 'Es la primera cifra de la serie moderna de población, y viene del Censo de la Matrícula Catastral. El INE, al describir su propia metodología, dice que se hizo así, sin fecha de referencia, y que <b>«no aporta ningún dato numérico de confianza»</b>. Está documentado que la cifra existe; está documentado que no vale como medición.',
     nota: 'Y sin embargo el hoyo puede ser real. En vecinos la caída es igual de clara —55 en 1826, 33 en 1847—, con la misma proporción de almas por vecino en las dos fuentes, lo que descarta que sea un problema de unidad de cuenta. Entre 1826 y 1842 caben la primera guerra carlista, el cólera de 1834 y la desamortización. Queda abierto por los dos lados.',
+    ilu: { src: 'img/prov/matricula1842.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'INE, Alteraciones de los municipios desde 1842, metodología' },
 
   { id: 'madoz', era: 4, y: '1847', s: 1847, n: 'visto',
@@ -1093,33 +1213,51 @@ const EVENTOS = [
     q: '«Hay un monte encinal con el mismo nombre del pueblo, que forma con otros una cordillera de 2 horas hasta San Juanico»',
     p: 'Madoz describe una aldea con ayuntamiento propio, en una ladera orientada al sur, con 35 casas en 6 calles, iglesia de San Juan Bautista, cementerio y buenas aguas. Produce trigo y lino, cría ganado lanar y pesca barbos. Y dice que en su término están los despoblados de Castroferrol y Pobladura de Trasmonte.',
     nota: 'La frase del monte es el apoyo más firme que tiene el topónimo: no eran unas colinas cualesquiera, había un encinar llamado «Colinas», en fila con otros cerros a lo largo de unos ocho o diez kilómetros. Lo que no dice es cuál nombró a cuál.',
+    ilu: { src: 'img/prov/madoz.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Madoz, Diccionario geográfico-estadístico-histórico, t. VI, Madrid, 1847, p. 521 · facsímil leído a resolución completa (Internet Archive)' },
 
   { id: 'osuna1848', era: 4, y: '1848', d: '18 de marzo', s: 1848, n: 'visto',
     t: 'Por qué estos papeles existen',
     p: 'La Casa de Osuna autentica ante un juzgado de Madrid sus títulos de 1694 sobre los diezmos de <b>quince lugares, Colinas entre ellos</b>, frente al Promotor Fiscal como representante de la Hacienda Nacional. Auto del 18 de marzo, cotejo el 20. El diezmo estaba suprimido desde 1837, así que esto ya no es cobrar: es <b>liquidar derechos</b>. Y es la razón de que el legajo de 1694 se copiara, se guardara y hoy se pueda leer.',
+    ilu: { src: 'img/prov/osuna1848.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 62-68 · el traslado se había sacado en Madrid el 18 de enero de 1842, por D. Claudio Sanz y Barca [?]' },
 
   { id: 'censo1857', era: 4, y: '1857', s: 1857, n: 'cotejar',
     t: 'Primer censo moderno: 386 habitantes',
     p: 'Quince años antes se contaban 132. Nadie triplica su población en ese tiempo: o la cifra de 1842 se quedaba corta, o el municipio cambió de término. Y ese mismo año, el 22 de julio, la Gaceta nombra cura de Colinas a <b>D. Pedro Ramos</b>.',
+    ilu: { src: 'img/prov/censo1857.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Censo de población (INE), serie pendiente de cotejo · el nombramiento, Gaceta de Madrid, 22-VII-1857, BOE-A-1857-7483' },
 
   { id: 'pecuarias1863', era: 4, y: '1863', s: 1863, n: 'sinleer',
     t: 'Las vías pecuarias del término, reconocidas',
     p: 'Acta de reconocimiento de las vías pecuarias del término. En el mismo expediente hay copia del reconocimiento de la <b>Cañada Real Sanabresa</b>, de 1895. Por aquí pasaba ganado trashumante, y alguien vino a medir por dónde.',
     nota: 'El expediente <b>no está digitalizado</b>: se sabe que existe y dónde está, no lo que dice. Es de los pocos casos en que haría falta ir en persona.',
+    ilu: { src: 'img/prov/pecuarias1863.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'AHN, DIVERSOS-MESTA, 746, Exp. 38' },
 
   { id: 'propios1866', era: 4, y: '1860–1889', s: 1866, n: 'visto',
     t: 'La desamortización vende los bienes de propios',
     p: 'Siete asientos de la Gazeta registran ventas de <b>bienes de propios</b> de Colinas, con sus meses: enero de 1866, mayo de 1873… Lo que era del común —montes, prados, eras— pasa a manos particulares.',
     nota: 'Está documentado que hubo ventas. <b>No está leído qué se vendió ni a quién</b>: los asientos dan la referencia, no el contenido.',
+    ilu: { src: 'img/prov/propios1866.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Gazeta de Madrid, siete asientos entre 1860 y 1889 · vaciado en la ficha boe-gazeta' },
 
   { id: 'distritos1870', era: 4, y: '1870', s: 1870, n: 'visto',
     t: 'Con quién va Colinas cuando se vota',
     p: 'Para las elecciones se agrupa con Barcial del Barco, Arcos de la Polvorosa, Santa Colomba de las Monjas, Villanázar, Sitrama, Santa Croya y Melgar de Tera. En 1877 queda en el «segundo distrito: Micereces de Tera». Y un itinerario oficial de ese mismo año pasa por «Benavente, Santa Cristina, <b>Vecilla, Colinas, Quiruelas</b>, Sitrama…»: es el camino por el que se iba y se venía.',
+    ilu: { src: 'img/prov/distritos1870.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'BOE-A-1870-7800 · BOE-A-1877-1187 y BOE-A-1877-3272' },
 
   { id: 'sello', era: 4, y: '1876', d: 'diciembre', s: 1876, n: 'visto',
@@ -1133,33 +1271,51 @@ const EVENTOS = [
   { id: 'maestro1894', era: 4, y: '1894', s: 1894, n: 'visto',
     t: 'El maestro se llama Valentín Rodríguez',
     p: 'Puesto 76 del escalafón del magisterio de la provincia de Zamora. Es el <b>primer maestro de Colinas</b> que el proyecto conoce por su nombre.',
+    ilu: { src: 'img/prov/maestro1894.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'BOE-A-1894-6665, escalafón del magisterio, provincia de Zamora' },
 
   { id: 'camino1905', era: 4, y: '1905', s: 1905, n: 'visto',
     t: 'Colinas, cabecera de un camino vecinal',
     q: '«De Colinas de Trasmonte al Cubo de Benavente»',
     p: 'Así lo nombra el plan de caminos vecinales: por Colinas, no por los pueblos mayores que el itinerario atraviesa después —Quiruelas, Quintanilla, Brime de Urz, Cunquilla, Granucillo, Grijalba, Villaobispo, Santibáñez y Brime de Sog—. <b>Colinas es la cabecera.</b>',
+    ilu: { src: 'img/prov/camino1905.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'BOE-A-1905-3586' },
 
   { id: 'juzgado1945', era: 4, y: '1945', s: 1945, n: 'visto',
     t: 'Al juzgado de Santibáñez, y sin Quiruelas',
     p: 'Colinas pasa al Juzgado Comarcal de Santibáñez de Tera, junto con Villanázar. <b>Quiruelas no está en ese grupo.</b> Veintisiete años después será Quiruelas quien lo absorba.',
+    ilu: { src: 'img/prov/juzgado1945.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'BOE-A-1945-3382' },
 
   { id: 'max1950', era: 4, y: '1950', s: 1950, n: 'cotejar',
     t: 'Máximo histórico: 625 habitantes',
     p: 'Un siglo de crecimiento casi sin pausa. Desde aquí la población sólo baja.',
+    ilu: { src: 'img/prov/max1950.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Censo de población (INE), serie pendiente de cotejo' },
 
   { id: 'vuelo1956', era: 4, y: '1956–57', s: 1956, n: 'visto',
     t: 'El vuelo americano retrata el minifundio',
     p: 'Las fotografías aéreas muestran el término en haces de <b>tiras estrechas</b> y caminos sinuosos. Son las 5.560 parcelas que el decreto de 1970 va a contar, y la última imagen del paisaje agrario que describía el Catastro de 1752.',
+    ilu: { src: 'img/prov/vuelo1956.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'IGN, vuelo americano serie B, AMS 1956-1957' },
 
   { id: 'escuela1959', era: 4, y: '1958–59', s: 1958, n: 'visto',
     t: 'La unidad mínima de cultivo, y una escuela',
     q: '«una Escuela mixta, servida por Maestra, en el casco del Ayuntamiento de Colinas de Trasmonte»',
     p: 'En 1958 se fija la <b>unidad mínima de cultivo</b> del término: por debajo de esa superficie una finca ya no puede partirse. Al año siguiente se crea definitivamente la escuela.',
+    ilu: { src: 'img/prov/escuela1959.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'BOE-A-1958-9342 · Orden de 7 de julio de 1959, BOE-A-1959-9954' },
 
   { id: 'decreto1970', era: 4, y: '1970', d: '8 de octubre', s: 1970, n: 'visto',
@@ -1167,46 +1323,70 @@ const EVENTOS = [
     p: 'El Decreto 3119/1970 declara de utilidad pública la concentración de Colinas: 1.043 hectáreas, 405 propietarios y 5.560 parcelas, casi catorce por dueño.',
     q: '«cuyo perímetro será, en principio, el del término municipal del mismo nombre»',
     nota: 'No salió de la nada: dos años antes, un decreto de 11 de julio de 1968 había declarado la comarca «Benavente-Tera» sujeta a ordenación rural. Y la concentración <b>la pidieron los propios agricultores</b>.',
+    ilu: { src: 'img/prov/decreto1970.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'BOE núm. 257, de 27 de octubre de 1970, p. 17434 · el decreto de 1968, citado en BOE-A-1976-7522' },
 
   { id: 'titulares1971', era: 5, y: '1971', s: 1971, n: 'visto',
     t: 'Setenta y dos nombres, por una carretera',
     p: 'Se publican los titulares de las fincas del término afectadas por la expropiación de la <b>carretera C-620</b>, de Benavente a Sitrama de Tera. El acto se convoca para el 25 de junio <b>en el Ayuntamiento de Colinas</b>. Setenta y dos nombres: es la lista de vecinos más larga que el proyecto tiene de este término.',
     nota: 'Los nombres vienen de <b>reconocimiento óptico del boletín</b> y están normalizados. Hay que cotejarlos uno a uno antes de darlos por buenos: un apellido mal leído en una lista de vecinos no es un detalle.',
+    ilu: { src: 'img/prov/titulares1971.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'BOE-A-1971-40309' },
 
   { id: 'fin-municipio', era: 5, y: '1972', d: '10 de febrero', s: 1972, n: 'visto',
     t: 'El pueblo pide dejar de ser municipio',
     q: '«en atención a la escasez de población, dificultad para mantener los servicios mínimos obligatorios y deseo de mejorarlos»',
     p: 'El Ayuntamiento de Colinas acuerda, con quórum legal, solicitar su incorporación a Quiruelas de Vidriales; Quiruelas la acepta y el Consejo de Ministros la aprueba. No hubo «reclamación alguna» en el plazo de información pública. El concejo que en 1752 tenía molino y fragua propios se disuelve a petición suya.',
+    ilu: { src: 'img/prov/fin-municipio.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Decreto 354/1972, de 10 de febrero · BOE núm. 45, de 22 de febrero de 1972, pp. 3172-3173 (BOE-A-1972-33978)' },
 
   { id: 'juzgado1972', era: 5, y: '1972', d: '27 de junio', s: 1972, n: 'visto',
     t: 'El archivo se va a Quiruelas',
     p: 'Cuatro meses después de la incorporación se suprime el <b>Juzgado de Paz</b> de Colinas, y su documentación y su archivo pasan al de Quiruelas. No es un detalle administrativo: es adónde fueron a parar los papeles del pueblo, y por dónde hay que empezar a buscarlos.',
+    ilu: { src: 'img/prov/juzgado1972.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Orden de 27 de junio de 1972, BOE-A-1972-1185' },
 
   { id: 'plano1975', era: 5, y: '1975', d: 'enero', s: 1975, n: 'visto',
     t: 'El término, dibujado',
     p: 'Los seis planos del IRYDA dibujan el término finca a finca. Rotulan los cinco confrontantes —Quiruelas de Vidriales, Manganeses de la Polvorosa, Santa Cristina de la Polvorosa, Vecilla de Trasmonte y Aguilar de Tera— y, con ellos, los nombres de los pagos: El Valle, Vallondo, El Pendón, Las Tapias, Los Llanos, Las Porqueras. Es toponimia que no recoge ninguna otra fuente.',
     link: { href: '#termino', t: 'Ver el plano y los lindes' },
+    ilu: { src: 'img/prov/plano1975.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'IRYDA, plano general de la concentración parcelaria, I-75, A. Figal · Junta de Castilla y León' },
 
   { id: 'cecilia', era: 5, y: '1976', d: '2 de agosto', s: 1976, n: 'cotejar',
     t: 'Muere Cecilia',
     p: 'La cantautora Evangelina Sobredo Galanes y el batería Carlos de la Iglesia mueren de madrugada en la carretera que cruza el casco de Colinas, cuando su coche choca con un carro de bueyes sin luces. Es el hecho por el que se conoce el nombre del pueblo fuera de la comarca. Se cuenta aquí; no es un símbolo.',
     nota: 'Las crónicas dicen N-525; los planos de 1977 rotulan esa carretera «C-620 de Benavente a Mombuey», que es el mismo itinerario de la N-525 de hoy. Casi seguro es la misma vía renumerada, pero no está comprobado cuándo cambió de nombre.',
+    ilu: { src: 'img/prov/cecilia.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Inventario, §11 · pendiente de citar por la prensa de la época' },
 
   { id: 'acuerdo1977', era: 5, y: '1977', d: '1 de marzo', s: 1977, n: 'visto',
     t: 'De 5.560 parcelas a 993 fincas',
     p: 'Se aprueba el acuerdo de concentración. Termina el paisaje agrario que describía el Catastro. El año anterior se había aprobado el plan de obras que lo acompaña: «red de caminos y red de saneamiento».',
+    ilu: { src: 'img/prov/acuerdo1977.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Junta de Castilla y León, ficha de la concentración parcelaria · el plan de obras, Orden de 26 [?]-II-1976, BOE-A-1976-7522' },
 
   { id: 'registro1986', era: 5, y: '1986', s: 1986, n: 'visto',
     t: 'La figura que a Colinas le falta',
     p: 'Creado el Registro de Entidades Locales, <b>catorce pueblos de Zamora</b> se inscriben como entidad local menor entre 1986 y 2003. Colinas no es uno de ellos, y Quiruelas, su municipio, no tiene ninguna. <b>Vecilla de Trasmonte</b> —a 1.673 metros, del mismo apellido toponímico— se inscribe el 10 de octubre de 1986, con el número 4490008. Y <b>Aguilar de Tera</b>, confrontante del término y más pequeño que Colinas en 1768 —92 almas frente a 114—, se inscribe el 25 de julio de 2003 [?]. La figura que a Colinas le falta se constituyó en su propia raya.',
     nota: 'La fecha es de <b>inscripción</b>, no de creación de la entidad; y en el caso de Aguilar no está comprobado si es constitución nueva o inscripción tardía. Esto es lo que decide si un emblema de Colinas puede ser oficial por sí mismo o se queda en emblema vecinal.',
+    ilu: { src: 'img/prov/registro1986.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Registro de Entidades Locales (RD 382/1986, de 10 de febrero), vía IDECyL y datos abiertos de la Junta de Castilla y León' },
 
   { id: 'excavacion', era: 5, y: '1993', d: '5–29 de julio', s: 1993, n: 'visto',
@@ -1218,17 +1398,26 @@ const EVENTOS = [
   { id: 'a52', era: 5, y: 'Fin. s. XX', s: 1998, n: 'interp',
     t: 'La autovía se lleva el tráfico',
     p: 'Con la A-52, la N-525 se vacía y cierran gasolineras, bares y comercios. Pero la autovía no vació el pueblo: cuando llega, Colinas llevaba cuarenta años perdiendo gente. Acelera algo que ya venía de lejos.',
+    ilu: { src: 'img/prov/a52.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Lectura del proyecto sobre la serie de población · fecha de apertura por precisar' },
 
   { id: 'p2024', era: 5, y: '2024', s: 2024, n: 'cotejar',
     t: '222 habitantes',
     p: 'Un 64 % menos que en 1950.',
+    ilu: { src: 'img/prov/p2024.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Padrón municipal (INE), pendiente de cotejo' },
 
   { id: 'proyecto', era: 5, y: '2026', d: 'septiembre', s: 2026, n: 'propuesto',
     t: 'Recuperar el nombre, fundar un emblema',
     p: 'Este proyecto propone devolver Castroferrol a la memoria del pueblo y construir, por primera vez, unos colores y un emblema propios a partir de lo documentado.',
     link: { href: '#emblema', t: 'Ver la materia prima' },
+    ilu: { src: 'img/prov/proyecto.jpg', w: 1000, h: 667, prov: true,
+      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    tr: 'portada',
     f: 'Proyecto Colinas de Trasmonte' }
 ];
 
@@ -1267,7 +1456,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.13';
+const VERSION = '0.14';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1275,6 +1464,15 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.14', f: '25 de septiembre de 2026', t: 'Las fuentes, a su propia página',
+    c: [
+      '<b>La firma de archivo sale de la lámina.</b> Ocupaba media pantalla en cada entrada del teléfono. Ahora vive entera en <b>«Las fuentes»</b>, una página propia del menú, agrupada por eras: sesenta entradas, sesenta firmas, ninguna perdida por el camino.',
+      '<b>Lo que no sale de la lámina es el grado de prueba</b> —el sello de arriba a la derecha— ni la cautela de que un dibujo no es prueba. Una lámina se comparte suelta, y eso es lo que impide que una propuesta circule como un hecho.',
+      '<b>Las sesenta entradas tienen ya imagen.</b> Cincuenta y tres son <b>provisionales</b>, y lo dicen en el pie: tramas abstractas, sin una sola letra, para que no se confundan con un documento. El <b>color es la era</b> y la <b>trama, el grado de prueba</b>; las tres tramas —pastilla, roseta y retícula— son las únicas que ha devuelto el suelo de Colinas.',
+      'En pantalla grande la línea <b>sigue llevando su fuente junto a cada entrada</b>: ahí es un documento y la firma está en su sitio.',
+      'El antiguo «Fuentes y créditos» pasa a llamarse <b>«Créditos y permisos»</b>, para no confundirse con la página nueva.'
+    ],
+    p: 'Las imágenes provisionales se sustituyen una a una: basta poner la buena en su sitio. Las genera web/gen-dummies.py.' },
   { v: '0.13', f: '25 de septiembre de 2026', t: 'Saltar de un tiempo a otro',
     c: [
       '<b>Las cinco eras, en el menú.</b> Quitado el raíl y con sesenta entradas, recorrer el feed a pulso había dejado de ser navegar. Ahora se salta a cualquiera de los cinco tiempos desde las tres rayas, sin ocupar pantalla ni competir con el gesto de «atrás».',
@@ -1604,7 +1802,7 @@ const VERSIONES = [
             e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
           : `<p class="fuente pie-ilu">${e.img.cap}</p>`);
       }
-      if (e.ilu) {
+      if (e.ilu && !e.ilu.prov) {
         B.push(caja
           ? `<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
             e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
@@ -1612,9 +1810,6 @@ const VERSIONES = [
           : `<p class="fuente pie-ilu"><b>Ilustración interpretada.</b> ${e.ilu.cap}</p>`);
       }
       if (e.nota) B.push(`<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>`);
-      if (e.f) {
-        B.push(`<div class="bl-firma"><span class="caps">Fuente</span><p class="fuente">${e.f}</p></div>`);
-      }
       return B;
     },
     /* Parte en frases sin romper el marcado: no corta dentro de una etiqueta
@@ -1653,12 +1848,6 @@ const VERSIONES = [
       return `<div class="ilu"><img src="${im.src}" width="${im.w}" height="${
         im.h}"${pos} alt="${primera ? esc(im.alt) : ''}"></div>`;
     },
-    firmaCorta(f) {
-      const t = String(f).split('·')[0].trim();
-      if (t.length <= 66) return t;
-      const c = t.slice(0, 66);
-      return c.slice(0, c.lastIndexOf(' ')) + '…';
-    },
     /* El sello de grado de prueba sale una sola vez, en la primera lamina */
     cabecera(e, sello) {
       const era = eraDe(e.era);
@@ -1666,10 +1855,12 @@ const VERSIONES = [
         sello ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : ''}</div>`;
     },
     pie(e) {
-      /* una lamina se comparte suelta: si lleva dibujo, el pie lo dice */
-      const t = (e.ilu ? 'Ilustración interpretada · ' : '') + this.firmaCorta(e.f || '');
-      return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>
-        <span class="t">${esc(t)}</span></div>`;
+      /* La firma de archivo salió de aqui: ocupaba media pantalla y está
+         entera en «Las fuentes». Lo que no puede salir es la cautela de que
+         un dibujo no es prueba: una lamina se comparte suelta. */
+      const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada') : '';
+      return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>${
+        t ? `<span class="t">${t}</span>` : ''}</div>`;
     },
     montar() {
       if (this.montado) return;
@@ -1819,8 +2010,6 @@ const VERSIONES = [
         });
         const lams = car.querySelectorAll('.lam');
         lams.forEach((l, j) => {
-          /* la firma entera ya esta en la lamina: el pie no la repite */
-          l.classList.toggle('con-firma', !!l.querySelector('.bl-firma'));
           if (j === lams.length - 1) return;
           const av = document.createElement('span');
           av.className = 'sigue';
@@ -2174,7 +2363,36 @@ const VERSIONES = [
       </div></article>`).join('');
   })();
 
-  /* ═══════════ 8. Menú de secciones y vistas ═══════════
+  /* ═══════════ 8. Las fuentes, una por una ═══════════
+     La firma de archivo salió de la lámina del teléfono. Vive aquí, entera
+     y agrupada por eras, para que nada de lo que la línea cuenta quede sin
+     firmar por haber cambiado de sitio. */
+  (function fuentes() {
+    const caja = $('#fuentes-lista');
+    if (!caja) return;
+    let h = '', era = 0, n = 0;
+    EVENTOS.forEach((e) => {
+      if (e.sil || !e.f) return;
+      if (e.era !== era) {
+        era = e.era;
+        const r = eraDe(era);
+        h += `<h3 class="fu-era">${esc(r ? r.t : '')}<span>${esc(r ? r.span : '')}</span></h3>`;
+      }
+      n++;
+      h += `<div class="fu" id="fu-${e.id}">
+        <div class="fu-a">${esc(e.y)}</div>
+        <div class="fu-c">
+          <h4>${e.t}</h4>
+          <p class="nivel">${mk(e.n)}${NIVELES[e.n].t}</p>
+          <p class="fuente">${e.f}</p>
+        </div></div>`;
+    });
+    caja.innerHTML = h;
+    const rot = $('#fuentes-n');
+    if (rot) rot.textContent = n + ' entradas, ' + n + ' firmas';
+  })();
+
+  /* ═══════════ 9. Menú de secciones y vistas ═══════════
      La página principal es la línea temporal. El resto de secciones
      no se recorren al bajar: se piden desde el menú de la esquina. */
   (function vistas() {

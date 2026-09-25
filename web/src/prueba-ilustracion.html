@@ -392,6 +392,30 @@ summary:hover{color:var(--almagre)}
   .vsn-n span{margin-top:0}
 }
 
+/* ═══════════ LAS FUENTES ═══════════
+   La firma de archivo salió de la lámina del teléfono —ocupaba media
+   pantalla en cada entrada— y vive aquí entera, agrupada por eras. */
+.fuentes{display:grid;gap:clamp(13px,2vw,20px);max-width:74ch}
+.fu-era{display:flex;gap:14px;align-items:baseline;font-size:1rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.2em;color:var(--teja);
+  margin-top:clamp(14px,2.4vw,28px);padding-bottom:7px;border-bottom:1px solid var(--filo-fuerte)}
+.fu-era:first-child{margin-top:0}
+.fu-era span{margin-left:auto;font-size:.75rem;font-weight:600;letter-spacing:.14em;
+  color:var(--tenue);white-space:nowrap}
+.fu{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:0 var(--gap-tl)}
+.fu-a{grid-column:1;text-align:right;color:var(--teja);font-size:1.25rem;line-height:1.25}
+.fu-c{grid-column:2;min-width:0;display:grid;gap:.25em}
+.fu-c h4{font-size:1.0625rem;line-height:1.25;color:var(--almagre)}
+.fu-c .nivel{display:inline-flex;align-items:center;gap:8px;font-size:.6875rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tenue)}
+.fu-c .nivel .mk{width:10px;height:10px;border-width:1.5px}
+.fu-c .fuente{max-width:none}
+@media (max-width:640px){
+  .fu{grid-template-columns:1fr;gap:.2em}
+  .fu-a{grid-column:1;text-align:left;font-size:1.4rem}
+  .fu-c{grid-column:1}
+}
+
 /* ═══════════ PIE ═══════════ */
 .pie{padding-block:clamp(30px,5vw,64px);border-top:1px solid var(--filo-fuerte);
   display:grid;gap:.7em;max-width:78ch}
@@ -521,8 +545,6 @@ summary:hover{color:var(--almagre)}
   .t-portada .cita{background:rgba(20,14,8,.45);border-left-color:#D9B9A8;
     color:var(--papel-alto)}
   .t-portada .fuente{color:rgba(244,232,204,.78)}
-  .t-portada .bl-firma{border-top-color:rgba(244,232,204,.32)}
-  .t-portada .bl-firma .caps{color:rgba(244,232,204,.66)}
   .t-portada .lam-pie,.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.34)}
   .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
   .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
@@ -555,11 +577,6 @@ summary:hover{color:var(--almagre)}
   .lam .ev-fig{margin:0;max-width:none}
   .lam .ev-fig img{max-height:52svh;object-fit:contain}
   .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
-  .bl-firma{display:grid;gap:4px;border-top:1px solid var(--filo);padding-top:9px}
-  .bl-firma .caps{color:var(--tenue)}
-  .bl-firma .fuente{margin:0;font-size:.8125rem;color:var(--tinta-2)}
-  /* la fuente entera ya está en la lámina: el pie no la repite */
-  .lam.con-firma .lam-pie .t{display:none}
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
   .l-sil p{font-style:italic;color:var(--apunte)}
@@ -704,8 +721,6 @@ summary:hover{color:var(--almagre)}
   .t-portada .cita{background:rgba(20,14,8,.45);border-left-color:#D9B9A8;
     color:var(--papel-alto)}
   .t-portada .fuente{color:rgba(244,232,204,.78)}
-  .t-portada .bl-firma{border-top-color:rgba(244,232,204,.32)}
-  .t-portada .bl-firma .caps{color:rgba(244,232,204,.66)}
   .t-portada .lam-pie,.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.34)}
   .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
   .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
@@ -738,11 +753,6 @@ summary:hover{color:var(--almagre)}
   .lam .ev-fig{margin:0;max-width:none}
   .lam .ev-fig img{max-height:52svh;object-fit:contain}
   .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
-  .bl-firma{display:grid;gap:4px;border-top:1px solid var(--filo);padding-top:9px}
-  .bl-firma .caps{color:var(--tenue)}
-  .bl-firma .fuente{margin:0;font-size:.8125rem;color:var(--tinta-2)}
-  /* la fuente entera ya está en la lámina: el pie no la repite */
-  .lam.con-firma .lam-pie .t{display:none}
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
   .l-sil p{font-style:italic;color:var(--apunte)}

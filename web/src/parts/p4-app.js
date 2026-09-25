@@ -215,7 +215,7 @@
             e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
           : `<p class="fuente pie-ilu">${e.img.cap}</p>`);
       }
-      if (e.ilu) {
+      if (e.ilu && !e.ilu.prov) {
         B.push(caja
           ? `<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
             e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
@@ -223,9 +223,6 @@
           : `<p class="fuente pie-ilu"><b>Ilustración interpretada.</b> ${e.ilu.cap}</p>`);
       }
       if (e.nota) B.push(`<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>`);
-      if (e.f) {
-        B.push(`<div class="bl-firma"><span class="caps">Fuente</span><p class="fuente">${e.f}</p></div>`);
-      }
       return B;
     },
     /* Parte en frases sin romper el marcado: no corta dentro de una etiqueta
@@ -264,12 +261,6 @@
       return `<div class="ilu"><img src="${im.src}" width="${im.w}" height="${
         im.h}"${pos} alt="${primera ? esc(im.alt) : ''}"></div>`;
     },
-    firmaCorta(f) {
-      const t = String(f).split('·')[0].trim();
-      if (t.length <= 66) return t;
-      const c = t.slice(0, 66);
-      return c.slice(0, c.lastIndexOf(' ')) + '…';
-    },
     /* El sello de grado de prueba sale una sola vez, en la primera lamina */
     cabecera(e, sello) {
       const era = eraDe(e.era);
@@ -277,10 +268,12 @@
         sello ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : ''}</div>`;
     },
     pie(e) {
-      /* una lamina se comparte suelta: si lleva dibujo, el pie lo dice */
-      const t = (e.ilu ? 'Ilustración interpretada · ' : '') + this.firmaCorta(e.f || '');
-      return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>
-        <span class="t">${esc(t)}</span></div>`;
+      /* La firma de archivo salió de aqui: ocupaba media pantalla y está
+         entera en «Las fuentes». Lo que no puede salir es la cautela de que
+         un dibujo no es prueba: una lamina se comparte suelta. */
+      const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada') : '';
+      return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>${
+        t ? `<span class="t">${t}</span>` : ''}</div>`;
     },
     montar() {
       if (this.montado) return;
@@ -430,8 +423,6 @@
         });
         const lams = car.querySelectorAll('.lam');
         lams.forEach((l, j) => {
-          /* la firma entera ya esta en la lamina: el pie no la repite */
-          l.classList.toggle('con-firma', !!l.querySelector('.bl-firma'));
           if (j === lams.length - 1) return;
           const av = document.createElement('span');
           av.className = 'sigue';
@@ -785,7 +776,36 @@
       </div></article>`).join('');
   })();
 
-  /* ═══════════ 8. Menú de secciones y vistas ═══════════
+  /* ═══════════ 8. Las fuentes, una por una ═══════════
+     La firma de archivo salió de la lámina del teléfono. Vive aquí, entera
+     y agrupada por eras, para que nada de lo que la línea cuenta quede sin
+     firmar por haber cambiado de sitio. */
+  (function fuentes() {
+    const caja = $('#fuentes-lista');
+    if (!caja) return;
+    let h = '', era = 0, n = 0;
+    EVENTOS.forEach((e) => {
+      if (e.sil || !e.f) return;
+      if (e.era !== era) {
+        era = e.era;
+        const r = eraDe(era);
+        h += `<h3 class="fu-era">${esc(r ? r.t : '')}<span>${esc(r ? r.span : '')}</span></h3>`;
+      }
+      n++;
+      h += `<div class="fu" id="fu-${e.id}">
+        <div class="fu-a">${esc(e.y)}</div>
+        <div class="fu-c">
+          <h4>${e.t}</h4>
+          <p class="nivel">${mk(e.n)}${NIVELES[e.n].t}</p>
+          <p class="fuente">${e.f}</p>
+        </div></div>`;
+    });
+    caja.innerHTML = h;
+    const rot = $('#fuentes-n');
+    if (rot) rot.textContent = n + ' entradas, ' + n + ' firmas';
+  })();
+
+  /* ═══════════ 9. Menú de secciones y vistas ═══════════
      La página principal es la línea temporal. El resto de secciones
      no se recorren al bajar: se piden desde el menú de la esquina. */
   (function vistas() {

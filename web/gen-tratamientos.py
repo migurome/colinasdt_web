@@ -21,7 +21,7 @@ const src=fs.readFileSync('web/src/parts/p3-data.js','utf8');
 const ctx={};
 new Function(src+'\nthis.E=EVENTOS;this.N=NIVELES;this.R=ERAS;').call(ctx);
 const era=(id)=>{const r=ctx.R.find(x=>x.id===id);return r?r.t:'';};
-const out=ctx.E.filter(e=>e.img||e.ilu).map(e=>({
+const out=ctx.E.filter(e=>e.img||(e.ilu&&!e.ilu.prov)).map(e=>({
   id:e.id, y:String(e.y), d:e.d||'', t:e.t, n:e.n, nt:ctx.N[e.n].t,
   era:era(e.era), p:e.p||'', f:e.f||'', tr:e.tr||'',
   img:e.img||null, ilu:e.ilu||null
@@ -81,7 +81,7 @@ def lamina(e, clave, rot):
                 % (im['src'], im['w'], im['h']))
     fig = ''
     if clave == 'caja':
-        pie = ((u'<b>Ilustraci\u00f3n interpretada.</b> ' if es_ilu else u'') + im['cap'])
+        pie = ((u'<b>Ilustraci\u00f3n interpretada.</b> ' if es_ilu else u'') + im.get('cap', u'Imagen provisional.'))
         fig = (u'<figure class="ev-fig%s"><img src="%s" width="%d" height="%d" loading="lazy" '
                u'alt="%s"><figcaption>%s</figcaption></figure>'
                % (' ev-ilu' if es_ilu else '', im['src'], im['w'], im['h'],
