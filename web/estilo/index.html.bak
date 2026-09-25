@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Colinas de Trasmonte</title>
+<meta name="description" content="Prototipo de estilo: papel antiguo, tintas de época y línea del tiempo que se construye al bajar. No es la web: es la maqueta para decidirla.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..700&family=Libre+Caslon+Display&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   COLINAS DE TRASMONTE — prototipo de estilo, 23-IX-2026
+   Sin modo oscuro (decidido). Grano ligero. Varias tintas con código.
+   ═══════════════════════════════════════════════════════════════ */
+
+:root{
+  /* — el papel — */
+  --papel:#F4E8CC;
+  --papel-alto:#FAF2DE;      /* cajas y láminas, un punto más claro */
+  --papel-hondo:#EADCBB;     /* franjas hundidas */
+
+  /* — las tintas — */
+  --tinta:#241C14;           /* negro sepia: el texto */
+  --tinta-2:#3B2E20;         /* parda: texto secundario */
+  --apunte:#6B4E2E;          /* sepia clara: notas al margen */
+  --tenue:#8C795C;           /* rótulos apagados */
+
+  /* — los rojos, que son varios y significan — */
+  --almagre:#6E2417;         /* el más oscuro: titulares */
+  --teja:#8C2318;            /* el principal: línea del tiempo, años */
+  --granza:#A8422A;          /* el más claro: realces y hover */
+
+  /* — las otras dos tintas de color, que llevan el código de materia — */
+  --anil:#2C4668;            /* lo administrativo y municipal */
+  --oliva:#4A5524;           /* lo antiguo y arqueológico */
+
+  --filo:#CDBA92;            /* filetes finos */
+  --filo-fuerte:#A8916A;
+
+  --f-titulo:"Libre Caslon Display",Georgia,"Times New Roman",serif;
+  --f-texto:"EB Garamond",Georgia,"Times New Roman",serif;
+  --f-dato:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+
+  --col-anno:8.5rem;
+  --col-mk:1.6rem;
+  --gap-tl:1.4rem;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+
+body{
+  margin:0;
+  background-color:var(--papel);
+  color:var(--tinta);
+  font-family:var(--f-texto);
+  font-size:1.25rem;
+  line-height:1.58;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ——— El grano: una sola tesela SVG de 160 px, repetida.
+       Ligera a propósito: el filtro se calcula una vez. ——— */
+body::before{
+  content:"";
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  opacity:.5;
+  mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E");
+}
+/* Un velado en los bordes, como papel viejo. Muy suave. */
+body::after{
+  content:"";
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,92,48,.13) 100%);
+}
+.capa{position:relative; z-index:1}
+
+.wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(18px,4.5vw,48px)}
+
+a{color:var(--teja);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{color:var(--granza);text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--teja);outline-offset:3px}
+h1,h2,h3{margin:0;text-wrap:balance;font-weight:400}
+p{margin:0}
+
+/* Versalitas espaciadas: el rótulo de serie de las cubiertas */
+.serie{
+  font-family:var(--f-texto);
+  font-size:.8125rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.34em;
+  color:var(--apunte);
+}
+.dato{font-family:var(--f-dato);font-size:.75rem;letter-spacing:.02em;color:var(--apunte)}
+
+/* ═══════════ PORTADA (sustituye al cajetín) ═══════════ */
+.portada{padding-block:clamp(34px,7vw,84px) clamp(22px,4vw,44px);text-align:center}
+.floron{display:block;margin:0 auto clamp(14px,2.4vw,22px);width:38px;height:38px;color:var(--teja)}
+.portada .serie{display:block;margin-bottom:clamp(20px,4vw,40px)}
+
+.portada h1{
+  font-family:var(--f-titulo);
+  color:var(--almagre);
+  line-height:.9;
+  letter-spacing:-.01em;
+}
+.portada h1 .grande{display:block;font-size:clamp(3.4rem,14vw,9rem)}
+.portada h1 .chico{
+  display:block;font-size:clamp(1.15rem,3.6vw,2.2rem);
+  letter-spacing:.2em;text-transform:uppercase;color:var(--teja);
+  margin-top:clamp(6px,1vw,12px);
+}
+.portada .lema{
+  font-style:italic;font-size:clamp(1.1rem,2.3vw,1.45rem);
+  color:var(--tinta-2);max-width:46ch;margin:clamp(20px,3.4vw,34px) auto 0;
+}
+
+/* Pie de imprenta: lo que antes estaba en el cajetín */
+.colofon{
+  margin-top:clamp(26px,4.6vw,48px);
+  border-top:1px solid var(--filo-fuerte);
+  border-bottom:1px solid var(--filo-fuerte);
+  padding-block:14px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:10px 22px;text-align:left;
+}
+.colofon div{display:grid;gap:3px}
+.colofon dt,.colofon .k{
+  font-family:var(--f-texto);font-size:.6875rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tenue);
+}
+.colofon .v{font-family:var(--f-dato);font-size:.9375rem;color:var(--tinta)}
+
+/* ═══════════ ÍNDICE ═══════════ */
+.indice{
+  display:flex;flex-wrap:wrap;gap:4px 26px;
+  padding-block:16px;border-bottom:1px solid var(--filo);
+}
+.indice a{
+  font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.15em;
+  color:var(--tinta-2);text-decoration:none;padding-block:6px;
+  border-bottom:1.5px solid transparent;
+}
+.indice a:hover{color:var(--almagre);border-bottom-color:var(--teja)}
+
+/* ═══════════ MARCADORES — el código de prueba, conservado ═══════════
+   La forma dice qué clase de dato es. Sólo cambian los colores. */
+.mk{
+  display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;
+  background:var(--papel-alto);border:2px solid var(--tinta);
+}
+.mk-visto{background:var(--tinta)}
+.mk-sinleer{background:radial-gradient(circle,var(--tinta) 0 2.5px,var(--papel-alto) 3px)}
+.mk-cotejar{border-color:var(--anil)}
+.mk-sinref{border-style:dashed;border-color:var(--tenue)}
+.mk-interp{border-radius:1px;transform:rotate(45deg) scale(.82);border-color:var(--teja)}
+.mk-propuesto{border-radius:2px;background:var(--anil);border-color:var(--anil)}
+.mk-contexto{border-radius:1px;width:10px;height:10px;margin:2px;background:var(--oliva);border-color:var(--oliva)}
+
+.leyenda{display:flex;flex-wrap:wrap;gap:8px 20px;padding-block:16px 4px}
+.leyenda span{display:inline-flex;align-items:center;gap:7px;font-size:.875rem;color:var(--tinta-2)}
+
+/* ═══════════ LÍNEA DEL TIEMPO ═══════════ */
+.tl{list-style:none;margin:0;padding:0}
+.tl>li{
+  display:grid;
+  grid-template-columns:var(--col-anno) var(--col-mk) minmax(0,1fr);
+  gap:0 var(--gap-tl);
+  position:relative;
+}
+
+/* Cada hito lleva SU tramo de línea. Así el rojo se construye al bajar
+   y, en los silencios, el tramo puede ir de otra manera. */
+.tl>li::before{
+  content:"";grid-column:2;grid-row:1;
+  justify-self:center;align-self:stretch;
+  width:2px;background:var(--teja);
+  transform:scaleY(0);transform-origin:top center;
+  transition:transform .85s cubic-bezier(.22,.61,.36,1);
+}
+.tl>li.on::before{transform:scaleY(1)}
+
+/* El fantasma: el trazo entero, tenue, para que se vea adónde va */
+.tl>li::after{
+  content:"";grid-column:2;grid-row:1;
+  justify-self:center;align-self:stretch;
+  width:2px;background:var(--filo);z-index:-1;
+}
+
+.ev{padding-block:clamp(18px,2.6vw,30px)}
+.ev .anno{
+  grid-column:1;grid-row:1;text-align:right;padding-top:.1em;
+  font-family:var(--f-titulo);font-size:clamp(1.5rem,3.2vw,2.3rem);
+  line-height:1;color:var(--teja);
+}
+.ev .anno small{display:block;font-family:var(--f-dato);font-size:.75rem;color:var(--apunte);margin-top:.5em;letter-spacing:.04em}
+.ev .mk{
+  grid-column:2;grid-row:1;justify-self:center;margin-top:.55em;
+  position:relative;z-index:2;
+  outline:5px solid var(--papel);
+  opacity:0;transform:scale(.4);
+  transition:opacity .5s ease .25s, transform .5s cubic-bezier(.34,1.56,.64,1) .25s;
+}
+.ev.on .mk{opacity:1;transform:scale(1)}
+.ev.on .mk-interp{transform:rotate(45deg) scale(.82)}
+
+.ev .cuerpo{
+  grid-column:3;grid-row:1;min-width:0;
+  opacity:0;transform:translateY(14px);
+  transition:opacity .7s ease .12s, transform .7s cubic-bezier(.22,.61,.36,1) .12s;
+}
+.ev.on .cuerpo{opacity:1;transform:none}
+
+.ev h3{
+  font-family:var(--f-titulo);font-size:clamp(1.3rem,2.7vw,1.85rem);
+  line-height:1.16;color:var(--almagre);margin-bottom:.4em;
+}
+.ev p{max-width:62ch}
+.ev .nota{
+  margin-top:.8em;padding-left:.95em;border-left:2px solid var(--filo-fuerte);
+  font-size:.9375rem;font-style:italic;color:var(--apunte);max-width:58ch;
+}
+.ev .fuente{
+  margin-top:.9em;font-family:var(--f-dato);font-size:.75rem;line-height:1.5;
+  color:var(--tenue);max-width:70ch;
+}
+
+/* — El silencio documental: aquí no hay papeles, y la línea lo dice — */
+.silencio{padding-block:clamp(22px,3.4vw,40px)}
+/* Nota: hace falta .tl>li.silencio para ganar en especificidad a .tl>li */
+.tl>li.silencio::before{
+  background-color:transparent;
+  background-image:linear-gradient(var(--teja) 55%,transparent 0);
+  background-size:2px 13px;background-repeat:repeat-y;
+}
+.tl>li.silencio::after{
+  background-color:transparent;
+  background-image:linear-gradient(var(--filo) 55%,transparent 0);
+  background-size:2px 13px;background-repeat:repeat-y;
+}
+.silencio .hueco{
+  grid-column:3;grid-row:1;
+  font-style:italic;color:var(--apunte);max-width:52ch;
+  opacity:0;transition:opacity .8s ease .2s;
+}
+.silencio.on .hueco{opacity:1}
+.silencio .hueco b{font-style:normal;font-weight:600;color:var(--tinta-2)}
+.silencio .rotulo{
+  grid-column:1;grid-row:1;text-align:right;
+  font-family:var(--f-dato);font-size:.75rem;color:var(--tenue);
+  letter-spacing:.06em;padding-top:.5em;
+}
+
+/* ═══════════ LÁMINAS Y RETRATOS ═══════════ */
+figure{margin:0}
+.lamina{
+  clear:both;                 /* que no se monte con un retrato flotado */
+  margin-top:1.1em;max-width:44rem;
+  background:var(--papel-alto);
+  padding:10px 10px 0;
+  border:1px solid var(--filo-fuerte);
+  box-shadow:0 1px 0 rgba(120,92,48,.18);
+}
+.lamina img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+.lamina figcaption{
+  padding:9px 2px 10px;font-size:.875rem;line-height:1.45;color:var(--tinta-2);
+}
+.lamina figcaption b{color:var(--almagre)}
+
+/* Retrato: el hueco de personaje. La marca dice de qué clase es. */
+.retrato{
+  float:right;width:min(19rem,46%);margin:.35em 0 1em 1.6em;
+  background:var(--papel-alto);border:1px solid var(--filo-fuerte);
+  padding:9px 9px 0;
+}
+.retrato img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+.retrato .hueco-retrato{
+  display:grid;place-items:center;aspect-ratio:3/4;
+  background:
+    repeating-linear-gradient(135deg,transparent 0 7px,rgba(140,35,24,.09) 7px 8px),
+    var(--papel-hondo);
+  border:1px dashed var(--filo-fuerte);
+  text-align:center;padding:16px;
+}
+.retrato .hueco-retrato span{font-size:.8125rem;color:var(--apunte);font-style:italic;line-height:1.4}
+.retrato figcaption{padding:9px 2px 11px;font-size:.8125rem;line-height:1.45;color:var(--tinta-2)}
+.retrato .pie-mk{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-size:.6875rem;
+  text-transform:uppercase;letter-spacing:.12em;color:var(--tenue)}
+.retrato .pie-mk .mk{width:10px;height:10px;border-width:1.5px;outline:0}
+@media (max-width:640px){
+  .retrato{float:none;width:100%;margin:1em 0}
+}
+
+/* ═══════════ CITA DE DOCUMENTO ═══════════ */
+.cita{
+  margin:1em 0 0;padding:.85em 1.1em;max-width:58ch;
+  background:var(--papel-hondo);
+  border-left:3px solid var(--teja);
+  font-size:1.0625rem;line-height:1.5;
+}
+.cita i{color:var(--apunte)}
+
+/* ═══════════ ERA (separador de época) ═══════════ */
+.era{
+  display:grid;grid-template-columns:var(--col-anno) var(--col-mk) minmax(0,1fr);
+  gap:0 var(--gap-tl);padding-block:clamp(34px,5vw,58px) clamp(10px,1.6vw,18px);
+}
+.era::after{
+  content:"";grid-column:2;grid-row:1;justify-self:center;align-self:stretch;
+  width:2px;background:var(--filo);
+}
+.era .rot{grid-column:3;grid-row:1}
+.era h2{
+  font-family:var(--f-titulo);font-size:clamp(1.05rem,2.2vw,1.4rem);
+  text-transform:uppercase;letter-spacing:.2em;color:var(--teja);
+}
+.era .span{font-family:var(--f-dato);font-size:.8125rem;color:var(--tenue);margin-top:5px;display:block}
+.era .filete{grid-column:1;grid-row:1;align-self:center;height:1px;background:var(--filo-fuerte)}
+
+@media (max-width:760px){
+  :root{--col-anno:0px;--gap-tl:.9rem}
+  .tl>li{grid-template-columns:var(--col-mk) minmax(0,1fr)}
+  .tl>li::before,.tl>li::after{grid-column:1}
+  .ev .mk{grid-column:1}
+  .ev .cuerpo,.silencio .hueco{grid-column:2}
+  .ev .anno{grid-column:2;grid-row:auto;text-align:left;margin-bottom:.25em}
+  .silencio .rotulo{grid-column:2;text-align:left}
+  .era{grid-template-columns:var(--col-mk) minmax(0,1fr)}
+  .era::after{grid-column:1}
+  .era .rot{grid-column:2}
+  .era .filete{display:none}
+  body{font-size:1.1875rem}
+}
+
+/* ═══════════ NOTA DE PROTOTIPO ═══════════ */
+.aviso{
+  margin-top:clamp(40px,6vw,80px);padding:16px 18px;
+  border:1px solid var(--filo-fuerte);background:var(--papel-alto);
+  font-size:.9375rem;color:var(--tinta-2);
+}
+.aviso b{color:var(--almagre)}
+footer{padding-block:clamp(30px,5vw,60px)}
+</style>
+</head>
+<body>
+<div class="capa">
+
+<!-- ══════════ PORTADA ══════════ -->
+<header class="wrap portada">
+  <svg class="floron" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
+    <path d="M24 4v40M14 12h20M17 44h14"/>
+    <path d="M24 12c-5 4-8 9-8 14s3 10 8 14c5-4 8-9 8-14s-3-10-8-14z" stroke-width="1.1"/>
+  </svg>
+  <span class="serie">Historia documentada de un lugar de Vidriales</span>
+
+  <h1>
+    <span class="grande">Colinas</span>
+    <span class="chico">de Trasmonte</span>
+  </h1>
+
+  <p class="lema">Lo que dicen los papeles de un pueblo de cuarenta vecinos,
+    contado por orden y sin rellenar los huecos.</p>
+
+  <div class="colofon">
+    <div><span class="k">Municipio</span><span class="v">Quiruelas de Vidriales</span></div>
+    <div><span class="k">Provincia</span><span class="v">Zamora</span></div>
+    <div><span class="k">Diócesis</span><span class="v">Astorga</span></div>
+    <div><span class="k">Término</span><span class="v">1.043 ha</span></div>
+    <div><span class="k">Primera mención</span><span class="v">962</span></div>
+    <div><span class="k">Fuentes leídas</span><span class="v">26 fichas</span></div>
+  </div>
+</header>
+
+<nav class="wrap indice" aria-label="Secciones">
+  <a href="#linea">La línea</a>
+  <a href="#termino">El término</a>
+  <a href="#gente">La gente</a>
+  <a href="#emblema">El emblema</a>
+  <a href="#falta">Lo que falta</a>
+</nav>
+
+<main class="wrap" id="linea">
+
+  <!-- Leyenda: el código de prueba se mantiene -->
+  <div class="leyenda">
+    <span><i class="mk mk-visto"></i>Fuente vista</span>
+    <span><i class="mk mk-sinleer"></i>Catalogada, sin leer</span>
+    <span><i class="mk mk-cotejar"></i>Por cotejar</span>
+    <span><i class="mk mk-sinref"></i>Sin localizar</span>
+    <span><i class="mk mk-interp"></i>Interpretación</span>
+    <span><i class="mk mk-propuesto"></i>Propuesta</span>
+    <span><i class="mk mk-contexto"></i>Contexto</span>
+  </div>
+
+  <div class="era">
+    <span class="filete"></span>
+    <div class="rot">
+      <h2>El pueblo del conde</h2>
+      <span class="span">1170 — 1768</span>
+    </div>
+  </div>
+
+  <ol class="tl">
+
+    <!-- ——— SILENCIO ——— -->
+    <li class="silencio">
+      <span class="rotulo">1170 · 1526</span>
+      <p class="hueco"><b>Trescientos cincuenta y seis años sin una línea.</b>
+        Todo el bajomedievo pasa sin que ningún papel conocido nombre el lugar.
+        Es el hueco mayor del proyecto, y la línea lo dice como es: a trozos.</p>
+    </li>
+
+    <!-- ——— 1526 ——— -->
+    <li class="ev">
+      <div class="anno">1526<small>Censo de Pecheros</small></div>
+      <i class="mk mk-visto" aria-hidden="true"></i>
+      <div class="cuerpo">
+        <h3>«Colinas» — veinticinco vecinos pecheros</h3>
+        <p>La medición de población más antigua que existe del lugar. Está en el folio 505 vº
+          de las Tierras del Conde de Benavente, entre «Vezinas» y la Vicaría de Nogales, y
+          escribe el nombre <b>a secas</b>: el «de Trasmonte» es añadido de editor.</p>
+        <p class="nota">De 1526 a 1768 —doscientos cuarenta y dos años— Colinas se mueve entre
+          veinticinco y veintiocho vecinos. No crece y no se hunde.</p>
+        <p class="fuente">INE, <i>Censo de Pecheros. Carlos I, 1528</i>, t. II, fol. 505 vº, inscr. 45.</p>
+      </div>
+    </li>
+
+    <!-- ——— 1694 ——— -->
+    <li class="ev">
+      <div class="anno">1694<small>12 de mayo</small></div>
+      <i class="mk mk-visto" aria-hidden="true"></i>
+      <div class="cuerpo">
+        <h3>El cura de Colinas tiene nombre por primera vez</h3>
+
+        <p>Francisco Domínguez, escribano notario público y apostólico, vecino de la villa de
+          Benavente, entra en el lugar a notificar el despacho por el que quince curas del
+          obispado de Astorga han de restituir los diezmos al conde‑duque. Y anota a quién
+          se lo notifica.</p>
+
+        <p class="cita">«D[o]n Antonio Sanna <i>[?]</i>, B[eneficia]do de Quiruelas,
+          Cura del lug[ar] de Colinas, en persona, q[ue] dixo lo oya, de que doi fee.»</p>
+
+        <figure class="lamina">
+          <img src="img/cura-de-colinas-1694.jpg" width="1400" height="231"
+               alt="Línea manuscrita de 1694 que nombra al cura de Colinas, seguida de la rúbrica del notario.">
+          <figcaption><b>La línea que lo nombra</b>, y la rúbrica de Francisco Domínguez,
+            que la escribió. AHNOB, OSUNA, C.466, D.89-90, imagen 29.</figcaption>
+        </figure>
+
+        <p class="nota">Servía a la vez el beneficio de Quiruelas. Se anota; de aquí no sale
+          ninguna explicación de la incorporación de 1975. El apellido es lectura dudosa.</p>
+        <p class="fuente">AHNOB, OSUNA, C.466, D.89-90, imágenes 28-29.</p>
+      </div>
+    </li>
+
+    <!-- ——— 1756 ——— -->
+    <li class="ev">
+      <div class="anno">1756<small>6 de abril</small></div>
+      <i class="mk mk-visto" aria-hidden="true"></i>
+      <div class="cuerpo">
+        <h3>Hay una ermita en el término, y cuesta doscientos reales al año</h3>
+
+        <figure class="retrato">
+          <img src="img/firma-obispo-astorga-1756.jpg" width="531" height="304"
+               alt="Rúbrica autógrafa de Francisco Javier, obispo de Astorga, al pie de la carta de 1756.">
+          <figcaption>
+            <b>Francisco Javier Sánchez Cabezón</b>, obispo de Astorga.
+            No se conserva retrato suyo: queda su rúbrica.
+            <span class="pie-mk"><i class="mk mk-visto"></i>Rúbrica autógrafa</span>
+          </figcaption>
+        </figure>
+
+        <p>El obispo escribe al conde‑duque de Benavente sobre su ahijado, don Matheo Villalva,
+          presbítero y prestamero del de San Juan de Colinas de Trasmonte.</p>
+
+        <p class="cita">«…para componer la <b>Ermita que ay en su territorio respectivo</b>, y
+          ponerla decente de Ornatos […] di orden para que en cada un año se retubiese una
+          porción […] y me parece pues <b>la Cota de 200 r[eale]s cada año</b>»</p>
+
+        <p>Y añade que el arrendatario dice haberle embargado seiscientos reales invocando su
+          nombre —«yo no he mandado tal cosa»— y que «estoy en pasar en todo este mes a las
+          cercanías del Lugar de Colinas».</p>
+
+        <p class="nota">El catálogo la llama «ermita de San Juan Bautista». La carta no dice la
+          advocación: dice que Villalva es prestamero del beneficio de San Juan y que hay una
+          ermita en su territorio. El añadido es del catalogador.</p>
+
+        <figure class="lamina">
+          <img src="img/ermita-1756.jpg" width="1200" height="550"
+               alt="Pasaje manuscrito de la carta de 1756 donde se menciona la ermita.">
+          <figcaption><b>El pasaje de la ermita.</b> Carta del obispo de Astorga al XI conde‑duque
+            de Benavente, Astorga, 6 de abril de 1756.</figcaption>
+        </figure>
+
+        <p class="fuente">AHNOB, OSUNA, CT.271, D.21.</p>
+      </div>
+    </li>
+
+    <!-- ——— 1768, con hueco de retrato interpretado ——— -->
+    <li class="ev">
+      <div class="anno">1768<small>1 de noviembre</small></div>
+      <i class="mk mk-visto" aria-hidden="true"></i>
+      <div class="cuerpo">
+        <h3>Ciento catorce almas, contadas una a una</h3>
+
+        <figure class="retrato">
+          <div class="hueco-retrato">
+            <span>Aquí iría el retrato<br>de don Matheo Villalva,<br>prestamero de San Juan</span>
+          </div>
+          <figcaption>
+            No se conserva retrato. La imagen sería una <b>interpretación</b>, no un parecido.
+            <span class="pie-mk"><i class="mk mk-interp"></i>Interpretación</span>
+          </figcaption>
+        </figure>
+
+        <p>El Censo de Aranda no cuenta vecinos: cuenta personas, por sexo, edad y estado.
+          Sesenta y un varones y cincuenta y tres hembras. Cuarenta de las ciento catorce son
+          menores de dieciséis años; sólo quince pasan de cincuenta. Ningún hidalgo.</p>
+
+        <p>La relación la da el propio cura, y declara además «un Administrador del Estanco
+          del Tabaco»: el único oficio del pueblo que no es labrar ni decir misa.</p>
+
+        <figure class="lamina">
+          <img src="img/aranda-1768.jpg" width="1200" height="345"
+               alt="Encabezamiento del asiento de Colinas de Trasmonte en el Censo de Aranda.">
+          <figcaption><b>«Obispado de Astorga. Corregim.to de Benavente — Lugar de Colinas de
+            Trasmonte. Parroquia de San Juan.»</b> Asiento 173.</figcaption>
+        </figure>
+
+        <p class="fuente">INE, <i>Censo de Aranda</i>, t. I, obispado de Astorga, asiento 173, R.A.H. 01-181.</p>
+      </div>
+    </li>
+
+    <!-- ——— un hito sin leer, para ver el marcador ——— -->
+    <li class="ev">
+      <div class="anno">1772<small>Chancillería</small></div>
+      <i class="mk mk-sinleer" aria-hidden="true"></i>
+      <div class="cuerpo">
+        <h3>Tres aniversarios fundados en la iglesia parroquial</h3>
+        <p>Simón Prieto Montero, clérigo de menores, obtiene ejecutoria sobre el segundo de tres
+          aniversarios dotados en la iglesia de Colinas. El pleito está leído; el
+          <b>libro de memorias y aniversarios</b> que implica, no: está en Astorga y hay que ir.</p>
+        <p class="fuente">ARCHV, Registro de Ejecutorias · pendiente: Archivo Diocesano de Astorga.</p>
+      </div>
+    </li>
+
+  </ol>
+
+  <!-- ══════════ NOTA DE PROTOTIPO ══════════ -->
+  <div class="aviso">
+    <b>Esto es una maqueta, no la web.</b> Sirve para decidir el estilo: papel y grano,
+    las tintas, la tipografía, la portada en vez del cajetín, los marcadores conservados y
+    la línea roja que se construye al bajar —y que se rompe en los silencios documentales—.
+    Cuando esté aprobado, se lleva a <span class="dato">web/src/parts/p1-head.html</span>.
+  </div>
+</main>
+
+<footer class="wrap">
+  <p class="dato">Prototipo de estilo · 23 de septiembre de 2026 · sin modo oscuro</p>
+</footer>
+
+</div>
+
+<script>
+/* La línea y los hitos aparecen al entrar en pantalla.
+   Si el navegador no trae IntersectionObserver, se muestra todo. */
+(function(){
+  var filas = document.querySelectorAll('.tl > li');
+  if(!('IntersectionObserver' in window)){
+    filas.forEach(function(f){ f.classList.add('on'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entradas){
+    entradas.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('on');
+        io.unobserve(e.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -18% 0px', threshold: 0.08 });
+  filas.forEach(function(f){ io.observe(f); });
+})();
+</script>
+</body>
+</html>

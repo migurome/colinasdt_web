@@ -1,0 +1,631 @@
+<title>Colinas en el móvil</title>
+<meta name="description" content="Prueba de la línea temporal de Colinas de Trasmonte leída como un feed, con carrusel lateral y la línea del tiempo de barra de desplazamiento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..600&display=swap">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   COLINAS DE TRASMONTE — prueba móvil, 25-IX-2026
+   Sistema de estilo: el aprobado en web/estilo/index.html (23-IX).
+   Papel antiguo, UNA SOLA tipografía (EB Garamond), tintas con código.
+   Sin modo oscuro, como se decidió.
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  /* — el papel — */
+  --papel:#F4E8CC;
+  --papel-alto:#FAF2DE;
+  --papel-hondo:#EADCBB;
+  /* — las tintas — */
+  --tinta:#241C14;
+  --tinta-2:#3B2E20;
+  --apunte:#6B4E2E;
+  --tenue:#8C795C;
+  /* — los rojos, que significan — */
+  --almagre:#6E2417;
+  --teja:#8C2318;
+  --granza:#A8422A;
+  /* — las dos tintas del código de materia — */
+  --anil:#2C4668;
+  --oliva:#4A5524;
+  --filo:#CDBA92;
+  --filo-fuerte:#A8916A;
+
+  --f:"EB Garamond",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background-color:var(--papel);
+  color:var(--tinta);
+  font-family:var(--f);          /* ← la única */
+  font-size:1.1875rem;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+p{margin:0}
+h2,h3{margin:0;font-weight:400;text-wrap:balance}
+a{color:var(--teja);text-underline-offset:.2em}
+:focus-visible{outline:2px solid var(--teja);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* ——— REGISTRO 3: el rótulo ——— */
+.rotulo{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--tenue)}
+/* ——— REGISTRO 5: la referencia de archivo ——— */
+.fuente{font-size:.8125rem;line-height:1.5;color:var(--tenue)}
+
+/* ═══ Encuadre ═══ */
+.escena{height:100%;display:grid;grid-template-columns:1fr}
+.marco{position:relative;height:100%;min-height:0;overflow:hidden;background:var(--papel)}
+.explica{display:none}
+
+.app{position:relative;height:100%;display:grid;grid-template-rows:auto 1fr;
+  background:var(--papel);overflow:hidden}
+
+/* ——— El grano y el velado, sobre el marco entero ——— */
+.marco::before{
+  content:"";position:absolute;inset:0;z-index:8;pointer-events:none;
+  opacity:.5;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E");
+}
+.marco::after{
+  content:"";position:absolute;inset:0;z-index:8;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,92,48,.13) 100%);
+}
+
+/* ═══ Barra superior ═══ */
+.barra{display:flex;align-items:center;gap:8px;padding:10px 13px;
+  border-bottom:1px solid var(--filo-fuerte);background:var(--papel-alto);
+  position:relative;z-index:6}
+.barra .marca{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.2em;
+  color:var(--almagre);margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bt{font-family:var(--f);font-size:.75rem;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--tinta-2);background:var(--papel-alto);
+  border:1px solid var(--filo-fuerte);padding:5px 9px;cursor:pointer;white-space:nowrap}
+.bt[aria-pressed="true"]{background:var(--teja);border-color:var(--teja);color:var(--papel-alto)}
+
+/* ═══ Panel de filtros ═══ */
+.panel{position:absolute;top:0;left:0;right:0;z-index:5;background:var(--papel-alto);
+  border-bottom:1px solid var(--filo-fuerte);padding:13px 13px 15px;
+  display:grid;gap:10px;transform:translateY(-101%);transition:transform .22s ease}
+.panel.abierto{transform:translateY(0)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f);font-size:.75rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;padding:5px 9px;border:1px solid var(--filo);
+  background:var(--papel-alto);color:var(--tinta-2);cursor:pointer;
+  display:flex;align-items:center;gap:7px}
+.chip[aria-pressed="true"]{border-color:var(--teja);background:var(--papel-hondo);color:var(--almagre)}
+.chip b{font-weight:600;color:var(--tenue)}
+
+/* ═══ MARCADORES — el código de prueba, con las tintas aprobadas ═══ */
+.mk{display:inline-block;flex:none;width:13px;height:13px;border-radius:50%;
+  background:var(--papel-alto);border:2px solid var(--tinta)}
+.mk-visto{background:var(--tinta)}
+.mk-sinleer{background:radial-gradient(circle,var(--tinta) 0 2.2px,var(--papel-alto) 2.7px)}
+.mk-cotejar{border-color:var(--anil)}
+.mk-sinref{border-style:dashed;border-color:var(--tenue)}
+.mk-interp{border-radius:1px;transform:rotate(45deg) scale(.82);border-color:var(--teja)}
+.mk-propuesto{border-radius:2px;background:var(--anil);border-color:var(--anil)}
+.mk-contexto{border-radius:1px;width:9.5px;height:9.5px;margin:1.75px;background:var(--oliva);border-color:var(--oliva)}
+
+/* ═══ El feed ═══ */
+.feed{position:relative;height:100%;min-height:0;overflow-y:auto;overflow-x:hidden;
+  scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}
+.feed::-webkit-scrollbar{display:none}
+.post{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative;
+  display:grid;grid-template-rows:1fr}
+.post[hidden]{display:none}
+
+/* puntos del carrusel: filetes, no bolitas */
+.puntos{position:absolute;top:9px;left:16px;z-index:3;display:flex;gap:6px;pointer-events:none}
+.punto{width:17px;height:1.5px;background:var(--filo);transition:background .18s ease}
+.punto.on{background:var(--teja);height:2px}
+
+/* ═══ El carrusel ═══ */
+.carrusel{display:flex;height:100%;min-height:0;overflow-x:auto;overflow-y:hidden;
+  scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scroll-behavior:smooth;
+  scrollbar-width:none}
+.carrusel::-webkit-scrollbar{display:none}
+.lam{flex:0 0 100%;width:100%;height:100%;min-height:0;scroll-snap-align:start;scroll-snap-stop:always;
+  display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;
+  padding:28px 18px 13px}
+
+/* cabecera de lámina: era + sello, en TODAS */
+.lam-top{display:flex;align-items:center;gap:9px;min-width:0}
+.lam-top .era{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
+.lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.12em;color:var(--apunte)}
+
+.lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:center;gap:13px;
+  -webkit-overflow-scrolling:touch}
+.lam-cuerpo.arriba{align-content:start}
+
+/* pie: la firma, en TODAS */
+.lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline}
+.lam-pie .n{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teja);flex:none}
+.lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);
+  overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+/* ── portada ── */
+.p-anio{color:var(--teja);font-size:clamp(3rem,16vw,5.2rem);line-height:.9;letter-spacing:-.01em}
+.p-dia{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--apunte);margin-top:9px}
+.p-tit{color:var(--almagre);font-size:clamp(1.35rem,6vw,1.85rem);line-height:1.14;margin-top:16px}
+.desliza{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--tenue);margin-top:20px;display:flex;align-items:center;gap:9px}
+.desliza::after{content:"";width:28px;height:1px;background:var(--filo-fuerte);
+  animation:vaiven 2.4s ease-in-out infinite}
+@keyframes vaiven{0%,100%{transform:translateX(0);opacity:.5}50%{transform:translateX(8px);opacity:1}}
+
+/* ── cita: como en el prototipo, sobre papel hondo y filete de teja ── */
+.l-cita .cita{padding:.9em 1.1em;background:var(--papel-hondo);border-left:3px solid var(--teja);
+  font-size:clamp(1.05rem,4.4vw,1.3rem);line-height:1.45}
+.l-cita q{quotes:none;display:block;text-wrap:pretty}
+
+/* ── relato ── */
+.l-relato p{font-size:clamp(1rem,4vw,1.15rem);line-height:1.52;text-wrap:pretty}
+.l-relato .enlace{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--tenue);border-top:1px solid var(--filo);padding-top:9px}
+
+/* ── imagen: la lámina enmarcada del prototipo ── */
+.l-img{align-content:center}
+.l-img figure{margin:0;background:var(--papel-alto);border:1px solid var(--filo-fuerte);
+  box-shadow:0 1px 0 rgba(120,92,48,.18);padding:9px 9px 0;display:grid;min-height:0}
+.l-img img{display:block;width:100%;height:auto;max-height:100%;object-fit:contain;
+  mix-blend-mode:multiply}
+.l-img figcaption{padding:9px 2px 10px;font-size:.8125rem;line-height:1.45;color:var(--tinta-2)}
+
+/* ── cautela: REGISTRO 4, cursiva y sepia clara ── */
+.l-nota .aviso{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--teja)}
+.l-nota p{padding-left:.95em;border-left:2px solid var(--filo-fuerte);
+  font-style:italic;color:var(--apunte);
+  font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
+
+/* ── firma ── */
+.l-firma .rot{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--tenue)}
+.l-firma .txt{font-size:.9375rem;line-height:1.5;color:var(--tinta-2);word-break:break-word}
+.l-firma .grado{display:flex;align-items:center;gap:9px;border-top:1px solid var(--filo);
+  padding-top:11px;font-size:.8125rem;color:var(--tinta-2)}
+
+/* ── el silencio documental ── */
+.post-sil .lam{background:var(--papel-hondo)}
+.post-sil .caja{border-top:1px solid var(--filo-fuerte);border-bottom:1px solid var(--filo-fuerte);
+  padding:20px 0;display:grid;gap:12px}
+.post-sil .rango{color:var(--teja);font-size:clamp(1.7rem,8vw,2.4rem);line-height:1}
+.post-sil p{font-style:italic;color:var(--apunte);font-size:1.0625rem;line-height:1.5}
+
+/* ═══ La línea del tiempo, de barra de desplazamiento ═══
+   El trazo recorrido va en teja y el que falta en filo: la línea
+   se construye al bajar, como en el prototipo de escritorio. ═══ */
+.rail{position:absolute;top:0;right:0;bottom:0;width:28px;z-index:7;
+  touch-action:none;cursor:ns-resize;
+  background:linear-gradient(to left,var(--papel) 60%,rgba(244,232,204,0))}
+.rail svg{display:block;width:100%;height:100%}
+.rail .fantasma{stroke:var(--filo);stroke-width:2;fill:none}
+.rail .hecho{stroke:var(--teja);stroke-width:2;fill:none}
+.rail .hueco{stroke:var(--filo);stroke-width:2;fill:none;stroke-dasharray:7 6}
+.rail .era-b{fill:var(--filo-fuerte);opacity:.5}
+.rail .tk{fill:var(--tinta)}
+.rail .tk.off{opacity:.15}
+.rail .tk-an{fill:var(--anil)}
+.rail .tk-tj{fill:var(--teja)}
+.rail .tk-ol{fill:var(--oliva)}
+.rail .tk-te{fill:var(--tenue)}
+.rail .quiebre{stroke:var(--filo-fuerte);stroke-width:1.1;fill:none}
+#pulgar{fill:var(--teja);stroke:var(--papel);stroke-width:2}
+.rail-lbl{position:absolute;right:32px;z-index:9;background:var(--teja);color:var(--papel-alto);
+  font-size:.8125rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:4px 10px;white-space:nowrap;transform:translateY(-50%);pointer-events:none;
+  opacity:0;transition:opacity .14s ease}
+.rail-lbl.on{opacity:1}
+
+/* ═══ Modo documento: la salida de emergencia ═══ */
+.app.doc .feed{scroll-snap-type:none}
+.app.doc .post{height:auto;border-bottom:1px solid var(--filo-fuerte)}
+.app.doc .carrusel{display:block;overflow:visible;height:auto}
+.app.doc .lam{height:auto;min-height:0;padding:16px 18px;
+  border-bottom:1px solid var(--filo)}
+.app.doc .lam-cuerpo{overflow:visible;align-content:start}
+.app.doc .puntos,.app.doc .desliza{display:none}
+.app.doc .p-anio{font-size:2.6rem}
+
+/* ═══ En pantalla ancha: se ve dentro de un teléfono ═══ */
+@media (min-width:880px){
+  body{overflow:auto}
+  .escena{grid-template-columns:minmax(0,1fr) 390px;gap:clamp(28px,5vw,64px);
+    align-items:center;justify-content:center;max-width:72rem;margin-inline:auto;
+    padding:32px clamp(20px,4.5vw,48px);height:auto;min-height:100%}
+  .marco{order:2;height:min(820px,calc(100vh - 72px));width:390px;
+    border:9px solid var(--tinta);border-radius:30px;
+    box-shadow:0 18px 44px rgba(36,28,20,.28)}
+  .explica{display:grid;gap:18px;align-content:center;order:1;max-width:44ch}
+  .explica h2{color:var(--almagre);font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.05}
+  .explica p{font-size:1.0625rem;line-height:1.55;color:var(--tinta-2)}
+  .explica .marginal{padding-left:.95em;border-left:2px solid var(--filo-fuerte);
+    font-style:italic;color:var(--apunte);font-size:.9375rem;max-width:56ch}
+  .explica table{border-collapse:collapse;font-size:.9375rem;width:100%;max-width:26rem}
+  .explica th,.explica td{text-align:left;padding:6px 8px 6px 0;
+    border-bottom:1px solid var(--filo);vertical-align:baseline}
+  .explica th{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+    color:var(--tenue);white-space:nowrap}
+  .explica td.num{text-align:right;font-variant-numeric:tabular-nums;color:var(--teja);
+    font-size:1.125rem;white-space:nowrap}
+}
+</style>
+
+<div class="escena">
+
+  <aside class="explica">
+    <p class="rotulo">Prueba de diseño · 25 de septiembre de 2026</p>
+    <h2>La línea temporal, leída como un feed</h2>
+    <p>Esto es lo que se vería al abrir la web desde un teléfono. Cada entrada ocupa la pantalla
+    entera y se pasa <b>deslizando hacia arriba</b>; lo que la entrada tenga de más —la cita, la
+    imagen, la cautela, la fuente— se lee <b>deslizando al lado</b>. La línea del tiempo, a la
+    derecha, <b>es la barra de desplazamiento</b>: se arrastra, y el trazo se va tiñendo de rojo
+    según se baja, igual que en el prototipo de escritorio.</p>
+    <table>
+      <tbody>
+        <tr><th>Entradas</th><td class="num" id="n-post">—</td></tr>
+        <tr><th>Láminas</th><td class="num" id="n-lam">—</td></tr>
+        <tr><th>Contenido nuevo escrito</th><td class="num">0</td></tr>
+      </tbody>
+    </table>
+    <p>Las láminas <b>no se han inventado</b>: cada una es un campo que las entradas ya tenían en
+    <span style="font-style:italic">p3-data.js</span>. Por eso una entrada de texto simple tiene
+    tres y se ajusta a pantalla, y otra con cita e imagen tiene seis.</p>
+    <p class="marginal">El sello de prueba y la firma van en todas las láminas, no sólo en la
+    portada: en un feed una lámina se ve suelta y se comparte suelta, y una propuesta no puede
+    circular como si fuera un hecho documentado.</p>
+    <p class="marginal">Contenido a 22 de septiembre. Faltan aquí 1073, 1526, 1591, 1694, 1756 y
+    1768, que es lo que la web todavía no sabe. Primero se pone al día la línea; después se monta
+    esto. Y web/src/ sigue sin tocarse.</p>
+  </aside>
+
+  <div class="marco">
+    <div class="app" id="app">
+
+      <header class="barra">
+        <span class="marca">Colinas de Trasmonte</span>
+        <button class="bt" id="bt-doc" aria-pressed="false">Documento</button>
+        <button class="bt" id="bt-filtro" aria-pressed="false" aria-controls="panel">Prueba</button>
+      </header>
+
+      <div class="panel" id="panel">
+        <p class="rotulo">Filtrar por grado de prueba</p>
+        <div class="chips" id="chips"></div>
+        <p class="fuente">Al filtrar se apagan también las marcas del raíl.</p>
+      </div>
+
+      <div class="feed" id="feed"></div>
+
+      <div class="rail" id="rail" role="slider" tabindex="0" aria-label="Línea del tiempo: arrastra para recorrer"
+           aria-valuemin="1" aria-valuenow="1" aria-valuetext="">
+        <svg id="rail-svg" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </div>
+      <div class="rail-lbl" id="rail-lbl" aria-hidden="true"></div>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+/*__DATOS__*/
+</script>
+
+<script>
+(function () {
+  'use strict';
+  var $ = function (s) { return document.querySelector(s); };
+  var feed = $('#feed'), rail = $('#rail'), railSvg = $('#rail-svg'), railLbl = $('#rail-lbl');
+
+  function esc(t) {
+    return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function eraDe(id) {
+    for (var i = 0; i < ERAS.length; i++) if (ERAS[i].id === id) return ERAS[i];
+    return null;
+  }
+  /* La firma, abreviada para el pie: hasta el primer separador, y cortada por palabra. */
+  function firmaCorta(f) {
+    var t = String(f).split('·')[0].trim();
+    if (t.length <= 66) return t;
+    var c = t.slice(0, 66);
+    return c.slice(0, c.lastIndexOf(' ')) + '…';
+  }
+
+  /* ═══ 1. Las láminas salen de los campos que la entrada ya tiene ═══ */
+  function laminasDe(e) {
+    var L = ['portada'];
+    if (e.q) L.push('cita');
+    if (e.p) L.push('relato');
+    if (e.img) L.push('imagen');
+    if (e.nota) L.push('nota');
+    if (e.f) L.push('firma');
+    return L;
+  }
+
+  var TOTAL_LAM = 0;
+  var reales = EVENTOS.filter(function (e) { return !e.sil; });
+
+  function cabecera(e) {
+    var era = eraDe(e.era);
+    var niv = NIVELES[e.n] ? NIVELES[e.n].t : '';
+    return '<div class="lam-top">' +
+      '<span class="era">' + esc(era ? era.t : '') + '</span>' +
+      '<span class="sello"><span class="mk mk-' + e.n + '" aria-hidden="true"></span>' +
+      '<span>' + esc(niv) + '</span></span></div>';
+  }
+  function pie(e) {
+    return '<div class="lam-pie"><span class="n">' + esc(e.y) + '</span>' +
+      '<span class="t">' + esc(firmaCorta(e.f || '')) + '</span></div>';
+  }
+
+  function cuerpo(e, k) {
+    switch (k) {
+      case 'portada':
+        return '<div class="lam-cuerpo"><div>' +
+          '<div class="p-anio">' + esc(e.y) + '</div>' +
+          (e.d ? '<div class="p-dia">' + esc(e.d) + '</div>' : '') +
+          '<h3 class="p-tit">' + esc(e.t) + '</h3>' +
+          (laminasDe(e).length > 1 ? '<div class="desliza">Desliza al lado</div>' : '') +
+          '</div></div>';
+      case 'cita':
+        return '<div class="lam-cuerpo l-cita"><div class="cita">' +
+          '<q>' + esc(e.q) + '</q></div></div>';
+      case 'relato':
+        return '<div class="lam-cuerpo l-relato arriba"><p>' + esc(e.p) + '</p>' +
+          (e.link ? '<p class="enlace">En la web: ' + esc(e.link.t) + '</p>' : '') + '</div>';
+      case 'imagen':
+        return '<div class="lam-cuerpo l-img"><figure>' +
+          '<img src="' + esc(e.img.src) + '" width="' + e.img.w + '" height="' + e.img.h + '"' +
+          ' loading="lazy" alt="' + esc(e.img.alt) + '">' +
+          '<figcaption>' + esc(e.img.cap) + '</figcaption></figure></div>';
+      case 'nota':
+        return '<div class="lam-cuerpo l-nota arriba">' +
+          '<p class="aviso">Cautela</p><p>' + esc(e.nota) + '</p></div>';
+      case 'firma':
+        return '<div class="lam-cuerpo l-firma arriba">' +
+          '<p class="rot">Fuente</p><p class="txt">' + esc(e.f) + '</p>' +
+          '<p class="grado"><span class="mk mk-' + e.n + '" aria-hidden="true"></span>' +
+          esc(NIVELES[e.n] ? NIVELES[e.n].t : '') + '</p></div>';
+    }
+    return '';
+  }
+
+  /* ═══ 2. El feed ═══ */
+  var html = '';
+  EVENTOS.forEach(function (e, i) {
+    if (e.sil) {
+      html += '<article class="post post-sil" data-i="' + i + '">' +
+        '<div class="carrusel"><div class="lam"><div class="lam-top">' +
+        '<span class="era">' + esc((eraDe(e.era) || {}).t || '') + '</span></div>' +
+        '<div class="lam-cuerpo"><div class="caja">' +
+        '<div class="rango">' + esc(e.y) + '</div>' +
+        '<p>' + esc(e.p) + '</p></div></div>' +
+        '<div class="lam-pie"><span class="t">Silencio documental</span></div>' +
+        '</div></div></article>';
+      TOTAL_LAM += 1;
+      return;
+    }
+    var L = laminasDe(e);
+    TOTAL_LAM += L.length;
+    var lams = L.map(function (k) {
+      return '<section class="lam lam-' + k + '" aria-label="' + esc(e.y + ' · ' + k) + '">' +
+        cabecera(e) + cuerpo(e, k) + pie(e) + '</section>';
+    }).join('');
+    var puntos = L.map(function (k, j) {
+      return '<span class="punto' + (j === 0 ? ' on' : '') + '"></span>';
+    }).join('');
+    html += '<article class="post" id="post-' + e.id + '" data-i="' + i + '" data-n="' + e.n + '">' +
+      '<div class="puntos" aria-hidden="true">' + puntos + '</div>' +
+      '<div class="carrusel" tabindex="0" aria-label="' + esc(e.y + ': ' + e.t) + '">' +
+      lams + '</div></article>';
+  });
+  feed.innerHTML = html;
+
+  var posts = Array.prototype.slice.call(feed.querySelectorAll('.post'));
+
+  /* puntos del carrusel, al deslizar al lado */
+  posts.forEach(function (post) {
+    var car = post.querySelector('.carrusel');
+    var pts = post.querySelectorAll('.punto');
+    if (!pts.length) return;
+    var t = null;
+    car.addEventListener('scroll', function () {
+      if (t) return;
+      t = requestAnimationFrame(function () {
+        t = null;
+        var n = Math.round(car.scrollLeft / car.clientWidth);
+        for (var j = 0; j < pts.length; j++) pts[j].classList.toggle('on', j === n);
+      });
+    }, { passive: true });
+  });
+
+  /* ═══ 3. Filtros por grado de prueba ═══ */
+  var chips = $('#chips');
+  var opciones = [['todo', 'Todo']].concat(Object.keys(NIVELES).map(function (k) {
+    return [k, NIVELES[k].t];
+  }));
+  chips.innerHTML = opciones.map(function (o) {
+    var k = o[0], t = o[1];
+    var n = k === 'todo' ? reales.length : reales.filter(function (e) { return e.n === k; }).length;
+    if (n === 0) return '';
+    return '<button class="chip" data-k="' + k + '" aria-pressed="' + (k === 'todo') + '">' +
+      (k === 'todo' ? '' : '<span class="mk mk-' + k + '" aria-hidden="true"></span>') +
+      t + ' <b>' + n + '</b></button>';
+  }).join('');
+
+  function aplicar(k) {
+    chips.querySelectorAll('.chip').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.k === k));
+    });
+    posts.forEach(function (p) {
+      p.hidden = !(k === 'todo' || p.dataset.n === k);
+    });
+    railSvg.querySelectorAll('.tk').forEach(function (g) {
+      g.classList.toggle('off', !(k === 'todo' || g.dataset.n === k));
+    });
+    visibles = posts.filter(function (p) { return !p.hidden; });
+    feed.scrollTop = 0;
+    actual = -1;
+    pinta(0);
+  }
+  chips.addEventListener('click', function (ev) {
+    var b = ev.target.closest('.chip');
+    if (b) { aplicar(b.dataset.k); cerrarPanel(); }
+  });
+
+  /* ═══ 4. El raíl: la línea del tiempo hecha barra de desplazamiento ═══ */
+  /* Misma escala comprimida que la web de escritorio, puesta en vertical. */
+  var H = 1000, P = 18, X0 = -100, X1 = 2050;
+  var PREH = [-2400, -2100], AY = P + 54, BY = AY + 26;
+  function y(s) {
+    return s < -500
+      ? P + ((s - PREH[0]) / (PREH[1] - PREH[0])) * (AY - P)
+      : BY + ((s - X0) / (X1 - X0)) * (H - P - BY);
+  }
+  var FORMA = { visto: 'tk', sinleer: 'tk', cotejar: 'tk tk-an', sinref: 'tk tk-te',
+                interp: 'tk tk-tj', propuesto: 'tk tk-an', contexto: 'tk tk-ol' };
+
+  var orden = reales.slice().sort(function (a, b) { return a.s - b.s; });
+  var s = '';
+  /* bandas de era */
+  ERAS.forEach(function (er) {
+    var ss = reales.filter(function (e) { return e.era === er.id; }).map(function (e) { return e.s; });
+    if (!ss.length) return;
+    var y1 = y(Math.min.apply(null, ss)), y2 = y(Math.max.apply(null, ss));
+    s += '<rect class="era-b" x="22" y="' + y1.toFixed(1) + '" width="2" height="' +
+      Math.max(3, y2 - y1).toFixed(1) + '"/>';
+  });
+  /* el trazo: entero en filo, y el hueco de 381 años, punteado */
+  var yh1 = y(1170), yh2 = y(1551);
+  s += '<path class="fantasma" d="M14 ' + P + ' V' + yh1.toFixed(1) + '"/>';
+  s += '<path class="hueco" d="M14 ' + yh1.toFixed(1) + ' V' + yh2.toFixed(1) + '"/>';
+  s += '<path class="fantasma" d="M14 ' + yh2.toFixed(1) + ' V' + (H - P) + '"/>';
+  /* el tramo recorrido, en teja: se construye al bajar */
+  s += '<path class="hecho" id="hecho" d="M14 ' + P + ' V' + P + '"/>';
+  /* la ruptura de escala */
+  s += '<path class="quiebre" d="M7 ' + (AY + 9) + ' L21 ' + (AY + 3) +
+       ' M7 ' + (AY + 17) + ' L21 ' + (AY + 11) + '"/>';
+  orden.forEach(function (e) {
+    s += '<rect class="' + (FORMA[e.n] || 'tk') + '" data-n="' + e.n + '" data-id="' + e.id +
+      '" x="6" y="' + (y(e.s) - 1).toFixed(1) + '" width="16" height="2"/>';
+  });
+  s += '<circle id="pulgar" cx="14" cy="' + P + '" r="5.4"/>';
+  railSvg.setAttribute('viewBox', '0 0 28 ' + H);
+  railSvg.innerHTML = s;
+  var pulgar = $('#pulgar'), hecho = $('#hecho');
+
+  /* ═══ 5. Sincronía feed ⇄ raíl ═══ */
+  var visibles = posts.slice();
+  var actual = -1;
+
+  function pinta(idx) {
+    if (idx === actual) return;
+    actual = idx;
+    var p = visibles[idx];
+    if (!p) return;
+    var e = EVENTOS[+p.dataset.i];
+    var yy;
+    if (e.sil) {
+      var prev = visibles[Math.max(0, idx - 1)];
+      var ep = prev ? EVENTOS[+prev.dataset.i] : null;
+      yy = (ep && !ep.sil) ? y(ep.s) : P;
+    } else {
+      yy = y(e.s);
+    }
+    pulgar.setAttribute('cy', yy.toFixed(1));
+    hecho.setAttribute('d', 'M14 ' + P + ' V' + yy.toFixed(1));
+    railLbl.style.top = (yy / H * rail.clientHeight) + 'px';
+    railLbl.textContent = e.y;
+    rail.setAttribute('aria-valuenow', String(idx + 1));
+    rail.setAttribute('aria-valuemax', String(visibles.length));
+    rail.setAttribute('aria-valuetext', e.y + (e.t ? ': ' + e.t : ''));
+  }
+
+  var tf = null;
+  feed.addEventListener('scroll', function () {
+    if (tf) return;
+    tf = requestAnimationFrame(function () {
+      tf = null;
+      if ($('#app').classList.contains('doc')) return;
+      pinta(Math.round(feed.scrollTop / feed.clientHeight));
+    });
+  }, { passive: true });
+
+  function irA(idx) {
+    idx = Math.max(0, Math.min(visibles.length - 1, idx));
+    var p = visibles[idx];
+    if (!p) return;
+    feed.scrollTo({ top: p.offsetTop, behavior: 'auto' });
+    pinta(idx);
+  }
+  /* al arrastrar el raíl se busca la entrada más cercana en el tiempo */
+  function desdeY(clientY) {
+    var r = rail.getBoundingClientRect();
+    var vy = ((clientY - r.top) / r.height) * H;
+    var mejor = 0, dist = Infinity;
+    visibles.forEach(function (p, i) {
+      var e = EVENTOS[+p.dataset.i];
+      if (e.sil) return;
+      var d = Math.abs(y(e.s) - vy);
+      if (d < dist) { dist = d; mejor = i; }
+    });
+    return mejor;
+  }
+  var arrastrando = false;
+  rail.addEventListener('pointerdown', function (ev) {
+    if ($('#app').classList.contains('doc')) return;
+    arrastrando = true;
+    rail.setPointerCapture(ev.pointerId);
+    railLbl.classList.add('on');
+    irA(desdeY(ev.clientY));
+    ev.preventDefault();
+  });
+  rail.addEventListener('pointermove', function (ev) {
+    if (!arrastrando) return;
+    irA(desdeY(ev.clientY));
+  });
+  function soltar() {
+    if (!arrastrando) return;
+    arrastrando = false;
+    railLbl.classList.remove('on');
+  }
+  rail.addEventListener('pointerup', soltar);
+  rail.addEventListener('pointercancel', soltar);
+  rail.addEventListener('keydown', function (ev) {
+    if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight') { irA(actual + 1); ev.preventDefault(); }
+    if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') { irA(actual - 1); ev.preventDefault(); }
+    if (ev.key === 'Home') { irA(0); ev.preventDefault(); }
+    if (ev.key === 'End') { irA(visibles.length - 1); ev.preventDefault(); }
+  });
+
+  /* ═══ 6. Barra: filtros y salida a documento ═══ */
+  var panel = $('#panel'), btF = $('#bt-filtro'), btD = $('#bt-doc');
+  function cerrarPanel() { panel.classList.remove('abierto'); btF.setAttribute('aria-pressed', 'false'); }
+  btF.addEventListener('click', function () {
+    var ab = panel.classList.toggle('abierto');
+    btF.setAttribute('aria-pressed', String(ab));
+  });
+  btD.addEventListener('click', function () {
+    var d = $('#app').classList.toggle('doc');
+    btD.setAttribute('aria-pressed', String(d));
+    if (!d) { feed.scrollTop = 0; actual = -1; pinta(0); }
+  });
+
+  /* ═══ 7. Arranque ═══ */
+  var nP = $('#n-post'), nL = $('#n-lam');
+  if (nP) nP.textContent = reales.length;
+  if (nL) nL.textContent = TOTAL_LAM;
+  pinta(0);
+  window.addEventListener('resize', function () { var a = actual; actual = -1; pinta(a < 0 ? 0 : a); });
+})();
+</script>

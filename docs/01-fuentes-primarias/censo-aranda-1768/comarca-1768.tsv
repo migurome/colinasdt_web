@@ -1,0 +1,25 @@
+asiento	lugar	categoria	parroquia	almas	varones	hembras	exentos_hidalguia	otros_exentos	fecha_relacion	dependencia_parroquial	estanco_tabaco	rah	plana_impresa	observaciones
+8	Aguilar de Tera	Lugar	Santa Marina	92	45	47	2	1 Real servicio	1768-11-12	propia	no consta	01-008	77	confrontante sur del término de Colinas (Catastro de 1752)
+76	Bercianos de Vidriales	Lugar	N.ª S.ª de la Visitación	134	69	65	1	1 Real servicio	1768-11-09	propia	no consta	01-083	104	
+173	Colinas de Trasmonte	Lugar	San Juan	114	61	53	0	1 Real Hacienda	1768-11-01	propia (cura residente)	sí	01-181	138	
+292	Milla de Tera, La	Lugar	N.ª S.ª de la Asunción	165	89	76	0	1 Real hacienda	1768-11-25	anexa de la matriz de San Cipriano de la Villa de Junquera	no consta	01-303	180	✅ 23-IX-2026: el [?] «una matriz de la Junquera» queda resuelto por el asiento 720 (Vega de Tera), que la nombra «Parroquia Matriz de S[a]n Zipriān de la Villa de Junquera»
+317	Manganeses de la Polvorosa	Lugar	San Vicente	302	164	138	0	2 Real servicio	1768-11-08	propia	no consta	02-007	190	confrontante norte del término de Colinas
+331	Melgar de Tera	Lugar	San Pedro	100	46	54	0	1 Real hacienda	1768-11-07	propia	no consta	02-021	194	
+332	Micereces de Tera y Vecilla de Trasmonte	Lugares	Santiago y San Mamés [?]	205	112	93	0	1 Real servicio	1768-11-14	un cura para las dos parroquias	no consta	02-022	195	PRIMERA relación; los dos vecindarios van unidos y no pueden separarse
+334	Milles de la Polvorosa	Lugar	San Miguel	208	111	97	0	1 Real servicio	1768-10-14	propia	no consta	02-024	195	
+346	Morales de Valverde	Lugar	N.ª S.ª de la Asunción y Santiago su anexa	294	165	129	7	3 Real hacienda	1768-11-15	matriz, con anexos [?]	sí (tres administradores)	02-037	201	el mayor número de hidalgos del valle
+349	Moratones	Lugar	Santiago	59	30	29	1	—	(en la relación de Rosinos)	anexa de San Salvador de Rosinos de Vidriales	no consta	02-040	201	el menor del valle; vecino de Colinas en el folio de dezmeros de 1565
+447	Pozuelo de Vidriales	Lugar	N.ª S.ª de la Concepción	235	122	113	0	1 Real hacienda	1768-12-22	anexa de Santa Marta de Tera	sí	02-141	237	siete sacerdotes incluido el párroco
+462	Pumarejo de Tera	Lugar	Santiago	129	57	72	0	1 Real servicio	1768-11-14	anexa de San Miguel de Sitrama de Tera	no consta	02-156	242	
+482	Quiruelas de Vidriales	Lugar	N.ª S.ª de la Asunción	223	116	107	0	1 Real servicio	1768-11-15	propia	sí	02-177	249	confrontante poniente del término de Colinas
+524	Rosinos de Vidriales	Lugar	San Salvador (matriz)	175	86	89	1	—	1768-11-10	matriz de Moratones	no consta	02-219	263	
+602	Santa Cristina de la Polvorosa	Lugar	Santa Cristina	190	98	92	5	—	1768-11-13	propia	no consta	02-297	289	confrontante nordeste según los planos de 1975-77
+607	Santa Croya de Tera	Lugar	Santo Tomás	223	111	112	0	1 Real hacienda, 1 Cruzada	1768-12-22	anexa de Santa Marta de Tera	sí	02-302	291	
+631	Santa Marta de Tera	Villa	Santa Marta (matriz)	95	40	55	0	2 Real hacienda	1768-12-10 [?]	matriz de Santa Croya y de Pozuelo de Vidriales	sí	02-322	299	sólo 95 almas, y es matriz de dos parroquias mayores que ella
+633	Santibáñez de Vidriales	Villa	San Juan	229	119 [?]	110 [?]	0	1 Real servicio, 1 Real hacienda	1768-11-03	propia	sí	02-324	299	segunda parroquia de San Juan del valle
+651	Sitrama de Tera	Lugar	San Miguel	114	54	60	2	—	1768-11-18	matriz de Pumarejo de Tera	no consta	02-342	305	misma cifra exacta que Colinas
+718	Barcial del Barco	Lugar	Santa Marina	117	64	53	0	—	1768-11-01	propia	no consta	03-052	328	leído sobre el facsímil el 23-IX-2026: 64+53=117, cuadra; las cinco casillas de exentos llevan punto en las tres filas; «un Cura el qual dio la Relación en 1.º de Noviembre de 1768: un Sacristán y un Capellán ausente»; al margen, «Dos hermanos de órdenes Religiosas» [?]
+719	Micereces de Tera y Vecilla de Trasmonte	Lugares	Santiago y San Mamés [?]	208	114	94	0	1 Cruzada	1769-02-03	un cura para las dos parroquias, y un diácono	no consta	03-053	328	SEGUNDA relación de los mismos dos lugares: +3 almas sobre la del asiento 332
+720	Vega de Tera	Lugar	San Pelayo	180	90	90	0	1 Real servicio [?]	1768-11-25	anexa de la matriz de San Cipriano de la Villa de Junquera	no consta	03-054	328	leído sobre el facsímil el 23-IX-2026: 90+90=180, cuadra; ⚠️ la casilla de Real servicio sólo trae la cifra en la fila de totales, y casados y solteros llevan punto; «Los mismos ecc[lesiástic]os de la Parroquia Matriz de S[a]n Zipriān de la Villa de Junquera, sirven esta de San Pelayo su anexa, y la Relación fue dada en 25 de Noviembre de 1768»
+742	Villaferrueña	Lugar	San Juan	184	92	92	0	1 Real hacienda, 1 Cruzada	1768	propia	sí	03-080	337	tercera parroquia de San Juan del valle
+758	Villanázar	Lugar	San Martín	106	54	52	0	—		iglesia anexa de otra parroquia [?]	no consta	03-098	344	no es confrontante; importa porque Madoz muda a él Pobladura de Trasmonte

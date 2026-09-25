@@ -1,0 +1,12 @@
+# Ficheros temporales de los scripts de edición (se escriben .tmp y se mueven)
+*.tmp
+
+# Basura del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Entornos y cachés de Python, si alguna vez se usan
+__pycache__/
+*.pyc
+.venv/

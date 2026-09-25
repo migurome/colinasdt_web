@@ -1,0 +1,1744 @@
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+175
+Las viejas unidades de superficie en 
+la provincia de Zamora. Distribución, 
+antecedentes y pervivencia
+Pascual Riesco Chueca*
+Title: Traditional units of area measurement in Zamora (Spain). Territorial 
+distribution, origins and persistence.
+Resumen: El Catastro de Ensenada despliega una extraordinaria diversidad 
+de criterios de definición y extensiones para las unidades superficiales. El presente 
+artículo pretende ordenar esta compleja y a veces ininteligible maraña, poniéndola 
+en el contexto de testimonios anteriores y posteriores a 1750. Esta perspectiva 
+extendida en el tiempo y comparativa en el espacio permite subrayar el carácter 
+contingente y a veces engañoso de las respuestas del Catastro. 
+Summary: The Catastro de Ensenada, a large-scale census around 1750, unfolds 
+an extraordinary diversity in land area measurement, both in unit extension and in 
+the measurement standard. This article aims to put some order in this complex and 
+sometimes unintelligible tangle. In the light of testimonies prior to and after 1750, the 
+contingent and often misleading nature of the responses to the Catastro is emphasized.
+Palabras-clave: unidades de medida superficial, metrología tradicional, Za-
+mora, Catastro de Ensenada.
+Keywords: land area measurement, traditional metrology, Zamora, 
+Catastro de Ensenada.
+1.	
+Introducción
+Nunca se debe subestimar la frondosa diversidad de patrones de medida en el An-
+tiguo Régimen. En las medidas de superficie, el avance ha sido especialmente complejo, 
+*	
+riescochueca@us.es. Universidad de Sevilla.
+
+Pascual Riesco Chueca
+176	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+desde unos orígenes atomizados e inestables hasta una progresiva homogeneización que 
+crea la ilusoria impresión de que Zamora, por ejemplo, contaba con una fanega, una he-
+mina o una carga de extensión fija, estable durante el Antiguo Régimen, uniforme para 
+toda la provincia, y bien conocida. No es así, porque la disparidad de criterio de medida 
+está en la base. La inestabilidad y fragmentación del panorama se debe a la competencia 
+entre distintos criterios y agentes de tasación de la propiedad rural. 
+1.	 Base temporal, en unidades de trabajo: el tiempo requerido para el cultivo —el 
+arado o la cava— de cierta extensión de tierra1. Tal criterio está en el origen de 
+magnitudes como la yera o la obrada, libremente basadas en lo que ara en una 
+jornada una pareja de bueyes; o la peonada de viña, lo que cava en un día un 
+jornalero.
+2.	 Base material, en unidades de capacidad2: la cantidad de grano requerida para 
+sembrar una extensión3. De ahí que numerosas medidas superficiales sean 
+etimológicamente nombres de recipientes.
+3.	 Cómputo de unidades vegetales, en cultivos leñosos: el número de pies de árbol 
+o cepas que es consuetudinario disponer en una extensión. 
+4.	 Cómputo de unidades animales: el número de cabezas de ganado que puede 
+sustentarse en una dehesa.
+5.	 Extensión geométrica. Aunque de vieja tradición, bien asentada por ejemplo 
+entre los romanos, este principio, que requiere el concurso de un agrimensor, no 
+llega a cundir en comarcas arcaizantes.
+Tales principios de tasación están en la raíz de las distintas medidas tradicionales de 
+la extensión, unas medidas que, más que antropomórficas, cabe denominar antropocéntri-
+cas. Aunque la bibliografía sobre la metrología tradicional es copiosa y meritoria, es pre-
+ciso subrayar que los compendios generales de alcance nacional tienden por simplicidad a 
+atribuir, engañosamente, valores unificados a cada provincia. En el caso de Zamora, desde 
+luego, nada más alejado de la realidad: ni siquiera se percibe consistencia en las maneras 
+de medir dentro de una misma comarca, si nos atenemos a las respuestas del Catastro de 
+Ensenada (cme).
+La riqueza y movilidad del panorama abierto por el cme no nos exime de aplicar la 
+máxima cautela a los estudios de economía agraria histórica, como señalan diversos au-
+1	
+ Reciben nombres como fanegas de explotación (Ibáñez Rodríguez, S.: «La necesidad de medir. La 
+metrología agraria del antiguo régimen en La Rioja». Brocar, nº 19, 1995, pp. 131-163; p. 135).
+2	
+ De ahí el sufijo en la voz fanegada ‘extensión que se siembra con la cabida de una fanega’. Ya era 
+desusada según las Ordenanzas de Zamora: «esta palabra fanegadas es antigua, pero entiéndase por fanega» (s. 
+xv OrdZ 64).
+3	
+ Es el modo principal de medición en el Tumbo de San Martín de Castañeda (tmc): una cortina en 
+Asturianos de una hemina de linaza en sembradura (1655), un prado en Vigo que «lleva en sembradura una 
+emina de centeno» (1740), “tierra de emina y media de sembradura» en Palazuelo (1676). El término fanegas 
+de sembradura es común en Castilla y en La Rioja (Ibáñez Rodríguez 1995: 134); en Segovia, se las llama 
+fanegas de puño, huebras de sembradura (Bringas Gutiérrez, M. A.: «El Catastro de Ensenada y la metrología 
+castellana del siglo xviii». CT Catastro, nº 53, 2005, pp. 93-130; p. 104).
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+177
+tores4. En la vecina Tierra de Campos vallisoletana, Cubero y Hernández han estudiado 
+la diversidad de medidas de superficie5. Es ilustrativo el caso de las medias obtenidas 
+por Burón para las unidades superficiales en León6. Estas cifras, obtenidas al promediar 
+sobre las equivalencias deducidas de al menos diez documentos en cada caso, carecen de 
+seguridad estadística, puesto que cualquier unidad —sea la talega, la cuarta de viña o 
+el marallo— exhibía heterogeneidad de valores en el dominio donde fue vigente, amén 
+de experimentar cambios diacrónicos. Tomar una media simple, sometida al azar de la 
+distribución geográfica y las fechas de los documentos, es engañoso. O bien se despliega 
+el abanico de valores en la provincia en un momento histórico, o, si se desea promediar, 
+se acude a una media ponderada con las extensiones relativas de cada uno de los valores.
+Cruz Reyes se propuso mostrar la diversidad de sistemas de medida en la provincia 
+de Zamora en tiempos de Ensenada7. Su trabajo, admirablemente concienzudo, realizado 
+con los medios de su tiempo, se ve limitado por el penoso acceso a los datos y su procesa-
+miento manual: tareas que hoy se afrontan con potentes ayudas técnicas. En este trabajo 
+pionero cabe apreciar algunas carencias, excusables sin duda, pero que admiten subsana-
+ción actual. Por un lado, se echa en falta una mayor reflexión sobre la evolución posterior 
+(hasta el siglo xxi) de las viejas unidades de medida: su grado de consolidación en el siglo 
+xviii, su perduración en el tiempo o su extinción. Por otro lado, es conveniente completar 
+el mapa establecido por Cruz Reyes, que omite precisamente las áreas donde la diversidad 
+de sistemas de medida era más grande: toda la banda oriental de la provincia; y lo más 
+de la franja norte, con Sanabria y tierra de Benavente. Finalmente, interesa testimoniar 
+la huella de viejas unidades que ya empezaban a ser arcaicas en tiempos de Ensenada, 
+rarezas provinciales como carrapito, copa, marallo, embelga, tega, neto. 
+La cuestión novena de las Respuestas Generales del cme es pieza central en el presen-
+te estudio. Dicha cuestión versa sobre las unidades de medida superficial usadas en cada 
+municipio. A la hora de explotar los datos contenidos en las respuestas de los pueblos, 
+dehesas y despoblados zamoranos, es preciso aproximarse al contexto del interrogatorio, 
+en el marco del paisaje agrario hacia 1750. En una parte considerable de la provincia, 
+la más arcaizante, la práctica agrimensora apenas era conocida. El modo usual de medir 
+4	
+ Véase, aparte de Bringas Gutiérrez (2005) e Ibáñez Rodríguez (1995), Villegas Molina, F. y 
+Sánchez del Árbol, M.A.: «Dificultad para calcular la equivalencia de las medidas antiguas. El caso de la fa-
+nega del siglo xviii». Miscelánea de Estudios Árabes y Hebraicos, nº 37-38, 1988-1989, pp. 439-448; López 
+Ontiveros, A.: «El Catastro de Ensenada y las medidas de tierra en Andalucía». Revista de Estudios Regiona-
+les, nº 53, 1999, pp. 191-204; Ferrer Rodríguez, A. y González Arcas, A.: Las medidas de la tierra en 
+Andalucía según las Respuestas Generales del Catastro de Ensenada, Madrid, 1996; Fabra Garcés, L. A. y 
+Sánchez Salazar, F.; «Medidas de superficie tradicionales y su equivalencia con el sistema métrico decimal», 
+Agricultura y sociedad, nº 49, 1988, pp. 467-481.
+5	
+ Cubero Garrote, J. y Hernández García, R.: «La tierra y el hombre en la Tierra de Campos 
+vallisoletana a mediados del siglo xviii». Investigaciones Históricas, época moderna y contemporánea, nº 37, 
+2017, pp. 381-420; pp. 409-412.
+6	
+ Burón Castro, T.: «Uso y tradición de las medidas agrarias en la provincia de León». Tierras de 
+León, Vol. 31, nº 83-84, 1995, pp. 99-118.
+7	
+ Cruz Reyes, J. L.: «Equivalencia decimal y distribución espacial de las medidas agrarias de superfi-
+cie en la provincia de Zamora de mediados del siglo xviii». Stvdia Zamorensia. Historica, tomo VII, Zamora, 
+1986, pp. 87-129. 
+
+Pascual Riesco Chueca
+178	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+y tasar las tierras se basaba en la cantidad de semilla requerida para su siembra. De ahí 
+que la pregunta sobre extensiones superficiales objetivas choque con la incomprensión y 
+renuencia de los concejos. 
+Ante las presumibles presiones de los interrogadores, que instan a completar todos 
+los puntos, los municipios adoptarían estrategias diversas. Una de ellas es mimetizar la 
+respuesta de algún pueblo cercano; ante la duda sobre qué decir, se calca lo del vecino. 
+Solo así se explican las frecuentes repeticiones, casi literales, en los formulismos de las 
+respuestas. Otra es la buscada ambigüedad, con expresiones calculadamente oscuras. 
+Finalmente, hay municipios que, resistiendo la presión del interrogatorio, ansioso de 
+medidas objetivas o universales de extensión, basadas en estadales, declaran que tal cosa 
+no existe en el pueblo, donde se siembra «a puño y ojo». Así en Valleluengo, Gusandanos, 
+Junquera, La Milla y Vega de Tera, donde se limitan a declarar la cantidad de semilla que 
+se siembra en una hemina de centeno superficial según se trate de terreno de primera cali-
+dad, mediana o tercera. Ello equivale a decir que la hemina superficial tiene tres o más va-
+lores diferentes según la calidad del terreno. En Uña de Quintana se explica la situación: 
+«en esta dicha villa no hay ni se usa de medida de tierra, por lo que no pueden resolver 
+de quántos pasos o varas se compone en quadro, por sembrar a puño y ojo, de que tienen 
+averiguado por cierta experiencia que según la calidad del terreno suelen llevar más o me-
+nos sembradura». Lo mismo en Justel y Quintanilla. En Vivinera afirman: «no se expresa 
+de quántos estadales se compone la carga de tierra, porque en esta, de inmemorial tiempo 
+a esta parte, no se ha practicado medida». En El Cubo del Vino no se usa el estadal, «por 
+entenderse por fanegas las que regulan por el conocimiento y práctica de las fanegas de 
+simiente». Igual ocurre en La Tejera; no existe patrón universal de medida universal; con 
+una hemina volumétrica se siembran distintas áreas según la calidad del suelo. Lo mismo 
+se comprueba de algunos municipios de Salamanca y León, donde las respuestas rehúsan 
+dar cualquier indicación objetiva de medida superficial, y tan solo aportan coeficientes de 
+sembradura8. En Sardón ofrecen una infrecuente relación: una fanega de tierra da cabida 
+a sesenta pies de encina o roble; en Pereña, 48 olivos ocupan una fanega. En Truchillas, 
+«donde se siembra un cuartal de centeno se siembran dos de linaza». Para el caso andaluz, 
+Villegas y Sánchez del Árbol (1988-1989: 444-445) muestran reticencias similares so-
+bre la medida superficial en las respuestas del cme.
+Probablemente, en diversos pueblos, cuando fijan en las respuestas un valor objetivo 
+y único para las medidas de extensión, están eligiendo o promediando entre los diversos 
+valores en uso (porque ya se hace así en la práctica, o por dar gusto a los agentes del in-
+terrogatorio). Cuál sea la base de esta fijación no se declara9. Cruz Reyes (1986: 93-94) 
+muestra que no existe un criterio común: distintos lugares eligen diferenciadamente10. En 
+8	
+ Así, entre otros, en Pereña, Trabanca, Sardón de los Frailes, Pelilla, Monleras, Villaseco de los Reyes, 
+Ledesma, Palacios del Arzobispo, Santiz, Valdelosa SA, La Baña, Truchillas, Valdavido, Nogarejas, Castrocon-
+trigo LE. En la Armuña salmantina ya se usaba la fanega de 400 E4.
+9	
+ Abundan los casos en que se fija la extensión de la fanega, ochava, alquer, celemín… igualándola al 
+área sembrada con el contenido de un recipiente homónimo en tierras de primera o segunda calidad.
+10	
+ Véase un útil extracto de las medidas de tierra en los pueblos y despoblados de Sayago en Castaño 
+Blanco, J. M.: Sayago a la luz del Catastro de Ensenada. Respuestas generales, Zamora, 1992, pp. 137-154.
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+179
+algunos fijan la extensión estándar a partir de la cantidad de semilla que llevan las tierras 
+de primera calidad; en otros, el baremo se establece según la semilla consumida por las 
+tierras de mediana calidad; en otros, el criterio es inescrutable. En San Esteban de Noga-
+les y pueblos vecinos se afirma que la medida de tierra es la de carga, «y estas, desiguales, 
+y para el presente acto las igualan todas11 considerando las de 1200 palos»: es decir, se 
+hace una igualación, un normalizado o promediado exprofeso para la operación del cme. 
+Precisamente de iguar < aequare ‘igualar’ procede una voz que designa a una unidad 
+afín a la fanega o la obrada en la frontera vallisoletana de Zamora, la iguada: es decir, 
+tierras cuya medida es igualada, normalizada para su inscripción en un sistema unificado.
+En suma, conviene aplicar cierta duda metódica acerca del grado de consolidación de 
+las medidas superficiales que se declaran en el cme. En algunos pueblos, sin duda eran de 
+vieja tradición, aunque tal vez su equivalencia superficial en estadales pudo fluctuar. En 
+otros, quizás se intentó dar contento a los interrogadores, ofreciendo datos más o menos 
+aceptables, pero que la población local siguió sin utilizar. 
+2.	
+La cadena canónica. Un elemento deslizante, ajeno a la cadena, la cuarta
+La columna vertebral del sistema consuetudinario de medida superficial es una su-
+cesión ordenada de números naturales, cuyos elementos mantienen entre sí relaciones 
+numéricas fijas, tanto enteras como fraccionarias. Esta cadena pitagórica es inmutable, 
+aunque el valor en metros cuadrados de cualquiera de sus términos presenta valores dis-
+tintos al ir recorriendo la provincia. Por ello conviene mostrarla en primer lugar.
+Carga
+Fanega 
+Ochava
+Hemina 
+Alquer, 
+cuartal
+Celemín
+Cuartillo
+Carrapito, 
+copa
+Carga
+1
+4
+8
+12
+16
+48
+192
+768
+Fanega 
+1/4
+1
+2
+3
+4
+12
+48
+192
+Ochava
+1/8
+1/2
+1
+3/2
+2
+6
+24
+96
+Hemina 
+1/12
+1/3
+2/3
+1
+4/3
+4
+16
+64
+Alquer, 
+cuartal
+1/16
+1/4
+1/2
+3/4
+1
+3
+12
+48
+Celemín
+1/48
+1/12
+1/6
+1/4
+1/3
+1
+4
+16
+Cuartillo
+1/192
+1/48
+1/24
+1/16
+1/12
+1/4
+1
+4
+Carrapi-
+to, copa
+1/768
+1/192
+1/96
+1/64
+1/48
+1/16
+1/4
+1
+Así pues, el elemento más extenso, la carga, consta de 4 fanegas, o de 8 ochavas, 12 
+heminas, 16 alqueres o cuartales, 48 celemines, 192 cuartillos, 768 carrapitos o copas. 
+Cualquier fila de la matriz se lee análogamente. Ha de advertirse, y las respuestas del cme 
+11	
+ Esta formulilla, «desiguales, pero para el presente acto las igualan todas considerándolas en», se 
+repite en los lugares del señorío de Nogales, avisando de la artificialidad de la medida.
+
+Pascual Riesco Chueca
+180	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+lo muestran a cada paso, que en ningún lugar se usa la cadena completa. Cada pueblo hace 
+uso de solo algunos miembros de la sucesión, el subconjunto activo de la cadena12. Por otro 
+lado, existen denominaciones variadas para un mismo elemento. Un ejemplo, y no es el 
+único, es el término alquer, vigente en la parte de Aliste más cercana a Portugal, y que 
+en resto del territorio es desplazado por su sinónimo cuartal. La fanega recibe en el este 
+provincial nombres como yera (iguada ya en Valladolid); al sur aparece marginalmente el 
+sinónimo huebra u obrada.
+La afirmación de Cruz Reyes (1986: 88) «sin embargo, la fanega valía tres heminas 
+en unos pueblos y dos ochavas en otros. A su vez, la ochava era igual a dos cuartales en 
+algunos lugares y a dos alqueres en los demás» arriesga el equívoco. No es que se super-
+pongan sistemas diferentes: hay una única cadena, en lo tocante a las relaciones numéricas 
+entre las unidades; solo cambia el subconjunto activo de los miembros de la cadena y las 
+denominaciones elegidas. Álvarez Tejedor muestra por ejemplo los subconjuntos acti-
+vos en diversas localidades del Este provincial13; Álvarez Vázquez muestra las cadena de 
+unidades de capacidad en la provincia14. Aunque vayan variando de pueblo a pueblo los 
+elementos en uso de la cadena y el léxico, las relaciones son inmutables.
+Existe sin embargo alguna unidad de medida que se escapa de esta cadena que 
+hemos denominado canónica. Su relación con los miembros de la sucesión varía de una 
+localidad a otra. Es el caso de la aranzada y de la cuarta, en el este provincial. No tienen 
+posición fija en la cadena, pues se relacionan mediante cocientes diversos con la fanega 
+(yera, iguada, obrada). En general la cuarta se usaba, con igual extensión, para cereal o 
+para viña, pero no siempre. Se verán posteriormente las dificultades que entrañan ambas 
+unidades. La yera de viña en Toro, basada en la labor necesaria, queda también fuera.15
+3.	
+Las distintas longitudes del estadal (o palo) en la provincia
+El estadal, popularmente palo, es un instrumento de medida, de vieja tradición, que 
+consta de dos palos de igual longitud unidos por una rótula. Colocados en ángulo recto, 
+definen un cuadrado. Las longitudes del estadal son variables según áreas geográficas. La 
+bibliografía muestra una asombrosa profusión de longitudes, expresadas en gran parte de 
+la Meseta como múltiplo de la vara castellana (= 0.835905 m). López Ontiveros (1999: 
+203) ofrece datos sobre las longitudes del estadal en Andalucía. Bringas Gutiérrez (2005: 
+100-103) estudia las medidas tradicionales en las provincias de Madrid y Segovia, mos-
+12	
+ Siguiendo las respuestas del cme, en Tábara es {carga, fanega, ochava, cuartal, celemín}; en Otero 
+de Bodas es {hemina, celemín, cuartillo}. Por supuesto que las unidades mencionadas en la cuestión novena del 
+cme no son las únicas usadas en cada localidad; muchas otras emergen de las respuestas generales o de otros 
+documentos coetáneos.
+13	
+ Álvarez Tejedor, A.: Estudio lingüístico del léxico rural de la zona este de la provincia de Za-
+mora, Salamanca, 1989, pp. 116-117.
+14	
+ Álvarez Vázquez, J. A.: Los diezmos en Zamora (1500-1840), Salamanca, 1984, p. 109.
+15	
+ González Ferrero, J. C.: La cultura de la vid y el vino de Toro. Estudio etnográfico-lingüístico 
+de la D.O. Toro, Toro, 2017, p. 192.
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+181
+trando las longitudes del estadal en ese ámbito16. Cruz Reyes (1986: 89) muestra solo dos 
+estadales en Zamora, pero ello se debe a que su estudio excluye las franjas norte y este de 
+la provincia, donde se refugia la mayor diversidad de estadales. Recoge solo el estadal de 
+cuatro varas, que progresivamente será el más difundido, y el estadal de tres varas y sexma 
+(E3s), es decir, de 3.16667 varas.17
+Pero la provincia albergaba otras definiciones del estadal, como se muestra en la 
+tabla adjunta, en la que introducimos, por brevedad, unos códigos abreviados para cada 
+una de ellas. En su aparición en el resto del artículo se entiende que se alude (salvo aviso 
+en contra) al estadal en cuadro, es decir, a la medida superficial.
+Estadal
+(palo; pie)
+Arista en 
+varas cas-
+tellanas
+Arista 
+en m
+Extensión en 
+varas cuadradas
+(v2)
+Extensión 
+en m2
+Área donde se aplica como base
+E4m
+4 1/2
+3.7616
+20 1/4
+14.1494
+Castrillo de la Guareña, Castronuño 
+VA
+E4c
+4 1/4
+3.5526
+18 1/16
+12.6209
+Valdunquillo, La Unión de Campos 
+VA
+[Morales de Toro 1586]
+E4
+4
+3.3436
+16
+11.1798
+General: Pragmática de 1801, ubicuo 
+provincial, secundario provincial, 
+Toro y su comarca, Argusino, Venial-
+bo, Donado, Sanabria, Requejada, 
+Portelas, Carballeda.
+E3m
+3 1/2
+2.9257
+12 1/4
+8.5595
+Benavente y entorno.
+E3t
+3 1/3
+2.7863
+11 1/9
+7.7637
+Dominio de Nogales. Verdenosa y 
+Redelga. Carballeda SW, Nuez 
+E3s
+3 1/6
+2.6470
+10 1/36
+7.0068
+Lampreana, Castrotorafe y entorno. 
+Villalpando y Campos, dispersos. 
+E3ss
+1266/400
+2.6456
+10.0172
+6.9994
+Ruedo de Villalpando.
+E3d
+3 1/12
+2.5774
+9 73/144
+6.6429
+Barcial de la Loma VA
+E3
+3
+2.5077
+9
+6.2886
+Belver, Villalobos y entorno. Esquina 
+NE provincial. Dispersos Benavente. 
+Cabreros del Monte, S. Pedro de 
+Latarce y Pozuelo de la Orden VA
+E3r
+2 5/6
+2.3684
+8 1/36
+5.6093
+Castroverde de Campos; Tordehumos 
+y Villabrágima VA
+16	
+ Sánchez Salazar (1988: 97) despliega una diversidad similar en Jaén (Sánchez Salazar, F.: «Medi-
+das agrarias usadas en el Reino de Jaén durante el siglo xviii». Boletín del Instituto de Estudios Giennenses, nº 
+133, 1988, pp. 93-115, p. 97).
+17	
+ Las principales fracciones de la vara son el pie = tercia = 1/3 vara = 0.2786 m. Sexma = 1/6 vara 
+= xeme de ocho dedos = 0.1393 m. Pulgada = 1/12 pie = 1/36 vara = 0.0232 m. Cuarta o palmo = ¼ vara = 
+0.208976 m. Paso = 5 pies = 1.3932 m. Dedo = 1/12 palmo = 1/48 vara = 0.0174 m. 
+
+Pascual Riesco Chueca
+182	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+La columna de la derecha ofrece indicaciones sucintas acerca de los dominios de 
+vigencia, que, como puede comprobarse, esbozan una insólita y caprichosa zonificación 
+provincial. Sobre estas áreas se darán mayores explicaciones más adelante. Se han incor-
+porado algunas localidades extraprovinciales colindantes. A partir de la Pragmática o 
+Igualación de Pesos y Medidas de 1801 (decretada por Carlos IV) se intentó consagrar 
+un único estadal para toda la nación, el E4. Nótese que en Zamora no se usaba el E3dt 
+= 3 + 2/3 vara (= 11 pies), difundido por la Meseta, ni otras medidas aisladas como el 
+E4t de Villacid de Campos (4 + 1/3 vara) o el E3rd de Morales de Campos (3 - 1/12 
+varas)18. Es difícil documentar la antigüedad de cada uno de estos estadales. Proba-
+blemente tenían cierta tradición en tiempos del cme, pero comprobar antecedentes de 
+cada medida resulta difícil, pues es preciso rastrear en archivos de protocolos en busca 
+de apeos lo suficientemente detallados como para incluir tales datos. Y los resultados 
+pueden ser sorprendentes. 
+El pie (que no ha de confundirse con el pie cuadrado, mucho menor)19 es unidad 
+frecuentemente usada en Sanabria para la medida de pequeños prados, cortinas, corrales 
+y eras. Viene a coincidir con el estadal, pero el módulo es incierto: en San Román, una 
+tierra de «cabida ciento veinte estadales o pies» (Bz 28.3.1894). En citas tardías, se ajusta 
+al estadal E4, unos 11 m2. Pero la medida del pie es en muchos casos redondeada al alza, 
+situándose entre 13 y 15 m2. Se usa desde fecha antigua: un prado de «seis pies y medio» 
+(Vigo 1680), un prado «de cabida una envelga y ocho pies» (Trefacio 1760) (tmc)20. 
+Cuando se trata de dar longitudes, aparecen los pies lineales, las cuartas y los dedos21; 
+otras veces, los pasos o pasadas22: una era en Muelas de los Caballeros tenía «treinta passos 
+de largo y catorce de ancho” (1655 apumm).
+18	
+ Erróneo en Cubero y Hernández (2017: 411) el cálculo para Villacid, donde atribuye a la iguada 
+1312 m2; esta es la extensión de la cuarta (100 E4t). También discrepo en mi cálculo para Morales, donde la 
+iguada (600 E3rd) es de 3566.47 m2.
+19	
+ Montalvo Martín confunde ambas unidades en Sanabria (Montalvo Martín, M.: «Medidas tra-
+dicionales en la comarca de Sanabria». El Filandar. O Fiadeiro, nº 12, 2000, pp. 4-6; p. 6). Pero la unidad 
+tradicional de superficie, el pie sanabrés, es el estadal más o menos redondeado o aumentado. 
+20	
+ El uso de pie como sinónimo de estadal se constata en otros puntos. Así en El Pedroso de Armuña 
+SA, donde la medida de tierras en un apeo de 1584 se hace por cuartas y pies (Salgado Calvo, A.: El Pedroso 
+de Armuña: Memoria de los Ovalle-Solís, Salamanca, 2007, p. 110).
+21	
+ El pie cuadrado (0.0776 m2) apenas se usó salvo para la medida de casas: ejemplos en Sanzoles 1925, 
+Villaescusa 1912. Parece usar el pie lineal (0.27856 m) esta descripción de un pedazo de casa en San Ciprián de 
+Sanabria: «tiene de hancho seis pies, y de largo quinze» (sería de 1.67 x 4.18 m) (1568 tmc); una casa de torre en 
+Trefacio, de 20 x 20 pies (1570 tmc). «Un quiñón de casa en casco de Lanseros, de seis cuartas y tres de dedos 
+de ancho por una y otra parte» [1833] (Bz 22.1.1869).
+22	
+ Un capítulo en las Ordenanzas de Zamora, titulado [Se guarden las pasadas] describe la obligación 
+de que los ganados respeten una distancia mínima de 30 pasadas con respecto a las viñas (s. xv OrdZ 56).
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+183
+4.	
+La cuarta en el este provincial
+Base en 
+estadales
+Extensión
+en v2
+Extensión 
+en m2
+Ámbito de vigencia (cme) 
+Cuarta (1/4 fanega o yera)
+100 E3s
+1002 7/9 
+700.68
+AC: Villalpando y Campos, 
+dispersos
+Cuarta (1/4 fanega o yera)
+100 E3ss
+1001.72
+699.94
+BC: Ruedo de Villalpando
+Cuarta (1/5 fanega)
+100 E3
+900
+628.86
+CC: Belver, Villalobos y 
+entorno.
+Cuarta (1/6 iguada)
+100 E3
+900
+628.86
+Cabreros del Monte VA, Pozue-
+lo de la Orden VA
+Cuarta (1/6 yera)
+100 E3r
+802 7/9
+560.93
+Castroverde de Campos
+Cuarta (1/6 iguada)
+100 E3d
+950 25/36
+664.29
+Barcial de la Loma VA
+Se muestra en la tabla adjunta las diversas definiciones de esta unidad, ciertamente 
+elusiva, la cuarta, definida en todos estos pueblos como 100 estadales (palos) de diferente 
+módulo. La yera, unidad que reemplaza a la fanega en esta franja oriental zamorana23, se 
+subdivide en cuartas, pero, antietimológicamente, la cuarta de Belver, Villalobos y entor-
+no (CC) es la quinta parte de la yera. La de Castroverde y algunos pueblos vallisoletanos 
+próximos es la sexta parte de la yera o iguada. Los ámbitos de vigencia, con sus códigos, 
+que se usarán más adelante, son los siguientes:
+AC = Villalpando y Campos, dispersos. 
+Quintanilla del Molar VA, Revellinos, San Agustín del Pozo, Villafáfila, Villalpando, 
+Villamayor de Campos, Villanueva del Campo, Villar de Fallaves.
+BC = Ruedo de Villalpando. 
+Cañizo, Cerecinos de Campos, Cotanes, Prado, Quintanilla del Monte, Quintanilla 
+del Olmo, 
+Tapioles, Villárdiga.
+CC = Belver, Villalobos y entorno. 
+Belver de los Montes24, San Esteban del Molar, Vega de Villalobos25, Villalobos. 
+El sistema permite una medida detallada combinando yeras, cuartas y palos. Así, una 
+tierra en Quintanilla del Monte (BC) de cuatro yeras, tres cuartas y cincuenta palos (crp 
+29.8.1822) suma 1950 E3ss. Se han incluido algunos lugares vecinos de la provincia de 
+23	
+ En Cañizo y en Belver no se usa el término yera, sino su sinónimo fanega. En Quintanilla del Molar 
+y Villamayor de Campos no se alude a la fanega o yera, solo a las cuartas. En Cotanes y Quintanilla del Monte 
+no se menciona la cuarta, sino solo la yera, que se corresponde con la fanega de sembradura.
+24	
+ En Belver no se indica expresamente que la cuarta sea de 100 E3, pero la fanega es de 500 E3.
+25	
+ En Vega de Villalobos se da como referencia 1 cuarta = 100 E3, sin especificar la fanega, que pro-
+bablemente es como en Villalobos, 1 f = 500 E3.
+
+Pascual Riesco Chueca
+184	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+Valladolid. En el vecino San Pedro de Latarce, la yera se define como 8 cuartas, cada una 
+de ellas de 100 E3 (628.86 m2).26 
+En Villalobos aparece una unidad menor, la canadilla (cme): cuatro canadillas com-
+ponen una cuarta (de 100 E3), con arreglo a la matriz adjunta. Es voz sin duda afín a una 
+unidad de capacidad del NW hispánico, la cañada de Lugo, norte de León y Asturias, o 
+el cañado gallego27; en Asturias constan también canao, canada y canadiella.28
+carga
+fanega
+cuarta
+canadilla
+carga
+1
+4
+20
+80
+fanega 
+1/4
+1
+5
+20
+cuarta
+1/20
+1/5
+1
+4
+canadilla
+1/80
+1/20
+1/4
+1
+En el entorno de Villalpando (AC y BC) ha pervivido el estadal de tres varas y 
+sexma. En las respuestas en el cme, los dos dominios vienen a ofrecer un valor similar 
+para la fanega, por lo que la diferente expresión en AC y en BC responde a un mero 
+manierismo o un peculiar redondeo. En BC aparece, en efecto, una redacción anómala 
+y desorientadora, que, como pasa en otros puntos de la provincia, parece colapsar la 
+medida lineal y la superficial. La yera consta de 400 palos, «que hacen mil ducientos 
+sesenta y seis baras castellanas en quadro» (Villárdiga); «estos hazen un mil doscientas y 
+sesenta y seis varas castellanas en cuadro» (Cañizo); y expresiones similares. Desde luego 
+no cabe la interpretación literal, pues daría una yera de 1266 v2 = 884.6 m2, ajena a los 
+usos comarcales y desmedidamente pequeña. Nuevamente nos encontramos ante una 
+expresión impropia, de alto contexto, que ha de interpretarse así: si alineáramos los 400 
+estadales que componen (en superficie) la yera, originarían una fila de 1266 varas en 
+longitud; es decir, cada estadal es de 1266/400 = 3.165 varas; en realidad se trata de 
+una forma redondeada del estadal E3s del área vecina AC, que tiene 3.16667 varas. A 
+efectos prácticos, por lo tanto, las unidades de AC y BC son las mismas; y si aquí se 
+diferencian los ámbitos es tan solo para dejar constancia de la singular fórmula escrita 
+de la medida.
+Una complicación adicional en estos pueblos es la medida de las viñas, que usa una 
+unidad diferente. Así, En Castroverde, en las viñas, la yera es de 9 cuartas (900 E3r = 
+7225 v2 = 5048.38 m2), es decir 990 cepas. Cada cuarta tiene 100 E3r o 110 cepas. 
+La aranzada de viñas en Cabreros del Monte y Pozuelo de la Orden consta de 4 cuartas 
+26	
+ Cubero y Hernández (2017: 410) dan la cifra errónea de 5030 m2, que en realidad corresponde a la 
+yera (ocho cuartas). En San Cebrián de Mazote, la cuarta es de 100 E3 y hay ocho cuartas en cada iguada. En 
+Villardefrades y Villanueva de los Caballeros, hay doce cuartas (de 100 E3) en cada yera.
+27	
+ Morala Rodríguez, J. R.: «Léxico de las medidas de capacidad en el siglo xvii». Etimología e 
+historia en el léxico del español, Madrid, 2016, pp. 559-579; p. 570. Escalona Molina, M.: Estadal. Una 
+aproximación al universo de la mensura, Junta de Andalucía, 2009, pp. 123, 126. Clemente Ramos, J.: La 
+economía campesina en la Corona de Castilla (1000-1300), Barcelona, 2004, p. 35.
+28	
+ Pérez de Castro, J. L.: «Pesos y medidas populares en Asturias». Revista de dialectología y tradi-
+ciones populares, tomo 29, cuad. 1-2, 1973, pp. 179-234; p. 208.
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+185
+(400 E3r = 3600 v2 = 2515.45 m2), y no se regula por cepas. En Barcial de la Loma la 
+aranzada es también de cuatro cuartas (268 E3d), mientras que la iguada de suelo es de 
+600 E3d.29 
+En algunos pueblos de tierra de Benavente y entorno aparece la cuarta, usada solo 
+para viñas, que sorprendentemente coincide en extensión con la hemina. Por lo tanto, 
+allí una cuarta es 1/3 fanega. Es el caso de Granja de Moreruela, Benavente, Quiruelas 
+y Bercianos de Vidriales, Villabrázaro, San Román, Paladinos, Pobladura y La Torre 
+del Valle, Matilla de Arzón y otros (también en la vecina provincia de León): «la que 
+se dize hemina de tierra de las de secano, se intitula quarta en las de viñedo», «enten-
+diéndose ser lo mismo quarta de viña que hemina de tierra». En Mayorga, Castrobol y 
+Saelices de Mayorga VA coincide también en extensión la cuarta de viña con la hemina 
+de suelo: tiene 125 cepas y 100 E3m (133.33 E3m en Saelices). La carga de viña, 
+como unidad de superficie, se menciona en otros pueblos sin especificar su extensión 
+(Brime de Urz).
+En Valdescorriel y Roales de Campos, la cuarta de viña es media hemina, por lo que 
+hay seis cuartas en una fanega. Cada cuarta es de 66.667 E3 = 600 v2 = 419.24 m2. En 
+cambio, en parte de la franja oriental zamorana, la cuarta de tierra coincide en extensión 
+con la cuarta de viñas. En Cerecinos de Campos, Prado y Quintanilla del Olmo (BC), la 
+cuarta (1/4 yera) se usa igualmente para las viñas, y caben en cada cuarta 150 cepas30. 
+Igual definición en Tapioles, pero en cada cuarta se ponen 100 cepas. Más abajo se mos-
+trarán ejemplos tardíos de la aranzada de viñas, unidad que se ajusta aproximadamente a 
+la fanega, con frecuentes excepciones. 
+5.	
+La hemina, en el norte de la provincia
+La hemina es unidad de vieja tradición en parte de Asturias, Cantabria y León, 
+occidente de Valladolid y N y NW de Zamora31. En el cme zamorano no se detecta dife-
+rencia, como sí ocurre en León, entre la hemina de regadío y la de secano. Sin embargo, 
+donde ha dominado el uso de heminas de sembradura (basadas en el volumen de semilla 
+requerida para la siembra), evidentemente se distingue la hemina de los linares y la de los 
+centenales. Veremos más adelante algunos vestigios de ello en Sanabria.
+29	
+ Pueden consultarse datos de más pueblos vecinos en Cubero y Hernández (2017: 409-412), donde 
+se muestra la rica diversidad de medida en esta comarca (parece estar errado el cálculo en Saelices y en Villagra).
+30	
+ En Villalobos el cme incurre en la frecuente confusión entre medida lineal y cuadrada al decir que la 
+carga es de 6000 v2, cuando en rigor sería de 18000 v2. Se añade en Cerecinos que la yera es medida de tierras, 
+prados y eras. Burón Castro (1991: 111) indica que la cuarta de viña en La Bañeza y Sahagún equivale a 125 
+cepas. En Villaornate y otros pueblos de su entorno, la cuarta de viña se divide en cuatro cuartejones. Véanse 
+más datos sobre la medida en viñas en González Ferrero (2017: 193).
+31	
+ Morala Rodríguez, J. R.: «Lengua y vida cotidiana en la provincia de Zamora en el siglo xvii». 
+Anuario del Instituto de Estudios Zamoranos Florián de Ocampo, nº 32, 2017, pp. 347-374; p. 361. Véase 
+también Morala (2016: 565) y Pérez Toral, M.: «Léxico tradicional para la superficie agraria en inventarios». 
+Revista de Historia de la Lengua Española, nº 10, 2015, pp. 77-103; p. 85.
+
+Pascual Riesco Chueca
+186	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+Base en 
+estadales
+Extensión
+en v2
+Extensión 
+en m2
+Ámbito de vigencia (cme) 
+100 E3m
+1225
+855.95
+BVT: Benavente y entorno
+100 E3
+900
+628.86
+La Mata de Palazuelo (desp.)
+100 E3t
+1111 1/9
+776.37
+DN: Dominio de Nogales
+100 1/3 E4
+1600
+1117.98
+AH: Valverde y Tera
+133 E3
+1200
+838.48
+BH: Esquina NE provincial
+133 E3
+1197
+836.39
+CH: Dispersos Benavente
+133 1/3 E4
+2133 1/3
+1490.64
+DH: Dispersos Carballeda
+120 E3t
+1333 1/3
+931.65
+EH: Carballeda SW
+200 E3t
+2222 2/9
+1552.75
+Nuez (dudoso)
+[116 2/3E4]
+1866 2/3
+1304.31
+Donado
+64 E4
+1024
+715.51
+FH: Sanabria
+[62 E4]
+992
+693.15
+GH: Requejada
+90 E4
+1440
+1006.18
+Castromil de Castilla 
+72 E4
+1152
+804.95
+IH: Carballeda central
+72 1/4 E4
+1156
+807.74
+JH: Carballeda contacto con Sanabria
+Como se hizo para las cuartas, se introducen siglas para los ámbitos en que cada una 
+de estas medidas tuvo vigencia.
+BVT = Benavente y entorno.
+Alija de los Melones LE, Arcos de la Polvorosa, Barcial del Barco, Benavente, Ber-
+cianos de Vidriales, Bretó, Brime de Urz, Castrobol VA, Coomonte, dehesa de la 
+Vizana (comprobar), Fuentencalada, Granucillo, Grijalba de Vidriales, Huerga, La 
+Magdalena, La Torre del Valle, Maire de Castroponce, Malucanes, Manganeses de la 
+Polvorosa, Matilla de Arzón, Matillina, Mayorga VA, Milles de la Polvorosa, Mora-
+tones de Vidriales, Moratones de Vidriales, Mosteruelo, Mózar, Paladinos del Valle, 
+Pobladura de Trasmonte, Pobladura del Esla, Pobladura del Valle, Pozuelo de Vi-
+driales, Priorato del Puente en Sanabria, Quintanilla de Urz, Quiruelas de Vidriales, 
+Rosinos de Vidriales, San Adrián del Valle LE, San Cristóbal de Entreviñas, San 
+Esteban de Cebolledo, San Hilario, San Martín del Barco, San Miguel de Ciudadeja, 
+San Pedro de la Viña, San Román del Valle, Santa Colomba de las Carabias, Santa 
+Colomba de las Monjas, Santa Cristina de la Polvorosa, Santa María de Valverde, 
+Santovenia del Conde, Socastro, Tardemézar, Valle, Vecilla de la Polvorosa, Vecilla 
+de Trasmonte, Villabrázaro, Villageriz, Villanazar, Villanueva de Azoague, Villao-
+bispo, Villaofín.
+DN = Dominio de Nogales
+Pueblos del monasterio de Nogales. Alcubilla de Nogales, Arrabalde, Villaferrueña, 
+San Esteban de Nogales LE, dehesa de La Vizana.
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+187
+AH = Valverde y Tera. 
+Esta medida de la hemina se encuentra ya adaptada al tipo ubicuo provincial (fane-
+ga de 300 E4). Los lugares son: Abraveses de Tera, Aguilar de Tera, Burganes de 
+Valverde, Cabañas de Tera, Calzadilla de Tera, Cernadilla, Colinas de Trasmonte, 
+Gramedo, Letrillas, Litos, Melgar de Tera, Micereces de Tera, Morales de Valverde, 
+Navianos de Valverde, Olleros de Tera, Pueblica de Valverde, Pumarejo de Tera, 
+San Juanico el Nuevo, San Pedro de Zamudia, Santa Croya, Santa Marta de Tera, 
+Santibáñez de Tera, Sitrama, Villanueva de las Peras, Villar de Farfón, Villaveza de 
+Valverde. 
+BH = Esquina NE provincial. 
+Proporciona una fanega de 400 E3. Fuentes de Ropel, Granja de Moreruela, Roales 
+de Campos VA, San Miguel del Valle, Valderas LE, Valdescorriel.
+CH = Dispersos Benavente.
+Esta medida es sin duda de un redondeo con respecto a la medida más precisa de 
+BH. 
+Castrogonzalo, Castropepe, Fresno de la Polvorosa, Morales de Rey, Santa Elena de 
+Villagonta, Villaveza del Agua. 
+DH = Dispersos Carballeda. 
+Se ajusta al tipo que llamaremos secundario provincial (fanega de 400 E4). Carrace-
+do, Cerezal de Sanabria, Congosta, Fresno de la Carballeda, Garrapatas, Mombuey, 
+Otero de Centenos, Peque, Rionegro del Puente, Sagallos, Valdemerilla, Valparaíso. 
+EH = Carballeda SW. 
+Codesal, Folgoso de la Carballeda, Linarejos, Manzanal de Arriba, Pedroso de la 
+Carballeda, Sandín, Santa Cruz de los Cuérragos.
+FH = Sanabria. 
+Aciberos, Avedillo de Sanabria, Barrio de Lomba, Calabor, Castrelos, Castro de Sa-
+nabria, Cerdillo, Chaguaceda, Chanos, Cobreros, Coso, Ferreros, Galende, Hedro-
+so, Ilanes, Las Hedradas, Limianos de Sanabria, Lobeznos, Lubián, Murias, Pador-
+nelo, Parada, Paramio, Pedralba de las Praderías, Pedrazales, Puebla de Sanabria, 
+Quintana de Sanabria, Requejo, Ribadelago, Riego de Lomba, Rihonor, Robleda 
+de Sanabria, Robledo, San Ciprián, San Martín de Castañeda, San Martín de Casta-
+ñeda, San Miguel de Lomba, San Román de Sanabria, Santa Colomba de Sanabria, 
+Santa Cruz de Abranes, Sotillo de Sanabria, Ungilde, Vigo, Villanueva de la Sierra.
+GH = Requejada.
+Barrio de Rábano, Carbajalinos, Doney, Monterrubio de la Sierra, Rosinos de la 
+Requejada, 
+Rozas, San Justo, Villar de los Pisones, Vime de Sanabria.
+IH = Carballeda central. 
+Casi coincidente con JH, parece un mero redondeo de esta32. Anta de Rioconejos, 
+Asturianos, Barrio de Cernadilla, Castellanos, Cervantes, Cional, Donadillo, 
+32	
+ Martín Álvarez usa esta medida, de 72 E4, para describir la hemina de trigo sanabresa; 24 E4 para 
+la hemina de linaza (Martín Álvarez, J. D.: Diccionario de sanabrés, Zamora, 1999, pp. 76, 91). 
+
+Pascual Riesco Chueca
+188	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+Escuredo, Muelas de los Caballeros, Rábano de Sanabria, Rioconejos, Rionegrito, 
+Sampil, San Juan de la Cuesta, San Salvador de Palazuelo, Santiago de la Requejada, 
+Trefacio, Triufé, Valdespino, Vega del Castillo, Villardeciervos, Villarejo de la Sierra, 
+Villarino de Sanabria. 
+JH = Carballeda contacto con Sanabria.
+Carbajales de la Encomienda, Dornillas, Entrepeñas, Espadañedo, Faramontanos 
+de la Sierra, 
+Lagarejos de la Carballeda, Lanseros, Manzanal de Abajo, Manzanal de los Infantes, 
+Otero de Bodas, Otero de Sanabria, Palacios de Sanabria, Palazuelo de las Cuevas, 
+Remesal, Sejas de Sanabria, Utrera de la Encomienda, Val de Santa María, Villanue-
+va de Valrojo. 
+Las confusiones dictadas por una mezcla de lo lineal y lo superficial crean peligro-
+sos equívocos, rayanos en el galimatías. Dediquemos unos párrafos a su discusión, pues 
+plantean un serio escollo para la interpretación del cme. En Aguilar de Tera, Olmillos 
+de Valverde y pueblos del ámbito AH se dice que la carga es de 4800 varas en cuadro, y 
+la fanega de 1200 varas en cuadro; y «una hemina de tierra contiene cuatrozientas varas 
+castellanas en quadro». Ha de entenderse que la hemina es, no de 400, sino de 100 E4, 
+es decir, 100 x (4)2 v2. 
+Entendemos del mismo modo la hemina de EH (Carballeda SW), área en que las 
+respuestas se ajustan a la siguiente fórmula: la hemina es de 400 estadales, cada estadal de 
+10 tercias33. Entendido literalmente, se obtendría una hemina enorme (400 E3t = 3105 
+m2). Procede una interpretación similar a la de los pueblos de Valverde y Tera. Ha de en-
+tenderse en EH que, puestos en línea, los estadales necesarios para completar la hemina 
+formarían un largo de 400 varas. Por lo tanto la hemina sería de 120 E3t.34
+La hemina del ámbito que hemos denominado Requejada (GH) presenta una fla-
+grante inconsistencia en las respuestas. Por un lado, la hemina se describe como de 72 
+palos en cuadro (cada palo de cuatro varas, E4); pero al reducirlo a varas cuadradas, la 
+hemina —se afirma específicamente— es de 992 v2. ¿Con qué quedarnos? La segunda 
+cifra es demasiado precisa y reiterada para pensar en un error accidental de cálculo, por lo 
+que cabe pensar en que el error está en la primera parte: debe de tratarse de una hemina 
+de 62 (no 72) E4, cifra que ya presenta plena conformidad con las 992 varas cuadradas.
+En el cme de Santiago de la Requejada (IH), se indica que la hemina es de 72 E4, 
+pero, inconsistentemente, se especifica que suma 1132 v2 (la cifra correcta es de 1152).
+La expresión en el ámbito sanabrés (FH) es también equívoca. La hemina se des-
+cribe como la extensión de ocho palos de medir en cuadro, siendo el palo o estadal de 
+33	
+ Para Codesal, perteneciente a EH, Cruz Reyes (1986: 129) indica que la carga es de 400 E4. En 
+las respuestas generales no hay nada de esto, que, en todo caso, daría una fanega insólitamente pequeña, de 100 
+E4.
+34	
+ Descartaremos la posibilidad de un error, el que en las respuestas de EH se haya puesto hemina 
+donde debería decirse fanega, lo cual llevaría a las siguientes equivalencias (1 hemina = 133 E3t = 1481 v2 = 
+1035,17 m2). La repetición en varios pueblos, y la indicación de capacidades en heminas hacen pensar que, 
+en efecto, se está describiendo la hemina; pero con la deficiente expresión ya constatada en otros puntos de la 
+provincia. 
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+189
+cuatro varas. Evidentemente no debe interpretarse como 1 hemina = 8 v2; sería extensión 
+pequeñísima. A tenor de pervivencias actuales, la interpretación admisible es que cada 
+hemina ocupa lo que un cuadrado cuyos lados fueran de 8 E4, es decir, 32 varas lineales.
+En el caso de Nuez, se plantea nuevamente la duda. Si se dice de la hemina que cuen-
+ta con 200 varas de diez tercias, ello puede tomarse en sentido recto, 200 E3t = 2222 
+v2 = 1552.75 m2. Pero parece excesiva la extensión, por lo que tal vez, pero con mucha 
+inseguridad, cabría pensar en la hemina de 60 E3t (puestas en línea quedaría 200 varas). 
+En tal caso, la hemina de Nuez sería de 666 v2 = 465.82 m2.
+6.	
+Visión general: la fanega
+Los bordes provinciales son un refugio de rarezas y penetraciones de medidas extra-
+provinciales. La presente tabla incorpora toda el área de vigencia de la hemina, recons-
+truyendo la fanega, que no se usaba en muchos de aquellos pueblos, como el triple de la 
+hemina; igual operación se aplica a partir de la cuarta en el este provincial, obteniendo la 
+yera, equivalente comarcal de la fanega. Las siglas introducidas anteriormente se siguen 
+usando aquí; para el resto de la provincia se han añadido nuevas siglas de ámbito:
+UP = Ubicuo provincial 
+Es el más extendido, cubriendo casi todo Sayago, Tierra del Vino, Aliste. Incluye 
+AH (Valverde y Tera). Puede obtenerse una visión cartográfica y una lista de pueblos 
+en Cruz Reyes (1986: 96, 117-124), que habrá de completarse con los presentes 
+datos en las áreas no tratadas por el autor. Algunos lugares de tierra de Benavente 
+(Bercianos y Navianos de Valverde, Brime de Sog, Cubo de Benavente, Aguilar de 
+Tera, Villar de Farfón) seguían, según el cme, el tipo UP.
+SP = Secundario provincial 
+Coincide con el usado en gran porción de Salamanca. Grandes partes de Aliste, 
+Alba. Islotes en Sanabria y Carballeda, tierra del Pan. Fuentesaúco y Guareña. De-
+hesas del sur de Sayago. Incluye DH (dispersos Carballeda). Véase en Cruz Reyes 
+(1986: 96, 125-128), completando en las áreas no tratadas por el autor.
+TD1 = Toro, dispersos (1) 
+Villalonso, Pinilla de Toro, Lobones (desp.), Benafarces VA.
+TD2 = Toro, dispersos (2)
+Vezdemarbán, Abezames, Pozoantiguo
+TG = Tierra de Toro hacia Guareña. Islotes en occidente alistano
+Bóveda de Toro, Cañizal, Cubillas, El Pego, Fuentelapeña, Guarrate, La Guareña 
+(deh.), Olmo de la Guareña, Torrecilla de la Orden VA, Vadillo de la Guareña, Va-
+llesa de la Guareña, Villabuena del Puente, Villaescusa, Villafranca de Duero VA ‖ 
+Castro de Alcañices, Trabazos.
+TN = Toro y su tierra hacia el norte
+Bustillo del Oro, Cabañeros, Fresno de la Ribera, Fuentesecas, Malva, Matilla la 
+Seca, Morales de Toro, San Román de Hornija VA, Toro, Villaester, Villaguer, Vi-
+llardondiego, Villavendimio.
+LC = Lampreana, Castrotorafe y entorno
+
+Pascual Riesco Chueca
+190	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+Incluye toda la encomienda de Castrotorafe y la Lampreana: Arquillinos, Fontani-
+llas de Castro, Gamonal, Junciel (desp.), Manganeses de la Lampreana, Olmillos de 
+Castro, Otero de Sariegos, Pajares de la Lampreana, Perilla de Castro, Piedrahíta 
+de Castro, Reguellino, Riego del Camino, San Cebrián de Castro, San Pedro de 
+Muélledes, Vidayanes, Villalba de la Lampreana, Villarrín de Campos. 
+Base en 
+estadales
+Extensión
+en v2
+Extensión 
+en m2
+Ubicación según cme 
+Fanega
+300 E4
+4800
+3353.94
+UP: Ubicuo provincial (incluye 
+AH)
+Fanega
+[localmente, 3 heminas]
+400 E4
+6400
+4471.92
+SP: Secundario provincial (in-
+cluye DH, dispersos Carballeda)
+[Fanega] (3 heminas)
+300 E3m
+3675
+2567.86
+BVT: Benavente y entorno
+Fanega
+300 E3t
+3333 1/3
+2329.12
+DN: Dominio de Nogales
+Fanega
+275 E4
+4400
+3074.44
+TN: Toro y su tierra hacia el 
+norte
+Fanega [1/4 carga]
+206 ¼ E4
+3300
+2305.83
+TD1: Toro, dispersos (1)
+Fanega [1/4 carga]
+175 E4
+2800
+1956.46
+TD2: Toro, dispersos (2)
+Fanega / obrada / huebra
+450 E4
+7200
+5030.91
+TG: Tierra de Toro hacia Gua-
+reña ‖ Islotes en Aliste W
+Fanega
+500 E3s
+5013 8/9
+3503.39
+LC: Lampreana, Castrotorafe 
+y entorno
+Fanega (4 cuartas)
+500 E3
+4500
+3144.32
+CC: Belver, Villalobos y 
+entorno.
+[Fanega] (3 heminas) 
+400 E3
+3600
+2515.45
+BH: Esquina NE provincial
+[Fanega] (3 heminas) 
+399 E3
+3591
+2509.17
+CH: Dispersos Benavente
+[Fanega] (3 heminas)
+360 E3t
+4000
+2794.95
+EH: Carballeda SW
+[Fanega] (3 heminas)
+192 E4
+3072
+2146.52
+FH: Sanabria
+[Fanega] (3 heminas)
+186 E4
+2976
+2079.44
+GH: Requejada
+[Fanega] (3 heminas)
+216 E4
+3456
+2414.84
+IH: Carballeda central
+[Fanega] (3 heminas)
+216.75 E4
+3468
+2423.22
+JH: Carballeda contacto con 
+Sanabria
+fanega / yera (4 cuartas)
+400 E3s
+4011 1/9
+2802.71
+AC: Villalpando y Campos, 
+dispersos
+Fanega / yera
+400 E3ss
+4006.89
+2799.76
+BC: Ruedo de Villalpando
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+191
+En la siguiente tabla se añaden algunos enclaves e islotes con medidas diferenciadas.
+Base en 
+estadales
+Extensión
+en v2
+Extensión 
+en m2
+Ubicación según cme 
+Fanega real
+576 E4
+9216
+6439.56
+Pragmática de 1801
+Gera de tierra
+304 E4
+4864
+3398.66
+Argusino (variante de UP)
+[Fanega] (1/4 carga)
+650 E3t
+7222 2/9
+5046.44
+Verdenosa y Redelga
+Fanega de monte o matorral
+450 E4
+7200
+5030.91
+Venialbo ‖ Donado
+Fanega de tierra
+350 E4
+5600
+3912.93
+Venialbo ‖ Donado ‖ Viñas, San 
+Blas, Sejas de Aliste
+Huebra / fanega
+450 E4m
+9112 1/2
+6367.24
+Castrillo de la Guareña, Castro-
+nuño VA
+[Fanega] (3 heminas)
+600 E3t
+6666 2/3
+4658.25
+Nuez (dudoso)
+[Fanega] (3 heminas)
+270 E4
+4320
+3018.54
+Castromil de Castilla [Hermi-
+sende, La Tejera]
+[Fanega] (4 tegas)
+320 E4
+5120
+3577.53
+Pías, Barjacoba, Porto
+Yera [6 cuartas]
+600 E3r
+4816 2/3 
+3365.58
+Castroverde de Campos 
+Iguada [6 cuartas]
+600 E3
+5400
+3773.18
+Cabreros del Monte VA, Pozue-
+lo de la Orden VA.
+Iguada [6 cuartas]
+600 E3d
+5704 1/6 
+3985.71
+Barcial de la Loma VA
+Estas tablas no deben sugerir la idea de que la fanega era de uso universal en Zamora 
+en tiempos del cme. Tampoco lo es la carga. Escalona Molina (2009: 118) recoge, limi-
+tándose a indicar la extensión en m2, distintas definiciones de la fanega en Zamora (3354, 
+5071, 4472, 3074 y 2658 m2). Con arreglo a lo anterior, podemos interpretar sus datos 
+como representativos de los tipos UP, TG, SP, TN y BVT que, efectivamente, son los 
+más extendidos en la provincia.
+7.	
+La medida de la tierra en Sanabria
+En Sanabria parece haber perdurado la medida de la tierra según el volumen de 
+semilla requerido (en tierras de secano y regadío) o el volumen de la producción (en pra-
+dos). De esta vieja tradición, refractaria a cualquier medida por estadal, dan fe numerosos 
+documentos de venta o de inventario. Así en Villarejo de la Sierra, huertos y cortinas se 
+miden por sembradura: un huerto de un cuartillo de centeno; un huerto tan diminuto que 
+es de «cabida de un puño de centeno»; una tierra, «cabida de media hemina de sembradu-
+ra», otra «de un celemín de sembradura» (Bz 27.8.1894); en Trefacio, «un huerto de un 
+quartillo de zenteno en sembradura» (1682 tmc).
+Prueba de este viejo hábito es la tendencia a diferenciar entre heminas de linaza (re-
+gadío) y heminas de suelo (secano). Hay que sembrar más densamente en el primer caso, 
+por lo que la hemina de linaza es menor en extensión que la de centeno, aunque no hay 
+
+Pascual Riesco Chueca
+192	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+unanimidad acerca del cociente de ambas. Según Montalvo Martín (2000: 6), una hemina 
+de regadío era de extensión tres veces menor que la hemina de secano. Así parece des-
+prenderse de las medidas de ambas en Robleda de Sanabria (Bz 1.9.1913, 29.10.1913). 
+Pero el resultado, deslizante, fragmentado y oscuro, es difícil de recomponer. Rodríguez 
+Iglesias, en referencia a un pueblo sanabrés que no identifica (¿Terroso?), hacia 1944, 
+proporciona un factor distinto; no de 1/3, sino de 5/12 = 0.41735. Sus datos parecen un 
+redondeo a la baja de la hemina del cme (que, en Sanabria, solía ser de 64 E4).
+Base en estadales
+Extensión
+en v2
+Extensión en m2
+Hemina de linaza
+25 E4
+400
+279.49
+Carro de campo o de terrón
+50 E4
+800
+558.99
+Hemina de suelo
+60 E4
+960
+670.79
+Hemina de suelo (tradicional)
+64 E4
+1024
+715.51
+En la tabla se incluye una medida habitual en inventarios, el carro de campo (Pérez 
+Toral 2015: 82) o de terrón, [campo ‘extensión’; terrón ‘terrazgo’] comparable al carro de 
+yerba asturiano36. Cortés Vázquez indica su uso frecuente en Lubián, donde es medida 
+muy elástico y de equivalencia incierta37. La tabla de Rodríguez Iglesias muestra las 
+siguientes relaciones internas. Pie es la denominación local del estadal de cuatro varas 
+(11.1798 m2), aunque en otros documentos (Vigo 1903, Paramio 1927, Remesal 1918, 
+Palacios 1918, Rihonor 1917) su extensión es mayor (de 13 a 16 m2).
+Hemina de 
+suelo (secano)
+Carro de cam-
+po o de terrón
+Hemina de 
+linaza (regadío)
+Pie
+Hemina de suelo (secano)
+1
+1 1/5
+2 2/5
+60
+Carro de campo o de terrón
+5/6
+1
+2
+50
+Hemina de linaza (regadío)
+5/12
+1/2
+1
+25
+Pie
+1/60
+1/50
+1/25
+1
+35	
+ Rodríguez Iglesias, J. M.: «Las escrituras de propiedad en Sanabria. Las medidas de las fincas». El 
+Filandar. O Fiadeiro. 20, 2013a, pp. 75-80.
+36	
+ El nombre remite a expresiones como «un prado campo de doze pies de yerba de riego» (Trefacio 
+1739), «un prado […] de campo de dos carros de yerba de riego» (Murias 1739), «un prado […] de campo de tres 
+embelgas menos seis pies» (Trefacio 1739) (tmc); campo tiene la acepción de ‘extensión, superficie’. Consta el 
+término «carros de campo» en un prado de Trefacio (1760 tmc). Pero carro de yerba, como medida de prados, 
+predomina en la documentación antigua del tmc: Vigo (1636, 1653, 1712-1715), Murias (1568, 1678, 1715, 
+1730), Asturianos (1598, 1701), Santiago de la Requejada (1652). La forma abreviada, carro, también consta: 
+Villarino (1696). En San Román de Sanabria, «un carro de prado nombrado el Gorgollón» (1752 srs). En Tre-
+facio, «un prado de cabida de seis carros de terreno más quatro pies» (1793 trf).
+37	
+ Cortés Vázquez, L.: El dialecto galaico-portugués hablado en Lubián (Zamora). Salamanca, 
+1954, p. 108.
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+193
+La hemina de 60 pies en secano parece confirmarse en Cobreros (Bz 24.10.1927, 
+20.8.1928); Cobreros y Avedillo (Bz 15.11.1929); Santa Colomba de Sanabria (Bz 
+13.7.1914, 26.2.1915, 7.12.1927). En Santa Colomba de Sanabria (Bz 15.11.1929) se 
+especifica, asimismo, que la hemina de linaza es medio carro de campo. Con el pie E4 
+(11.1798 m2), la hemina de suelo sería de 670 m2 (confirmado en Santa Colomba de 
+Sanabria, Bz 13.7.1914). Posteriormente se producen adaptaciones a la hemina de 100 
+pies, congruente con el patrón ubicuo provincial (fanega de 300 E4), como se observa en 
+Palacios de Sanabria y Vime (Bz 27.8.1928), Palacios (Bz 18.19.1929).
+En Robleda de Sanabria (Bz 1.9.1913) parece usarse el siguiente patrón: la hemina 
+de suelo es de 72 pies; la de linaza de unos 24 pies. El pie es de unos 13 m2, por lo que 
+la hemina de suelo es de 960 m2 y la de linaza es de 320 m2. En Vigo (Bz 19.6.1903), la 
+hemina de suelo es de 72 pies; el carro, de 60 pies; la embelga, de 24 pies; y cada pie, de 
+unos 15.5 m2.
+En Lobeznos y Remesal se intuye un coeficiente mucho menor entre la hemina 
+de regadío y la de secano. Así se obtiene una hemina de linaza de unos 40 pies, 480 m2 
+(Lobeznos Bz 6.8.1917), 450 m2 (Remesal Bz 2.1.1918). Si aquí se supone una hemina 
+de suelo de 72 pies (como indicaba el cme), el cociente sería de 5/9. En Palacios, el coe-
+ficiente parece de ½, pues el cuartillo en huertos y cortinas es de 30 m2 y el de tierras es 
+el doble, 60 m2 [heminas de 480 y 960 m2] (Bz 2.1.1918).
+Otra unidad de superficie muy difundida en Sanabria es la embelga, tercera parte de 
+la hemina, que se usa preferentemente en prados. Se menciona una «lata de prado de una 
+embelga y diez pies» en Vigo (1715), «una tierra de pan llevar de seis enbelgas y media de 
+centeno ende senbradura» en Murias (1730) (tmc). En Trefacio (Bz 21.3.1928) se indica 
+que la embelga cuenta con 24 pies38, lo cual implica la hemina de 72 pies (cada uno de 15 
+m2). Montalvo Martín ofrece para el área sanabresa un esquema (representado en la tabla 
+adjunta) que parece contradecir los datos de Iglesias; hemos añadido el carro de terrón, 
+al que atribuimos los 60 pies que se desprenden de algunas citas de boletín en Vigo de 
+Sanabria (Bz 19.6.1903) y Lobeznos (Bz 6.8.1917).
+Hemina
+Carro de 
+terrón
+Embelga
+Pie
+(E4)
+Hemina
+1
+1 1/5
+3
+72
+Carro de terrón
+5/6
+1
+2 1/2
+60
+Embelga
+1/3
+2/5
+1
+24
+Pie (E4)
+1/72
+1/60
+1/24
+1
+Ello parece reflejar los datos del cme sobre la hemina (72 E4) para los ámbitos IH 
+y JH. Ateniéndonos al pie E4 (11.1798 m2), se obtiene: 1 hemina = 804.95 m2; 1 carro 
+38	
+ Montalvo Martín (2000: 6) confirma la embelga de 24 pies, coincidente en extensión con la hemina 
+de linaza.
+
+Pascual Riesco Chueca
+194	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+= 670.79 m2; 1 embelga = 268.32 m2 39. Las discrepancias con Iglesias deben proceder 
+de un pasado en que, como indica el cme, coexistían varias medidas para la hemina en 
+Sanabria, siendo dominante la de 64 E4 (ámbito FH). Ello daría 1 hemina = 715.51 m2; 
+[1 carro = 596.26 m2]; 1 embelga = 238.50 m2.40
+El cme suele situar el carro en correspondencia aproximada con la hemina de prado. 
+En Lubián, una hemina de prado de regadío da un carro de yerba anual si es de primera 
+calidad, medio si es de segunda.
+8.	
+Sobre unidades raras y arcaizantes en la provincia
+El léxico de las unidades de medida es en sí mismo de interés. Morala (2016) estudia 
+algunas unidades de capacidad durante el siglo xvii. Al tratar el problema del alquer en el 
+occidente zamorano, subraya que las referencias al recipiente remiten siempre a la linaza, 
+«por lo que podría tratarse de una medida especializada en este producto, trasvasada lue-
+go a las tierras que lo producen» (566), hipótesis que abandona más tarde (Morala 2017: 
+362). Los ejemplos acopiados por Morala (Riofrío de Aliste, Ferreruela de Tábara), de 
+1688, aluden a la cabida de tierras de pan llevar, donde nunca se siembra linaza. Encon-
+tramos abundantes referencias al alquer en el cme y en los boletines como mero submúl-
+tiplo de la fanega, sobre todo en Aliste, certificándose su uso también en tierra de Alba 
+(Carbajales, Bermillo, Villaflor, Vide, Videmala, Villanueva de los Corchos, Pino). En el 
+vecino Portugal, donde la forma usada es alqueire, consta desde antiguo aplicado a los 
+cereales. En la comarca de Tábara, alquer es desplazado por su perfecto sinónimo cuartal. 
+Morala (2016: 576; 2017: 361) muestra su uso como unidad de medida superficial en 
+Ferreras de Arriba y Pozuelo de Tábara en 1690. Sobre la ochava, usada en Aliste, Alba 
+y Tábara principalmente, véase Morala (2016: 578; 2017: 361). La yera de Villalpando 
+(< lat. diaria), que ha perdurado hasta nuestros días, es usada allí para la medida de 
+tierras, junto a la cuarta de viña, en 1390 y fechas posteriores41; en Villalobos cuarta y 
+yera se mencionan en 1356 y 137742; también en un documento de Villalpando de 1652 
+(Morala 2017: 362). Sobre la vigencia y antigüedad de carga, fanega, celemín, obrada y 
+aranzada, véase Pérez Toral (2015: 84-89).
+Enlazando con la sección anterior, cabe señalar que Sanabria y Carballeda usaron 
+otras medidas de cabida aún más inciertas. Una fracción del carro es la medida llamada 
+montón de hierba. En Murias se menciona «un pradico de un montón de yerua, […] de 
+ancho tiene dos passadas» (1705 tmc). En Muelas de los Caballeros, «un pradico […] 
+39	
+ Consta esta misma extensión (268 m2) para la embelga zamorana durante el siglo xix en Castaño 
+Álvarez (2015). El autor recuerda la antigüedad de la medida: en la colección de la catedral de León, «adisti 
+nobis super mensuram duas ambelcas de terra» (año 943). 
+40	
+ La embelga de prado en Triufé se estima en 320 m2 (Bz 9.12.1910). Igual en Paramio (Bz 
+20.7.1927) y Robleda (Bz 1.9.1913, 29.10.1913). Estas cantidades corregidas se originan en la medida del pie, 
+que se fija en unos 13.2 m2 en parte de Sanabria.
+41	
+ Vaca Lorenzo, Á.: Documentación medieval del archivo parroquial de Villalpando (Zamora), 
+Salamanca, 1988, pp. 145, 363ss.
+42	
+ Vaca Lorenzo, Á.: Documentación Medieval del Monasterio de Santa Clara de Villalobos (Za-
+mora), Salamanca, 1991, pp. 48-49, 78.
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+195
+que da un montón de yerua» (1665 apumm). Rodríguez Iglesias (2013a: 75) cita en una 
+escritura sanabresa, de 1791, «una suerte de prado […] de carro y medio y montón y me-
+dio». Se trata de un submúltiplo del carro, como muestra la referencia en Terroso a un 
+prado «de tres carros y menos un montón» (Rodríguez Iglesias 2013b: 132). El «montón 
+de yerua» se cita en Villarino de Sanabria en 1605 para la medida de prados (ApVill). 
+En los boletines encontramos un prado en Lagarejos de la Carballeda, de cabida de «un 
+montón de yerva poco más o menos» [datos de 1827] (Bz 20.1.1869). Ajustando datos 
+de San Salvador de Palazuelo (Bz 6.11.1929), se obtiene la relación siguiente: un montón 
+es media hemina, o sea, dos celemines. La fanega por entonces estaba regularizada local-
+mente al tipo ubicuo provincial UP, de 3354 m2, por lo que el montón en Palazuelo es 
+de 50 E4 = 558.99 m2. El montón de yerba (o simplemente, montón) es usado para medir 
+prados y llamas en Lanseros (1836, 1850), Mombuey (1836), Villardeciervos (1835), 
+Peque (1882), Muelas de los Caballeros (1902). El cme de Vigo de Sanabria indica que 
+una hemina de prado regable daba dos montones de yerba, mientras que una hemina de 
+prado de secano daba un montón y medio. Es común en León (Burón 1991: 112), donde 
+tiene un sinónimo aproximado en el Bierzo, el balagar.
+Parecido en magnitud es el marallo, unidad de cabida para prados; se menciona su 
+uso en Molezuelas de la Carballeda y Lanseros (1915); en Peque, una llama «de cuatro 
+maraños» (Bz 8.9.1882). Se define como tres cuartillos de sembradura en Lanseros (Bz 
+26.2.1915). Dado que la hemina tiene 16 cuartillos, un marallo sería 3/16 hemina (local-
+mente, unos 150 m2). En León, Burón (1991: 112, 114) cita el uso del marallo o maraño 
+como medida superficial en el norte provincial (La Vecilla), estimándolo en 105 m2. En 
+Peque aparece una variante escrita, también aplicada a prados: en una subasta de 1902 
+encontramos distintas llamas (prados húmedos), cuya cabida es de uno, dos o tres vasallos 
+(Bz 19.3.1902); seguramente es un error de lectura (*marallo > vasallo).43 
+Un interesante uso local es el de gera de tierra, del cme de Argusino. En este pueblo 
+del sur sayagués, gera es un mero sinónimo de fanega; por alguna razón que no es fácil 
+elucidar (¿error del copista?), su valor difiere levemente del ubicuo provincial, siendo de 
+304 E4, «según estilo antiguo de este lugar»44. No debe sorprender la denominación, 
+pues encontramos un doblete, la yera, con distintos valores pero en posición vicaria con 
+respecto a la fanega, en el este provincial. Tanto yera como gera son descendientes del 
+latín diaria, en el sentido de ‘la labor de arada que hace una yunta [de bueyes, de mulas] 
+en un día’45. En Toro aparece aisladamente una unidad sorprendente, la yera de mayor, 
+aplicada a viñas y josas, descrita como dos fanegas y seis celemines (2.5 fanegas = 10064 
+m2) (Bz 22.2.1909, 20.7.1914). Esta unidad sigue en uso, pues González Ferrero (2017: 
+192) registra en Toro y Villanueva la yera, de aproximadamente una hectárea, que viene 
+43	
+ De ser correcta la lectura, algo casi descartable, el término podría estar ligado a las sernas, prestación 
+laboral obligatoria de unos cuantos días o tareas particulares, que habían de satisfacer los hombres de un señor 
+medieval. Pero en tal caso sería medida de viñas (jornales, peonadas, obreros) o de tierras, no de prados.
+44	
+ Cruz Reyes (1986: 129) interpreta erróneamente que la gera es localmente usada como sustituto 
+de la carga sayaguesa. Ello daría lugar a una fanega insólitamente pequeña, de 76 E4. El propio texto de las 
+respuestas dice explícitamente que la carga en Argusino es de cuatro geras.
+45	
+ En Villarino SA se usaba en el siglo xvii la unidad de xeras de cava para medir la superficie de las 
+viñas.
+
+Pascual Riesco Chueca
+196	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+a representar la labor de arada que puede realizarse en un día. En Trefacio constan refe-
+rencias a la jera como medida superficial: «territorio de dos jeras de suelo, una en la tierra 
+de él sobre Valle de Chanos, y otra jera en la tierra de Bouzuelas» (1570 tmc).
+En el cme de Pías, Porto y Barjacoba (Las Portelas), comarca de habla gallega con-
+tinuadora de As Frieiras orensanas, aparece una insólita cadena de medida, presidida por 
+la tega, castellanización de teiga, que a su vez es la forma gallega de talega46. La serie se 
+ajusta a la siguiente tabla:
+tega
+[celemín]
+maquila
+neto
+cuartillo
+tega 
+1
+3
+6
+36
+72
+[celemín]
+1/3
+1
+2
+12
+24
+maquila
+1/6
+1/2
+1
+6
+12
+neto
+1/36
+1/12
+1/6
+1
+2
+cuartillo
+1/72
+1/24
+1/12
+1/2
+1
+La tega en Porto, Pías y Barjacoba consta como 80 E4, es decir, 1280 v2, o 894.38 
+m2. Se añade la referencia al celemín según el pote de Ávila. En su equivalencia en fane-
+gas, la tega equivaldría a ¼ fanega (sería pues sinónima de alquer o cuartal), dando una 
+fanega de 320 E4. El cuartillo aquí no tiene relación alguna con el cuartillo de la cadena 
+canónica. La maquila deberá su nombre a que la relación 1/24 (con respecto a la carga) 
+es la fracción que se quedase localmente el molinero por su trabajo. 
+Del otro lado de la frontera se preserva el mismo sistema, aunque con leves variantes 
+en las relaciones numéricas. En Castromil de Galicia, la cadena {tega, celemín, maquila, 
+neto, cuartillo} se ajusta a las relaciones {1, 3, 6, 14, 48}. En Cepedelo, de Viana do Bolo, 
+{1, 3.5, 7, 42, 84}; en Sever, {1, 3.5, 7, 49, 98}. En todos ellos, la tega es de 80 E4, pero, 
+como se comprueba, falta un sistema de relaciones fijas como es la sucesión zamorana 
+{carga, fanega, ochava, hemina, alquer o cuartal, celemín, cuartillo, carrapito o copa} {1, 
+4, 8, 12, 16, 48, 192, 768}.
+Todas estas relaciones tan móviles y cambiantes producen desorientación. El neto se 
+usa como medida de superficie y capacidad en el partido de Viana do Bolo, con el valor de 
+medio cuartillo ([Rivas Quintas] DdD). Se aplicaba para medir semillas menudas, como 
+nabos, col o linaza. Traslaticiamente se aplica a pequeños cornijales y esquinas de finca. 
+La mayor parte de los lexicógrafos gallegos, desde Sarmiento a nuestros días, mencionan 
+el neto como medida para el vino, equivalente a un cuarto de azumbre, o sea, un cuartillo. 
+Sin embargo, el cme considera más pequeño en extensión el cuartillo que el neto.
+46	
+ La talega se usa en Astorga para la medida de prados (Burón 1991: 112). Citas de Orense (1268, 
+1269): «cortina de una talega semente», «cortina de una talega semeadura» (Vaquero Díaz, M. B. y Pérez 
+Rodríguez, F. J.: Colección documental del Archivo de la Catedral de Ourense (800-1300), León, 2010). 
+Castaño Álvarez aporta una cita gallega de 1260 (Castaño Álvarez, J.: El libro de los pesos y medidas, La 
+esfera de los libros, 2015). Véase también en Clemente Ramos (2004: 31) y en Fernández Justo, M. I.: Me-
+trología tradicional gallega: aportación a los estudios sobre el medio rural, Madrid, 1986. Sobre maquila y neto 
+en Asturias, véase Pérez de Castro (1973: 222, 225). 
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+197
+Otra unidad menor es el carrapito. A juzgar por las respuestas de Hermisende, es la 
+cuarta parte de un cuartillo, es decir 1/16 de celemín. Se mencionan algunas propiedades 
+tan diminutas que se miden con esta unidad: una era de trillar, de dos carrapitos; una tie-
+rra yerma, que «consiste en un carrapito» (cme, Respuestas Particulares). Cortés Vázquez 
+(1954: 107) ofrece un dato discrepante para Lubián, donde en capacidad equivale a una 
+onza; añade que 1 cuartillo = 16 carrapitos47. También menciona la rápida fluctuación 
+de las equivalencias: «de una especie de vaso de madera se ha convertido en un bote de 
+tomate [1/2 kg] con cuádruple capacidad». 
+La copa de San Martín de Valderaduey, unidad de medida superficial, parece de-
+finirse también como ¼ cuartillo = 1/16 celemines = 1/192 fanegas (Álvarez Tejedor 
+1989: 117). En efecto, la medida de capacidad copa = ¼ cuartillo es conocida en Castilla 
+(Escalona Molina 2009: 122); se usa en Asturias tanto copa como copín y copella (Pérez 
+de Castro 1973: 210). Es por ello posible que el carrapito de la franja gallega remita 
+etimológicamente a una idea afín. Dado que carrapucho es el nombre del ombligo de 
+Venus (también llamado couselo < *calicellus) ([Carré Alvarellos 1979] DdD), tal vez se 
+sugiere jocosamente que el recipiente asociado al carrapito es diminuto, como el pequeño 
+cuenco que forma la hoja cóncava de esa planta. La idea de pequeñez está también en 
+voces parónimas, como carrapete ‘fruto más pequeño de lo normal’. Se repite la referencia 
+a un recipiente de grano o líquido para la medida o valoración de tierra en el topn. zamo-
+rano Tagarabuena, donde se usa el viejo término tagara ‘copa, cáliz de vino’ para referirse 
+a la buena calidad de un pago de viña. En Galicia, conca / cunca ‘escudilla’ es también una 
+medida de capacidad y de superficie (Escalona 2009: 113, 130, 131).
+Para la extensión de casas, pajares, cuadras, corrales y solares, se usó en Sanabria 
+una unidad llamada parada. A partir de medidas en Cervantes, Triufé, Paramio y Roble-
+da de Sanabria, se deduciría una extensión de unos 13 m2 (Bz 17.10.1898, 15.6.1910, 
+9.12.1910, 29.10.1913, 20.7.1927), similar al pie48. Consta por ejemplo, una porción 
+de una casa que tiene «parada de alto y bajo, y una parada de corral en la casa mortuo-
+ria» (Rábano de Sanabria Bz 14.5.1864)49. Otros ejemplos: casa en Cerdillo, cubierta de 
+paja y losa, de tres paradas; pajar, cubierto de paja, cabida de tres paradas y cuarto (Bz 
+4.4.1894); casa en Trefacio, de cuatro paradas [1850] (Bz 28.7.1869). Se menciona una 
+unidad menor llamada cuarta: una casa de «cabida de dos paradas y seis cuartas» en Cube-
+lo (Bz 19.10.1903). Ya se cita en Ungilde en 155550 y en Villarino de Sanabria en 1605, 
+«una parada de casa poco más o menos» (ApVill).
+En la medida de las viñas y otros cultivos leñosos se acude en la parte occidental de 
+la provincia a contar el número de jornales o peonadas requeridas para su cava. Ello da 
+lugar a distintas denominaciones. En Hermisende, el cme indica que un jornal de cava-
+47	
+ Según las respuestas del cme en Hermisende, 1 cuartillo = 4 carrapitos.
+48	
+ En un inventario de Robleda (Bz 1.9.1913) parece darse a entender que la parada coincide con el 
+pie. El pie (aquí y en otros documentos sanabreses) se estima en 13 m2, por encima del E4.
+49	
+ El Boletín Provincial muestra el uso de esta unidad de cabida en Santiago de la Requejada, Valdes-
+pino, Cervantes, Quintana, Vigo, Rozas, Villarejo, San Miguel de Lomba, Santa Colomba, Sampil y Ungilde, 
+entre otros lugares, con fechas que llegan a la Guerra Civil.
+50	
+ Martín Benito, J. I.: «Catástrofes en el Condado de Benavente: El incendio de Ungilde (Sanabria) 
+de 1555», en prensa [este número], Brigecio, 1999.
+
+Pascual Riesco Chueca
+198	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+dura equivale a media hemina, es decir, unos 45 E4. Existen municipios donde no se da 
+pauta para cultivos herbáceos, pero sí para los leñosos. En Villarino de los Aires SA, en 
+viñas, zumaques y olivos se atiende por peonadas de cava. Cada una es lo que trabaja en 
+un día un jornalero o peón con azada. Una peonada contiene 120 cepas. Ocho peonadas 
+hacen una fanega de terrazgo en tierras de buena calidad. Para las tierras no usan estadal, 
+sino que miden a tenor de la simiente requerida, en fanegadas. La terminología un siglo 
+antes parece diferente. En 1690, las viñas de Aldeádavila de la Ribera SA se miden en 
+xeras de cava51. En Aldeadávila (cme), una fanegada de tierra contiene tres peonadas. 
+Cada peonada es 4 celemines de sembradura52. 700 cepas ocupan 1 peonada. 1 fanega-
+da admite 100 pies de olivos, 70 pies de higueras, 35 de cereceras, 35 de peras, 20 de 
+nogales; pero encinas, robles, álamos, negrillos y varillas de castaños quedan fuera: no se 
+reducen a fanegadas.53
+En Fermoselle se miden olivares y viñas por obreros de cava u obreros54. En un obre-
+ro hay unas 120 o 140 cepas (Bz 5.12.1864). Sacando medias entre numerosos datos de 
+boletín, entre 1907 y 1926, se obtiene que cada obrero mide unos 300 m2, lo cual sugiere 
+que, para la fanega local de 300 E4, hay más de diez obreros en cada fanega.
+En algunos pueblos de TG, en el límite SE de la provincia, aparece obrada como si-
+nónima de fanega, con el valor de 450 E4. Así en Bóveda de Toro (Bz 19.6.1891) y Olmo 
+de Guareña (1922, 1935). De igual etimología es la huebra o güebra, que se menciona 
+como sinónimo de fanega en el cme de Olmo de la Guareña, Vallesa (450 E4), así como 
+en Asmesnal y Santarén de los Peces (400 E4).
+La toponimia es un reservorio de arcaísmos. Aunque no hay constancia del uso en 
+Zamora del estopo, antigua unidad leonesa, parece haber tenido vigencia antiguamente, 
+como muestra el topn. El Estopino (San Justo mtn25), comparable a Cinco Estopos 
+(Rabanal de Fenar LE)55. Este tipo de topónimos, en que se alude a una parcelación o 
+una tierra cuya extensión es característica, es muy común y refleja el patrón de medida 
+dominante en cada localidad donde aparece. Así, junto a Las Veinte Ochavas (Coreses), 
+encontramos Las Diez Obradas (San Esteban de Zapardiel AV), Las Veinte Iguadas 
+(Cuenca de Campos VA), Treinta Iguadas (Santa Eufemia del Arroyo VA), Las Treinta 
+Huebras (Valdecarros SA), Cinco Heminas (Villibañe LE) y muchos similares.
+En cuanto a la yugada, es una unidad que apenas se cita en los boletines. Es más 
+común en Salamanca. Ha de advertirse que en los ejemplos comprobados nunca tiene la 
+extensión que le asignan algunos autores, correspondiente a la labor de arada de una pare-
+51	
+ Archivo Histórico Provincial de Salamanca, Protocolos. Notario Juan Antonio de Paz (1690-1692), 
+signatura 3926.
+52	
+ Pérez Toral (2015: 94, 97) muestra la amplia difusión de las unidades de superficie obrero, obrero de 
+viña, peonada.
+53	
+ En Mieza cambian las relaciones: una fanegada consta de cuatro peonadas; cada peonada da cabida 
+a 400 cepas de vid, o, si es en árboles, 400 guindos, 80 olivos, 40 higueras, 80 cerezos, 40 perales, 160 melo-
+cotoneros.
+54	
+ Otras denominaciones: hombres de cava en Tremado de Carballo (Asturias) (crp 21.9.1822); jornales 
+de parra en Galicia (p.ej. Vilanova de Lourenzá LU, crp 21.3.1822).
+55	
+ Miranda Pérez-Seoane, J., Valenzuela Miranda, J., Álvarez Vélez, M., Llamazares López, 
+J. y Pérez Álvarez, R.: Estudio lexicológico y toponímico del Valle de Fenar, León, 1990, p. 392.
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+199
+ja de bueyes en un día (esta es la huebra, obrada o fanega; o el día de bueyes asturiano). Se 
+trata más bien de la extensión que mantiene ocupado durante un año agrícola a un cam-
+pesino con una pareja de bueyes o mulas. El heredero en Sayago, según las Ordenanzas 
+de Zamora, había de tener 24 cargas de tierra de sembradura (96 fanegas) (1448 OrdZ 
+33); más adelante se alude a quienes «non eran herederos nin tenían yugadas de heredad 
+entera» (1469 OrdZ 43). Así encontramos la referencia a una yugada de 75 huebras en 
+Vadillo de Guareña (Bz 7.8.1863). En Asturianos se alude a «dos suertes de yugadas» 
+(1655 tmc). En el oeste vallisoletano parece que ocasionalmente se ha producido confu-
+sión gráfica entre iguada (extensión equivalente a la obrada o la fanega) y yugada.
+9.	
+Sobre la estabilidad y pervivencia del sistema de medidas superficiales
+Como se indica anteriormente, el panorama muy fragmentario dibujado por las res-
+puestas del cme no refleja necesariamente una zonificación consolidada y estable de la 
+medida superficial. En el Antiguo Régimen, la medida por agrimensores era una rareza, 
+limitada a grandes propietarios, venta de realengos, señorío secular y eclesiástico. Es in-
+dudable que sus estadales eran asistemáticos e irregulares.
+En Morales de Toro se lleva a cabo un apeo en 1586 usando unas medidas que 
+se apartan de las consignadas en el cme56. La carga era de 1600 estadales, y el estadal 
+«de cuatro varas y cuarta»: es decir, la fanega era de 400 E4c (7225 v2, 5048.38 m2)57, 
+en doble discrepancia con respecto a los datos del cme (fanega local de 275 E4, 4400 
+v2, 3074.44 m2). Sin duda, al tratarse de tierras realengas, la medida se apartó del uso 
+local. En un apeo de 1530 en Valdunciel SA, se usa un estadal de cuatro varas y cuatro 
+pulgadas, es decir 4.1111 varas («estadal de marco de quatro varas de medir / e quatro 
+pulgadas»)58. Sorprende tal medida si se observa el gran arraigo que tuvo al menos desde 
+el siglo xviii en esta comarca la fanega 400 E4, con estadal de cuatro varas. Las medi-
+ciones realizadas con estadal eran infrecuentes, y solían indicar posesión señorial59. Las 
+propias unidades de capacidad eran, para una misma denominación, de distinto formato: 
+en un documento astorgano de 1182 se menciona una «hereditate que ad presens potest 
+capere octo fanegas per maiorem eminiam astorice[nse] seminatis»60: una cita de la que se 
+infiere que existían al menos dos medidas volumétricas de la hemina en Astorga, proba-
+blemente por la existencia en el concejo de distintos recipientes de referencia. Cada villa 
+o centro señorial podía tener medidas diferentes. Se cita la hemina de Benavente ya en 
+56	
+ Gutiérrez Gallego, T.: Morales de Toro, Salamanca, 1987, p. 123.
+57	
+ Gutiérrez Gallego, sin embargo, no tiene en cuenta este dato explícito, al definir el estadal usado 
+como de 11.18 m2 (este es el estadal de cuatro varas, E4).
+58	
+ Apeo de una yugada en Valdunciel, de Alexandro de Cánova, vecino de Salamanca. 7.11.1530. 
+Archivo Universidad de Salamanca, Signatura 2543, Acta 47, pp. 83-105.
+59	
+ Unas tierras en Maire, pertenecientes al monasterio de Nogales, son de cabida de 444, 374, 588, 
+118 palos [= estadales] (crp 18.6.1822): un grado de precisión raro en apeos de hasta un siglo más tarde.
+60	
+ Cavero Domínguez, G. y Martín López, M. E.: Colección documental de la catedral de Astorga, 
+León, 1999-2000.
+
+Pascual Riesco Chueca
+200	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+fecha temprana: «duos modios de pane, unum de tritico et unum de centeno per eminam 
+de Beneuento» (1202), «iiii modios per eminam Beneuenti».61
+La resistencia de los pueblos a una normalización provincial hubo de ser intensa. La fane-
+ga real o legal que intentó impulsar una Pragmática Real de 26.1.1801 era de 576 E4, y apenas 
+alcanzó arraigo en la provincia. Todavía en 1883 se solicita (a petición de la Dirección General 
+del Instituto Geográfico y Estadístico) a los alcaldes de la provincia información acerca del 
+«número de estadales de que consta la fanega y pies de que se compone el estadal, equivalencia 
+de cada fanega en varas castellanas» (Bz 10.1.1883) Había morosidad en el cumplimiento de 
+esta orden por los alcaldes, por lo que posteriormente se fijó un plazo de quince días; se pedía 
+también aclarar si había unidades diferentes para secano y regadío (Bz 19.3.1883).
+Así y todo, el pintoresco y multiforme sistema de medida reflejado en el cme, con 
+toda su diversidad, fue sin duda simplificándose a lo largo del siglo xix, pues las eviden-
+cias de su uso reflejadas en el Boletín provincial62 son menos ricas en variación. Proba-
+blemente se extinguieron algunos islotes, subsistiendo los focos principales. De la hemina 
+100 E3m del área de Benavente (BVT) quedan numerosas evidencias tardías: Quiruelas 
+de Vidriales 1896, 1926, 1927; Pobladura del Valle 1920; Quintanilla de Urz 1896; 
+San Cristóbal de Entreviñas 1919; Matilla de Arzón 190263. Algunos lugares que eran 
+del tipo UP (300 E4) en el cme son absorbidos por el tipo BVT: Bercianos de Valverde 
+1884 y Morales de Rey 1907.
+De la fanega de Toro (TN, 275 E4), hay muestras al menos hasta 1921. En Abe-
+zames se recuerda la fanega de 2000 m2 (furm 2010, informante F. Ruiz Bragado), en 
+correspondencia con el tipo TD2 allí vigente en el cme (175 E4 = 1956.46 m2). Este 
+mismo tipo consta en Vezdemarbán en 1924. Muy vital hubo de ser la fanega grande de 
+la Guareña (TG, 450 E4), de la que constan numerosos ejemplos: Bóveda de Toro 1887, 
+1911, 1935; Villaescusa 1896, 1912, 1926; Olmo de Guareña 1914, 1932; Fuente-
+lapeña 1898, 1932; Cañizal 1905; Guarrate 1882.
+El islote de Castroverde, con su yera de 6 cuartas (600 E3r), parece también pervivir 
+con vigor, pues consta su vigencia en 1923, 1925, 1926.
+El tipo ubicuo provincial (UP, 300 E4) se refleja en innumerables pervivencias poste-
+riores, que llegan casi a la actualidad. Incorpora antiguos islotes, extinguiendo medidas ais-
+ladas y penetrando en centros importantes como Toro. En cambio, el secundario provincial 
+(SP, 400 E4) parece entrar en una rápida decadencia. Consta en Fuentesaúco 1916, An-
+davías 1854. Pero Samir de los Caños, del tipo SP, había pasado al tipo ubicuo provincial 
+según Bz (15.4.1932); igual transición se constata en Domez (Bz 19.1.1883). San Salvador 
+de Palazuelo, antes del tipo IH, pasa al UP según Bz 6.11.1929. También muestran adap-
+tación al UP Junquera de Tera (1898), antes sin especificar; Paramio (1927), antes FH; 
+Carbajales de la Encomienda (1913), antes JH; y Cional (1929), antes IH.
+61	
+ Loscertales de García de Valdeavellano, P.: Tumbos del Monasterio de Sobrado de los Monjes, 
+2 vols., Madrid, 1976.
+62	
+ Las equivalencias se obtienen a partir de algunos inventarios de fincas en que aparece simultánea-
+mente la cabida en unidades antiguas y la expresada en m2.
+63	
+ Se recuerda la hemina de unos 860 m2 hasta fecha reciente (Barrio Prada, M.: «El habla de la zona 
+de Benavente (I)». Brigecio, nº 8, 1998, p. 256).
+
+Las viejas unidades de superficie en la provincia de Zamora
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804	
+201
+Muy vigorosa fue la pervivencia de la yera o fanega (de cuatro cuartas) en el área de 
+Villalpando (AC y BC, unos 2800 m2). Consta su uso en Villafáfila 1854; Villalpando 
+1898, 1907, 1917, 1924-1935; Revellinos 1913; Villanueva del Campo 1928; Villama-
+yor de Campos 1914, 1929, 1935; Villar de Fallaves 1935; Prado 1891; Villárdiga 1924; 
+Cerecinos 1927; Cañizo 1930; Quintanilla del Monte 1929, 1931, 1933, 1935; Cotanes 
+190764. El Atlas lingüístico de Castilla y León constata la vigencia de la yera de 2800 m2 
+en Cerecinos de Campos y Belver de los Montes (alcl III: 922). Parece tener capacidad 
+de anexionar áreas antes adscritas a otro sistema, pues Villarrín de Campos y Vidayanes 
+(antes LC, 500 E3s) parecen haber adoptado el sistema de Villalpando en 1927 y 191765.
+Álvarez Tejedor (1989: 114-117) muestra fragmentos del viejo sistema en el este 
+provincial. Los datos testimonian el progresivo olvido de las medidas. En Villalobos, un 
+cuartal se recuerda como 1/16 fanega, por lo que la fanega sería 2500 m2, algo que se 
+aparta del valor atribuido por el cme, 3144.32 m2. La cuarta mantiene su proporción 
+tradicional en Villafáfila (1/4 de fanega) y en San Martín de Valderaduey (1/4 de yera, 
+es decir 833 m2). Este último dato indica que allí ya se estaba usando la yera ajustada a 
+la fanega provincial de 3354 m2. Recoge también Álvarez Tejedor en San Martín una 
+unidad llamada carga real, de cinco yeras, es decir 16660 m2 66. Otro dato sorprendente 
+es el recogido por Álvarez en Villamayor de Campos, donde la carga consta de siete hemi-
+nas, en vez de las doce regulares. En Abezames se indica que una carga son siete fanegas 
+(furm 2010, informante F. Ruiz Bragado): ¿alude a la carga real?
+En cuanto a la aranzada de viña, su cabida experimenta ajustes varios con respecto 
+a la fanega. En Fuentesaúco, donde la fanega era de 4451.92 m2, una aranzada (en un 
+pago particular) ocupa 10 celemines de tierra, es decir, 5/6 de fanega (Bz 10.11.1916). 
+En Fuentelapeña (fanega de 5030.91 m2) consta como de 9 celemines = ¾ de fanega (Bz 
+5.7.1929, 4.1.1932); en Villaescusa (fanega igual), de 11 celemines (Bz 29.1.1926) y de 
+9 celemines (Bz 21.10.1907); en Olmo, otra aranzada de 18 celemines (Bz 11.3.1914). 
+En la mayoría de los casos la aranzada es similar en extensión a la fanega (La Bóveda de 
+Toro 1894, Fuentelapeña 1898). Tales ajustes parecen variables y coyunturales. González 
+Ferrero (2017: 185, 192) muestra la pervivencia de la alanzada (lanzada en La Bóveda) 
+en los valles del Duero y de la Guareña, que da cabida a unas 500 cepas. Ya en el valle del 
+Talanda se usa la fanega de viña (500 cepas en Venialbo y El Piñero; 400 en San Miguel)67.
+El detalle de esta transición, que aboca finalmente a la completa imposición del 
+sistema internacional, solo puede apurarse a través de la historia local.
+64	
+ Se confirma la yera antigua, de 2800 m2, en la memoria de un informante de Cotanes, según encues-
+ta de coser (1991).
+65	
+ Por ello, parece inexacta, aunque probablemente sea una buena estimación, la suposición de que la 
+fanega en Villalpando y Villalba de la Lampreana (tipos AC y LC en el cme) en los s. xiv y xv era la misma y 
+se ajustaba al tipo ubicuo provincial (3354 m2) (Vaca Lorenzo, Á.: «Paisaje agrario y organización del terrazgo 
+en Villalpando y su tierra. Siglos xiv y xv». Primer Congreso de Historia de Zamora. Tomo 3. Medieval y 
+Moderna, Zamora, 1991, pp. 27-52).
+66	
+ El mismo término, carga real, se comprueba en el cme de Bolaños de Campos, con el valor de 2400 
+E3s = 16816 m2, curiosamente con un extensión parecida a la de San Martín.
+67	
+ En 1822, una viña en San Román de Hornija de 21.5 aranzadas tenía 10750 cepas (500 cepas por 
+aranzada) (crp 27.8.1822).
+
+Pascual Riesco Chueca
+202	
+Brigecio, 29 (2019), pp. 175-202 - ISSN: 1697- 5804
+Referencias
+alcl: Alvar, M.: Atlas lingüístico de Castilla y León, Salamanca, 1999.
+apumm: Apeos en Uña de Quintana y Molezuelas de Carballeda. 1610. Archivo 
+Histórico de la Nobleza (Ducado de Benavente), Osuna, C. 494, D. 40-42.
+ApVill: Apeo de los bienes de Teresa de Coso en Villarino de Sanabria. 1605. Ar-
+chivo Histórico de la Nobleza (Ducado de Benavente), Osuna, C. 494, D. 38.
+Bz: Boletín Oficial de la provincia de Zamora. En <http://prensahistorica.mcu.es>.
+cme: Catastro de Ensenada. Respuestas Generales. En <pares.mcu.es>.
+coser: Fernández-Ordóñez, I. (dir.) (2005ss): Corpus oral y sonoro del español 
+rural (COSER), Univ. Autónoma de Madrid. En <uam.es/coser/>.
+crp: Crédito público: boletín oficial, Madrid: Imprenta de Juan Ramos y Compañía 
+[1822-]. En <http://www.bne.es/es/Catalogos/HemerotecaDigital/>.
+DdD: Dicionario de Dicionarios. Corpus lexicográfico da lingua galega, 2001. En: 
+<http://sli.uvigo.es>.
+furm: Vocabularios zamoranos, de distintos recopiladores. Asociación cultural Fur-
+mientu (en línea). En <http://www.furmientu.org/>.
+ordZ: Canto de la Fuente, C., Carbajo Martín, V. A. y Moreta Velayos, S.: 
+Ordenanzas municipales de Zamora, Siglos xv y xvi, Zamora, 1991.
+srs: Ejecutoria del pleito de Juan de Elena y Manuela de Prada, de San Román 
+de Sanabria. 1754. Archivo de la Real Chancillería de Valladolid. Registro de eje-
+cutorias, Caja 3221, 100.
+trf: Ejecutoria del pleito de Antonio González Cornejo y otros vecinos de Ilanes 
+con diversos vecinos de Rabanillo, Robleda, Cobelo y Limianos. 1793. Archivo de la 
+Real Chancillería de Valladolid. Registro de ejecutorias. Caja 3631, 2.
+tmc: Tumbo del monasterio cisterciense de Castañeda [1715] (ahn, códices, L. 170). 
+En <pares.mcu.es>.

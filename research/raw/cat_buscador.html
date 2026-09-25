@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="es"><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"><title>
+	       			MINISTERIO DE CULTURA - Portal de Archivos Espa&ntilde;oles
+	     		</title><meta name="lenguaje" content="es"><link rel="stylesheet" type="text/css" href="https://www.mcu.es/web/css/general.css"><link rel="stylesheet" type="text/css" href="https://www.mcu.es/web/css/bloqueSuperior.css"><link rel="stylesheet" type="text/css" href="https://www.mcu.es/web/css/bloqueInferior.css"><link rel="stylesheet" type="text/css" href="https://www.mcu.es/web/css/bloqueContenido.css"><link rel="stylesheet" type="text/css" href="https://www.mcu.es/web/css/bloqueNavegacion.css"><link rel="stylesheet" type="text/css" href="https://www.mcu.es/web/css/m_.css"><link rel="stylesheet" type="text/css" href="../css/msCatastro.css"><link rel="stylesheet" type="text/css" href="../css/visor.css"><style type="text/css">
+					/*#pantalla #central h2 {display: none;}
+					#contenido{float: left;border-top: none;padding-top:0em;}*/
+					#contenidoAdicional{border-top: none;border-left:none;}
+				</style><script type="text/javascript" src="http://www.mcu.es/web/js/jquery.js"> </script><script type="text/javascript" src="http://pares.mcu.es/ParesBusquedas/funciones/estadisticas_pares.js"> </script><script type="text/javascript" src="/catastro/js/analytics.js"> </script></head><body id="body" lang="es"><div id="bR"><div id="msBloqueSuperior"><div id="msImagenDeCabecera"><img src="../imagenes/cab_catastro.jpg" alt="Cabecera de Catastro"></div><div id="msLogo"><a href="https://www.cultura.gob.es" target="_top" title="Ministerio de Cultura"><img src="https://www.cultura.gob.es/.resources/templating/base/img/escudo-mcd.gif" alt="Ministerio de Cultura" title="Ministerio de Cultura"></a></div><div id="msTitulo"><h1><span>Respuestas Generales<br></span>Catastro de Ensenada</h1></div><div id="msContenido"><div id="bordeIzq"><div id="bordeDer"><div id="bordeNav">
+    <div id="pantalla">
+        <script type="text/javascript">
+			function verCA(i)
+			{
+		    	document.getElementById('txtBusqueda').value=i;
+			}
+			function verProv(lista,i)
+			{
+		    	document.getElementById(lista).value = i;
+			}
+		</script>
+        <div id="bloqueNavegacion">
+            <div id="bnMenu">
+                <ul>
+                    <li>
+                        <a title="Portada " href="./ServletController">Portada </a>
+                    </li>
+                    <li>
+                        <a title="Presentaci&oacute;n " href="./ServletController?accion=2&amp;opcion=10">Presentaci&oacute;n </a>
+                    </li>
+                    <li class="current2">
+                        <a title="Buscador Localidades " href="./ServletController?ini=0&amp;accion=0&amp;mapas=0&amp;tipo=0">Buscador Localidades </a>
+                    </li>
+                    <li>
+                        <a title="Respuestas Generales " href="./ServletController?accion=2&amp;opcion=30">Respuestas Generales </a>
+                    </li>
+                    <li>
+                        <a title="Estudio Institucional " href="./ServletController?accion=2&amp;opcion=40">Estudio Institucional </a>
+                    </li>
+                    <li>
+                        <a title="Microfilmaci&oacute;n del Catastro " href="./ServletController?accion=2&amp;opcion=50">Microfilmaci&oacute;n del Catastro </a>
+                    </li>
+                    <li>
+                        <a title="Bibliograf&iacute;a y Enlaces " href="./ServletController?accion=2&amp;opcion=60">Bibliograf&iacute;a y Enlaces </a>
+                    </li>
+                    <li>
+                        <a title="Cr&eacute;ditos " href="./ServletController?accion=2&amp;opcion=70">Cr&eacute;ditos </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="bnContacto" style="width:10em;">
+                <a href="./ServletController?accion=2&amp;amp;opcion=80" target="_top">Contacte con Archivos</a>
+            </div>
+        </div>
+        <div id="central">
+            <h2>B&uacute;squeda de Localidades</h2>
+            <div id="bloqueContenido">
+                <div id="contenido">
+                    <div id="formularios">
+                        <div>
+                            <div class="sinLegend">
+                                <form method="post" name="actualizar" action="ServletController">
+                                    <div class="barraAcciones">
+                                        <div class="cajaAcciones">
+                                            <p class="floatDerechaAyuda">
+                                                <a class="buscarLocalidad" href="ServletController?accion=2&amp;opcion=110" tabindex="101" title="Ayuda sobre el formulario">Ayuda</a>
+                                            </p>
+                                            <div class="btAcciones">
+                                                <p>
+                                                    <input type="hidden" name="accion" value="0"><input type="hidden" name="volver" value="0"><input type="radio" class="sinBorde" name="mapas" id="mapasCero" value="0" onClick="javascript:document.busqueda.mapas.value=0;document.busqueda.accion.value=0;document.busqueda.submit();" checked><label for="mapasCero" class="labelBold">Por Provincia Actual</label><input type="radio" class="sinBorde" name="mapas" id="mapasUno" value="1" onClick="javascript:document.busqueda.mapas.value=1;document.busqueda.accion.value=0;document.busqueda.submit();"><label for="mapasUno" class="labelBold">Por Provincia Antigua</label><input type="hidden" id="tipo" name="tipo" value="0">
+                                                    <noscript>
+                                                        <input id="actualizar" type="submit" name="actualizar" value="actualizar" class="buscarLocalidad" title="Aceptar" alt="Aceptar">
+                                                    </noscript>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form method="post" name="busqueda" action="ServletController">
+                                    <div class="texto1D">
+                                        <input type="hidden" id="mapasHidden" name="mapas" value="0"><input type="hidden" name="accion" value="1"><input type="hidden" name="volver" value="0">
+                                    </div>
+                                    <div class="mapa">
+                                        <img alt="Mapa de Provincias" usemap=" #mapaModerno" src=" ../imagenes/mapaModerno2.gif">
+                                    </div>
+                                    <div class="floatDerecha">
+                                        <p>Las palabras </p>
+                                        <p>
+                                            <strong>Localidades</strong>
+                                            <br>
+                                            <label for="txtBusqueda"><input name="txtBusqueda" id="txtBusqueda" type="text" size="22" class="cajatexto" value=""></label>
+                                            <br>
+                                            <input TYPE="radio" id="tipo0" NAME="tipo" VALUE="0" checked><label for="tipo0"> Que empiece por</label>
+                                            <br>
+                                            <input TYPE="radio" id="tipo1" NAME="tipo" VALUE="1"><label for="tipo1"> Que contenga</label>
+                                            <br>
+                                            <input TYPE="radio" id="tipo2" NAME="tipo" VALUE="2"><label for="tipo2"> Palabra exacta</label>
+                                        </p>
+                                        <p>
+                                            <strong>Tipo de localidad</strong><label for="tipolocal"><select name="tipolocal" id="tipolocal" class="combo"><option value="-1" selected>[Todas]</option><option value="1">Localidad Actual</option><option value="2">Localidad Antigua</option><option value="3">Entidad Principal</option><option value="4">Entidad Menor</option></select></label>
+                                        </p>
+                                        <p>
+                                            <strong>Provincia actual </strong>
+                                            <br>
+                                            <label for="provact"><select class="combo" id="provact" name="provact"><option value="0" selected>[Todas]</option><option value="15">A Coru&ntilde;a / La Coru&ntilde;a</option><option value="2">Albacete</option><option value="4">Almer&iacute;a</option><option value="33">Asturias</option><option value="5">&Aacute;vila</option><option value="6">Badajoz</option><option value="9">Burgos</option><option value="10">C&aacute;ceres</option><option value="11">C&aacute;diz</option><option value="39">Cantabria</option><option value="13">Ciudad Real</option><option value="14">C&oacute;rdoba</option><option value="16">Cuenca</option><option value="18">Granada</option><option value="19">Guadalajara</option><option value="21">Huelva</option><option value="23">Ja&eacute;n</option><option value="26">La Rioja</option><option value="24">Le&oacute;n</option><option value="27">Lugo</option><option value="28">Madrid</option><option value="29">M&aacute;laga</option><option value="30">Murcia</option><option value="32">Ourense / Orense</option><option value="34">Palencia</option><option value="36">Pontevedra</option><option value="37">Salamanca</option><option value="40">Segovia</option><option value="41">Sevilla</option><option value="42">Soria</option><option value="45">Toledo</option><option value="47">Valladolid</option><option value="49">Zamora</option></select></label>
+                                        </p>
+                                        <p>
+                                            <input name="Buscar" type="submit" class="botonOculto" title="Buscar" value="Buscar"><input name="Limpiar" type="submit" class="buscarLocalidad" title="Limpiar" value="Limpiar"><input name="Buscar" type="submit" class="buscarLocalidad" title="Buscar" value="Buscar">
+                                        </p>
+                                    </div>
+                                    <div class="floatCentro">
+                                        <p>
+                                            El Catastro se realiza sobre las localidades de la Corona de Castilla, excepto Canarias, Provincias Vascas y Reino Foral de Navarra que pose&iacute;an fiscalidad propia, al igual que la Corona de Arag&oacute;n. <span class="mas"><a href="ServletController?accion=2&amp;opcion=43" title="M&aacute;s informaci&oacute;n">M&aacute;s informaci&oacute;n</a></span>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="textoayuda">
+                                <p>
+                                    <span>Visor de Localidades</span>
+                                </p>
+                                <p>Las im&aacute;genes llevan la referencia AGS (Archivo General de Simancas, Direcci&oacute;n General de Rentas, 1&ordf; Remesa) CE (Catastro de Ensenada) RG (Respuestas Generales) L n&uacute;mero (signatura libro) n&uacute;mero imagen. La existencia de portadas e &iacute;ndices, no foliadas en el original, crea peque&ntilde;os desfases entre la numeraci&oacute;n de las im&aacute;genes y la foliaci&oacute;n del original, que se resuelven f&aacute;cilmente cotejando la esquina superior derecha de cada imagen; algunos libros de Valladolid no est&aacute; foliados. 
+								</p>
+                                <p>
+								Las respuestas generales del campo de Madrid se guardan en el Archivo Hist&oacute;rico Nacional procedentes del Ministerio de Hacienda, libro 7463 bis. Llevan la referencia AHN_MH_7463B_n&uacute;mero imagen.
+					         </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mapa_prov">
+                    <map name="mapaModerno" id="mapaModerno">
+                        <area shape="poly" coords="0,17,7,9,20,10,20,2,33,1,25,24,6,28,1,16" href="#" alt="A Coru&ntilde;a / La Coru&ntilde;a" onclick="javascript:verProv('provact',15); return true">
+                        <area shape="poly" coords="40,2,29,7,25,23,28,33,39,37,49,23,44,5,38,2" href="#" alt="Lugo" onclick="javascript:verProv('provact',27); return true">
+                        <area shape="poly" coords="6,26,9,38,4,42,6,48,21,43,19,33,27,32,25,21,6,29" href="#" alt="Pontevedra" onclick="javascript:verProv('provact',36); return true">
+                        <area shape="poly" coords="20,42,19,34,28,34,39,37,47,34,48,40,43,44,45,50,21,51,22,43" href="#" alt="Orense / Ourense" onclick="javascript:verProv('provact',32); return true">
+                        <area shape="poly" coords="44,4,95,9,79,18,49,23,45,4" href="#" alt="Asturias" onclick="javascript:verProv('provact',33); return true">
+                        <area shape="poly" coords="87,12,92,21,88,24,87,41,75,47,49,40,46,28,53,22,80,17,90,14" href="#" alt="Le&oacute;n" onclick="javascript:verProv('provact',24); return true">
+                        <area shape="poly" coords="44,50,43,45,50,40,73,46,80,52,80,72,63,72,56,65,60,59,46,48" href="#" alt="Zamora" onclick="javascript:verProv('provact',49); return true">
+                        <area shape="poly" coords="95,8,92,19,100,19,105,26,111,19,118,15,120,11,94,10,94,10,89,13" href="#" alt="Cantabria" onclick="javascript:verProv('provact',39); return true">
+                        <area shape="poly" coords="129,132,135,125,160,124,171,138,165,139,157,150,150,150,142,159,136,151,134,142,128,133,133,125" href="#" alt="Albacete" onclick="javascript:verProv('provact',2); return true">
+                        <area shape="poly" coords="123,194,141,177,145,162,150,164,156,180,147,196,137,192,134,196,122,192" href="#" alt="Almer&iacute;a" onclick="javascript:verProv('provact',4); return true">
+                        <area shape="poly" coords="81,70,90,74,93,81,100,88,94,96,77,100,69,93,81,83,83,72" href="#" alt="Avila" onclick="javascript:verProv('provact',5); return true">
+                        <area shape="poly" coords="85,118,72,128,46,123,43,118,35,122,42,131,33,144,39,151,59,159,64,153,70,156,71,147,85,135,86,128,94,119,87,118" href="#" alt="Badajoz" onclick="javascript:verProv('provact',6); return true">
+                        <area shape="poly" coords="119,16,123,19,128,31,126,49,115,61,105,62,105,47,96,37,106,24,110,18,120,16" href="#" alt="Burgos" onclick="javascript:verProv('provact',9); return true">
+                        <area shape="poly" coords="42,97,42,108,35,112,29,112,34,122,43,119,47,123,71,128,86,119,75,100,66,93,57,91,42,98" href="#" alt="C&aacute;ceres" onclick="javascript:verProv('provact',10); return true">
+                        <area shape="poly" coords="50,188,50,195,55,198,53,202,67,217,77,206,74,197,81,190,79,187,66,189,63,187,57,189,50,188" href="#" alt="C&aacute;diz" onclick="javascript:verProv('provact',11); return true">
+                        <area shape="poly" coords="134,143,128,134,135,124,127,119,106,124,104,120,106,116,92,116,84,127,85,139,98,147,131,143" href="#" alt="Ciudad Real" onclick="javascript:verProv('provact',13); return true">
+                        <area shape="poly" coords="84,136,69,148,76,170,81,170,88,180,105,177,95,161,101,153,100,149,84,137" href="#" alt="C&oacute;rdoba" onclick="javascript:verProv('provact',14); return true">
+                        <area shape="poly" coords="142,88,126,103,128,119,133,124,161,123,157,117,164,107,161,97,151,92,139,87" href="#" alt="Cuenca" onclick="javascript:verProv('provact',16); return true">
+                        <area shape="poly" coords="98,180,129,171,137,156,144,162,139,177,122,193,116,197,99,180,97,179" href="#" alt="Granada" onclick="javascript:verProv('provact',18); return true">
+                        <area shape="poly" coords="114,74,127,103,141,88,151,92,157,89,155,77,146,70,143,73,124,69,116,75" href="#" alt="Guadalajara" onclick="javascript:verProv('provact',19); return true">
+                        <area shape="poly" coords="40,152,38,158,32,159,26,177,51,187,54,174,49,167,50,164,57,165,58,157" href="#" alt="Huelva" onclick="javascript:verProv('provact',21); return true">
+                        <area shape="poly" coords="99,148,101,154,98,163,105,177,128,170,138,153,133,144,100,149" href="#" alt="Ja&eacute;n" onclick="javascript:verProv('provact',23); return true">
+                        <area shape="poly" coords="127,31,126,48,147,47,149,42,138,35,128,29" href="#" alt="La Rioja" onclick="javascript:verProv('provact',26); return true">
+                        <area shape="poly" coords="100,87,113,74,125,102,116,106,112,105,111,101,94,97,101,88" href="#" alt="Madrid" onclick="javascript:verProv('provact',28); return true">
+                        <area shape="poly" coords="89,181,98,180,113,196,75,205,72,195,82,189,80,186,89,180" href="#" alt="M&aacute;laga" onclick="javascript:verProv('provact',29); return true">
+                        <area shape="poly" coords="142,160,150,150,158,150,165,139,172,139,170,153,177,161,156,179,150,163,143,160" href="#" alt="Murcia" onclick="javascript:verProv('provact',30); return true">
+                        <area shape="poly" coords="87,24,86,52,105,56,106,49,97,38,105,26,99,19,93,19,86,26" href="#" alt="Palencia" onclick="javascript:verProv('provact',34); return true">
+                        <area shape="poly" coords="55,65,43,76,44,96,58,91,67,93,81,83,81,72,62,70,57,66" href="#" alt="Salamanca" onclick="javascript:verProv('provact',37); return true">
+                        <area shape="poly" coords="90,73,105,62,115,62,123,69,112,75,100,88,94,82,90,73" href="#" alt="Segovia" onclick="javascript:verProv('provact',40); return true">
+                        <area shape="poly" coords="70,156,64,153,59,160,58,164,49,165,54,173,50,186,64,187,79,187,90,181,81,171,74,170,72,160,69,156" href="#" alt="Sevilla" onclick="javascript:verProv('provact',41); return true">
+                        <area shape="poly" coords="126,48,115,60,122,69,143,74,148,72,142,67,153,60,151,50,144,47" href="#" alt="Soria" onclick="javascript:verProv('provact',42); return true">
+                        <area shape="poly" coords="74,100,94,96,112,105,123,102,129,119,106,122,103,115,87,117,77,102" href="#" alt="Toledo" onclick="javascript:verProv('provact',45); return true">
+                        <area shape="poly" coords="73,45,87,41,87,52,105,55,105,63,97,65,91,74,81,71,80,51,74,47" href="#" alt="Valladolid" onclick="javascript:verProv('provact',47); return true">
+                    </map>
+                    <map name="mapaAntiguo" id="mapaAntiguo">
+                        <area shape="poly" coords="77,59,79,74,92,76,93,66,99,64,101,67,105,67,105,62,103,59,100,59,98,60,86,55,85,49,79,47,76,48,77,52,80,52,80,55,77,58,77,59" onclick="javascript:verProv('provant',32); return true" alt="Valladolid" href="#">
+                        <area shape="poly" coords="85,31,73,41,77,42,81,43,85,35,85,30,83,31,85,31" onclick="javascript:verProv('provant',32); return true" alt="Valladolid" href="#">
+                        <area shape="poly" coords="96,26,100,35,107,32,107,28,104,24,100,24,96,26,97,29,96,26" onclick="javascript:verProv('provant',30); return true" alt="Toro" href="#">
+                        <area shape="poly" coords="85,31,85,38,89,39,90,41,89,45,85,45,84,48,86,49,88,49,95,42,95,40,93,38,93,32,86,30,85,31" onclick="javascript:verProv('provant',30); return true" alt="Toro" href="#">
+                        <area shape="poly" coords="79,74,76,58,73,58,73,73,78,73,79,74" onclick="javascript:verProv('provant',30); return true" alt="Toro" href="#">
+                        <area shape="poly" coords="54,55,59,62,52,68,54,70,64,74,72,72,73,58,63,56,51,55,54,55" onclick="javascript:verProv('provant',34); return true" alt="Zamora" href="#">
+                        <area shape="poly" coords="77,97,75,109,78,111,83,109,85,103,79,97,77,97,77,97" onclick="javascript:verProv('provant',3); return true" alt="Avila" href="#">
+                        <area shape="poly" coords="51,68,63,74,71,72,82,75,77,88,71,90,72,91,80,93,83,101,80,98,69,98,62,91,59,91,51,97,50,103,48,103,47,97,44,96,45,75,51,68,51,68" onclick="javascript:verProv('provant',23); return true" alt="Salamanca" href="#">
+                        <area shape="poly" coords="83,74,93,77,94,86,98,89,98,95,87,103,81,94,73,92,72,90,78,88,84,75,83,74" onclick="javascript:verProv('provant',3); return true" alt="Avila" href="#">
+                        <area shape="poly" coords="85,39,84,44,88,45,89,40,89,39,85,38,85,39" onclick="javascript:verProv('provant',22); return true" alt="Palencia" href="#">
+                        <area shape="poly" coords="87,30,88,27,95,26,100,35,99,49,101,56,104,56,104,59,98,59,85,55,85,48,90,47,94,42,95,39,92,32,87,30,87,27,87,30" onclick="javascript:verProv('provant',22); return true" alt="Palencia" href="#">
+                        <area shape="poly" coords="130,28,133,31,137,31,137,29,136,27,130,27,130,28" onclick="javascript:verProv('provant',5); return true" alt="Burgos" href="#">
+                        <area shape="poly" coords="94,9,86,20,88,26,95,24,104,22,107,30,105,33,99,33,99,48,103,48,105,55,105,60,107,60,109,65,111,65,112,62,114,58,117,58,120,61,124,60,125,56,126,55,126,50,124,46,128,45,128,48,132,49,136,48,136,44,135,44,138,35,139,41,135,33,122,27,120,17,118,9,110,6,103,9,95,9,94,9" onclick="javascript:verProv('provant',5); return true" alt="Burgos" href="#">
+                        <area shape="poly" coords="125,73,129,73,129,75,123,75,123,73,126,72,125,73" onclick="javascript:verProv('provant',28); return true" alt="Soria" href="#">
+                        <area shape="poly" coords="118,80,114,81,114,85,120,87,120,83,121,82,121,79,119,79,118,80" onclick="javascript:verProv('provant',29); return true" alt="Toledo" href="#">
+                        <area shape="poly" coords="126,87,126,83,127,81,130,82,132,85,130,86,129,88,126,88,126,86,126,87" onclick="javascript:verProv('provant',29); return true" alt="Toledo" href="#">
+                        <area shape="poly" coords="42,154,35,158,27,176,51,188,56,204,67,216,80,202,73,201,74,192,81,187,85,191,100,187,101,182,90,178,83,167,78,169,77,162,72,157,54,156,53,150,40,153,42,154" onclick="javascript:verProv('provant',27); return true" alt="Sevilla" href="#">
+                        <area shape="poly" coords="79,201,72,200,73,191,81,186,83,190,99,186,100,181,100,178,127,169,133,160,137,157,148,160,152,164,155,171,159,175,148,195,95,195,90,200,79,201,79,201" onclick="javascript:verProv('provant',10); return true" alt="Granada" href="#">
+                        <area shape="poly" coords="71,155,74,146,77,146,84,151,86,148,83,142,88,141,95,148,102,151,103,159,102,166,105,176,100,177,99,180,89,177,82,166,78,169,76,160,72,156,71,155" onclick="javascript:verProv('provant',6); return true" alt="C&oacute;rdoba" href="#">
+                        <area shape="poly" coords="102,150,106,175,126,168,133,159,134,154,133,152,126,152,126,147,119,148,101,151,102,150" onclick="javascript:verProv('provant',12); return true" alt="Ja&eacute;n" href="#">
+                        <area shape="poly" coords="159,174,154,171,152,163,147,159,137,156,134,159,132,158,135,154,131,147,131,145,148,146,151,141,147,130,150,127,153,126,160,128,161,129,164,119,168,124,170,132,174,136,175,151,175,158,180,161,173,169,160,175,159,174" onclick="javascript:verProv('provant',20); return true" alt="Murcia" href="#">
+                        <area shape="poly" coords="43,95,47,97,47,102,50,103,51,96,59,92,61,92,69,98,77,97,75,109,75,118,81,126,83,126,83,122,89,121,92,128,86,139,83,141,84,151,76,145,74,145,71,155,54,156,52,149,41,152,33,147,34,139,40,130,30,112,37,111,44,106,44,96,43,95" onclick="javascript:verProv('provant',9); return true" alt="Extremadura" href="#">
+                        <area shape="poly" coords="95,97,98,109,107,99,112,99,108,106,109,108,115,106,117,104,117,97,115,96,115,91,111,88,108,88,107,95,105,97,104,100,101,100,101,98,99,98,97,95,96,96,95,97" onclick="javascript:verProv('provant',17); return true" alt="Madrid" href="#">
+                        <area shape="poly" coords="98,94,106,94,104,99,99,98,97,96,97,94,98,94" onclick="javascript:verProv('provant',29); return true" alt="Toledo" href="#">
+                        <area shape="poly" coords="127,116,127,121,130,122,130,118,127,115,127,116" onclick="javascript:verProv('provant',29); return true" alt="Toledo" href="#">
+                        <area shape="poly" coords="100,50,100,55,104,57,104,55,103,48,99,48,100,50" onclick="javascript:verProv('provant',32); return true" alt="Valladolid" href="#">
+                        <area shape="poly" coords="113,58,111,63,111,66,109,66,106,60,104,61,104,66,101,66,98,62,93,66,93,77,93,86,98,89,99,94,106,94,103,89,103,80,105,81,107,82,110,82,110,76,113,73,117,73,120,75,123,69,120,65,115,65,115,63,119,61,117,58,114,58,111,61,113,58" onclick="javascript:verProv('provant',26); return true" alt="Segovia" href="#">
+                        <area shape="poly" coords="123,94,132,90,132,93,128,98,123,99,122,94,124,93,123,94" onclick="javascript:verProv('provant',17); return true" alt="Madrid" href="#">
+                        <area shape="poly" coords="46,4,91,9,93,15,77,26,50,26,43,20,46,5,91,10,46,4" onclick="javascript:verProv('provant',1); return true" alt="Asturias" href="#">
+                        <area shape="poly" coords="18,8,22,1,33,1,26,26,18,22,18,8" onclick="javascript:verProv('provant',4); return true" alt="Betanzos" href="#">
+                        <area shape="poly" coords="140,37,134,51,127,47,123,61,127,73,135,69,143,51,139,45,142,39,141,38,140,37" onclick="javascript:verProv('provant',28); return true" alt="Soria" href="#">
+                        <area shape="poly" coords="142,41,140,44,143,49,147,47,141,42,142,41" onclick="javascript:verProv('provant',5); return true" alt="Burgos" href="#">
+                        <area shape="poly" coords="51,46,61,49,57,57,51,46" onclick="javascript:verProv('provant',32); return true" alt="Valladolid" href="#">
+                        <area shape="poly" coords="64,48,56,54,65,55,64,48" onclick="javascript:verProv('provant',34); return true" alt="Zamora" href="#">
+                        <area shape="poly" coords="65,47,73,51,73,55,70,58,66,54,62,48,65,47" onclick="javascript:verProv('provant',32); return true" alt="Valladolid" href="#">
+                        <area shape="poly" coords="9,12,11,25,18,22,18,8,9,12" onclick="javascript:verProv('provant',7); return true" alt="La Coru&ntilde;a" href="#">
+                        <area shape="poly" coords="7,13,2,19,9,39,24,35,25,26,18,21,9,26,8,12,7,13" onclick="javascript:verProv('provant',24); return true" alt="Santiago" href="#">
+                        <area shape="poly" coords="20,35,7,39,5,49,19,42,22,34,20,35" onclick="javascript:verProv('provant',31); return true" alt="Tuy" href="#">
+                        <area shape="poly" coords="35,1,47,4,43,19,36,21,31,16,33,1,35,1" onclick="javascript:verProv('provant',18); return true" alt="Mondo&ntilde;edo" href="#">
+                        <area shape="poly" coords="30,17,24,39,47,40,49,27,44,20,36,22,31,16,30,17" onclick="javascript:verProv('provant',16); return true" alt="Lugo" href="#">
+                        <area shape="poly" coords="24,39,21,48,31,50,49,48,47,40,25,38,24,39" onclick="javascript:verProv('provant',21); return true" alt="Orense" href="#">
+                        <area shape="poly" coords="76,26,54,26,46,31,51,48,64,47,72,49,78,43,73,41,87,25,86,20,77,25,76,26" onclick="javascript:verProv('provant',15); return true" alt="Leon" href="#">
+                        <area shape="poly" coords="144,38,145,42,146,48,134,68,141,85,146,74,147,67,152,55,152,43,144,40,144,38" onclick="javascript:verProv('provant',28); return true" alt="Soria" href="#">
+                        <area shape="poly" coords="131,109,132,118,141,119,138,111,131,107,130,109,131,109" onclick="javascript:verProv('provant',29); return true" alt="Toledo" href="#">
+                        <area shape="poly" coords="131,72,128,77,123,77,123,81,128,79,134,88,138,85,136,76,133,71,131,72" onclick="javascript:verProv('provant',11); return true" alt="Guadalajara" href="#">
+                        <area shape="poly" coords="125,123,137,123,151,136,149,144,100,149,87,139,91,127,106,124,120,126,130,135,131,131,125,124,125,123" onclick="javascript:verProv('provant',13); return true" alt="La Mancha" href="#">
+                        <area shape="poly" coords="132,107,142,120,141,126,146,129,153,125,161,130,163,119,171,103,159,95,158,88,160,83,147,73,143,87,137,87,131,97,131,103,137,112,132,107" onclick="javascript:verProv('provant',8); return true" alt="Cuenca" href="#">
+                        <area shape="poly" coords="93,99,83,107,83,111,75,114,80,121,88,121,94,126,103,123,120,125,126,133,129,129,124,123,124,108,125,101,119,95,117,106,108,109,104,105,98,109,88,103,83,105,93,99" onclick="javascript:verProv('provant',29); return true" alt="Toledo" href="#">
+                    </map>
+                </div>
+            </div>
+            <hr class="clearBoth">
+        </div>
+    </div>
+</div>
+<div id="bloqueInferior"><div class="pieImagenes"><a href="http://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank" title="Conformidad con el Nivel Doble-A del W3C-WAI. Se abre nueva ventana. Se abre nueva ventana"><img src="https://www.mcu.es/web/img/img_dobleA.gif" alt="Icono de conformidad con el Nivel Doble-A de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI. Este enlace abre una ventana nueva" class="dobleA"></a>
+									    	&nbsp;
+									    	<a href="https://www.mecd.gob.es/servicios-al-ciudadano-mecd/catalogo/cultura/atencion-al-ciudadano/suscripciones" target="_blank" title="Titulares RSS disponibles. Se abre nueva ventana. Se abre nueva ventana"><img src="https://www.mcu.es/web/img/imgRSS.gif" alt="Titulares RSS disponibles. Se abre nueva ventana" title="Titulares RSS disponibles. Se abre nueva ventana" class="rss"></a></div><div class="pie"><p>&copy; Ministerio de Cultura - Gobierno de Espa&ntilde;a</p><ul><li class="primerElemento"><a href="https://www.mecd.gob.es/aviso-legal-mecd/" target="_blank">Aviso Legal</a></li><li><a href="https://www.mcu.es/principal/nr/GuiaNavegacion.html" target="_blank">Gu&iacute;a de Navegaci&oacute;n</a></li><li><a href="https://www.mecd.gob.es/accesibilidad-mecd/" target="_blank">Accesibilidad</a></li></ul></div></div></div></div></div></div></div></body></html>

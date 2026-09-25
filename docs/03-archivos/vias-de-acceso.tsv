@@ -1,0 +1,34 @@
+material_id	orden	canal	descripcion	quien	probado	resultado
+LIB-01	1	préstamo interbibliotecario	Pedirlo por la biblioteca pública de Zamora o de Benavente. Es edición universitaria de tirada corta	usuario	no	—
+LIB-01	2	consulta in situ	Biblioteca de la Universidad de León, que es donde edita San Isidoro	usuario	no	—
+LIB-01	3	compra	Librerías de viejo y Todocolección. Descatalogado y caro	usuario	no	—
+LIB-01	4	correo	Escribir al Centro de Estudios e Investigación «San Isidoro» (León) preguntando por existencias	usuario	no	—
+LIB-02	1	préstamo interbibliotecario	Igual que LIB-01. El ISBN 84-87667-32-5 facilita la petición	usuario	no	—
+LIB-02	2	consulta in situ	Universidad de León	usuario	no	—
+LIB-03	1	correo	CEB «Ledo del Pozo» de Benavente: es la vía natural para la obra de Quintana Prieto	usuario	no	—
+LIB-03	2	consulta in situ	Instituto de Estudios Zamoranos «Florián de Ocampo», Zamora	usuario	no	—
+LIB-05	1	compra	Obra de 2018, más reciente y probablemente en catálogo	usuario	no	—
+LIB-05	2	correo	Escribir al propio autor, que publica en abierto en el Centro de Estudios Paisaje y Territorio	usuario	no	—
+LIB-06	1	correo	CEB «Ledo del Pozo», Benavente. ISBN 978-84-942037-6-3	usuario	no	—
+LIB-06	2	consulta in situ	Biblioteca pública de Benavente	usuario	no	—
+ARCH-01	1	correo	Una sola petición al A. H. Diocesano de Astorga que nombre juntas ARCH-01 a ARCH-05	usuario	no	—
+ARCH-01	2	visita	Consulta presencial en Astorga, que es lo que un fondo de ~6.300 libros parroquiales suele exigir	usuario	no	—
+ARCH-05	1	correo	Misma petición, concretando: libros de difuntos de San Juan Bautista de Colinas de Trasmonte, 1826-1842	usuario	no	—
+ARCH-07	1	formulario	Solicitud de reproducción al ARCHV, unidad por unidad, con las signaturas ya verificadas en pares-colinas.tsv	usuario	no	—
+ARCH-07	2	visita	Consulta presencial en Valladolid: seis expedientes son mucho papel para pedir reproducción a ciegas	usuario	no	—
+ARCH-08	1	búsqueda	Buscar en el ARCHV por el conde-duque de Benavente y por el obispado de Astorga, 1693-1694 — no por Colinas: la descripción no nombrará al pueblo	ambos	no	—
+ARCH-10	1	correo	Escribir al AHP de Zamora pidiendo que miren la serie «Índices de Pueblos» del fondo Intendencia Provincial por «Colinas de Trasmonte». Es una pregunta de una línea	usuario	no	—
+ARCH-10	2	visita	Consulta presencial: 2.091 cajas no se exploran por correo	usuario	no	—
+ARCH-11	1	correo	La misma pregunta al AHP de Valladolid. Conviene mandar las dos a la vez: la que conteste que sí, dirime la hipótesis	usuario	no	—
+ARCH-15	1	teléfono	Llamar al Juzgado de Paz de Quiruelas citando la Orden BOE-A-1972-1185, que es la que mandó el traslado	usuario	no	—
+ARCH-15	2	visita	Es el pueblo vecino: se puede ir	usuario	no	—
+ARCH-18	1	visita	Sala de investigadores de la BNE, Madrid	usuario	no	—
+ARCH-18	2	web	bdh.bne.es y datos.bne.es devuelven 403 a todo acceso automatizado desde aquí	claude	sí	403 en todas las pruebas
+ARCH-19	1	correo	Servicio Territorial de Cultura de Zamora: memorias de intervención arqueológica de 1991	usuario	no	—
+ARCH-19	2	correo	IEZ «Florián de Ocampo», que publica el Anuario donde suelen resumirse	usuario	no	—
+ARCH-20	1	web	PARES: comprobar si AGS, Cámara de Castilla, Leg. 2159 está digitalizado	claude	no	—
+ARCH-20	2	formulario	Solicitud de reproducción al Archivo General de Simancas	usuario	no	—
+TAR-18	1	web	Google Books, HathiTrust, Biblioteca Virtual del Patrimonio Bibliográfico: obra de 1829, fuera de derechos	claude	no	—
+TAR-20	1	web	Otra vía para el artículo de los Manrique de Lara: sumario del CEB, repositorio del autor, o el número completo de Brigecio 33-34	claude	no	—
+TAR-23	1	web	Comprobar si PARES sirve la imagen a más resolución por otra ruta que la del visor	claude	no	—
+TAR-23	2	persona	Encargar la lectura a un paleógrafo: son tres líneas de letra procesal	usuario	no	—
