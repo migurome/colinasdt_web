@@ -92,13 +92,6 @@ img{max-width:100%}
 .portada .lema{font-style:italic;font-size:clamp(1.1rem,2.3vw,1.4rem);color:var(--tinta-2);
   max-width:48ch;margin:clamp(18px,3vw,30px) auto 0}
 
-/* la ficha del lugar, en rótulos */
-.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:6px clamp(14px,3vw,30px);
-  margin-top:clamp(22px,3.6vw,38px);padding-top:clamp(16px,2.4vw,24px);
-  border-top:1px solid var(--filo-fuerte)}
-.ficha div{display:flex;align-items:baseline;gap:7px}
-.ficha b{font-weight:600;font-size:1rem;color:var(--tinta-2);letter-spacing:.02em}
-
 /* el sello de versión */
 .version{display:inline-flex;align-items:center;gap:8px;margin-top:clamp(18px,2.6vw,26px);
   border:1px solid var(--filo-fuerte);background:var(--papel-alto);
@@ -107,13 +100,49 @@ img{max-width:100%}
 .version .n{font-size:1rem;font-weight:600;color:var(--teja);letter-spacing:.04em}
 .version .t{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--tenue)}
 
-/* ═══════════ ÍNDICE ═══════════ */
-.idx{display:flex;flex-wrap:wrap;gap:4px 26px;padding-block:16px;
-  border-top:1px solid var(--filo);border-bottom:1px solid var(--filo)}
-.idx a{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
-  color:var(--tinta-2);text-decoration:none;padding-block:6px;
-  border-bottom:1.5px solid transparent}
-.idx a:hover{color:var(--almagre);border-bottom-color:var(--teja)}
+/* ═══════════════════════════════════════════════════════════════════════
+   VISTAS — la página principal es la línea temporal; el resto se pincha
+   ═══════════════════════════════════════════════════════════════════════ */
+.vista{display:none}
+.vista.vista-on{display:block}
+.vista-sec .sec{border-top:0;padding-top:clamp(10px,1.6vw,18px)}
+.volver{padding-top:clamp(52px,7vw,76px);margin:0}
+.volver a{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  text-decoration:none;color:var(--tenue)}
+.volver a:hover{color:var(--almagre)}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MENÚ — fijo en la esquina, siempre a mano
+   En teléfono se queda arriba en la primera pantalla y se retira en
+   cuanto se empieza a recorrer el feed.
+   ═══════════════════════════════════════════════════════════════════════ */
+.menu{position:fixed;top:clamp(10px,2vw,20px);right:clamp(10px,2vw,20px);z-index:30;
+  transition:opacity .28s ease, transform .28s ease}
+.menu.oculto{opacity:0;transform:translateY(-10px);pointer-events:none}
+.menu-bt{display:flex;align-items:center;gap:10px;font-family:var(--f);
+  font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  color:var(--tinta-2);background:var(--papel-alto);border:1px solid var(--filo-fuerte);
+  padding:9px 14px;cursor:pointer;box-shadow:0 1px 0 rgba(120,92,48,.2)}
+.menu-bt:hover{border-color:var(--teja);color:var(--almagre)}
+.menu-bt[aria-expanded="true"]{background:var(--teja);border-color:var(--teja);color:var(--papel-alto)}
+.menu-ico{width:15px;height:11px;flex:none;
+  background:linear-gradient(currentColor,currentColor) 0 0/100% 1.5px no-repeat,
+             linear-gradient(currentColor,currentColor) 0 50%/100% 1.5px no-repeat,
+             linear-gradient(currentColor,currentColor) 0 100%/100% 1.5px no-repeat}
+.menu-lista{position:absolute;top:calc(100% + 7px);right:0;min-width:15.5rem;
+  background:var(--papel-alto);border:1px solid var(--filo-fuerte);padding:6px;
+  box-shadow:0 3px 0 rgba(120,92,48,.2);display:grid}
+.menu-lista a{display:block;padding:9px 13px;text-decoration:none;color:var(--tinta-2);
+  font-size:1rem;line-height:1.3}
+.menu-lista a:hover{background:var(--papel-hondo);color:var(--almagre)}
+.menu-lista a[aria-current="page"]{color:var(--teja);font-weight:600}
+.menu-lista a[aria-current="page"]::before{content:"— ";color:var(--filo-fuerte)}
+@media (max-width:760px){
+  .menu-bt span:not(.menu-ico){position:absolute;width:1px;height:1px;overflow:hidden;
+    clip-path:inset(50%);white-space:nowrap}
+  .menu-bt{padding:11px 12px}
+  .menu-lista{min-width:14rem}
+}
 
 /* ═══════════ MARCADORES — el código de prueba ═══════════ */
 .mk{display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;
@@ -442,6 +471,22 @@ summary:hover{color:var(--almagre)}
 <body>
 <div class="capa">
 
+<div class="menu" id="menu">
+  <button class="menu-bt" id="menu-bt" type="button" aria-expanded="false" aria-controls="menu-lista">
+    <span class="menu-ico" aria-hidden="true"></span><span>Secciones</span>
+  </button>
+  <nav class="menu-lista" id="menu-lista" aria-label="Secciones" hidden>
+    <a href="#linea" data-v="linea">La línea temporal</a>
+    <a href="#termino" data-v="termino">El término</a>
+    <a href="#gente" data-v="gente">La gente</a>
+    <a href="#emblema" data-v="emblema">Materia para un emblema</a>
+    <a href="#falta" data-v="falta">Lo que falta</a>
+    <a href="#versiones" data-v="versiones" id="idx-versiones">Versiones</a>
+  </nav>
+</div>
+
+<main>
+<div class="vista vista-on" id="v-linea">
 <header class="wrap portada">
   <svg class="floron" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
     <path d="M24 4v40M14 12h20M17 44h14"/>
@@ -457,24 +502,12 @@ summary:hover{color:var(--almagre)}
   <p class="lema">Bajo un pueblo que nunca tuvo escudo hay un monasterio del siglo X que el
     pueblo ha olvidado. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
 
-  <div class="ficha">
-    <div><span class="caps">provincia</span><b>Zamora</b></div>
-    <div><span class="caps">municipio</span><b>Quiruelas de Vidriales</b></div>
-    <div><span class="caps">diócesis</span><b>Astorga</b></div>
-    <div><span class="caps">superficie</span><b>1.043 ha</b></div>
-    <div><span class="caps">habitantes 2024</span><b>222</b></div>
-  </div>
-
-  <a class="version" href="#versiones" id="sello-version">
-    <span class="n">v0.1</span><span class="t">Ver cambios</span>
+  <!-- el número lo pone el JS desde VERSION: una sola fuente de verdad -->
+  <a class="version" href="#versiones" id="sello-version" hidden>
+    <span class="n"></span><span class="t">Ver cambios</span>
   </a>
 </header>
 
-<nav class="wrap idx" aria-label="Secciones">
-  <a href="#linea">Línea temporal</a><a href="#termino">El término</a><a href="#gente">La gente</a><a href="#emblema">Materia para un emblema</a><a href="#falta">Lo que falta</a><a href="#versiones" id="idx-versiones">Versiones</a>
-</nav>
-
-<main>
 <section class="wrap lede" aria-label="Presentación">
   <div class="lede-txt">
     <p>En diciembre de 1876 el alcalde de Colinas escribe al Gobernador Civil que el sello del ayuntamiento es «el único que existe y ha existido en este municipio». Ese sello lleva las armas de España. El pueblo no tuvo nunca emblema propio.</p>
@@ -525,6 +558,10 @@ summary:hover{color:var(--almagre)}
   </div>
 </section>
 
+</div>
+
+<div class="vista vista-sec" id="v-termino">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="termino" aria-labelledby="termino-t">
   <div class="sec-head">
     <span class="caps">1.043 hectáreas</span>
@@ -589,7 +626,10 @@ summary:hover{color:var(--almagre)}
     </div>
   </div>
 </section>
+</div>
 
+<div class="vista vista-sec" id="v-gente">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="gente" aria-labelledby="gente-t">
   <div class="sec-head">
     <span class="caps">625 habitantes en 1950</span>
@@ -617,7 +657,10 @@ summary:hover{color:var(--almagre)}
     <p class="nota"><b>Antes de los censos</b>1752: 27 vecinos y 26 casas, diez de ellas inhabitables. 1826: 55 vecinos. 1847: 33 vecinos, 35 casas en 6 calles. Vecinos son familias, no personas: no van en el gráfico.</p>
   </div>
 </section>
+</div>
 
+<div class="vista vista-sec" id="v-emblema">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="emblema" aria-labelledby="emblema-t">
   <div class="sec-head">
     <span class="caps"><span class="mk mk-propuesto" style="width:10px;height:10px;vertical-align:-1px"></span>&nbsp; Materia prima · sin decidir</span>
@@ -649,7 +692,10 @@ summary:hover{color:var(--almagre)}
     </div>
   </div>
 </section>
+</div>
 
+<div class="vista vista-sec" id="v-falta">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="falta" aria-labelledby="falta-t">
   <div class="sec-head">
     <span class="caps">Por orden de prioridad</span>
@@ -668,7 +714,10 @@ summary:hover{color:var(--almagre)}
     <li><b>Los libros parroquiales</b><p>En el Archivo Histórico Diocesano de Astorga, no en el de Zamora: la parroquia siempre fue de Astorga.</p></li>
   </ol>
 </section>
+</div>
 
+<div class="vista vista-sec" id="v-versiones">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="versiones" aria-labelledby="versiones-t">
   <div class="sec-head">
     <span class="caps" id="versiones-n">Control de cambios</span>
@@ -679,6 +728,7 @@ summary:hover{color:var(--almagre)}
   </div>
   <div class="versiones" id="lista-versiones"></div>
 </section>
+</div>
 </main>
 
 <footer class="wrap pie">
@@ -935,10 +985,18 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.1';
+const VERSION = '0.2';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.2', f: '25 de septiembre de 2026', t: 'La línea temporal, sola; el resto, a un clic',
+    c: [
+      '<b>La página principal es ahora sólo la línea temporal.</b> El término, la gente, la materia para el emblema, lo que falta y este mismo registro <b>ya no se recorren al bajar</b>: hay que pedirlos.',
+      '<b>Menú fijo en la esquina superior</b>, siempre a mano. En teléfono se queda arriba en la primera pantalla y <b>se retira en cuanto se empieza a recorrer el feed</b>, para no tapar la lectura; vuelve al subir del todo.',
+      'Cada sección secundaria se abre como una <b>vista propia</b>, con su enlace de vuelta. La dirección del navegador la recuerda, así que se puede enlazar y el botón «atrás» funciona.',
+      '<b>Fuera la ficha de datos de la portada</b> —provincia, municipio, diócesis, superficie y habitantes—: eran cinco cifras compitiendo con la entrada al relato.'
+    ],
+    p: 'Sigue pendiente lo mismo que en la 0.1: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.1', f: '25 de septiembre de 2026', t: 'Una sola página, con el estilo decidido',
     c: [
       '<b>El estilo aprobado, aplicado a la web entera</b>: papel antiguo, una sola tipografía —EB Garamond en cinco registros— y las tintas con código, donde los tres rojos significan cosas distintas y el añil y el oliva marcan la materia.',
@@ -1207,6 +1265,9 @@ const VERSIONES = [
         tf = requestAnimationFrame(() => {
           tf = null;
           this.pinta(Math.round(feed.scrollTop / feed.clientHeight));
+          /* el menú se queda en la primera pantalla y se retira al recorrer */
+          const m = document.getElementById('menu');
+          if (m) m.classList.toggle('oculto', feed.scrollTop > 30);
         });
       }, { passive: true });
 
@@ -1330,6 +1391,8 @@ const VERSIONES = [
       } else {
         sec.classList.remove('feed-on');
         p.textContent = TXT.doc;
+        const m = document.getElementById('menu');
+        if (m) m.classList.remove('oculto');
       }
     }
     mq.addEventListener ? mq.addEventListener('change', ajustar) : mq.addListener(ajustar);
@@ -1445,6 +1508,7 @@ const VERSIONES = [
     const pie = $('#pie-version');
 
     sello.querySelector('.n').textContent = 'v' + VERSION;
+    sello.hidden = false;
     pie.innerHTML = `Versión <b>${VERSION}</b> de esta web · ${VERSIONES[0] ? VERSIONES[0].f : ''}`;
 
     if (typeof VERSIONES_VISIBLE !== 'undefined' && !VERSIONES_VISIBLE) {
@@ -1463,6 +1527,51 @@ const VERSIONES = [
         <ul>${v.c.map((x) => `<li>${x}</li>`).join('')}</ul>
         ${v.p ? `<p class="nota"><b>Estado del contenido</b>${v.p}</p>` : ''}
       </div></article>`).join('');
+  })();
+
+  /* ═══════════ 8. Menú de secciones y vistas ═══════════
+     La página principal es la línea temporal. El resto de secciones
+     no se recorren al bajar: se piden desde el menú de la esquina. */
+  (function vistas() {
+    const menu = $('#menu'), bt = $('#menu-bt'), lista = $('#menu-lista');
+    const enlaces = Array.prototype.slice.call(lista.querySelectorAll('a'));
+    const cajas = {};
+    enlaces.forEach((a) => { cajas[a.dataset.v] = document.getElementById('v-' + a.dataset.v); });
+
+    function abrir(b) {
+      lista.hidden = !b;
+      bt.setAttribute('aria-expanded', String(b));
+    }
+    bt.addEventListener('click', (ev) => { ev.stopPropagation(); abrir(lista.hidden); });
+    document.addEventListener('click', (ev) => { if (!menu.contains(ev.target)) abrir(false); });
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Escape' && !lista.hidden) { abrir(false); bt.focus(); }
+    });
+
+    function mostrar(v) {
+      if (!cajas[v]) v = 'linea';
+      Object.keys(cajas).forEach((k) => {
+        if (cajas[k]) cajas[k].classList.toggle('vista-on', k === v);
+      });
+      enlaces.forEach((a) => {
+        if (a.dataset.v === v) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
+      abrir(false);
+      menu.classList.remove('oculto');
+      document.title = v === 'linea'
+        ? 'Colinas de Trasmonte'
+        : (enlaces.filter((a) => a.dataset.v === v)[0].textContent + ' · Colinas de Trasmonte');
+    }
+
+    function desdeHash(inicial) {
+      const h = location.hash.replace('#', '');
+      const v = cajas[h] ? h : 'linea';
+      mostrar(v);
+      if (!inicial) window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+    window.addEventListener('hashchange', () => desdeHash(false));
+    desdeHash(true);
   })();
 })();
 </script>

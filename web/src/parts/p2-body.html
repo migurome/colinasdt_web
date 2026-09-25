@@ -1,5 +1,21 @@
 <div class="capa">
 
+<div class="menu" id="menu">
+  <button class="menu-bt" id="menu-bt" type="button" aria-expanded="false" aria-controls="menu-lista">
+    <span class="menu-ico" aria-hidden="true"></span><span>Secciones</span>
+  </button>
+  <nav class="menu-lista" id="menu-lista" aria-label="Secciones" hidden>
+    <a href="#linea" data-v="linea">La línea temporal</a>
+    <a href="#termino" data-v="termino">El término</a>
+    <a href="#gente" data-v="gente">La gente</a>
+    <a href="#emblema" data-v="emblema">Materia para un emblema</a>
+    <a href="#falta" data-v="falta">Lo que falta</a>
+    <a href="#versiones" data-v="versiones" id="idx-versiones">Versiones</a>
+  </nav>
+</div>
+
+<main>
+<div class="vista vista-on" id="v-linea">
 <header class="wrap portada">
   <svg class="floron" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
     <path d="M24 4v40M14 12h20M17 44h14"/>
@@ -15,24 +31,12 @@
   <p class="lema">Bajo un pueblo que nunca tuvo escudo hay un monasterio del siglo X que el
     pueblo ha olvidado. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
 
-  <div class="ficha">
-    <div><span class="caps">provincia</span><b>Zamora</b></div>
-    <div><span class="caps">municipio</span><b>Quiruelas de Vidriales</b></div>
-    <div><span class="caps">diócesis</span><b>Astorga</b></div>
-    <div><span class="caps">superficie</span><b>1.043 ha</b></div>
-    <div><span class="caps">habitantes 2024</span><b>222</b></div>
-  </div>
-
-  <a class="version" href="#versiones" id="sello-version">
-    <span class="n">v0.1</span><span class="t">Ver cambios</span>
+  <!-- el número lo pone el JS desde VERSION: una sola fuente de verdad -->
+  <a class="version" href="#versiones" id="sello-version" hidden>
+    <span class="n"></span><span class="t">Ver cambios</span>
   </a>
 </header>
 
-<nav class="wrap idx" aria-label="Secciones">
-  <a href="#linea">Línea temporal</a><a href="#termino">El término</a><a href="#gente">La gente</a><a href="#emblema">Materia para un emblema</a><a href="#falta">Lo que falta</a><a href="#versiones" id="idx-versiones">Versiones</a>
-</nav>
-
-<main>
 <section class="wrap lede" aria-label="Presentación">
   <div class="lede-txt">
     <p>En diciembre de 1876 el alcalde de Colinas escribe al Gobernador Civil que el sello del ayuntamiento es «el único que existe y ha existido en este municipio». Ese sello lleva las armas de España. El pueblo no tuvo nunca emblema propio.</p>
@@ -83,6 +87,10 @@
   </div>
 </section>
 
+</div>
+
+<div class="vista vista-sec" id="v-termino">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="termino" aria-labelledby="termino-t">
   <div class="sec-head">
     <span class="caps">1.043 hectáreas</span>
@@ -147,7 +155,10 @@
     </div>
   </div>
 </section>
+</div>
 
+<div class="vista vista-sec" id="v-gente">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="gente" aria-labelledby="gente-t">
   <div class="sec-head">
     <span class="caps">625 habitantes en 1950</span>
@@ -175,7 +186,10 @@
     <p class="nota"><b>Antes de los censos</b>1752: 27 vecinos y 26 casas, diez de ellas inhabitables. 1826: 55 vecinos. 1847: 33 vecinos, 35 casas en 6 calles. Vecinos son familias, no personas: no van en el gráfico.</p>
   </div>
 </section>
+</div>
 
+<div class="vista vista-sec" id="v-emblema">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="emblema" aria-labelledby="emblema-t">
   <div class="sec-head">
     <span class="caps"><span class="mk mk-propuesto" style="width:10px;height:10px;vertical-align:-1px"></span>&nbsp; Materia prima · sin decidir</span>
@@ -207,7 +221,10 @@
     </div>
   </div>
 </section>
+</div>
 
+<div class="vista vista-sec" id="v-falta">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="falta" aria-labelledby="falta-t">
   <div class="sec-head">
     <span class="caps">Por orden de prioridad</span>
@@ -226,7 +243,10 @@
     <li><b>Los libros parroquiales</b><p>En el Archivo Histórico Diocesano de Astorga, no en el de Zamora: la parroquia siempre fue de Astorga.</p></li>
   </ol>
 </section>
+</div>
 
+<div class="vista vista-sec" id="v-versiones">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <section class="wrap sec" id="versiones" aria-labelledby="versiones-t">
   <div class="sec-head">
     <span class="caps" id="versiones-n">Control de cambios</span>
@@ -237,6 +257,7 @@
   </div>
   <div class="versiones" id="lista-versiones"></div>
 </section>
+</div>
 </main>
 
 <footer class="wrap pie">

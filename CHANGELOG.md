@@ -13,6 +13,26 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.2 — 25 de septiembre de 2026
+### La línea temporal, sola; el resto, a un clic
+
+- **La página principal es ahora sólo la línea temporal.** El término, la gente, la materia para el
+  emblema, lo que falta y el propio registro de versiones **ya no se recorren al bajar**: hay que
+  pedirlos expresamente.
+- **Menú fijo en la esquina superior**, presente en toda la web. En teléfono se queda arriba en la
+  primera pantalla y **se retira en cuanto se empieza a recorrer el feed**, para no tapar la
+  lectura; reaparece al volver al principio.
+- Cada sección secundaria se abre como una **vista propia**, con su enlace de vuelta a la línea. La
+  dirección del navegador la recuerda —`#termino`, `#gente`, `#emblema`, `#falta`, `#versiones`—,
+  así que se puede enlazar y el botón «atrás» funciona.
+- **Fuera la ficha de datos de la portada** —provincia, municipio, diócesis, superficie y
+  habitantes—: eran cinco cifras compitiendo con la entrada al relato.
+
+> ⚠️ **Estado del contenido, sin cambios respecto a la 0.1**: faltan por incorporar a la línea
+> **1073, 1526, 1591, 1694, 1756 y 1768**.
+
+---
+
 ## v0.1 — 25 de septiembre de 2026
 ### Una sola página, con el estilo decidido
 

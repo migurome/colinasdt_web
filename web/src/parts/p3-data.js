@@ -238,10 +238,18 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.1';
+const VERSION = '0.2';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.2', f: '25 de septiembre de 2026', t: 'La línea temporal, sola; el resto, a un clic',
+    c: [
+      '<b>La página principal es ahora sólo la línea temporal.</b> El término, la gente, la materia para el emblema, lo que falta y este mismo registro <b>ya no se recorren al bajar</b>: hay que pedirlos.',
+      '<b>Menú fijo en la esquina superior</b>, siempre a mano. En teléfono se queda arriba en la primera pantalla y <b>se retira en cuanto se empieza a recorrer el feed</b>, para no tapar la lectura; vuelve al subir del todo.',
+      'Cada sección secundaria se abre como una <b>vista propia</b>, con su enlace de vuelta. La dirección del navegador la recuerda, así que se puede enlazar y el botón «atrás» funciona.',
+      '<b>Fuera la ficha de datos de la portada</b> —provincia, municipio, diócesis, superficie y habitantes—: eran cinco cifras compitiendo con la entrada al relato.'
+    ],
+    p: 'Sigue pendiente lo mismo que en la 0.1: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.1', f: '25 de septiembre de 2026', t: 'Una sola página, con el estilo decidido',
     c: [
       '<b>El estilo aprobado, aplicado a la web entera</b>: papel antiguo, una sola tipografía —EB Garamond en cinco registros— y las tintas con código, donde los tres rojos significan cosas distintas y el añil y el oliva marcan la materia.',

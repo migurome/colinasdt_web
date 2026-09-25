@@ -255,6 +255,9 @@
         tf = requestAnimationFrame(() => {
           tf = null;
           this.pinta(Math.round(feed.scrollTop / feed.clientHeight));
+          /* el menú se queda en la primera pantalla y se retira al recorrer */
+          const m = document.getElementById('menu');
+          if (m) m.classList.toggle('oculto', feed.scrollTop > 30);
         });
       }, { passive: true });
 
@@ -378,6 +381,8 @@
       } else {
         sec.classList.remove('feed-on');
         p.textContent = TXT.doc;
+        const m = document.getElementById('menu');
+        if (m) m.classList.remove('oculto');
       }
     }
     mq.addEventListener ? mq.addEventListener('change', ajustar) : mq.addListener(ajustar);
@@ -493,6 +498,7 @@
     const pie = $('#pie-version');
 
     sello.querySelector('.n').textContent = 'v' + VERSION;
+    sello.hidden = false;
     pie.innerHTML = `Versión <b>${VERSION}</b> de esta web · ${VERSIONES[0] ? VERSIONES[0].f : ''}`;
 
     if (typeof VERSIONES_VISIBLE !== 'undefined' && !VERSIONES_VISIBLE) {
@@ -511,5 +517,50 @@
         <ul>${v.c.map((x) => `<li>${x}</li>`).join('')}</ul>
         ${v.p ? `<p class="nota"><b>Estado del contenido</b>${v.p}</p>` : ''}
       </div></article>`).join('');
+  })();
+
+  /* ═══════════ 8. Menú de secciones y vistas ═══════════
+     La página principal es la línea temporal. El resto de secciones
+     no se recorren al bajar: se piden desde el menú de la esquina. */
+  (function vistas() {
+    const menu = $('#menu'), bt = $('#menu-bt'), lista = $('#menu-lista');
+    const enlaces = Array.prototype.slice.call(lista.querySelectorAll('a'));
+    const cajas = {};
+    enlaces.forEach((a) => { cajas[a.dataset.v] = document.getElementById('v-' + a.dataset.v); });
+
+    function abrir(b) {
+      lista.hidden = !b;
+      bt.setAttribute('aria-expanded', String(b));
+    }
+    bt.addEventListener('click', (ev) => { ev.stopPropagation(); abrir(lista.hidden); });
+    document.addEventListener('click', (ev) => { if (!menu.contains(ev.target)) abrir(false); });
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Escape' && !lista.hidden) { abrir(false); bt.focus(); }
+    });
+
+    function mostrar(v) {
+      if (!cajas[v]) v = 'linea';
+      Object.keys(cajas).forEach((k) => {
+        if (cajas[k]) cajas[k].classList.toggle('vista-on', k === v);
+      });
+      enlaces.forEach((a) => {
+        if (a.dataset.v === v) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
+      abrir(false);
+      menu.classList.remove('oculto');
+      document.title = v === 'linea'
+        ? 'Colinas de Trasmonte'
+        : (enlaces.filter((a) => a.dataset.v === v)[0].textContent + ' · Colinas de Trasmonte');
+    }
+
+    function desdeHash(inicial) {
+      const h = location.hash.replace('#', '');
+      const v = cajas[h] ? h : 'linea';
+      mostrar(v);
+      if (!inicial) window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+    window.addEventListener('hashchange', () => desdeHash(false));
+    desdeHash(true);
   })();
 })();

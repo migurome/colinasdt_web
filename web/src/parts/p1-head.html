@@ -87,13 +87,6 @@ img{max-width:100%}
 .portada .lema{font-style:italic;font-size:clamp(1.1rem,2.3vw,1.4rem);color:var(--tinta-2);
   max-width:48ch;margin:clamp(18px,3vw,30px) auto 0}
 
-/* la ficha del lugar, en rótulos */
-.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:6px clamp(14px,3vw,30px);
-  margin-top:clamp(22px,3.6vw,38px);padding-top:clamp(16px,2.4vw,24px);
-  border-top:1px solid var(--filo-fuerte)}
-.ficha div{display:flex;align-items:baseline;gap:7px}
-.ficha b{font-weight:600;font-size:1rem;color:var(--tinta-2);letter-spacing:.02em}
-
 /* el sello de versión */
 .version{display:inline-flex;align-items:center;gap:8px;margin-top:clamp(18px,2.6vw,26px);
   border:1px solid var(--filo-fuerte);background:var(--papel-alto);
@@ -102,13 +95,49 @@ img{max-width:100%}
 .version .n{font-size:1rem;font-weight:600;color:var(--teja);letter-spacing:.04em}
 .version .t{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--tenue)}
 
-/* ═══════════ ÍNDICE ═══════════ */
-.idx{display:flex;flex-wrap:wrap;gap:4px 26px;padding-block:16px;
-  border-top:1px solid var(--filo);border-bottom:1px solid var(--filo)}
-.idx a{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
-  color:var(--tinta-2);text-decoration:none;padding-block:6px;
-  border-bottom:1.5px solid transparent}
-.idx a:hover{color:var(--almagre);border-bottom-color:var(--teja)}
+/* ═══════════════════════════════════════════════════════════════════════
+   VISTAS — la página principal es la línea temporal; el resto se pincha
+   ═══════════════════════════════════════════════════════════════════════ */
+.vista{display:none}
+.vista.vista-on{display:block}
+.vista-sec .sec{border-top:0;padding-top:clamp(10px,1.6vw,18px)}
+.volver{padding-top:clamp(52px,7vw,76px);margin:0}
+.volver a{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  text-decoration:none;color:var(--tenue)}
+.volver a:hover{color:var(--almagre)}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MENÚ — fijo en la esquina, siempre a mano
+   En teléfono se queda arriba en la primera pantalla y se retira en
+   cuanto se empieza a recorrer el feed.
+   ═══════════════════════════════════════════════════════════════════════ */
+.menu{position:fixed;top:clamp(10px,2vw,20px);right:clamp(10px,2vw,20px);z-index:30;
+  transition:opacity .28s ease, transform .28s ease}
+.menu.oculto{opacity:0;transform:translateY(-10px);pointer-events:none}
+.menu-bt{display:flex;align-items:center;gap:10px;font-family:var(--f);
+  font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  color:var(--tinta-2);background:var(--papel-alto);border:1px solid var(--filo-fuerte);
+  padding:9px 14px;cursor:pointer;box-shadow:0 1px 0 rgba(120,92,48,.2)}
+.menu-bt:hover{border-color:var(--teja);color:var(--almagre)}
+.menu-bt[aria-expanded="true"]{background:var(--teja);border-color:var(--teja);color:var(--papel-alto)}
+.menu-ico{width:15px;height:11px;flex:none;
+  background:linear-gradient(currentColor,currentColor) 0 0/100% 1.5px no-repeat,
+             linear-gradient(currentColor,currentColor) 0 50%/100% 1.5px no-repeat,
+             linear-gradient(currentColor,currentColor) 0 100%/100% 1.5px no-repeat}
+.menu-lista{position:absolute;top:calc(100% + 7px);right:0;min-width:15.5rem;
+  background:var(--papel-alto);border:1px solid var(--filo-fuerte);padding:6px;
+  box-shadow:0 3px 0 rgba(120,92,48,.2);display:grid}
+.menu-lista a{display:block;padding:9px 13px;text-decoration:none;color:var(--tinta-2);
+  font-size:1rem;line-height:1.3}
+.menu-lista a:hover{background:var(--papel-hondo);color:var(--almagre)}
+.menu-lista a[aria-current="page"]{color:var(--teja);font-weight:600}
+.menu-lista a[aria-current="page"]::before{content:"— ";color:var(--filo-fuerte)}
+@media (max-width:760px){
+  .menu-bt span:not(.menu-ico){position:absolute;width:1px;height:1px;overflow:hidden;
+    clip-path:inset(50%);white-space:nowrap}
+  .menu-bt{padding:11px 12px}
+  .menu-lista{min-width:14rem}
+}
 
 /* ═══════════ MARCADORES — el código de prueba ═══════════ */
 .mk{display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;
