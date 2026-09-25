@@ -421,6 +421,8 @@ summary:hover{color:var(--almagre)}
   .feed{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;
     scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}
   .feed::-webkit-scrollbar{display:none}
+  /* sin raíl, la lámina recupera los 28 px que tenía reservados a la derecha */
+  .feed.sin-rail{padding-right:0}
   .post{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative}
   .post[hidden]{display:none}
 
@@ -601,6 +603,8 @@ summary:hover{color:var(--almagre)}
   .feed{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;
     scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}
   .feed::-webkit-scrollbar{display:none}
+  /* sin raíl, la lámina recupera los 28 px que tenía reservados a la derecha */
+  .feed.sin-rail{padding-right:0}
   .post{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative}
   .post[hidden]{display:none}
 

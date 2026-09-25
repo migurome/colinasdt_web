@@ -458,6 +458,15 @@
     },
     /* El raíl: la misma escala comprimida, puesta en vertical */
     rail() {
+      if (!RAIL_VISIBLE) {
+        /* fuera del DOM, no sólo oculto: era un slider con foco y arrastre */
+        ['#rail', '#rail-lbl'].forEach((sel) => {
+          const el = document.querySelector(sel);
+          if (el) el.remove();
+        });
+        this.feed.classList.add('sin-rail');
+        return;
+      }
       const rail = $('#rail'), svg = $('#rail-svg');
       const RH = 1000, RP = 18;
       const AY = RP + 54, BY = AY + 26;
@@ -527,7 +536,7 @@
       if (idx === this.actual || !this.visibles.length) return;
       this.actual = idx;
       const p = this.visibles[idx];
-      if (!p) return;
+      if (!p || !this.pulgar) return;   /* sin raíl no hay nada que pintar */
       const i = +p.dataset.i;
       if (i < 0) {                       /* la portada: el raíl aún no ha empezado */
         this.pulgar.setAttribute('cy', String(this.RP));
@@ -564,9 +573,12 @@
         p.hidden = !(portada || k === 'todo' || p.dataset.n === k);
       });
       this.visibles = this.posts.filter((p) => !p.hidden);
-      $('#rail-svg').querySelectorAll('.tk').forEach((g) => {
-        g.classList.toggle('off', !(k === 'todo' || g.dataset.n === k));
-      });
+      const svg = $('#rail-svg');          /* puede no estar: el rail es opcional */
+      if (svg) {
+        svg.querySelectorAll('.tk').forEach((g) => {
+          g.classList.toggle('off', !(k === 'todo' || g.dataset.n === k));
+        });
+      }
       this.feed.scrollTop = 0;
       this.actual = -1;
       this.pinta(0);
@@ -581,7 +593,7 @@
     const sec = $('#linea'), p = $('#linea-p');
     const TXT = {
       doc: 'La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.',
-      feed: 'Una entrada por pantalla, entera: desliza hacia arriba para pasar a la siguiente. Sólo cuando no cabe —porque el texto es largo o lleva cita o imagen— continúa al lado. La línea del tiempo de la derecha es la barra de desplazamiento: arrástrala.'
+      feed: 'Una entrada por pantalla, entera: desliza hacia arriba para pasar a la siguiente. Sólo cuando no cabe —porque el texto es largo o lleva cita o imagen— continúa al lado.'
     };
     function ajustar() {
       Estado.movil = mq.matches;

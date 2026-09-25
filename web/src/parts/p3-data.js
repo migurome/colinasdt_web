@@ -261,10 +261,21 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.8';
+const VERSION = '0.9';
 const VERSIONES_VISIBLE = true;
+/* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
+   teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
+   queda entero: ponlo en true y vuelve, marcas, arrastre y rótulo. */
+const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.9', f: '25 de septiembre de 2026', t: 'Fuera el raíl del teléfono',
+    c: [
+      '<b>Se retira la barra de desplazamiento lateral</b> del teléfono —la línea del tiempo que hacía de scroll y se arrastraba—. La lámina recupera los 28 píxeles que tenía reservados a la derecha.',
+      'No se oculta: se quita del documento. Era un control con foco y arrastre, y un mando invisible que sigue escuchando estorba más que la barra.',
+      '<b>El código se queda entero</b> detrás de un interruptor. Con una línea vuelven la escala, las marcas, el arrastre y el rótulo del año.'
+    ],
+    p: 'Sigue pendiente lo mismo: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.8', f: '25 de septiembre de 2026', t: 'Cada entrada, con su tratamiento',
     c: [
       '<b>Las siete entradas con imagen tienen ya tratamiento elegido</b>, una por una: el III milenio, 1006 y 1752 a portada; 1876 a viñeta; los siglos IV–V, XI–XIII y 1993 en caja.',

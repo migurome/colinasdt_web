@@ -13,6 +13,28 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.9 — 25 de septiembre de 2026
+### Fuera el raíl del teléfono
+
+- **Se retira la barra de desplazamiento lateral** —la línea del tiempo que hacía de scroll en el
+  móvil, con sus marcas de evento y su arrastre—. La lámina recupera los 28 píxeles que tenía
+  reservados a la derecha.
+- **No se oculta: se quita del documento.** Era un `role="slider"` con foco y captura de puntero;
+  un mando invisible que sigue escuchando estorba más que la barra que se quería quitar.
+- **El código se queda entero**, detrás de `RAIL_VISIBLE` en `p3-data.js`. Ponerlo en `true`
+  devuelve la escala, las marcas por grado de prueba, el arrastre y el rótulo del año.
+- De paso, el filtro deja de depender de que el raíl exista: antes recorría sus marcas sin
+  comprobar que estuvieran.
+
+> ⚠️ **Queda sin sustituto la navegación rápida.** Con 33 entradas, ir de una punta a otra es
+> ahora todo deslizamiento. Los filtros por grado de prueba de la portada siguen acortando la
+> lista, pero no es lo mismo.
+
+> ⚠️ **Estado del contenido, sin cambios**: faltan por incorporar a la línea **1073, 1526, 1591,
+> 1694, 1756 y 1768**.
+
+---
+
 ## v0.8 — 25 de septiembre de 2026
 ### Cada entrada, con su tratamiento
 
