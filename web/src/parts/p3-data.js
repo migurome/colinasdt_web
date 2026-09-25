@@ -424,7 +424,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.12';
+const VERSION = '0.13';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -432,6 +432,14 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.13', f: '25 de septiembre de 2026', t: 'Saltar de un tiempo a otro',
+    c: [
+      '<b>Las cinco eras, en el menú.</b> Quitado el raíl y con sesenta entradas, recorrer el feed a pulso había dejado de ser navegar. Ahora se salta a cualquiera de los cinco tiempos desde las tres rayas, sin ocupar pantalla ni competir con el gesto de «atrás».',
+      'Funciona igual en el teléfono y en el ordenador: en el feed lleva a la primera entrada de esa era, y en el documento baja al separador.',
+      'Si un filtro deja una era sin entradas, el salto <b>cae en la siguiente que sí tenga</b> en vez de no hacer nada.',
+      '<b>El menú vuelve al retroceder.</b> Seguía retirándose al avanzar por el feed, como se pidió, pero así sólo se podía navegar desde la primera pantalla. Ahora reaparece en cuanto se desliza hacia atrás.'
+    ],
+    p: 'Las 53 entradas que no tienen imagen siguen sin tenerla: es el siguiente trabajo largo.' },
   { v: '0.12', f: '25 de septiembre de 2026', t: 'La línea, al día con la investigación',
     c: [
       '<b>Doce entradas más: de 48 a 60.</b> Tercera y última tanda. La línea publicada deja de ir por detrás del trabajo de archivo: empezó la jornada con 33 entradas.',

@@ -13,6 +13,28 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.13 — 25 de septiembre de 2026
+### Saltar de un tiempo a otro
+
+- **Las cinco eras, en el menú.** Quitado el raíl en la 0.9 y con la línea en sesenta entradas,
+  recorrer el feed a pulso había dejado de ser navegar. Ahora se salta a cualquiera de los cinco
+  tiempos —Antes del nombre, Castroferrol, Lugar del conde de Benavente, El ayuntamiento, La
+  pedanía— desde las tres rayas. **No ocupa pantalla y no compite con el gesto de «atrás»**, que
+  era la pega del raíl.
+- Funciona igual en los dos modos: en el teléfono lleva a la primera entrada de esa era; en el
+  ordenador baja al separador del documento.
+- Si un filtro por grado de prueba deja una era sin entradas visibles, el salto **cae en la
+  siguiente que sí tenga**, en lugar de quedarse sin hacer nada.
+- Los nombres y los tramos salen de los propios datos, así que si cambian las eras el menú cambia
+  solo.
+- ⚠️ **El menú vuelve al retroceder.** Seguía retirándose al avanzar por el feed, como se pidió
+  en la 0.2 —para no tapar la lectura—, pero eso dejaba la navegación alcanzable sólo desde la
+  primera pantalla. Ahora se retira al avanzar y **reaparece en cuanto se desliza hacia atrás**.
+
+> **Sigue pendiente**: 53 de las 60 entradas no tienen imagen. Es el siguiente trabajo largo.
+
+---
+
 ## v0.12 — 25 de septiembre de 2026
 ### La línea, al día con la investigación
 

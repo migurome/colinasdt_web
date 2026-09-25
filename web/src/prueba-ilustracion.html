@@ -151,6 +151,17 @@ img{max-width:100%}
 .menu-bt span:not(.menu-ico){position:absolute;width:1px;height:1px;overflow:hidden;
   clip-path:inset(50%);white-space:nowrap}
 .menu-bt{gap:0;padding:11px 13px}
+/* Las cinco eras, para saltar de un tiempo a otro sin ocupar pantalla */
+.menu-eras{display:grid;margin-top:5px;padding-top:5px;border-top:1px solid var(--filo)}
+.menu-eras[hidden]{display:none}
+.menu-eras .caps{padding:6px 13px 5px;color:var(--tenue)}
+.menu-eras button{display:grid;gap:1px;text-align:left;font-family:var(--f);
+  font-size:.9375rem;line-height:1.25;padding:7px 13px;cursor:pointer;
+  background:none;border:0;color:var(--tinta-2)}
+.menu-eras button:hover{background:var(--papel-hondo);color:var(--almagre)}
+.menu-eras button .sp{font-size:.6875rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--tenue)}
+.menu-eras button:hover .sp{color:var(--apunte)}
 @media (max-width:760px){.menu-lista{min-width:14rem}}
 
 /* ═══════════ MARCADORES — el código de prueba ═══════════ */
@@ -459,9 +470,10 @@ summary:hover{color:var(--almagre)}
        vineta   — a sangre por abajo, deshecha en el papel por arriba
        aguada   — de fondo, rebajada, con el texto encima
        portada  — la ilustración es el campo y el texto va escrito sobre ella
-     Sólo se aplican al campo `ilu`, que es una ilustración interpretada.
-     Nunca a `img`, que es una reproducción documental: un facsímil no se
-     recorta a sangre ni se escribe encima.
+     Se eligen para cualquier imagen. Cuando no es `caja`, la imagen pasa a
+     ser el fondo y pierde su marco, así que su pie baja al texto de la
+     lámina: la referencia no se pierde. Y un facsímil, que es papel claro y
+     no un dibujo en penumbra, lleva además la clase `t-doc`.
      El grano y la viñeta del papel van fijos POR ENCIMA de todo, también
      del dibujo: es lo que hace que parezca impreso en la misma hoja y no
      pegado sobre ella. */
@@ -641,9 +653,10 @@ summary:hover{color:var(--almagre)}
        vineta   — a sangre por abajo, deshecha en el papel por arriba
        aguada   — de fondo, rebajada, con el texto encima
        portada  — la ilustración es el campo y el texto va escrito sobre ella
-     Sólo se aplican al campo `ilu`, que es una ilustración interpretada.
-     Nunca a `img`, que es una reproducción documental: un facsímil no se
-     recorta a sangre ni se escribe encima.
+     Se eligen para cualquier imagen. Cuando no es `caja`, la imagen pasa a
+     ser el fondo y pierde su marco, así que su pie baja al texto de la
+     lámina: la referencia no se pierde. Y un facsímil, que es papel claro y
+     no un dibujo en penumbra, lleva además la clase `t-doc`.
      El grano y la viñeta del papel van fijos POR ENCIMA de todo, también
      del dibujo: es lo que hace que parezca impreso en la misma hoja y no
      pegado sobre ella. */

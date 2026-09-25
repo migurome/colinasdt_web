@@ -325,6 +325,7 @@
       this.visibles = this.posts.slice();
       this.feed = feed;
       this.actual = -1;
+      this.ultimaY = 0;
 
       this.posts.forEach((post) => {
         const car = post.querySelector('.carrusel');
@@ -349,9 +350,15 @@
         tf = requestAnimationFrame(() => {
           tf = null;
           this.pinta(Math.round(feed.scrollTop / feed.clientHeight));
-          /* el menú se queda en la primera pantalla y se retira al recorrer */
+          /* El menú se retira al avanzar y vuelve al retroceder. Si sólo
+             estuviera arriba del todo, con sesenta entradas no habría manera
+             de navegar sin volver antes a la portada. */
           const m = document.getElementById('menu');
-          if (m) m.classList.toggle('oculto', feed.scrollTop > 30);
+          if (m) {
+            const y = feed.scrollTop;
+            m.classList.toggle('oculto', y > 30 && y > this.ultimaY + 4);
+            this.ultimaY = y;
+          }
         });
       }, { passive: true });
 
@@ -823,5 +830,50 @@
     }
     window.addEventListener('hashchange', () => desdeHash(false));
     desdeHash(true);
+
+    /* ---- Salto por eras ----------------------------------------------
+       Quitado el raíl, y con sesenta entradas, recorrer el feed a pulso
+       deja de ser navegar. Las cinco eras van en el mismo menú, que no
+       ocupa pantalla ni compite con el gesto de «atrás». */
+    function saltar(id) {
+      abrir(false);
+      const ir = () => {
+        if (Estado.movil && Feed.montado) {
+          let idx = -1;
+          Feed.visibles.forEach((p, j) => {
+            if (idx >= 0) return;
+            const i = +p.dataset.i;
+            /* >= y no ===: si el filtro dejó esa era sin entradas, cae en la
+               siguiente que sí tenga, en vez de no hacer nada */
+            if (i >= 0 && EVENTOS[i].era >= id) idx = j;
+          });
+          if (idx >= 0) Feed.irA(idx);
+        } else {
+          const el = document.querySelector('.tl > li.era[data-era="' + id + '"]');
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
+      if (Estado.vista !== 'linea') {
+        location.hash = '#linea';
+        setTimeout(ir, 70);            /* deja que la vista cambie y suba */
+      } else {
+        requestAnimationFrame(ir);
+      }
+    }
+
+    (function eras() {
+      const caja = $('#menu-eras');
+      if (!caja) return;
+      let h = '<p class="caps">Ir a un tiempo</p>';
+      ERAS.forEach((r) => {
+        h += `<button type="button" data-era="${r.id}">${esc(r.t)}<span class="sp">${esc(r.span)}</span></button>`;
+      });
+      caja.innerHTML = h;
+      caja.hidden = false;
+      caja.addEventListener('click', (ev) => {
+        const b = ev.target.closest('button[data-era]');
+        if (b) saltar(+b.dataset.era);
+      });
+    })();
   })();
 })();

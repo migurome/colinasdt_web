@@ -145,6 +145,17 @@ img{max-width:100%}
 .menu-bt span:not(.menu-ico){position:absolute;width:1px;height:1px;overflow:hidden;
   clip-path:inset(50%);white-space:nowrap}
 .menu-bt{gap:0;padding:11px 13px}
+/* Las cinco eras, para saltar de un tiempo a otro sin ocupar pantalla */
+.menu-eras{display:grid;margin-top:5px;padding-top:5px;border-top:1px solid var(--filo)}
+.menu-eras[hidden]{display:none}
+.menu-eras .caps{padding:6px 13px 5px;color:var(--tenue)}
+.menu-eras button{display:grid;gap:1px;text-align:left;font-family:var(--f);
+  font-size:.9375rem;line-height:1.25;padding:7px 13px;cursor:pointer;
+  background:none;border:0;color:var(--tinta-2)}
+.menu-eras button:hover{background:var(--papel-hondo);color:var(--almagre)}
+.menu-eras button .sp{font-size:.6875rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--tenue)}
+.menu-eras button:hover .sp{color:var(--apunte)}
 @media (max-width:760px){.menu-lista{min-width:14rem}}
 
 /* ═══════════ MARCADORES — el código de prueba ═══════════ */
@@ -453,9 +464,10 @@ summary:hover{color:var(--almagre)}
        vineta   — a sangre por abajo, deshecha en el papel por arriba
        aguada   — de fondo, rebajada, con el texto encima
        portada  — la ilustración es el campo y el texto va escrito sobre ella
-     Sólo se aplican al campo `ilu`, que es una ilustración interpretada.
-     Nunca a `img`, que es una reproducción documental: un facsímil no se
-     recorta a sangre ni se escribe encima.
+     Se eligen para cualquier imagen. Cuando no es `caja`, la imagen pasa a
+     ser el fondo y pierde su marco, así que su pie baja al texto de la
+     lámina: la referencia no se pierde. Y un facsímil, que es papel claro y
+     no un dibujo en penumbra, lleva además la clase `t-doc`.
      El grano y la viñeta del papel van fijos POR ENCIMA de todo, también
      del dibujo: es lo que hace que parezca impreso en la misma hoja y no
      pegado sobre ella. */
@@ -585,6 +597,7 @@ summary:hover{color:var(--almagre)}
     <a href="#falta" data-v="falta">Lo que falta</a>
     <a href="#versiones" data-v="versiones" id="idx-versiones">Versiones</a>
     <a href="#creditos" data-v="creditos">Fuentes y créditos</a>
+    <div class="menu-eras" id="menu-eras" hidden></div>
   </nav>
 </div>
 
@@ -1254,7 +1267,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.12';
+const VERSION = '0.13';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1262,6 +1275,14 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.13', f: '25 de septiembre de 2026', t: 'Saltar de un tiempo a otro',
+    c: [
+      '<b>Las cinco eras, en el menú.</b> Quitado el raíl y con sesenta entradas, recorrer el feed a pulso había dejado de ser navegar. Ahora se salta a cualquiera de los cinco tiempos desde las tres rayas, sin ocupar pantalla ni competir con el gesto de «atrás».',
+      'Funciona igual en el teléfono y en el ordenador: en el feed lleva a la primera entrada de esa era, y en el documento baja al separador.',
+      'Si un filtro deja una era sin entradas, el salto <b>cae en la siguiente que sí tenga</b> en vez de no hacer nada.',
+      '<b>El menú vuelve al retroceder.</b> Seguía retirándose al avanzar por el feed, como se pidió, pero así sólo se podía navegar desde la primera pantalla. Ahora reaparece en cuanto se desliza hacia atrás.'
+    ],
+    p: 'Las 53 entradas que no tienen imagen siguen sin tenerla: es el siguiente trabajo largo.' },
   { v: '0.12', f: '25 de septiembre de 2026', t: 'La línea, al día con la investigación',
     c: [
       '<b>Doce entradas más: de 48 a 60.</b> Tercera y última tanda. La línea publicada deja de ir por detrás del trabajo de archivo: empezó la jornada con 33 entradas.',
@@ -1693,6 +1714,7 @@ const VERSIONES = [
       this.visibles = this.posts.slice();
       this.feed = feed;
       this.actual = -1;
+      this.ultimaY = 0;
 
       this.posts.forEach((post) => {
         const car = post.querySelector('.carrusel');
@@ -1717,9 +1739,15 @@ const VERSIONES = [
         tf = requestAnimationFrame(() => {
           tf = null;
           this.pinta(Math.round(feed.scrollTop / feed.clientHeight));
-          /* el menú se queda en la primera pantalla y se retira al recorrer */
+          /* El menú se retira al avanzar y vuelve al retroceder. Si sólo
+             estuviera arriba del todo, con sesenta entradas no habría manera
+             de navegar sin volver antes a la portada. */
           const m = document.getElementById('menu');
-          if (m) m.classList.toggle('oculto', feed.scrollTop > 30);
+          if (m) {
+            const y = feed.scrollTop;
+            m.classList.toggle('oculto', y > 30 && y > this.ultimaY + 4);
+            this.ultimaY = y;
+          }
         });
       }, { passive: true });
 
@@ -2191,6 +2219,51 @@ const VERSIONES = [
     }
     window.addEventListener('hashchange', () => desdeHash(false));
     desdeHash(true);
+
+    /* ---- Salto por eras ----------------------------------------------
+       Quitado el raíl, y con sesenta entradas, recorrer el feed a pulso
+       deja de ser navegar. Las cinco eras van en el mismo menú, que no
+       ocupa pantalla ni compite con el gesto de «atrás». */
+    function saltar(id) {
+      abrir(false);
+      const ir = () => {
+        if (Estado.movil && Feed.montado) {
+          let idx = -1;
+          Feed.visibles.forEach((p, j) => {
+            if (idx >= 0) return;
+            const i = +p.dataset.i;
+            /* >= y no ===: si el filtro dejó esa era sin entradas, cae en la
+               siguiente que sí tenga, en vez de no hacer nada */
+            if (i >= 0 && EVENTOS[i].era >= id) idx = j;
+          });
+          if (idx >= 0) Feed.irA(idx);
+        } else {
+          const el = document.querySelector('.tl > li.era[data-era="' + id + '"]');
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
+      if (Estado.vista !== 'linea') {
+        location.hash = '#linea';
+        setTimeout(ir, 70);            /* deja que la vista cambie y suba */
+      } else {
+        requestAnimationFrame(ir);
+      }
+    }
+
+    (function eras() {
+      const caja = $('#menu-eras');
+      if (!caja) return;
+      let h = '<p class="caps">Ir a un tiempo</p>';
+      ERAS.forEach((r) => {
+        h += `<button type="button" data-era="${r.id}">${esc(r.t)}<span class="sp">${esc(r.span)}</span></button>`;
+      });
+      caja.innerHTML = h;
+      caja.hidden = false;
+      caja.addEventListener('click', (ev) => {
+        const b = ev.target.closest('button[data-era]');
+        if (b) saltar(+b.dataset.era);
+      });
+    })();
   })();
 })();
 </script>
