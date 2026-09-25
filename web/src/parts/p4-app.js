@@ -73,7 +73,8 @@
         <span class="nivel">${mk(e.n)}${NIVELES[e.n].t}</span>
         <h4>${e.t}</h4>
         ${e.q ? `<p class="cita">${e.q}</p>` : ''}
-        <p>${e.p}</p>
+        ${String(e.p).split('|').map((x) => x.trim()).filter(Boolean)
+          .map((x) => `<p>${x}</p>`).join('')}
         ${e.nota ? `<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>` : ''}
         ${fig}
         ${e.link ? `<p><a href="${e.link.href}">${e.link.t}</a></p>` : ''}
@@ -206,7 +207,10 @@
       const B = [];
       B.push(`<div class="cab-ev"><span class="anio">${esc(e.y)}</span>${
         e.d ? `<span class="dia">${esc(e.d)}</span>` : ''}<h4>${e.t}</h4></div>`);
-      if (e.p) B.push(`<p class="prosa">${e.p}</p>`);
+      /* la barra vertical separa parrafos, que es como se escribieron las voces */
+      if (e.p) String(e.p).split('|').forEach((x) => {
+        if (x.trim()) B.push(`<p class="prosa">${x.trim()}</p>`);
+      });
       if (e.link) B.push(`<p class="fuente enlace">En esta página: ${e.link.t}</p>`);
       if (e.q) B.push(`<p class="cita">${e.q}</p>`);
       const caja = this.trato(e) === 'caja';

@@ -13,6 +13,33 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.24 — 25 de septiembre de 2026
+### La voz, elegida a votos
+
+Las cuatro redacciones se pusieron una al lado de otra y se votó **entrada por entrada**.
+Once entradas, once votos. Seis cambian; cinco ya estaban en la voz elegida.
+
+| Año | Voz |
+|---|---|
+| 962, 963, 1129, ss. XI-XIII | **C** · Microhistoria |
+| 985-999, 1006, 1015, 1060, 1170 | **B** · Sobria |
+| 1073 | **D** · Escena |
+| El silencio, 1170-1526 | **A** · Técnica |
+
+- **El recuento es B 5, C 4, A 1, D 1**, pero el recuento no es la lección. El reparto sí:
+  la **sobria** gana donde el hecho es un acto de documento —una donación, unos testigos,
+  una partición—, y la **microhistoria** gana donde hay un objeto o un gesto: la viña, el
+  deslinde que echa a andar, la sala que ardió.
+- **1073 se queda en escena**, que son cuatro palabras y nada más, y **el silencio vuelve a
+  la redacción seca**: donde no hay nada que contar, contarlo menos es contarlo mejor.
+- **La lámina aprende a separar párrafos.** Dos de las voces los llevan y hasta ahora el
+  texto entero iba en uno solo, tanto en el teléfono como en el documento.
+
+> **La regla para las otras cuatro eras sale de aquí: la voz se elige por entrada, no por
+> línea.** Queda escrita en [`docs/07-web/voz.md`](docs/07-web/voz.md).
+
+---
+
 ## v0.23 — 25 de septiembre de 2026
 ### Lámina limpia para las trece
 

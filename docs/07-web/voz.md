@@ -24,23 +24,38 @@ falta el para qué. Era una lista con verbos: no se leía, se consultaba.
 
 ---
 
-> ⚠️ **La voz no está decidida.** La «sobria narrativa» que se describe abajo se probó en la era
-> de Castroferrol (v0.15) y **se quedó corta**: comprimía la prosa, pero seguía empezando por el
-> hecho y no por nadie. Hay un **comparador lateral** con cuatro redacciones de las mismas once
-> entradas, para elegir a la vista antes de tocar las otras cuarenta y nueve:
-> `web/src/prueba-voz.html`, que genera `web/gen-voz.py`.
->
-> | | Voz | De dónde sale |
-> |---|---|---|
-> | **A** | Técnica | la redacción original, etiqueta `v0.14` |
-> | **B** | Sobria | la publicada hoy, `v0.15` —la de abajo— |
-> | **C** | Microhistoria | narrada, con escena y consecuencia |
-> | **D** | Escena | frase corta, presente, más silencio |
->
-> C y D están en `web/voces.json` y **no han entrado en la línea**. A y B se leen de los datos de
-> verdad, así que el comparador no puede desincronizarse.
+## ✅ La voz, decidida por votación (25-IX-2026)
 
-## La voz: sobria narrativa
+Las cuatro redacciones se pusieron una al lado de otra en un artefacto con votos, y se eligió **entrada por entrada**. Once entradas, once votos.
+
+| Año | Voz |
+|---|---|
+| 962 · Una viña en «villa Kastro Ferronio» | **C** · Microhistoria |
+| 963 · Adrico y Faquilo | **C** · Microhistoria |
+| 985-999 · Nace un monasterio dúplice | **B** · Sobria |
+| 1006 · La abadesa Bendicta | **B** · Sobria |
+| 1015 · Nueve nombres | **B** · Sobria |
+| 1060 · Las particiones | **B** · Sobria |
+| 1073 · Colinas por su nombre | **D** · Escena |
+| 1129 · Una vereda | **C** · Microhistoria |
+| 1170 · Fernando II | **B** · Sobria |
+| ss. XI-XIII · La sala que ardió | **C** · Microhistoria |
+| El silencio, 1170-1526 | **A** · Técnica |
+
+**Recuento: B 5, C 4, A 1, D 1.** Pero el recuento no es la lección; el reparto sí:
+
+- **B, la sobria, gana donde el hecho es un acto de documento** —una donación, unos testigos, una partición, una confirmación—. Ahí el documento ya tiene su propio drama y la escena sobra.
+- **C, la microhistoria, gana donde hay un objeto o un gesto**: la viña, el reparto de la hacienda a la Iglesia, el deslinde que echa a andar, la sala que ardió.
+- **D, la escena, gana en 1073**, que son cuatro palabras y nada más: la única entrada donde el texto puede permitirse el silencio.
+- **A, la técnica, gana en el silencio documental.** Donde no hay nada que contar, contarlo menos es contarlo mejor.
+
+> La regla que sale de aquí, y que vale para las otras cuatro eras: **la voz se elige por entrada, no por línea.** El comparador sigue en `web/src/prueba-voz.html` y el artefacto de votos guarda el resultado.
+
+---
+
+## Las cuatro voces
+
+### B · Sobria narrativa
 
 Lo que ya hacían las mejores entradas del propio proyecto, aplicado a todas. El modelo interno
 estaba en la de 1972:
