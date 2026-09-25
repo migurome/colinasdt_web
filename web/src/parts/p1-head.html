@@ -55,6 +55,8 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opa
 body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,92,48,.13) 100%)}
 .capa{position:relative;z-index:1}
+/* mientras el feed ocupa la pantalla, el cuerpo no se desplaza detrás */
+body.feed-fijo{overflow:hidden}
 
 .wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(18px,4.5vw,48px)}
 a{color:var(--teja);text-underline-offset:.2em;text-decoration-thickness:1px}
@@ -132,12 +134,11 @@ img{max-width:100%}
 .menu-lista a:hover{background:var(--papel-hondo);color:var(--almagre)}
 .menu-lista a[aria-current="page"]{color:var(--teja);font-weight:600}
 .menu-lista a[aria-current="page"]::before{content:"— ";color:var(--filo-fuerte)}
-@media (max-width:760px){
-  .menu-bt span:not(.menu-ico){position:absolute;width:1px;height:1px;overflow:hidden;
-    clip-path:inset(50%);white-space:nowrap}
-  .menu-bt{padding:11px 12px}
-  .menu-lista{min-width:14rem}
-}
+/* sólo las tres rayas: el texto queda para el lector de pantalla */
+.menu-bt span:not(.menu-ico){position:absolute;width:1px;height:1px;overflow:hidden;
+  clip-path:inset(50%);white-space:nowrap}
+.menu-bt{gap:0;padding:11px 13px}
+@media (max-width:760px){.menu-lista{min-width:14rem}}
 
 /* ═══════════ MARCADORES — el código de prueba ═══════════ */
 .mk{display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;
@@ -151,8 +152,7 @@ img{max-width:100%}
 .mk-contexto{border-radius:1px;width:10px;height:10px;margin:2px;background:var(--oliva);border-color:var(--oliva)}
 
 /* ═══════════ APERTURA ═══════════ */
-.lede{display:grid;grid-template-columns:minmax(0,1fr) 17rem;gap:clamp(20px,3.4vw,44px);
-  align-items:start;padding-block:clamp(26px,4.4vw,52px)}
+.lede{display:block;padding-block:clamp(26px,4.4vw,52px)}
 .lede-txt{display:grid;gap:.85em;max-width:52ch}
 .lede-txt p:first-child{font-size:1.125em;color:var(--tinta)}
 .lede-txt p{color:var(--tinta-2);font-size:1.0625rem}
@@ -164,7 +164,6 @@ img{max-width:100%}
 .leyenda .grupo>.caps{color:var(--apunte);letter-spacing:.14em}
 .leyenda dt{display:flex;align-items:center;gap:10px;font-size:.875rem;font-weight:600;color:var(--tinta-2)}
 .leyenda dd{margin:0 0 0 24px;font-size:.8125rem;color:var(--apunte);line-height:1.38}
-@media (max-width:900px){.lede{grid-template-columns:1fr}.leyenda{max-width:32rem}}
 
 /* ═══════════ SECCIONES ═══════════ */
 .sec{padding-block:clamp(34px,6vw,76px);border-top:1px solid var(--filo-fuerte)}
@@ -380,12 +379,28 @@ summary:hover{color:var(--almagre)}
 .feed-wrap{display:none}
 
 @media (max-width:760px){
+  /* en modo feed no queda nada del documento: la pantalla es el feed */
+  .sec.feed-on .sec-head,
   .sec.feed-on .escala,
-  .sec.feed-on .tl{display:none}
-  .sec.feed-on .feed-wrap{display:block;position:relative;
-    margin-inline:calc(-1 * clamp(18px,4.5vw,48px));
-    height:78svh;min-height:26rem;
-    border-block:1px solid var(--filo-fuerte);background:var(--papel)}
+  .sec.feed-on .tl,
+  .vista-on .lede.vacia{display:none}
+  .sec.feed-on{padding:0;border-top:0}
+  .sec.feed-on .feed-wrap{display:block;position:fixed;inset:0;z-index:10;
+    height:100svh;background:var(--papel)}
+
+  /* la portada, como primera lámina */
+  .post-portada .lam{padding-top:clamp(26px,9vw,52px)}
+  .post-portada .l-cubierta .lam-cuerpo{align-content:center;text-align:center;gap:18px}
+  .post-portada .portada{padding:0;text-align:center}
+  .post-portada .portada h1 .grande{font-size:clamp(3rem,17vw,5rem)}
+  .post-portada .portada .lema{font-size:1.05rem;margin-top:16px;max-width:38ch}
+  .post-portada .portada .rotulo{margin-bottom:16px}
+  .post-portada .floron{margin-bottom:12px;width:32px;height:32px}
+  .post-portada .filtros{justify-content:center;margin:0;gap:6px}
+  .post-portada .chip{font-size:.75rem;padding:4px 9px}
+  .post-portada .l-presenta .lede-txt{display:grid;gap:.8em;max-width:none}
+  .post-portada .l-presenta p{font-size:1.0625rem;line-height:1.5;color:var(--tinta-2)}
+  .post-portada .lam-pie .t{color:var(--apunte);font-style:italic}
 
   .feed{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;
     scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}

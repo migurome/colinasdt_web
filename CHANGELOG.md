@@ -13,6 +13,26 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.3 — 25 de septiembre de 2026
+### En el teléfono, la portada es la primera lámina
+
+- **El feed ocupa la pantalla entera en el teléfono, y empieza en la portada.** La primera lámina es
+  el nombre del pueblo con los filtros de grado de prueba debajo; deslizando al lado está la
+  presentación. Al deslizar hacia arriba, la pantalla pasa a ser sólo la línea temporal: no queda
+  nada del documento detrás.
+- **El menú queda en tres rayas**, sin la palabra «Secciones», a cualquier ancho. El texto se
+  conserva oculto para el lector de pantalla, que si no se queda sin nombre de botón.
+- **Fuera el botón de versión** de la portada. El registro sigue accesible desde el menú.
+- **Fuera la leyenda** de cómo leer las marcas, de momento. Cada entrada sigue llevando su marcador
+  con el nombre del grado escrito al lado.
+- **Las fuentes y créditos pasan a ser una sección del menú.** Con el feed a pantalla completa, el
+  pie de página dejaba de ser alcanzable desde el teléfono.
+
+> ⚠️ **Estado del contenido, sin cambios**: faltan por incorporar a la línea **1073, 1526, 1591,
+> 1694, 1756 y 1768**.
+
+---
+
 ## v0.2 — 25 de septiembre de 2026
 ### La línea temporal, sola; el resto, a un clic
 

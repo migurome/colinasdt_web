@@ -11,6 +11,7 @@
     <a href="#emblema" data-v="emblema">Materia para un emblema</a>
     <a href="#falta" data-v="falta">Lo que falta</a>
     <a href="#versiones" data-v="versiones" id="idx-versiones">Versiones</a>
+    <a href="#creditos" data-v="creditos">Fuentes y créditos</a>
   </nav>
 </div>
 
@@ -31,10 +32,6 @@
   <p class="lema">Bajo un pueblo que nunca tuvo escudo hay un monasterio del siglo X que el
     pueblo ha olvidado. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
 
-  <!-- el número lo pone el JS desde VERSION: una sola fuente de verdad -->
-  <a class="version" href="#versiones" id="sello-version" hidden>
-    <span class="n"></span><span class="t">Ver cambios</span>
-  </a>
 </header>
 
 <section class="wrap lede" aria-label="Presentación">
@@ -45,24 +42,6 @@
     <p>Y dos mil años antes que eso, al otro lado del pueblo, alguien cavaba silos en la Edad del Cobre, justo debajo de donde hoy están las bodegas.</p>
     <p>Esta web reúne lo que el proyecto ha podido comprobar hasta septiembre de 2026. No todo está al mismo nivel de prueba, y la línea temporal lo dice en cada entrada.</p>
   </div>
-  <aside class="leyenda" aria-labelledby="ley-t">
-    <span class="caps" id="ley-t">Cómo leer cada dato</span>
-    <dl>
-      <div class="grupo">
-        <span class="caps">Documentado</span>
-        <dt><span class="mk mk-visto"></span>Fuente vista</dt><dd>Tenemos el documento, en imagen o en texto íntegro.</dd>
-        <dt><span class="mk mk-sinleer"></span>Catalogada, sin leer</dt><dd>Signatura verificada en el archivo; falta pedir el documento.</dd>
-        <dt><span class="mk mk-cotejar"></span>Por cotejar</dt><dd>Lo da una edición o la bibliografía; aún no lo hemos visto.</dd>
-        <dt><span class="mk mk-sinref"></span>Sin localizar</dt><dd>Citado, pero sin referencia que permita comprobarlo.</dd>
-      </div>
-      <div class="grupo">
-        <span class="caps">Interpretado · propuesto · contexto</span>
-        <dt><span class="mk mk-interp"></span>Interpretación</dt><dd>Lectura nuestra o de los autores sobre lo documentado.</dd>
-        <dt><span class="mk mk-propuesto"></span>Propuesta</dt><dd>Lo que plantea el proyecto. No es historia.</dd>
-        <dt><span class="mk mk-contexto"></span>Contexto</dt><dd>Hechos del entorno que no son del pueblo.</dd>
-      </div>
-    </dl>
-  </aside>
 </section>
 
 <section class="wrap sec" id="linea" aria-labelledby="linea-t">
@@ -259,7 +238,8 @@
 </section>
 </div>
 </main>
-
+<div class="vista vista-sec" id="v-creditos">
+  <p class="wrap volver"><a href="#linea">← Volver a la línea temporal</a></p>
 <footer class="wrap pie">
   <span class="caps">Fuentes y créditos</span>
   <p>Archivo General de Simancas, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas Generales, libro 654, ff. 368-407 (PARES, Ministerio de Cultura). Texto según la edición de P. A. de Diego González y F. Manzano Ledesma, Centro de Estudios Benaventanos «Ledo del Pozo», pp. 238-243.</p>
@@ -271,5 +251,6 @@
   <p>Estado de la investigación a 22 de septiembre de 2026. Inventario completo, con signaturas y cautelas, en <span class="mono">docs/03-archivos/inventario-documental.md</span>. Procedencia de cada reproducción en <span class="mono">CREDITOS.md</span>.</p>
   <p id="pie-version">—</p>
 </footer>
+</div>
 
 </div>

@@ -238,10 +238,19 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.2';
+const VERSION = '0.3';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.3', f: '25 de septiembre de 2026', t: 'En el teléfono, la portada es la primera lámina',
+    c: [
+      '<b>El feed ocupa ya la pantalla entera en el teléfono, y empieza en la portada.</b> La primera lámina es el nombre del pueblo con los filtros de prueba debajo; deslizando al lado está la presentación. En cuanto se desliza hacia arriba, la pantalla es sólo la línea.',
+      '<b>El menú queda en tres rayas</b>, sin la palabra «Secciones». El texto sigue ahí para quien use lector de pantalla.',
+      '<b>Fuera el botón de versión</b> de la portada. El registro de cambios sigue en el menú.',
+      '<b>Fuera la leyenda</b> de cómo leer las marcas, de momento. Los marcadores siguen en cada entrada, con su nombre escrito al lado.',
+      '<b>Las fuentes y créditos pasan al menú</b> como una sección más: con el feed a pantalla completa, al pie ya no se llegaba desde el teléfono.'
+    ],
+    p: 'Sigue pendiente lo mismo: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.2', f: '25 de septiembre de 2026', t: 'La línea temporal, sola; el resto, a un clic',
     c: [
       '<b>La página principal es ahora sólo la línea temporal.</b> El término, la gente, la materia para el emblema, lo que falta y este mismo registro <b>ya no se recorren al bajar</b>: hay que pedirlos.',

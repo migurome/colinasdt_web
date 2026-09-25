@@ -6,6 +6,19 @@
   const NOTA_T = { catastro: 'Respuesta 28.ª' };
   const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
+  /* Estado compartido: en teléfono y en la vista de la línea, el feed
+     ocupa la pantalla entera y el cuerpo no debe desplazarse detrás. */
+  const Estado = { movil: false, vista: 'linea' };
+  function ajustarCuerpo() {
+    document.body.classList.toggle('feed-fijo', Estado.movil && Estado.vista === 'linea');
+  }
+  /* Dónde vivía cada pieza antes de mudarse al feed */
+  const Orig = {};
+  ['.portada', '#filtros', '.lede-txt'].forEach((sel) => {
+    const el = document.querySelector(sel);
+    if (el) Orig[sel] = { el: el, p: el.parentNode, n: el.nextSibling };
+  });
+
   const reales = EVENTOS.filter((e) => !e.sil);
   const eraDe = (id) => ERAS.find((x) => x.id === id);
 
@@ -227,6 +240,20 @@
           <div class="puntos" aria-hidden="true">${pts}</div>
           <div class="carrusel" tabindex="0" aria-label="${esc(e.y + ': ' + e.t)}">${lams}</div></article>`;
       });
+      h = `<article class="post post-portada" data-i="-1">
+          <div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span></div>
+          <div class="carrusel" tabindex="0" aria-label="Portada y presentación">
+            <section class="lam l-cubierta">
+              <div class="lam-top"><span class="era-n">Historia · territorio · identidad</span></div>
+              <div class="lam-cuerpo" id="hueco-portada"></div>
+              <div class="lam-pie"><span class="t">Desliza al lado para la presentación</span></div>
+            </section>
+            <section class="lam l-presenta">
+              <div class="lam-top"><span class="era-n">Presentación</span></div>
+              <div class="lam-cuerpo arriba" id="hueco-lede"></div>
+              <div class="lam-pie"><span class="t">Desliza hacia arriba para empezar la línea</span></div>
+            </section>
+          </div></article>` + h;
       feed.innerHTML = h;
       this.posts = Array.prototype.slice.call(feed.querySelectorAll('.post'));
       this.visibles = this.posts.slice();
@@ -265,6 +292,28 @@
       this.filtrar(filtroActual);
       this.pinta(0);
     },
+    /* La portada y los filtros se mudan al feed, y vuelven en pantalla grande */
+    adjuntar() {
+      if (!this.montado || this.adjuntado) return;
+      const cub = document.getElementById('hueco-portada');
+      const pre = document.getElementById('hueco-lede');
+      if (Orig['.portada']) cub.appendChild(Orig['.portada'].el);
+      if (Orig['#filtros']) cub.appendChild(Orig['#filtros'].el);
+      if (Orig['.lede-txt']) pre.appendChild(Orig['.lede-txt'].el);
+      const lede = document.querySelector('.lede');
+      if (lede) lede.classList.add('vacia');
+      this.adjuntado = true;
+    },
+    soltar() {
+      if (!this.adjuntado) return;
+      ['.portada', '#filtros', '.lede-txt'].forEach((sel) => {
+        const o = Orig[sel];
+        if (o) o.p.insertBefore(o.el, o.n);
+      });
+      const lede = document.querySelector('.lede');
+      if (lede) lede.classList.remove('vacia');
+      this.adjuntado = false;
+    },
     /* El raíl: la misma escala comprimida, puesta en vertical */
     rail() {
       const rail = $('#rail'), svg = $('#rail-svg');
@@ -297,6 +346,7 @@
         const vy = ((clientY - r.top) / r.height) * RH;
         let mejor = 0, dist = Infinity;
         this.visibles.forEach((p, i) => {
+          if (+p.dataset.i < 0) return;
           const e = EVENTOS[+p.dataset.i];
           if (e.sil) return;
           const d = Math.abs(this.rY(e.s) - vy);
@@ -335,11 +385,23 @@
       this.actual = idx;
       const p = this.visibles[idx];
       if (!p) return;
-      const e = EVENTOS[+p.dataset.i];
+      const i = +p.dataset.i;
+      if (i < 0) {                       /* la portada: el raíl aún no ha empezado */
+        this.pulgar.setAttribute('cy', String(this.RP));
+        this.hecho.setAttribute('d', `M14 ${this.RP} V${this.RP}`);
+        this.lbl.textContent = 'Portada';
+        this.lbl.style.top = (this.RP / this.RH * this.railEl.clientHeight) + 'px';
+        this.railEl.setAttribute('aria-valuenow', '1');
+        this.railEl.setAttribute('aria-valuemax', String(this.visibles.length));
+        this.railEl.setAttribute('aria-valuetext', 'Portada');
+        return;
+      }
+      const e = EVENTOS[i];
       let yy;
       if (e.sil) {
         const prev = this.visibles[Math.max(0, idx - 1)];
-        const ep = prev ? EVENTOS[+prev.dataset.i] : null;
+        const pi = prev ? +prev.dataset.i : -1;
+        const ep = pi >= 0 ? EVENTOS[pi] : null;
         yy = (ep && !ep.sil) ? this.rY(ep.s) : this.RP;
       } else {
         yy = this.rY(e.s);
@@ -354,7 +416,10 @@
     },
     filtrar(k) {
       if (!this.montado) return;
-      this.posts.forEach((p) => { p.hidden = !(k === 'todo' || p.dataset.n === k); });
+      this.posts.forEach((p) => {
+        const portada = p.classList.contains('post-portada');
+        p.hidden = !(portada || k === 'todo' || p.dataset.n === k);
+      });
       this.visibles = this.posts.filter((p) => !p.hidden);
       $('#rail-svg').querySelectorAll('.tk').forEach((g) => {
         g.classList.toggle('off', !(k === 'todo' || g.dataset.n === k));
@@ -374,16 +439,20 @@
       feed: 'Una entrada por pantalla: desliza hacia arriba para pasar a la siguiente y hacia el lado para ver la cita, la imagen, la cautela y la fuente. La línea del tiempo de la derecha es la barra de desplazamiento: arrástrala.'
     };
     function ajustar() {
+      Estado.movil = mq.matches;
       if (mq.matches) {
         sec.classList.add('feed-on');
         p.textContent = TXT.feed;
         Feed.montar();
+        Feed.adjuntar();
       } else {
+        Feed.soltar();
         sec.classList.remove('feed-on');
         p.textContent = TXT.doc;
         const m = document.getElementById('menu');
         if (m) m.classList.remove('oculto');
       }
+      ajustarCuerpo();
     }
     mq.addEventListener ? mq.addEventListener('change', ajustar) : mq.addListener(ajustar);
     ajustar();
@@ -494,18 +563,13 @@
   /* ═══════════ 7. Versiones ═══════════ */
   (function versiones() {
     const sec = $('#versiones'), lista = $('#lista-versiones');
-    const sello = $('#sello-version'), enlace = $('#idx-versiones');
+    const enlace = $('#idx-versiones');
     const pie = $('#pie-version');
 
-    sello.querySelector('.n').textContent = 'v' + VERSION;
-    sello.hidden = false;
     pie.innerHTML = `Versión <b>${VERSION}</b> de esta web · ${VERSIONES[0] ? VERSIONES[0].f : ''}`;
 
     if (typeof VERSIONES_VISIBLE !== 'undefined' && !VERSIONES_VISIBLE) {
-      sec.hidden = true;
-      enlace.hidden = true;
-      sello.removeAttribute('href');
-      sello.querySelector('.t').textContent = 'Versión';
+      if (enlace) enlace.remove();   /* así la vista deja de existir para el menú */
       return;
     }
 
@@ -549,6 +613,8 @@
       });
       abrir(false);
       menu.classList.remove('oculto');
+      Estado.vista = v;
+      ajustarCuerpo();
       document.title = v === 'linea'
         ? 'Colinas de Trasmonte'
         : (enlaces.filter((a) => a.dataset.v === v)[0].textContent + ' · Colinas de Trasmonte');
