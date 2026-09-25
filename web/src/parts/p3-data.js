@@ -41,8 +41,8 @@ const EVENTOS = [
 
   { id: 'd962', era: 2, y: '962', d: '1 de marzo', s: 962, n: 'cotejar',
     t: 'Una viña en «villa Kastro Ferronio»',
-    p: 'Rauper y su mujer Mansuara donan a Nuño Sarracíniz y a su mujer Gudigeva una viña que habían comprado a Donelo, «cerca del riachuelo Almucera». Linda con la viña de Iahia, con el término de Amor y con el de Fortes, y mide una aranzada. Es la mención más antigua del lugar, y todavía no hay monasterio: es un trato entre particulares.',
-    nota: 'Que la viña esté junto al Almucera es lo que descarta Villaferrueña, que está junto al Eria. La confusión venía de ahí.',
+    p: 'Un matrimonio, Rauper y Mansuara, le pasa a otro una viña que ellos mismos habían comprado. Mide una aranzada y está cerca del riachuelo Almucera. Es la primera vez que este sitio aparece escrito, y aparece <b>sin monasterio, sin señor y sin iglesia</b>: un trato entre vecinos por un pedazo de tierra.',
+    nota: 'Que la viña esté junto al Almucera es lo que descarta Villaferrueña, que está junto al Eria. La confusión venía de ahí. Los compradores son Nuño Sarracíniz y su mujer Gudigeva; se la habían comprado a Donelo, y linda con la viña de Iahia y con los términos de Amor y de Fortes.',
     ilu: { src: 'img/prov/d962.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -50,7 +50,7 @@ const EVENTOS = [
 
   { id: 'd963', era: 2, y: '963', s: 963, n: 'cotejar',
     t: 'Adrico y Faquilo donan cuanto tienen en Castroferrol',
-    p: 'Con sus hijos, donan a la catedral de Astorga toda su heredad en Castroferrol: la mitad en vida, el resto al morir.',
+    p: 'Adrico y Faquilo, con sus hijos, le dan a la catedral de Astorga todo lo que tienen aquí. La mitad ahora; el resto, cuando se mueran. Un año después de la viña, <b>la Iglesia entra en Castroferrol</b>: ya no es sólo cosa de vecinos.',
     nota: 'De este diploma no se conserva el texto, sólo un breve extracto en el Tumbo Negro. Sigue sin edición crítica.',
     ilu: { src: 'img/prov/d963.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
@@ -59,7 +59,7 @@ const EVENTOS = [
 
   { id: 'bermudo', era: 2, y: '985–999', s: 992, n: 'cotejar',
     t: 'Nace un monasterio dúplice',
-    p: 'Monjes y monjas bajo un solo gobierno, en el reinado de Bermudo II. La familia fundadora había recibido la villa del rey a cambio de unas tierras que le confiscó en el Bierzo.',
+    p: 'Monjes y monjas en la misma casa y bajo el mismo gobierno, en el reinado de Bermudo II. La villa no la compró la familia fundadora: se la dio el rey, <b>a cambio de unas tierras que antes les había confiscado</b> en el Bierzo. El monasterio nace de una compensación.',
     ilu: { src: 'img/prov/bermudo.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -75,14 +75,14 @@ const EVENTOS = [
       cap: 'La comunidad de hermanos y hermanas ante la iglesia de San Salvador, según lo que dice el diploma de 1006 y nada más. Ni el rostro, ni los hábitos, ni la forma de la iglesia constan en fuente alguna.',
       gen: 'Generada con ChatGPT el 25-IX-2026' },
     tr: 'portada',
-    p: 'Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira» y «fundado bajo la ciudad de Astorga». El latín dice dos cosas seguidas: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta. Entre lo donado, junto a molinos y pesqueras, hay linares.',
+    p: 'Oma Iuve entrega al monasterio cuanto tiene, con su hijo Veila y la mujer de éste, Gontrode. Entre lo donado, además de molinos y pesqueras, hay <b>linares</b>. El latín dice luego dos cosas seguidas, y las dos importan: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo una abadesa, Bendicta. <b>Una mujer al frente de una casa de hombres y mujeres</b>, junto al Tera, en el año 1006.',
     nota: 'La fecha es una enmienda, no una lectura. La copia de 1613 trae una era que daría 976, imposible con el rey y el obispo que el propio texto nombra; se adopta 1006, que es la que da un extracto de la Biblioteca Nacional.',
     f: 'GONZÁLEZ RODRÍGUEZ, «Castroferrol, un enclave monástico altomedieval en el valle del Tera», Brigecio 10 (2000), apéndice documental · AHN, ms. 1195B, f. 688r-v · ed. Cavero Domínguez y Martín López, Col. doc. de la catedral de Astorga, I, doc. 200' },
 
   { id: 'd1015', era: 2, y: '1015', d: '22 de enero', s: 1015, n: 'cotejar',
     t: 'Nueve nombres, y la fecha exacta',
     q: '«Frater Joanis, Veila, Absub, Evite Monde, Muza, Gundisaluo, Hauiue, Nazarus, Amorum»',
-    p: 'Son los testigos que el escriba separa de los demás con cuatro palabras: «id sit habitantes de Castroferronio», esto es, habitantes de Castroferrol. Nueve personas, en este término, el 22 de enero de 1015. Y la mitad de esos nombres son árabes, conviviendo con otros godos. El documento por el que aparecen es la donación que hacen María y sus hijos Galindo y Juan Ciprianiz del lugar «edificado en honor de San Miguel Arcángel y Santa María siempre virgen», en la villa «por donde discurre el riachuelo Tera y de la otra parte el Almucera», con su iglesia, viñas, prados, aguas y cauces de molino, y un ajuar de cruz, caja, corona, cáliz, patena, dalmáticas y libros.',
+    p: 'El escriba está anotando los testigos y, en mitad de la lista, separa a nueve con cuatro palabras: «id sit habitantes de Castroferronio». Son de aquí. Nueve personas con nombre, en este término, el 22 de enero de 1015. Y la mitad de esos nombres son árabes, escritos en la misma línea que otros godos. Aparecen <b>de refilón</b>: nadie los estaba contando, iban de testigos en la donación que hacen María y sus hijos de un lugar «edificado en honor de San Miguel Arcángel y Santa María siempre virgen», con su iglesia, sus viñas y un ajuar de cruz, cáliz y libros.',
     nota: 'Hasta hoy, el vecino más antiguo del término que conocíamos por su nombre era Martín Alonso, en 1551. Estos son quinientos treinta y seis años anteriores. Pero son habitantes de Castroferrol, el despoblado, no de Colinas: el pueblo actual todavía no existe en las fuentes. Y la fórmula «de la otra parte» describe una franja entre dos cursos de agua, no una confluencia: los dos no se juntan hasta siete kilómetros aguas abajo.',
     ilu: { src: 'img/prov/d1015.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
@@ -91,7 +91,7 @@ const EVENTOS = [
 
   { id: 'd1060', era: 2, y: '1060', s: 1060, n: 'cotejar',
     t: 'Castroferrol en las particiones de Diego Muñoz',
-    p: 'El lugar figura entre las villas y heredades que caen en manos de Diego Muñoz al dividirse las de Osorio Fernández y doña Visclávara.',
+    p: 'Se reparten los bienes de Osorio Fernández y de su mujer, doña Visclávara, y en la lista, entre villas y tierras, está Castroferrol. Le toca a Diego Muñoz. Nadie pregunta a los que viven allí: <b>el lugar cambia de dueño como cambia de mano un prado</b>.',
     ilu: { src: 'img/prov/d1060.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -100,7 +100,7 @@ const EVENTOS = [
   { id: 'd1073', era: 2, y: '1073', s: 1073, n: 'sinleer',
     t: 'Colinas aparece por su nombre',
     q: '«uilla que dicunt Colinas, in riba de Teira»',
-    p: 'La villa que llaman Colinas, en la ribera del Tera. Es la <b>mención más antigua del pueblo por su nombre</b> que el proyecto conoce: cuatrocientos cincuenta y tres años antes del Censo de Pecheros, y cuatrocientos setenta y ocho antes de Martín Alonso. Hasta aquí las fuentes sólo habían nombrado Castroferrol; a partir de aquí los dos nombres conviven.',
+    p: 'La villa que llaman Colinas, en la ribera del Tera. Es <b>la primera vez que el pueblo aparece escrito con su nombre</b>. Hasta esta línea las fuentes sólo habían dicho Castroferrol; a partir de aquí los dos nombres conviven, y el que va a durar es éste. Cuatrocientos setenta y ocho años antes que Martín Alonso, que era el primer Colinas que este proyecto conocía.',
     nota: 'La cita viene de un artículo, no del facsímil: falta ir al diploma 1186 de la colección de la catedral de León y verlo con los propios ojos. Y el documento escribe <b>«Colinas» a secas</b>: el «de Trasmonte» no está ahí.',
     ilu: { src: 'img/prov/d1073.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
@@ -110,8 +110,8 @@ const EVENTOS = [
   { id: 'd1129', era: 2, y: '1129', s: 1129, n: 'cotejar',
     t: 'Una vereda que baja de Castroferrol',
     q: '«per illam veredam quae discurrit de Castro Ferronio, et ad Carvalio… et tornat inde per ipsam veredam quae discurrit ad Villa Aceif, et deinde per terminum de Axarifes»',
-    p: 'Castro Ferronnio es uno de los mojones del coto del monasterio de Santa Marta de Tera, que Alfonso VII confirma «según los fijó su bisabuelo Fernando I». Es un deslinde, y por tanto geografía: nombra la vereda que baja del enclave, un carbajal, una carral, San Pelayo de Armentario Fláiniz, la carral de Comdesa, Villa Aceif y el término de Axarifes.',
-    nota: 'Una «vereda» es una vía pecuaria. Ésta sale de Castroferrol en 1129, y es el testimonio más antiguo que tiene el proyecto de un camino de ganado en el término. Los nombres de los mojones vuelven a sonar a árabe: Aceif, Axarifes.',
+    p: 'Alfonso VII confirma el coto del monasterio de Santa Marta de Tera «según los fijó su bisabuelo Fernando I», y para eso hay que decir por dónde va la raya. Castro Ferronnio es uno de los mojones. Un deslinde es geografía, y aquí la geografía habla: la raya sigue <b>una vereda que baja del enclave</b>. Una vereda es un camino de ganado, y éste es el más antiguo que el proyecto tiene en este término.',
+    nota: 'Los demás mojones del deslinde son un carbajal, una carral, San Pelayo de Armentario Fláiniz, la carral de Comdesa, Villa Aceif y el término de Axarifes. Dos de esos nombres vuelven a sonar a árabe: <b>Aceif y Axarifes</b>.',
     ilu: { src: 'img/prov/d1129.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -119,7 +119,7 @@ const EVENTOS = [
 
   { id: 'd1170', era: 2, y: '1170', s: 1170, n: 'cotejar',
     t: 'Fernando II revalida esos límites',
-    p: 'Un privilegio de confirmación repite el coto. Para entonces el monasterio ya se ha incorporado a los bienes de la mitra de Astorga, y eso debió precipitar su final como comunidad.',
+    p: 'Cuarenta y un años después, otro rey vuelve a firmar la misma raya y el coto no cambia. Lo que ha cambiado es de quién es el monasterio: ya ha pasado a los bienes de la mitra de Astorga. <b>Deja de ser una casa con vida propia y empieza a ser una renta</b>, y eso es, probablemente, el principio de su final.',
     ilu: { src: 'img/prov/d1170.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -127,13 +127,13 @@ const EVENTOS = [
 
   { id: 'sala', era: 2, y: 'ss. XI–XIII', s: 1175, n: 'visto',
     t: 'La sala que ardió',
-    p: 'Una estancia de 5 × 8 metros, de mampostería en seco con contrafuertes y suelo de arcilla roja, cubierta de teja curva sobre muros de tapial. La sella un nivel de incendio de cinco centímetros de carbones. La cerámica de retícula incisa la fecha en el siglo XI.',
+    p: '<b>Cinco centímetros de carbones</b> sellan el suelo. Lo que había debajo era una sala de cinco metros por ocho, con los muros de piedra colocada en seco, contrafuertes, el piso de arcilla roja y encima teja curva sobre tapial. Ardió, y nadie volvió a levantarla. La cerámica de retícula incisa que quedó dentro la fecha en el siglo XI.',
     nota: 'Los excavadores sólo dicen que «pudiera estar relacionada con un tipo de edificación religiosa, quizás monasterio o convento». Que sea Castroferrol lo propone la bibliografía; la excavación no lo prueba.',
     img: { src: 'img/excavacion-fig1-planta.jpg', w: 900, h: 1076, alt: 'Planta arqueológica de la estructura rectangular con sus muros y contrafuertes.', cap: 'Planta de la estructura rectangular, unidades A y B (fig. 1).' },
     f: 'Martín Carbajo et al., Anuario 1993, pp. 37-48' },
 
   { sil: true, era: 2, y: '1170 → 1526',
-    p: 'Tres siglos y medio sin un solo documento localizado. No sabemos cuándo se abandonó el monasterio ni cómo pasó Colinas de ser una villa nombrada de paso en 1073 a un lugar del señorío de Benavente.' },
+    p: 'Tres siglos y medio sin un solo documento localizado. Entra una villa nombrada de paso en 1073 y sale un lugar del señorío de Benavente. Lo que pasó en medio —cuándo se abandonó el monasterio, cuándo se vació Castroferrol— no lo sabemos.' },
 
   { id: 'pecheros1526', era: 3, y: '1526', s: 1526, n: 'visto',
     t: 'Veinticinco vecinos pecheros',
@@ -583,7 +583,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.14';
+const VERSION = '0.15';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -591,6 +591,15 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.15', f: '25 de septiembre de 2026', t: 'La voz de la línea',
+    c: [
+      '<b>Las once entradas de Castroferrol, reescritas.</b> Primera era de las cinco. El problema no eran las frases largas —la media estaba en 13,8 palabras, que es prosa corta— sino <b>cuántos datos metía cada frase</b>: ocho o diez, y ninguna consecuencia.',
+      'La regla es una idea por frase, empezar por la persona y no por la institución, y <b>decir siempre el «y eso significa»</b>. Los datos que salen del cuerpo no se tiran: bajan a la cautela.',
+      '⚠️ <b>Novelar no es inventar.</b> Todo lo ganado sale del ritmo, del orden y de la consecuencia. No entra un solo dato que no estuviera ya escrito.',
+      'Medido igual que antes: la carga de datos por frase baja de <b>4,9 a 2,4</b>, y la frase no se alarga —de 13,4 a 13,2 palabras—. No se ha simplificado el vocabulario; se ha bajado lo que se le pide al lector por frase.',
+      'La voz queda escrita, con sus reglas y sus referencias, para que las otras cuatro eras salgan iguales.'
+    ],
+    p: 'Quedan por reescribir 49 entradas: Antes del nombre, el conde de Benavente, el ayuntamiento y la pedanía.' },
   { v: '0.14', f: '25 de septiembre de 2026', t: 'Las fuentes, a su propia página',
     c: [
       '<b>La firma de archivo sale de la lámina.</b> Ocupaba media pantalla en cada entrada del teléfono. Ahora vive entera en <b>«Las fuentes»</b>, una página propia del menú, agrupada por eras: sesenta entradas, sesenta firmas, ninguna perdida por el camino.',

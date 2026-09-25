@@ -13,6 +13,32 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.15 — 25 de septiembre de 2026
+### La voz de la línea
+
+- **Las once entradas de Castroferrol (962-1170), reescritas.** Primera de las cinco eras.
+- **El diagnóstico, medido:** el problema no eran las frases largas. La media estaba en **13,8
+  palabras por frase**, que es prosa corta, y sólo 10 de 215 pasaban de treinta. Lo que sobraba
+  era **densidad de datos dentro de cada frase**: 1986 metía 40 cifras en cinco frases; 1694,
+  treinta nombres propios en siete. Ocho o diez datos por frase, y **ninguna consecuencia**.
+- **La voz elegida es la que el propio proyecto ya tenía en sus mejores entradas.** Una idea por
+  frase; empezar por la persona o el gesto, no por la institución; decir siempre el «y eso
+  significa»; las listas de nombres, a la cautela; la duda se narra.
+- ⚠️ **Novelar no es inventar.** Todo lo que se gana sale del ritmo, del orden y de la
+  consecuencia. **No entra un solo dato que no estuviera ya escrito**, y el que sale del cuerpo
+  baja a la cautela en vez de perderse.
+- **El resultado, medido igual que el diagnóstico**: la carga de datos por frase baja de **4,9 a
+  2,4**, menos de la mitad, y la frase no se alarga —de 13,4 a 13,2 palabras—. No se ha
+  simplificado el vocabulario: se ha bajado lo que se le pide al lector por frase.
+- La voz queda escrita en [`docs/07-web/voz.md`](docs/07-web/voz.md), con las seis reglas, las
+  referencias —Ginzburg, Corbin, Zemon Davis, Llamazares, Carnicer— y el estado por eras. La
+  medición se repite con [`web/medir-prosa.js`](web/medir-prosa.js).
+
+> **Quedan 49 entradas**: Antes del nombre (3), el conde de Benavente (20), el ayuntamiento (16) y
+> la pedanía (11).
+
+---
+
 ## v0.14 — 25 de septiembre de 2026
 ### Las fuentes, a su propia página
 
