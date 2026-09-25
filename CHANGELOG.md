@@ -13,6 +13,22 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.23 — 25 de septiembre de 2026
+### Lámina limpia para las trece
+
+- **La lámina limpia deja de ser cosa de los retratos.** La tienen ahora las **trece**
+  entradas con imagen de verdad —seis documentos, seis retratos y la ilustración de 1006—,
+  entre ellas **1752**, que era la que faltaba.
+- Las **47 provisionales no la llevan**: una trama abstracta a pantalla completa no es nada
+  que mirar.
+- ⚠️ **El documento se ve entero; la pintura, a sangre.** Un facsímil recortado deja de
+  poder leerse, y leerlo es para lo que está. Los retratos y la ilustración siguen llenando
+  la lámina de borde a borde.
+- En **1752**, **1876** y el **III milenio** la imagen no se veía completa en ninguna parte:
+  su tratamiento es de portada o viñeta, que recorta. Ahora sí.
+
+---
+
 ## v0.22 — 25 de septiembre de 2026
 ### Quién pintó al conde de Aranda
 

@@ -601,7 +601,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.22';
+const VERSION = '0.23';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -609,6 +609,13 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.23', f: '25 de septiembre de 2026', t: 'Lámina limpia para las trece',
+    c: [
+      '<b>La lámina limpia deja de ser cosa de los retratos.</b> La tienen ahora las trece entradas con imagen de verdad: seis documentos, seis retratos y la ilustración de 1006. Entre ellas, <b>1752</b>, que es la que faltaba.',
+      'Las <b>47 provisionales no la llevan</b>: una trama abstracta a pantalla completa no es nada que mirar.',
+      '⚠️ <b>El documento se ve entero; la pintura, a sangre.</b> Un facsímil recortado deja de poder leerse, y para eso está ahí. Los retratos y la ilustración siguen llenando la lámina de borde a borde, como se pidió.'
+    ],
+    p: 'En 1752 la página del Catastro se ve ahora completa y grande, que es lo que no pasaba en ningún sitio.' },
   { v: '0.22', f: '25 de septiembre de 2026', t: 'Quién pintó al conde de Aranda',
     c: [
       '⚠️ <b>El retrato de 1768 no es del natural</b>, y ahora lo dice. Es una <b>copia decimonónica</b>, de hacia 1878, que Francisco Jover y Casanova hizo del retrato de Joaquín Inza. Museo del Prado, P003445.',

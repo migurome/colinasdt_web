@@ -418,16 +418,21 @@
             cuerpo.appendChild(el);
           }
         });
-        /* Si la entrada trae retrato, una lamina mas al final: la cara sola,
-           en diagonal y sin texto. Va despues del reparto para que quede la
-           ultima, detras de las continuaciones. */
-        if (e.img && e.img.ctx) {
+        /* Una lamina mas al final: la imagen sola, sin texto. La llevan las
+           entradas con imagen de verdad —documento, retrato o ilustracion—;
+           las provisionales no, que no hay nada que mirar. Va despues del
+           reparto para quedar la ultima, detras de las continuaciones. */
+        const solo = (e.ilu && !e.ilu.prov) ? e.ilu : (e.img || null);
+        if (solo) {
           const r = document.createElement('section');
-          r.className = 'lam lam-ret';
-          r.setAttribute('aria-label', esc(e.img.alt));
+          /* un documento se ve entero: recortarlo lo deja de ser. Una pintura
+             o un dibujo llenan la lamina de borde a borde. */
+          const doc = !!(e.img && !e.img.ctx);
+          r.className = 'lam lam-ret' + (doc ? ' lam-ret-doc' : '');
+          r.setAttribute('aria-label', esc(solo.alt || ''));
           r.innerHTML =
-            '<div class="ret"><img src="' + e.img.src + '" width="' + e.img.w +
-            '" height="' + e.img.h + '" loading="lazy" alt=""></div>';
+            '<div class="ret"><img src="' + solo.src + '" width="' + solo.w +
+            '" height="' + solo.h + '" loading="lazy" alt=""></div>';
           car.appendChild(r);
         }
         const lams = car.querySelectorAll('.lam');

@@ -581,6 +581,10 @@ summary:hover{color:var(--almagre)}
   .lam-ret .ret{width:100%;height:100%}
   .lam-ret .ret img{display:block;width:100%;height:100%;object-fit:cover;
     object-position:50% 50%}
+  /* un facsímil se ve entero: llenar el borde lo recortaría, y un documento
+     recortado deja de poder leerse */
+  .lam-ret-doc{padding:clamp(10px,3vw,20px)}
+  .lam-ret-doc .ret img{object-fit:contain}
 
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
@@ -1485,7 +1489,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.22';
+const VERSION = '0.23';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1493,6 +1497,13 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.23', f: '25 de septiembre de 2026', t: 'Lámina limpia para las trece',
+    c: [
+      '<b>La lámina limpia deja de ser cosa de los retratos.</b> La tienen ahora las trece entradas con imagen de verdad: seis documentos, seis retratos y la ilustración de 1006. Entre ellas, <b>1752</b>, que es la que faltaba.',
+      'Las <b>47 provisionales no la llevan</b>: una trama abstracta a pantalla completa no es nada que mirar.',
+      '⚠️ <b>El documento se ve entero; la pintura, a sangre.</b> Un facsímil recortado deja de poder leerse, y para eso está ahí. Los retratos y la ilustración siguen llenando la lámina de borde a borde, como se pidió.'
+    ],
+    p: 'En 1752 la página del Catastro se ve ahora completa y grande, que es lo que no pasaba en ningún sitio.' },
   { v: '0.22', f: '25 de septiembre de 2026', t: 'Quién pintó al conde de Aranda',
     c: [
       '⚠️ <b>El retrato de 1768 no es del natural</b>, y ahora lo dice. Es una <b>copia decimonónica</b>, de hacia 1878, que Francisco Jover y Casanova hizo del retrato de Joaquín Inza. Museo del Prado, P003445.',
@@ -2094,16 +2105,21 @@ const VERSIONES = [
             cuerpo.appendChild(el);
           }
         });
-        /* Si la entrada trae retrato, una lamina mas al final: la cara sola,
-           en diagonal y sin texto. Va despues del reparto para que quede la
-           ultima, detras de las continuaciones. */
-        if (e.img && e.img.ctx) {
+        /* Una lamina mas al final: la imagen sola, sin texto. La llevan las
+           entradas con imagen de verdad —documento, retrato o ilustracion—;
+           las provisionales no, que no hay nada que mirar. Va despues del
+           reparto para quedar la ultima, detras de las continuaciones. */
+        const solo = (e.ilu && !e.ilu.prov) ? e.ilu : (e.img || null);
+        if (solo) {
           const r = document.createElement('section');
-          r.className = 'lam lam-ret';
-          r.setAttribute('aria-label', esc(e.img.alt));
+          /* un documento se ve entero: recortarlo lo deja de ser. Una pintura
+             o un dibujo llenan la lamina de borde a borde. */
+          const doc = !!(e.img && !e.img.ctx);
+          r.className = 'lam lam-ret' + (doc ? ' lam-ret-doc' : '');
+          r.setAttribute('aria-label', esc(solo.alt || ''));
           r.innerHTML =
-            '<div class="ret"><img src="' + e.img.src + '" width="' + e.img.w +
-            '" height="' + e.img.h + '" loading="lazy" alt=""></div>';
+            '<div class="ret"><img src="' + solo.src + '" width="' + solo.w +
+            '" height="' + solo.h + '" loading="lazy" alt=""></div>';
           car.appendChild(r);
         }
         const lams = car.querySelectorAll('.lam');
