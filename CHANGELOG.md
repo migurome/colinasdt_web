@@ -13,6 +13,35 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.16 — 25 de septiembre de 2026
+### Seis caras para seis documentos
+
+- **Entran seis retratos de contexto**, traídos de Wikimedia Commons y **todos en dominio
+  público**: Fernando II en el Tumbo A de Santiago (1170), Carlos I por Tiziano (1526), Felipe III
+  por Velázquez (1613), Inocencio XII (1694), el conde de Aranda (1768) y el conde de Floridablanca
+  por Goya (1787).
+- ⚠️ **Un retrato no es una imagen de Colinas.** Es la cara de quien da nombre al documento —el
+  rey que firma, el ministro que ordena el censo— y ninguno de ellos supo nunca de este pueblo. La
+  lámina escribe **«Retrato de contexto»** en el pie siempre, automáticamente, y el pie de la
+  imagen lo repite en palabras.
+- Cada uno lleva **autor, obra, licencia y enlace a Commons**, escritos en la web y registrados en
+  [`docs/03-archivos/retratos-commons.tsv`](docs/03-archivos/retratos-commons.tsv). Es el punto 1
+  de «Lo que falta hacer» de [CREDITOS.md](CREDITOS.md), cumplido para estos seis.
+- **Tres se quedaron fuera, y consta por qué.** De Bermudo II y de Alfonso VII sólo hay imágenes
+  de 337 y 223 píxeles de ancho: a pantalla completa se verían pastosas, y una imagen mala es peor
+  que ninguna. De Pascual Madoz no apareció retrato utilizable en dominio público.
+- **Cecilia queda excluida a propósito.** Es de 1976, las fotografías tienen dueño y hay familia
+  viva. No se busca y no se buscará.
+- El descargador se guarda: [`web/gen-retratos.py`](web/gen-retratos.py). **Rechaza por su cuenta**
+  lo que no sea dominio público declarado, lo que baje de 700 píxeles de ancho y lo que sea un PDF
+  disfrazado de imagen —que fue el primer error: la miniatura de un PDF también acaba en `.jpg`, y
+  la primera pasada trajo la tapa de un catálogo en vez del conde de Aranda—.
+
+> **Quedan 47 entradas con imagen provisional.** El retrato sólo sirve donde hay un personaje con
+> cara conocida; el resto necesita ilustración propia.
+
+---
+
 ## v0.15 — 25 de septiembre de 2026
 ### La voz de la línea
 

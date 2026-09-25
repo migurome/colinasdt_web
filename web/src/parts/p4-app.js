@@ -57,7 +57,8 @@
       return;
     }
     let fig = e.img
-      ? `<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
+      ? `<figure class="ev-fig${e.img.ctx ? ' ev-ilu' : ''}"><img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${
+        e.img.ctx ? '<b>Retrato de contexto.</b> ' : ''}${e.img.cap}</figcaption></figure>`
       : '';
     /* la ilustracion nunca se presenta como el facsimil: el pie la separa */
     if (e.ilu) {
@@ -210,10 +211,12 @@
       if (e.q) B.push(`<p class="cita">${e.q}</p>`);
       const caja = this.trato(e) === 'caja';
       if (e.img) {
+        /* un retrato no es una imagen de Colinas: el pie lo dice siempre */
+        const ct = e.img.ctx ? '<b>Retrato de contexto.</b> ' : '';
         B.push(caja
-          ? `<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${
-            e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
-          : `<p class="fuente pie-ilu">${e.img.cap}</p>`);
+          ? `<figure class="ev-fig${e.img.ctx ? ' ev-ilu' : ''}"><img src="${e.img.src}" width="${e.img.w}" height="${
+            e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${ct}${e.img.cap}</figcaption></figure>`
+          : `<p class="fuente pie-ilu">${ct}${e.img.cap}</p>`);
       }
       if (e.ilu && !e.ilu.prov) {
         B.push(caja
@@ -271,7 +274,8 @@
       /* La firma de archivo salió de aqui: ocupaba media pantalla y está
          entera en «Las fuentes». Lo que no puede salir es la cautela de que
          un dibujo no es prueba: una lamina se comparte suelta. */
-      const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada') : '';
+      const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada')
+        : (e.img && e.img.ctx ? 'Retrato de contexto' : '');
       return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>${
         t ? `<span class="t">${t}</span>` : ''}</div>`;
     },

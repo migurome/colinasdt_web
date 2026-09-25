@@ -993,8 +993,11 @@ const EVENTOS = [
   { id: 'd1170', era: 2, y: '1170', s: 1170, n: 'cotejar',
     t: 'Fernando II revalida esos límites',
     p: 'Cuarenta y un años después, otro rey vuelve a firmar la misma raya y el coto no cambia. Lo que ha cambiado es de quién es el monasterio: ya ha pasado a los bienes de la mitra de Astorga. <b>Deja de ser una casa con vida propia y empieza a ser una renta</b>, y eso es, probablemente, el principio de su final.',
-    ilu: { src: 'img/prov/d1170.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/d1170.jpg', w: 875, h: 1024, ctx: true,
+      alt: 'Miniatura medieval de un rey a caballo con lanza y escudo, rotulada FERNANDVS REX, y debajo un león.',
+      cap: 'Fernando II de León en el Tumbo A de la catedral de Santiago, hacia 1129-1255. Es el rey que revalida el coto; no representa a Colinas. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'ed. Quintana Prieto, Santa Marta de Tera, Zamora, 1991, doc. XII · localizado por González Rodríguez, Brigecio 10 (2000), nota 26' },
 
@@ -1012,8 +1015,11 @@ const EVENTOS = [
     t: 'Veinticinco vecinos pecheros',
     p: 'La <b>medición de población más antigua</b> que el proyecto tiene de Colinas, sesenta y cinco años anterior al vecindario de 1591. El lugar aparece escrito «Colinas» entre los 274 asientos de la villa de Benavente y su tierra, que suman 3.681 pecheros: exactamente la cifra que el propio censo escribe en su fila de totales.',
     nota: 'En la misma lista hay dos lugares que nadie ha identificado: «Vezinas», con 21 vecinos, y «Vecilla del Chantre», con 16. La hipótesis de que esa Vecilla fuera la de Trasmonte queda <b>descartada</b>: en 1591 las dos aparecen por separado en la misma lista.',
-    ilu: { src: 'img/prov/pecheros1526.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/pecheros1526.jpg', w: 1400, h: 1661, ctx: true,
+      alt: 'Retrato ecuestre del emperador Carlos V con armadura y lanza, por Tiziano.',
+      cap: 'Carlos I por Tiziano, 1548. El censo de pecheros se levanta en su reinado y lleva su nombre; el cuadro no tiene nada que ver con Colinas. <span class="mono">Titian · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'INE, Censo de Pecheros. Carlos I, 1528, t. II, fol. 505 vº, inscr. 45' },
 
@@ -1046,8 +1052,11 @@ const EVENTOS = [
     t: 'Chirivoga copia el Tumbo Negro, y mueve el monasterio de sitio',
     p: 'Felipe III envía al deán de Salamanca a averiguar qué iglesias del obispado de Astorga son del Real Patronato. Su equipo copia el Tumbo Negro —hoy es el único testimonio de los diplomas de 1006 y 1015— y, al encontrarse con un monasterio de Castroferrol del que ya nadie se acordaba, se lo adjudica a Villaferrueña, un pueblo de nombre parecido y no lejos del Tera. Llegan a rebautizarlo «Castroferrueña». Su iglesia pasa al patronato real como heredera del monasterio.',
     nota: 'El autor del artículo de referencia lo llama «una tergiversación absolutamente interesada». No fue un descuido: era el modo de agregar la parroquia a las rentas de la Corona. El error siguió en pie en la bibliografía hasta el año 2000.',
-    ilu: { src: 'img/prov/c1613.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/c1613.jpg', w: 1400, h: 1349, ctx: true,
+      alt: 'Retrato de medio cuerpo de Felipe III con golilla y banda, por Velázquez.',
+      cap: 'Felipe III por Velázquez, 1634-35. Es el rey que envía al deán de Salamanca a averiguar qué iglesias son del Real Patronato. <span class="mono">Diego Velázquez · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'AHN, ms. 1195B · González Rodríguez, Brigecio 10 (2000)' },
 
@@ -1065,8 +1074,11 @@ const EVENTOS = [
     q: '«recoger las agravatorias que tiene libradas» y «reducir sus mandamientos a simple citación»',
     p: 'Desde Madrid, D. Federico Caccia [?] —Arzobispo de Milán, Nuncio y Colector General Apostólico bajo Inocencio XII— le da al provisor de Astorga <b>veinticuatro horas</b>, so pena de excomunión mayor <i>latae sententiae</i> y doscientos ducados, y manda que se le <b>denuncie por público excomulgado desde los púlpitos</b>. Y no manda sentenciar: <b>manda deshacer</b>, sin embargo de cualesquiera autos del Ordinario y del Metropolitano. Es el papel que se leerá en Colinas once días después.',
     nota: 'El tribunal, por dentro: firma «el Señor Auditor = Guido Antonius Torna[nus]» [?], ante el notario Baltasar Hernández Men[tero]º [?]. Y se deshace aquí una contradicción del propio proyecto: el papel no dice que haya un metropolitano <i>de</i> Salamanca, sino «el Metropolitano <b>que reside en</b> la Salamanca Vieja» —dónde se sienta el juez, no de qué sede es—. Qué sea «la Salamanca Vieja» sigue sin entenderse.',
-    ilu: { src: 'img/prov/nuncio1694.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/nuncio1694.jpg', w: 800, h: 1009, ctx: true,
+      alt: 'Retrato del papa Inocencio XII sentado, con muceta y solideo.',
+      cap: 'Inocencio XII, bajo cuyo pontificado actúa el Nuncio contra el provisor de Astorga. Ni él ni su tribunal supieron nunca de este pueblo. <span class="mono">Pietro Paolo Veglia · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 39, 41, 44 y 46-47 (copia de 1842)' },
 
@@ -1131,8 +1143,11 @@ const EVENTOS = [
     q: '«Parroquia de San Juan»',
     p: 'Sesenta y un varones y cincuenta y tres hembras, con desglose por edad y estado. Ningún hidalgo. Tres eclesiásticos y un administrador del Estanco del Tabaco. La relación la escribe y la firma <b>el propio párroco</b>, y al poner el nombre de su parroquia hace retroceder <b>setenta y nueve años</b> la advocación de San Juan, que hasta ahora se tenía por Madoz y su diccionario de 1847. En los veintiuno de los veintitrés lugares del valle que traen desglose, varones más hembras da exactamente el total que el escribano anota al margen: ni un descuadre.',
     nota: 'El documento dice <b>«San Juan» a secas</b>: el «Bautista» lo añade Madoz. Y San Juan es advocación corriente en el valle —tres parroquias de veintitrés—, así que el nombre no distingue nada: le quita al topónimo San Juan del término todo valor como indicio. La fecha de la relación, «en 1.º de noviembre de 1768», lleva [?].',
-    ilu: { src: 'img/prov/aranda1768.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 1865, ctx: true,
+      alt: 'Retrato del conde de Aranda con casaca azul bordada y banda roja, sobre una cartela con su título.',
+      cap: 'El conde de Aranda, presidente del Consejo de Castilla. El recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <span class="mono"> · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'INE, Censo de Aranda, obispado de Astorga, asiento 173, R.A.H. 01-181' },
 
@@ -1158,8 +1173,11 @@ const EVENTOS = [
     t: 'Ciento cincuenta y seis personas, y ningún hidalgo',
     p: 'El censo de Floridablanca cuenta el pueblo uno a uno: 156 habitantes, 90 varones y 66 mujeres. Los clasifica por oficio y deja dieciocho casillas vacías: ni escribano, ni abogado, ni comerciante, ni estudiante, ni sacristán, ni un solo hidalgo. Hay un cura, 16 labradores, 14 jornaleros, 6 artesanos y 8 criados. Casi tantos jornaleros como labradores: la mitad de los hombres con oficio no trabajaba tierra propia.',
     nota: 'El desglose por tramos de edad dentro de cada estado civil no es verosímil —ningún soltero entre 25 y 40 años y diecisiete entre 40 y 50—: el impreso se rellenó por bloques. Los totales, en cambio, cuadran los tres.',
-    ilu: { src: 'img/prov/floridablanca.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/floridablanca.jpg', w: 1400, h: 2229, ctx: true,
+      alt: 'Retrato de cuerpo entero del conde de Floridablanca, de pie y vestido de rojo, por Goya.',
+      cap: 'El conde de Floridablanca por Goya, 1783. El censo de 1787 se ordena bajo su gobierno; tampoco este cuadro tiene que ver con el pueblo. <span class="mono">Francisco Goya · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'Censo de 1787 «Floridablanca», ed. INE (1989), t. 3-B, prov. de Zamora, pueblo nº 103, pp. 2.858, 2.887 y 2.932' },
 
@@ -1456,7 +1474,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.15';
+const VERSION = '0.16';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1464,6 +1482,15 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.16', f: '25 de septiembre de 2026', t: 'Seis caras para seis documentos',
+    c: [
+      '<b>Entran seis retratos de contexto</b>, todos en dominio público y traídos de Wikimedia Commons: Fernando II en el Tumbo A (1170), Carlos I por Tiziano (1526), Felipe III por Velázquez (1613), Inocencio XII (1694), el conde de Aranda (1768) y Floridablanca por Goya (1787).',
+      '⚠️ <b>Un retrato no es una imagen de Colinas.</b> Es la cara de quien da nombre al documento, y el pie de la lámina escribe «Retrato de contexto» siempre, automáticamente. El de Goya no tiene nada que ver con este pueblo, y así queda dicho.',
+      'Cada uno lleva su <b>autor, su obra, su licencia y su enlace a Commons</b> escritos en el pie y registrados en una hoja aparte. Es el punto 1 de «Lo que falta hacer» de los créditos, cumplido al menos para estos seis.',
+      '<b>Tres se quedaron fuera, y se dice por qué</b>: Bermudo II y Alfonso VII sólo están en imágenes de 337 y 223 píxeles, que a pantalla completa se verían pastosas; de Pascual Madoz no se encontró retrato utilizable en dominio público.',
+      '<b>Cecilia queda excluida a propósito.</b> Es de 1976, las fotografías tienen dueño y hay familia viva. No se busca.'
+    ],
+    p: 'Quedan 47 entradas con imagen provisional. Los retratos sólo sirven donde hay un personaje con cara conocida; el resto necesita ilustración propia.' },
   { v: '0.15', f: '25 de septiembre de 2026', t: 'La voz de la línea',
     c: [
       '<b>Las once entradas de Castroferrol, reescritas.</b> Primera era de las cinco. El problema no eran las frases largas —la media estaba en 13,8 palabras, que es prosa corta— sino <b>cuántos datos metía cada frase</b>: ocho o diez, y ninguna consecuencia.',
@@ -1653,7 +1680,8 @@ const VERSIONES = [
       return;
     }
     let fig = e.img
-      ? `<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
+      ? `<figure class="ev-fig${e.img.ctx ? ' ev-ilu' : ''}"><img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${
+        e.img.ctx ? '<b>Retrato de contexto.</b> ' : ''}${e.img.cap}</figcaption></figure>`
       : '';
     /* la ilustracion nunca se presenta como el facsimil: el pie la separa */
     if (e.ilu) {
@@ -1806,10 +1834,12 @@ const VERSIONES = [
       if (e.q) B.push(`<p class="cita">${e.q}</p>`);
       const caja = this.trato(e) === 'caja';
       if (e.img) {
+        /* un retrato no es una imagen de Colinas: el pie lo dice siempre */
+        const ct = e.img.ctx ? '<b>Retrato de contexto.</b> ' : '';
         B.push(caja
-          ? `<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${
-            e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
-          : `<p class="fuente pie-ilu">${e.img.cap}</p>`);
+          ? `<figure class="ev-fig${e.img.ctx ? ' ev-ilu' : ''}"><img src="${e.img.src}" width="${e.img.w}" height="${
+            e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${ct}${e.img.cap}</figcaption></figure>`
+          : `<p class="fuente pie-ilu">${ct}${e.img.cap}</p>`);
       }
       if (e.ilu && !e.ilu.prov) {
         B.push(caja
@@ -1867,7 +1897,8 @@ const VERSIONES = [
       /* La firma de archivo salió de aqui: ocupaba media pantalla y está
          entera en «Las fuentes». Lo que no puede salir es la cautela de que
          un dibujo no es prueba: una lamina se comparte suelta. */
-      const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada') : '';
+      const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada')
+        : (e.img && e.img.ctx ? 'Retrato de contexto' : '');
       return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>${
         t ? `<span class="t">${t}</span>` : ''}</div>`;
     },
