@@ -13,6 +13,42 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.11 — 25 de septiembre de 2026
+### El pleito de los diezmos, entero
+
+Segunda tanda. De **39 entradas a 48**.
+
+- **1693-1694: el pleito de los diezmos, contado de principio a fin.** El Nuncio libra mandamiento
+  y el provisor de Astorga no lo cumple; desde Madrid, D. Federico Caccia `[?]` le da **veinticuatro
+  horas** so pena de excomunión mayor y manda denunciarle desde los púlpitos; el cura de Colinas
+  apela; y en mayo, recorriendo la comarca, se descubre que **el tribunal que firmaba el despacho
+  estaba inhibido**. Doce curas quedan con nombre y respuesta, y al menos uno gana Real Provisión
+  en la Chancillería.
+- **1706: un pago llamado San Pelayo**, el mismo nombre que un mojón del deslinde de 1129 —con la
+  cautela escrita al lado: es advocación corriente de esta ribera, así que ninguno de los tres
+  testimonios prueba nada sobre los otros—. El mismo apeo trata a Pobladura y a Colinas como dos
+  vecinos distintos de Vecilla.
+- **1757: la cabeza eclesiástica de tres valles vive aquí.** Don Francisco Escudero,
+  «Cura del Lugar de Colinas y Arcipreste del Arciprestazgo de Vidriales, Tera y Valverde». Con
+  las otras dos ejecutorias: los tres aniversarios de la parroquia (1772) y la casa vinculada de
+  Domingo Bernardo (1804).
+- **Pobladura de Trasmonte desaparece dos veces.** «Despoblado por la peste» anotado de mano del
+  escribano en 1526; vivo otra vez en 1591 con once vecinos; ausente del Censo de Aranda, donde el
+  obispado cuenta cinco Pobladuras y ninguna «de Trasmonte».
+- **1848: por qué estos papeles existen.** La Casa de Osuna autentica ante un juzgado de Madrid sus
+  títulos de 1694 sobre los diezmos de quince lugares, Colinas entre ellos, frente a la Hacienda
+  Nacional. El diezmo estaba suprimido desde 1837: no es cobrar, es liquidar derechos. Y es la
+  razón de que el legajo se copiara y hoy se pueda leer.
+
+> **Las marcas `[?]` pasan de 3 a 13.** No se sabe menos que antes: ahora está escrito dónde la
+> lectura es dudosa. Caccia, Torna[nus], Men[tero], Villageriz, «Bartolomé o bachiller», quién era
+> vecino de dónde, y qué demonios es «la Salamanca Vieja».
+
+> **Queda la tanda 3**: la cola administrativa de 1834 a 2003 —desamortización, vías pecuarias,
+> distritos, escuela, vuelo americano y el Registro de Entidades Locales de 1986—.
+
+---
+
 ## v0.10 — 25 de septiembre de 2026
 ### Seis entradas que cambian lo que la línea dice
 

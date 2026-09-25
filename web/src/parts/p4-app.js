@@ -10,7 +10,14 @@
     c1591: 'La comarca, medida dos veces',
     apela1694: 'El nombre, cuatro meses después',
     ermita1756: 'La advocación no consta',
-    aranda1768: 'San Juan no distingue nada'
+    aranda1768: 'San Juan no distingue nada',
+    diezmos1693: 'No era la primera vez',
+    nuncio1694: 'El tribunal, por dentro',
+    curas1694: 'El pleito que falta',
+    apeo1706: 'El nombre no prueba el sitio',
+    pobladura: 'Ni el año ni la causa',
+    aniversarios1772: 'Bartolomé o bachiller',
+    casa1804: 'Vecino de dónde'
   };
   const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 

@@ -136,12 +136,37 @@ const EVENTOS = [
     nota: 'El autor del artículo de referencia lo llama «una tergiversación absolutamente interesada». No fue un descuido: era el modo de agregar la parroquia a las rentas de la Corona. El error siguió en pie en la bibliografía hasta el año 2000.',
     f: 'AHN, ms. 1195B · González Rodríguez, Brigecio 10 (2000)' },
 
+  { id: 'diezmos1693', era: 3, y: '1693', d: '16 de diciembre', s: 1693, n: 'visto',
+    t: 'El Nuncio manda, y Astorga no obedece',
+    p: 'El Nuncio de Su Santidad libra mandamiento para que los curas del obispado de Astorga restituyan al conde-duque de Benavente los diezmos de las «casas de Rey» —la misma casa diezmera que el Catastro declarará en Colinas cincuenta y nueve años después—. <b>El provisor de Astorga no lo cumple</b>, alegando letras inhibitorias del «Metropolitano de Salamanca» [?].',
+    nota: 'No es la primera vez que el Nuncio actúa: el despacho remite a sus propios autos de «primero de Octubre del año pasado de mil y seiscientos y noventa y tres», dos meses y medio antes. Los juristas que lo mueven tienen nombre: el abogado Ldo. D. Juan Gutiérrez Coronel y el procurador Francisco de Maza, que en la lectura de la misma plana se había leído antes «Malaza».',
+    f: 'AHNOB, OSUNA, C.466, D.90, img. 45-46 y 38 (copia de 1842)' },
+
+  { id: 'nuncio1694', era: 3, y: '1694', d: '19 de enero', s: 1694, n: 'visto',
+    t: 'Veinticuatro horas, so pena de excomunión',
+    q: '«recoger las agravatorias que tiene libradas» y «reducir sus mandamientos a simple citación»',
+    p: 'Desde Madrid, D. Federico Caccia [?] —Arzobispo de Milán, Nuncio y Colector General Apostólico bajo Inocencio XII— le da al provisor de Astorga <b>veinticuatro horas</b>, so pena de excomunión mayor <i>latae sententiae</i> y doscientos ducados, y manda que se le <b>denuncie por público excomulgado desde los púlpitos</b>. Y no manda sentenciar: <b>manda deshacer</b>, sin embargo de cualesquiera autos del Ordinario y del Metropolitano. Es el papel que se leerá en Colinas once días después.',
+    nota: 'El tribunal, por dentro: firma «el Señor Auditor = Guido Antonius Torna[nus]» [?], ante el notario Baltasar Hernández Men[tero]º [?]. Y se deshace aquí una contradicción del propio proyecto: el papel no dice que haya un metropolitano <i>de</i> Salamanca, sino «el Metropolitano <b>que reside en</b> la Salamanca Vieja» —dónde se sienta el juez, no de qué sede es—. Qué sea «la Salamanca Vieja» sigue sin entenderse.',
+    f: 'AHNOB, OSUNA, C.466, D.90, img. 39, 41, 44 y 46-47 (copia de 1842)' },
+
   { id: 'apela1694', era: 3, y: '1694', d: '30 de enero', s: 1694, n: 'visto',
     t: 'El cura de Colinas apela',
     q: '«lo obedece con el respeto debido […] y que en cuanto a su cumplimiento no ha lugar, y desde luego de este Despacho y sus autos APELA»',
     p: 'Once días antes, en Madrid, el Nuncio de Su Santidad había dado al provisor de Astorga <b>veinticuatro horas</b> para retirar sus autos, so pena de excomunión mayor y doscientos ducados, y mandado que se le denunciase por público excomulgado desde los púlpitos. El pleito va por los diezmos de la «Casa que llaman de Rey». Cuando el despacho llega a Colinas, el cura obedece por fórmula y no cumple: es la <b>primera resistencia escrita de alguien de Colinas</b> a una orden del señor.',
     nota: 'En este papel el cura no tiene nombre. Lo tiene cuatro meses después: el 12 de mayo se le notifica en persona al Licenciado D. Antonio García Bernardo de Quirós [?], «Cura de este Lug[ar]», por el notario Francisco Domínguez, vecino de Benavente. El [?] queda sólo en «Quirós».',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 49-50 (copia limpia de 1842) · el nombre, en OSUNA, C.466, D.89, img. 28-29, y D.90, img. 55' },
+
+  { id: 'curas1694', era: 3, y: '1694', d: 'mayo', s: 1694, n: 'visto',
+    t: 'Doce curas, y un tribunal inhibido',
+    p: 'El despacho recorre la comarca y <b>doce curas quedan con nombre y respuesta</b>: Grijalba, Santibáñez de Vidriales, Ginestacio, San Román del Valle, Villaveza de Valverde, Morales de Valverde, San Pedro de la Viña, Fuente Encalada, Villageriz [?]… En Santibáñez el notario va <b>tres veces</b> a casa del cura. El de San Pedro de la Viña contesta con la carta guardada: el provisor de Astorga está inhibido por letras del «Metropolitano de Salamanca» [?], «como con efecto lo está inhibido». <b>El tribunal que firma el despacho no tenía jurisdicción para firmarlo.</b> Los curas recurren a la Real Chancillería de Valladolid por vía de fuerza, y al menos uno gana Real Provisión y se niega a entregar los diezmos.',
+    nota: 'La lectura del metropolitano es dudosa, y varios topónimos y apellidos del vaciado llevan [?]. <b>El pleito de la Chancillería sigue sin localizar</b>: es uno de los frentes abiertos del proyecto.',
+    f: 'AHNOB, OSUNA, C.466, D.90, img. 49-57 · vaciado en curas-1694.tsv · el obispo es D. Fray Antonio de Sanjurjo y Miranda; su provisor, el Dr. D. Antonio de Miranda' },
+
+  { id: 'apeo1706', era: 3, y: '1706', s: 1706, n: 'visto',
+    t: 'Un pago que se llama San Pelayo',
+    p: 'El apeo del término de Vecilla de Trasmonte orienta sus parcelas con cuatro referencias —«azia la vega», «azia Vezilla», <b>«azia Pobladura»</b> y <b>«azia Colinas»</b>—: trata a Pobladura y a Colinas como dos vecinos distintos, y deja a Pobladura <b>fuera</b> del término de Colinas. Y registra un pago llamado <b>San Pelayo</b>, el mismo nombre que un mojón del deslinde de 1129.',
+    nota: 'Que el nombre se repita en 1129, en 1706 y en 1768 no prueba que sean el mismo sitio: <b>San Pelayo es advocación corriente de esta ribera</b> —Vega de Tera es parroquia de San Pelayo en el Censo de Aranda—. Ninguno de los tres prueba nada sobre los otros.',
+    f: 'MARTÍN BENITO, «El término de Vecilla de Tramonte en un documento de 1706», Brigecio 10 (2000), pp. 133-152' },
 
   { id: 'catastro', era: 3, y: '1752', d: '9 de noviembre', s: 1752, n: 'visto',
     t: 'El Catastro de Ensenada: el primer retrato completo',
@@ -159,6 +184,12 @@ const EVENTOS = [
     nota: 'La carta <b>no dice de qué advocación es la ermita</b>. El «San Juan Bautista» que trae el catálogo de PARES es del catálogo, no del papel. Y no se ha buscado todavía dónde estuvo ni cuándo se perdió.',
     f: 'AHNOB, OSUNA, CT.271, D.21 · Astorga, 6 de abril de 1756' },
 
+  { id: 'arcipreste1757', era: 3, y: '1757', s: 1757, n: 'visto',
+    t: 'La cabeza eclesiástica de tres valles vive aquí',
+    q: '«Cura del Lugar de Colinas y Arcipreste del Arciprestazgo de Vidriales, Tera y Valverde»',
+    p: 'Así se titula <b>don Francisco Escudero</b> en una ejecutoria de la Chancillería. Un pueblo de ciento y pico almas, sin hidalgos y sin ayuntamiento propio, es la residencia del arcipreste de <b>los tres valles</b>. La parroquia pesa más que el lugar.',
+    f: 'ARCHV, Registro de Ejecutorias, caja 3250, 23 (leído dos veces en la misma plana)' },
+
   { id: 'aranda1768', era: 3, y: '1768', d: '1 de noviembre', s: 1768, n: 'visto',
     t: 'Ciento catorce almas, contadas por el cura',
     q: '«Parroquia de San Juan»',
@@ -166,11 +197,29 @@ const EVENTOS = [
     nota: 'El documento dice <b>«San Juan» a secas</b>: el «Bautista» lo añade Madoz. Y San Juan es advocación corriente en el valle —tres parroquias de veintitrés—, así que el nombre no distingue nada: le quita al topónimo San Juan del término todo valor como indicio. La fecha de la relación, «en 1.º de noviembre de 1768», lleva [?].',
     f: 'INE, Censo de Aranda, obispado de Astorga, asiento 173, R.A.H. 01-181' },
 
+  { id: 'pobladura', era: 3, y: '1591 → 1768', s: 1768, n: 'visto',
+    t: 'Pobladura de Trasmonte desaparece',
+    p: 'En 1526 el escribano lo había anotado de su mano: <b>«Pobladura de Trasmonte — Despoblado por la peste»</b>, quince pecheros. Pero no fue el final: en 1591 sigue viva, con once vecinos. En el Censo de Aranda, el obispado de Astorga cuenta <b>cinco Pobladuras y ninguna «de Trasmonte»</b>. Entre las dos fechas el lugar se acaba, esta vez para siempre. <b>El hueco también es un dato</b>: se despobló, se rehizo y volvió a desaparecer.',
+    nota: 'No se sabe ni el año ni la causa del final. El asiento de 1526 tampoco dice <b>qué</b> peste. Y la identificación moderna que hace el INE de aquel asiento —49.236, Vidayanes— contradice la localización que este proyecto defiende; el apeo de 1706 la sitúa al lado de Colinas, no a treinta kilómetros.',
+    f: 'INE, Censo de Pecheros. Carlos I, 1528, t. II, fol. 507 rº, inscr. 102 · Censo de 1591 · Censo de Aranda, «Relación de pueblos»' },
+
+  { id: 'aniversarios1772', era: 3, y: '1772', s: 1772, n: 'visto',
+    t: 'Tres aniversarios, y un pleito por el segundo',
+    p: 'La iglesia parroquial de Colinas tiene <b>tres aniversarios dotados y fundados</b> por «el B.r D.n Pedro Prieto, cura que fue de…»: es la primera fundación piadosa documentada de la parroquia. Sobre el segundo de ellos obtiene ejecutoria <b>Simón Prieto Montero</b>, clérigo de menores, contra Francisco Gutiérrez, de Friera de Valverde.',
+    nota: 'El nombre del fundador lleva [?]: el catálogo de PARES lee «Bartolomé» donde el facsímil parece decir «bachiller».',
+    f: 'ARCHV, Registro de Ejecutorias, caja 3359, 51' },
+
   { id: 'floridablanca', era: 3, y: '1787', s: 1787, n: 'visto',
     t: 'Ciento cincuenta y seis personas, y ningún hidalgo',
     p: 'El censo de Floridablanca cuenta el pueblo uno a uno: 156 habitantes, 90 varones y 66 mujeres. Los clasifica por oficio y deja dieciocho casillas vacías: ni escribano, ni abogado, ni comerciante, ni estudiante, ni sacristán, ni un solo hidalgo. Hay un cura, 16 labradores, 14 jornaleros, 6 artesanos y 8 criados. Casi tantos jornaleros como labradores: la mitad de los hombres con oficio no trabajaba tierra propia.',
     nota: 'El desglose por tramos de edad dentro de cada estado civil no es verosímil —ningún soltero entre 25 y 40 años y diecisiete entre 40 y 50—: el impreso se rellenó por bloques. Los totales, en cambio, cuadran los tres.',
     f: 'Censo de 1787 «Floridablanca», ed. INE (1989), t. 3-B, prov. de Zamora, pueblo nº 103, pp. 2.858, 2.887 y 2.932' },
+
+  { id: 'casa1804', era: 3, y: '1804', s: 1804, n: 'visto',
+    t: 'Domingo Bernardo pleitea por una casa vinculada',
+    p: 'Contra Alonso Gavilla y su mujer, de Morales del Rey, sobre la vinculación de una casa. Es la tercera y última de las ejecutorias de la Chancillería que el proyecto tiene de este término.',
+    nota: 'El [?] está en quién era vecino de dónde: el catálogo no lo deja claro y el facsímil no se ha leído entero.',
+    f: 'ARCHV, Registro de Ejecutorias, caja 3767, 43' },
 
   { id: 'incendio1814', era: 3, y: '1814', s: 1814, n: 'cotejar',
     t: 'Arde el archivo de la catedral de Astorga',
@@ -195,6 +244,11 @@ const EVENTOS = [
     p: 'Madoz describe una aldea con ayuntamiento propio, en una ladera orientada al sur, con 35 casas en 6 calles, iglesia de San Juan Bautista, cementerio y buenas aguas. Produce trigo y lino, cría ganado lanar y pesca barbos. Y dice que en su término están los despoblados de Castroferrol y Pobladura de Trasmonte.',
     nota: 'La frase del monte es el apoyo más firme que tiene el topónimo: no eran unas colinas cualesquiera, había un encinar llamado «Colinas», en fila con otros cerros a lo largo de unos ocho o diez kilómetros. Lo que no dice es cuál nombró a cuál.',
     f: 'Madoz, Diccionario geográfico-estadístico-histórico, t. VI, Madrid, 1847, p. 521 · facsímil leído a resolución completa (Internet Archive)' },
+
+  { id: 'osuna1848', era: 4, y: '1848', d: '18 de marzo', s: 1848, n: 'visto',
+    t: 'Por qué estos papeles existen',
+    p: 'La Casa de Osuna autentica ante un juzgado de Madrid sus títulos de 1694 sobre los diezmos de <b>quince lugares, Colinas entre ellos</b>, frente al Promotor Fiscal como representante de la Hacienda Nacional. Auto del 18 de marzo, cotejo el 20. El diezmo estaba suprimido desde 1837, así que esto ya no es cobrar: es <b>liquidar derechos</b>. Y es la razón de que el legajo de 1694 se copiara, se guardara y hoy se pueda leer.',
+    f: 'AHNOB, OSUNA, C.466, D.90, img. 62-68 · el traslado se había sacado en Madrid el 18 de enero de 1842, por D. Claudio Sanz y Barca [?]' },
 
   { id: 'censo1857', era: 4, y: '1857', s: 1857, n: 'cotejar',
     t: 'Primer censo moderno: 386 habitantes',
@@ -301,7 +355,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.10';
+const VERSION = '0.11';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -309,6 +363,16 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.11', f: '25 de septiembre de 2026', t: 'El pleito de los diezmos, entero',
+    c: [
+      '<b>Nueve entradas más: de 39 a 48.</b> La segunda tanda de poner la línea al día.',
+      '<b>1693-1694: el pleito de los diezmos, contado entero.</b> El Nuncio manda y Astorga no obedece; desde Madrid le dan al provisor veinticuatro horas so pena de excomunión mayor; el cura de Colinas apela; y en mayo se descubre que <b>el tribunal que firmaba el despacho estaba inhibido</b>. Doce curas de la comarca quedan con nombre y respuesta.',
+      '<b>1706: un pago que se llama San Pelayo</b>, como un mojón de 1129 —y la cautela de que eso no prueba nada, porque es advocación corriente de la ribera—. El mismo apeo deja a Pobladura fuera del término de Colinas.',
+      '<b>1757: el arcipreste de los tres valles vive en Colinas.</b> Y las otras dos ejecutorias: los tres aniversarios de la parroquia (1772) y la casa vinculada de Domingo Bernardo (1804).',
+      '<b>Pobladura de Trasmonte desaparece dos veces</b>: «despoblado por la peste» en 1526, vivo otra vez en 1591 con once vecinos, y ausente del Censo de Aranda. El hueco también es un dato.',
+      '<b>1848: por qué estos papeles existen.</b> La Casa de Osuna autentica sus títulos de 1694 frente a la Hacienda, once años después de suprimido el diezmo. Sin esa liquidación de derechos, el legajo no se habría copiado.'
+    ],
+    p: 'Las marcas [?] de la línea pasan de 3 a 13: no es que se sepa menos, es que ahora está escrito dónde la lectura es dudosa. Queda la tanda 3, la cola administrativa de 1834 a 2003.' },
   { v: '0.10', f: '25 de septiembre de 2026', t: 'Seis entradas que cambian lo que la línea dice',
     c: [
       '🚨 <b>1073: Colinas aparece por su nombre.</b> «uilla que dicunt Colinas, in riba de Teira». Es la mención más antigua del pueblo que el proyecto conoce, <b>cuatrocientos setenta y ocho años</b> antes de lo que la línea daba por primero. Entra como <b>catalogada, sin leer</b>: la cita viene de un artículo, no del facsímil.',
