@@ -429,7 +429,7 @@ summary:hover{color:var(--almagre)}
     height:100svh;background:var(--papel)}
 
   /* la portada, como primera lámina */
-  .post-portada .lam{padding-top:clamp(26px,9vw,52px)}
+  .post-portada .lam{padding-top:clamp(26px,9vw,52px);grid-template-rows:minmax(0,1fr) auto}
   .post-portada .l-cubierta .lam-cuerpo{align-content:center;text-align:center;gap:18px}
   .post-portada .portada{padding:0;text-align:center}
   .post-portada .portada h1 .grande{font-size:clamp(3rem,17vw,5rem)}
@@ -459,15 +459,15 @@ summary:hover{color:var(--almagre)}
     scrollbar-width:none}
   .carrusel::-webkit-scrollbar{display:none}
   .lam{position:relative;overflow:hidden;flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
-    display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
+    display:grid;grid-template-rows:minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
 
-  .lam-top,.lam-cuerpo,.lam-pie{position:relative;z-index:3}
-  .lam-top{display:flex;align-items:center;gap:9px;min-width:0}
-  .lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
-    color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-  .lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
-  .lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
-    letter-spacing:.12em;color:var(--apunte)}
+  .lam-cuerpo,.lam-pie{position:relative;z-index:3}
+  /* El grado de prueba ya no ocupa una banda propia arriba: baja al pie, en
+     pequeño. Lo que no podía pasar es que desapareciera. */
+  .lam-pie .sello{margin-left:auto;display:flex;align-items:center;gap:6px;flex:none}
+  .lam-pie .sello .mk{width:10px;height:10px;border-width:1.5px}
+  .lam-pie .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--apunte);white-space:nowrap}
   .lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:center;gap:12px}
   .lam-cuerpo.arriba{align-content:start}
   .lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline}
@@ -523,7 +523,7 @@ summary:hover{color:var(--almagre)}
       rgba(20,14,8,.46) 68%,rgba(20,14,8,.80) 100%)}
 
   /* tinta de papel donde el texto cae sobre el dibujo */
-  .t-portada .era-n,.t-portada .sello span{color:rgba(244,232,204,.74)}
+  .t-portada .sello span{color:rgba(244,232,204,.74)}
   .t-portada .sello .mk{outline:1px solid rgba(244,232,204,.45);outline-offset:1px}
   .t-portada .cab-ev .anio{color:#E8C9B4}
   .t-portada .cab-ev .dia{color:rgba(244,232,204,.68)}
@@ -558,7 +558,7 @@ summary:hover{color:var(--almagre)}
   .cab-ev h4{color:var(--almagre);font-size:clamp(1.15rem,5vw,1.5rem);line-height:1.15;margin-top:3px}
   .prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
   .prosa.sigo::before{content:"…";color:var(--filo-fuerte);margin-right:.25em}
-  .lam-pie .sigue{margin-left:auto;flex:none;font-size:.6875rem;font-weight:600;
+  .lam-pie .sigue{margin-left:10px;flex:none;font-size:.6875rem;font-weight:600;
     letter-spacing:.14em;text-transform:uppercase;color:var(--apunte)}
   .lam .cita{margin:0;max-width:none;padding:.7em .9em;font-size:clamp(1rem,4.1vw,1.15rem)}
   .lam .nota{margin:0;max-width:none;font-size:.9375rem}

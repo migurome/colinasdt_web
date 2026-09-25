@@ -118,13 +118,14 @@ def lamina(e, clave, rot, pie):
                   e['t']))
     else:
         cab = u'<div class="cab-ev"><span class="anio">%s</span><h4>Silencio documental</h4></div>' % esc(e['y'])
+    # la banda de arriba se quito: el sello vive ahora en el pie
     return (u'<section class="lam" aria-label="%s">'
-            u'<div class="lam-top"><span class="era-n">%s</span>%s</div>'
             u'<div class="lam-cuerpo arriba">%s%s</div>'
-            u'<div class="lam-pie"><span class="a">%s</span><span class="t">%s</span></div>'
+            u'<div class="lam-pie"><span class="a">%s</span>'
+            u'<span class="t">%s</span>%s</div>'
             u'</section>'
-            % (esc(e['y'] + u' · ' + rot), esc(e['eraT']), sello,
-               cab, texto(e, clave), esc(e['y']), esc(pie)))
+            % (esc(e['y'] + u' · ' + rot),
+               cab, texto(e, clave), esc(e['y']), esc(pie), sello))
 
 
 posts = []

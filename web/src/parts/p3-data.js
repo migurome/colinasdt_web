@@ -601,7 +601,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.20';
+const VERSION = '0.21';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -609,6 +609,14 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.21', f: '25 de septiembre de 2026', t: 'El texto empieza arriba del todo',
+    c: [
+      '<b>Fuera la banda de arriba de la lámina</b> —el rótulo de la era y el sello de grado de prueba—. El texto arranca en lo alto y gana esa franja entera.',
+      '<b>El sello baja al pie</b>, en pequeño, junto al año. No podía desaparecer: es lo que impide que una propuesta circule como un hecho cuando la lámina se comparte suelta.',
+      'El nombre de la era deja de verse en la lámina. Sigue estando en el menú, que es desde donde se salta de un tiempo a otro, y en «Las fuentes».',
+      'La portada y el silencio documental pierden también su banda, por lo mismo.'
+    ],
+    p: 'Los dos comparadores —voz y tratamientos de imagen— se regeneran con el mismo cambio, para que no enseñen una lámina que ya no existe.' },
   { v: '0.20', f: '25 de septiembre de 2026', t: 'El retrato, a sangre',
     c: [
       '<b>La lámina de retrato llena la pantalla de borde a borde</b>, centrada y sin papel a los lados ni por arriba.',

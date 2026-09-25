@@ -89,19 +89,19 @@ def lamina(e, clave, rot):
     prosa = frase1(e['p'], 1 if clave == 'portada' else 2)
     firma = ((u'Ilustraci\u00f3n interpretada \u00b7 ' if es_ilu else u'')
              + e['f'].split(u'\u00b7')[0].strip()[:62])
+    # la banda de arriba se quitó: el sello del grado de prueba va en el pie
     return (
         u'<section class="lam%s" aria-label="%s">%s'
-        u'<div class="lam-top"><span class="era-n">%s</span>'
-        u'<span class="sello"><span class="mk mk-%s"></span><span>%s</span></span></div>'
         u'<div class="lam-cuerpo arriba">'
         u'<div class="cab-ev"><span class="anio">%s</span>%s<h4>%s</h4></div>'
         u'<p class="prosa">%s</p>%s</div>'
-        u'<div class="lam-pie"><span class="a">%s</span><span class="t">%s</span></div>'
+        u'<div class="lam-pie"><span class="a">%s</span><span class="t">%s</span>'
+        u'<span class="sello"><span class="mk mk-%s"></span><span>%s</span></span></div>'
         u'</section>'
-        % (ct, esc(e['y'] + u' \u00b7 ' + rot), capa, esc(e['era']), e['n'], esc(e['nt']),
+        % (ct, esc(e['y'] + u' · ' + rot), capa,
            esc(e['y']),
            (u'<span class="dia">%s</span>' % esc(e['d'])) if e['d'] else u'',
-           e['t'], prosa, fig, esc(e['y']), esc(firma)))
+           e['t'], prosa, fig, esc(e['y']), esc(firma), e['n'], esc(e['nt'])))
 
 
 posts = []

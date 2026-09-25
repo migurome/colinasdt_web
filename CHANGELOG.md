@@ -13,6 +13,23 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.21 — 25 de septiembre de 2026
+### El texto empieza arriba del todo
+
+- **Fuera la banda de arriba de la lámina** —el rótulo de la era y el sello de grado de
+  prueba—. El texto arranca en lo alto y gana esa franja entera. La lámina pasa de tres filas
+  a dos: cuerpo y pie.
+- ⚠️ **El sello baja al pie**, en pequeño, junto al año. No podía desaparecer: es lo que
+  impide que una propuesta circule como un hecho cuando una lámina se comparte suelta, y es
+  lo único del criterio que se ha defendido en cada cambio de esta tanda.
+- **El nombre de la era deja de verse en la lámina.** Sigue en el menú —desde donde se salta
+  de un tiempo a otro— y en «Las fuentes», agrupando las firmas.
+- La portada y el silencio documental pierden también su banda, por coherencia.
+- Los dos comparadores —`prueba-voz.html` y `prueba-ilustracion.html`— se regeneran con el
+  mismo cambio, para que no enseñen una lámina que ya no existe.
+
+---
+
 ## v0.20 — 25 de septiembre de 2026
 ### El retrato, a sangre
 

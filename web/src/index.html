@@ -434,7 +434,7 @@ summary:hover{color:var(--almagre)}
     height:100svh;background:var(--papel)}
 
   /* la portada, como primera lámina */
-  .post-portada .lam{padding-top:clamp(26px,9vw,52px)}
+  .post-portada .lam{padding-top:clamp(26px,9vw,52px);grid-template-rows:minmax(0,1fr) auto}
   .post-portada .l-cubierta .lam-cuerpo{align-content:center;text-align:center;gap:18px}
   .post-portada .portada{padding:0;text-align:center}
   .post-portada .portada h1 .grande{font-size:clamp(3rem,17vw,5rem)}
@@ -464,15 +464,15 @@ summary:hover{color:var(--almagre)}
     scrollbar-width:none}
   .carrusel::-webkit-scrollbar{display:none}
   .lam{position:relative;overflow:hidden;flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
-    display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
+    display:grid;grid-template-rows:minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
 
-  .lam-top,.lam-cuerpo,.lam-pie{position:relative;z-index:3}
-  .lam-top{display:flex;align-items:center;gap:9px;min-width:0}
-  .lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
-    color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-  .lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
-  .lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
-    letter-spacing:.12em;color:var(--apunte)}
+  .lam-cuerpo,.lam-pie{position:relative;z-index:3}
+  /* El grado de prueba ya no ocupa una banda propia arriba: baja al pie, en
+     pequeño. Lo que no podía pasar es que desapareciera. */
+  .lam-pie .sello{margin-left:auto;display:flex;align-items:center;gap:6px;flex:none}
+  .lam-pie .sello .mk{width:10px;height:10px;border-width:1.5px}
+  .lam-pie .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--apunte);white-space:nowrap}
   .lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:center;gap:12px}
   .lam-cuerpo.arriba{align-content:start}
   .lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline}
@@ -528,7 +528,7 @@ summary:hover{color:var(--almagre)}
       rgba(20,14,8,.46) 68%,rgba(20,14,8,.80) 100%)}
 
   /* tinta de papel donde el texto cae sobre el dibujo */
-  .t-portada .era-n,.t-portada .sello span{color:rgba(244,232,204,.74)}
+  .t-portada .sello span{color:rgba(244,232,204,.74)}
   .t-portada .sello .mk{outline:1px solid rgba(244,232,204,.45);outline-offset:1px}
   .t-portada .cab-ev .anio{color:#E8C9B4}
   .t-portada .cab-ev .dia{color:rgba(244,232,204,.68)}
@@ -563,7 +563,7 @@ summary:hover{color:var(--almagre)}
   .cab-ev h4{color:var(--almagre);font-size:clamp(1.15rem,5vw,1.5rem);line-height:1.15;margin-top:3px}
   .prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
   .prosa.sigo::before{content:"…";color:var(--filo-fuerte);margin-right:.25em}
-  .lam-pie .sigue{margin-left:auto;flex:none;font-size:.6875rem;font-weight:600;
+  .lam-pie .sigue{margin-left:10px;flex:none;font-size:.6875rem;font-weight:600;
     letter-spacing:.14em;text-transform:uppercase;color:var(--apunte)}
   .lam .cita{margin:0;max-width:none;padding:.7em .9em;font-size:clamp(1rem,4.1vw,1.15rem)}
   .lam .nota{margin:0;max-width:none;font-size:.9375rem}
@@ -1485,7 +1485,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.20';
+const VERSION = '0.21';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1493,6 +1493,14 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.21', f: '25 de septiembre de 2026', t: 'El texto empieza arriba del todo',
+    c: [
+      '<b>Fuera la banda de arriba de la lámina</b> —el rótulo de la era y el sello de grado de prueba—. El texto arranca en lo alto y gana esa franja entera.',
+      '<b>El sello baja al pie</b>, en pequeño, junto al año. No podía desaparecer: es lo que impide que una propuesta circule como un hecho cuando la lámina se comparte suelta.',
+      'El nombre de la era deja de verse en la lámina. Sigue estando en el menú, que es desde donde se salta de un tiempo a otro, y en «Las fuentes».',
+      'La portada y el silencio documental pierden también su banda, por lo mismo.'
+    ],
+    p: 'Los dos comparadores —voz y tratamientos de imagen— se regeneran con el mismo cambio, para que no enseñen una lámina que ya no existe.' },
   { v: '0.20', f: '25 de septiembre de 2026', t: 'El retrato, a sangre',
     c: [
       '<b>La lámina de retrato llena la pantalla de borde a borde</b>, centrada y sin papel a los lados ni por arriba.',
@@ -1925,20 +1933,16 @@ const VERSIONES = [
       return `<div class="ilu"><img src="${im.src}" width="${im.w}" height="${
         im.h}"${pos} alt="${primera ? esc(im.alt) : ''}"></div>`;
     },
-    /* El sello de grado de prueba sale una sola vez, en la primera lamina */
-    cabecera(e, sello) {
-      const era = eraDe(e.era);
-      return `<div class="lam-top"><span class="era-n">${esc(era ? era.t : '')}</span>${
-        sello ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : ''}</div>`;
-    },
     pie(e) {
       /* La firma de archivo salió de aqui: ocupaba media pantalla y está
          entera en «Las fuentes». Lo que no puede salir es la cautela de que
          un dibujo no es prueba: una lamina se comparte suelta. */
       const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada')
         : (e.img && e.img.ctx ? 'Retrato de contexto' : '');
+      /* el grado de prueba viaja aqui desde que la banda de arriba se quito */
+      const sl = e.n ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : '';
       return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>${
-        t ? `<span class="t">${t}</span>` : ''}</div>`;
+        t ? `<span class="t">${t}</span>` : ''}${sl}</div>`;
     },
     montar() {
       if (this.montado) return;
@@ -1947,7 +1951,6 @@ const VERSIONES = [
       EVENTOS.forEach((e, i) => {
         if (e.sil) {
           h += `<article class="post post-sil" data-i="${i}"><div class="carrusel"><div class="lam l-sil">
-            <div class="lam-top"><span class="era-n">${esc((eraDe(e.era) || {}).t || '')}</span></div>
             <div class="lam-cuerpo"><div class="caja"><div class="rango">${esc(e.y)}</div><p>${e.p}</p></div></div>
             <div class="lam-pie"><span class="t">Silencio documental</span></div>
           </div></div></article>`;
@@ -1958,7 +1961,7 @@ const VERSIONES = [
         /* un documento es papel claro y pide mas velo que una ilustracion */
         const ct = tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc');
         const lam = `<section class="lam lam-1${ct}" aria-label="${esc(e.y + ' · ' + e.t)}">${
-          this.capa(e, true)}${this.cabecera(e, true)}<div class="lam-cuerpo arriba">${
+          this.capa(e, true)}<div class="lam-cuerpo arriba">${
           this.bloques(e).join('')}</div>${this.pie(e)}</section>`;
         h += `<article class="post" id="post-${e.id}" data-i="${i}" data-n="${e.n}">
           <div class="puntos" aria-hidden="true"></div>
@@ -1968,12 +1971,10 @@ const VERSIONES = [
           <div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span></div>
           <div class="carrusel" tabindex="0" aria-label="Portada y presentación">
             <section class="lam l-cubierta">
-              <div class="lam-top"><span class="era-n">Historia · territorio · identidad</span></div>
               <div class="lam-cuerpo" id="hueco-portada"></div>
               <div class="lam-pie"><span class="t">Desliza al lado para la presentación</span></div>
             </section>
             <section class="lam l-presenta">
-              <div class="lam-top"><span class="era-n">Presentación</span></div>
               <div class="lam-cuerpo arriba" id="hueco-lede"></div>
               <div class="lam-pie"><span class="t">Desliza hacia arriba para empezar la línea</span></div>
             </section>
@@ -2116,8 +2117,7 @@ const VERSIONES = [
       /* la continuacion no cambia de fondo a media entrada */
       d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc'));
       d.setAttribute('aria-label', e.y + ' · continuación');
-      /* sin sello: el grado de prueba se dice una vez, arriba del todo */
-      d.innerHTML = this.capa(e, false) + this.cabecera(e, false) +
+      d.innerHTML = this.capa(e, false) +
         '<div class="lam-cuerpo arriba"></div>' + this.pie(e);
       return d;
     },

@@ -264,20 +264,16 @@
       return `<div class="ilu"><img src="${im.src}" width="${im.w}" height="${
         im.h}"${pos} alt="${primera ? esc(im.alt) : ''}"></div>`;
     },
-    /* El sello de grado de prueba sale una sola vez, en la primera lamina */
-    cabecera(e, sello) {
-      const era = eraDe(e.era);
-      return `<div class="lam-top"><span class="era-n">${esc(era ? era.t : '')}</span>${
-        sello ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : ''}</div>`;
-    },
     pie(e) {
       /* La firma de archivo salió de aqui: ocupaba media pantalla y está
          entera en «Las fuentes». Lo que no puede salir es la cautela de que
          un dibujo no es prueba: una lamina se comparte suelta. */
       const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada')
         : (e.img && e.img.ctx ? 'Retrato de contexto' : '');
+      /* el grado de prueba viaja aqui desde que la banda de arriba se quito */
+      const sl = e.n ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : '';
       return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>${
-        t ? `<span class="t">${t}</span>` : ''}</div>`;
+        t ? `<span class="t">${t}</span>` : ''}${sl}</div>`;
     },
     montar() {
       if (this.montado) return;
@@ -286,7 +282,6 @@
       EVENTOS.forEach((e, i) => {
         if (e.sil) {
           h += `<article class="post post-sil" data-i="${i}"><div class="carrusel"><div class="lam l-sil">
-            <div class="lam-top"><span class="era-n">${esc((eraDe(e.era) || {}).t || '')}</span></div>
             <div class="lam-cuerpo"><div class="caja"><div class="rango">${esc(e.y)}</div><p>${e.p}</p></div></div>
             <div class="lam-pie"><span class="t">Silencio documental</span></div>
           </div></div></article>`;
@@ -297,7 +292,7 @@
         /* un documento es papel claro y pide mas velo que una ilustracion */
         const ct = tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc');
         const lam = `<section class="lam lam-1${ct}" aria-label="${esc(e.y + ' · ' + e.t)}">${
-          this.capa(e, true)}${this.cabecera(e, true)}<div class="lam-cuerpo arriba">${
+          this.capa(e, true)}<div class="lam-cuerpo arriba">${
           this.bloques(e).join('')}</div>${this.pie(e)}</section>`;
         h += `<article class="post" id="post-${e.id}" data-i="${i}" data-n="${e.n}">
           <div class="puntos" aria-hidden="true"></div>
@@ -307,12 +302,10 @@
           <div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span></div>
           <div class="carrusel" tabindex="0" aria-label="Portada y presentación">
             <section class="lam l-cubierta">
-              <div class="lam-top"><span class="era-n">Historia · territorio · identidad</span></div>
               <div class="lam-cuerpo" id="hueco-portada"></div>
               <div class="lam-pie"><span class="t">Desliza al lado para la presentación</span></div>
             </section>
             <section class="lam l-presenta">
-              <div class="lam-top"><span class="era-n">Presentación</span></div>
               <div class="lam-cuerpo arriba" id="hueco-lede"></div>
               <div class="lam-pie"><span class="t">Desliza hacia arriba para empezar la línea</span></div>
             </section>
@@ -455,8 +448,7 @@
       /* la continuacion no cambia de fondo a media entrada */
       d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc'));
       d.setAttribute('aria-label', e.y + ' · continuación');
-      /* sin sello: el grado de prueba se dice una vez, arriba del todo */
-      d.innerHTML = this.capa(e, false) + this.cabecera(e, false) +
+      d.innerHTML = this.capa(e, false) +
         '<div class="lam-cuerpo arriba"></div>' + this.pie(e);
       return d;
     },
