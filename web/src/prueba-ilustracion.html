@@ -4,244 +4,776 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>Prueba · cómo se integra la ilustración</title>
+<title>Prueba · tratamientos de imagen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..600&display=swap">
 <style>
+/* ═══ PÁGINA DE ELECCIÓN — generada, no se edita a mano ════════════════
+   La hace scratchpad/gen_tratamientos.py a partir de p1-head.html y
+   p3-data.js. Arriba y abajo se recorre la línea; al lado, los cuatro
+   tratamientos de la misma entrada. Va con noindex y sin enlace: es una
+   herramienta de decisión, no una página del sitio.
+   ════════════════════════════════════════════════════════════ */
 /* ═══════════════════════════════════════════════════════════════════════
-   PRUEBA DE CONCEPTO — 25-IX-2026
-   Cuatro maneras de meter una ilustración en la lámina del feed, con la
-   misma entrada (1006) y la misma imagen. No es una página del sitio:
-   sirve para elegir tratamiento y luego se retira.
-   Sistema de estilo del 23-IX: papel, EB Garamond, tintas con código.
+   COLINAS DE TRASMONTE
+   Sistema de estilo aprobado el 23-IX-2026 (web/estilo/index.html):
+   papel antiguo, UNA SOLA tipografía (EB Garamond) y tintas con código.
+   Sin modo oscuro.
+
+   CINCO REGISTROS, y ninguna otra declaración de font-family:
+     1. título   grande, almagre        — portada, eras, hitos
+     2. texto    el cuerpo
+     3. rótulo   versalitas espaciadas  — índice, eras, marcas, años
+     4. nota     cursiva, sepia clara   — cautelas y silencios
+     5. fuente   pequeño, apagado       — la referencia de archivo
+
+   En teléfono la línea temporal se lee como un FEED: una entrada por
+   pantalla, lo accesorio en carrusel lateral y la propia línea del
+   tiempo haciendo de barra de desplazamiento.
    ═══════════════════════════════════════════════════════════════════════ */
 
 :root{
+  /* — el papel — */
   --papel:#F4E8CC; --papel-alto:#FAF2DE; --papel-hondo:#EADCBB;
+  /* — las tintas — */
   --tinta:#241C14; --tinta-2:#3B2E20; --apunte:#6B4E2E; --tenue:#8C795C;
+  /* — los rojos, que son varios y significan — */
   --almagre:#6E2417; --teja:#8C2318; --granza:#A8422A;
+  /* — las otras dos tintas, que llevan el código de materia — */
   --anil:#2C4668; --oliva:#4A5524;
+  /* — filetes — */
   --filo:#CDBA92; --filo-fuerte:#A8916A;
+
   --f:"EB Garamond",Georgia,"Times New Roman",serif;
+  --col-anno:8.5rem; --col-mk:1.6rem; --gap-tl:1.4rem;
   color-scheme:light;
 }
-*{box-sizing:border-box}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:2rem}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
 body{margin:0;background-color:var(--papel);color:var(--tinta);font-family:var(--f);
   font-size:1.25rem;line-height:1.58;-webkit-font-smoothing:antialiased}
-p{margin:0}
-h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
-img{max-width:100%}
 
-/* El grano y la viñeta del sitio, fijos sobre todo lo demás. Son la clave
-   de la integración: la misma trama cae sobre el papel y sobre el dibujo. */
-body::before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.5;
+/* ——— El grano: una sola tesela de 160 px, repetida ——— */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
   mix-blend-mode:multiply;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
-body::after{content:"";position:fixed;inset:0;z-index:41;pointer-events:none;
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,92,48,.13) 100%)}
+.capa{position:relative;z-index:1}
+/* mientras el feed ocupa la pantalla, el cuerpo no se desplaza detrás */
+body.feed-fijo{overflow:hidden}
 
-/* ——— el feed: una lámina por pantalla, como en la web ——— */
-.feed{height:100svh;overflow-y:auto;scroll-snap-type:y mandatory;scrollbar-width:none}
-.feed::-webkit-scrollbar{display:none}
-.hoja{height:100svh;scroll-snap-align:start;scroll-snap-stop:always;
-  display:flex;justify-content:center;background:var(--papel)}
-.lam{position:relative;overflow:hidden;width:100%;max-width:26rem;height:100%;
-  display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px;
-  border-inline:1px solid var(--filo)}
+.wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(18px,4.5vw,48px)}
+a{color:var(--teja);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{color:var(--granza);text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--teja);outline-offset:3px}
+h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0}
+img{max-width:100%}
 
-.lam-top{display:flex;align-items:center;gap:9px;min-width:0;position:relative;z-index:3}
-.lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
-  color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
-.lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
-  letter-spacing:.12em;color:var(--apunte)}
-.mk{width:12px;height:12px;border-radius:50%;background:var(--anil);display:inline-block;flex:none}
-
-.lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:start;gap:12px;
-  position:relative;z-index:3}
-.lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline;
-  position:relative;z-index:3}
-.lam-pie .a{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--teja);flex:none}
-.lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
-  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-
-.cab-ev{display:grid;gap:5px}
-.cab-ev .anio{color:var(--teja);font-size:clamp(1.9rem,9vw,2.7rem);line-height:.95}
-.cab-ev h4{color:var(--almagre);font-size:clamp(1.15rem,5vw,1.5rem);line-height:1.15;margin-top:3px}
-.prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
+/* ——— REGISTRO 3: el rótulo ——— */
+.caps,.rotulo{font-size:.75rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.18em;color:var(--tenue)}
+/* ——— REGISTRO 5: la referencia de archivo ——— */
 .fuente{font-size:.8125rem;line-height:1.5;color:var(--tenue)}
-.caps{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--tenue)}
+/* ——— REGISTRO 4: la nota al margen ——— */
+.nota{margin-top:.8em;padding-left:.95em;border-left:2px solid var(--filo-fuerte);
+  font-size:.9375rem;font-style:italic;color:var(--apunte);max-width:58ch}
+.nota b{display:block;font-style:normal;font-weight:600;color:var(--tinta-2);
+  font-size:.75rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:.25em}
+.mono{font-family:var(--f);font-style:italic}
 
-/* ═══ A · CAJA — lo que hace la web hoy ═══════════════════════════════════
-   La ilustración es un objeto con su marco, su fondo y su pie. Se ve que
-   está pegada encima. */
-.ev-fig{margin:0;max-width:none;background:var(--papel-alto);padding:10px 10px 0;
-  border:1px solid var(--filo)}
-.ev-fig img{display:block;width:100%;height:auto;max-height:42svh;object-fit:contain;
-  mix-blend-mode:multiply}
-.ev-fig figcaption{padding:9px 2px 10px;font-size:.8125rem;line-height:1.45;color:var(--tinta-2)}
+/* ═══════════ PORTADA ═══════════ */
+.portada{padding-block:clamp(34px,7vw,84px) clamp(20px,3vw,34px);text-align:center}
+.floron{display:block;margin:0 auto clamp(14px,2.4vw,22px);width:38px;height:38px;color:var(--teja)}
+.portada .rotulo{display:block;margin-bottom:clamp(18px,3.4vw,34px);letter-spacing:.3em;color:var(--apunte)}
+.portada h1{color:var(--almagre);line-height:.9;letter-spacing:-.01em}
+.portada h1 .grande{display:block;font-size:clamp(3.4rem,14vw,9rem)}
+.portada h1 .chico{display:block;font-size:clamp(1.15rem,3.6vw,2rem);letter-spacing:.2em;
+  text-transform:uppercase;color:var(--teja);margin-top:clamp(6px,1vw,12px)}
+.portada .lema{font-style:italic;font-size:clamp(1.1rem,2.3vw,1.4rem);color:var(--tinta-2);
+  max-width:48ch;margin:clamp(18px,3vw,30px) auto 0}
 
-/* ═══ B · VIÑETA A SANGRE ═════════════════════════════════════════════════
-   Sin caja y sin pie propio: se sale por los tres bordes y por arriba se
-   deshace en el papel. El texto queda encima, sobre papel limpio. */
-.t-vineta .ilu{position:absolute;left:0;right:0;bottom:0;height:64%;z-index:1;
-  mix-blend-mode:multiply}
-.t-vineta .ilu img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;
-  -webkit-mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%);
-  mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%)}
-.t-vineta .lam-cuerpo{align-content:start}
-.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.35)}
-.t-vineta .lam-pie .a{color:#D9B9A8}
-.t-vineta .lam-pie .t{color:rgba(244,232,204,.72)}
+/* el sello de versión */
+.version{display:inline-flex;align-items:center;gap:8px;margin-top:clamp(18px,2.6vw,26px);
+  border:1px solid var(--filo-fuerte);background:var(--papel-alto);
+  padding:5px 12px;text-decoration:none;color:var(--tinta-2)}
+.version:hover{border-color:var(--teja);color:var(--almagre)}
+.version .n{font-size:1rem;font-weight:600;color:var(--teja);letter-spacing:.04em}
+.version .t{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--tenue)}
 
-/* ═══ C · AGUADA DE FONDO ═════════════════════════════════════════════════
-   La ilustración ocupa la lámina entera, rebajada, y el texto va encima.
-   Es el control: sirve para ver por qué la marca de agua no funciona. */
-.t-aguada .ilu{position:absolute;inset:0;z-index:1;opacity:.3;mix-blend-mode:multiply}
-.t-aguada .ilu img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
-.t-aguada .ilu::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(to bottom,rgba(244,232,204,.55),rgba(244,232,204,.15))}
+/* ═══════════════════════════════════════════════════════════════════════
+   VISTAS — la página principal es la línea temporal; el resto se pincha
+   ═══════════════════════════════════════════════════════════════════════ */
+.vista{display:none}
+.vista.vista-on{display:block}
+.vista-sec .sec{border-top:0;padding-top:clamp(10px,1.6vw,18px)}
+.volver{padding-top:clamp(52px,7vw,76px);margin:0}
+.volver a{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  text-decoration:none;color:var(--tenue)}
+.volver a:hover{color:var(--almagre)}
 
-/* ═══ D · PORTADA ═════════════════════════════════════════════════════════
-   La ilustración es el campo, no un objeto dentro de él: ocupa la lámina
-   entera y el texto se escribe encima, en tinta de papel. */
-.t-portada{border-inline-color:transparent}
-.t-portada .ilu{position:absolute;inset:0;z-index:1}
-.t-portada .ilu img{width:100%;height:100%;object-fit:cover;object-position:46% 42%}
-.t-portada .ilu::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(to bottom,rgba(20,14,8,.62) 0%,rgba(20,14,8,.12) 42%,
-    rgba(20,14,8,.30) 74%,rgba(20,14,8,.72) 100%)}
-.t-portada .era-n{color:rgba(244,232,204,.72)}
-.t-portada .sello span{color:rgba(244,232,204,.72)}
-.t-portada .cab-ev .anio{color:#E8C9B4}
-.t-portada .cab-ev h4{color:var(--papel-alto)}
-.t-portada .prosa{color:rgba(244,232,204,.88)}
-.t-portada .lam-pie{border-top-color:rgba(244,232,204,.3)}
-.t-portada .lam-pie .a{color:#D9B9A8}
-.t-portada .lam-pie .t{color:rgba(244,232,204,.72)}
+/* ═══════════════════════════════════════════════════════════════════════
+   MENÚ — fijo en la esquina, siempre a mano
+   En teléfono se queda arriba en la primera pantalla y se retira en
+   cuanto se empieza a recorrer el feed.
+   ═══════════════════════════════════════════════════════════════════════ */
+.menu{position:fixed;top:clamp(10px,2vw,20px);right:clamp(10px,2vw,20px);z-index:30;
+  transition:opacity .28s ease, transform .28s ease}
+.menu.oculto{opacity:0;transform:translateY(-10px);pointer-events:none}
+.menu-bt{display:flex;align-items:center;gap:10px;font-family:var(--f);
+  font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  color:var(--tinta-2);background:var(--papel-alto);border:1px solid var(--filo-fuerte);
+  padding:9px 14px;cursor:pointer;box-shadow:0 1px 0 rgba(120,92,48,.2)}
+.menu-bt:hover{border-color:var(--teja);color:var(--almagre)}
+.menu-bt[aria-expanded="true"]{background:var(--teja);border-color:var(--teja);color:var(--papel-alto)}
+.menu-ico{width:15px;height:11px;flex:none;
+  background:linear-gradient(currentColor,currentColor) 0 0/100% 1.5px no-repeat,
+             linear-gradient(currentColor,currentColor) 0 50%/100% 1.5px no-repeat,
+             linear-gradient(currentColor,currentColor) 0 100%/100% 1.5px no-repeat}
+.menu-lista{position:absolute;top:calc(100% + 7px);right:0;min-width:15.5rem;
+  background:var(--papel-alto);border:1px solid var(--filo-fuerte);padding:6px;
+  box-shadow:0 3px 0 rgba(120,92,48,.2);display:grid}
+/* el atributo hidden tiene que ganar: si no, el menú se queda abierto */
+.menu-lista[hidden]{display:none}
+.menu-lista a{display:block;padding:9px 13px;text-decoration:none;color:var(--tinta-2);
+  font-size:1rem;line-height:1.3}
+.menu-lista a:hover{background:var(--papel-hondo);color:var(--almagre)}
+.menu-lista a[aria-current="page"]{color:var(--teja);font-weight:600}
+.menu-lista a[aria-current="page"]::before{content:"— ";color:var(--filo-fuerte)}
+/* sólo las tres rayas: el texto queda para el lector de pantalla */
+.menu-bt span:not(.menu-ico){position:absolute;width:1px;height:1px;overflow:hidden;
+  clip-path:inset(50%);white-space:nowrap}
+.menu-bt{gap:0;padding:11px 13px}
+@media (max-width:760px){.menu-lista{min-width:14rem}}
 
-/* ——— las hojas de texto de la prueba ——— */
-.hoja-txt .lam{display:grid;align-content:center;gap:1em;padding:30px 22px}
-.hoja-txt h1{color:var(--almagre);font-size:clamp(1.7rem,7vw,2.2rem);line-height:1.1}
-.hoja-txt h2{color:var(--almagre);font-size:1.25rem}
-.hoja-txt p{font-size:1.0625rem;line-height:1.5;color:var(--tinta-2)}
-.hoja-txt .nota{margin-top:.4em;padding-left:.95em;border-left:2px solid var(--filo-fuerte);
-  font-style:italic;color:var(--apunte);font-size:1rem}
-.hoja-txt .nota b{display:block;font-style:normal;font-weight:600;color:var(--tinta-2)}
-.hoja-txt ol{margin:0;padding-left:1.1em;display:grid;gap:.5em;font-size:1rem;color:var(--tinta-2)}
-.hoja-txt li b{color:var(--almagre);font-weight:600}
+/* ═══════════ MARCADORES — el código de prueba ═══════════ */
+.mk{display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;
+  background:var(--papel-alto);border:2px solid var(--tinta)}
+.mk-visto{background:var(--tinta)}
+.mk-sinleer{background:radial-gradient(circle,var(--tinta) 0 2.5px,var(--papel-alto) 3px)}
+.mk-cotejar{border-color:var(--anil)}
+.mk-sinref{border-style:dashed;border-color:var(--tenue)}
+.mk-interp{border-radius:1px;transform:rotate(45deg) scale(.82);border-color:var(--teja)}
+.mk-propuesto{border-radius:2px;background:var(--anil);border-color:var(--anil)}
+.mk-contexto{border-radius:1px;width:10px;height:10px;margin:2px;background:var(--oliva);border-color:var(--oliva)}
 
-/* ——— el rótulo del tratamiento, fijo abajo ——— */
-.chapa{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:35;
-  background:rgba(36,28,20,.86);color:var(--papel-alto);border-radius:999px;
-  padding:6px 15px;font-size:.75rem;font-weight:600;letter-spacing:.14em;
-  text-transform:uppercase;pointer-events:none;transition:opacity .25s ease}
-.chapa[hidden]{display:none}
+/* ═══════════ APERTURA ═══════════ */
+.lede{display:block;padding-block:clamp(26px,4.4vw,52px)}
+.lede-txt{display:grid;gap:.85em;max-width:52ch}
+.lede-txt p:first-child{font-size:1.125em;color:var(--tinta)}
+.lede-txt p{color:var(--tinta-2);font-size:1.0625rem}
+.leyenda{border:1px solid var(--filo-fuerte);background:var(--papel-alto);padding:14px 16px 16px;
+  display:grid;gap:11px}
+.leyenda>.caps{padding-bottom:8px;border-bottom:1px solid var(--filo)}
+.leyenda dl{margin:0;display:grid;gap:11px}
+.leyenda .grupo{display:grid;gap:7px}
+.leyenda .grupo>.caps{color:var(--apunte);letter-spacing:.14em}
+.leyenda dt{display:flex;align-items:center;gap:10px;font-size:.875rem;font-weight:600;color:var(--tinta-2)}
+.leyenda dd{margin:0 0 0 24px;font-size:.8125rem;color:var(--apunte);line-height:1.38}
+
+/* ═══════════ SECCIONES ═══════════ */
+.sec{padding-block:clamp(34px,6vw,76px);border-top:1px solid var(--filo-fuerte)}
+.sec-head{display:grid;gap:9px;margin-bottom:clamp(20px,3.4vw,36px);max-width:60ch}
+.sec-head h2{color:var(--almagre);font-size:clamp(1.9rem,4.6vw,3rem);line-height:1}
+.sec-head p{color:var(--tinta-2);font-size:1.0625rem}
+
+/* ═══════════ ESCALA GRÁFICA DEL TIEMPO ═══════════ */
+.escala{margin-bottom:20px}
+.escala svg{display:block;width:100%;height:auto;overflow:visible}
+.escala .seg-a{fill:var(--papel-hondo)}
+.escala .seg-b{fill:var(--filo)}
+.escala .marco{fill:none;stroke:var(--filo-fuerte);stroke-width:1}
+.escala .tick{font-family:var(--f);font-size:13px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;fill:var(--tenue)}
+.escala .hueco{font-family:var(--f);font-size:13px;font-style:italic;fill:var(--apunte)}
+.escala .brk{stroke:var(--filo-fuerte);stroke-width:1.4;fill:none}
+.escala .ev-mk{cursor:pointer}
+.escala .ev-mk.off{opacity:.18}
+.escala .ev-mk:hover circle,.escala .ev-mk:focus-visible circle{stroke:var(--granza)}
+
+/* ═══════════ FILTROS ═══════════ */
+.filtros{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:clamp(18px,3vw,30px)}
+.chip{font-family:var(--f);font-size:.8125rem;font-weight:600;letter-spacing:.06em;
+  display:inline-flex;align-items:center;gap:8px;padding:5px 11px;cursor:pointer;
+  border:1px solid var(--filo);background:var(--papel-alto);color:var(--tinta-2)}
+.chip:hover{border-color:var(--filo-fuerte)}
+.chip[aria-pressed="true"]{border-color:var(--teja);background:var(--papel-hondo);color:var(--almagre)}
+.chip .n{color:var(--tenue);font-size:.75rem}
+
+/* ═══════════ LÍNEA TEMPORAL — modo documento ═══════════ */
+.tl{list-style:none;margin:0;padding:0}
+.tl>li{display:grid;grid-template-columns:var(--col-anno) var(--col-mk) minmax(0,1fr);
+  gap:0 var(--gap-tl);position:relative}
+/* cada hito lleva SU tramo de línea: el rojo se construye al bajar */
+.tl>li::before{content:"";grid-column:2;grid-row:1;justify-self:center;align-self:stretch;
+  width:2px;background:var(--teja);transform:scaleY(0);transform-origin:top center;
+  transition:transform .85s cubic-bezier(.22,.61,.36,1)}
+.tl>li.on::before{transform:scaleY(1)}
+/* el fantasma: el trazo entero, tenue */
+.tl>li::after{content:"";grid-column:2;grid-row:1;justify-self:center;align-self:stretch;
+  width:2px;background:var(--filo);z-index:-1}
+
+.ev{padding-block:clamp(16px,2.4vw,28px)}
+.ev-when{grid-column:1;grid-row:1;text-align:right;padding-top:.1em}
+.ev-year{display:block;font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1;color:var(--teja)}
+.ev-date{display:block;margin-top:.7em;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.18em;color:var(--apunte)}
+.ev>.mk{grid-column:2;grid-row:1;justify-self:center;margin-top:.55em;position:relative;z-index:2;
+  outline:5px solid var(--papel);opacity:0;transform:scale(.4);
+  transition:opacity .5s ease .25s, transform .5s cubic-bezier(.34,1.56,.64,1) .25s}
+.ev.on>.mk{opacity:1;transform:scale(1)}
+.ev.on>.mk-interp{transform:rotate(45deg) scale(.82)}
+.ev-body{grid-column:3;grid-row:1;min-width:0;opacity:0;transform:translateY(14px);
+  transition:opacity .7s ease .12s, transform .7s cubic-bezier(.22,.61,.36,1) .12s}
+.ev.on .ev-body{opacity:1;transform:none}
+.ev-body .nivel{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tenue);margin-bottom:.5em}
+.ev-body .nivel .mk{width:11px;height:11px;border-width:1.5px}
+.ev-body h4{font-size:clamp(1.25rem,2.6vw,1.7rem);line-height:1.16;color:var(--almagre);margin-bottom:.35em}
+.ev-body>p{max-width:62ch}
+.ev-body .fuente{margin-top:.9em;max-width:70ch}
+.cita{margin:.6em 0 .8em;padding:.85em 1.1em;max-width:58ch;background:var(--papel-hondo);
+  border-left:3px solid var(--teja);font-size:1.0625rem;line-height:1.5}
+
+/* el silencio documental */
+.silencio{padding-block:clamp(20px,3vw,36px)}
+.tl>li.silencio::before{background-color:transparent;
+  background-image:linear-gradient(var(--teja) 55%,transparent 0);
+  background-size:2px 13px;background-repeat:repeat-y}
+.tl>li.silencio::after{background-color:transparent;
+  background-image:linear-gradient(var(--filo) 55%,transparent 0);
+  background-size:2px 13px;background-repeat:repeat-y}
+.silencio .ev-when{grid-column:1;grid-row:1}
+.silencio>p{grid-column:3;grid-row:1;font-style:italic;color:var(--apunte);max-width:52ch;
+  opacity:0;transition:opacity .8s ease .2s}
+.silencio.on>p{opacity:1}
+
+/* separador de era */
+.tl>li.era{padding-block:clamp(28px,4.4vw,52px) clamp(8px,1.4vw,16px)}
+.tl>li.era::before{display:none}
+.era .span{grid-column:1;grid-row:1;text-align:right;align-self:center;
+  font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--tenue)}
+.era h3{grid-column:3;grid-row:1;font-size:1rem;text-transform:uppercase;letter-spacing:.2em;
+  font-weight:600;color:var(--teja)}
+
+/* figuras dentro de una entrada */
+.ev-fig{margin:1.1em 0 0;max-width:44rem;background:var(--papel-alto);padding:10px 10px 0;
+  border:1px solid var(--filo-fuerte);box-shadow:0 1px 0 rgba(120,92,48,.18)}
+.ev-fig img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+.ev-fig figcaption{padding:9px 2px 10px;font-size:.875rem;line-height:1.45;color:var(--tinta-2)}
+.ev-fig figcaption b{color:var(--almagre);font-weight:600}
+/* una ilustracion no es un facsimil: el pie lo dice en tinta de interpretado */
+.ev-ilu{border:1px solid var(--filo)}
+.ev-ilu figcaption b{color:var(--teja)}
+
+@media (max-width:760px){
+  :root{--col-anno:0px;--gap-tl:.9rem}
+  .tl>li{grid-template-columns:var(--col-mk) minmax(0,1fr)}
+  .tl>li::before,.tl>li::after{grid-column:1}
+  .ev>.mk{grid-column:1}
+  .ev-body,.silencio>p{grid-column:2}
+  .ev-when{grid-column:2;grid-row:auto;text-align:left;margin-bottom:.25em}
+  .ev-date{display:inline;margin:0 0 0 .7em}
+  .era .span{grid-column:2;text-align:left}
+  .era h3{grid-column:2}
+  body{font-size:1.1875rem}
+}
+
+/* ═══════════ EL TÉRMINO ═══════════ */
+.plano{margin:0 0 clamp(18px,3vw,30px);background:var(--papel-alto);padding:10px 10px 0;
+  border:1px solid var(--filo-fuerte);box-shadow:0 1px 0 rgba(120,92,48,.18)}
+.plano-img{overflow-x:auto}
+.plano-img img{display:block;width:100%;height:auto;min-width:36rem;mix-blend-mode:multiply}
+.plano figcaption{padding:9px 2px 11px;font-size:.8125rem;line-height:1.5;color:var(--tenue)}
+.dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3.4vw,44px)}
+.dos.mt{margin-top:clamp(22px,3.6vw,46px)}
+.blq{display:grid;gap:.7em;align-content:start;min-width:0}
+.blq h3{color:var(--almagre);font-size:1.3rem;line-height:1.2}
+.blq p{font-size:1.0625rem;color:var(--tinta-2);max-width:56ch}
+@media (max-width:900px){.dos{grid-template-columns:1fr}.plano-img img{min-width:28rem}}
+
+.tabla-scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9375rem}
+th,td{text-align:left;padding:7px 10px 7px 0;border-bottom:1px solid var(--filo);vertical-align:baseline}
+th{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--tenue);white-space:nowrap}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.lindes td.add{color:var(--teja);font-weight:600}
+
+.usos{display:grid;gap:7px}
+.uso{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:12px;align-items:center;font-size:.9375rem}
+.uso-lbl{color:var(--tinta-2)}
+.uso-bar{display:flex;align-items:center;gap:9px;min-width:0}
+.uso-bar i{display:block;height:11px;background:var(--filo-fuerte);flex:none}
+.uso-bar i.hl{background:var(--oliva)}
+.uso-bar span{font-size:.8125rem;color:var(--tenue);white-space:nowrap}
+@media (max-width:480px){.uso{grid-template-columns:1fr;gap:2px}}
+
+/* ═══════════ LA GENTE ═══════════ */
+.graf{margin:0;position:relative}
+.graf-ley{display:flex;flex-wrap:wrap;gap:6px 22px;margin-bottom:12px}
+.graf-ley span{display:inline-flex;align-items:center;gap:8px;font-size:.8125rem;color:var(--tinta-2)}
+.graf-ley i{width:15px;height:3px;flex:none}
+#pob{display:block;width:100%;height:auto;overflow:visible}
+#pob .grid{stroke:var(--filo);stroke-width:1;stroke-dasharray:2 4}
+#pob .base{stroke:var(--filo-fuerte);stroke-width:1}
+#pob .ax{font-family:var(--f);font-size:13px;fill:var(--tenue)}
+#pob .dl{font-family:var(--f);font-size:15px;font-weight:600;fill:var(--tinta-2)}
+#pob .dl2{font-family:var(--f);font-size:12px;font-style:italic;fill:var(--apunte)}
+#pob .hueco-txt{font-family:var(--f);font-size:12px;font-style:italic;fill:var(--tenue)}
+#pob .cross{stroke:var(--filo-fuerte);stroke-width:1;stroke-dasharray:3 3}
+.graf figcaption{margin-top:12px;font-size:.8125rem;line-height:1.5;color:var(--tenue);max-width:74ch}
+.tip{position:absolute;z-index:5;pointer-events:none;background:var(--papel-alto);
+  border:1px solid var(--filo-fuerte);padding:8px 11px;font-size:.875rem;line-height:1.35;
+  box-shadow:0 2px 0 rgba(120,92,48,.18);max-width:17rem}
+.tip .t-note{display:block;margin-top:5px;font-style:italic;font-size:.8125rem;color:var(--apunte)}
+details{margin-top:clamp(16px,2.6vw,26px)}
+summary{cursor:pointer;font-size:.75rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.18em;color:var(--tenue);padding-block:8px}
+summary:hover{color:var(--almagre)}
+.cautelas{display:grid;gap:14px;margin-top:clamp(20px,3.4vw,36px);
+  grid-template-columns:repeat(auto-fit,minmax(20rem,1fr))}
+.cautelas .nota{margin-top:0}
+
+/* ═══════════ EL EMBLEMA ═══════════ */
+.muestras{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
+  margin-bottom:clamp(22px,3.6vw,44px)}
+.muestra{display:grid;grid-template-columns:auto minmax(0,1fr);gap:13px;align-items:start;
+  background:var(--papel-alto);border:1px solid var(--filo-fuerte);padding:13px 15px}
+.sw{width:42px;height:42px;flex:none;border:1px solid rgba(36,28,20,.28)}
+.muestra h4{font-size:1.0625rem;color:var(--almagre);font-weight:600}
+.muestra p{font-size:.875rem;line-height:1.42;color:var(--tinta-2);margin-top:3px}
+.tramas{display:grid;gap:clamp(18px,3vw,34px);grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
+.tramas .ev-fig{margin:0;max-width:none}
+
+/* ═══════════ LO QUE FALTA ═══════════ */
+.falta{margin:0;padding:0 0 0 1.4em;display:grid;gap:clamp(14px,2.2vw,22px);max-width:64ch}
+.falta li{padding-left:.3em}
+.falta li::marker{color:var(--teja);font-weight:600}
+.falta b{display:block;color:var(--almagre);font-size:1.125rem;font-weight:600;margin-bottom:.15em}
+.falta p{font-size:1rem;color:var(--tinta-2)}
+
+/* ═══════════ VERSIONES ═══════════ */
+/* Este apartado se oculta poniendo VERSIONES_VISIBLE = false en los datos. */
+.versiones{display:grid;gap:clamp(18px,3vw,30px);max-width:62ch}
+.vsn{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:0 var(--gap-tl);
+  padding-bottom:clamp(16px,2.4vw,24px);border-bottom:1px solid var(--filo)}
+.vsn:last-child{border-bottom:0;padding-bottom:0}
+.vsn-n{grid-column:1;text-align:right}
+.vsn-n b{display:block;font-size:1.5rem;line-height:1;color:var(--teja);font-weight:600}
+.vsn-n span{display:block;margin-top:.5em;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--apunte)}
+.vsn-c{grid-column:2;display:grid;gap:.45em;min-width:0}
+.vsn-c h3{font-size:1.2rem;color:var(--almagre);line-height:1.2;margin-bottom:.1em}
+.vsn-c ul{margin:0;padding-left:1.1em;display:grid;gap:.3em}
+.vsn-c li{font-size:1rem;color:var(--tinta-2)}
+.vsn-c li::marker{color:var(--filo-fuerte)}
+.vsn-c li b{font-weight:600;color:var(--tinta)}
+@media (max-width:640px){
+  .vsn{grid-template-columns:1fr;gap:.6em}
+  .vsn-n{text-align:left;display:flex;align-items:baseline;gap:12px}
+  .vsn-n span{margin-top:0}
+}
+
+/* ═══════════ PIE ═══════════ */
+.pie{padding-block:clamp(30px,5vw,64px);border-top:1px solid var(--filo-fuerte);
+  display:grid;gap:.7em;max-width:78ch}
+.pie p{font-size:.8125rem;line-height:1.55;color:var(--tenue)}
+.pie>.caps{margin-bottom:.3em}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MODO FEED — sólo en teléfono, y sólo para la línea temporal
+   Una entrada por pantalla; lo accesorio, en carrusel lateral; la línea
+   del tiempo, de barra de desplazamiento.
+   ═══════════════════════════════════════════════════════════════════════ */
+.feed-wrap{display:none}
+
+@media (max-width:760px){
+  /* en modo feed no queda nada del documento: la pantalla es el feed */
+  .sec.feed-on .sec-head,
+  .sec.feed-on .escala,
+  .sec.feed-on .tl,
+  .vista-on .lede.vacia{display:none}
+  .sec.feed-on{padding:0;border-top:0}
+  .sec.feed-on .feed-wrap{display:block;position:fixed;inset:0;z-index:10;
+    height:100svh;background:var(--papel)}
+
+  /* la portada, como primera lámina */
+  .post-portada .lam{padding-top:clamp(26px,9vw,52px)}
+  .post-portada .l-cubierta .lam-cuerpo{align-content:center;text-align:center;gap:18px}
+  .post-portada .portada{padding:0;text-align:center}
+  .post-portada .portada h1 .grande{font-size:clamp(3rem,17vw,5rem)}
+  .post-portada .portada .lema{font-size:1.05rem;margin-top:16px;max-width:38ch}
+  .post-portada .portada .rotulo{margin-bottom:16px}
+  .post-portada .floron{margin-bottom:12px;width:32px;height:32px}
+  .post-portada .filtros{justify-content:center;margin:0;gap:6px}
+  .post-portada .chip{font-size:.75rem;padding:4px 9px}
+  .post-portada .l-presenta .lede-txt{display:grid;gap:.8em;max-width:none}
+  .post-portada .l-presenta p{font-size:1.0625rem;line-height:1.5;color:var(--tinta-2)}
+  .post-portada .lam-pie .t{color:var(--apunte);font-style:italic}
+
+  .feed{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;
+    scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}
+  .feed::-webkit-scrollbar{display:none}
+  .post{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative}
+  .post[hidden]{display:none}
+
+  .puntos{position:absolute;top:9px;left:17px;z-index:3;display:flex;gap:6px;pointer-events:none}
+  .punto{width:17px;height:1.5px;background:var(--filo)}
+  .punto.on{background:var(--teja);height:2px}
+
+  .carrusel{display:flex;height:100%;overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scroll-behavior:smooth;
+    scrollbar-width:none}
+  .carrusel::-webkit-scrollbar{display:none}
+  .lam{position:relative;overflow:hidden;flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
+    display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
+
+  .lam-top,.lam-cuerpo,.lam-pie{position:relative;z-index:3}
+  .lam-top{display:flex;align-items:center;gap:9px;min-width:0}
+  .lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+    color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
+  .lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--apunte)}
+  .lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:center;gap:12px}
+  .lam-cuerpo.arriba{align-content:start}
+  .lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline}
+  .lam-pie .a{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--teja);flex:none}
+  .lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+  /* ═══ Tratamientos de ilustración ══════════════════════════════════
+     Cuatro maneras de meter un dibujo en la lámina, elegibles entrada por
+     entrada con el campo `tr` de los datos:
+       caja     — con su marco y su pie, como una figura del texto
+       vineta   — a sangre por abajo, deshecha en el papel por arriba
+       aguada   — de fondo, rebajada, con el texto encima
+       portada  — la ilustración es el campo y el texto va escrito sobre ella
+     Sólo se aplican al campo `ilu`, que es una ilustración interpretada.
+     Nunca a `img`, que es una reproducción documental: un facsímil no se
+     recorta a sangre ni se escribe encima.
+     El grano y la viñeta del papel van fijos POR ENCIMA de todo, también
+     del dibujo: es lo que hace que parezca impreso en la misma hoja y no
+     pegado sobre ella. */
+  .ilu{position:absolute;z-index:1;pointer-events:none;overflow:hidden}
+  .ilu img{display:block;width:100%;height:100%;object-fit:cover}
+  /* el grano del papel, también sobre el dibujo. El de body::before queda
+     detrás del contenido, así que aquí se repite dentro de la capa: es lo
+     que hace que parezca impresa en la hoja y no pegada encima. */
+  .ilu::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+    opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+  .ilu::after{z-index:3}
+
+  .t-vineta .ilu{left:0;right:0;bottom:0;height:64%;mix-blend-mode:multiply}
+  .t-vineta .ilu img{object-position:50% 30%;
+    -webkit-mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%);
+    mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%)}
+
+  .t-aguada .ilu{inset:0;opacity:.3;mix-blend-mode:multiply}
+  .t-aguada .ilu img{object-position:50% 40%}
+  .t-aguada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(244,232,204,.55),rgba(244,232,204,.15))}
+
+  .t-portada .ilu{inset:0}
+  .t-portada .ilu img{object-position:46% 42%}
+  .t-portada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(20,14,8,.72) 0%,rgba(20,14,8,.34) 38%,
+      rgba(20,14,8,.46) 68%,rgba(20,14,8,.80) 100%)}
+
+  /* tinta de papel donde el texto cae sobre el dibujo */
+  .t-portada .era-n,.t-portada .sello span{color:rgba(244,232,204,.74)}
+  .t-portada .sello .mk{outline:1px solid rgba(244,232,204,.45);outline-offset:1px}
+  .t-portada .cab-ev .anio{color:#E8C9B4}
+  .t-portada .cab-ev .dia{color:rgba(244,232,204,.68)}
+  .t-portada .cab-ev h4{color:var(--papel-alto)}
+  .t-portada .prosa{color:rgba(244,232,204,.92)}
+  .t-portada .nota{border-left-color:rgba(244,232,204,.42);color:rgba(244,232,204,.82)}
+  .t-portada .nota b{color:var(--papel-alto)}
+  .t-portada .cita{background:rgba(20,14,8,.45);border-left-color:#D9B9A8;
+    color:var(--papel-alto)}
+  .t-portada .fuente{color:rgba(244,232,204,.78)}
+  .t-portada .bl-firma{border-top-color:rgba(244,232,204,.32)}
+  .t-portada .bl-firma .caps{color:rgba(244,232,204,.66)}
+  .t-portada .lam-pie,.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.34)}
+  .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
+  .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
+  .t-portada .lam-pie .sigue,.t-vineta .lam-pie .sigue{color:rgba(244,232,204,.72)}
+
+  /* Una entrada, una lámina: fecha, título, texto, cita, imagen, cautela y
+     fuente juntos mientras quepan. Lo que desborda abre la lámina siguiente. */
+  .cab-ev{display:grid;gap:5px}
+  .cab-ev .anio{color:var(--teja);font-size:clamp(1.9rem,9vw,2.7rem);line-height:.95}
+  .cab-ev .dia{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--apunte)}
+  .cab-ev h4{color:var(--almagre);font-size:clamp(1.15rem,5vw,1.5rem);line-height:1.15;margin-top:3px}
+  .prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
+  .prosa.sigo::before{content:"…";color:var(--filo-fuerte);margin-right:.25em}
+  .lam-pie .sigue{margin-left:auto;flex:none;font-size:.6875rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--apunte)}
+  .lam .cita{margin:0;max-width:none;padding:.7em .9em;font-size:clamp(1rem,4.1vw,1.15rem)}
+  .lam .nota{margin:0;max-width:none;font-size:.9375rem}
+  .lam .fuente.enlace{margin:0}
+  .lam .ev-fig{margin:0;max-width:none}
+  .lam .ev-fig img{max-height:52svh;object-fit:contain}
+  .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
+  .bl-firma{display:grid;gap:4px;border-top:1px solid var(--filo);padding-top:9px}
+  .bl-firma .caps{color:var(--tenue)}
+  .bl-firma .fuente{margin:0;font-size:.8125rem;color:var(--tinta-2)}
+  /* la fuente entera ya está en la lámina: el pie no la repite */
+  .lam.con-firma .lam-pie .t{display:none}
+  .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
+  .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
+  .l-sil p{font-style:italic;color:var(--apunte)}
+
+  /* el raíl: el trazo recorrido en teja, el que falta en filo */
+  .rail{position:absolute;top:0;right:0;bottom:0;width:28px;z-index:4;
+    touch-action:none;cursor:ns-resize}
+  .rail svg{display:block;width:100%;height:100%}
+  .rail .fantasma{stroke:var(--filo);stroke-width:2;fill:none}
+  .rail .hecho{stroke:var(--teja);stroke-width:2;fill:none}
+  .rail .vacio{stroke:var(--filo);stroke-width:2;fill:none;stroke-dasharray:7 6}
+  .rail .quiebre{stroke:var(--filo-fuerte);stroke-width:1.1;fill:none}
+  .rail .tk{fill:var(--tinta)}
+  .rail .tk.off{opacity:.15}
+  .rail .tk-an{fill:var(--anil)}
+  .rail .tk-tj{fill:var(--teja)}
+  .rail .tk-ol{fill:var(--oliva)}
+  .rail .tk-te{fill:var(--tenue)}
+  #pulgar{fill:var(--teja);stroke:var(--papel);stroke-width:2}
+  .rail-lbl{position:absolute;right:32px;z-index:6;background:var(--teja);color:var(--papel-alto);
+    font-size:.8125rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    padding:4px 10px;white-space:nowrap;transform:translateY(-50%);pointer-events:none;
+    opacity:0;transition:opacity .14s ease}
+  .rail-lbl.on{opacity:1}
+}
+@keyframes vaiven{0%,100%{transform:translateX(0);opacity:.5}50%{transform:translateX(8px);opacity:1}}
+
+/* ─── el bloque de teléfono, repetido sin media query: así la prueba se ve
+   igual en el portátil que en el móvil ─── */
+/* en modo feed no queda nada del documento: la pantalla es el feed */
+  .sec.feed-on .sec-head,
+  .sec.feed-on .escala,
+  .sec.feed-on .tl,
+  .vista-on .lede.vacia{display:none}
+  .sec.feed-on{padding:0;border-top:0}
+  .sec.feed-on .feed-wrap{display:block;position:fixed;inset:0;z-index:10;
+    height:100svh;background:var(--papel)}
+
+  /* la portada, como primera lámina */
+  .post-portada .lam{padding-top:clamp(26px,9vw,52px)}
+  .post-portada .l-cubierta .lam-cuerpo{align-content:center;text-align:center;gap:18px}
+  .post-portada .portada{padding:0;text-align:center}
+  .post-portada .portada h1 .grande{font-size:clamp(3rem,17vw,5rem)}
+  .post-portada .portada .lema{font-size:1.05rem;margin-top:16px;max-width:38ch}
+  .post-portada .portada .rotulo{margin-bottom:16px}
+  .post-portada .floron{margin-bottom:12px;width:32px;height:32px}
+  .post-portada .filtros{justify-content:center;margin:0;gap:6px}
+  .post-portada .chip{font-size:.75rem;padding:4px 9px}
+  .post-portada .l-presenta .lede-txt{display:grid;gap:.8em;max-width:none}
+  .post-portada .l-presenta p{font-size:1.0625rem;line-height:1.5;color:var(--tinta-2)}
+  .post-portada .lam-pie .t{color:var(--apunte);font-style:italic}
+
+  .feed{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;
+    scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}
+  .feed::-webkit-scrollbar{display:none}
+  .post{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative}
+  .post[hidden]{display:none}
+
+  .puntos{position:absolute;top:9px;left:17px;z-index:3;display:flex;gap:6px;pointer-events:none}
+  .punto{width:17px;height:1.5px;background:var(--filo)}
+  .punto.on{background:var(--teja);height:2px}
+
+  .carrusel{display:flex;height:100%;overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scroll-behavior:smooth;
+    scrollbar-width:none}
+  .carrusel::-webkit-scrollbar{display:none}
+  .lam{position:relative;overflow:hidden;flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
+    display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
+
+  .lam-top,.lam-cuerpo,.lam-pie{position:relative;z-index:3}
+  .lam-top{display:flex;align-items:center;gap:9px;min-width:0}
+  .lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+    color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
+  .lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--apunte)}
+  .lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:center;gap:12px}
+  .lam-cuerpo.arriba{align-content:start}
+  .lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline}
+  .lam-pie .a{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--teja);flex:none}
+  .lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+  /* ═══ Tratamientos de ilustración ══════════════════════════════════
+     Cuatro maneras de meter un dibujo en la lámina, elegibles entrada por
+     entrada con el campo `tr` de los datos:
+       caja     — con su marco y su pie, como una figura del texto
+       vineta   — a sangre por abajo, deshecha en el papel por arriba
+       aguada   — de fondo, rebajada, con el texto encima
+       portada  — la ilustración es el campo y el texto va escrito sobre ella
+     Sólo se aplican al campo `ilu`, que es una ilustración interpretada.
+     Nunca a `img`, que es una reproducción documental: un facsímil no se
+     recorta a sangre ni se escribe encima.
+     El grano y la viñeta del papel van fijos POR ENCIMA de todo, también
+     del dibujo: es lo que hace que parezca impreso en la misma hoja y no
+     pegado sobre ella. */
+  .ilu{position:absolute;z-index:1;pointer-events:none;overflow:hidden}
+  .ilu img{display:block;width:100%;height:100%;object-fit:cover}
+  /* el grano del papel, también sobre el dibujo. El de body::before queda
+     detrás del contenido, así que aquí se repite dentro de la capa: es lo
+     que hace que parezca impresa en la hoja y no pegada encima. */
+  .ilu::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+    opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+  .ilu::after{z-index:3}
+
+  .t-vineta .ilu{left:0;right:0;bottom:0;height:64%;mix-blend-mode:multiply}
+  .t-vineta .ilu img{object-position:50% 30%;
+    -webkit-mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%);
+    mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%)}
+
+  .t-aguada .ilu{inset:0;opacity:.3;mix-blend-mode:multiply}
+  .t-aguada .ilu img{object-position:50% 40%}
+  .t-aguada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(244,232,204,.55),rgba(244,232,204,.15))}
+
+  .t-portada .ilu{inset:0}
+  .t-portada .ilu img{object-position:46% 42%}
+  .t-portada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(20,14,8,.72) 0%,rgba(20,14,8,.34) 38%,
+      rgba(20,14,8,.46) 68%,rgba(20,14,8,.80) 100%)}
+
+  /* tinta de papel donde el texto cae sobre el dibujo */
+  .t-portada .era-n,.t-portada .sello span{color:rgba(244,232,204,.74)}
+  .t-portada .sello .mk{outline:1px solid rgba(244,232,204,.45);outline-offset:1px}
+  .t-portada .cab-ev .anio{color:#E8C9B4}
+  .t-portada .cab-ev .dia{color:rgba(244,232,204,.68)}
+  .t-portada .cab-ev h4{color:var(--papel-alto)}
+  .t-portada .prosa{color:rgba(244,232,204,.92)}
+  .t-portada .nota{border-left-color:rgba(244,232,204,.42);color:rgba(244,232,204,.82)}
+  .t-portada .nota b{color:var(--papel-alto)}
+  .t-portada .cita{background:rgba(20,14,8,.45);border-left-color:#D9B9A8;
+    color:var(--papel-alto)}
+  .t-portada .fuente{color:rgba(244,232,204,.78)}
+  .t-portada .bl-firma{border-top-color:rgba(244,232,204,.32)}
+  .t-portada .bl-firma .caps{color:rgba(244,232,204,.66)}
+  .t-portada .lam-pie,.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.34)}
+  .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
+  .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
+  .t-portada .lam-pie .sigue,.t-vineta .lam-pie .sigue{color:rgba(244,232,204,.72)}
+
+  /* Una entrada, una lámina: fecha, título, texto, cita, imagen, cautela y
+     fuente juntos mientras quepan. Lo que desborda abre la lámina siguiente. */
+  .cab-ev{display:grid;gap:5px}
+  .cab-ev .anio{color:var(--teja);font-size:clamp(1.9rem,9vw,2.7rem);line-height:.95}
+  .cab-ev .dia{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--apunte)}
+  .cab-ev h4{color:var(--almagre);font-size:clamp(1.15rem,5vw,1.5rem);line-height:1.15;margin-top:3px}
+  .prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
+  .prosa.sigo::before{content:"…";color:var(--filo-fuerte);margin-right:.25em}
+  .lam-pie .sigue{margin-left:auto;flex:none;font-size:.6875rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--apunte)}
+  .lam .cita{margin:0;max-width:none;padding:.7em .9em;font-size:clamp(1rem,4.1vw,1.15rem)}
+  .lam .nota{margin:0;max-width:none;font-size:.9375rem}
+  .lam .fuente.enlace{margin:0}
+  .lam .ev-fig{margin:0;max-width:none}
+  .lam .ev-fig img{max-height:52svh;object-fit:contain}
+  .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
+  .bl-firma{display:grid;gap:4px;border-top:1px solid var(--filo);padding-top:9px}
+  .bl-firma .caps{color:var(--tenue)}
+  .bl-firma .fuente{margin:0;font-size:.8125rem;color:var(--tinta-2)}
+  /* la fuente entera ya está en la lámina: el pie no la repite */
+  .lam.con-firma .lam-pie .t{display:none}
+  .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
+  .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
+  .l-sil p{font-style:italic;color:var(--apunte)}
+
+  /* el raíl: el trazo recorrido en teja, el que falta en filo */
+  .rail{position:absolute;top:0;right:0;bottom:0;width:28px;z-index:4;
+    touch-action:none;cursor:ns-resize}
+  .rail svg{display:block;width:100%;height:100%}
+  .rail .fantasma{stroke:var(--filo);stroke-width:2;fill:none}
+  .rail .hecho{stroke:var(--teja);stroke-width:2;fill:none}
+  .rail .vacio{stroke:var(--filo);stroke-width:2;fill:none;stroke-dasharray:7 6}
+  .rail .quiebre{stroke:var(--filo-fuerte);stroke-width:1.1;fill:none}
+  .rail .tk{fill:var(--tinta)}
+  .rail .tk.off{opacity:.15}
+  .rail .tk-an{fill:var(--anil)}
+  .rail .tk-tj{fill:var(--teja)}
+  .rail .tk-ol{fill:var(--oliva)}
+  .rail .tk-te{fill:var(--tenue)}
+  #pulgar{fill:var(--teja);stroke:var(--papel);stroke-width:2}
+  .rail-lbl{position:absolute;right:32px;z-index:6;background:var(--teja);color:var(--papel-alto);
+    font-size:.8125rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    padding:4px 10px;white-space:nowrap;transform:translateY(-50%);pointer-events:none;
+    opacity:0;transition:opacity .14s ease}
+  .rail-lbl.on{opacity:1}
+
+/* ─── y el feed, encajado en una columna ─── */
+.feed{position:static;height:100svh;overflow-y:auto;overflow-x:hidden;
+  scroll-snap-type:y mandatory;padding-right:0;scrollbar-width:none}
+.post{max-width:26rem;margin-inline:auto;border-inline:1px solid var(--filo)}
+.chapa{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:60;
+  background:rgba(36,28,20,.88);color:var(--papel-alto);border-radius:999px;
+  padding:6px 15px;font-size:.75rem;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;pointer-events:none;white-space:nowrap}
+.chapa b{color:#E8C9B4;font-weight:600}
 </style>
 </head>
 <body>
-
 <div class="feed" id="feed">
-
-  <article class="hoja hoja-txt" data-chapa="">
-    <div class="lam">
-      <p class="caps">Prueba de concepto · 25-IX-2026</p>
-      <h1>Cómo se mete un dibujo en la página</h1>
-      <p>Cuatro tratamientos de la misma entrada —1006, la abadesa Bendicta— con la misma ilustración. Desliza hacia arriba para verlos en orden. Abajo se indica cuál estás viendo.</p>
-      <p class="nota"><b>Lo que hay que mirar</b>No cuál es más bonito, sino cuál deja claro que el dibujo <em>no es un documento</em> sin convertirlo en un objeto pegado encima.</p>
-    </div>
-  </article>
-
-  <!-- ═══ A · CAJA ═══ -->
-  <article class="hoja" data-chapa="A · Caja, lo de ahora">
-    <div class="lam t-caja">
-      <div class="lam-top"><span class="era-n">Castroferrol</span>
-        <span class="sello"><span class="mk"></span><span>Por cotejar</span></span></div>
-      <div class="lam-cuerpo">
-        <div class="cab-ev"><span class="anio">1006</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div>
-        <figure class="ev-fig">
-          <img src="img/abadesa-1006.jpg" width="1400" height="933" alt="Ilustración: una abadesa con báculo en primer término y, detrás, una comunidad de monjes y monjas ante una pequeña iglesia de piedra junto al río.">
-          <figcaption><b>Interpretación, no documento.</b> Imagen generada en 2026 a partir del diploma de 1006.</figcaption>
-        </figure>
-      </div>
-      <div class="lam-pie"><span class="a">1006</span><span class="t">GONZÁLEZ RODRÍGUEZ, Brigecio 10 (2000), apéndice documental</span></div>
-    </div>
-  </article>
-
-  <!-- ═══ B · VIÑETA A SANGRE ═══ -->
-  <article class="hoja" data-chapa="B · Viñeta a sangre">
-    <div class="lam t-vineta">
-      <div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt="Ilustración: una abadesa con báculo en primer término y, detrás, una comunidad de monjes y monjas ante una pequeña iglesia de piedra junto al río."></div>
-      <div class="lam-top"><span class="era-n">Castroferrol</span>
-        <span class="sello"><span class="mk"></span><span>Por cotejar</span></span></div>
-      <div class="lam-cuerpo">
-        <div class="cab-ev"><span class="anio">1006</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div>
-        <p class="prosa">El latín dice dos cosas seguidas: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta.</p>
-      </div>
-      <div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, Brigecio 10 (2000)</span></div>
-    </div>
-  </article>
-
-  <!-- ═══ C · AGUADA DE FONDO ═══ -->
-  <article class="hoja" data-chapa="C · Aguada de fondo">
-    <div class="lam t-aguada">
-      <div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt=""></div>
-      <div class="lam-top"><span class="era-n">Castroferrol</span>
-        <span class="sello"><span class="mk"></span><span>Por cotejar</span></span></div>
-      <div class="lam-cuerpo">
-        <div class="cab-ev"><span class="anio">1006</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div>
-        <p class="prosa">Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira». El latín dice dos cosas seguidas: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta.</p>
-      </div>
-      <div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, Brigecio 10 (2000)</span></div>
-    </div>
-  </article>
-
-  <!-- ═══ D · PORTADA ═══ -->
-  <article class="hoja" data-chapa="D · Portada">
-    <div class="lam t-portada">
-      <div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt="Ilustración: una abadesa con báculo en primer término y, detrás, una comunidad de monjes y monjas ante una pequeña iglesia de piedra junto al río."></div>
-      <div class="lam-top"><span class="era-n">Castroferrol</span>
-        <span class="sello"><span class="mk"></span><span>Por cotejar</span></span></div>
-      <div class="lam-cuerpo">
-        <div class="cab-ev"><span class="anio">1006</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div>
-        <p class="prosa">«Yugo de hermanos y hermanas» bajo la abadesa Bendicta, en una iglesia dedicada a San Salvador, junto al río Tera.</p>
-      </div>
-      <div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, Brigecio 10 (2000)</span></div>
-    </div>
-  </article>
-
-  <article class="hoja hoja-txt" data-chapa="">
-    <div class="lam">
-      <h2>En qué se diferencian</h2>
-      <ol>
-        <li><b>A · Caja.</b> El dibujo es un objeto con marco y fondo propios. Se lee como algo pegado encima de la página.</li>
-        <li><b>B · Viñeta.</b> Sin caja: se sale por los tres bordes y por arriba se deshace en el papel. El texto queda sobre papel limpio; sólo el pie cae sobre el dibujo.</li>
-        <li><b>C · Aguada.</b> La ilustración de fondo, rebajada. Se pierde el dibujo y se lee peor el texto: está para descartarla a la vista.</li>
-        <li><b>D · Portada.</b> La ilustración es el campo entero y el texto va encima. Es lo más cercano a una cubierta de libro.</li>
-      </ol>
-      <p class="nota"><b>El truco que las une</b>El grano de papel y la viñeta del sitio están fijos <em>por encima</em> de todo, también del dibujo. Es lo que hace que la ilustración parezca impresa en la misma hoja y no pegada sobre ella.</p>
-    </div>
-  </article>
-
+<article class="post" data-y="III milenio a.C." data-fijo=""><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="III milenio a.C.: Alguien cava silos donde hoy están las bodegas"><section class="lam" aria-label="III milenio a.C. · A · Caja"><div class="lam-top"><span class="era-n">Antes del nombre</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">III milenio a.C.</span><h4>Alguien cava silos donde hoy están las bodegas</h4></div><p class="prosa">Al norte del pueblo, al pie del promontorio en el que están horadadas las bodegas —y que da nombre al pago—, cuatro hoyos-silo de la Edad del Cobre, de metro y medio de hondo y casi dos metros de diámetro, y una gran zanja de diez metros de ancho. La cerámica es lisa y de cocción reductora, con un motivo que los excavadores dan por inédito en la zona:</p><figure class="ev-fig"><img src="img/bodegas-fig12-ceramica.jpg" width="900" height="1204" loading="lazy" alt="Dibujos arqueológicos de cuencos y vasos calcolíticos lisos, con perfiles y numeración de inventario."><figcaption>Cerámica lisa y decorada de «Las Bodegas» (fig. 12). Piezas 93/24.</figcaption></figure></div><div class="lam-pie"><span class="a">III milenio a.C.</span><span class="t">Pérez Rodríguez et al., «Algunos aspectos de la Edad del Cobre</span></div></section><section class="lam t-vineta" aria-label="III milenio a.C. · B · Viñeta a sangre"><div class="ilu"><img src="img/bodegas-fig12-ceramica.jpg" width="900" height="1204" alt=""></div><div class="lam-top"><span class="era-n">Antes del nombre</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">III milenio a.C.</span><h4>Alguien cava silos donde hoy están las bodegas</h4></div><p class="prosa">Al norte del pueblo, al pie del promontorio en el que están horadadas las bodegas —y que da nombre al pago—, cuatro hoyos-silo de la Edad del Cobre, de metro y medio de hondo y casi dos metros de diámetro, y una gran zanja de diez metros de ancho. La cerámica es lisa y de cocción reductora, con un motivo que los excavadores dan por inédito en la zona:</p></div><div class="lam-pie"><span class="a">III milenio a.C.</span><span class="t">Pérez Rodríguez et al., «Algunos aspectos de la Edad del Cobre</span></div></section><section class="lam t-aguada" aria-label="III milenio a.C. · C · Aguada de fondo"><div class="ilu"><img src="img/bodegas-fig12-ceramica.jpg" width="900" height="1204" alt=""></div><div class="lam-top"><span class="era-n">Antes del nombre</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">III milenio a.C.</span><h4>Alguien cava silos donde hoy están las bodegas</h4></div><p class="prosa">Al norte del pueblo, al pie del promontorio en el que están horadadas las bodegas —y que da nombre al pago—, cuatro hoyos-silo de la Edad del Cobre, de metro y medio de hondo y casi dos metros de diámetro, y una gran zanja de diez metros de ancho. La cerámica es lisa y de cocción reductora, con un motivo que los excavadores dan por inédito en la zona:</p></div><div class="lam-pie"><span class="a">III milenio a.C.</span><span class="t">Pérez Rodríguez et al., «Algunos aspectos de la Edad del Cobre</span></div></section><section class="lam t-portada" aria-label="III milenio a.C. · D · Portada"><div class="ilu"><img src="img/bodegas-fig12-ceramica.jpg" width="900" height="1204" alt=""></div><div class="lam-top"><span class="era-n">Antes del nombre</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">III milenio a.C.</span><h4>Alguien cava silos donde hoy están las bodegas</h4></div><p class="prosa">Al norte del pueblo, al pie del promontorio en el que están horadadas las bodegas —y que da nombre al pago—, cuatro hoyos-silo de la Edad del Cobre, de metro y medio de hondo y casi dos metros de diámetro, y una gran zanja de diez metros de ancho.</p></div><div class="lam-pie"><span class="a">III milenio a.C.</span><span class="t">Pérez Rodríguez et al., «Algunos aspectos de la Edad del Cobre</span></div></section></div></article>
+<article class="post" data-y="s. IV–V" data-fijo=""><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="s. IV–V: Primera ocupación en San Juan-El Valle"><section class="lam" aria-label="s. IV–V · A · Caja"><div class="lam-top"><span class="era-n">Antes del nombre</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">s. IV–V</span><h4>Primera ocupación en San Juan-El Valle</h4></div><p class="prosa">Sigillata hispánica tardía, cerámica gris estampillada con rosetas, un cubilete del alfar de Melgar de Tera y vidrio tallado. A 200 metros, dos tumbas romanas cubiertas con tégulas.</p><figure class="ev-fig"><img src="img/excavacion-fig3-tardorromano.jpg" width="900" height="803" loading="lazy" alt="Dibujos de cerámica y vidrio tardorromanos hallados en el yacimiento."><figcaption>Materiales tardorromanos del yacimiento (fig. 3 del artículo de 1993).</figcaption></figure></div><div class="lam-pie"><span class="a">s. IV–V</span><span class="t">Martín Carbajo et al., Anuario 1993, IEZ «Florián de Ocampo», </span></div></section><section class="lam t-vineta" aria-label="s. IV–V · B · Viñeta a sangre"><div class="ilu"><img src="img/excavacion-fig3-tardorromano.jpg" width="900" height="803" alt=""></div><div class="lam-top"><span class="era-n">Antes del nombre</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">s. IV–V</span><h4>Primera ocupación en San Juan-El Valle</h4></div><p class="prosa">Sigillata hispánica tardía, cerámica gris estampillada con rosetas, un cubilete del alfar de Melgar de Tera y vidrio tallado. A 200 metros, dos tumbas romanas cubiertas con tégulas.</p></div><div class="lam-pie"><span class="a">s. IV–V</span><span class="t">Martín Carbajo et al., Anuario 1993, IEZ «Florián de Ocampo», </span></div></section><section class="lam t-aguada" aria-label="s. IV–V · C · Aguada de fondo"><div class="ilu"><img src="img/excavacion-fig3-tardorromano.jpg" width="900" height="803" alt=""></div><div class="lam-top"><span class="era-n">Antes del nombre</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">s. IV–V</span><h4>Primera ocupación en San Juan-El Valle</h4></div><p class="prosa">Sigillata hispánica tardía, cerámica gris estampillada con rosetas, un cubilete del alfar de Melgar de Tera y vidrio tallado. A 200 metros, dos tumbas romanas cubiertas con tégulas.</p></div><div class="lam-pie"><span class="a">s. IV–V</span><span class="t">Martín Carbajo et al., Anuario 1993, IEZ «Florián de Ocampo», </span></div></section><section class="lam t-portada" aria-label="s. IV–V · D · Portada"><div class="ilu"><img src="img/excavacion-fig3-tardorromano.jpg" width="900" height="803" alt=""></div><div class="lam-top"><span class="era-n">Antes del nombre</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">s. IV–V</span><h4>Primera ocupación en San Juan-El Valle</h4></div><p class="prosa">Sigillata hispánica tardía, cerámica gris estampillada con rosetas, un cubilete del alfar de Melgar de Tera y vidrio tallado.</p></div><div class="lam-pie"><span class="a">s. IV–V</span><span class="t">Martín Carbajo et al., Anuario 1993, IEZ «Florián de Ocampo», </span></div></section></div></article>
+<article class="post" data-y="1006" data-fijo="portada"><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1006: La abadesa Bendicta y la iglesia de San Salvador"><section class="lam" aria-label="1006 · A · Caja"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1006</span><span class="dia">26 de junio</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div><p class="prosa">Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira» y «fundado bajo la ciudad de Astorga».</p><figure class="ev-fig ev-ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" loading="lazy" alt="Ilustración interpretada: una abadesa con báculo en primer término y, detrás, una comunidad de monjes y monjas ante una pequeña iglesia de piedra junto al río."><figcaption><b>Ilustración interpretada.</b> La comunidad de hermanos y hermanas ante la iglesia de San Salvador, según lo que dice el diploma de 1006 y nada más. Ni el rostro, ni los hábitos, ni la forma de la iglesia constan en fuente alguna.</figcaption></figure></div><div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, «Castroferrol, un enclave monástico altome</span></div></section><section class="lam t-vineta" aria-label="1006 · B · Viñeta a sangre"><div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt=""></div><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1006</span><span class="dia">26 de junio</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div><p class="prosa">Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira» y «fundado bajo la ciudad de Astorga».</p></div><div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, «Castroferrol, un enclave monástico altome</span></div></section><section class="lam t-aguada" aria-label="1006 · C · Aguada de fondo"><div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt=""></div><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1006</span><span class="dia">26 de junio</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div><p class="prosa">Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira» y «fundado bajo la ciudad de Astorga».</p></div><div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, «Castroferrol, un enclave monástico altome</span></div></section><section class="lam t-portada" aria-label="1006 · D · Portada"><div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt=""></div><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-cotejar"></span><span>Por cotejar</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1006</span><span class="dia">26 de junio</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div><p class="prosa">Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira»</p></div><div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, «Castroferrol, un enclave monástico altome</span></div></section></div></article>
+<article class="post" data-y="ss. XI–XIII" data-fijo=""><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="ss. XI–XIII: La sala que ardió"><section class="lam" aria-label="ss. XI–XIII · A · Caja"><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">ss. XI–XIII</span><h4>La sala que ardió</h4></div><p class="prosa">Una estancia de 5 × 8 metros, de mampostería en seco con contrafuertes y suelo de arcilla roja, cubierta de teja curva sobre muros de tapial. La sella un nivel de incendio de cinco centímetros de carbones.</p><figure class="ev-fig"><img src="img/excavacion-fig1-planta.jpg" width="900" height="1076" loading="lazy" alt="Planta arqueológica de la estructura rectangular con sus muros y contrafuertes."><figcaption>Planta de la estructura rectangular, unidades A y B (fig. 1).</figcaption></figure></div><div class="lam-pie"><span class="a">ss. XI–XIII</span><span class="t">Martín Carbajo et al., Anuario 1993, pp. 37-48</span></div></section><section class="lam t-vineta" aria-label="ss. XI–XIII · B · Viñeta a sangre"><div class="ilu"><img src="img/excavacion-fig1-planta.jpg" width="900" height="1076" alt=""></div><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">ss. XI–XIII</span><h4>La sala que ardió</h4></div><p class="prosa">Una estancia de 5 × 8 metros, de mampostería en seco con contrafuertes y suelo de arcilla roja, cubierta de teja curva sobre muros de tapial. La sella un nivel de incendio de cinco centímetros de carbones.</p></div><div class="lam-pie"><span class="a">ss. XI–XIII</span><span class="t">Martín Carbajo et al., Anuario 1993, pp. 37-48</span></div></section><section class="lam t-aguada" aria-label="ss. XI–XIII · C · Aguada de fondo"><div class="ilu"><img src="img/excavacion-fig1-planta.jpg" width="900" height="1076" alt=""></div><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">ss. XI–XIII</span><h4>La sala que ardió</h4></div><p class="prosa">Una estancia de 5 × 8 metros, de mampostería en seco con contrafuertes y suelo de arcilla roja, cubierta de teja curva sobre muros de tapial. La sella un nivel de incendio de cinco centímetros de carbones.</p></div><div class="lam-pie"><span class="a">ss. XI–XIII</span><span class="t">Martín Carbajo et al., Anuario 1993, pp. 37-48</span></div></section><section class="lam t-portada" aria-label="ss. XI–XIII · D · Portada"><div class="ilu"><img src="img/excavacion-fig1-planta.jpg" width="900" height="1076" alt=""></div><div class="lam-top"><span class="era-n">Castroferrol</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">ss. XI–XIII</span><h4>La sala que ardió</h4></div><p class="prosa">Una estancia de 5 × 8 metros, de mampostería en seco con contrafuertes y suelo de arcilla roja, cubierta de teja curva sobre muros de tapial.</p></div><div class="lam-pie"><span class="a">ss. XI–XIII</span><span class="t">Martín Carbajo et al., Anuario 1993, pp. 37-48</span></div></section></div></article>
+<article class="post" data-y="1752" data-fijo=""><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1752: El Catastro de Ensenada: el primer retrato completo"><section class="lam" aria-label="1752 · A · Caja"><div class="lam-top"><span class="era-n">Lugar del conde de Benavente</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1752</span><span class="dia">9 de noviembre</span><h4>El Catastro de Ensenada: el primer retrato completo</h4></div><p class="prosa">27 vecinos, el cura incluido, y 26 casas, diez de ellas inhabitables. Un término de 2.372 fanegas, un tercio de monte.</p><figure class="ev-fig"><img src="img/catastro-1752-f372.jpg" width="720" height="1054" loading="lazy" alt="Página manuscrita del Catastro de Ensenada de Colinas de Trasmonte, en letra caligráfica del siglo XVIII."><figcaption>Final de la respuesta 3.ª, con los lindes del término, e inicio de la 4.ª (AGS, libro 654, imagen 0372).</figcaption></figure></div><div class="lam-pie"><span class="a">1752</span><span class="t">AGS, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas General</span></div></section><section class="lam t-vineta" aria-label="1752 · B · Viñeta a sangre"><div class="ilu"><img src="img/catastro-1752-f372.jpg" width="720" height="1054" alt=""></div><div class="lam-top"><span class="era-n">Lugar del conde de Benavente</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1752</span><span class="dia">9 de noviembre</span><h4>El Catastro de Ensenada: el primer retrato completo</h4></div><p class="prosa">27 vecinos, el cura incluido, y 26 casas, diez de ellas inhabitables. Un término de 2.372 fanegas, un tercio de monte.</p></div><div class="lam-pie"><span class="a">1752</span><span class="t">AGS, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas General</span></div></section><section class="lam t-aguada" aria-label="1752 · C · Aguada de fondo"><div class="ilu"><img src="img/catastro-1752-f372.jpg" width="720" height="1054" alt=""></div><div class="lam-top"><span class="era-n">Lugar del conde de Benavente</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1752</span><span class="dia">9 de noviembre</span><h4>El Catastro de Ensenada: el primer retrato completo</h4></div><p class="prosa">27 vecinos, el cura incluido, y 26 casas, diez de ellas inhabitables. Un término de 2.372 fanegas, un tercio de monte.</p></div><div class="lam-pie"><span class="a">1752</span><span class="t">AGS, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas General</span></div></section><section class="lam t-portada" aria-label="1752 · D · Portada"><div class="ilu"><img src="img/catastro-1752-f372.jpg" width="720" height="1054" alt=""></div><div class="lam-top"><span class="era-n">Lugar del conde de Benavente</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1752</span><span class="dia">9 de noviembre</span><h4>El Catastro de Ensenada: el primer retrato completo</h4></div><p class="prosa">27 vecinos, el cura incluido, y 26 casas, diez de ellas inhabitables.</p></div><div class="lam-pie"><span class="a">1752</span><span class="t">AGS, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas General</span></div></section></div></article>
+<article class="post" data-y="1876" data-fijo=""><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1876: El único sello"><section class="lam" aria-label="1876 · A · Caja"><div class="lam-top"><span class="era-n">El ayuntamiento</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1876</span><span class="dia">diciembre</span><h4>El único sello</h4></div><p class="prosa">El alcalde remite al Gobernador Civil el sello del Ayuntamiento Constitucional. Lleva las armas reales de España, y el archivo municipal no guarda noticia de ningún otro.</p><figure class="ev-fig"><img src="img/sello-1876.png" width="560" height="642" loading="lazy" alt="Impronta oval del sello con la leyenda Ayuntamiento Constitucional de Colinas de Trasmonte y las armas reales bajo corona."><figcaption>Impronta del sello, ampliada. Leyenda: AYUNTAM.TO CONSTIT.L DE COLINAS DE TRASMONTE.</figcaption></figure></div><div class="lam-pie"><span class="a">1876</span><span class="t">AHN, SIGIL-TINTA_ZAMORA,20,N.31</span></div></section><section class="lam t-vineta" aria-label="1876 · B · Viñeta a sangre"><div class="ilu"><img src="img/sello-1876.png" width="560" height="642" alt=""></div><div class="lam-top"><span class="era-n">El ayuntamiento</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1876</span><span class="dia">diciembre</span><h4>El único sello</h4></div><p class="prosa">El alcalde remite al Gobernador Civil el sello del Ayuntamiento Constitucional. Lleva las armas reales de España, y el archivo municipal no guarda noticia de ningún otro.</p></div><div class="lam-pie"><span class="a">1876</span><span class="t">AHN, SIGIL-TINTA_ZAMORA,20,N.31</span></div></section><section class="lam t-aguada" aria-label="1876 · C · Aguada de fondo"><div class="ilu"><img src="img/sello-1876.png" width="560" height="642" alt=""></div><div class="lam-top"><span class="era-n">El ayuntamiento</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1876</span><span class="dia">diciembre</span><h4>El único sello</h4></div><p class="prosa">El alcalde remite al Gobernador Civil el sello del Ayuntamiento Constitucional. Lleva las armas reales de España, y el archivo municipal no guarda noticia de ningún otro.</p></div><div class="lam-pie"><span class="a">1876</span><span class="t">AHN, SIGIL-TINTA_ZAMORA,20,N.31</span></div></section><section class="lam t-portada" aria-label="1876 · D · Portada"><div class="ilu"><img src="img/sello-1876.png" width="560" height="642" alt=""></div><div class="lam-top"><span class="era-n">El ayuntamiento</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1876</span><span class="dia">diciembre</span><h4>El único sello</h4></div><p class="prosa">El alcalde remite al Gobernador Civil el sello del Ayuntamiento Constitucional.</p></div><div class="lam-pie"><span class="a">1876</span><span class="t">AHN, SIGIL-TINTA_ZAMORA,20,N.31</span></div></section></div></article>
+<article class="post" data-y="1993" data-fijo=""><div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span></div><div class="carrusel" tabindex="0" aria-label="1993: Las zanjas del regadío destapan San Juan-El Valle"><section class="lam" aria-label="1993 · A · Caja"><div class="lam-top"><span class="era-n">La pedanía</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1993</span><span class="dia">5–29 de julio</span><h4>Las zanjas del regadío destapan San Juan-El Valle</h4></div><p class="prosa">Excavación de urgencia al oeste del pueblo, camino de Quiruelas, en el paraje que el plano de 1977 rotula «El Valle». La tradición oral lo llamaba «el Convento de San Juan»;</p><figure class="ev-fig"><img src="img/excavacion-fig4-reticula.jpg" width="900" height="868" loading="lazy" alt="Dibujos de ollas plenomedievales con estriado horizontal y retícula incisa."><figcaption>Cerámica plenomedieval con retícula incisa (fig. 4).</figcaption></figure></div><div class="lam-pie"><span class="a">1993</span><span class="t">Martín Carbajo et al., Anuario 1993, pp. 37-48</span></div></section><section class="lam t-vineta" aria-label="1993 · B · Viñeta a sangre"><div class="ilu"><img src="img/excavacion-fig4-reticula.jpg" width="900" height="868" alt=""></div><div class="lam-top"><span class="era-n">La pedanía</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1993</span><span class="dia">5–29 de julio</span><h4>Las zanjas del regadío destapan San Juan-El Valle</h4></div><p class="prosa">Excavación de urgencia al oeste del pueblo, camino de Quiruelas, en el paraje que el plano de 1977 rotula «El Valle». La tradición oral lo llamaba «el Convento de San Juan»;</p></div><div class="lam-pie"><span class="a">1993</span><span class="t">Martín Carbajo et al., Anuario 1993, pp. 37-48</span></div></section><section class="lam t-aguada" aria-label="1993 · C · Aguada de fondo"><div class="ilu"><img src="img/excavacion-fig4-reticula.jpg" width="900" height="868" alt=""></div><div class="lam-top"><span class="era-n">La pedanía</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1993</span><span class="dia">5–29 de julio</span><h4>Las zanjas del regadío destapan San Juan-El Valle</h4></div><p class="prosa">Excavación de urgencia al oeste del pueblo, camino de Quiruelas, en el paraje que el plano de 1977 rotula «El Valle». La tradición oral lo llamaba «el Convento de San Juan»;</p></div><div class="lam-pie"><span class="a">1993</span><span class="t">Martín Carbajo et al., Anuario 1993, pp. 37-48</span></div></section><section class="lam t-portada" aria-label="1993 · D · Portada"><div class="ilu"><img src="img/excavacion-fig4-reticula.jpg" width="900" height="868" alt=""></div><div class="lam-top"><span class="era-n">La pedanía</span><span class="sello"><span class="mk mk-visto"></span><span>Fuente vista</span></span></div><div class="lam-cuerpo arriba"><div class="cab-ev"><span class="anio">1993</span><span class="dia">5–29 de julio</span><h4>Las zanjas del regadío destapan San Juan-El Valle</h4></div><p class="prosa">Excavación de urgencia al oeste del pueblo, camino de Quiruelas, en el paraje que el plano de 1977 rotula «El Valle».</p></div><div class="lam-pie"><span class="a">1993</span><span class="t">Martín Carbajo et al., Anuario 1993, pp. 37-48</span></div></section></div></article>
 </div>
-
-<div class="chapa" id="chapa" hidden></div>
-
+<div class="chapa" id="chapa"></div>
 <script>
 (function () {
+  var TR = [["caja", "A \u00b7 Caja"], ["vineta", "B \u00b7 Vi\u00f1eta a sangre"], ["aguada", "C \u00b7 Aguada de fondo"], ["portada", "D \u00b7 Portada"]];
   var chapa = document.getElementById('chapa');
-  var hojas = document.querySelectorAll('.hoja');
+  var feed = document.getElementById('feed');
+  var posts = Array.prototype.slice.call(document.querySelectorAll('.post'));
+  var actual = posts[0];
+
+  function pinta() {
+    if (!actual) return;
+    var car = actual.querySelector('.carrusel');
+    var n = car.clientWidth ? Math.round(car.scrollLeft / car.clientWidth) : 0;
+    n = Math.max(0, Math.min(TR.length - 1, n));
+    var pts = actual.querySelectorAll('.punto');
+    for (var j = 0; j < pts.length; j++) pts[j].classList.toggle('on', j === n);
+    var fijo = actual.dataset.fijo;
+    chapa.innerHTML = actual.dataset.y + ' \u00b7 ' + TR[n][1] +
+      (fijo && fijo === TR[n][0] ? ' \u00b7 <b>elegido</b>' : '');
+  }
+
+  posts.forEach(function (p) {
+    var car = p.querySelector('.carrusel');
+    var t = null;
+    car.addEventListener('scroll', function () {
+      if (t) return;
+      t = requestAnimationFrame(function () { t = null; if (actual === p) pinta(); });
+    }, { passive: true });
+  });
+
   var io = new IntersectionObserver(function (es) {
-    es.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      var t = e.target.dataset.chapa;
-      chapa.textContent = t;
-      chapa.hidden = !t;
-    });
+    es.forEach(function (e) { if (e.isIntersecting) { actual = e.target; pinta(); } });
   }, { threshold: 0.6 });
-  hojas.forEach(function (h) { io.observe(h); });
+  posts.forEach(function (p) { io.observe(p); });
+  feed.addEventListener('scroll', function () {}, { passive: true });
+  pinta();
 })();
 </script>
 </body>

@@ -35,9 +35,15 @@
       html += `<li class="silencio" data-era="${e.era}"><div class="ev-when"><span class="ev-year">${e.y}</span></div><p>${e.p}</p></li>`;
       return;
     }
-    const fig = e.img
+    let fig = e.img
       ? `<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
       : '';
+    /* la ilustracion nunca se presenta como el facsimil: el pie la separa */
+    if (e.ilu) {
+      fig += `<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
+        e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
+        e.ilu.cap} ${esc(e.ilu.gen || '')}</figcaption></figure>`;
+    }
     html += `<li class="ev" id="ev-${e.id}" data-n="${e.n}" data-era="${e.era}">
       <div class="ev-when"><span class="ev-year">${e.y}</span>${e.d ? `<span class="ev-date">${e.d}</span>` : ''}</div>
       ${mk(e.n)}
@@ -181,6 +187,11 @@
         B.push(`<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${
           e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`);
       }
+      if (e.ilu && this.trato(e) === 'caja') {
+        B.push(`<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
+          e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
+          e.ilu.cap}</figcaption></figure>`);
+      }
       if (e.nota) B.push(`<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>`);
       if (e.f) {
         B.push(`<div class="bl-firma"><span class="caps">Fuente</span><p class="fuente">${e.f}</p></div>`);
@@ -211,6 +222,15 @@
       if (buf.trim()) out.push(buf.trim());
       return out;
     },
+    /* El tratamiento es cosa de la ilustracion: un facsimil va siempre en caja */
+    trato(e) {
+      return e.ilu ? (e.tr || 'caja') : 'caja';
+    },
+    capa(e, primera) {
+      if (!e.ilu || this.trato(e) === 'caja') return '';
+      return `<div class="ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
+        e.ilu.h}" alt="${primera ? esc(e.ilu.alt) : ''}"></div>`;
+    },
     firmaCorta(f) {
       const t = String(f).split('·')[0].trim();
       if (t.length <= 66) return t;
@@ -224,8 +244,10 @@
         sello ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : ''}</div>`;
     },
     pie(e) {
+      /* una lamina se comparte suelta: si lleva dibujo, el pie lo dice */
+      const t = (e.ilu ? 'Ilustración interpretada · ' : '') + this.firmaCorta(e.f || '');
       return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>
-        <span class="t">${esc(this.firmaCorta(e.f || ''))}</span></div>`;
+        <span class="t">${esc(t)}</span></div>`;
     },
     montar() {
       if (this.montado) return;
@@ -241,8 +263,10 @@
           return;
         }
         /* una lamina de partida con todo dentro; repartir() decide si desborda */
-        const lam = `<section class="lam lam-1" aria-label="${esc(e.y + ' · ' + e.t)}">${
-          this.cabecera(e, true)}<div class="lam-cuerpo arriba">${
+        const tr = this.trato(e);
+        const ct = tr === 'caja' ? '' : ' t-' + tr;
+        const lam = `<section class="lam lam-1${ct}" aria-label="${esc(e.y + ' · ' + e.t)}">${
+          this.capa(e, true)}${this.cabecera(e, true)}<div class="lam-cuerpo arriba">${
           this.bloques(e).join('')}</div>${this.pie(e)}</section>`;
         h += `<article class="post" id="post-${e.id}" data-i="${i}" data-n="${e.n}">
           <div class="puntos" aria-hidden="true"></div>
@@ -378,10 +402,12 @@
     },
     laminaCont(e) {
       const d = document.createElement('section');
-      d.className = 'lam lam-cont';
+      const tr = this.trato(e);
+      /* la continuacion no cambia de fondo a media entrada */
+      d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr);
       d.setAttribute('aria-label', e.y + ' · continuación');
       /* sin sello: el grado de prueba se dice una vez, arriba del todo */
-      d.innerHTML = this.cabecera(e, false) +
+      d.innerHTML = this.capa(e, false) + this.cabecera(e, false) +
         '<div class="lam-cuerpo arriba"></div>' + this.pie(e);
       return d;
     },

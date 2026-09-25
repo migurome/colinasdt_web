@@ -258,6 +258,9 @@ img{max-width:100%}
 .ev-fig img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
 .ev-fig figcaption{padding:9px 2px 10px;font-size:.875rem;line-height:1.45;color:var(--tinta-2)}
 .ev-fig figcaption b{color:var(--almagre);font-weight:600}
+/* una ilustracion no es un facsimil: el pie lo dice en tinta de interpretado */
+.ev-ilu{border:1px solid var(--filo)}
+.ev-ilu figcaption b{color:var(--teja)}
 
 @media (max-width:760px){
   :root{--col-anno:0px;--gap-tl:.9rem}
@@ -418,9 +421,10 @@ summary:hover{color:var(--almagre)}
     scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scroll-behavior:smooth;
     scrollbar-width:none}
   .carrusel::-webkit-scrollbar{display:none}
-  .lam{flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
+  .lam{position:relative;overflow:hidden;flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
     display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
 
+  .lam-top,.lam-cuerpo,.lam-pie{position:relative;z-index:3}
   .lam-top{display:flex;align-items:center;gap:9px;min-width:0}
   .lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
     color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
@@ -434,6 +438,63 @@ summary:hover{color:var(--almagre)}
     color:var(--teja);flex:none}
   .lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+  /* ═══ Tratamientos de ilustración ══════════════════════════════════
+     Cuatro maneras de meter un dibujo en la lámina, elegibles entrada por
+     entrada con el campo `tr` de los datos:
+       caja     — con su marco y su pie, como una figura del texto
+       vineta   — a sangre por abajo, deshecha en el papel por arriba
+       aguada   — de fondo, rebajada, con el texto encima
+       portada  — la ilustración es el campo y el texto va escrito sobre ella
+     Sólo se aplican al campo `ilu`, que es una ilustración interpretada.
+     Nunca a `img`, que es una reproducción documental: un facsímil no se
+     recorta a sangre ni se escribe encima.
+     El grano y la viñeta del papel van fijos POR ENCIMA de todo, también
+     del dibujo: es lo que hace que parezca impreso en la misma hoja y no
+     pegado sobre ella. */
+  .ilu{position:absolute;z-index:1;pointer-events:none;overflow:hidden}
+  .ilu img{display:block;width:100%;height:100%;object-fit:cover}
+  /* el grano del papel, también sobre el dibujo. El de body::before queda
+     detrás del contenido, así que aquí se repite dentro de la capa: es lo
+     que hace que parezca impresa en la hoja y no pegada encima. */
+  .ilu::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+    opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+  .ilu::after{z-index:3}
+
+  .t-vineta .ilu{left:0;right:0;bottom:0;height:64%;mix-blend-mode:multiply}
+  .t-vineta .ilu img{object-position:50% 30%;
+    -webkit-mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%);
+    mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%)}
+
+  .t-aguada .ilu{inset:0;opacity:.3;mix-blend-mode:multiply}
+  .t-aguada .ilu img{object-position:50% 40%}
+  .t-aguada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(244,232,204,.55),rgba(244,232,204,.15))}
+
+  .t-portada .ilu{inset:0}
+  .t-portada .ilu img{object-position:46% 42%}
+  .t-portada .ilu::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(20,14,8,.72) 0%,rgba(20,14,8,.34) 38%,
+      rgba(20,14,8,.46) 68%,rgba(20,14,8,.80) 100%)}
+
+  /* tinta de papel donde el texto cae sobre el dibujo */
+  .t-portada .era-n,.t-portada .sello span{color:rgba(244,232,204,.74)}
+  .t-portada .sello .mk{outline:1px solid rgba(244,232,204,.45);outline-offset:1px}
+  .t-portada .cab-ev .anio{color:#E8C9B4}
+  .t-portada .cab-ev .dia{color:rgba(244,232,204,.68)}
+  .t-portada .cab-ev h4{color:var(--papel-alto)}
+  .t-portada .prosa{color:rgba(244,232,204,.92)}
+  .t-portada .nota{border-left-color:rgba(244,232,204,.42);color:rgba(244,232,204,.82)}
+  .t-portada .nota b{color:var(--papel-alto)}
+  .t-portada .cita{background:rgba(20,14,8,.45);border-left-color:#D9B9A8;
+    color:var(--papel-alto)}
+  .t-portada .fuente{color:rgba(244,232,204,.78)}
+  .t-portada .bl-firma{border-top-color:rgba(244,232,204,.32)}
+  .t-portada .bl-firma .caps{color:rgba(244,232,204,.66)}
+  .t-portada .lam-pie,.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.34)}
+  .t-portada .lam-pie .a,.t-vineta .lam-pie .a{color:#D9B9A8}
+  .t-portada .lam-pie .t,.t-vineta .lam-pie .t{color:rgba(244,232,204,.76)}
+  .t-portada .lam-pie .sigue,.t-vineta .lam-pie .sigue{color:rgba(244,232,204,.72)}
 
   /* Una entrada, una lámina: fecha, título, texto, cita, imagen, cautela y
      fuente juntos mientras quepan. Lo que desborda abre la lámina siguiente. */

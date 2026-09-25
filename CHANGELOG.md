@@ -13,6 +13,32 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.7 — 25 de septiembre de 2026
+### La ilustración entra en la lámina
+
+- **Una ilustración no es un facsímil, y ahora los datos lo distinguen.** Una entrada puede llevar
+  `img` —reproducción documental— o `ilu` —ilustración interpretada, con `gen`: el modelo y la
+  fecha, que son su firma—. Cualquier lámina que lleve una `ilu` **escribe «ilustración
+  interpretada» en el pie**, la vea quien la vea: en un feed una lámina se comparte suelta.
+- **1006 estrena ilustración.** La comunidad de hermanos y hermanas ante la iglesia de San
+  Salvador, en tratamiento de portada: ocupa la lámina entera y el texto va escrito encima.
+- **Cuatro tratamientos disponibles**, elegibles entrada por entrada con el campo `tr`: `caja`,
+  `vineta`, `aguada` y `portada`. Quedan los cuatro aunque de momento sólo se use uno.
+- El grano del papel cae también **sobre el dibujo**. El de `body::before` va detrás del
+  contenido, así que se repite dentro de la capa de la ilustración: es lo que hace que parezca
+  impresa en la hoja y no pegada encima.
+- ⚠️ **Las seis imágenes que ya había siguen en caja.** Son dibujos de excavación, una planta, una
+  página del Catastro y la impronta del sello de 1876: documentos. Recortar un facsímil a sangre y
+  escribir encima lo convierte en decoración y lo hace ilegible.
+- El prompt, el modelo y las licencias tomadas quedan escritos en
+  [ilustraciones-generadas.md](docs/06-identidad-simbolos/ilustraciones-generadas.md). En una
+  imagen generada son lo único verificable que tiene.
+
+> ⚠️ **Estado del contenido, sin cambios**: faltan por incorporar a la línea **1073, 1526, 1591,
+> 1694, 1756 y 1768**.
+
+---
+
 ## v0.6 — 25 de septiembre de 2026
 ### Marcas más finas en el raíl
 

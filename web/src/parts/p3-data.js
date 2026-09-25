@@ -55,6 +55,13 @@ const EVENTOS = [
   { id: 'd1006', era: 2, y: '1006', d: '26 de junio', s: 1006, n: 'cotejar',
     t: 'La abadesa Bendicta y la iglesia de San Salvador',
     q: '«patronus nostri Sancti Salvatoris… in cuius honore dedicata est ecclesia»',
+    /* No es un facsímil: es una ilustración interpretada. Va en campo aparte
+       para que el pie lo diga siempre, la vea quien la vea. */
+    ilu: { src: 'img/abadesa-1006.jpg', w: 1400, h: 933,
+      alt: 'Ilustración interpretada: una abadesa con báculo en primer término y, detrás, una comunidad de monjes y monjas ante una pequeña iglesia de piedra junto al río.',
+      cap: 'La comunidad de hermanos y hermanas ante la iglesia de San Salvador, según lo que dice el diploma de 1006 y nada más. Ni el rostro, ni los hábitos, ni la forma de la iglesia constan en fuente alguna.',
+      gen: 'Generada con ChatGPT el 25-IX-2026' },
+    tr: 'portada',
     p: 'Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira» y «fundado bajo la ciudad de Astorga». El latín dice dos cosas seguidas: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta. Entre lo donado, junto a molinos y pesqueras, hay linares.',
     nota: 'La fecha es una enmienda, no una lectura. La copia de 1613 trae una era que daría 976, imposible con el rey y el obispo que el propio texto nombra; se adopta 1006, que es la que da un extracto de la Biblioteca Nacional.',
     f: 'GONZÁLEZ RODRÍGUEZ, «Castroferrol, un enclave monástico altomedieval en el valle del Tera», Brigecio 10 (2000), apéndice documental · AHN, ms. 1195B, f. 688r-v · ed. Cavero Domínguez y Martín López, Col. doc. de la catedral de Astorga, I, doc. 200' },
@@ -233,15 +240,32 @@ const USOS = [
 
 /* ═══════════ Control de versiones ═══════════
    VERSION      — la que se muestra en la portada y en el pie.
+   Imágenes, y son dos cosas distintas:
+     img — reproducción documental (facsímil, planta, dibujo de excavación).
+           Se muestra entera y con su pie. No se recorta ni se escribe encima.
+     ilu — ilustración interpretada. No es prueba de nada: el pie lo dice
+           siempre, y lleva `gen` con el modelo y la fecha, que es su firma.
+     tr  — sólo para `ilu`: cómo se integra en la lámina del teléfono.
+           'caja' (por defecto), 'vineta', 'aguada' o 'portada'.
+
    VERSIONES_VISIBLE — ponlo en false y el apartado «Versiones» desaparece
                        de la web (también su enlace en el índice). El registro
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.6';
+const VERSION = '0.7';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.7', f: '25 de septiembre de 2026', t: 'La ilustración entra en la lámina',
+    c: [
+      '<b>Una ilustración no es un facsímil, y ahora los datos lo distinguen.</b> Las imágenes van en dos campos: uno para la reproducción documental y otro para la ilustración interpretada. Cualquier lámina que lleve la segunda <b>escribe «ilustración interpretada» en el pie</b>, la vea quien la vea: en un feed una lámina se comparte suelta.',
+      '<b>1006 estrena ilustración</b>: la comunidad de hermanos y hermanas ante la iglesia de San Salvador. Ocupa la lámina entera, con el texto escrito encima, como la cubierta de un libro.',
+      '<b>Cuatro maneras de integrar un dibujo</b>, elegibles entrada por entrada: en caja, a sangre por abajo, de fondo rebajada, o de portada. Quedan las cuatro disponibles aunque sólo se use una.',
+      'El grano del papel cae también <b>sobre el dibujo</b>, no sólo alrededor: es lo que hace que parezca impreso en la hoja y no pegado encima.',
+      'Las seis imágenes que ya había —dibujos de excavación, una planta, una página del Catastro y la impronta del sello— <b>siguen en caja</b>: un documento no se recorta a sangre ni se escribe encima.'
+    ],
+    p: 'Sigue pendiente lo mismo: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.6', f: '25 de septiembre de 2026', t: 'Marcas más finas en el raíl',
     c: [
       '<b>Las marcas de la línea de desplazamiento del teléfono se acortan</b>: cruzaban el raíl casi de lado a lado y pesaban más que el propio trazo. Ahora ocupan nueve de los veintiocho de ancho, lo justo para verse sin taparlo.'
