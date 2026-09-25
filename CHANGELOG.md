@@ -13,6 +13,19 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.19 — 25 de septiembre de 2026
+### La imagen y nada más
+
+- **Fuera el marco de papel, la sombra, el giro y el grano** de la lámina de retrato. La
+  imagen va **centrada y lo más grande que quepa entera**, sin nada encima.
+- Se ajusta con `contain` y no con `cover`: llenar la pantalla de borde a borde obligaría a
+  **recortar el cuadro**, que es lo que se descartó en la 0.18.
+
+> Sigue en pie el otro recorte: el **fondo** de esas seis entradas usa el tratamiento de
+> portada y sí recorta.
+
+---
+
 ## v0.18 — 25 de septiembre de 2026
 ### El cuadro entero, sin recortar
 

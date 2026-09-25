@@ -601,7 +601,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.18';
+const VERSION = '0.19';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -609,6 +609,12 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.19', f: '25 de septiembre de 2026', t: 'La imagen y nada más',
+    c: [
+      '<b>Fuera el marco, la sombra, el giro y el grano</b> de la lámina de retrato. La imagen va centrada y lo más grande que quepa entera, y no lleva nada encima.',
+      'Se ajusta a la pantalla <b>sin cortar</b>: llenarla de borde a borde obligaría a recortar el cuadro, y eso ya se descartó.'
+    ],
+    p: 'El fondo de esas mismas entradas sigue recortando el cuadro para llenar la pantalla.' },
   { v: '0.18', f: '25 de septiembre de 2026', t: 'El cuadro entero, sin recortar',
     c: [
       '⚠️ <b>Fuera el recorte en diagonal</b> de la lámina de retrato. Cortaba dos triángulos del cuadro, y <b>una pintura recortada deja de ser la pintura</b>.',
