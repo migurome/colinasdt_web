@@ -242,7 +242,7 @@ const EVENTOS = [
     p: '27 vecinos, el cura incluido, y 26 casas, diez de ellas inhabitables. Un término de 2.372 fanegas, un tercio de monte. El concejo tiene molino harinero y casa de fragua; hay un solo herrero, Santiago Zerrón. El río Tera es del conde de Benavente, y le rinde 200 reales al año.',
     q: '«no pueden dar razón en virtud de qué privilegio goza estos derechos»',
     nota: 'Así responden los vecinos (28.ª) cuando se les pregunta por el título de lo que cobra el conde. Nadie en el pueblo sabía por qué pagaba.',
-    img: { src: 'img/catastro-1752-f372.jpg', w: 720, h: 1054, scan: true, alt: 'Página manuscrita del Catastro de Ensenada de Colinas de Trasmonte, en letra caligráfica del siglo XVIII.', cap: 'Final de la respuesta 3.ª, con los lindes del término, e inicio de la 4.ª (AGS, libro 654, imagen 0372).' },
+    img: { src: 'img/catastro-1752-f372.jpg', w: 720, h: 1054, llena: true, alt: 'Página manuscrita del Catastro de Ensenada de Colinas de Trasmonte, en letra caligráfica del siglo XVIII.', cap: 'Final de la respuesta 3.ª, con los lindes del término, e inicio de la 4.ª (AGS, libro 654, imagen 0372).' },
     tr: 'portada',
     f: 'AGS, DGR, 1.ª Remesa, Catastro de Ensenada, Respuestas Generales, libro 654, ff. 368-407 · ed. CEB «Ledo del Pozo», pp. 238-243' },
 
@@ -595,13 +595,17 @@ const USOS = [
            referencia no se pierde nunca.
      pos — encuadre de esa imagen de fondo, si el de por defecto no sirve.
            Lo que lleva object-position, p. ej. '50% 20%'.
+     llena — sólo para `img`: en la lámina limpia del final, llenar la
+           pantalla de borde a borde en vez de verse entera. Por defecto un
+           documento se ve entero, porque recortarlo lo deja sin leer; esto
+           es para decir que en esa imagen concreta da igual.
 
    VERSIONES_VISIBLE — ponlo en false y el apartado «Versiones» desaparece
                        de la web (también su enlace en el índice). El registro
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.24';
+const VERSION = '0.25';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -609,6 +613,13 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.25', f: '25 de septiembre de 2026', t: 'La página del Catastro, a sangre',
+    c: [
+      '<b>En 1752 la imagen llena ya la lámina de borde a borde</b>, igual que los retratos. Se ve la letra del escribano grande, a cambio de perder los márgenes de la página.',
+      'No es una excepción a mano: los datos tienen ahora un campo para decirlo imagen por imagen. Los otros cinco documentos <b>siguen viéndose enteros</b>, porque recortar un facsímil suele dejarlo sin leer.',
+      'Fuera una bandera muerta de esa misma imagen, resto de una versión vieja que no usaba ya nadie.'
+    ],
+    p: 'Si alguno de los otros cuatro documentos también pide llenar, es una palabra en sus datos.' },
   { v: '0.24', f: '25 de septiembre de 2026', t: 'La voz, elegida a votos',
     c: [
       '<b>Las once entradas de Castroferrol quedan en la voz votada</b>, elegida <b>entrada por entrada</b> y no por línea: seis cambian, cinco ya estaban.',

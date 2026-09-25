@@ -13,6 +13,20 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.25 — 25 de septiembre de 2026
+### La página del Catastro, a sangre
+
+- **En 1752 la imagen llena ya la lámina de borde a borde**, igual que los retratos. Se ve
+  la letra del escribano grande, a cambio de perder los márgenes de la página.
+- No es una excepción escrita a mano: los datos tienen un campo **`llena`** para decirlo
+  imagen por imagen, como ya se decían el tratamiento y el encuadre. Los otros **cinco
+  documentos siguen viéndose enteros**, porque recortar un facsímil suele dejarlo sin leer;
+  si alguno también pide llenar, es una palabra.
+- Fuera `scan: true` de esa misma imagen: bandera muerta de una versión vieja que no leía
+  nadie.
+
+---
+
 ## v0.24 — 25 de septiembre de 2026
 ### La voz, elegida a votos
 

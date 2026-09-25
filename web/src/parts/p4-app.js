@@ -429,9 +429,10 @@
         const solo = (e.ilu && !e.ilu.prov) ? e.ilu : (e.img || null);
         if (solo) {
           const r = document.createElement('section');
-          /* un documento se ve entero: recortarlo lo deja de ser. Una pintura
-             o un dibujo llenan la lamina de borde a borde. */
-          const doc = !!(e.img && !e.img.ctx);
+          /* Un documento se ve entero: recortarlo lo deja sin leer. Una pintura
+             o un dibujo llenan la lamina de borde a borde, y un documento
+             tambien si sus datos lo piden con `llena`. */
+          const doc = !!(e.img && !e.img.ctx && !e.img.llena);
           r.className = 'lam lam-ret' + (doc ? ' lam-ret-doc' : '');
           r.setAttribute('aria-label', esc(solo.alt || ''));
           r.innerHTML =
