@@ -129,6 +129,8 @@ img{max-width:100%}
 .menu-lista{position:absolute;top:calc(100% + 7px);right:0;min-width:15.5rem;
   background:var(--papel-alto);border:1px solid var(--filo-fuerte);padding:6px;
   box-shadow:0 3px 0 rgba(120,92,48,.2);display:grid}
+/* el atributo hidden tiene que ganar: si no, el menú se queda abierto */
+.menu-lista[hidden]{display:none}
 .menu-lista a{display:block;padding:9px 13px;text-decoration:none;color:var(--tinta-2);
   font-size:1rem;line-height:1.3}
 .menu-lista a:hover{background:var(--papel-hondo);color:var(--almagre)}
@@ -433,14 +435,17 @@ summary:hover{color:var(--almagre)}
   .lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 
-  .l-portada .anio{color:var(--teja);font-size:clamp(3rem,16vw,5rem);line-height:.9}
-  .l-portada .dia{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--apunte);margin-top:8px}
-  .l-portada h4{color:var(--almagre);font-size:clamp(1.3rem,6vw,1.8rem);line-height:1.14;margin-top:15px}
-  .l-portada .desliza{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--tenue);margin-top:18px;display:flex;align-items:center;gap:9px}
-  .l-portada .desliza::after{content:"";width:28px;height:1px;background:var(--filo-fuerte);
-    animation:vaiven 2.4s ease-in-out infinite}
+  /* La primera lámina de cada entrada: fecha, título y el texto.
+     Lo que no cabe —o lleva imagen, cita o cautela— pasa al carrusel. */
+  .cab-ev{display:grid;gap:5px;margin-bottom:4px}
+  .cab-ev .anio{color:var(--teja);font-size:clamp(2.1rem,10vw,3rem);line-height:.95}
+  .cab-ev .dia{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--apunte)}
+  .cab-ev h4{color:var(--almagre);font-size:clamp(1.2rem,5.4vw,1.6rem);line-height:1.15;margin-top:4px}
+  .prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
+  .lam-cont .prosa::before{content:"…";color:var(--filo-fuerte);margin-right:.25em}
+  .lam-pie .sigue{margin-left:auto;flex:none;font-size:.6875rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--apunte)}
   .l-cita .cita{margin:0;max-width:none;font-size:clamp(1.05rem,4.4vw,1.28rem)}
   .l-relato p{font-size:clamp(1rem,4vw,1.15rem);line-height:1.52}
   .l-img{align-content:center}

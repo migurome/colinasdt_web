@@ -238,10 +238,18 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.3';
+const VERSION = '0.4';
 const VERSIONES_VISIBLE = true;
 
 const VERSIONES = [
+  { v: '0.4', f: '25 de septiembre de 2026', t: 'La lámina lleva ya la entrada entera',
+    c: [
+      '⚠️ <b>Corregido: el menú se quedaba abierto.</b> Una regla de estilo le ganaba al atributo que lo oculta, así que la lista se veía sin haberla pulsado. Ahora sólo se despliega al pulsar las tres rayas.',
+      '<b>La primera lámina de cada entrada trae ya la fecha, el título y el texto</b>, que antes iban en dos láminas distintas.',
+      '<b>Al carrusel pasa sólo lo que no cabe</b>: la cita, la imagen, la cautela y la fuente. Y si el texto no entra en la pantalla, se parte por frases y continúa en la lámina siguiente, marcada con «sigue».',
+      'El reparto se mide sobre la pantalla real, así que se rehace al girar el teléfono y <b>al terminar de cargar la tipografía</b>, que cambia las medidas.'
+    ],
+    p: 'Sigue pendiente lo mismo: incorporar a la línea <b>1073, 1526, 1591, 1694, 1756 y 1768</b>.' },
   { v: '0.3', f: '25 de septiembre de 2026', t: 'En el teléfono, la portada es la primera lámina',
     c: [
       '<b>El feed ocupa ya la pantalla entera en el teléfono, y empieza en la portada.</b> La primera lámina es el nombre del pueblo con los filtros de prueba debajo; deslizando al lado está la presentación. En cuanto se desliza hacia arriba, la pantalla es sólo la línea.',

@@ -13,6 +13,27 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.4 — 25 de septiembre de 2026
+### La lámina lleva ya la entrada entera
+
+- ⚠️ **Corregido: el menú se quedaba abierto.** La regla `.menu-lista{display:grid}` le ganaba en
+  especificidad al `[hidden]` que lo oculta, así que la lista se veía sin haberla pulsado. Ahora
+  sólo se despliega al pulsar las tres rayas.
+- **La primera lámina de cada entrada trae ya la fecha, el título y el texto.** Antes la fecha y el
+  título iban en una lámina y la prosa en la siguiente.
+- **Al carrusel pasa sólo lo que no cabe**: la cita, la imagen, la cautela y la fuente. Y si el
+  texto no entra en la pantalla, **se parte por frases** y continúa en la lámina siguiente, con un
+  «sigue» en el pie y unos puntos suspensivos al empezar.
+- El reparto **se mide sobre la pantalla real**, no se calcula a ojo: se rehace al girar el
+  teléfono y al terminar de cargar EB Garamond, que cambia las medidas del texto.
+- Los puntos del carrusel se recalculan después del reparto, porque el número de láminas ya no se
+  sabe de antemano.
+
+> ⚠️ **Estado del contenido, sin cambios**: faltan por incorporar a la línea **1073, 1526, 1591,
+> 1694, 1756 y 1768**.
+
+---
+
 ## v0.3 — 25 de septiembre de 2026
 ### En el teléfono, la portada es la primera lámina
 

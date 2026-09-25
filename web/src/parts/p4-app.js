@@ -169,13 +169,24 @@
   const Feed = {
     montado: false,
     laminasDe(e) {
-      const L = ['portada'];
+      const L = ['texto'];                 /* fecha + titulo + prosa */
       if (e.q) L.push('cita');
-      if (e.p) L.push('relato');
       if (e.img) L.push('imagen');
       if (e.nota) L.push('nota');
       if (e.f) L.push('firma');
       return L;
+    },
+    /* Parte un texto en frases, sin lookbehind: no todos los telefonos
+       lo admiten todavia. */
+    frases(t) {
+      const out = [];
+      let buf = '';
+      String(t).split(' ').forEach((w) => {
+        buf += (buf ? ' ' : '') + w;
+        if (/[.:;»!?]$/.test(w)) { out.push(buf); buf = ''; }
+      });
+      if (buf) out.push(buf);
+      return out;
     },
     firmaCorta(f) {
       const t = String(f).split('·')[0].trim();
@@ -194,18 +205,18 @@
     },
     cuerpo(e, k) {
       switch (k) {
-        case 'portada':
-          return `<div class="lam-cuerpo l-portada"><div>
-            <div class="anio">${esc(e.y)}</div>
-            ${e.d ? `<div class="dia">${esc(e.d)}</div>` : ''}
-            <h4>${e.t}</h4>
-            ${this.laminasDe(e).length > 1 ? '<div class="desliza">Desliza al lado</div>' : ''}
-          </div></div>`;
+        case 'texto':
+          return `<div class="lam-cuerpo arriba">
+            <div class="cab-ev">
+              <span class="anio">${esc(e.y)}</span>
+              ${e.d ? `<span class="dia">${esc(e.d)}</span>` : ''}
+              <h4>${e.t}</h4>
+            </div>
+            <p class="prosa">${e.p}</p>
+            ${e.link ? `<p class="fuente">En esta página: ${e.link.t}</p>` : ''}
+          </div>`;
         case 'cita':
           return `<div class="lam-cuerpo l-cita"><p class="cita">${e.q}</p></div>`;
-        case 'relato':
-          return `<div class="lam-cuerpo l-relato arriba"><p>${e.p}</p>${
-            e.link ? `<p class="fuente">En esta página: ${e.link.t}</p>` : ''}</div>`;
         case 'imagen':
           return `<div class="lam-cuerpo l-img"><figure class="ev-fig">
             <img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}">
@@ -233,11 +244,10 @@
           return;
         }
         const L = this.laminasDe(e);
-        const lams = L.map((k) => `<section class="lam" aria-label="${esc(e.y + ' · ' + k)}">${
+        const lams = L.map((k) => `<section class="lam lam-${k}" aria-label="${esc(e.y + ' · ' + k)}">${
           this.cabecera(e)}${this.cuerpo(e, k)}${this.pie(e)}</section>`).join('');
-        const pts = L.map((k, j) => `<span class="punto${j === 0 ? ' on' : ''}"></span>`).join('');
         h += `<article class="post" id="post-${e.id}" data-i="${i}" data-n="${e.n}">
-          <div class="puntos" aria-hidden="true">${pts}</div>
+          <div class="puntos" aria-hidden="true"></div>
           <div class="carrusel" tabindex="0" aria-label="${esc(e.y + ': ' + e.t)}">${lams}</div></article>`;
       });
       h = `<article class="post post-portada" data-i="-1">
@@ -262,13 +272,14 @@
 
       this.posts.forEach((post) => {
         const car = post.querySelector('.carrusel');
-        const pts = post.querySelectorAll('.punto');
-        if (!pts.length) return;
         let t = null;
         car.addEventListener('scroll', () => {
           if (t) return;
           t = requestAnimationFrame(() => {
             t = null;
+            /* se reconsultan cada vez: el reparto los vuelve a crear */
+            const pts = post.querySelectorAll('.punto');
+            if (!pts.length || !car.clientWidth) return;
             const n = Math.round(car.scrollLeft / car.clientWidth);
             pts.forEach((p, j) => p.classList.toggle('on', j === n));
           });
@@ -291,6 +302,79 @@
       this.montado = true;
       this.filtrar(filtroActual);
       this.pinta(0);
+    },
+    /* Lo que no cabe en la pantalla pasa al carrusel. Se mide sobre la
+       lamina ya dispuesta: si el texto desborda, se retiran frases y se
+       abren laminas de continuacion. */
+    repartir() {
+      if (!this.montado) return;
+      const sonda = this.feed.querySelector('.lam-texto .lam-cuerpo');
+      if (!sonda || sonda.clientHeight < 80) return;      /* aun sin disponer */
+      this.posts.forEach((post) => {
+        const i = +post.dataset.i;
+        if (i < 0) return;
+        const car = post.querySelector('.carrusel');
+        const base = car.querySelector('.lam-texto');
+        if (!base) return;
+        const e = EVENTOS[i];
+        Array.prototype.slice.call(car.querySelectorAll('.lam-cont')).forEach((x) => x.remove());
+        Array.prototype.slice.call(car.querySelectorAll('.sigue')).forEach((x) => x.remove());
+
+        const pro = base.querySelector('.prosa');
+        if (!pro) return;
+        const fr = this.frases(e.p);
+        const ref = base.nextSibling;
+        let lam = base, destino = pro, idx = 0, guarda = 0;
+        destino.textContent = '';
+        while (idx < fr.length && guarda < 12) {
+          const cuerpo = lam.querySelector('.lam-cuerpo');
+          const antes = destino.textContent;
+          destino.textContent = antes + (antes ? ' ' : '') + fr[idx];
+          if (cuerpo.scrollHeight > cuerpo.clientHeight + 1) {
+            if (!antes) { idx++; continue; }   /* una frase sola que no cabe: se deja */
+            destino.textContent = antes;
+            lam = this.laminaCont(e);
+            car.insertBefore(lam, ref);
+            destino = lam.querySelector('.prosa');
+            destino.textContent = '';
+            guarda++;
+          } else {
+            idx++;
+          }
+        }
+        const textos = car.querySelectorAll('.lam-texto, .lam-cont');
+        textos.forEach((t, j) => {
+          if (j < textos.length - 1) {
+            const av = document.createElement('span');
+            av.className = 'sigue';
+            av.textContent = 'sigue →';
+            t.querySelector('.lam-pie').appendChild(av);
+          }
+        });
+      });
+      this.puntos();
+    },
+    laminaCont(e) {
+      const d = document.createElement('section');
+      d.className = 'lam lam-cont';
+      d.setAttribute('aria-label', e.y + ' · continuacion');
+      d.innerHTML = this.cabecera(e) +
+        '<div class="lam-cuerpo arriba"><p class="prosa"></p></div>' + this.pie(e);
+      return d;
+    },
+    puntos() {
+      this.posts.forEach((post) => {
+        const caja = post.querySelector('.puntos');
+        const car = post.querySelector('.carrusel');
+        if (!caja || !car) return;
+        const n = post.querySelectorAll('.lam').length;
+        const act = car.clientWidth ? Math.round(car.scrollLeft / car.clientWidth) : 0;
+        let h = '';
+        for (let j = 0; j < n; j++) {
+          h += '<span class="punto' + (j === act ? ' on' : '') + '"></span>';
+        }
+        caja.innerHTML = n > 1 ? h : '';
+      });
     },
     /* La portada y los filtros se mudan al feed, y vuelven en pantalla grande */
     adjuntar() {
@@ -445,6 +529,11 @@
         p.textContent = TXT.feed;
         Feed.montar();
         Feed.adjuntar();
+        requestAnimationFrame(() => requestAnimationFrame(() => Feed.repartir()));
+        /* EB Garamond cambia las medidas: se reparte otra vez al cargar */
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(() => { if (Estado.movil) Feed.repartir(); });
+        }
       } else {
         Feed.soltar();
         sec.classList.remove('feed-on');
@@ -456,6 +545,12 @@
     }
     mq.addEventListener ? mq.addEventListener('change', ajustar) : mq.addListener(ajustar);
     ajustar();
+    let tr = null;
+    window.addEventListener('resize', () => {
+      if (!Estado.movil) return;
+      clearTimeout(tr);
+      tr = setTimeout(() => Feed.repartir(), 220);
+    });
   })();
 
   /* ═══════════ 5. Usos del suelo, 1752 ═══════════ */
