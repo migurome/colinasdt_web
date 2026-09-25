@@ -601,7 +601,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.17';
+const VERSION = '0.18';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -609,6 +609,13 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.18', f: '25 de septiembre de 2026', t: 'El cuadro entero, sin recortar',
+    c: [
+      '⚠️ <b>Fuera el recorte en diagonal</b> de la lámina de retrato. Cortaba dos triángulos del cuadro, y <b>una pintura recortada deja de ser la pintura</b>.',
+      '<b>Ahora el retrato se ve entero</b>, montado sobre papel con su filo y ladeado unos grados, como una lámina dejada en la mesa. Sigue sin una palabra encima.',
+      'El grano del papel pasa por encima también del cuadro, que es lo que hace que parezca impreso en la hoja.'
+    ],
+    p: 'El fondo de esas mismas entradas sigue recortando el cuadro para llenar la pantalla. Se puede cambiar a cuadro entero si también estorba.' },
   { v: '0.17', f: '25 de septiembre de 2026', t: 'La cara sola, en diagonal',
     c: [
       '<b>Las seis entradas con retrato ganan una lámina más</b>: la cara sola, recortada en una banda diagonal sobre el papel, <b>sin una palabra encima</b>. Va la última del carrusel: primero se lee la entrada, luego se mira la cara.',

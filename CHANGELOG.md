@@ -13,6 +13,24 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.18 — 25 de septiembre de 2026
+### El cuadro entero, sin recortar
+
+- ⚠️ **Fuera el recorte en diagonal** que estrenó la 0.17. Cortaba dos triángulos del cuadro para
+  dejar una banda, y **una pintura recortada deja de ser la pintura**. Con un facsímil sería aún
+  peor; con un Goya tampoco valía.
+- **El retrato se ve ahora entero**, montado sobre papel con su filo y su sombra, y **ladeado unos
+  grados** —como una lámina dejada en la mesa—. Sigue siendo la última del carrusel y sigue sin
+  una palabra encima.
+- El grano del papel pasa por encima también del cuadro: es lo que hace que parezca impreso en la
+  hoja y no pegado sobre ella.
+
+> **Queda otro recorte, y este no se ha tocado.** El fondo de esas seis entradas usa el
+> tratamiento de portada, que **recorta el cuadro para llenar la pantalla**. Es anterior a este
+> cambio y no se pidió quitarlo; si también estorba, se cambia a cuadro entero.
+
+---
+
 ## v0.17 — 25 de septiembre de 2026
 ### La cara sola, en diagonal
 

@@ -432,7 +432,7 @@
           const r = document.createElement('section');
           r.className = 'lam lam-ret';
           r.setAttribute('aria-label', esc(e.img.alt));
-          r.innerHTML = '<div class="ret-filo" aria-hidden="true"></div>' +
+          r.innerHTML =
             '<div class="ret"><img src="' + e.img.src + '" width="' + e.img.w +
             '" height="' + e.img.h + '" loading="lazy" alt=""></div>';
           car.appendChild(r);
