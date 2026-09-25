@@ -13,6 +13,20 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.20 — 25 de septiembre de 2026
+### El retrato, a sangre
+
+- **La lámina de retrato llena la pantalla de borde a borde**, centrada, sin papel por arriba
+  ni por los lados.
+- ⚠️ **Eso recorta, y no hay manera de evitarlo**: llenar el borde obliga a quitar lo que
+  sobra por el lado largo. Se asume a propósito. **El cuadro entero, con su autor, su obra y
+  su licencia, sigue estando en la lámina del texto** de la misma entrada, así que no se
+  pierde de la web.
+- El más afectado es **Felipe III**, que es casi cuadrado y pierde ancho. Los verticales
+  —el Goya, el Aranda— pierden poco.
+
+---
+
 ## v0.19 — 25 de septiembre de 2026
 ### La imagen y nada más
 

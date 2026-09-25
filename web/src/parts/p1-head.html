@@ -567,14 +567,15 @@ summary:hover{color:var(--almagre)}
   .lam .ev-fig img{max-height:52svh;object-fit:contain}
   .lam .ev-fig figcaption{padding:7px 2px 0;font-size:.8125rem}
   /* ═══ Lámina de retrato ════════════════════════════════════════
-     La imagen y nada más: centrada, lo más grande que quepa entera y sin
-     texto. `contain` y no `cover`, que llenar del todo obligaría a cortar.
-     Sin marco, sin sombra, sin giro y sin grano: nada encima del cuadro.
-     Sólo en las entradas con retrato, y al final del carrusel. El crédito
-     va en la lámina del texto de la misma entrada. */
+     La imagen y nada más: llena la lámina de borde a borde, centrada, sin
+     texto ni marco. `cover` recorta lo que sobra por el lado largo —no hay
+     manera de llenar el borde sin quitar algo—; el cuadro entero, con su
+     crédito, sigue estando en la lámina del texto de la misma entrada.
+     Sólo en las entradas con retrato, y al final del carrusel. */
   .lam-ret{padding:0;grid-template-rows:1fr;background:var(--papel)}
   .lam-ret .ret{width:100%;height:100%}
-  .lam-ret .ret img{display:block;width:100%;height:100%;object-fit:contain}
+  .lam-ret .ret img{display:block;width:100%;height:100%;object-fit:cover;
+    object-position:50% 50%}
 
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}

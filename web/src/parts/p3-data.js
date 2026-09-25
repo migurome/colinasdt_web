@@ -601,7 +601,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.19';
+const VERSION = '0.20';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -609,6 +609,12 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.20', f: '25 de septiembre de 2026', t: 'El retrato, a sangre',
+    c: [
+      '<b>La lámina de retrato llena la pantalla de borde a borde</b>, centrada y sin papel a los lados ni por arriba.',
+      '⚠️ <b>Eso recorta</b>: llenar el borde obliga a quitar lo que sobra por el lado largo. El cuadro entero, con su crédito, sigue estando en la lámina del texto de la misma entrada.'
+    ],
+    p: 'El más afectado es Felipe III, que es casi cuadrado y pierde ancho; los verticales —Goya, Aranda— pierden poco.' },
   { v: '0.19', f: '25 de septiembre de 2026', t: 'La imagen y nada más',
     c: [
       '<b>Fuera el marco, la sombra, el giro y el grano</b> de la lámina de retrato. La imagen va centrada y lo más grande que quepa entera, y no lleva nada encima.',
