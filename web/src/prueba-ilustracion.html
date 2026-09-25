@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Prueba · cómo se integra la ilustración</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..600&display=swap">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   PRUEBA DE CONCEPTO — 25-IX-2026
+   Cuatro maneras de meter una ilustración en la lámina del feed, con la
+   misma entrada (1006) y la misma imagen. No es una página del sitio:
+   sirve para elegir tratamiento y luego se retira.
+   Sistema de estilo del 23-IX: papel, EB Garamond, tintas con código.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root{
+  --papel:#F4E8CC; --papel-alto:#FAF2DE; --papel-hondo:#EADCBB;
+  --tinta:#241C14; --tinta-2:#3B2E20; --apunte:#6B4E2E; --tenue:#8C795C;
+  --almagre:#6E2417; --teja:#8C2318; --granza:#A8422A;
+  --anil:#2C4668; --oliva:#4A5524;
+  --filo:#CDBA92; --filo-fuerte:#A8916A;
+  --f:"EB Garamond",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--papel);color:var(--tinta);font-family:var(--f);
+  font-size:1.25rem;line-height:1.58;-webkit-font-smoothing:antialiased}
+p{margin:0}
+h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
+img{max-width:100%}
+
+/* El grano y la viñeta del sitio, fijos sobre todo lo demás. Son la clave
+   de la integración: la misma trama cae sobre el papel y sobre el dibujo. */
+body::before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.5;
+  mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+body::after{content:"";position:fixed;inset:0;z-index:41;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,92,48,.13) 100%)}
+
+/* ——— el feed: una lámina por pantalla, como en la web ——— */
+.feed{height:100svh;overflow-y:auto;scroll-snap-type:y mandatory;scrollbar-width:none}
+.feed::-webkit-scrollbar{display:none}
+.hoja{height:100svh;scroll-snap-align:start;scroll-snap-stop:always;
+  display:flex;justify-content:center;background:var(--papel)}
+.lam{position:relative;overflow:hidden;width:100%;max-width:26rem;height:100%;
+  display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px;
+  border-inline:1px solid var(--filo)}
+
+.lam-top{display:flex;align-items:center;gap:9px;min-width:0;position:relative;z-index:3}
+.lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
+.lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.12em;color:var(--apunte)}
+.mk{width:12px;height:12px;border-radius:50%;background:var(--anil);display:inline-block;flex:none}
+
+.lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:start;gap:12px;
+  position:relative;z-index:3}
+.lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline;
+  position:relative;z-index:3}
+.lam-pie .a{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teja);flex:none}
+.lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+.cab-ev{display:grid;gap:5px}
+.cab-ev .anio{color:var(--teja);font-size:clamp(1.9rem,9vw,2.7rem);line-height:.95}
+.cab-ev h4{color:var(--almagre);font-size:clamp(1.15rem,5vw,1.5rem);line-height:1.15;margin-top:3px}
+.prosa{font-size:clamp(1rem,4vw,1.125rem);line-height:1.5;text-wrap:pretty}
+.fuente{font-size:.8125rem;line-height:1.5;color:var(--tenue)}
+.caps{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--tenue)}
+
+/* ═══ A · CAJA — lo que hace la web hoy ═══════════════════════════════════
+   La ilustración es un objeto con su marco, su fondo y su pie. Se ve que
+   está pegada encima. */
+.ev-fig{margin:0;max-width:none;background:var(--papel-alto);padding:10px 10px 0;
+  border:1px solid var(--filo)}
+.ev-fig img{display:block;width:100%;height:auto;max-height:42svh;object-fit:contain;
+  mix-blend-mode:multiply}
+.ev-fig figcaption{padding:9px 2px 10px;font-size:.8125rem;line-height:1.45;color:var(--tinta-2)}
+
+/* ═══ B · VIÑETA A SANGRE ═════════════════════════════════════════════════
+   Sin caja y sin pie propio: se sale por los tres bordes y por arriba se
+   deshace en el papel. El texto queda encima, sobre papel limpio. */
+.t-vineta .ilu{position:absolute;left:0;right:0;bottom:0;height:64%;z-index:1;
+  mix-blend-mode:multiply}
+.t-vineta .ilu img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;
+  -webkit-mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%);
+  mask-image:linear-gradient(to top,#000 52%,rgba(0,0,0,.55) 74%,transparent 100%)}
+.t-vineta .lam-cuerpo{align-content:start}
+.t-vineta .lam-pie{border-top-color:rgba(244,232,204,.35)}
+.t-vineta .lam-pie .a{color:#D9B9A8}
+.t-vineta .lam-pie .t{color:rgba(244,232,204,.72)}
+
+/* ═══ C · AGUADA DE FONDO ═════════════════════════════════════════════════
+   La ilustración ocupa la lámina entera, rebajada, y el texto va encima.
+   Es el control: sirve para ver por qué la marca de agua no funciona. */
+.t-aguada .ilu{position:absolute;inset:0;z-index:1;opacity:.3;mix-blend-mode:multiply}
+.t-aguada .ilu img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.t-aguada .ilu::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(244,232,204,.55),rgba(244,232,204,.15))}
+
+/* ═══ D · PORTADA ═════════════════════════════════════════════════════════
+   La ilustración es el campo, no un objeto dentro de él: ocupa la lámina
+   entera y el texto se escribe encima, en tinta de papel. */
+.t-portada{border-inline-color:transparent}
+.t-portada .ilu{position:absolute;inset:0;z-index:1}
+.t-portada .ilu img{width:100%;height:100%;object-fit:cover;object-position:46% 42%}
+.t-portada .ilu::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(20,14,8,.62) 0%,rgba(20,14,8,.12) 42%,
+    rgba(20,14,8,.30) 74%,rgba(20,14,8,.72) 100%)}
+.t-portada .era-n{color:rgba(244,232,204,.72)}
+.t-portada .sello span{color:rgba(244,232,204,.72)}
+.t-portada .cab-ev .anio{color:#E8C9B4}
+.t-portada .cab-ev h4{color:var(--papel-alto)}
+.t-portada .prosa{color:rgba(244,232,204,.88)}
+.t-portada .lam-pie{border-top-color:rgba(244,232,204,.3)}
+.t-portada .lam-pie .a{color:#D9B9A8}
+.t-portada .lam-pie .t{color:rgba(244,232,204,.72)}
+
+/* ——— las hojas de texto de la prueba ——— */
+.hoja-txt .lam{display:grid;align-content:center;gap:1em;padding:30px 22px}
+.hoja-txt h1{color:var(--almagre);font-size:clamp(1.7rem,7vw,2.2rem);line-height:1.1}
+.hoja-txt h2{color:var(--almagre);font-size:1.25rem}
+.hoja-txt p{font-size:1.0625rem;line-height:1.5;color:var(--tinta-2)}
+.hoja-txt .nota{margin-top:.4em;padding-left:.95em;border-left:2px solid var(--filo-fuerte);
+  font-style:italic;color:var(--apunte);font-size:1rem}
+.hoja-txt .nota b{display:block;font-style:normal;font-weight:600;color:var(--tinta-2)}
+.hoja-txt ol{margin:0;padding-left:1.1em;display:grid;gap:.5em;font-size:1rem;color:var(--tinta-2)}
+.hoja-txt li b{color:var(--almagre);font-weight:600}
+
+/* ——— el rótulo del tratamiento, fijo abajo ——— */
+.chapa{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:35;
+  background:rgba(36,28,20,.86);color:var(--papel-alto);border-radius:999px;
+  padding:6px 15px;font-size:.75rem;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;pointer-events:none;transition:opacity .25s ease}
+.chapa[hidden]{display:none}
+</style>
+</head>
+<body>
+
+<div class="feed" id="feed">
+
+  <article class="hoja hoja-txt" data-chapa="">
+    <div class="lam">
+      <p class="caps">Prueba de concepto · 25-IX-2026</p>
+      <h1>Cómo se mete un dibujo en la página</h1>
+      <p>Cuatro tratamientos de la misma entrada —1006, la abadesa Bendicta— con la misma ilustración. Desliza hacia arriba para verlos en orden. Abajo se indica cuál estás viendo.</p>
+      <p class="nota"><b>Lo que hay que mirar</b>No cuál es más bonito, sino cuál deja claro que el dibujo <em>no es un documento</em> sin convertirlo en un objeto pegado encima.</p>
+    </div>
+  </article>
+
+  <!-- ═══ A · CAJA ═══ -->
+  <article class="hoja" data-chapa="A · Caja, lo de ahora">
+    <div class="lam t-caja">
+      <div class="lam-top"><span class="era-n">Castroferrol</span>
+        <span class="sello"><span class="mk"></span><span>Por cotejar</span></span></div>
+      <div class="lam-cuerpo">
+        <div class="cab-ev"><span class="anio">1006</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div>
+        <figure class="ev-fig">
+          <img src="img/abadesa-1006.jpg" width="1400" height="933" alt="Ilustración: una abadesa con báculo en primer término y, detrás, una comunidad de monjes y monjas ante una pequeña iglesia de piedra junto al río.">
+          <figcaption><b>Interpretación, no documento.</b> Imagen generada en 2026 a partir del diploma de 1006.</figcaption>
+        </figure>
+      </div>
+      <div class="lam-pie"><span class="a">1006</span><span class="t">GONZÁLEZ RODRÍGUEZ, Brigecio 10 (2000), apéndice documental</span></div>
+    </div>
+  </article>
+
+  <!-- ═══ B · VIÑETA A SANGRE ═══ -->
+  <article class="hoja" data-chapa="B · Viñeta a sangre">
+    <div class="lam t-vineta">
+      <div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt="Ilustración: una abadesa con báculo en primer término y, detrás, una comunidad de monjes y monjas ante una pequeña iglesia de piedra junto al río."></div>
+      <div class="lam-top"><span class="era-n">Castroferrol</span>
+        <span class="sello"><span class="mk"></span><span>Por cotejar</span></span></div>
+      <div class="lam-cuerpo">
+        <div class="cab-ev"><span class="anio">1006</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div>
+        <p class="prosa">El latín dice dos cosas seguidas: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta.</p>
+      </div>
+      <div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, Brigecio 10 (2000)</span></div>
+    </div>
+  </article>
+
+  <!-- ═══ C · AGUADA DE FONDO ═══ -->
+  <article class="hoja" data-chapa="C · Aguada de fondo">
+    <div class="lam t-aguada">
+      <div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt=""></div>
+      <div class="lam-top"><span class="era-n">Castroferrol</span>
+        <span class="sello"><span class="mk"></span><span>Por cotejar</span></span></div>
+      <div class="lam-cuerpo">
+        <div class="cab-ev"><span class="anio">1006</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div>
+        <p class="prosa">Oma Iuve, su hijo Veila y la mujer de éste, Gontrode, entregan cuanto tienen al monasterio de Castroferrol, «junto a las aguas corrientes o río Teira». El latín dice dos cosas seguidas: que la iglesia está dedicada a San Salvador, y que allí hay «yugo de hermanos y hermanas» bajo la abadesa Bendicta.</p>
+      </div>
+      <div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, Brigecio 10 (2000)</span></div>
+    </div>
+  </article>
+
+  <!-- ═══ D · PORTADA ═══ -->
+  <article class="hoja" data-chapa="D · Portada">
+    <div class="lam t-portada">
+      <div class="ilu"><img src="img/abadesa-1006.jpg" width="1400" height="933" alt="Ilustración: una abadesa con báculo en primer término y, detrás, una comunidad de monjes y monjas ante una pequeña iglesia de piedra junto al río."></div>
+      <div class="lam-top"><span class="era-n">Castroferrol</span>
+        <span class="sello"><span class="mk"></span><span>Por cotejar</span></span></div>
+      <div class="lam-cuerpo">
+        <div class="cab-ev"><span class="anio">1006</span><h4>La abadesa Bendicta y la iglesia de San Salvador</h4></div>
+        <p class="prosa">«Yugo de hermanos y hermanas» bajo la abadesa Bendicta, en una iglesia dedicada a San Salvador, junto al río Tera.</p>
+      </div>
+      <div class="lam-pie"><span class="a">1006</span><span class="t">Ilustración interpretada · GONZÁLEZ RODRÍGUEZ, Brigecio 10 (2000)</span></div>
+    </div>
+  </article>
+
+  <article class="hoja hoja-txt" data-chapa="">
+    <div class="lam">
+      <h2>En qué se diferencian</h2>
+      <ol>
+        <li><b>A · Caja.</b> El dibujo es un objeto con marco y fondo propios. Se lee como algo pegado encima de la página.</li>
+        <li><b>B · Viñeta.</b> Sin caja: se sale por los tres bordes y por arriba se deshace en el papel. El texto queda sobre papel limpio; sólo el pie cae sobre el dibujo.</li>
+        <li><b>C · Aguada.</b> La ilustración de fondo, rebajada. Se pierde el dibujo y se lee peor el texto: está para descartarla a la vista.</li>
+        <li><b>D · Portada.</b> La ilustración es el campo entero y el texto va encima. Es lo más cercano a una cubierta de libro.</li>
+      </ol>
+      <p class="nota"><b>El truco que las une</b>El grano de papel y la viñeta del sitio están fijos <em>por encima</em> de todo, también del dibujo. Es lo que hace que la ilustración parezca impresa en la misma hoja y no pegada sobre ella.</p>
+    </div>
+  </article>
+
+</div>
+
+<div class="chapa" id="chapa" hidden></div>
+
+<script>
+(function () {
+  var chapa = document.getElementById('chapa');
+  var hojas = document.querySelectorAll('.hoja');
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var t = e.target.dataset.chapa;
+      chapa.textContent = t;
+      chapa.hidden = !t;
+    });
+  }, { threshold: 0.6 });
+  hojas.forEach(function (h) { io.observe(h); });
+})();
+</script>
+</body>
+</html>
