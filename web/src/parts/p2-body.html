@@ -1,29 +1,36 @@
+<div class="capa">
 
-<header class="wrap cab">
-  <div class="cajetin">
-    <div class="c-side" aria-hidden="true">Historia · territorio · identidad</div>
-    <div class="c-main">
-      <div class="c-title"><span class="lbl">término o zona:</span><h1>Colinas de Trasmonte</h1></div>
-      <div class="c-row">
-        <div class="c-cell"><span class="lbl">provincia:</span><b>Zamora</b></div>
-        <div class="c-cell"><span class="lbl">municipio:</span><b>Quiruelas de V.</b></div>
-        <div class="c-cell"><span class="lbl">diócesis:</span><b>Astorga</b></div>
-        <div class="c-cell"><span class="lbl">superficie:</span><b>1.043 ha</b></div>
-        <div class="c-cell"><span class="lbl">habitantes 2024:</span><b>222</b></div>
-        <div class="c-compass" aria-hidden="true">
-          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="1"/><path d="M24 3 L27.5 24 L24 45 L20.5 24 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M24 3 L27.5 24 L20.5 24 Z" fill="currentColor"/></svg>
-        </div>
-      </div>
-      <div class="c-obs">
-        <span class="lbl">observaciones:</span>
-        <p>Bajo un pueblo que nunca tuvo escudo hay un monasterio del siglo X que el pueblo ha olvidado. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
-      </div>
-    </div>
+<header class="wrap portada">
+  <svg class="floron" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
+    <path d="M24 4v40M14 12h20M17 44h14"/>
+    <path d="M24 12c-5 4-8 9-8 14s3 10 8 14c5-4 8-9 8-14s-3-10-8-14z" stroke-width="1.1"/>
+  </svg>
+  <span class="rotulo">Historia · territorio · identidad</span>
+
+  <h1>
+    <span class="grande">Colinas</span>
+    <span class="chico">de Trasmonte</span>
+  </h1>
+
+  <p class="lema">Bajo un pueblo que nunca tuvo escudo hay un monasterio del siglo X que el
+    pueblo ha olvidado. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
+
+  <div class="ficha">
+    <div><span class="caps">provincia</span><b>Zamora</b></div>
+    <div><span class="caps">municipio</span><b>Quiruelas de Vidriales</b></div>
+    <div><span class="caps">diócesis</span><b>Astorga</b></div>
+    <div><span class="caps">superficie</span><b>1.043 ha</b></div>
+    <div><span class="caps">habitantes 2024</span><b>222</b></div>
   </div>
-  <nav class="idx" aria-label="Secciones">
-    <a href="#linea">Línea temporal</a><a href="#termino">El término</a><a href="#gente">La gente</a><a href="#emblema">Materia para un emblema</a><a href="#falta">Lo que falta</a>
-  </nav>
+
+  <a class="version" href="#versiones" id="sello-version">
+    <span class="n">v0.1</span><span class="t">Ver cambios</span>
+  </a>
 </header>
+
+<nav class="wrap idx" aria-label="Secciones">
+  <a href="#linea">Línea temporal</a><a href="#termino">El término</a><a href="#gente">La gente</a><a href="#emblema">Materia para un emblema</a><a href="#falta">Lo que falta</a><a href="#versiones" id="idx-versiones">Versiones</a>
+</nav>
 
 <main>
 <section class="wrap lede" aria-label="Presentación">
@@ -58,11 +65,22 @@
   <div class="sec-head">
     <span class="caps" id="linea-n">Del III milenio a.C. a 2026</span>
     <h2 id="linea-t">Línea temporal</h2>
-    <p>La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.</p>
+    <p id="linea-p">La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.</p>
   </div>
   <div class="escala"><svg id="escala" role="img" aria-label="Escala del tiempo con las entradas de la línea temporal"></svg></div>
   <div class="filtros" id="filtros" role="group" aria-label="Filtrar por grado de prueba"></div>
   <ol class="tl" id="tl"></ol>
+
+  <!-- En teléfono, la misma línea se lee como un feed -->
+  <div class="feed-wrap" id="feed-wrap">
+    <div class="feed" id="feed"></div>
+    <div class="rail" id="rail" role="slider" tabindex="0"
+         aria-label="Línea del tiempo: arrastra para recorrer las entradas"
+         aria-valuemin="1" aria-valuenow="1" aria-valuetext="">
+      <svg id="rail-svg" preserveAspectRatio="none" aria-hidden="true"></svg>
+    </div>
+    <div class="rail-lbl" id="rail-lbl" aria-hidden="true"></div>
+  </div>
 </section>
 
 <section class="wrap sec" id="termino" aria-labelledby="termino-t">
@@ -138,9 +156,9 @@
   </div>
   <figure class="graf" id="graf">
     <div class="graf-ley">
-      <span><i style="background:var(--s-ant)"></i>Recuentos de Antiguo Régimen · 1787 y 1826</span>
-      <span><i style="background:var(--s-mun)"></i>Municipio · censos 1842–1970 (población de derecho)</span>
-      <span><i style="background:var(--s-loc)"></i>Localidad · padrón 2000–2024</span>
+      <span><i style="background:var(--oliva)"></i>Recuentos de Antiguo Régimen · 1787 y 1826</span>
+      <span><i style="background:var(--anil)"></i>Municipio · censos 1842–1970 (población de derecho)</span>
+      <span><i style="background:var(--teja)"></i>Localidad · padrón 2000–2024</span>
     </div>
     <svg id="pob" role="img" aria-labelledby="pob-t"><title id="pob-t">Habitantes de Colinas de Trasmonte: los recuentos de 1787 y 1826, los censos del municipio de 1842 a 1970 y el padrón de la localidad de 2000 a 2024, en tres series separadas</title></svg>
     <div class="tip" id="tip" hidden></div>
@@ -208,6 +226,17 @@
     <li><b>Los libros parroquiales</b><p>En el Archivo Histórico Diocesano de Astorga, no en el de Zamora: la parroquia siempre fue de Astorga.</p></li>
   </ol>
 </section>
+
+<section class="wrap sec" id="versiones" aria-labelledby="versiones-t">
+  <div class="sec-head">
+    <span class="caps" id="versiones-n">Control de cambios</span>
+    <h2 id="versiones-t">Versiones</h2>
+    <p>Qué cambia de una versión a otra, y en qué fecha. Se lleva aquí a la vista mientras la web se
+    está construyendo; cuando esté asentada, este apartado se ocultará y el registro seguirá en el
+    repositorio.</p>
+  </div>
+  <div class="versiones" id="lista-versiones"></div>
+</section>
 </main>
 
 <footer class="wrap pie">
@@ -218,5 +247,8 @@
   <p>La entrada de Madoz se cita por el facsímil del tomo VI (Madrid, 1847), p. 521, y no por transcripción ajena. Los despoblados del término, por J. C. Lobato Vidal, «Despoblados medievales en los valles de Benavente», Brigecio, 2 (1992).</p>
   <p>El método heráldico se ha tomado de tres precedentes de la misma comarca, todos en Brigecio: R. González Rodríguez y J. I. Martín Benito, «Notas históricas para la propuesta de escudo y bandera de Bretocino», 16 (2006), pp. 41-53; los mismos autores, «…propuesta de escudo de Tábara», 20 (2010), pp. 51-58; y «El escudo de Benavente», 14 (2004), pp. 85-106.</p>
   <p>Archivo Histórico Nacional, SIGIL-TINTA_ZAMORA,20,N.31. Planos del IRYDA, concentración parcelaria de Colinas de Trasmonte (Decreto 3119/1970), difundidos por la Junta de Castilla y León. Figuras de M. Á. Martín Carbajo et al., «"San Juan-El Valle", un enclave tardorromano y plenomedieval en Colinas de Trasmonte (Zamora)», Anuario 1993, IEZ «Florián de Ocampo», pp. 37-48.</p>
-  <p>Estado de la investigación a 22 de septiembre de 2026. Inventario completo, con signaturas y cautelas, en <span class="mono">docs/03-archivos/inventario-documental.md</span>.</p>
+  <p>Estado de la investigación a 22 de septiembre de 2026. Inventario completo, con signaturas y cautelas, en <span class="mono">docs/03-archivos/inventario-documental.md</span>. Procedencia de cada reproducción en <span class="mono">CREDITOS.md</span>.</p>
+  <p id="pie-version">—</p>
 </footer>
+
+</div>

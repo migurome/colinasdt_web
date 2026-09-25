@@ -1,17 +1,21 @@
 (function () {
+  'use strict';
   const $ = (s) => document.querySelector(s);
-  const NS = 'http://www.w3.org/2000/svg';
   const mk = (n) => `<span class="mk mk-${n}" aria-hidden="true"></span>`;
   const fmt = (v, d = 0) => v.toLocaleString('es-ES', { maximumFractionDigits: d, minimumFractionDigits: d });
   const NOTA_T = { catastro: 'Respuesta 28.ª' };
+  const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-  /* ——— Línea temporal ——— */
+  const reales = EVENTOS.filter((e) => !e.sil);
+  const eraDe = (id) => ERAS.find((x) => x.id === id);
+
+  /* ═══════════ 1. Línea temporal — modo documento ═══════════ */
   const tl = $('#tl');
   let html = '', eraActual = 0;
   EVENTOS.forEach((e) => {
     if (e.era !== eraActual) {
       eraActual = e.era;
-      const era = ERAS.find((x) => x.id === e.era);
+      const era = eraDe(e.era);
       html += `<li class="era" data-era="${era.id}"><span class="span">${era.span}</span><h3>${era.t}</h3></li>`;
     }
     if (e.sil) {
@@ -19,7 +23,7 @@
       return;
     }
     const fig = e.img
-      ? `<figure class="ev-fig"><img class="${e.img.scan ? 'scan' : ''}" src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${e.img.alt}"><figcaption>${e.img.cap}</figcaption></figure>`
+      ? `<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
       : '';
     html += `<li class="ev" id="ev-${e.id}" data-n="${e.n}" data-era="${e.era}">
       <div class="ev-when"><span class="ev-year">${e.y}</span>${e.d ? `<span class="ev-date">${e.d}</span>` : ''}</div>
@@ -36,19 +40,34 @@
       </div></li>`;
   });
   tl.innerHTML = html;
-
-  const reales = EVENTOS.filter((e) => !e.sil);
   $('#linea-n').textContent = `${reales.length} entradas · del III milenio a.C. a 2026`;
 
-  /* ——— Filtros ——— */
+  /* El trazo rojo se construye al bajar */
+  (function alBajar() {
+    const items = tl.querySelectorAll('.ev, .silencio');
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      items.forEach((li) => li.classList.add('on'));
+      return;
+    }
+    const obs = new IntersectionObserver((entradas) => {
+      entradas.forEach((x) => { if (x.isIntersecting) { x.target.classList.add('on'); obs.unobserve(x.target); } });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    items.forEach((li) => obs.observe(li));
+  })();
+
+  /* ═══════════ 2. Filtros por grado de prueba ═══════════ */
   const filtros = $('#filtros');
   const opciones = [['todo', 'Todo']].concat(Object.keys(NIVELES).map((k) => [k, NIVELES[k].t]));
   filtros.innerHTML = opciones.map(([k, t]) => {
     const n = k === 'todo' ? reales.length : reales.filter((e) => e.n === k).length;
+    if (n === 0) return '';
     return `<button type="button" class="chip" id="f-${k}" data-k="${k}" aria-pressed="${k === 'todo'}">${k === 'todo' ? '' : mk(k)}${t} <span class="n">${n}</span></button>`;
   }).join('');
 
+  let filtroActual = 'todo';
   function aplicar(k) {
+    filtroActual = k;
     filtros.querySelectorAll('.chip').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.k === k)));
     const visibles = new Set();
     tl.querySelectorAll('.ev').forEach((li) => {
@@ -59,25 +78,27 @@
     tl.querySelectorAll('.era').forEach((li) => { li.hidden = !visibles.has(li.dataset.era); });
     tl.querySelectorAll('.silencio').forEach((li) => { li.hidden = k !== 'todo'; });
     document.querySelectorAll('#escala .ev-mk').forEach((g) => g.classList.toggle('off', !(k === 'todo' || g.dataset.n === k)));
+    if (Feed.montado) Feed.filtrar(k);
   }
   filtros.addEventListener('click', (ev) => {
     const b = ev.target.closest('.chip');
     if (b) aplicar(b.dataset.k);
   });
 
-  /* ——— Escala gráfica ——— */
+  /* ═══════════ 3. Escala gráfica del tiempo (pantalla grande) ═══════════ */
+  /* Un bloque para la prehistoria, una ruptura, y la escala histórica. */
+  const W = 1000, P = 14, X0 = -100, X1 = 2050;
+  const PREH = [-2400, -2100], AX = P + 54, BX = AX + 28;
+  const escX = (s) => s < -500
+    ? P + ((s - PREH[0]) / (PREH[1] - PREH[0])) * (AX - P)
+    : BX + ((s - X0) / (X1 - X0)) * (W - P - BX);
+  const orden = reales.slice().sort((a, b) => a.s - b.s);
+
   (function escala() {
     const svg = $('#escala');
-    // Escala con corte: un bloque para la prehistoria, una ruptura, y la escala histórica.
-    const W = 1000, P = 14, X0 = -100, X1 = 2050;
-    const PREH = [-2400, -2100], AX = P + 54, BX = AX + 28;
-    const x = (s) => s < -500
-      ? P + ((s - PREH[0]) / (PREH[1] - PREH[0])) * (AX - P)
-      : BX + ((s - X0) / (X1 - X0)) * (W - P - BX);
-    const orden = reales.slice().sort((a, b) => a.s - b.s);
     const filas = [];
     orden.forEach((e) => {
-      const px = x(e.s);
+      const px = escX(e.s);
       let r = 0;
       while (filas[r] !== undefined && px - filas[r] < 12) r++;
       filas[r] = px; e._fila = r;
@@ -87,37 +108,34 @@
     const H = barY + 58;
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
     let s = '';
-    // bloque de la prehistoria
     s += `<rect class="seg-a" x="${P}" y="${barY}" width="${AX - P}" height="8"/>`;
     s += `<rect class="marco" x="${P}" y="${barY}" width="${AX - P}" height="8"/>`;
     s += `<text class="tick" x="${(P + AX) / 2}" y="${barY + 24}" text-anchor="middle">III mil. a.C.</text>`;
-    // marca de ruptura de escala
     const my = barY + 4;
     s += `<path class="brk" d="M${AX + 6} ${my + 8} L${AX + 14} ${my - 8} M${AX + 14} ${my + 8} L${AX + 22} ${my - 8}"/>`;
-    // escala histórica, tramos de siglo
     for (let a = X0, i = 0; a < 2000; a += 100, i++) {
-      s += `<rect class="${i % 2 ? 'seg-b' : 'seg-a'}" x="${x(a)}" y="${barY}" width="${x(a + 100) - x(a)}" height="8"/>`;
+      s += `<rect class="${i % 2 ? 'seg-b' : 'seg-a'}" x="${escX(a)}" y="${barY}" width="${escX(a + 100) - escX(a)}" height="8"/>`;
     }
-    s += `<rect class="seg-b" x="${x(2000)}" y="${barY}" width="${x(X1) - x(2000)}" height="8"/>`;
-    s += `<rect class="marco" x="${x(X0)}" y="${barY}" width="${x(X1) - x(X0)}" height="8"/>`;
-    for (let a = 200; a <= 2000; a += 200) s += `<text class="tick" x="${x(a)}" y="${barY + 24}" text-anchor="middle">${a}</text>`;
-    s += `<text class="tick" x="${x(0)}" y="${barY + 24}" text-anchor="middle">a.C. | d.C.</text>`;
-    const g1 = x(1170), g2 = x(1551), gy = barY + 34;
+    s += `<rect class="seg-b" x="${escX(2000)}" y="${barY}" width="${escX(X1) - escX(2000)}" height="8"/>`;
+    s += `<rect class="marco" x="${escX(X0)}" y="${barY}" width="${escX(X1) - escX(X0)}" height="8"/>`;
+    for (let a = 200; a <= 2000; a += 200) s += `<text class="tick" x="${escX(a)}" y="${barY + 24}" text-anchor="middle">${a}</text>`;
+    s += `<text class="tick" x="${escX(0)}" y="${barY + 24}" text-anchor="middle">a.C. | d.C.</text>`;
+    const g1 = escX(1170), g2 = escX(1551), gy = barY + 34;
     s += `<path class="brk" d="M${g1} ${gy} v6 H${g2} v-6"/>`;
     s += `<text class="hueco" x="${(g1 + g2) / 2}" y="${gy + 20}" text-anchor="middle">381 años sin documentos</text>`;
     orden.forEach((e) => {
-      const cx = x(e.s), cy = top + (R - 1 - e._fila) * RH + 6;
+      const cx = escX(e.s), cy = top + (R - 1 - e._fila) * RH + 6;
       let shape;
       switch (e.n) {
-        case 'visto': shape = `<circle cx="${cx}" cy="${cy}" r="4.5" style="fill:var(--ink)"/>`; break;
-        case 'sinleer': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--surface);stroke:var(--ink);stroke-width:1.6"/><circle cx="${cx}" cy="${cy}" r="1.5" style="fill:var(--ink)"/>`; break;
-        case 'cotejar': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--surface);stroke:var(--accent);stroke-width:1.8"/>`; break;
-        case 'sinref': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--surface);stroke:var(--muted);stroke-width:1.4;stroke-dasharray:2 1.6"/>`; break;
-        case 'interp': shape = `<rect x="${cx - 3.5}" y="${cy - 3.5}" width="7" height="7" transform="rotate(45 ${cx} ${cy})" style="fill:var(--surface);stroke:var(--clay);stroke-width:1.6"/>`; break;
-        case 'propuesto': shape = `<rect x="${cx - 4}" y="${cy - 4}" width="8" height="8" style="fill:var(--accent)"/>`; break;
-        default: shape = `<rect x="${cx - 3}" y="${cy - 3}" width="6" height="6" style="fill:var(--muted)"/>`;
+        case 'visto': shape = `<circle cx="${cx}" cy="${cy}" r="4.5" style="fill:var(--tinta)"/>`; break;
+        case 'sinleer': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--papel-alto);stroke:var(--tinta);stroke-width:1.6"/><circle cx="${cx}" cy="${cy}" r="1.5" style="fill:var(--tinta)"/>`; break;
+        case 'cotejar': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--papel-alto);stroke:var(--anil);stroke-width:1.8"/>`; break;
+        case 'sinref': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--papel-alto);stroke:var(--tenue);stroke-width:1.4;stroke-dasharray:2 1.6"/>`; break;
+        case 'interp': shape = `<rect x="${cx - 3.5}" y="${cy - 3.5}" width="7" height="7" transform="rotate(45 ${cx} ${cy})" style="fill:var(--papel-alto);stroke:var(--teja);stroke-width:1.6"/>`; break;
+        case 'propuesto': shape = `<rect x="${cx - 4}" y="${cy - 4}" width="8" height="8" style="fill:var(--anil)"/>`; break;
+        default: shape = `<rect x="${cx - 3}" y="${cy - 3}" width="6" height="6" style="fill:var(--oliva)"/>`;
       }
-      s += `<g class="ev-mk" data-id="${e.id}" data-n="${e.n}" tabindex="0" role="link" aria-label="${e.y}: ${e.t.replace(/"/g, '')}"><title>${e.y} · ${e.t}</title><circle cx="${cx}" cy="${cy}" r="9" style="fill:transparent"/>${shape}</g>`;
+      s += `<g class="ev-mk" data-id="${e.id}" data-n="${e.n}" tabindex="0" role="link" aria-label="${esc(e.y)}: ${esc(e.t)}"><title>${esc(e.y)} · ${esc(e.t)}</title><circle cx="${cx}" cy="${cy}" r="9" style="fill:transparent"/>${shape}</g>`;
     });
     svg.innerHTML = s;
     const ir = (g) => {
@@ -133,17 +151,250 @@
     });
   })();
 
-  /* ——— Usos del suelo, 1752 ——— */
+  /* ═══════════ 4. Modo feed — en teléfono ═══════════
+     Las láminas no se inventan: cada una es un campo que la entrada ya tiene. */
+  const Feed = {
+    montado: false,
+    laminasDe(e) {
+      const L = ['portada'];
+      if (e.q) L.push('cita');
+      if (e.p) L.push('relato');
+      if (e.img) L.push('imagen');
+      if (e.nota) L.push('nota');
+      if (e.f) L.push('firma');
+      return L;
+    },
+    firmaCorta(f) {
+      const t = String(f).split('·')[0].trim();
+      if (t.length <= 66) return t;
+      const c = t.slice(0, 66);
+      return c.slice(0, c.lastIndexOf(' ')) + '…';
+    },
+    cabecera(e) {
+      const era = eraDe(e.era);
+      return `<div class="lam-top"><span class="era-n">${esc(era ? era.t : '')}</span>
+        <span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span></div>`;
+    },
+    pie(e) {
+      return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>
+        <span class="t">${esc(this.firmaCorta(e.f || ''))}</span></div>`;
+    },
+    cuerpo(e, k) {
+      switch (k) {
+        case 'portada':
+          return `<div class="lam-cuerpo l-portada"><div>
+            <div class="anio">${esc(e.y)}</div>
+            ${e.d ? `<div class="dia">${esc(e.d)}</div>` : ''}
+            <h4>${e.t}</h4>
+            ${this.laminasDe(e).length > 1 ? '<div class="desliza">Desliza al lado</div>' : ''}
+          </div></div>`;
+        case 'cita':
+          return `<div class="lam-cuerpo l-cita"><p class="cita">${e.q}</p></div>`;
+        case 'relato':
+          return `<div class="lam-cuerpo l-relato arriba"><p>${e.p}</p>${
+            e.link ? `<p class="fuente">En esta página: ${e.link.t}</p>` : ''}</div>`;
+        case 'imagen':
+          return `<div class="lam-cuerpo l-img"><figure class="ev-fig">
+            <img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}">
+            <figcaption>${e.img.cap}</figcaption></figure></div>`;
+        case 'nota':
+          return `<div class="lam-cuerpo l-nota arriba"><p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p></div>`;
+        case 'firma':
+          return `<div class="lam-cuerpo l-firma arriba"><span class="caps">Fuente</span>
+            <p class="fuente">${e.f}</p>
+            <p class="grado">${mk(e.n)}${NIVELES[e.n].t}</p></div>`;
+      }
+      return '';
+    },
+    montar() {
+      if (this.montado) return;
+      const feed = $('#feed');
+      let h = '';
+      EVENTOS.forEach((e, i) => {
+        if (e.sil) {
+          h += `<article class="post post-sil" data-i="${i}"><div class="carrusel"><div class="lam l-sil">
+            <div class="lam-top"><span class="era-n">${esc((eraDe(e.era) || {}).t || '')}</span></div>
+            <div class="lam-cuerpo"><div class="caja"><div class="rango">${esc(e.y)}</div><p>${e.p}</p></div></div>
+            <div class="lam-pie"><span class="t">Silencio documental</span></div>
+          </div></div></article>`;
+          return;
+        }
+        const L = this.laminasDe(e);
+        const lams = L.map((k) => `<section class="lam" aria-label="${esc(e.y + ' · ' + k)}">${
+          this.cabecera(e)}${this.cuerpo(e, k)}${this.pie(e)}</section>`).join('');
+        const pts = L.map((k, j) => `<span class="punto${j === 0 ? ' on' : ''}"></span>`).join('');
+        h += `<article class="post" id="post-${e.id}" data-i="${i}" data-n="${e.n}">
+          <div class="puntos" aria-hidden="true">${pts}</div>
+          <div class="carrusel" tabindex="0" aria-label="${esc(e.y + ': ' + e.t)}">${lams}</div></article>`;
+      });
+      feed.innerHTML = h;
+      this.posts = Array.prototype.slice.call(feed.querySelectorAll('.post'));
+      this.visibles = this.posts.slice();
+      this.feed = feed;
+      this.actual = -1;
+
+      this.posts.forEach((post) => {
+        const car = post.querySelector('.carrusel');
+        const pts = post.querySelectorAll('.punto');
+        if (!pts.length) return;
+        let t = null;
+        car.addEventListener('scroll', () => {
+          if (t) return;
+          t = requestAnimationFrame(() => {
+            t = null;
+            const n = Math.round(car.scrollLeft / car.clientWidth);
+            pts.forEach((p, j) => p.classList.toggle('on', j === n));
+          });
+        }, { passive: true });
+      });
+
+      this.rail();
+      let tf = null;
+      feed.addEventListener('scroll', () => {
+        if (tf) return;
+        tf = requestAnimationFrame(() => {
+          tf = null;
+          this.pinta(Math.round(feed.scrollTop / feed.clientHeight));
+        });
+      }, { passive: true });
+
+      this.montado = true;
+      this.filtrar(filtroActual);
+      this.pinta(0);
+    },
+    /* El raíl: la misma escala comprimida, puesta en vertical */
+    rail() {
+      const rail = $('#rail'), svg = $('#rail-svg');
+      const RH = 1000, RP = 18;
+      const AY = RP + 54, BY = AY + 26;
+      this.rY = (s) => s < -500
+        ? RP + ((s - PREH[0]) / (PREH[1] - PREH[0])) * (AY - RP)
+        : BY + ((s - X0) / (X1 - X0)) * (RH - RP - BY);
+      this.RH = RH; this.RP = RP;
+      const FORMA = { visto: 'tk', sinleer: 'tk', cotejar: 'tk tk-an', sinref: 'tk tk-te',
+                      interp: 'tk tk-tj', propuesto: 'tk tk-an', contexto: 'tk tk-ol' };
+      const y1 = this.rY(1170), y2 = this.rY(1551);
+      let s = '';
+      s += `<path class="fantasma" d="M14 ${RP} V${y1.toFixed(1)}"/>`;
+      s += `<path class="vacio" d="M14 ${y1.toFixed(1)} V${y2.toFixed(1)}"/>`;
+      s += `<path class="fantasma" d="M14 ${y2.toFixed(1)} V${RH - RP}"/>`;
+      s += `<path class="hecho" id="hecho" d="M14 ${RP} V${RP}"/>`;
+      s += `<path class="quiebre" d="M7 ${AY + 9} L21 ${AY + 3} M7 ${AY + 17} L21 ${AY + 11}"/>`;
+      orden.forEach((e) => {
+        s += `<rect class="${FORMA[e.n] || 'tk'}" data-n="${e.n}" x="6" y="${(this.rY(e.s) - 1).toFixed(1)}" width="16" height="2"/>`;
+      });
+      s += `<circle id="pulgar" cx="14" cy="${RP}" r="5.4"/>`;
+      svg.setAttribute('viewBox', `0 0 28 ${RH}`);
+      svg.innerHTML = s;
+      this.pulgar = $('#pulgar'); this.hecho = $('#hecho');
+      this.lbl = $('#rail-lbl'); this.railEl = rail;
+
+      const desdeY = (clientY) => {
+        const r = rail.getBoundingClientRect();
+        const vy = ((clientY - r.top) / r.height) * RH;
+        let mejor = 0, dist = Infinity;
+        this.visibles.forEach((p, i) => {
+          const e = EVENTOS[+p.dataset.i];
+          if (e.sil) return;
+          const d = Math.abs(this.rY(e.s) - vy);
+          if (d < dist) { dist = d; mejor = i; }
+        });
+        return mejor;
+      };
+      let arrastrando = false;
+      rail.addEventListener('pointerdown', (ev) => {
+        arrastrando = true;
+        rail.setPointerCapture(ev.pointerId);
+        this.lbl.classList.add('on');
+        this.irA(desdeY(ev.clientY));
+        ev.preventDefault();
+      });
+      rail.addEventListener('pointermove', (ev) => { if (arrastrando) this.irA(desdeY(ev.clientY)); });
+      const soltar = () => { if (arrastrando) { arrastrando = false; this.lbl.classList.remove('on'); } };
+      rail.addEventListener('pointerup', soltar);
+      rail.addEventListener('pointercancel', soltar);
+      rail.addEventListener('keydown', (ev) => {
+        if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight') { this.irA(this.actual + 1); ev.preventDefault(); }
+        if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') { this.irA(this.actual - 1); ev.preventDefault(); }
+        if (ev.key === 'Home') { this.irA(0); ev.preventDefault(); }
+        if (ev.key === 'End') { this.irA(this.visibles.length - 1); ev.preventDefault(); }
+      });
+    },
+    irA(idx) {
+      idx = Math.max(0, Math.min(this.visibles.length - 1, idx));
+      const p = this.visibles[idx];
+      if (!p) return;
+      this.feed.scrollTo({ top: p.offsetTop, behavior: 'auto' });
+      this.pinta(idx);
+    },
+    pinta(idx) {
+      if (idx === this.actual || !this.visibles.length) return;
+      this.actual = idx;
+      const p = this.visibles[idx];
+      if (!p) return;
+      const e = EVENTOS[+p.dataset.i];
+      let yy;
+      if (e.sil) {
+        const prev = this.visibles[Math.max(0, idx - 1)];
+        const ep = prev ? EVENTOS[+prev.dataset.i] : null;
+        yy = (ep && !ep.sil) ? this.rY(ep.s) : this.RP;
+      } else {
+        yy = this.rY(e.s);
+      }
+      this.pulgar.setAttribute('cy', yy.toFixed(1));
+      this.hecho.setAttribute('d', `M14 ${this.RP} V${yy.toFixed(1)}`);
+      this.lbl.style.top = (yy / this.RH * this.railEl.clientHeight) + 'px';
+      this.lbl.textContent = e.y;
+      this.railEl.setAttribute('aria-valuenow', String(idx + 1));
+      this.railEl.setAttribute('aria-valuemax', String(this.visibles.length));
+      this.railEl.setAttribute('aria-valuetext', e.y + (e.t ? ': ' + e.t : ''));
+    },
+    filtrar(k) {
+      if (!this.montado) return;
+      this.posts.forEach((p) => { p.hidden = !(k === 'todo' || p.dataset.n === k); });
+      this.visibles = this.posts.filter((p) => !p.hidden);
+      $('#rail-svg').querySelectorAll('.tk').forEach((g) => {
+        g.classList.toggle('off', !(k === 'todo' || g.dataset.n === k));
+      });
+      this.feed.scrollTop = 0;
+      this.actual = -1;
+      this.pinta(0);
+    }
+  };
+
+  /* Conmutación documento ⇄ feed, por ancho de pantalla */
+  (function modo() {
+    const mq = window.matchMedia('(max-width: 760px)');
+    const sec = $('#linea'), p = $('#linea-p');
+    const TXT = {
+      doc: 'La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.',
+      feed: 'Una entrada por pantalla: desliza hacia arriba para pasar a la siguiente y hacia el lado para ver la cita, la imagen, la cautela y la fuente. La línea del tiempo de la derecha es la barra de desplazamiento: arrástrala.'
+    };
+    function ajustar() {
+      if (mq.matches) {
+        sec.classList.add('feed-on');
+        p.textContent = TXT.feed;
+        Feed.montar();
+      } else {
+        sec.classList.remove('feed-on');
+        p.textContent = TXT.doc;
+      }
+    }
+    mq.addEventListener ? mq.addEventListener('change', ajustar) : mq.addListener(ajustar);
+    ajustar();
+  })();
+
+  /* ═══════════ 5. Usos del suelo, 1752 ═══════════ */
   (function usos() {
     const total = USOS.reduce((a, u) => a + u[1], 0);
     const max = Math.max(...USOS.map((u) => u[1]));
     $('#usos').innerHTML = USOS.map(([t, v, hl]) => {
       const pct = (v / total) * 100;
-      return `<div class="uso" role="listitem"><span class="uso-lbl">${t}</span><span class="uso-bar"><i class="${hl ? 'hl' : ''}" style="width:calc((100% - 7.5rem) * ${(v / max).toFixed(4)})"></i><span>${fmt(v)} f. · ${fmt(pct, pct < 1 ? 1 : 0)} %</span></span></div>`;
+      return `<div class="uso" role="listitem"><span class="uso-lbl">${t}</span><span class="uso-bar"><i class="${hl ? 'hl' : ''}" style="width:calc((100% - 8.5rem) * ${(v / max).toFixed(4)})"></i><span>${fmt(v)} f. · ${fmt(pct, pct < 1 ? 1 : 0)} %</span></span></div>`;
     }).join('') + `<div class="uso"><span class="uso-lbl"><b>Total</b></span><span class="uso-bar"><span><b>${total.toLocaleString('es-ES', { useGrouping: 'always' })} fanegas</b> · hoy, 1.043 ha</span></span></div>`;
   })();
 
-  /* ——— Población ——— */
+  /* ═══════════ 6. Población ═══════════ */
   (function poblacion() {
     const svg = $('#pob'), fig = $('#graf'), tip = $('#tip');
     const W = 960, H = 380, M = { l: 46, r: 56, t: 26, b: 34 };
@@ -159,10 +410,10 @@
     [1800, 1850, 1900, 1950, 2000].forEach((a) => { s += `<text class="ax" x="${x(a)}" y="${H - M.b + 22}" text-anchor="middle">${a}</text>`; });
     const path = (pts) => pts.map((p, i) => `${i ? 'L' : 'M'}${x(p[0]).toFixed(1)} ${y(p[1]).toFixed(1)}`).join(' ');
     const ant = POB.ant, mun = POB.mun, loc = POB.loc;
-    s += `<path d="${path(ant)}" style="fill:none;stroke:var(--s-ant);stroke-width:2;stroke-dasharray:2 4;stroke-linecap:round"/>`;
-    s += `<path d="${path(mun.slice(0, 2))}" style="fill:none;stroke:var(--s-mun);stroke-width:2;stroke-dasharray:5 4"/>`;
-    s += `<path d="${path(mun.slice(1))}" style="fill:none;stroke:var(--s-mun);stroke-width:2;stroke-linejoin:round"/>`;
-    s += `<path d="${path(loc)}" style="fill:none;stroke:var(--s-loc);stroke-width:2;stroke-linejoin:round"/>`;
+    s += `<path d="${path(ant)}" style="fill:none;stroke:var(--oliva);stroke-width:2;stroke-dasharray:2 4;stroke-linecap:round"/>`;
+    s += `<path d="${path(mun.slice(0, 2))}" style="fill:none;stroke:var(--anil);stroke-width:2;stroke-dasharray:5 4"/>`;
+    s += `<path d="${path(mun.slice(1))}" style="fill:none;stroke:var(--anil);stroke-width:2;stroke-linejoin:round"/>`;
+    s += `<path d="${path(loc)}" style="fill:none;stroke:var(--teja);stroke-width:2;stroke-linejoin:round"/>`;
     const xm = x(1985);
     s += `<text class="hueco-txt" x="${xm}" y="${y(250)}" text-anchor="middle">1970–2000</text>`;
     s += `<text class="hueco-txt" x="${xm}" y="${y(250) + 17}" text-anchor="middle">cambia la unidad</text>`;
@@ -172,12 +423,12 @@
       1842: 'Dato dudoso: coincide con las 132 almas de Madoz y queda por debajo de 1787 y de 1826.'
     };
     const puntos = [];
-    ant.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Recuentos de Antiguo Régimen', col: 'var(--s-ant)', nota: NOTAS[p[0]] }));
-    mun.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Municipio · censo, de derecho', col: 'var(--s-mun)', dudoso: p[0] === 1842, nota: NOTAS[p[0]] }));
-    loc.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Localidad · padrón', col: 'var(--s-loc)' }));
+    ant.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Recuentos de Antiguo Régimen', col: 'var(--oliva)', nota: NOTAS[p[0]] }));
+    mun.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Municipio · censo, de derecho', col: 'var(--anil)', dudoso: p[0] === 1842, nota: NOTAS[p[0]] }));
+    loc.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Localidad · padrón', col: 'var(--teja)' }));
     puntos.forEach((p, i) => {
-      const fill = p.dudoso ? 'var(--surface)' : p.col;
-      s += `<circle id="pt-${i}" cx="${x(p.a)}" cy="${y(p.v)}" r="4" style="fill:${fill};stroke:${p.dudoso ? p.col : 'var(--surface)'};stroke-width:2"/>`;
+      const fill = p.dudoso ? 'var(--papel-alto)' : p.col;
+      s += `<circle id="pt-${i}" cx="${x(p.a)}" cy="${y(p.v)}" r="4" style="fill:${fill};stroke:${p.dudoso ? p.col : 'var(--papel-alto)'};stroke-width:2"/>`;
     });
     const lab = (a, v, txt, dx, dy, anchor, cls = 'dl') => `<text class="${cls}" x="${x(a) + dx}" y="${y(v) + dy}" text-anchor="${anchor}">${txt}</text>`;
     s += lab(1787, 156, '156', 0, -12, 'middle');
@@ -233,5 +484,32 @@
     });
 
     $('#pob-tabla tbody').innerHTML = puntos.map((p) => `<tr><td>${p.a}</td><td>${p.serie}${p.dudoso ? ' (dudoso)' : ''}</td><td class="num">${fmt(p.v)}</td></tr>`).join('');
+  })();
+
+  /* ═══════════ 7. Versiones ═══════════ */
+  (function versiones() {
+    const sec = $('#versiones'), lista = $('#lista-versiones');
+    const sello = $('#sello-version'), enlace = $('#idx-versiones');
+    const pie = $('#pie-version');
+
+    sello.querySelector('.n').textContent = 'v' + VERSION;
+    pie.innerHTML = `Versión <b>${VERSION}</b> de esta web · ${VERSIONES[0] ? VERSIONES[0].f : ''}`;
+
+    if (typeof VERSIONES_VISIBLE !== 'undefined' && !VERSIONES_VISIBLE) {
+      sec.hidden = true;
+      enlace.hidden = true;
+      sello.removeAttribute('href');
+      sello.querySelector('.t').textContent = 'Versión';
+      return;
+    }
+
+    $('#versiones-n').textContent = `${VERSIONES.length} ${VERSIONES.length === 1 ? 'versión publicada' : 'versiones publicadas'}`;
+    lista.innerHTML = VERSIONES.map((v) => `<article class="vsn">
+      <div class="vsn-n"><b>v${v.v}</b><span>${v.f}</span></div>
+      <div class="vsn-c">
+        <h3>${v.t}</h3>
+        <ul>${v.c.map((x) => `<li>${x}</li>`).join('')}</ul>
+        ${v.p ? `<p class="nota"><b>Estado del contenido</b>${v.p}</p>` : ''}
+      </div></article>`).join('');
   })();
 })();

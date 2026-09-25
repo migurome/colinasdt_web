@@ -23,29 +23,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Comprobar que index.html está al día
+        run: |
+          set -eu
+          sh web/build.sh
+          if ! git diff --quiet -- web/src/index.html; then
+            echo "::error::web/src/index.html no coincide con sus piezas de web/src/parts/."
+            echo "Ejecuta 'sh web/build.sh' y vuelve a hacer commit."
+            git diff --stat -- web/src/index.html
+            exit 1
+          fi
+          echo "index.html al día."
+
       - name: Montar el sitio
         run: |
           set -eu
           mkdir -p _site
-          # La portada, que reparte a las tres piezas
-          cp web/pages-index.html _site/index.html
-          # La web propiamente dicha, tal cual está en web/src
-          mkdir -p _site/sitio
-          cp -r web/src/. _site/sitio/
-          # El prototipo de estilo aprobado
-          mkdir -p _site/estilo
-          cp -r web/estilo/. _site/estilo/
-          # La prueba de lectura en el móvil
-          mkdir -p _site/movil
-          cp -r web/prueba-movil/. _site/movil/
-          # Fuera del sitio publicado: piezas de trabajo, no de lectura
-          rm -f _site/movil/plantilla.html _site/movil/artifact.html _site/movil/build-prueba.py
-          rm -f _site/estilo/index.html.bak
-          rm -rf _site/sitio/parts
+          # Una sola página: la web entera está en web/src
+          cp -r web/src/. _site/
+          # Las piezas de construcción no se publican
+          rm -rf _site/parts
           # Sin Jekyll: el sitio es HTML plano
           touch _site/.nojekyll
           echo "— montado —"
-          find _site -maxdepth 2 -type d | sort
+          ls -la _site
 
       - uses: actions/upload-pages-artifact@v3
         with:

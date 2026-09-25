@@ -1,267 +1,478 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Colinas de Trasmonte</title>
-<meta name="description" content="Historia documentada de Colinas de Trasmonte (Quiruelas de Vidriales, Zamora): línea temporal, término, población y materia prima para un emblema.">
+<meta name="description" content="Historia documentada de Colinas de Trasmonte (Quiruelas de Vidriales, Zamora): línea temporal, término, población y materia prima para un emblema. Cada dato, con su signatura y su grado de prueba.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..800;1,400..700&family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..600&display=swap">
 <style>
+/* ═══════════════════════════════════════════════════════════════════════
+   COLINAS DE TRASMONTE
+   Sistema de estilo aprobado el 23-IX-2026 (web/estilo/index.html):
+   papel antiguo, UNA SOLA tipografía (EB Garamond) y tintas con código.
+   Sin modo oscuro.
+
+   CINCO REGISTROS, y ninguna otra declaración de font-family:
+     1. título   grande, almagre        — portada, eras, hitos
+     2. texto    el cuerpo
+     3. rótulo   versalitas espaciadas  — índice, eras, marcas, años
+     4. nota     cursiva, sepia clara   — cautelas y silencios
+     5. fuente   pequeño, apagado       — la referencia de archivo
+
+   En teléfono la línea temporal se lee como un FEED: una entrada por
+   pantalla, lo accesorio en carrusel lateral y la propia línea del
+   tiempo haciendo de barra de desplazamiento.
+   ═══════════════════════════════════════════════════════════════════════ */
+
 :root{
-  --ground:#F1F2EE; --surface:#FAFAF7; --ink:#1D2326; --ink-2:#434C50; --muted:#646D71;
-  --rule:#C9CEca; --rule-soft:#DFE2DE;
-  --accent:#3D63A6; --clay:#A0532F; --oak:#4E5B39;
-  --s-mun:#3D63A6; --s-loc:#A0532F; --s-ant:#337745;
-  --line-filter:none; --line-blend:multiply; --scan-filter:none;
-  --chip-on:#1D2326; --chip-on-ink:#FAFAF7;
-  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
-  --f-text:"Alegreya",Georgia,"Times New Roman",serif;
-  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
-  --col-year:9rem; --col-mk:1.5rem; --gap-tl:1.25rem;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ground:#14181A; --surface:#1B2022; --ink:#E3E6E1; --ink-2:#BAC1BD; --muted:#8E9794;
-    --rule:#353C3E; --rule-soft:#262C2E;
-    --accent:#8FAEE3; --clay:#D48D69; --oak:#A6B383;
-    --s-mun:#5E86D0; --s-loc:#C0714A; --s-ant:#569A65;
-    --line-filter:invert(1) brightness(.88); --line-blend:screen; --scan-filter:brightness(.8) contrast(1.05);
-    --chip-on:#E3E6E1; --chip-on-ink:#14181A;
-  }
-}
-:root[data-theme="dark"]{
-  --ground:#14181A; --surface:#1B2022; --ink:#E3E6E1; --ink-2:#BAC1BD; --muted:#8E9794;
-  --rule:#353C3E; --rule-soft:#262C2E;
-  --accent:#8FAEE3; --clay:#D48D69; --oak:#A6B383;
-  --s-mun:#5E86D0; --s-loc:#C0714A; --s-ant:#569A65;
-  --line-filter:invert(1) brightness(.88); --line-blend:screen; --scan-filter:brightness(.8) contrast(1.05);
-  --chip-on:#E3E6E1; --chip-on-ink:#14181A;
+  /* — el papel — */
+  --papel:#F4E8CC; --papel-alto:#FAF2DE; --papel-hondo:#EADCBB;
+  /* — las tintas — */
+  --tinta:#241C14; --tinta-2:#3B2E20; --apunte:#6B4E2E; --tenue:#8C795C;
+  /* — los rojos, que son varios y significan — */
+  --almagre:#6E2417; --teja:#8C2318; --granza:#A8422A;
+  /* — las otras dos tintas, que llevan el código de materia — */
+  --anil:#2C4668; --oliva:#4A5524;
+  /* — filetes — */
+  --filo:#CDBA92; --filo-fuerte:#A8916A;
+
+  --f:"EB Garamond",Georgia,"Times New Roman",serif;
+  --col-anno:8.5rem; --col-mk:1.6rem; --gap-tl:1.4rem;
+  color-scheme:light;
 }
 
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
-body{background:var(--ground);color:var(--ink);font-family:var(--f-text);font-size:1.1875rem;line-height:1.55;-webkit-font-smoothing:antialiased}
-.wrap{max-width:74rem;margin-inline:auto;padding-inline:clamp(16px,4vw,44px)}
-a{color:var(--accent);text-underline-offset:.18em;text-decoration-thickness:1px}
-a:hover{text-decoration-thickness:2px}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1,h2,h3{text-wrap:balance;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:2rem}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+body{margin:0;background-color:var(--papel);color:var(--tinta);font-family:var(--f);
+  font-size:1.25rem;line-height:1.58;-webkit-font-smoothing:antialiased}
+
+/* ——— El grano: una sola tesela de 160 px, repetida ——— */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='.34'/%3E%3C/svg%3E")}
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,92,48,.13) 100%)}
+.capa{position:relative;z-index:1}
+
+.wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(18px,4.5vw,48px)}
+a{color:var(--teja);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{color:var(--granza);text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--teja);outline-offset:3px}
+h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
 p{margin:0}
-.lbl{font-family:var(--f-display);font-size:.8125rem;font-weight:400;color:var(--muted);letter-spacing:.01em}
-.caps{font-family:var(--f-display);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
-.mono{font-family:var(--f-mono);font-size:.8125rem}
+img{max-width:100%}
 
-/* ——— Cajetín ——— */
-.cab{padding-block:clamp(20px,4vw,48px) 0}
-.cajetin{border:2px solid var(--ink);background:var(--surface);display:grid;grid-template-columns:auto 1fr}
-.c-side{writing-mode:vertical-rl;transform:rotate(180deg);border-left:2px solid var(--ink);font-family:var(--f-display);font-weight:600;font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;padding:14px 10px;text-align:center;color:var(--ink-2)}
-.c-main{display:grid;min-width:0}
-.c-title{padding:14px 18px 10px;border-bottom:1.5px solid var(--ink);display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
-.c-title h1{font-family:var(--f-display);font-weight:700;font-stretch:112%;font-variation-settings:"wdth" 112;text-transform:uppercase;font-size:clamp(2rem,6.2vw,4.5rem);line-height:.95;letter-spacing:-.005em}
-.c-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr)) auto;border-bottom:1.5px solid var(--ink)}
-.c-cell{padding:8px 14px 10px;border-right:1.5px solid var(--ink);display:grid;gap:2px;min-width:0}
-.c-cell b{font-family:var(--f-display);font-weight:500;font-size:1.125rem;letter-spacing:.04em;text-transform:uppercase}
-.c-compass{display:grid;place-items:center;padding:6px 14px}
-.c-compass svg{width:46px;height:46px}
-.c-obs{padding:10px 18px 16px;display:grid;gap:4px}
-.c-obs p{font-style:italic;font-size:clamp(1.125rem,2.2vw,1.4375rem);line-height:1.4;max-width:60ch}
-@media (max-width:760px){
-  .c-row{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .c-cell{border-bottom:1.5px solid var(--ink)}
-  .c-cell:nth-child(2n){border-right:0}
-  .c-compass{border-right:0}
-  .c-side{display:none}
-  .cajetin{grid-template-columns:1fr}
-}
+/* ——— REGISTRO 3: el rótulo ——— */
+.caps,.rotulo{font-size:.75rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.18em;color:var(--tenue)}
+/* ——— REGISTRO 5: la referencia de archivo ——— */
+.fuente{font-size:.8125rem;line-height:1.5;color:var(--tenue)}
+/* ——— REGISTRO 4: la nota al margen ——— */
+.nota{margin-top:.8em;padding-left:.95em;border-left:2px solid var(--filo-fuerte);
+  font-size:.9375rem;font-style:italic;color:var(--apunte);max-width:58ch}
+.nota b{display:block;font-style:normal;font-weight:600;color:var(--tinta-2);
+  font-size:.75rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:.25em}
+.mono{font-family:var(--f);font-style:italic}
 
-/* ——— Índice ——— */
-.idx{display:flex;flex-wrap:wrap;gap:6px 22px;padding-block:14px 0}
-.idx a{font-family:var(--f-display);font-size:.8125rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);text-decoration:none;padding-block:6px;border-bottom:1.5px solid transparent}
-.idx a:hover{border-bottom-color:var(--ink)}
+/* ═══════════ PORTADA ═══════════ */
+.portada{padding-block:clamp(34px,7vw,84px) clamp(20px,3vw,34px);text-align:center}
+.floron{display:block;margin:0 auto clamp(14px,2.4vw,22px);width:38px;height:38px;color:var(--teja)}
+.portada .rotulo{display:block;margin-bottom:clamp(18px,3.4vw,34px);letter-spacing:.3em;color:var(--apunte)}
+.portada h1{color:var(--almagre);line-height:.9;letter-spacing:-.01em}
+.portada h1 .grande{display:block;font-size:clamp(3.4rem,14vw,9rem)}
+.portada h1 .chico{display:block;font-size:clamp(1.15rem,3.6vw,2rem);letter-spacing:.2em;
+  text-transform:uppercase;color:var(--teja);margin-top:clamp(6px,1vw,12px)}
+.portada .lema{font-style:italic;font-size:clamp(1.1rem,2.3vw,1.4rem);color:var(--tinta-2);
+  max-width:48ch;margin:clamp(18px,3vw,30px) auto 0}
 
-/* ——— Entrada ——— */
-.lede{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);padding-block:clamp(36px,6vw,72px)}
-.lede-txt{display:grid;gap:1em;align-content:start}
-.lede-txt p:first-child{font-size:clamp(1.375rem,2.6vw,1.75rem);line-height:1.35}
-.lede-txt p{max-width:62ch}
-.leyenda{border-top:2px solid var(--ink);padding-top:12px;display:grid;gap:12px;align-content:start}
-.leyenda dl{margin:0;display:grid;gap:10px}
-.leyenda .grupo{display:grid;gap:6px}
-.leyenda dt{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-size:.875rem;font-weight:600}
-.leyenda dd{margin:0 0 0 26px;font-size:.9375rem;color:var(--ink-2);line-height:1.4}
-@media (max-width:860px){.lede{grid-template-columns:1fr}}
+/* la ficha del lugar, en rótulos */
+.ficha{display:flex;flex-wrap:wrap;justify-content:center;gap:6px clamp(14px,3vw,30px);
+  margin-top:clamp(22px,3.6vw,38px);padding-top:clamp(16px,2.4vw,24px);
+  border-top:1px solid var(--filo-fuerte)}
+.ficha div{display:flex;align-items:baseline;gap:7px}
+.ficha b{font-weight:600;font-size:1rem;color:var(--tinta-2);letter-spacing:.02em}
 
-/* ——— Marcadores de prueba ——— */
-.mk{display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;background:var(--surface);border:2px solid var(--ink)}
-.mk-visto{background:var(--ink)}
-.mk-sinleer{background:radial-gradient(circle,var(--ink) 0 2.5px,var(--surface) 3px)}
-.mk-cotejar{border-color:var(--accent)}
-.mk-sinref{border-style:dashed;border-color:var(--muted)}
-.mk-interp{border-radius:1px;transform:rotate(45deg) scale(.82);border-color:var(--clay)}
-.mk-propuesto{border-radius:2px;background:var(--accent);border-color:var(--accent)}
-.mk-contexto{border-radius:1px;width:10px;height:10px;margin:2px;background:var(--muted);border-color:var(--muted)}
+/* el sello de versión */
+.version{display:inline-flex;align-items:center;gap:8px;margin-top:clamp(18px,2.6vw,26px);
+  border:1px solid var(--filo-fuerte);background:var(--papel-alto);
+  padding:5px 12px;text-decoration:none;color:var(--tinta-2)}
+.version:hover{border-color:var(--teja);color:var(--almagre)}
+.version .n{font-size:1rem;font-weight:600;color:var(--teja);letter-spacing:.04em}
+.version .t{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--tenue)}
 
-/* ——— Secciones ——— */
-.sec{padding-block:clamp(40px,7vw,88px);border-top:2px solid var(--ink)}
-.sec-head{display:grid;gap:10px;margin-bottom:clamp(24px,4vw,40px);max-width:64ch}
-.sec-head h2{font-family:var(--f-display);font-weight:700;font-variation-settings:"wdth" 108;text-transform:uppercase;font-size:clamp(1.75rem,4.2vw,2.75rem);line-height:1;letter-spacing:.01em}
-.sec-head p{color:var(--ink-2)}
+/* ═══════════ ÍNDICE ═══════════ */
+.idx{display:flex;flex-wrap:wrap;gap:4px 26px;padding-block:16px;
+  border-top:1px solid var(--filo);border-bottom:1px solid var(--filo)}
+.idx a{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+  color:var(--tinta-2);text-decoration:none;padding-block:6px;
+  border-bottom:1.5px solid transparent}
+.idx a:hover{color:var(--almagre);border-bottom-color:var(--teja)}
 
-/* ——— Escala gráfica del tiempo ——— */
-.escala{margin-bottom:22px}
+/* ═══════════ MARCADORES — el código de prueba ═══════════ */
+.mk{display:inline-block;flex:none;width:14px;height:14px;border-radius:50%;
+  background:var(--papel-alto);border:2px solid var(--tinta)}
+.mk-visto{background:var(--tinta)}
+.mk-sinleer{background:radial-gradient(circle,var(--tinta) 0 2.5px,var(--papel-alto) 3px)}
+.mk-cotejar{border-color:var(--anil)}
+.mk-sinref{border-style:dashed;border-color:var(--tenue)}
+.mk-interp{border-radius:1px;transform:rotate(45deg) scale(.82);border-color:var(--teja)}
+.mk-propuesto{border-radius:2px;background:var(--anil);border-color:var(--anil)}
+.mk-contexto{border-radius:1px;width:10px;height:10px;margin:2px;background:var(--oliva);border-color:var(--oliva)}
+
+/* ═══════════ APERTURA ═══════════ */
+.lede{display:grid;grid-template-columns:minmax(0,1fr) 17rem;gap:clamp(20px,3.4vw,44px);
+  align-items:start;padding-block:clamp(26px,4.4vw,52px)}
+.lede-txt{display:grid;gap:.85em;max-width:52ch}
+.lede-txt p:first-child{font-size:1.125em;color:var(--tinta)}
+.lede-txt p{color:var(--tinta-2);font-size:1.0625rem}
+.leyenda{border:1px solid var(--filo-fuerte);background:var(--papel-alto);padding:14px 16px 16px;
+  display:grid;gap:11px}
+.leyenda>.caps{padding-bottom:8px;border-bottom:1px solid var(--filo)}
+.leyenda dl{margin:0;display:grid;gap:11px}
+.leyenda .grupo{display:grid;gap:7px}
+.leyenda .grupo>.caps{color:var(--apunte);letter-spacing:.14em}
+.leyenda dt{display:flex;align-items:center;gap:10px;font-size:.875rem;font-weight:600;color:var(--tinta-2)}
+.leyenda dd{margin:0 0 0 24px;font-size:.8125rem;color:var(--apunte);line-height:1.38}
+@media (max-width:900px){.lede{grid-template-columns:1fr}.leyenda{max-width:32rem}}
+
+/* ═══════════ SECCIONES ═══════════ */
+.sec{padding-block:clamp(34px,6vw,76px);border-top:1px solid var(--filo-fuerte)}
+.sec-head{display:grid;gap:9px;margin-bottom:clamp(20px,3.4vw,36px);max-width:60ch}
+.sec-head h2{color:var(--almagre);font-size:clamp(1.9rem,4.6vw,3rem);line-height:1}
+.sec-head p{color:var(--tinta-2);font-size:1.0625rem}
+
+/* ═══════════ ESCALA GRÁFICA DEL TIEMPO ═══════════ */
+.escala{margin-bottom:20px}
 .escala svg{display:block;width:100%;height:auto;overflow:visible}
-.escala .tick{font-family:var(--f-display);font-size:11px;fill:var(--muted)}
-.escala .seg-a{fill:var(--ink)} .escala .seg-b{fill:var(--surface)}
-.escala .marco{fill:none;stroke:var(--ink);stroke-width:1.2}
-.escala .hueco{font-family:var(--f-text);font-style:italic;font-size:12px;fill:var(--ink-2)}
-.escala .brk{stroke:var(--ink-2);stroke-width:1;fill:none}
+.escala .seg-a{fill:var(--papel-hondo)}
+.escala .seg-b{fill:var(--filo)}
+.escala .marco{fill:none;stroke:var(--filo-fuerte);stroke-width:1}
+.escala .tick{font-family:var(--f);font-size:13px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;fill:var(--tenue)}
+.escala .hueco{font-family:var(--f);font-size:13px;font-style:italic;fill:var(--apunte)}
+.escala .brk{stroke:var(--filo-fuerte);stroke-width:1.4;fill:none}
 .escala .ev-mk{cursor:pointer}
-.escala .ev-mk.off{opacity:.15}
+.escala .ev-mk.off{opacity:.18}
+.escala .ev-mk:hover circle,.escala .ev-mk:focus-visible circle{stroke:var(--granza)}
 
-.filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(24px,4vw,40px)}
-.chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:.8125rem;font-weight:500;padding:7px 12px;min-height:34px;border:1.5px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:999px;cursor:pointer}
-.chip:hover{border-color:var(--ink)}
-.chip[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-ink);border-color:var(--chip-on)}
-.chip[aria-pressed="true"] .mk{border-color:var(--chip-on-ink)}
-.chip .n{font-variant-numeric:tabular-nums;opacity:.7}
+/* ═══════════ FILTROS ═══════════ */
+.filtros{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:clamp(18px,3vw,30px)}
+.chip{font-family:var(--f);font-size:.8125rem;font-weight:600;letter-spacing:.06em;
+  display:inline-flex;align-items:center;gap:8px;padding:5px 11px;cursor:pointer;
+  border:1px solid var(--filo);background:var(--papel-alto);color:var(--tinta-2)}
+.chip:hover{border-color:var(--filo-fuerte)}
+.chip[aria-pressed="true"]{border-color:var(--teja);background:var(--papel-hondo);color:var(--almagre)}
+.chip .n{color:var(--tenue);font-size:.75rem}
 
-/* ——— Línea temporal ——— */
-.tl{list-style:none;margin:0;padding:0;position:relative}
-.tl::before{content:"";position:absolute;top:0;bottom:0;left:calc(var(--col-year) + var(--gap-tl) + var(--col-mk)/2);width:1.5px;background:var(--ink);transform:translateX(-50%)}
-.era{position:relative;display:grid;grid-template-columns:var(--col-year) var(--col-mk) 1fr;gap:0 var(--gap-tl);padding-block:28px 18px}
-.era h3{grid-column:3;font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:1rem}
-.era .span{grid-column:1;text-align:right;font-family:var(--f-display);font-size:.8125rem;color:var(--muted);align-self:center}
-.era::after{content:"";grid-column:2;grid-row:1;justify-self:center;align-self:center;width:18px;height:3px;background:var(--ink)}
-.ev{display:grid;grid-template-columns:var(--col-year) var(--col-mk) minmax(0,1fr);gap:0 var(--gap-tl);padding-block:14px 26px;scroll-margin-top:24px}
-.ev-when{text-align:right;display:grid;align-content:start;gap:2px}
-.ev-year{font-family:var(--f-display);font-weight:600;font-size:1.625rem;line-height:1.1;font-variation-settings:"wdth" 96}
-.ev-date{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
-.ev .mk{justify-self:center;margin-top:9px;position:relative;z-index:1;outline:4px solid var(--ground)}
-.ev-body{display:grid;gap:10px;min-width:0}
-.ev-body h4{font-family:var(--f-text);font-weight:700;font-size:1.4375rem;line-height:1.2;text-wrap:balance;margin:0}
-.ev-body p{max-width:64ch}
-.nivel{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
-.nivel .mk{width:10px;height:10px;margin:0;outline:0}
-.cita{margin:4px 0;font-style:italic;font-size:1.375rem;line-height:1.35;max-width:48ch;text-indent:-.45em}
-.nota{border-left:2px solid var(--clay);padding:2px 0 2px 14px;font-size:1rem;color:var(--ink-2);max-width:60ch}
-.nota b{font-family:var(--f-display);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--clay);display:block}
-.fuente{font-family:var(--f-mono);font-size:.78rem;line-height:1.5;color:var(--muted);max-width:72ch;overflow-wrap:anywhere}
-.fuente::before{content:"Fuente · ";font-family:var(--f-display);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.7rem}
-.ev-fig{margin:6px 0 0;display:grid;gap:6px;max-width:26rem}
-.ev-fig img{width:100%;height:auto;display:block;background:var(--surface);filter:var(--line-filter);mix-blend-mode:var(--line-blend)}
-.ev-fig img.scan{filter:var(--scan-filter);mix-blend-mode:normal}
-figcaption{font-family:var(--f-display);font-size:.8125rem;line-height:1.4;color:var(--muted)}
-.silencio{display:grid;grid-template-columns:var(--col-year) var(--col-mk) minmax(0,1fr);gap:0 var(--gap-tl);padding-block:20px 30px;position:relative}
-.silencio::before{content:"";grid-column:2;grid-row:1;justify-self:center;width:9px;height:100%;min-height:90px;background:var(--ground);background-image:linear-gradient(var(--ink) 50%,transparent 0);background-size:1.5px 8px;background-repeat:repeat-y;background-position:center;position:relative;z-index:1}
-.silencio .ev-year{color:var(--muted)}
-.silencio p{grid-column:3;font-style:italic;color:var(--ink-2);max-width:56ch;align-self:center}
-.ev[hidden]{display:none}
-@media (max-width:640px){
-  :root{--col-year:0rem;--gap-tl:.9rem}
-  .tl::before{left:calc(var(--col-mk)/2)}
-  .ev,.era,.silencio{grid-template-columns:var(--col-mk) minmax(0,1fr)}
-  .ev-when{grid-column:2;grid-row:1;text-align:left;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-  .ev .mk{grid-column:1;grid-row:1}
-  .ev-body{grid-column:2}
-  .era .span{grid-column:2;text-align:left;grid-row:2}
-  .era h3{grid-column:2;grid-row:1}
-  .era::after{grid-column:1}
-  .silencio::before{grid-column:1}
-  .silencio .ev-when{grid-column:2;grid-row:1}
-  .silencio p{grid-column:2}
+/* ═══════════ LÍNEA TEMPORAL — modo documento ═══════════ */
+.tl{list-style:none;margin:0;padding:0}
+.tl>li{display:grid;grid-template-columns:var(--col-anno) var(--col-mk) minmax(0,1fr);
+  gap:0 var(--gap-tl);position:relative}
+/* cada hito lleva SU tramo de línea: el rojo se construye al bajar */
+.tl>li::before{content:"";grid-column:2;grid-row:1;justify-self:center;align-self:stretch;
+  width:2px;background:var(--teja);transform:scaleY(0);transform-origin:top center;
+  transition:transform .85s cubic-bezier(.22,.61,.36,1)}
+.tl>li.on::before{transform:scaleY(1)}
+/* el fantasma: el trazo entero, tenue */
+.tl>li::after{content:"";grid-column:2;grid-row:1;justify-self:center;align-self:stretch;
+  width:2px;background:var(--filo);z-index:-1}
+
+.ev{padding-block:clamp(16px,2.4vw,28px)}
+.ev-when{grid-column:1;grid-row:1;text-align:right;padding-top:.1em}
+.ev-year{display:block;font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1;color:var(--teja)}
+.ev-date{display:block;margin-top:.7em;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.18em;color:var(--apunte)}
+.ev>.mk{grid-column:2;grid-row:1;justify-self:center;margin-top:.55em;position:relative;z-index:2;
+  outline:5px solid var(--papel);opacity:0;transform:scale(.4);
+  transition:opacity .5s ease .25s, transform .5s cubic-bezier(.34,1.56,.64,1) .25s}
+.ev.on>.mk{opacity:1;transform:scale(1)}
+.ev.on>.mk-interp{transform:rotate(45deg) scale(.82)}
+.ev-body{grid-column:3;grid-row:1;min-width:0;opacity:0;transform:translateY(14px);
+  transition:opacity .7s ease .12s, transform .7s cubic-bezier(.22,.61,.36,1) .12s}
+.ev.on .ev-body{opacity:1;transform:none}
+.ev-body .nivel{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tenue);margin-bottom:.5em}
+.ev-body .nivel .mk{width:11px;height:11px;border-width:1.5px}
+.ev-body h4{font-size:clamp(1.25rem,2.6vw,1.7rem);line-height:1.16;color:var(--almagre);margin-bottom:.35em}
+.ev-body>p{max-width:62ch}
+.ev-body .fuente{margin-top:.9em;max-width:70ch}
+.cita{margin:.6em 0 .8em;padding:.85em 1.1em;max-width:58ch;background:var(--papel-hondo);
+  border-left:3px solid var(--teja);font-size:1.0625rem;line-height:1.5}
+
+/* el silencio documental */
+.silencio{padding-block:clamp(20px,3vw,36px)}
+.tl>li.silencio::before{background-color:transparent;
+  background-image:linear-gradient(var(--teja) 55%,transparent 0);
+  background-size:2px 13px;background-repeat:repeat-y}
+.tl>li.silencio::after{background-color:transparent;
+  background-image:linear-gradient(var(--filo) 55%,transparent 0);
+  background-size:2px 13px;background-repeat:repeat-y}
+.silencio .ev-when{grid-column:1;grid-row:1}
+.silencio>p{grid-column:3;grid-row:1;font-style:italic;color:var(--apunte);max-width:52ch;
+  opacity:0;transition:opacity .8s ease .2s}
+.silencio.on>p{opacity:1}
+
+/* separador de era */
+.tl>li.era{padding-block:clamp(28px,4.4vw,52px) clamp(8px,1.4vw,16px)}
+.tl>li.era::before{display:none}
+.era .span{grid-column:1;grid-row:1;text-align:right;align-self:center;
+  font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--tenue)}
+.era h3{grid-column:3;grid-row:1;font-size:1rem;text-transform:uppercase;letter-spacing:.2em;
+  font-weight:600;color:var(--teja)}
+
+/* figuras dentro de una entrada */
+.ev-fig{margin:1.1em 0 0;max-width:44rem;background:var(--papel-alto);padding:10px 10px 0;
+  border:1px solid var(--filo-fuerte);box-shadow:0 1px 0 rgba(120,92,48,.18)}
+.ev-fig img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+.ev-fig figcaption{padding:9px 2px 10px;font-size:.875rem;line-height:1.45;color:var(--tinta-2)}
+.ev-fig figcaption b{color:var(--almagre);font-weight:600}
+
+@media (max-width:760px){
+  :root{--col-anno:0px;--gap-tl:.9rem}
+  .tl>li{grid-template-columns:var(--col-mk) minmax(0,1fr)}
+  .tl>li::before,.tl>li::after{grid-column:1}
+  .ev>.mk{grid-column:1}
+  .ev-body,.silencio>p{grid-column:2}
+  .ev-when{grid-column:2;grid-row:auto;text-align:left;margin-bottom:.25em}
+  .ev-date{display:inline;margin:0 0 0 .7em}
+  .era .span{grid-column:2;text-align:left}
+  .era h3{grid-column:2}
+  body{font-size:1.1875rem}
 }
 
-/* ——— El término ——— */
-.plano{margin:0 0 clamp(28px,5vw,48px);display:grid;gap:10px}
-.plano-img{background:var(--surface);border:1.5px solid var(--ink);overflow:hidden}
-.plano-img img{display:block;width:100%;height:auto;filter:var(--line-filter);mix-blend-mode:var(--line-blend)}
-.dos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px)}
-@media (max-width:900px){.dos{grid-template-columns:1fr}}
-.blq{display:grid;gap:14px;align-content:start}
-.blq h3{font-family:var(--f-text);font-weight:700;font-size:1.4375rem}
-.blq > p{color:var(--ink-2);font-size:1.0625rem}
+/* ═══════════ EL TÉRMINO ═══════════ */
+.plano{margin:0 0 clamp(18px,3vw,30px);background:var(--papel-alto);padding:10px 10px 0;
+  border:1px solid var(--filo-fuerte);box-shadow:0 1px 0 rgba(120,92,48,.18)}
+.plano-img{overflow-x:auto}
+.plano-img img{display:block;width:100%;height:auto;min-width:36rem;mix-blend-mode:multiply}
+.plano figcaption{padding:9px 2px 11px;font-size:.8125rem;line-height:1.5;color:var(--tenue)}
+.dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3.4vw,44px)}
+.dos.mt{margin-top:clamp(22px,3.6vw,46px)}
+.blq{display:grid;gap:.7em;align-content:start;min-width:0}
+.blq h3{color:var(--almagre);font-size:1.3rem;line-height:1.2}
+.blq p{font-size:1.0625rem;color:var(--tinta-2);max-width:56ch}
+@media (max-width:900px){.dos{grid-template-columns:1fr}.plano-img img{min-width:28rem}}
+
 .tabla-scroll{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:1rem}
-th{font-family:var(--f-display);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 10px 8px 0;border-bottom:1.5px solid var(--ink);vertical-align:bottom}
-td{padding:9px 10px 9px 0;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.3}
+table{border-collapse:collapse;width:100%;font-size:.9375rem}
+th,td{text-align:left;padding:7px 10px 7px 0;border-bottom:1px solid var(--filo);vertical-align:baseline}
+th{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--tenue);white-space:nowrap}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
-.lindes td:first-child{font-family:var(--f-display);font-weight:600;font-size:.875rem}
-.lindes .no{color:var(--clay);font-weight:700}
-.lindes .no::after{content:" ≠";}
-.lindes .add{color:var(--accent);font-weight:700}
-.lindes .add::after{content:" +";}
-.mt{margin-top:clamp(28px,5vw,56px)}
-.usos{display:grid;gap:10px}
-.uso{display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:4px 14px;align-items:center}
-.uso-lbl{font-size:.9375rem;line-height:1.25}
-.uso-bar{display:flex;align-items:center;gap:10px;min-width:0}
-.uso-bar i{display:block;height:14px;background:var(--muted);border-radius:0 4px 4px 0;flex:none}
-.uso-bar i.hl{background:var(--oak)}
-.uso-bar span{font-family:var(--f-display);font-size:.8125rem;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink-2)}
-@media (max-width:480px){.uso{grid-template-columns:1fr}}
+.lindes td.add{color:var(--teja);font-weight:600}
 
-/* ——— Población ——— */
-.graf{margin:0;display:grid;gap:12px;position:relative}
-.graf-ley{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--f-display);font-size:.875rem}
-.graf-ley span{display:inline-flex;align-items:center;gap:8px}
-.graf-ley i{display:inline-block;width:18px;height:2px}
-.graf svg{display:block;width:100%;height:auto;overflow:visible}
-.graf .ax{font-family:var(--f-display);font-size:12px;fill:var(--muted)}
-.graf .grid{stroke:var(--rule-soft);stroke-width:1}
-.graf .base{stroke:var(--rule);stroke-width:1}
-.graf .dl{font-family:var(--f-display);font-size:12.5px;fill:var(--ink);font-weight:600}
-.graf .dl2{font-family:var(--f-display);font-size:11.5px;fill:var(--ink-2)}
-.graf .hueco-txt{font-family:var(--f-text);font-style:italic;font-size:13px;fill:var(--ink-2)}
-.graf .cross{stroke:var(--ink-2);stroke-width:1}
-.tip{position:absolute;pointer-events:none;background:var(--surface);border:1.5px solid var(--ink);padding:8px 10px;font-family:var(--f-display);font-size:.8125rem;line-height:1.35;min-width:9rem;box-shadow:0 6px 18px rgb(0 0 0 / .12)}
-.tip b{font-size:1rem}
-.tip .t-note{display:block;color:var(--muted);font-size:.75rem;max-width:14rem}
-details{margin-top:14px}
-summary{cursor:pointer;font-family:var(--f-display);font-size:.8125rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
-.cautelas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:18px 40px;margin-top:28px}
+.usos{display:grid;gap:7px}
+.uso{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:12px;align-items:center;font-size:.9375rem}
+.uso-lbl{color:var(--tinta-2)}
+.uso-bar{display:flex;align-items:center;gap:9px;min-width:0}
+.uso-bar i{display:block;height:11px;background:var(--filo-fuerte);flex:none}
+.uso-bar i.hl{background:var(--oliva)}
+.uso-bar span{font-size:.8125rem;color:var(--tenue);white-space:nowrap}
+@media (max-width:480px){.uso{grid-template-columns:1fr;gap:2px}}
 
-/* ——— Emblema ——— */
-.muestras{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr));gap:22px}
-.muestra{display:grid;grid-template-columns:56px minmax(0,1fr);gap:12px;align-items:start}
-.muestra .sw{width:56px;height:56px;border:1.5px solid var(--ink)}
-.muestra h4{margin:0;font-family:var(--f-display);font-size:.875rem;font-weight:600;letter-spacing:.04em}
-.muestra p{font-size:.9375rem;color:var(--ink-2);line-height:1.35}
-.tramas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:28px;margin-top:clamp(28px,5vw,48px)}
+/* ═══════════ LA GENTE ═══════════ */
+.graf{margin:0;position:relative}
+.graf-ley{display:flex;flex-wrap:wrap;gap:6px 22px;margin-bottom:12px}
+.graf-ley span{display:inline-flex;align-items:center;gap:8px;font-size:.8125rem;color:var(--tinta-2)}
+.graf-ley i{width:15px;height:3px;flex:none}
+#pob{display:block;width:100%;height:auto;overflow:visible}
+#pob .grid{stroke:var(--filo);stroke-width:1;stroke-dasharray:2 4}
+#pob .base{stroke:var(--filo-fuerte);stroke-width:1}
+#pob .ax{font-family:var(--f);font-size:13px;fill:var(--tenue)}
+#pob .dl{font-family:var(--f);font-size:15px;font-weight:600;fill:var(--tinta-2)}
+#pob .dl2{font-family:var(--f);font-size:12px;font-style:italic;fill:var(--apunte)}
+#pob .hueco-txt{font-family:var(--f);font-size:12px;font-style:italic;fill:var(--tenue)}
+#pob .cross{stroke:var(--filo-fuerte);stroke-width:1;stroke-dasharray:3 3}
+.graf figcaption{margin-top:12px;font-size:.8125rem;line-height:1.5;color:var(--tenue);max-width:74ch}
+.tip{position:absolute;z-index:5;pointer-events:none;background:var(--papel-alto);
+  border:1px solid var(--filo-fuerte);padding:8px 11px;font-size:.875rem;line-height:1.35;
+  box-shadow:0 2px 0 rgba(120,92,48,.18);max-width:17rem}
+.tip .t-note{display:block;margin-top:5px;font-style:italic;font-size:.8125rem;color:var(--apunte)}
+details{margin-top:clamp(16px,2.6vw,26px)}
+summary{cursor:pointer;font-size:.75rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.18em;color:var(--tenue);padding-block:8px}
+summary:hover{color:var(--almagre)}
+.cautelas{display:grid;gap:14px;margin-top:clamp(20px,3.4vw,36px);
+  grid-template-columns:repeat(auto-fit,minmax(20rem,1fr))}
+.cautelas .nota{margin-top:0}
 
-/* ——— Lo que falta ——— */
-.falta{list-style:none;counter-reset:f;margin:0;padding:0;display:grid;gap:0}
-.falta li{counter-increment:f;display:grid;grid-template-columns:3rem minmax(0,1fr);gap:4px 16px;padding-block:16px;border-bottom:1px solid var(--rule)}
-.falta li::before{content:counter(f);font-family:var(--f-display);font-weight:700;font-size:1.5rem;line-height:1.1;grid-row:span 2}
-.falta b{font-family:var(--f-text);font-size:1.1875rem}
-.falta p{font-size:1rem;color:var(--ink-2);max-width:68ch}
+/* ═══════════ EL EMBLEMA ═══════════ */
+.muestras{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
+  margin-bottom:clamp(22px,3.6vw,44px)}
+.muestra{display:grid;grid-template-columns:auto minmax(0,1fr);gap:13px;align-items:start;
+  background:var(--papel-alto);border:1px solid var(--filo-fuerte);padding:13px 15px}
+.sw{width:42px;height:42px;flex:none;border:1px solid rgba(36,28,20,.28)}
+.muestra h4{font-size:1.0625rem;color:var(--almagre);font-weight:600}
+.muestra p{font-size:.875rem;line-height:1.42;color:var(--tinta-2);margin-top:3px}
+.tramas{display:grid;gap:clamp(18px,3vw,34px);grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
+.tramas .ev-fig{margin:0;max-width:none}
 
-.pie{padding-block:40px 56px;border-top:2px solid var(--ink);display:grid;gap:14px;font-size:.9375rem;color:var(--ink-2)}
-.pie p{max-width:80ch}
+/* ═══════════ LO QUE FALTA ═══════════ */
+.falta{margin:0;padding:0 0 0 1.4em;display:grid;gap:clamp(14px,2.2vw,22px);max-width:64ch}
+.falta li{padding-left:.3em}
+.falta li::marker{color:var(--teja);font-weight:600}
+.falta b{display:block;color:var(--almagre);font-size:1.125rem;font-weight:600;margin-bottom:.15em}
+.falta p{font-size:1rem;color:var(--tinta-2)}
+
+/* ═══════════ VERSIONES ═══════════ */
+/* Este apartado se oculta poniendo VERSIONES_VISIBLE = false en los datos. */
+.versiones{display:grid;gap:clamp(18px,3vw,30px);max-width:62ch}
+.vsn{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:0 var(--gap-tl);
+  padding-bottom:clamp(16px,2.4vw,24px);border-bottom:1px solid var(--filo)}
+.vsn:last-child{border-bottom:0;padding-bottom:0}
+.vsn-n{grid-column:1;text-align:right}
+.vsn-n b{display:block;font-size:1.5rem;line-height:1;color:var(--teja);font-weight:600}
+.vsn-n span{display:block;margin-top:.5em;font-size:.75rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--apunte)}
+.vsn-c{grid-column:2;display:grid;gap:.45em;min-width:0}
+.vsn-c h3{font-size:1.2rem;color:var(--almagre);line-height:1.2;margin-bottom:.1em}
+.vsn-c ul{margin:0;padding-left:1.1em;display:grid;gap:.3em}
+.vsn-c li{font-size:1rem;color:var(--tinta-2)}
+.vsn-c li::marker{color:var(--filo-fuerte)}
+.vsn-c li b{font-weight:600;color:var(--tinta)}
+@media (max-width:640px){
+  .vsn{grid-template-columns:1fr;gap:.6em}
+  .vsn-n{text-align:left;display:flex;align-items:baseline;gap:12px}
+  .vsn-n span{margin-top:0}
+}
+
+/* ═══════════ PIE ═══════════ */
+.pie{padding-block:clamp(30px,5vw,64px);border-top:1px solid var(--filo-fuerte);
+  display:grid;gap:.7em;max-width:78ch}
+.pie p{font-size:.8125rem;line-height:1.55;color:var(--tenue)}
+.pie>.caps{margin-bottom:.3em}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MODO FEED — sólo en teléfono, y sólo para la línea temporal
+   Una entrada por pantalla; lo accesorio, en carrusel lateral; la línea
+   del tiempo, de barra de desplazamiento.
+   ═══════════════════════════════════════════════════════════════════════ */
+.feed-wrap{display:none}
+
+@media (max-width:760px){
+  .sec.feed-on .escala,
+  .sec.feed-on .tl{display:none}
+  .sec.feed-on .feed-wrap{display:block;position:relative;
+    margin-inline:calc(-1 * clamp(18px,4.5vw,48px));
+    height:78svh;min-height:26rem;
+    border-block:1px solid var(--filo-fuerte);background:var(--papel)}
+
+  .feed{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;
+    scroll-snap-type:y mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-right:28px}
+  .feed::-webkit-scrollbar{display:none}
+  .post{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative}
+  .post[hidden]{display:none}
+
+  .puntos{position:absolute;top:9px;left:17px;z-index:3;display:flex;gap:6px;pointer-events:none}
+  .punto{width:17px;height:1.5px;background:var(--filo)}
+  .punto.on{background:var(--teja);height:2px}
+
+  .carrusel{display:flex;height:100%;overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scroll-behavior:smooth;
+    scrollbar-width:none}
+  .carrusel::-webkit-scrollbar{display:none}
+  .lam{flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always;
+    display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:11px;padding:26px 18px 12px}
+
+  .lam-top{display:flex;align-items:center;gap:9px;min-width:0}
+  .lam-top .era-n{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;
+    color:var(--tenue);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .lam-top .sello{margin-left:auto;display:flex;align-items:center;gap:7px;flex:none}
+  .lam-top .sello span{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--apunte)}
+  .lam-cuerpo{min-height:0;overflow-y:auto;display:grid;align-content:center;gap:12px}
+  .lam-cuerpo.arriba{align-content:start}
+  .lam-pie{border-top:1px solid var(--filo);padding-top:8px;display:flex;gap:10px;align-items:baseline}
+  .lam-pie .a{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--teja);flex:none}
+  .lam-pie .t{font-size:.8125rem;line-height:1.4;color:var(--tenue);overflow:hidden;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+
+  .l-portada .anio{color:var(--teja);font-size:clamp(3rem,16vw,5rem);line-height:.9}
+  .l-portada .dia{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--apunte);margin-top:8px}
+  .l-portada h4{color:var(--almagre);font-size:clamp(1.3rem,6vw,1.8rem);line-height:1.14;margin-top:15px}
+  .l-portada .desliza{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--tenue);margin-top:18px;display:flex;align-items:center;gap:9px}
+  .l-portada .desliza::after{content:"";width:28px;height:1px;background:var(--filo-fuerte);
+    animation:vaiven 2.4s ease-in-out infinite}
+  .l-cita .cita{margin:0;max-width:none;font-size:clamp(1.05rem,4.4vw,1.28rem)}
+  .l-relato p{font-size:clamp(1rem,4vw,1.15rem);line-height:1.52}
+  .l-img{align-content:center}
+  .l-img .ev-fig{margin:0;max-width:none;display:grid;min-height:0}
+  .l-img .ev-fig img{max-height:100%;object-fit:contain}
+  .l-nota .nota{margin-top:0;max-width:none;font-size:clamp(1rem,4vw,1.1rem)}
+  .l-firma .fuente{font-size:.9375rem;color:var(--tinta-2)}
+  .l-firma .grado{display:flex;align-items:center;gap:9px;border-top:1px solid var(--filo);
+    padding-top:10px;font-size:.8125rem;color:var(--tinta-2)}
+  .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
+  .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
+  .l-sil p{font-style:italic;color:var(--apunte)}
+
+  /* el raíl: el trazo recorrido en teja, el que falta en filo */
+  .rail{position:absolute;top:0;right:0;bottom:0;width:28px;z-index:4;
+    touch-action:none;cursor:ns-resize}
+  .rail svg{display:block;width:100%;height:100%}
+  .rail .fantasma{stroke:var(--filo);stroke-width:2;fill:none}
+  .rail .hecho{stroke:var(--teja);stroke-width:2;fill:none}
+  .rail .vacio{stroke:var(--filo);stroke-width:2;fill:none;stroke-dasharray:7 6}
+  .rail .quiebre{stroke:var(--filo-fuerte);stroke-width:1.1;fill:none}
+  .rail .tk{fill:var(--tinta)}
+  .rail .tk.off{opacity:.15}
+  .rail .tk-an{fill:var(--anil)}
+  .rail .tk-tj{fill:var(--teja)}
+  .rail .tk-ol{fill:var(--oliva)}
+  .rail .tk-te{fill:var(--tenue)}
+  #pulgar{fill:var(--teja);stroke:var(--papel);stroke-width:2}
+  .rail-lbl{position:absolute;right:32px;z-index:6;background:var(--teja);color:var(--papel-alto);
+    font-size:.8125rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    padding:4px 10px;white-space:nowrap;transform:translateY(-50%);pointer-events:none;
+    opacity:0;transition:opacity .14s ease}
+  .rail-lbl.on{opacity:1}
+}
+@keyframes vaiven{0%,100%{transform:translateX(0);opacity:.5}50%{transform:translateX(8px);opacity:1}}
 </style>
+</head>
+<body>
+<div class="capa">
 
-<header class="wrap cab">
-  <div class="cajetin">
-    <div class="c-side" aria-hidden="true">Historia · territorio · identidad</div>
-    <div class="c-main">
-      <div class="c-title"><span class="lbl">término o zona:</span><h1>Colinas de Trasmonte</h1></div>
-      <div class="c-row">
-        <div class="c-cell"><span class="lbl">provincia:</span><b>Zamora</b></div>
-        <div class="c-cell"><span class="lbl">municipio:</span><b>Quiruelas de V.</b></div>
-        <div class="c-cell"><span class="lbl">diócesis:</span><b>Astorga</b></div>
-        <div class="c-cell"><span class="lbl">superficie:</span><b>1.043 ha</b></div>
-        <div class="c-cell"><span class="lbl">habitantes 2024:</span><b>222</b></div>
-        <div class="c-compass" aria-hidden="true">
-          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="1"/><path d="M24 3 L27.5 24 L24 45 L20.5 24 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M24 3 L27.5 24 L20.5 24 Z" fill="currentColor"/></svg>
-        </div>
-      </div>
-      <div class="c-obs">
-        <span class="lbl">observaciones:</span>
-        <p>Bajo un pueblo que nunca tuvo escudo hay un monasterio del siglo X que el pueblo ha olvidado. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
-      </div>
-    </div>
+<header class="wrap portada">
+  <svg class="floron" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
+    <path d="M24 4v40M14 12h20M17 44h14"/>
+    <path d="M24 12c-5 4-8 9-8 14s3 10 8 14c5-4 8-9 8-14s-3-10-8-14z" stroke-width="1.1"/>
+  </svg>
+  <span class="rotulo">Historia · territorio · identidad</span>
+
+  <h1>
+    <span class="grande">Colinas</span>
+    <span class="chico">de Trasmonte</span>
+  </h1>
+
+  <p class="lema">Bajo un pueblo que nunca tuvo escudo hay un monasterio del siglo X que el
+    pueblo ha olvidado. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
+
+  <div class="ficha">
+    <div><span class="caps">provincia</span><b>Zamora</b></div>
+    <div><span class="caps">municipio</span><b>Quiruelas de Vidriales</b></div>
+    <div><span class="caps">diócesis</span><b>Astorga</b></div>
+    <div><span class="caps">superficie</span><b>1.043 ha</b></div>
+    <div><span class="caps">habitantes 2024</span><b>222</b></div>
   </div>
-  <nav class="idx" aria-label="Secciones">
-    <a href="#linea">Línea temporal</a><a href="#termino">El término</a><a href="#gente">La gente</a><a href="#emblema">Materia para un emblema</a><a href="#falta">Lo que falta</a>
-  </nav>
+
+  <a class="version" href="#versiones" id="sello-version">
+    <span class="n">v0.1</span><span class="t">Ver cambios</span>
+  </a>
 </header>
+
+<nav class="wrap idx" aria-label="Secciones">
+  <a href="#linea">Línea temporal</a><a href="#termino">El término</a><a href="#gente">La gente</a><a href="#emblema">Materia para un emblema</a><a href="#falta">Lo que falta</a><a href="#versiones" id="idx-versiones">Versiones</a>
+</nav>
 
 <main>
 <section class="wrap lede" aria-label="Presentación">
@@ -296,11 +507,22 @@ summary{cursor:pointer;font-family:var(--f-display);font-size:.8125rem;font-weig
   <div class="sec-head">
     <span class="caps" id="linea-n">Del III milenio a.C. a 2026</span>
     <h2 id="linea-t">Línea temporal</h2>
-    <p>La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.</p>
+    <p id="linea-p">La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.</p>
   </div>
   <div class="escala"><svg id="escala" role="img" aria-label="Escala del tiempo con las entradas de la línea temporal"></svg></div>
   <div class="filtros" id="filtros" role="group" aria-label="Filtrar por grado de prueba"></div>
   <ol class="tl" id="tl"></ol>
+
+  <!-- En teléfono, la misma línea se lee como un feed -->
+  <div class="feed-wrap" id="feed-wrap">
+    <div class="feed" id="feed"></div>
+    <div class="rail" id="rail" role="slider" tabindex="0"
+         aria-label="Línea del tiempo: arrastra para recorrer las entradas"
+         aria-valuemin="1" aria-valuenow="1" aria-valuetext="">
+      <svg id="rail-svg" preserveAspectRatio="none" aria-hidden="true"></svg>
+    </div>
+    <div class="rail-lbl" id="rail-lbl" aria-hidden="true"></div>
+  </div>
 </section>
 
 <section class="wrap sec" id="termino" aria-labelledby="termino-t">
@@ -376,9 +598,9 @@ summary{cursor:pointer;font-family:var(--f-display);font-size:.8125rem;font-weig
   </div>
   <figure class="graf" id="graf">
     <div class="graf-ley">
-      <span><i style="background:var(--s-ant)"></i>Recuentos de Antiguo Régimen · 1787 y 1826</span>
-      <span><i style="background:var(--s-mun)"></i>Municipio · censos 1842–1970 (población de derecho)</span>
-      <span><i style="background:var(--s-loc)"></i>Localidad · padrón 2000–2024</span>
+      <span><i style="background:var(--oliva)"></i>Recuentos de Antiguo Régimen · 1787 y 1826</span>
+      <span><i style="background:var(--anil)"></i>Municipio · censos 1842–1970 (población de derecho)</span>
+      <span><i style="background:var(--teja)"></i>Localidad · padrón 2000–2024</span>
     </div>
     <svg id="pob" role="img" aria-labelledby="pob-t"><title id="pob-t">Habitantes de Colinas de Trasmonte: los recuentos de 1787 y 1826, los censos del municipio de 1842 a 1970 y el padrón de la localidad de 2000 a 2024, en tres series separadas</title></svg>
     <div class="tip" id="tip" hidden></div>
@@ -446,6 +668,17 @@ summary{cursor:pointer;font-family:var(--f-display);font-size:.8125rem;font-weig
     <li><b>Los libros parroquiales</b><p>En el Archivo Histórico Diocesano de Astorga, no en el de Zamora: la parroquia siempre fue de Astorga.</p></li>
   </ol>
 </section>
+
+<section class="wrap sec" id="versiones" aria-labelledby="versiones-t">
+  <div class="sec-head">
+    <span class="caps" id="versiones-n">Control de cambios</span>
+    <h2 id="versiones-t">Versiones</h2>
+    <p>Qué cambia de una versión a otra, y en qué fecha. Se lleva aquí a la vista mientras la web se
+    está construyendo; cuando esté asentada, este apartado se ocultará y el registro seguirá en el
+    repositorio.</p>
+  </div>
+  <div class="versiones" id="lista-versiones"></div>
+</section>
 </main>
 
 <footer class="wrap pie">
@@ -456,8 +689,11 @@ summary{cursor:pointer;font-family:var(--f-display);font-size:.8125rem;font-weig
   <p>La entrada de Madoz se cita por el facsímil del tomo VI (Madrid, 1847), p. 521, y no por transcripción ajena. Los despoblados del término, por J. C. Lobato Vidal, «Despoblados medievales en los valles de Benavente», Brigecio, 2 (1992).</p>
   <p>El método heráldico se ha tomado de tres precedentes de la misma comarca, todos en Brigecio: R. González Rodríguez y J. I. Martín Benito, «Notas históricas para la propuesta de escudo y bandera de Bretocino», 16 (2006), pp. 41-53; los mismos autores, «…propuesta de escudo de Tábara», 20 (2010), pp. 51-58; y «El escudo de Benavente», 14 (2004), pp. 85-106.</p>
   <p>Archivo Histórico Nacional, SIGIL-TINTA_ZAMORA,20,N.31. Planos del IRYDA, concentración parcelaria de Colinas de Trasmonte (Decreto 3119/1970), difundidos por la Junta de Castilla y León. Figuras de M. Á. Martín Carbajo et al., «"San Juan-El Valle", un enclave tardorromano y plenomedieval en Colinas de Trasmonte (Zamora)», Anuario 1993, IEZ «Florián de Ocampo», pp. 37-48.</p>
-  <p>Estado de la investigación a 22 de septiembre de 2026. Inventario completo, con signaturas y cautelas, en <span class="mono">docs/03-archivos/inventario-documental.md</span>.</p>
+  <p>Estado de la investigación a 22 de septiembre de 2026. Inventario completo, con signaturas y cautelas, en <span class="mono">docs/03-archivos/inventario-documental.md</span>. Procedencia de cada reproducción en <span class="mono">CREDITOS.md</span>.</p>
+  <p id="pie-version">—</p>
 </footer>
+
+</div>
 <script>
 const NIVELES = {
   visto:     { t: 'Fuente vista' },
@@ -691,20 +927,47 @@ const USOS = [
   ['Prados y ejidos', 120],
   ['Viña', 16]
 ];
+
+/* ═══════════ Control de versiones ═══════════
+   VERSION      — la que se muestra en la portada y en el pie.
+   VERSIONES_VISIBLE — ponlo en false y el apartado «Versiones» desaparece
+                       de la web (también su enlace en el índice). El registro
+                       sigue en el repositorio, en CHANGELOG.md.
+   VERSIONES    — de la más nueva a la más antigua.                        */
+
+const VERSION = '0.1';
+const VERSIONES_VISIBLE = true;
+
+const VERSIONES = [
+  { v: '0.1', f: '25 de septiembre de 2026', t: 'Una sola página, con el estilo decidido',
+    c: [
+      '<b>El estilo aprobado, aplicado a la web entera</b>: papel antiguo, una sola tipografía —EB Garamond en cinco registros— y las tintas con código, donde los tres rojos significan cosas distintas y el añil y el oliva marcan la materia.',
+      '<b>Todo en una sola página.</b> Se han fundido la portada, la línea temporal, el prototipo de estilo y la prueba de lectura en móvil, que antes eran cuatro direcciones distintas.',
+      '<b>La línea temporal se lee como un feed en el teléfono</b>: una entrada por pantalla, lo accesorio en carrusel lateral y la propia línea del tiempo haciendo de barra de desplazamiento. En pantalla grande sigue siendo un documento.',
+      '<b>El sello de prueba y la fuente viajan en cada lámina</b> del carrusel, no sólo en la portada de la entrada: una lámina suelta no puede circular sin decir cuánto está probado.',
+      '<b>El trazo rojo se construye al bajar</b>, y en los silencios documentales va punteado.',
+      'Se estrena este apartado de versiones y el sello de versión en la portada.'
+    ],
+    p: 'Contenido a 22 de septiembre de 2026: <b>faltan por incorporar</b> 1073, 1526, 1591, 1694, 1756 y 1768, que la investigación ya tiene y la línea todavía no.' }
+];
 (function () {
+  'use strict';
   const $ = (s) => document.querySelector(s);
-  const NS = 'http://www.w3.org/2000/svg';
   const mk = (n) => `<span class="mk mk-${n}" aria-hidden="true"></span>`;
   const fmt = (v, d = 0) => v.toLocaleString('es-ES', { maximumFractionDigits: d, minimumFractionDigits: d });
   const NOTA_T = { catastro: 'Respuesta 28.ª' };
+  const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-  /* ——— Línea temporal ——— */
+  const reales = EVENTOS.filter((e) => !e.sil);
+  const eraDe = (id) => ERAS.find((x) => x.id === id);
+
+  /* ═══════════ 1. Línea temporal — modo documento ═══════════ */
   const tl = $('#tl');
   let html = '', eraActual = 0;
   EVENTOS.forEach((e) => {
     if (e.era !== eraActual) {
       eraActual = e.era;
-      const era = ERAS.find((x) => x.id === e.era);
+      const era = eraDe(e.era);
       html += `<li class="era" data-era="${era.id}"><span class="span">${era.span}</span><h3>${era.t}</h3></li>`;
     }
     if (e.sil) {
@@ -712,7 +975,7 @@ const USOS = [
       return;
     }
     const fig = e.img
-      ? `<figure class="ev-fig"><img class="${e.img.scan ? 'scan' : ''}" src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${e.img.alt}"><figcaption>${e.img.cap}</figcaption></figure>`
+      ? `<figure class="ev-fig"><img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${e.img.cap}</figcaption></figure>`
       : '';
     html += `<li class="ev" id="ev-${e.id}" data-n="${e.n}" data-era="${e.era}">
       <div class="ev-when"><span class="ev-year">${e.y}</span>${e.d ? `<span class="ev-date">${e.d}</span>` : ''}</div>
@@ -729,19 +992,34 @@ const USOS = [
       </div></li>`;
   });
   tl.innerHTML = html;
-
-  const reales = EVENTOS.filter((e) => !e.sil);
   $('#linea-n').textContent = `${reales.length} entradas · del III milenio a.C. a 2026`;
 
-  /* ——— Filtros ——— */
+  /* El trazo rojo se construye al bajar */
+  (function alBajar() {
+    const items = tl.querySelectorAll('.ev, .silencio');
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      items.forEach((li) => li.classList.add('on'));
+      return;
+    }
+    const obs = new IntersectionObserver((entradas) => {
+      entradas.forEach((x) => { if (x.isIntersecting) { x.target.classList.add('on'); obs.unobserve(x.target); } });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    items.forEach((li) => obs.observe(li));
+  })();
+
+  /* ═══════════ 2. Filtros por grado de prueba ═══════════ */
   const filtros = $('#filtros');
   const opciones = [['todo', 'Todo']].concat(Object.keys(NIVELES).map((k) => [k, NIVELES[k].t]));
   filtros.innerHTML = opciones.map(([k, t]) => {
     const n = k === 'todo' ? reales.length : reales.filter((e) => e.n === k).length;
+    if (n === 0) return '';
     return `<button type="button" class="chip" id="f-${k}" data-k="${k}" aria-pressed="${k === 'todo'}">${k === 'todo' ? '' : mk(k)}${t} <span class="n">${n}</span></button>`;
   }).join('');
 
+  let filtroActual = 'todo';
   function aplicar(k) {
+    filtroActual = k;
     filtros.querySelectorAll('.chip').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.k === k)));
     const visibles = new Set();
     tl.querySelectorAll('.ev').forEach((li) => {
@@ -752,25 +1030,27 @@ const USOS = [
     tl.querySelectorAll('.era').forEach((li) => { li.hidden = !visibles.has(li.dataset.era); });
     tl.querySelectorAll('.silencio').forEach((li) => { li.hidden = k !== 'todo'; });
     document.querySelectorAll('#escala .ev-mk').forEach((g) => g.classList.toggle('off', !(k === 'todo' || g.dataset.n === k)));
+    if (Feed.montado) Feed.filtrar(k);
   }
   filtros.addEventListener('click', (ev) => {
     const b = ev.target.closest('.chip');
     if (b) aplicar(b.dataset.k);
   });
 
-  /* ——— Escala gráfica ——— */
+  /* ═══════════ 3. Escala gráfica del tiempo (pantalla grande) ═══════════ */
+  /* Un bloque para la prehistoria, una ruptura, y la escala histórica. */
+  const W = 1000, P = 14, X0 = -100, X1 = 2050;
+  const PREH = [-2400, -2100], AX = P + 54, BX = AX + 28;
+  const escX = (s) => s < -500
+    ? P + ((s - PREH[0]) / (PREH[1] - PREH[0])) * (AX - P)
+    : BX + ((s - X0) / (X1 - X0)) * (W - P - BX);
+  const orden = reales.slice().sort((a, b) => a.s - b.s);
+
   (function escala() {
     const svg = $('#escala');
-    // Escala con corte: un bloque para la prehistoria, una ruptura, y la escala histórica.
-    const W = 1000, P = 14, X0 = -100, X1 = 2050;
-    const PREH = [-2400, -2100], AX = P + 54, BX = AX + 28;
-    const x = (s) => s < -500
-      ? P + ((s - PREH[0]) / (PREH[1] - PREH[0])) * (AX - P)
-      : BX + ((s - X0) / (X1 - X0)) * (W - P - BX);
-    const orden = reales.slice().sort((a, b) => a.s - b.s);
     const filas = [];
     orden.forEach((e) => {
-      const px = x(e.s);
+      const px = escX(e.s);
       let r = 0;
       while (filas[r] !== undefined && px - filas[r] < 12) r++;
       filas[r] = px; e._fila = r;
@@ -780,37 +1060,34 @@ const USOS = [
     const H = barY + 58;
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
     let s = '';
-    // bloque de la prehistoria
     s += `<rect class="seg-a" x="${P}" y="${barY}" width="${AX - P}" height="8"/>`;
     s += `<rect class="marco" x="${P}" y="${barY}" width="${AX - P}" height="8"/>`;
     s += `<text class="tick" x="${(P + AX) / 2}" y="${barY + 24}" text-anchor="middle">III mil. a.C.</text>`;
-    // marca de ruptura de escala
     const my = barY + 4;
     s += `<path class="brk" d="M${AX + 6} ${my + 8} L${AX + 14} ${my - 8} M${AX + 14} ${my + 8} L${AX + 22} ${my - 8}"/>`;
-    // escala histórica, tramos de siglo
     for (let a = X0, i = 0; a < 2000; a += 100, i++) {
-      s += `<rect class="${i % 2 ? 'seg-b' : 'seg-a'}" x="${x(a)}" y="${barY}" width="${x(a + 100) - x(a)}" height="8"/>`;
+      s += `<rect class="${i % 2 ? 'seg-b' : 'seg-a'}" x="${escX(a)}" y="${barY}" width="${escX(a + 100) - escX(a)}" height="8"/>`;
     }
-    s += `<rect class="seg-b" x="${x(2000)}" y="${barY}" width="${x(X1) - x(2000)}" height="8"/>`;
-    s += `<rect class="marco" x="${x(X0)}" y="${barY}" width="${x(X1) - x(X0)}" height="8"/>`;
-    for (let a = 200; a <= 2000; a += 200) s += `<text class="tick" x="${x(a)}" y="${barY + 24}" text-anchor="middle">${a}</text>`;
-    s += `<text class="tick" x="${x(0)}" y="${barY + 24}" text-anchor="middle">a.C. | d.C.</text>`;
-    const g1 = x(1170), g2 = x(1551), gy = barY + 34;
+    s += `<rect class="seg-b" x="${escX(2000)}" y="${barY}" width="${escX(X1) - escX(2000)}" height="8"/>`;
+    s += `<rect class="marco" x="${escX(X0)}" y="${barY}" width="${escX(X1) - escX(X0)}" height="8"/>`;
+    for (let a = 200; a <= 2000; a += 200) s += `<text class="tick" x="${escX(a)}" y="${barY + 24}" text-anchor="middle">${a}</text>`;
+    s += `<text class="tick" x="${escX(0)}" y="${barY + 24}" text-anchor="middle">a.C. | d.C.</text>`;
+    const g1 = escX(1170), g2 = escX(1551), gy = barY + 34;
     s += `<path class="brk" d="M${g1} ${gy} v6 H${g2} v-6"/>`;
     s += `<text class="hueco" x="${(g1 + g2) / 2}" y="${gy + 20}" text-anchor="middle">381 años sin documentos</text>`;
     orden.forEach((e) => {
-      const cx = x(e.s), cy = top + (R - 1 - e._fila) * RH + 6;
+      const cx = escX(e.s), cy = top + (R - 1 - e._fila) * RH + 6;
       let shape;
       switch (e.n) {
-        case 'visto': shape = `<circle cx="${cx}" cy="${cy}" r="4.5" style="fill:var(--ink)"/>`; break;
-        case 'sinleer': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--surface);stroke:var(--ink);stroke-width:1.6"/><circle cx="${cx}" cy="${cy}" r="1.5" style="fill:var(--ink)"/>`; break;
-        case 'cotejar': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--surface);stroke:var(--accent);stroke-width:1.8"/>`; break;
-        case 'sinref': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--surface);stroke:var(--muted);stroke-width:1.4;stroke-dasharray:2 1.6"/>`; break;
-        case 'interp': shape = `<rect x="${cx - 3.5}" y="${cy - 3.5}" width="7" height="7" transform="rotate(45 ${cx} ${cy})" style="fill:var(--surface);stroke:var(--clay);stroke-width:1.6"/>`; break;
-        case 'propuesto': shape = `<rect x="${cx - 4}" y="${cy - 4}" width="8" height="8" style="fill:var(--accent)"/>`; break;
-        default: shape = `<rect x="${cx - 3}" y="${cy - 3}" width="6" height="6" style="fill:var(--muted)"/>`;
+        case 'visto': shape = `<circle cx="${cx}" cy="${cy}" r="4.5" style="fill:var(--tinta)"/>`; break;
+        case 'sinleer': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--papel-alto);stroke:var(--tinta);stroke-width:1.6"/><circle cx="${cx}" cy="${cy}" r="1.5" style="fill:var(--tinta)"/>`; break;
+        case 'cotejar': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--papel-alto);stroke:var(--anil);stroke-width:1.8"/>`; break;
+        case 'sinref': shape = `<circle cx="${cx}" cy="${cy}" r="4" style="fill:var(--papel-alto);stroke:var(--tenue);stroke-width:1.4;stroke-dasharray:2 1.6"/>`; break;
+        case 'interp': shape = `<rect x="${cx - 3.5}" y="${cy - 3.5}" width="7" height="7" transform="rotate(45 ${cx} ${cy})" style="fill:var(--papel-alto);stroke:var(--teja);stroke-width:1.6"/>`; break;
+        case 'propuesto': shape = `<rect x="${cx - 4}" y="${cy - 4}" width="8" height="8" style="fill:var(--anil)"/>`; break;
+        default: shape = `<rect x="${cx - 3}" y="${cy - 3}" width="6" height="6" style="fill:var(--oliva)"/>`;
       }
-      s += `<g class="ev-mk" data-id="${e.id}" data-n="${e.n}" tabindex="0" role="link" aria-label="${e.y}: ${e.t.replace(/"/g, '')}"><title>${e.y} · ${e.t}</title><circle cx="${cx}" cy="${cy}" r="9" style="fill:transparent"/>${shape}</g>`;
+      s += `<g class="ev-mk" data-id="${e.id}" data-n="${e.n}" tabindex="0" role="link" aria-label="${esc(e.y)}: ${esc(e.t)}"><title>${esc(e.y)} · ${esc(e.t)}</title><circle cx="${cx}" cy="${cy}" r="9" style="fill:transparent"/>${shape}</g>`;
     });
     svg.innerHTML = s;
     const ir = (g) => {
@@ -826,17 +1103,250 @@ const USOS = [
     });
   })();
 
-  /* ——— Usos del suelo, 1752 ——— */
+  /* ═══════════ 4. Modo feed — en teléfono ═══════════
+     Las láminas no se inventan: cada una es un campo que la entrada ya tiene. */
+  const Feed = {
+    montado: false,
+    laminasDe(e) {
+      const L = ['portada'];
+      if (e.q) L.push('cita');
+      if (e.p) L.push('relato');
+      if (e.img) L.push('imagen');
+      if (e.nota) L.push('nota');
+      if (e.f) L.push('firma');
+      return L;
+    },
+    firmaCorta(f) {
+      const t = String(f).split('·')[0].trim();
+      if (t.length <= 66) return t;
+      const c = t.slice(0, 66);
+      return c.slice(0, c.lastIndexOf(' ')) + '…';
+    },
+    cabecera(e) {
+      const era = eraDe(e.era);
+      return `<div class="lam-top"><span class="era-n">${esc(era ? era.t : '')}</span>
+        <span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span></div>`;
+    },
+    pie(e) {
+      return `<div class="lam-pie"><span class="a">${esc(e.y)}</span>
+        <span class="t">${esc(this.firmaCorta(e.f || ''))}</span></div>`;
+    },
+    cuerpo(e, k) {
+      switch (k) {
+        case 'portada':
+          return `<div class="lam-cuerpo l-portada"><div>
+            <div class="anio">${esc(e.y)}</div>
+            ${e.d ? `<div class="dia">${esc(e.d)}</div>` : ''}
+            <h4>${e.t}</h4>
+            ${this.laminasDe(e).length > 1 ? '<div class="desliza">Desliza al lado</div>' : ''}
+          </div></div>`;
+        case 'cita':
+          return `<div class="lam-cuerpo l-cita"><p class="cita">${e.q}</p></div>`;
+        case 'relato':
+          return `<div class="lam-cuerpo l-relato arriba"><p>${e.p}</p>${
+            e.link ? `<p class="fuente">En esta página: ${e.link.t}</p>` : ''}</div>`;
+        case 'imagen':
+          return `<div class="lam-cuerpo l-img"><figure class="ev-fig">
+            <img src="${e.img.src}" width="${e.img.w}" height="${e.img.h}" loading="lazy" alt="${esc(e.img.alt)}">
+            <figcaption>${e.img.cap}</figcaption></figure></div>`;
+        case 'nota':
+          return `<div class="lam-cuerpo l-nota arriba"><p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p></div>`;
+        case 'firma':
+          return `<div class="lam-cuerpo l-firma arriba"><span class="caps">Fuente</span>
+            <p class="fuente">${e.f}</p>
+            <p class="grado">${mk(e.n)}${NIVELES[e.n].t}</p></div>`;
+      }
+      return '';
+    },
+    montar() {
+      if (this.montado) return;
+      const feed = $('#feed');
+      let h = '';
+      EVENTOS.forEach((e, i) => {
+        if (e.sil) {
+          h += `<article class="post post-sil" data-i="${i}"><div class="carrusel"><div class="lam l-sil">
+            <div class="lam-top"><span class="era-n">${esc((eraDe(e.era) || {}).t || '')}</span></div>
+            <div class="lam-cuerpo"><div class="caja"><div class="rango">${esc(e.y)}</div><p>${e.p}</p></div></div>
+            <div class="lam-pie"><span class="t">Silencio documental</span></div>
+          </div></div></article>`;
+          return;
+        }
+        const L = this.laminasDe(e);
+        const lams = L.map((k) => `<section class="lam" aria-label="${esc(e.y + ' · ' + k)}">${
+          this.cabecera(e)}${this.cuerpo(e, k)}${this.pie(e)}</section>`).join('');
+        const pts = L.map((k, j) => `<span class="punto${j === 0 ? ' on' : ''}"></span>`).join('');
+        h += `<article class="post" id="post-${e.id}" data-i="${i}" data-n="${e.n}">
+          <div class="puntos" aria-hidden="true">${pts}</div>
+          <div class="carrusel" tabindex="0" aria-label="${esc(e.y + ': ' + e.t)}">${lams}</div></article>`;
+      });
+      feed.innerHTML = h;
+      this.posts = Array.prototype.slice.call(feed.querySelectorAll('.post'));
+      this.visibles = this.posts.slice();
+      this.feed = feed;
+      this.actual = -1;
+
+      this.posts.forEach((post) => {
+        const car = post.querySelector('.carrusel');
+        const pts = post.querySelectorAll('.punto');
+        if (!pts.length) return;
+        let t = null;
+        car.addEventListener('scroll', () => {
+          if (t) return;
+          t = requestAnimationFrame(() => {
+            t = null;
+            const n = Math.round(car.scrollLeft / car.clientWidth);
+            pts.forEach((p, j) => p.classList.toggle('on', j === n));
+          });
+        }, { passive: true });
+      });
+
+      this.rail();
+      let tf = null;
+      feed.addEventListener('scroll', () => {
+        if (tf) return;
+        tf = requestAnimationFrame(() => {
+          tf = null;
+          this.pinta(Math.round(feed.scrollTop / feed.clientHeight));
+        });
+      }, { passive: true });
+
+      this.montado = true;
+      this.filtrar(filtroActual);
+      this.pinta(0);
+    },
+    /* El raíl: la misma escala comprimida, puesta en vertical */
+    rail() {
+      const rail = $('#rail'), svg = $('#rail-svg');
+      const RH = 1000, RP = 18;
+      const AY = RP + 54, BY = AY + 26;
+      this.rY = (s) => s < -500
+        ? RP + ((s - PREH[0]) / (PREH[1] - PREH[0])) * (AY - RP)
+        : BY + ((s - X0) / (X1 - X0)) * (RH - RP - BY);
+      this.RH = RH; this.RP = RP;
+      const FORMA = { visto: 'tk', sinleer: 'tk', cotejar: 'tk tk-an', sinref: 'tk tk-te',
+                      interp: 'tk tk-tj', propuesto: 'tk tk-an', contexto: 'tk tk-ol' };
+      const y1 = this.rY(1170), y2 = this.rY(1551);
+      let s = '';
+      s += `<path class="fantasma" d="M14 ${RP} V${y1.toFixed(1)}"/>`;
+      s += `<path class="vacio" d="M14 ${y1.toFixed(1)} V${y2.toFixed(1)}"/>`;
+      s += `<path class="fantasma" d="M14 ${y2.toFixed(1)} V${RH - RP}"/>`;
+      s += `<path class="hecho" id="hecho" d="M14 ${RP} V${RP}"/>`;
+      s += `<path class="quiebre" d="M7 ${AY + 9} L21 ${AY + 3} M7 ${AY + 17} L21 ${AY + 11}"/>`;
+      orden.forEach((e) => {
+        s += `<rect class="${FORMA[e.n] || 'tk'}" data-n="${e.n}" x="6" y="${(this.rY(e.s) - 1).toFixed(1)}" width="16" height="2"/>`;
+      });
+      s += `<circle id="pulgar" cx="14" cy="${RP}" r="5.4"/>`;
+      svg.setAttribute('viewBox', `0 0 28 ${RH}`);
+      svg.innerHTML = s;
+      this.pulgar = $('#pulgar'); this.hecho = $('#hecho');
+      this.lbl = $('#rail-lbl'); this.railEl = rail;
+
+      const desdeY = (clientY) => {
+        const r = rail.getBoundingClientRect();
+        const vy = ((clientY - r.top) / r.height) * RH;
+        let mejor = 0, dist = Infinity;
+        this.visibles.forEach((p, i) => {
+          const e = EVENTOS[+p.dataset.i];
+          if (e.sil) return;
+          const d = Math.abs(this.rY(e.s) - vy);
+          if (d < dist) { dist = d; mejor = i; }
+        });
+        return mejor;
+      };
+      let arrastrando = false;
+      rail.addEventListener('pointerdown', (ev) => {
+        arrastrando = true;
+        rail.setPointerCapture(ev.pointerId);
+        this.lbl.classList.add('on');
+        this.irA(desdeY(ev.clientY));
+        ev.preventDefault();
+      });
+      rail.addEventListener('pointermove', (ev) => { if (arrastrando) this.irA(desdeY(ev.clientY)); });
+      const soltar = () => { if (arrastrando) { arrastrando = false; this.lbl.classList.remove('on'); } };
+      rail.addEventListener('pointerup', soltar);
+      rail.addEventListener('pointercancel', soltar);
+      rail.addEventListener('keydown', (ev) => {
+        if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight') { this.irA(this.actual + 1); ev.preventDefault(); }
+        if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') { this.irA(this.actual - 1); ev.preventDefault(); }
+        if (ev.key === 'Home') { this.irA(0); ev.preventDefault(); }
+        if (ev.key === 'End') { this.irA(this.visibles.length - 1); ev.preventDefault(); }
+      });
+    },
+    irA(idx) {
+      idx = Math.max(0, Math.min(this.visibles.length - 1, idx));
+      const p = this.visibles[idx];
+      if (!p) return;
+      this.feed.scrollTo({ top: p.offsetTop, behavior: 'auto' });
+      this.pinta(idx);
+    },
+    pinta(idx) {
+      if (idx === this.actual || !this.visibles.length) return;
+      this.actual = idx;
+      const p = this.visibles[idx];
+      if (!p) return;
+      const e = EVENTOS[+p.dataset.i];
+      let yy;
+      if (e.sil) {
+        const prev = this.visibles[Math.max(0, idx - 1)];
+        const ep = prev ? EVENTOS[+prev.dataset.i] : null;
+        yy = (ep && !ep.sil) ? this.rY(ep.s) : this.RP;
+      } else {
+        yy = this.rY(e.s);
+      }
+      this.pulgar.setAttribute('cy', yy.toFixed(1));
+      this.hecho.setAttribute('d', `M14 ${this.RP} V${yy.toFixed(1)}`);
+      this.lbl.style.top = (yy / this.RH * this.railEl.clientHeight) + 'px';
+      this.lbl.textContent = e.y;
+      this.railEl.setAttribute('aria-valuenow', String(idx + 1));
+      this.railEl.setAttribute('aria-valuemax', String(this.visibles.length));
+      this.railEl.setAttribute('aria-valuetext', e.y + (e.t ? ': ' + e.t : ''));
+    },
+    filtrar(k) {
+      if (!this.montado) return;
+      this.posts.forEach((p) => { p.hidden = !(k === 'todo' || p.dataset.n === k); });
+      this.visibles = this.posts.filter((p) => !p.hidden);
+      $('#rail-svg').querySelectorAll('.tk').forEach((g) => {
+        g.classList.toggle('off', !(k === 'todo' || g.dataset.n === k));
+      });
+      this.feed.scrollTop = 0;
+      this.actual = -1;
+      this.pinta(0);
+    }
+  };
+
+  /* Conmutación documento ⇄ feed, por ancho de pantalla */
+  (function modo() {
+    const mq = window.matchMedia('(max-width: 760px)');
+    const sec = $('#linea'), p = $('#linea-p');
+    const TXT = {
+      doc: 'La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.',
+      feed: 'Una entrada por pantalla: desliza hacia arriba para pasar a la siguiente y hacia el lado para ver la cita, la imagen, la cautela y la fuente. La línea del tiempo de la derecha es la barra de desplazamiento: arrástrala.'
+    };
+    function ajustar() {
+      if (mq.matches) {
+        sec.classList.add('feed-on');
+        p.textContent = TXT.feed;
+        Feed.montar();
+      } else {
+        sec.classList.remove('feed-on');
+        p.textContent = TXT.doc;
+      }
+    }
+    mq.addEventListener ? mq.addEventListener('change', ajustar) : mq.addListener(ajustar);
+    ajustar();
+  })();
+
+  /* ═══════════ 5. Usos del suelo, 1752 ═══════════ */
   (function usos() {
     const total = USOS.reduce((a, u) => a + u[1], 0);
     const max = Math.max(...USOS.map((u) => u[1]));
     $('#usos').innerHTML = USOS.map(([t, v, hl]) => {
       const pct = (v / total) * 100;
-      return `<div class="uso" role="listitem"><span class="uso-lbl">${t}</span><span class="uso-bar"><i class="${hl ? 'hl' : ''}" style="width:calc((100% - 7.5rem) * ${(v / max).toFixed(4)})"></i><span>${fmt(v)} f. · ${fmt(pct, pct < 1 ? 1 : 0)} %</span></span></div>`;
+      return `<div class="uso" role="listitem"><span class="uso-lbl">${t}</span><span class="uso-bar"><i class="${hl ? 'hl' : ''}" style="width:calc((100% - 8.5rem) * ${(v / max).toFixed(4)})"></i><span>${fmt(v)} f. · ${fmt(pct, pct < 1 ? 1 : 0)} %</span></span></div>`;
     }).join('') + `<div class="uso"><span class="uso-lbl"><b>Total</b></span><span class="uso-bar"><span><b>${total.toLocaleString('es-ES', { useGrouping: 'always' })} fanegas</b> · hoy, 1.043 ha</span></span></div>`;
   })();
 
-  /* ——— Población ——— */
+  /* ═══════════ 6. Población ═══════════ */
   (function poblacion() {
     const svg = $('#pob'), fig = $('#graf'), tip = $('#tip');
     const W = 960, H = 380, M = { l: 46, r: 56, t: 26, b: 34 };
@@ -852,10 +1362,10 @@ const USOS = [
     [1800, 1850, 1900, 1950, 2000].forEach((a) => { s += `<text class="ax" x="${x(a)}" y="${H - M.b + 22}" text-anchor="middle">${a}</text>`; });
     const path = (pts) => pts.map((p, i) => `${i ? 'L' : 'M'}${x(p[0]).toFixed(1)} ${y(p[1]).toFixed(1)}`).join(' ');
     const ant = POB.ant, mun = POB.mun, loc = POB.loc;
-    s += `<path d="${path(ant)}" style="fill:none;stroke:var(--s-ant);stroke-width:2;stroke-dasharray:2 4;stroke-linecap:round"/>`;
-    s += `<path d="${path(mun.slice(0, 2))}" style="fill:none;stroke:var(--s-mun);stroke-width:2;stroke-dasharray:5 4"/>`;
-    s += `<path d="${path(mun.slice(1))}" style="fill:none;stroke:var(--s-mun);stroke-width:2;stroke-linejoin:round"/>`;
-    s += `<path d="${path(loc)}" style="fill:none;stroke:var(--s-loc);stroke-width:2;stroke-linejoin:round"/>`;
+    s += `<path d="${path(ant)}" style="fill:none;stroke:var(--oliva);stroke-width:2;stroke-dasharray:2 4;stroke-linecap:round"/>`;
+    s += `<path d="${path(mun.slice(0, 2))}" style="fill:none;stroke:var(--anil);stroke-width:2;stroke-dasharray:5 4"/>`;
+    s += `<path d="${path(mun.slice(1))}" style="fill:none;stroke:var(--anil);stroke-width:2;stroke-linejoin:round"/>`;
+    s += `<path d="${path(loc)}" style="fill:none;stroke:var(--teja);stroke-width:2;stroke-linejoin:round"/>`;
     const xm = x(1985);
     s += `<text class="hueco-txt" x="${xm}" y="${y(250)}" text-anchor="middle">1970–2000</text>`;
     s += `<text class="hueco-txt" x="${xm}" y="${y(250) + 17}" text-anchor="middle">cambia la unidad</text>`;
@@ -865,12 +1375,12 @@ const USOS = [
       1842: 'Dato dudoso: coincide con las 132 almas de Madoz y queda por debajo de 1787 y de 1826.'
     };
     const puntos = [];
-    ant.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Recuentos de Antiguo Régimen', col: 'var(--s-ant)', nota: NOTAS[p[0]] }));
-    mun.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Municipio · censo, de derecho', col: 'var(--s-mun)', dudoso: p[0] === 1842, nota: NOTAS[p[0]] }));
-    loc.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Localidad · padrón', col: 'var(--s-loc)' }));
+    ant.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Recuentos de Antiguo Régimen', col: 'var(--oliva)', nota: NOTAS[p[0]] }));
+    mun.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Municipio · censo, de derecho', col: 'var(--anil)', dudoso: p[0] === 1842, nota: NOTAS[p[0]] }));
+    loc.forEach((p) => puntos.push({ a: p[0], v: p[1], serie: 'Localidad · padrón', col: 'var(--teja)' }));
     puntos.forEach((p, i) => {
-      const fill = p.dudoso ? 'var(--surface)' : p.col;
-      s += `<circle id="pt-${i}" cx="${x(p.a)}" cy="${y(p.v)}" r="4" style="fill:${fill};stroke:${p.dudoso ? p.col : 'var(--surface)'};stroke-width:2"/>`;
+      const fill = p.dudoso ? 'var(--papel-alto)' : p.col;
+      s += `<circle id="pt-${i}" cx="${x(p.a)}" cy="${y(p.v)}" r="4" style="fill:${fill};stroke:${p.dudoso ? p.col : 'var(--papel-alto)'};stroke-width:2"/>`;
     });
     const lab = (a, v, txt, dx, dy, anchor, cls = 'dl') => `<text class="${cls}" x="${x(a) + dx}" y="${y(v) + dy}" text-anchor="${anchor}">${txt}</text>`;
     s += lab(1787, 156, '156', 0, -12, 'middle');
@@ -927,5 +1437,34 @@ const USOS = [
 
     $('#pob-tabla tbody').innerHTML = puntos.map((p) => `<tr><td>${p.a}</td><td>${p.serie}${p.dudoso ? ' (dudoso)' : ''}</td><td class="num">${fmt(p.v)}</td></tr>`).join('');
   })();
+
+  /* ═══════════ 7. Versiones ═══════════ */
+  (function versiones() {
+    const sec = $('#versiones'), lista = $('#lista-versiones');
+    const sello = $('#sello-version'), enlace = $('#idx-versiones');
+    const pie = $('#pie-version');
+
+    sello.querySelector('.n').textContent = 'v' + VERSION;
+    pie.innerHTML = `Versión <b>${VERSION}</b> de esta web · ${VERSIONES[0] ? VERSIONES[0].f : ''}`;
+
+    if (typeof VERSIONES_VISIBLE !== 'undefined' && !VERSIONES_VISIBLE) {
+      sec.hidden = true;
+      enlace.hidden = true;
+      sello.removeAttribute('href');
+      sello.querySelector('.t').textContent = 'Versión';
+      return;
+    }
+
+    $('#versiones-n').textContent = `${VERSIONES.length} ${VERSIONES.length === 1 ? 'versión publicada' : 'versiones publicadas'}`;
+    lista.innerHTML = VERSIONES.map((v) => `<article class="vsn">
+      <div class="vsn-n"><b>v${v.v}</b><span>${v.f}</span></div>
+      <div class="vsn-c">
+        <h3>${v.t}</h3>
+        <ul>${v.c.map((x) => `<li>${x}</li>`).join('')}</ul>
+        ${v.p ? `<p class="nota"><b>Estado del contenido</b>${v.p}</p>` : ''}
+      </div></article>`).join('');
+  })();
 })();
 </script>
+</body>
+</html>

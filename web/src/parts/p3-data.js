@@ -230,3 +230,26 @@ const USOS = [
   ['Prados y ejidos', 120],
   ['Viña', 16]
 ];
+
+/* ═══════════ Control de versiones ═══════════
+   VERSION      — la que se muestra en la portada y en el pie.
+   VERSIONES_VISIBLE — ponlo en false y el apartado «Versiones» desaparece
+                       de la web (también su enlace en el índice). El registro
+                       sigue en el repositorio, en CHANGELOG.md.
+   VERSIONES    — de la más nueva a la más antigua.                        */
+
+const VERSION = '0.1';
+const VERSIONES_VISIBLE = true;
+
+const VERSIONES = [
+  { v: '0.1', f: '25 de septiembre de 2026', t: 'Una sola página, con el estilo decidido',
+    c: [
+      '<b>El estilo aprobado, aplicado a la web entera</b>: papel antiguo, una sola tipografía —EB Garamond en cinco registros— y las tintas con código, donde los tres rojos significan cosas distintas y el añil y el oliva marcan la materia.',
+      '<b>Todo en una sola página.</b> Se han fundido la portada, la línea temporal, el prototipo de estilo y la prueba de lectura en móvil, que antes eran cuatro direcciones distintas.',
+      '<b>La línea temporal se lee como un feed en el teléfono</b>: una entrada por pantalla, lo accesorio en carrusel lateral y la propia línea del tiempo haciendo de barra de desplazamiento. En pantalla grande sigue siendo un documento.',
+      '<b>El sello de prueba y la fuente viajan en cada lámina</b> del carrusel, no sólo en la portada de la entrada: una lámina suelta no puede circular sin decir cuánto está probado.',
+      '<b>El trazo rojo se construye al bajar</b>, y en los silencios documentales va punteado.',
+      'Se estrena este apartado de versiones y el sello de versión en la portada.'
+    ],
+    p: 'Contenido a 22 de septiembre de 2026: <b>faltan por incorporar</b> 1073, 1526, 1591, 1694, 1756 y 1768, que la investigación ya tiene y la línea todavía no.' }
+];
