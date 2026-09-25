@@ -17,7 +17,13 @@
     apeo1706: 'El nombre no prueba el sitio',
     pobladura: 'Ni el año ni la causa',
     aniversarios1772: 'Bartolomé o bachiller',
-    casa1804: 'Vecino de dónde'
+    casa1804: 'Vecino de dónde',
+    matricula1842: 'Y aun así puede ser real',
+    propios1866: 'Qué y a quién, sin leer',
+    pecuarias1863: 'Hay que ir en persona',
+    decreto1970: 'No salió de la nada',
+    titulares1971: 'Nombres de lectura automática',
+    registro1986: 'Inscripción, no creación'
   };
   const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 

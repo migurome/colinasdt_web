@@ -13,6 +13,46 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.12 — 25 de septiembre de 2026
+### La línea, al día con la investigación
+
+Tercera y última tanda. De **48 entradas a 60** —la jornada empezó con 33—.
+
+- **1842: la cifra que el propio INE desaconseja.** Los 132 habitantes salen del Censo de la
+  Matrícula Catastral, que el INE describe como hecho «sin rigor, por el procedimiento de
+  imputaciones» y del que dice que «no aporta ningún dato numérico de confianza». Documentado que
+  la cifra existe; documentado que no vale como medición. Con la cautela de que **el hoyo aún puede
+  ser real**: en vecinos la caída es igual de clara.
+- **El siglo XIX, con nombres y con caminos.** La desamortización vendiendo los bienes de propios
+  (1860-1889); las vías pecuarias y la Cañada Real Sanabresa (1863 y 1895); los distritos con los
+  que se votaba (1870 y 1877); el maestro **Valentín Rodríguez** (1894); y el plan de caminos
+  vecinales de 1905, que nombra el itinerario **«De Colinas de Trasmonte al Cubo de Benavente»**:
+  cabecera Colinas, no los pueblos mayores que atraviesa.
+- **1945: al Juzgado Comarcal de Santibáñez de Tera, con Villanázar y sin Quiruelas.** Veintisiete
+  años antes de que sea Quiruelas quien lo absorba.
+- **1956-57**, el vuelo americano retratando el minifundio; **1958-59**, la unidad mínima de
+  cultivo y la escuela mixta «servida por Maestra».
+- **1971: setenta y dos nombres por una carretera.** Los titulares de fincas expropiadas por la
+  C-620, convocados en el Ayuntamiento de Colinas. Es la lista de vecinos más larga que el
+  proyecto tiene —con la cautela de que los nombres vienen de lectura automática del boletín—.
+- **1972: el archivo se va a Quiruelas.** Cuatro meses después de la incorporación se suprime el
+  Juzgado de Paz y su documentación pasa al de Quiruelas. Es adónde fueron a parar los papeles.
+- 🚨 **1986: la figura que a Colinas le falta.** Catorce pueblos de Zamora se inscriben como
+  entidad local menor entre 1986 y 2003; Colinas no, y Quiruelas no tiene ninguna. **Vecilla de
+  Trasmonte**, a 1.673 metros y del mismo apellido toponímico, se inscribe en 1986. **Aguilar de
+  Tera**, confrontante y más pequeño que Colinas en 1768, en 2003. Es lo que decide si un emblema
+  de Colinas puede ser oficial por sí mismo o se queda en emblema vecinal.
+- Se completan de paso tres entradas que ya estaban: el nombramiento del cura **D. Pedro Ramos** en
+  la de 1857, el decreto de ordenación rural de **1968** en la de la concentración, y el plan de
+  obras de **1976** en la del acuerdo de 1977.
+
+> **Lo que falta ahora es otra cosa.** Ya no es material investigado sin publicar, sino
+> **investigación por hacer**: el pleito de la Chancillería de 1694, el expediente de vías
+> pecuarias del AHN —no digitalizado— y qué se vendió y a quién en la desamortización. Están en
+> `docs/03-archivos/material-pendiente.tsv`.
+
+---
+
 ## v0.11 — 25 de septiembre de 2026
 ### El pleito de los diezmos, entero
 

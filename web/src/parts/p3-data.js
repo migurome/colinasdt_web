@@ -238,6 +238,13 @@ const EVENTOS = [
     p: 'La nueva división territorial adscribe Colinas a Zamora, y en 1834 al partido judicial de Benavente. En 1752 se había catastrado bajo Valladolid.',
     f: 'Real Decreto de 30 de noviembre de 1833' },
 
+  { id: 'matricula1842', era: 4, y: '1842', s: 1842, n: 'visto',
+    t: 'Ciento treinta y dos, y el propio INE dice que no cuenta',
+    q: '«sin rigor, por el procedimiento de imputaciones»',
+    p: 'Es la primera cifra de la serie moderna de población, y viene del Censo de la Matrícula Catastral. El INE, al describir su propia metodología, dice que se hizo así, sin fecha de referencia, y que <b>«no aporta ningún dato numérico de confianza»</b>. Está documentado que la cifra existe; está documentado que no vale como medición.',
+    nota: 'Y sin embargo el hoyo puede ser real. En vecinos la caída es igual de clara —55 en 1826, 33 en 1847—, con la misma proporción de almas por vecino en las dos fuentes, lo que descarta que sea un problema de unidad de cuenta. Entre 1826 y 1842 caben la primera guerra carlista, el cólera de 1834 y la desamortización. Queda abierto por los dos lados.',
+    f: 'INE, Alteraciones de los municipios desde 1842, metodología' },
+
   { id: 'madoz', era: 4, y: '1847', s: 1847, n: 'visto',
     t: 'Un monte que se llama como el pueblo',
     q: '«Hay un monte encinal con el mismo nombre del pueblo, que forma con otros una cordillera de 2 horas hasta San Juanico»',
@@ -252,8 +259,25 @@ const EVENTOS = [
 
   { id: 'censo1857', era: 4, y: '1857', s: 1857, n: 'cotejar',
     t: 'Primer censo moderno: 386 habitantes',
-    p: 'Quince años antes se contaban 132. Nadie triplica su población en ese tiempo: o la cifra de 1842 se quedaba corta, o el municipio cambió de término.',
-    f: 'Censo de población (INE), serie pendiente de cotejo' },
+    p: 'Quince años antes se contaban 132. Nadie triplica su población en ese tiempo: o la cifra de 1842 se quedaba corta, o el municipio cambió de término. Y ese mismo año, el 22 de julio, la Gaceta nombra cura de Colinas a <b>D. Pedro Ramos</b>.',
+    f: 'Censo de población (INE), serie pendiente de cotejo · el nombramiento, Gaceta de Madrid, 22-VII-1857, BOE-A-1857-7483' },
+
+  { id: 'pecuarias1863', era: 4, y: '1863', s: 1863, n: 'sinleer',
+    t: 'Las vías pecuarias del término, reconocidas',
+    p: 'Acta de reconocimiento de las vías pecuarias del término. En el mismo expediente hay copia del reconocimiento de la <b>Cañada Real Sanabresa</b>, de 1895. Por aquí pasaba ganado trashumante, y alguien vino a medir por dónde.',
+    nota: 'El expediente <b>no está digitalizado</b>: se sabe que existe y dónde está, no lo que dice. Es de los pocos casos en que haría falta ir en persona.',
+    f: 'AHN, DIVERSOS-MESTA, 746, Exp. 38' },
+
+  { id: 'propios1866', era: 4, y: '1860–1889', s: 1866, n: 'visto',
+    t: 'La desamortización vende los bienes de propios',
+    p: 'Siete asientos de la Gazeta registran ventas de <b>bienes de propios</b> de Colinas, con sus meses: enero de 1866, mayo de 1873… Lo que era del común —montes, prados, eras— pasa a manos particulares.',
+    nota: 'Está documentado que hubo ventas. <b>No está leído qué se vendió ni a quién</b>: los asientos dan la referencia, no el contenido.',
+    f: 'Gazeta de Madrid, siete asientos entre 1860 y 1889 · vaciado en la ficha boe-gazeta' },
+
+  { id: 'distritos1870', era: 4, y: '1870', s: 1870, n: 'visto',
+    t: 'Con quién va Colinas cuando se vota',
+    p: 'Para las elecciones se agrupa con Barcial del Barco, Arcos de la Polvorosa, Santa Colomba de las Monjas, Villanázar, Sitrama, Santa Croya y Melgar de Tera. En 1877 queda en el «segundo distrito: Micereces de Tera». Y un itinerario oficial de ese mismo año pasa por «Benavente, Santa Cristina, <b>Vecilla, Colinas, Quiruelas</b>, Sitrama…»: es el camino por el que se iba y se venía.',
+    f: 'BOE-A-1870-7800 · BOE-A-1877-1187 y BOE-A-1877-3272' },
 
   { id: 'sello', era: 4, y: '1876', d: 'diciembre', s: 1876, n: 'visto',
     t: 'El único sello',
@@ -263,22 +287,61 @@ const EVENTOS = [
     tr: 'vineta',
     f: 'AHN, SIGIL-TINTA_ZAMORA,20,N.31' },
 
+  { id: 'maestro1894', era: 4, y: '1894', s: 1894, n: 'visto',
+    t: 'El maestro se llama Valentín Rodríguez',
+    p: 'Puesto 76 del escalafón del magisterio de la provincia de Zamora. Es el <b>primer maestro de Colinas</b> que el proyecto conoce por su nombre.',
+    f: 'BOE-A-1894-6665, escalafón del magisterio, provincia de Zamora' },
+
+  { id: 'camino1905', era: 4, y: '1905', s: 1905, n: 'visto',
+    t: 'Colinas, cabecera de un camino vecinal',
+    q: '«De Colinas de Trasmonte al Cubo de Benavente»',
+    p: 'Así lo nombra el plan de caminos vecinales: por Colinas, no por los pueblos mayores que el itinerario atraviesa después —Quiruelas, Quintanilla, Brime de Urz, Cunquilla, Granucillo, Grijalba, Villaobispo, Santibáñez y Brime de Sog—. <b>Colinas es la cabecera.</b>',
+    f: 'BOE-A-1905-3586' },
+
+  { id: 'juzgado1945', era: 4, y: '1945', s: 1945, n: 'visto',
+    t: 'Al juzgado de Santibáñez, y sin Quiruelas',
+    p: 'Colinas pasa al Juzgado Comarcal de Santibáñez de Tera, junto con Villanázar. <b>Quiruelas no está en ese grupo.</b> Veintisiete años después será Quiruelas quien lo absorba.',
+    f: 'BOE-A-1945-3382' },
+
   { id: 'max1950', era: 4, y: '1950', s: 1950, n: 'cotejar',
     t: 'Máximo histórico: 625 habitantes',
     p: 'Un siglo de crecimiento casi sin pausa. Desde aquí la población sólo baja.',
     f: 'Censo de población (INE), serie pendiente de cotejo' },
 
+  { id: 'vuelo1956', era: 4, y: '1956–57', s: 1956, n: 'visto',
+    t: 'El vuelo americano retrata el minifundio',
+    p: 'Las fotografías aéreas muestran el término en haces de <b>tiras estrechas</b> y caminos sinuosos. Son las 5.560 parcelas que el decreto de 1970 va a contar, y la última imagen del paisaje agrario que describía el Catastro de 1752.',
+    f: 'IGN, vuelo americano serie B, AMS 1956-1957' },
+
+  { id: 'escuela1959', era: 4, y: '1958–59', s: 1958, n: 'visto',
+    t: 'La unidad mínima de cultivo, y una escuela',
+    q: '«una Escuela mixta, servida por Maestra, en el casco del Ayuntamiento de Colinas de Trasmonte»',
+    p: 'En 1958 se fija la <b>unidad mínima de cultivo</b> del término: por debajo de esa superficie una finca ya no puede partirse. Al año siguiente se crea definitivamente la escuela.',
+    f: 'BOE-A-1958-9342 · Orden de 7 de julio de 1959, BOE-A-1959-9954' },
+
   { id: 'decreto1970', era: 4, y: '1970', d: '8 de octubre', s: 1970, n: 'visto',
     t: 'Concentración parcelaria',
     p: 'El Decreto 3119/1970 declara de utilidad pública la concentración de Colinas: 1.043 hectáreas, 405 propietarios y 5.560 parcelas, casi catorce por dueño.',
     q: '«cuyo perímetro será, en principio, el del término municipal del mismo nombre»',
-    f: 'BOE núm. 257, de 27 de octubre de 1970, p. 17434' },
+    nota: 'No salió de la nada: dos años antes, un decreto de 11 de julio de 1968 había declarado la comarca «Benavente-Tera» sujeta a ordenación rural. Y la concentración <b>la pidieron los propios agricultores</b>.',
+    f: 'BOE núm. 257, de 27 de octubre de 1970, p. 17434 · el decreto de 1968, citado en BOE-A-1976-7522' },
+
+  { id: 'titulares1971', era: 5, y: '1971', s: 1971, n: 'visto',
+    t: 'Setenta y dos nombres, por una carretera',
+    p: 'Se publican los titulares de las fincas del término afectadas por la expropiación de la <b>carretera C-620</b>, de Benavente a Sitrama de Tera. El acto se convoca para el 25 de junio <b>en el Ayuntamiento de Colinas</b>. Setenta y dos nombres: es la lista de vecinos más larga que el proyecto tiene de este término.',
+    nota: 'Los nombres vienen de <b>reconocimiento óptico del boletín</b> y están normalizados. Hay que cotejarlos uno a uno antes de darlos por buenos: un apellido mal leído en una lista de vecinos no es un detalle.',
+    f: 'BOE-A-1971-40309' },
 
   { id: 'fin-municipio', era: 5, y: '1972', d: '10 de febrero', s: 1972, n: 'visto',
     t: 'El pueblo pide dejar de ser municipio',
     q: '«en atención a la escasez de población, dificultad para mantener los servicios mínimos obligatorios y deseo de mejorarlos»',
     p: 'El Ayuntamiento de Colinas acuerda, con quórum legal, solicitar su incorporación a Quiruelas de Vidriales; Quiruelas la acepta y el Consejo de Ministros la aprueba. No hubo «reclamación alguna» en el plazo de información pública. El concejo que en 1752 tenía molino y fragua propios se disuelve a petición suya.',
     f: 'Decreto 354/1972, de 10 de febrero · BOE núm. 45, de 22 de febrero de 1972, pp. 3172-3173 (BOE-A-1972-33978)' },
+
+  { id: 'juzgado1972', era: 5, y: '1972', d: '27 de junio', s: 1972, n: 'visto',
+    t: 'El archivo se va a Quiruelas',
+    p: 'Cuatro meses después de la incorporación se suprime el <b>Juzgado de Paz</b> de Colinas, y su documentación y su archivo pasan al de Quiruelas. No es un detalle administrativo: es adónde fueron a parar los papeles del pueblo, y por dónde hay que empezar a buscarlos.',
+    f: 'Orden de 27 de junio de 1972, BOE-A-1972-1185' },
 
   { id: 'plano1975', era: 5, y: '1975', d: 'enero', s: 1975, n: 'visto',
     t: 'El término, dibujado',
@@ -294,8 +357,14 @@ const EVENTOS = [
 
   { id: 'acuerdo1977', era: 5, y: '1977', d: '1 de marzo', s: 1977, n: 'visto',
     t: 'De 5.560 parcelas a 993 fincas',
-    p: 'Se aprueba el acuerdo de concentración. Termina el paisaje agrario que describía el Catastro.',
-    f: 'Junta de Castilla y León, ficha de la concentración parcelaria de Colinas de Trasmonte' },
+    p: 'Se aprueba el acuerdo de concentración. Termina el paisaje agrario que describía el Catastro. El año anterior se había aprobado el plan de obras que lo acompaña: «red de caminos y red de saneamiento».',
+    f: 'Junta de Castilla y León, ficha de la concentración parcelaria · el plan de obras, Orden de 26 [?]-II-1976, BOE-A-1976-7522' },
+
+  { id: 'registro1986', era: 5, y: '1986', s: 1986, n: 'visto',
+    t: 'La figura que a Colinas le falta',
+    p: 'Creado el Registro de Entidades Locales, <b>catorce pueblos de Zamora</b> se inscriben como entidad local menor entre 1986 y 2003. Colinas no es uno de ellos, y Quiruelas, su municipio, no tiene ninguna. <b>Vecilla de Trasmonte</b> —a 1.673 metros, del mismo apellido toponímico— se inscribe el 10 de octubre de 1986, con el número 4490008. Y <b>Aguilar de Tera</b>, confrontante del término y más pequeño que Colinas en 1768 —92 almas frente a 114—, se inscribe el 25 de julio de 2003 [?]. La figura que a Colinas le falta se constituyó en su propia raya.',
+    nota: 'La fecha es de <b>inscripción</b>, no de creación de la entidad; y en el caso de Aguilar no está comprobado si es constitución nueva o inscripción tardía. Esto es lo que decide si un emblema de Colinas puede ser oficial por sí mismo o se queda en emblema vecinal.',
+    f: 'Registro de Entidades Locales (RD 382/1986, de 10 de febrero), vía IDECyL y datos abiertos de la Junta de Castilla y León' },
 
   { id: 'excavacion', era: 5, y: '1993', d: '5–29 de julio', s: 1993, n: 'visto',
     t: 'Las zanjas del regadío destapan San Juan-El Valle',
@@ -355,7 +424,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.11';
+const VERSION = '0.12';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -363,6 +432,16 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.12', f: '25 de septiembre de 2026', t: 'La línea, al día con la investigación',
+    c: [
+      '<b>Doce entradas más: de 48 a 60.</b> Tercera y última tanda. La línea publicada deja de ir por detrás del trabajo de archivo: empezó la jornada con 33 entradas.',
+      '<b>1842: la cifra que el propio INE desaconseja.</b> Los 132 habitantes salen del Censo de la Matrícula Catastral, que el INE describe como hecho «sin rigor» y del que dice que «no aporta ningún dato numérico de confianza». Documentado que la cifra existe, y documentado que no vale como medición.',
+      '<b>El siglo XIX, con nombres y caminos</b>: la desamortización vendiendo los bienes del común, las vías pecuarias reconocidas, los distritos con los que se votaba, el maestro Valentín Rodríguez y el camino vecinal que <b>sale de Colinas</b> y no de los pueblos mayores.',
+      '<b>1945: al juzgado de Santibáñez, y sin Quiruelas.</b> Veintisiete años antes de que sea Quiruelas quien lo absorba.',
+      '<b>1971: setenta y dos nombres por una carretera</b>, la lista de vecinos más larga que el proyecto tiene. Y <b>1972: el archivo se va a Quiruelas</b> con el Juzgado de Paz —adónde fueron a parar los papeles del pueblo—.',
+      '🚨 <b>1986: la figura que a Colinas le falta.</b> Catorce pueblos de Zamora se inscriben como entidad local menor; Colinas no. Vecilla de Trasmonte, a 1.673 metros, sí. Y Aguilar de Tera, más pequeño que Colinas en 1768, también. Es lo que decide si un emblema puede ser oficial o se queda en vecinal.'
+    ],
+    p: 'Con esto, lo que falta <b>ya no es material investigado sin publicar, sino investigación por hacer</b>: el pleito de la Chancillería de 1694, el expediente de vías pecuarias del AHN y qué se vendió en la desamortización.' },
   { v: '0.11', f: '25 de septiembre de 2026', t: 'El pleito de los diezmos, entero',
     c: [
       '<b>Nueve entradas más: de 39 a 48.</b> La segunda tanda de poner la línea al día.',

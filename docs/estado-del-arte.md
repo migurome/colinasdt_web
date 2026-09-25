@@ -196,11 +196,18 @@ Los dos registros están pensados para trabajarse **por identificador**, sin reh
 
 ## 7. La web, y por qué va por detrás
 
-> **Puesto al día el 25-IX-2026.** La línea publicada tiene ya **48 entradas**, de las 33 que
-> tenía. Entraron la **tanda 1** —las seis que cambian lo que la línea dice— y la **tanda 2**
-> —el pleito de los diezmos entero, el bloque eclesiástico y la desaparición de Pobladura—.
-> El cotejo completo contra `cronologia.md` había dado **93 filas documentadas frente a 34
-> entradas**. Queda la **tanda 3**: la cola administrativa de 1834 a 2003.
+> **Puesto al día el 25-IX-2026. Cerrado.** La línea publicada tiene **60 entradas**, de las 33
+> que tenía: entraron las **tres tandas** —las seis que cambian lo que la línea dice, el pleito
+> de los diezmos con el bloque eclesiástico, y la cola administrativa de 1842 a 2003—.
+>
+> De la tabla de abajo **sólo queda pendiente una fila**: la de la catedral de León en el s. X, y
+> queda por una razón de criterio, no de tiempo —el autor citado **no identifica el documento
+> concreto**, así que no hay nada que firmar—. Igual que los recuentos de **1561/65, 1571 y
+> 1587**, que siguen sin transcribir.
+>
+> Lo que falta ahora **no es material investigado sin publicar, sino investigación por hacer**:
+> el pleito de la Chancillería de 1694, el expediente de vías pecuarias del AHN, y qué se vendió
+> y a quién en la desamortización. Están en `material-pendiente.tsv`.
 
 La línea temporal reflejaba el estado del **22 de septiembre**. La investigación había producido,
 entre otras cosas, **material para una veintena de entradas nuevas** que la web no conocía:
@@ -215,7 +222,7 @@ entre otras cosas, **material para una veintena de entradas nuevas** que la web 
 | ✅ ~~**1757** · **1772** · **1804** — las tres ejecutorias~~ | ★★ |
 | ✅ ~~**1768** — el Censo de Aranda: 114 almas, y el valle entero cuadrado ~~ | ★★ |
 | ✅ ~~**1842** · **1848** — la copia y el cotejo judicial ante la Hacienda~~ | ★★ |
-| **1860-1889** — la venta de los bienes de propios | ★ |
+| ✅ ~~**1860-1889** — la venta de los bienes de propios~~ | ★ |
 
 → El diseño acordado para llevarlo allí está en
 [`07-web/diseno-responsive.md`](07-web/diseno-responsive.md). **Tampoco está implementado**, y por
