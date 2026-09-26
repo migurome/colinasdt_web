@@ -578,13 +578,44 @@ summary:hover{color:var(--almagre)}
      crédito, sigue estando en la lámina del texto de la misma entrada.
      Sólo en las entradas con retrato, y al final del carrusel. */
   .lam-ret{padding:0;grid-template-rows:1fr;background:var(--papel)}
-  .lam-ret .ret{width:100%;height:100%}
+  .lam-ret .ret{display:block;width:100%;height:100%}
   .lam-ret .ret img{display:block;width:100%;height:100%;object-fit:cover;
     object-position:50% 50%}
   /* un facsímil se ve entero: llenar el borde lo recortaría, y un documento
      recortado deja de poder leerse */
   .lam-ret-doc{padding:clamp(10px,3vw,20px)}
   .lam-ret-doc .ret img{object-fit:contain}
+
+  /* ═══ El retrato se da la vuelta ═══════════════════════════════════
+     Delante, la cara y un renglón pequeño con quién es; detrás, de dónde
+     sale la imagen y por qué está aquí. Una imagen prestada no es del
+     pueblo, y el gesto de girarla lo dice sin escribirlo. */
+  .lam-ret .vuelta{display:block;width:100%;height:100%;padding:0;border:0;
+    background:none;font:inherit;color:inherit;text-align:left;cursor:pointer;
+    perspective:1400px;-webkit-tap-highlight-color:transparent}
+  .lam-ret .hoja2{position:relative;display:block;width:100%;height:100%;
+    transform-style:preserve-3d;transition:transform .62s cubic-bezier(.2,.72,.2,1)}
+  .lam-ret .vuelta[aria-pressed="true"] .hoja2{transform:rotateY(180deg)}
+  .lam-ret .cara{position:absolute;inset:0;backface-visibility:hidden;
+    -webkit-backface-visibility:hidden}
+  .lam-ret .rotulo-ret{position:absolute;left:0;right:0;bottom:0;z-index:2;
+    display:grid;gap:3px;padding:30px 16px 13px;text-align:center;color:#F8EFD9;
+    background:linear-gradient(to top,rgba(22,15,9,.78),rgba(22,15,9,.42) 52%,rgba(22,15,9,0))}
+  .lam-ret .rotulo-ret .q{font-size:1rem;line-height:1.2}
+  .toca{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.14em;opacity:.8}
+  .lam-ret .dorso{transform:rotateY(180deg);background:var(--papel-alto);
+    display:grid;align-content:center;gap:.6em;overflow:auto;
+    padding:clamp(20px,6vw,34px);border:1px solid var(--filo)}
+  .lam-ret .dorso .marca{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.14em;color:var(--teja)}
+  .lam-ret .dorso .quien{color:var(--almagre);font-size:clamp(1.15rem,4.6vw,1.4rem);
+    line-height:1.15}
+  .lam-ret .dorso .cap{color:var(--tinta-2);font-size:.9375rem;line-height:1.5}
+  .lam-ret .dorso .cap .mono{display:block;margin-top:.5em}
+  .lam-ret .dorso .toca{color:var(--tenue);margin-top:.3em}
+  /* sin animación, el giro sigue funcionando: cambia de cara y ya está */
+  @media (prefers-reduced-motion:reduce){.lam-ret .hoja2{transition:none}}
 
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}
@@ -637,14 +668,11 @@ summary:hover{color:var(--almagre)}
 <main>
 <div class="vista vista-on" id="v-linea">
 <header class="wrap portada">
-  <!-- El floron: la cruz de siempre y, debajo, dos trazos que bajan del
-       travesano, se juntan sobre el mastil y vuelven a subir. La curva es la
-       misma que tenia la almendra que habia aqui; el trazo, mirado de cerca,
-       dibuja una eme. De lejos es adorno. -->
-  <svg class="floron" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
-    <path d="M24 4v40M14 12h20M17 44h14"/>
-    <path d="M15.2 38.5C15.6 33 17 28.4 19.2 24.6L24 31.4 28.8 24.6C31 28.4 32.4 33 32.8 38.5"
-      stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- La cruz se fue. Queda la eme, trazada como una capital de inscripcion:
+       dos astiles, la uve en medio y los pies. -->
+  <svg class="floron" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor"
+    stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M10 37V13L24 30 38 13V37M7 37h6M35 37h6"/>
   </svg>
   <span class="rotulo">Historia · territorio · identidad</span>
 
@@ -946,6 +974,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/bermudo.jpg', w: 725, h: 1427, ctx: true,
+      quien: 'Bermudo II de León',
       alt: 'Miniatura medieval: un rey coronado, sentado en el trono bajo un arco, con la espada en una mano y un globo dorado en la otra.',
       cap: 'Vermudo II en el Compendio de crónicas de reyes, códice de hacia 1312-1325 (BNE). Se pintó tres siglos después de su reinado: no es un retrato, es la idea que entonces se tenía de él. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1001,6 +1030,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/d1129.jpg', w: 762, h: 1407, ctx: true,
+      quien: 'Alfonso VII',
       alt: 'Miniatura medieval del mismo códice: un rey barbado, con corona de oro y manto azulado sobre forro rojo, sentado con la espada al costado.',
       cap: 'Alfonso VII, en el mismo códice que Vermudo II (BNE, hacia 1312-1325). Es el rey que confirma el coto y manda decir por dónde va la raya; de Colinas, aquí, no hay nada. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1012,6 +1042,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/d1170.jpg', w: 875, h: 1024, ctx: true,
+      quien: 'Fernando II de León',
       alt: 'Miniatura medieval de un rey a caballo con lanza y escudo, rotulada FERNANDVS REX, y debajo un león.',
       cap: 'Fernando II de León en el Tumbo A de la catedral de Santiago, hacia 1129-1255. Es el rey que revalida el coto; no representa a Colinas. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1034,6 +1065,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/pecheros1526.jpg', w: 1400, h: 1661, ctx: true,
+      quien: 'Carlos I de España',
       alt: 'Retrato ecuestre del emperador Carlos V con armadura y lanza, por Tiziano.',
       cap: 'Carlos I por Tiziano, 1548. El censo de pecheros se levanta en su reinado y lleva su nombre; el cuadro no tiene nada que ver con Colinas. <span class="mono">Titian · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1074,6 +1106,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/c1613.jpg', w: 1400, h: 1349, ctx: true,
+      quien: 'Felipe III',
       alt: 'Retrato de medio cuerpo de Felipe III con golilla y banda, por Velázquez.',
       cap: 'Felipe III por Velázquez, 1634-35. Es el rey que envía al deán de Salamanca a averiguar qué iglesias son del Real Patronato. <span class="mono">Diego Velázquez · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1099,6 +1132,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/nuncio1694.jpg', w: 800, h: 1009, ctx: true,
+      quien: 'Inocencio XII',
       alt: 'Retrato del papa Inocencio XII sentado, con muceta y solideo.',
       cap: 'Inocencio XII, bajo cuyo pontificado actúa el Nuncio contra el provisor de Astorga. Ni él ni su tribunal supieron nunca de este pueblo. <span class="mono">Pietro Paolo Veglia · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1180,6 +1214,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 913, ctx: true,
+      quien: 'El conde de Aranda',
       alt: 'Detalle de un retrato al óleo del siglo XVIII: un hombre con peluca blanca, casaca azul bordada en oro y faja rosa, con bastón de mando; a un lado un globo terráqueo, y al fondo una columna y un paisaje.',
       cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>Se lo pintan del natural al año siguiente</b>, en 1769, por encargo de la Universidad Sertoriana de Huesca. <span class="mono">Ramón Bayeu, 1769 · Museo de Huesca, sala 7 (detalle) · reproducción de El Pirineo Aragonés, 21-VIII-2020</span>' },
     tr: 'portada',
@@ -1216,6 +1251,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/floridablanca.jpg', w: 1400, h: 2229, ctx: true,
+      quien: 'El conde de Floridablanca',
       alt: 'Retrato de cuerpo entero del conde de Floridablanca, de pie y vestido de rojo, por Goya.',
       cap: 'El conde de Floridablanca por Goya, 1783. El censo de 1787 se ordena bajo su gobierno; tampoco este cuadro tiene que ver con el pueblo. <span class="mono">Francisco Goya · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1260,6 +1296,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/provincia.jpg', w: 819, h: 1200, ctx: true,
+      quien: 'Francisco Javier de Burgos',
       alt: 'Litografía decimonónica de un hombre de mediana edad, con levita y condecoraciones, que sostiene un mapa enrollado rotulado «Mapa de España. División territorial».',
       cap: 'Francisco Javier de Burgos, litografía de Domingo Valdivieso (BNE). Sostiene un mapa enrollado con el rótulo «División territorial»: la suya, la de 1833, la que pone Colinas en Zamora. <span class="mono">Domingo Valdivieso y Henarejos · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1286,6 +1323,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/madoz.jpg', w: 1400, h: 1916, ctx: true,
+      quien: 'Pascual Madoz',
       alt: 'Retrato al óleo de un hombre mayor y calvo, de levita negra y corbata blanca, con un libro grueso bajo el brazo y la mano apoyada en una mesa con más libros.',
       cap: 'Pascual Madoz por José Nin y Tudó, 1873, Congreso de los Diputados. Es el autor del diccionario que dedica nueve líneas al pueblo; el cuadro no tiene nada que ver con él. <span class="mono">José Nin y Tudó · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1297,6 +1335,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/osuna1848.jpg', w: 756, h: 1050, ctx: true,
+      quien: 'Mariano Téllez-Girón, XII duque de Osuna',
       alt: 'Retrato de cuerpo entero de un joven de uniforme oscuro con charreteras de plata, apoyado en un pedestal de piedra donde descansa su chacó.',
       cap: 'Mariano Téllez-Girón por Valentín Carderera, hacia 1833, Museo Nacional del Romanticismo. Retratado a los diecinueve años, once antes de heredar; en 1848 es el titular de la casa cuyo archivo guarda el legajo de 1694. <span class="mono">Valentin Carderera y Solano · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -1587,7 +1626,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.35';
+const VERSION = '0.36';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1601,6 +1640,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.36', f: '26 de septiembre de 2026', t: 'Los retratos se dan la vuelta',
+    c: [
+      '<b>En el teléfono, la lámina limpia de cada retrato lleva ahora abajo un renglón pequeño con quién es</b>, sobre la propia foto.',
+      '<b>Y se puede pulsar</b>: la lámina gira como una ficha y enseña el dorso, con el rótulo «Retrato de contexto», el nombre y de dónde sale la imagen —autor, año, museo y licencia—. Una imagen prestada no es del pueblo, y ahora el gesto de darle la vuelta lo dice.',
+      'El símbolo de la cabecera pasa a ser <b>una eme sola</b>, trazada como una capital de inscripción. La cruz se retira.'
+    ],
+    p: 'Once retratos con su nombre delante y su procedencia detrás, a un toque.' },
   { v: '0.35', f: '26 de septiembre de 2026', t: 'La portada, de otra manera',
     c: [
       '<b>Arranca por lo que hay, no por lo que falta</b>: «Doscientos veintidós habitantes, y detrás de ellos mil años de gente con nombre». La segunda frase se queda igual, porque es la regla de la casa.',
@@ -2328,9 +2374,36 @@ const VERSIONES = [
           const doc = !!(e.img && !e.img.ctx && !e.img.llena);
           r.className = 'lam lam-ret' + (doc ? ' lam-ret-doc' : '');
           r.setAttribute('aria-label', esc(solo.alt || ''));
-          r.innerHTML =
-            '<div class="ret"><img src="' + solo.src + '" width="' + solo.w +
-            '" height="' + solo.h + '" loading="lazy" alt=""></div>';
+          const tag = '<img src="' + solo.src + '" width="' + solo.w +
+            '" height="' + solo.h + '" loading="lazy" alt="">';
+          /* Un retrato de contexto se da la vuelta: delante la cara y quien es;
+             detras, de donde sale y por que esta aqui. Los documentos no giran:
+             lo suyo ya esta escrito en la lamina de su texto. */
+          const gira = !!(e.img && e.img.ctx && e.img.quien);
+          if (gira) {
+            r.innerHTML =
+              '<button class="vuelta" type="button" aria-pressed="false" aria-label="' +
+                esc(e.img.quien) + '. Pulsa para ver de donde sale la imagen.">' +
+                '<span class="hoja2">' +
+                  '<span class="cara"><span class="ret">' + tag + '</span>' +
+                    '<span class="rotulo-ret"><span class="q">' + esc(e.img.quien) +
+                    '</span><span class="toca">Pulsa para darle la vuelta</span></span>' +
+                  '</span>' +
+                  '<span class="cara dorso">' +
+                    '<span class="marca">Retrato de contexto</span>' +
+                    '<span class="quien">' + esc(e.img.quien) + '</span>' +
+                    '<span class="cap">' + (e.img.cap || '') + '</span>' +
+                    '<span class="toca">Pulsa para volver</span>' +
+                  '</span>' +
+                '</span></button>';
+            const bt = r.querySelector('.vuelta');
+            bt.addEventListener('click', () => {
+              bt.setAttribute('aria-pressed',
+                bt.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+            });
+          } else {
+            r.innerHTML = '<div class="ret">' + tag + '</div>';
+          }
           car.appendChild(r);
         }
         const lams = car.querySelectorAll('.lam');

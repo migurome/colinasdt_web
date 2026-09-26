@@ -450,9 +450,36 @@
           const doc = !!(e.img && !e.img.ctx && !e.img.llena);
           r.className = 'lam lam-ret' + (doc ? ' lam-ret-doc' : '');
           r.setAttribute('aria-label', esc(solo.alt || ''));
-          r.innerHTML =
-            '<div class="ret"><img src="' + solo.src + '" width="' + solo.w +
-            '" height="' + solo.h + '" loading="lazy" alt=""></div>';
+          const tag = '<img src="' + solo.src + '" width="' + solo.w +
+            '" height="' + solo.h + '" loading="lazy" alt="">';
+          /* Un retrato de contexto se da la vuelta: delante la cara y quien es;
+             detras, de donde sale y por que esta aqui. Los documentos no giran:
+             lo suyo ya esta escrito en la lamina de su texto. */
+          const gira = !!(e.img && e.img.ctx && e.img.quien);
+          if (gira) {
+            r.innerHTML =
+              '<button class="vuelta" type="button" aria-pressed="false" aria-label="' +
+                esc(e.img.quien) + '. Pulsa para ver de donde sale la imagen.">' +
+                '<span class="hoja2">' +
+                  '<span class="cara"><span class="ret">' + tag + '</span>' +
+                    '<span class="rotulo-ret"><span class="q">' + esc(e.img.quien) +
+                    '</span><span class="toca">Pulsa para darle la vuelta</span></span>' +
+                  '</span>' +
+                  '<span class="cara dorso">' +
+                    '<span class="marca">Retrato de contexto</span>' +
+                    '<span class="quien">' + esc(e.img.quien) + '</span>' +
+                    '<span class="cap">' + (e.img.cap || '') + '</span>' +
+                    '<span class="toca">Pulsa para volver</span>' +
+                  '</span>' +
+                '</span></button>';
+            const bt = r.querySelector('.vuelta');
+            bt.addEventListener('click', () => {
+              bt.setAttribute('aria-pressed',
+                bt.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+            });
+          } else {
+            r.innerHTML = '<div class="ret">' + tag + '</div>';
+          }
           car.appendChild(r);
         }
         const lams = car.querySelectorAll('.lam');

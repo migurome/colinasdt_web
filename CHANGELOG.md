@@ -13,6 +13,27 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.36 — 26 de septiembre de 2026
+### Los retratos se dan la vuelta
+
+- **La lámina limpia de los retratos deja de ser muda.** En el feed, la última lámina de cada
+  entrada con retrato —la foto sola, a sangre— lleva ahora **un renglón pequeño abajo con
+  quién es**, sobre un degradado que no tapa la cara.
+- **Y gira.** Al pulsarla, la lámina se da la vuelta como una ficha y enseña el dorso: el
+  rótulo <b>«Retrato de contexto»</b>, el nombre y el pie entero —autor, año, museo o
+  colección y licencia—. Vuelve a pulsarse y regresa a la cara.
+- El giro es el gesto que dice lo que hasta ahora sólo estaba escrito: **una imagen prestada no
+  es del pueblo**. Los facsímiles y las ilustraciones **no giran**: lo suyo ya está escrito en
+  la lámina de su texto, y un documento recortado deja de poder leerse.
+- Los once retratos llevan ahora en los datos un campo `quien` con el nombre, tomado del mismo
+  generador que baja los retratos de Commons: no se deduce del pie, se dice.
+- Accesible por teclado —es un botón, con `aria-pressed` y su etiqueta— y sin animación si el
+  sistema pide menos movimiento: cambia de cara y ya está.
+- **El símbolo de la cabecera es ahora una eme sola**, con sus astiles, la uve en medio y los
+  pies, trazada como una capital de inscripción. La cruz se retira.
+
+---
+
 ## v0.35 — 26 de septiembre de 2026
 ### La portada, de otra manera
 

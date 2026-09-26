@@ -573,13 +573,44 @@ summary:hover{color:var(--almagre)}
      crédito, sigue estando en la lámina del texto de la misma entrada.
      Sólo en las entradas con retrato, y al final del carrusel. */
   .lam-ret{padding:0;grid-template-rows:1fr;background:var(--papel)}
-  .lam-ret .ret{width:100%;height:100%}
+  .lam-ret .ret{display:block;width:100%;height:100%}
   .lam-ret .ret img{display:block;width:100%;height:100%;object-fit:cover;
     object-position:50% 50%}
   /* un facsímil se ve entero: llenar el borde lo recortaría, y un documento
      recortado deja de poder leerse */
   .lam-ret-doc{padding:clamp(10px,3vw,20px)}
   .lam-ret-doc .ret img{object-fit:contain}
+
+  /* ═══ El retrato se da la vuelta ═══════════════════════════════════
+     Delante, la cara y un renglón pequeño con quién es; detrás, de dónde
+     sale la imagen y por qué está aquí. Una imagen prestada no es del
+     pueblo, y el gesto de girarla lo dice sin escribirlo. */
+  .lam-ret .vuelta{display:block;width:100%;height:100%;padding:0;border:0;
+    background:none;font:inherit;color:inherit;text-align:left;cursor:pointer;
+    perspective:1400px;-webkit-tap-highlight-color:transparent}
+  .lam-ret .hoja2{position:relative;display:block;width:100%;height:100%;
+    transform-style:preserve-3d;transition:transform .62s cubic-bezier(.2,.72,.2,1)}
+  .lam-ret .vuelta[aria-pressed="true"] .hoja2{transform:rotateY(180deg)}
+  .lam-ret .cara{position:absolute;inset:0;backface-visibility:hidden;
+    -webkit-backface-visibility:hidden}
+  .lam-ret .rotulo-ret{position:absolute;left:0;right:0;bottom:0;z-index:2;
+    display:grid;gap:3px;padding:30px 16px 13px;text-align:center;color:#F8EFD9;
+    background:linear-gradient(to top,rgba(22,15,9,.78),rgba(22,15,9,.42) 52%,rgba(22,15,9,0))}
+  .lam-ret .rotulo-ret .q{font-size:1rem;line-height:1.2}
+  .toca{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.14em;opacity:.8}
+  .lam-ret .dorso{transform:rotateY(180deg);background:var(--papel-alto);
+    display:grid;align-content:center;gap:.6em;overflow:auto;
+    padding:clamp(20px,6vw,34px);border:1px solid var(--filo)}
+  .lam-ret .dorso .marca{font-size:.6875rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:.14em;color:var(--teja)}
+  .lam-ret .dorso .quien{color:var(--almagre);font-size:clamp(1.15rem,4.6vw,1.4rem);
+    line-height:1.15}
+  .lam-ret .dorso .cap{color:var(--tinta-2);font-size:.9375rem;line-height:1.5}
+  .lam-ret .dorso .cap .mono{display:block;margin-top:.5em}
+  .lam-ret .dorso .toca{color:var(--tenue);margin-top:.3em}
+  /* sin animación, el giro sigue funcionando: cambia de cara y ya está */
+  @media (prefers-reduced-motion:reduce){.lam-ret .hoja2{transition:none}}
 
   .l-sil .caja{border-block:1px solid var(--filo-fuerte);padding:18px 0;display:grid;gap:11px}
   .l-sil .rango{color:var(--teja);font-size:clamp(1.6rem,8vw,2.2rem);line-height:1}

@@ -63,6 +63,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/bermudo.jpg', w: 725, h: 1427, ctx: true,
+      quien: 'Bermudo II de León',
       alt: 'Miniatura medieval: un rey coronado, sentado en el trono bajo un arco, con la espada en una mano y un globo dorado en la otra.',
       cap: 'Vermudo II en el Compendio de crónicas de reyes, códice de hacia 1312-1325 (BNE). Se pintó tres siglos después de su reinado: no es un retrato, es la idea que entonces se tenía de él. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -118,6 +119,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/d1129.jpg', w: 762, h: 1407, ctx: true,
+      quien: 'Alfonso VII',
       alt: 'Miniatura medieval del mismo códice: un rey barbado, con corona de oro y manto azulado sobre forro rojo, sentado con la espada al costado.',
       cap: 'Alfonso VII, en el mismo códice que Vermudo II (BNE, hacia 1312-1325). Es el rey que confirma el coto y manda decir por dónde va la raya; de Colinas, aquí, no hay nada. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -129,6 +131,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/d1170.jpg', w: 875, h: 1024, ctx: true,
+      quien: 'Fernando II de León',
       alt: 'Miniatura medieval de un rey a caballo con lanza y escudo, rotulada FERNANDVS REX, y debajo un león.',
       cap: 'Fernando II de León en el Tumbo A de la catedral de Santiago, hacia 1129-1255. Es el rey que revalida el coto; no representa a Colinas. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -151,6 +154,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/pecheros1526.jpg', w: 1400, h: 1661, ctx: true,
+      quien: 'Carlos I de España',
       alt: 'Retrato ecuestre del emperador Carlos V con armadura y lanza, por Tiziano.',
       cap: 'Carlos I por Tiziano, 1548. El censo de pecheros se levanta en su reinado y lleva su nombre; el cuadro no tiene nada que ver con Colinas. <span class="mono">Titian · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -191,6 +195,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/c1613.jpg', w: 1400, h: 1349, ctx: true,
+      quien: 'Felipe III',
       alt: 'Retrato de medio cuerpo de Felipe III con golilla y banda, por Velázquez.',
       cap: 'Felipe III por Velázquez, 1634-35. Es el rey que envía al deán de Salamanca a averiguar qué iglesias son del Real Patronato. <span class="mono">Diego Velázquez · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -216,6 +221,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/nuncio1694.jpg', w: 800, h: 1009, ctx: true,
+      quien: 'Inocencio XII',
       alt: 'Retrato del papa Inocencio XII sentado, con muceta y solideo.',
       cap: 'Inocencio XII, bajo cuyo pontificado actúa el Nuncio contra el provisor de Astorga. Ni él ni su tribunal supieron nunca de este pueblo. <span class="mono">Pietro Paolo Veglia · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -297,6 +303,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 913, ctx: true,
+      quien: 'El conde de Aranda',
       alt: 'Detalle de un retrato al óleo del siglo XVIII: un hombre con peluca blanca, casaca azul bordada en oro y faja rosa, con bastón de mando; a un lado un globo terráqueo, y al fondo una columna y un paisaje.',
       cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>Se lo pintan del natural al año siguiente</b>, en 1769, por encargo de la Universidad Sertoriana de Huesca. <span class="mono">Ramón Bayeu, 1769 · Museo de Huesca, sala 7 (detalle) · reproducción de El Pirineo Aragonés, 21-VIII-2020</span>' },
     tr: 'portada',
@@ -333,6 +340,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/floridablanca.jpg', w: 1400, h: 2229, ctx: true,
+      quien: 'El conde de Floridablanca',
       alt: 'Retrato de cuerpo entero del conde de Floridablanca, de pie y vestido de rojo, por Goya.',
       cap: 'El conde de Floridablanca por Goya, 1783. El censo de 1787 se ordena bajo su gobierno; tampoco este cuadro tiene que ver con el pueblo. <span class="mono">Francisco Goya · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -377,6 +385,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/provincia.jpg', w: 819, h: 1200, ctx: true,
+      quien: 'Francisco Javier de Burgos',
       alt: 'Litografía decimonónica de un hombre de mediana edad, con levita y condecoraciones, que sostiene un mapa enrollado rotulado «Mapa de España. División territorial».',
       cap: 'Francisco Javier de Burgos, litografía de Domingo Valdivieso (BNE). Sostiene un mapa enrollado con el rótulo «División territorial»: la suya, la de 1833, la que pone Colinas en Zamora. <span class="mono">Domingo Valdivieso y Henarejos · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -403,6 +412,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/madoz.jpg', w: 1400, h: 1916, ctx: true,
+      quien: 'Pascual Madoz',
       alt: 'Retrato al óleo de un hombre mayor y calvo, de levita negra y corbata blanca, con un libro grueso bajo el brazo y la mano apoyada en una mesa con más libros.',
       cap: 'Pascual Madoz por José Nin y Tudó, 1873, Congreso de los Diputados. Es el autor del diccionario que dedica nueve líneas al pueblo; el cuadro no tiene nada que ver con él. <span class="mono">José Nin y Tudó · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -414,6 +424,7 @@ const EVENTOS = [
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/osuna1848.jpg', w: 756, h: 1050, ctx: true,
+      quien: 'Mariano Téllez-Girón, XII duque de Osuna',
       alt: 'Retrato de cuerpo entero de un joven de uniforme oscuro con charreteras de plata, apoyado en un pedestal de piedra donde descansa su chacó.',
       cap: 'Mariano Téllez-Girón por Valentín Carderera, hacia 1833, Museo Nacional del Romanticismo. Retratado a los diecinueve años, once antes de heredar; en 1848 es el titular de la casa cuyo archivo guarda el legajo de 1694. <span class="mono">Valentin Carderera y Solano · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
@@ -704,7 +715,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.35';
+const VERSION = '0.36';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -718,6 +729,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.36', f: '26 de septiembre de 2026', t: 'Los retratos se dan la vuelta',
+    c: [
+      '<b>En el teléfono, la lámina limpia de cada retrato lleva ahora abajo un renglón pequeño con quién es</b>, sobre la propia foto.',
+      '<b>Y se puede pulsar</b>: la lámina gira como una ficha y enseña el dorso, con el rótulo «Retrato de contexto», el nombre y de dónde sale la imagen —autor, año, museo y licencia—. Una imagen prestada no es del pueblo, y ahora el gesto de darle la vuelta lo dice.',
+      'El símbolo de la cabecera pasa a ser <b>una eme sola</b>, trazada como una capital de inscripción. La cruz se retira.'
+    ],
+    p: 'Once retratos con su nombre delante y su procedencia detrás, a un toque.' },
   { v: '0.35', f: '26 de septiembre de 2026', t: 'La portada, de otra manera',
     c: [
       '<b>Arranca por lo que hay, no por lo que falta</b>: «Doscientos veintidós habitantes, y detrás de ellos mil años de gente con nombre». La segunda frase se queda igual, porque es la regla de la casa.',
