@@ -638,15 +638,15 @@ const EVENTOS = [
 
   { id: 'a52', era: 5, y: 'Fin. s. XX', s: 1998, n: 'interp',
     t: 'La autovía se lleva el tráfico',
-    p: 'Con la A-52, la N-525 se vacía y cierran gasolineras, bares y comercios. Pero la autovía no vació el pueblo: cuando llega, Colinas llevaba cuarenta años perdiendo gente. Acelera algo que ya venía de lejos.',
+    p: 'Con la A-52, la N-525 se vacía de tráfico y cierran gasolineras, bares y comercios de carretera: todo lo que vivía de los que pasaban.',
     ilu: { src: 'img/prov/a52.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
-    f: 'Lectura del proyecto sobre la serie de población · fecha de apertura por precisar' },
+    f: 'Lectura del proyecto · fecha de apertura por precisar' },
 
   { id: 'p2024', era: 5, y: '2024', s: 2024, n: 'cotejar',
     t: '222 habitantes',
-    p: 'Un 64 % menos que en 1950.',
+    p: 'Cifra del padrón municipal, pendiente de cotejo. El máximo de la serie es de 625 habitantes, en 1950.',
     /* No hay facsímil del papel, pero sí del terreno: la imagen enseña
        lo que el documento midió o contó. */
     img: { src: 'img/doc/p2024.jpg', w: 1400, h: 1370,
@@ -704,7 +704,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.33';
+const VERSION = '0.34';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -718,6 +718,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.34', f: '26 de septiembre de 2026', t: 'Menos adorno en la pedanía',
+    c: [
+      '<b>La entrada de la autovía dice ahora sólo lo que le pasó a la carretera</b>: la N-525 se queda sin tráfico y cierra lo que vivía de los que pasaban. Sale de ella la comparación con la serie de población.',
+      '<b>Los 222 habitantes se quedan en la cifra</b>, sin porcentaje y sin comentario: la cifra, de dónde sale y con qué máximo se compara. Un número no necesita adorno.',
+      'Las dos correcciones valen también para las redacciones que están en votación, para que no vuelvan a entrar por detrás cuando se aplique lo votado.'
+    ],
+    p: 'Dos entradas salen de la votación de voces: la de los 222 habitantes, porque una cifra no se narra, y la del proyecto, que de momento se queda como está.' },
   { v: '0.33', f: '26 de septiembre de 2026', t: 'La línea entera, a cuatro voces',
     c: [
       '<b>Las dos eras que faltaban se ponen a votación</b>: las once entradas de la pedanía —de la carretera de 1971 al proyecto de hoy— y las tres de antes del nombre, que son las más antiguas de la línea.',

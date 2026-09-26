@@ -143,6 +143,9 @@ posts = []
 for e in viva:
     if e['era'] != ERA:
         continue
+    # una entrada sin redacciones alternativas no se compara: no hay con que
+    if BdeMano and not extra.get(e['id'], {}).get('B'):
+        continue
     lams = u''.join(lamina(e, k, r, p) for k, r, p in VOCES)
     pts = u''.join(u'<span class="punto%s"></span>' % (' on' if i == 0 else '')
                    for i in range(len(VOCES)))

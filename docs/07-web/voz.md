@@ -149,9 +149,15 @@ Dos cautelas de escritura que esta ronda obligó a tomar:
 - **1976 no se dramatiza.** La entrada de Cecilia se escribe en las cuatro voces con los mismos
   hechos y la misma frase de cierre: se cuenta porque ocurrió aquí, y no es un símbolo del
   pueblo. La voz cambia el ritmo, no el trato.
-- **Lo interpretado sigue diciéndose.** En la entrada de la autovía, las cuatro voces dicen que
-  el pueblo llevaba cuarenta años perdiendo gente antes de que la A-52 existiera. El sello de
-  grado de prueba ya lo marca; ninguna de las cuatro lo contradice.
+- **Lo interpretado sólo se dice mientras el proyecto lo sostenga.** Las cuatro voces de la
+  autovía decían también que el pueblo llevaba cuarenta años perdiendo gente antes de que la
+  A-52 existiera: <s>esa comparación con la serie de población</s> se retiró de las cuatro el
+  **26-IX-2026** (v0.34). La entrada cuenta ahora lo que le pasó a la carretera, y las cifras
+  se quedan en las entradas que las documentan.
+- **Una cifra no se narra.** «222 habitantes» salió de la votación el mismo día: cuatro
+  maneras de escribir un número son tres de más. Con ella salió también «Recuperar el nombre,
+  fundar un emblema», que de momento se queda como está. **La pedanía se vota en nueve
+  entradas**, no en once.
 
 ### El resultado del ayuntamiento, y cinco empates (26-IX-2026)
 

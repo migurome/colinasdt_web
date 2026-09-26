@@ -13,6 +13,28 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.34 — 26 de septiembre de 2026
+### Menos adorno en la pedanía
+
+- **«La autovía se lleva el tráfico» decía, además de lo suyo**, que la A-52 no había vaciado
+  el pueblo y que Colinas llevaba cuarenta años perdiendo gente cuando llegó. Esa lectura sale
+  de la entrada, por decisión del proyecto. Queda lo que la entrada sostiene: la N-525 se vacía
+  de tráfico y cierran las gasolineras, los bares y los comercios que vivían de los que pasaban.
+  La ficha de fuente deja de citar la serie de población.
+- **«222 habitantes» se queda en la cifra.** Fuera el porcentaje y fuera el comentario: el texto
+  dice de dónde sale el dato —padrón municipal, pendiente de cotejo— y con qué máximo se
+  compara —625 habitantes en 1950—. **Una cifra no se narra**, así que esta entrada sale
+  también de la votación de voces.
+- **«Recuperar el nombre, fundar un emblema» sale de esta ronda**, por ahora. La entrada se
+  queda en la línea tal como estaba; lo que no se hace es reescribirla ni ponerla a votar.
+- Las dos correcciones se han aplicado **también a las redacciones B, C y D** que están en
+  votación, para que no vuelvan a entrar por detrás cuando se aplique lo votado. El artefacto
+  y el comparador se han vuelto a generar: la pedanía queda en **nueve entradas** a votar.
+- **Las cifras de población no se tocan**: siguen en las entradas que las documentan —el
+  máximo de 1950 y el padrón de hoy—, que es donde tienen papel detrás.
+
+---
+
 ## v0.33 — 26 de septiembre de 2026
 ### La línea entera, a cuatro voces
 
