@@ -46,7 +46,7 @@ Románico en Castilla y León* de la **Fundación Santa María la Real**.
 ## Lo que falta hacer
 
 1. ~~**Acreditar cada imagen junto a la imagen**, en la propia web, no sólo en las fichas.~~
-   ✅ **Hecho para los seis retratos de contexto** (25-IX-2026): autor, obra, licencia y
+   ✅ **Hecho para los once retratos de contexto** (26-IX-2026): autor, obra, licencia y
    enlace a Commons van escritos en el pie de la propia imagen, y en
    [`docs/03-archivos/retratos-commons.tsv`](docs/03-archivos/retratos-commons.tsv).
    ⚠️ **Pendiente para los seis facsímiles y la ilustración de 1006.**

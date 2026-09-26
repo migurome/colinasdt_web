@@ -34,11 +34,22 @@ UA = {'User-Agent': 'ColinasDT/0.1 (historia local de Colinas de Trasmonte; '
 ANCHO = 1400
 MIN = 700
 
-# id de la entrada → (fichero de Commons o busqueda, quien es, por que sale aqui)
+# id de la entrada → (fichero de Commons, quien es, por que sale aqui)
+#
+# Cada uno va con su fichero exacto, no con una busqueda: una busqueda puede
+# traer manana otra imagen distinta, y estos ya estan comprobados uno a uno.
+# El de Aranda, por ejemplo, es una copia del siglo XIX del retrato de Inza, y
+# eso lo dice el pie de la lamina.
+#
+# Sin retrato utilizable, y por eso no estan aqui:
+#   minano  — de Sebastian de Miñano solo hay en Commons un retrato subido
+#             como CC BY-SA, y el proyecto solo usa dominio publico declarado.
 RETRATOS = [
-    ('bermudo', u'File:Bermudo II of León.jpg', u'Bermudo II de León',
+    ('bermudo', u'File:Vermudo II no Compendio de crónicas de reyes.jpg',
+     u'Bermudo II de León',
      u'El rey que entrega la villa en compensación por las tierras del Bierzo'),
-    ('d1129', u'File:Alfonso VII.jpg', u'Alfonso VII',
+    ('d1129', u'File:Afonso VII de Leão e Castela - Compendio de crónicas de reyes '
+     u'(Biblioteca Nacional de España).png', u'Alfonso VII',
      u'El rey que confirma el coto en el que Castroferrol es mojón'),
     ('d1170', u'File:Fernando II de Galicia e Leon no tombo A.jpg', u'Fernando II de León',
      u'El rey que revalida los mismos límites cuarenta y un años después'),
@@ -46,14 +57,24 @@ RETRATOS = [
      u'Carlos I de España', u'El censo de pecheros se levanta en su reinado y lleva su nombre'),
     ('c1613', u'File:Velázquez - Felipe III (Museo del Prado, 1634-35).jpg', u'Felipe III',
      u'El rey que envía al deán de Salamanca a averiguar qué iglesias son del Real Patronato'),
+    ('nuncio1694', u'File:Pope Innocent XII.PNG', u'Inocencio XII',
+     u'El papa bajo cuyo pontificado actúa el Nuncio contra el provisor de Astorga'),
+    ('aranda1768', u'File:Pedro Pablo Abarca de Bolea, Count of Aranda.jpg',
+     u'El conde de Aranda', u'El censo de 1768 se ordena bajo su presidencia y lleva su nombre'),
     ('floridablanca', u'File:Goya - José Moñino y Redondo, I conde de Floridablanca.jpg',
      u'El conde de Floridablanca', u'El censo de 1787 se ordena bajo su gobierno y lleva su nombre'),
-    ('aranda1768', u'?Pedro Pablo Abarca de Bolea Count of Aranda portrait',
-     u'El conde de Aranda', u'El censo de 1768 se ordena bajo su presidencia y lleva su nombre'),
-    ('nuncio1694', u'?Pope Innocent XII painting portrait', u'Inocencio XII',
-     u'El papa bajo cuyo pontificado actúa el Nuncio contra el provisor de Astorga'),
-    ('madoz', u'?Pascual Madoz Ibanez portrait', u'Pascual Madoz',
-     u'El autor del diccionario en el que Colinas ocupa nueve líneas'),
+    # de las dos litografias de la BNE se toma esta, no la de De Craene: en
+    # esta el retratado sostiene el mapa rotulado «Division territorial», que
+    # es justo lo que cuenta la entrada de 1833
+    ('provincia', u'File:Francisco Javier de Burgos, de Domingo Valdivieso Henarejos.jpg',
+     u'Francisco Javier de Burgos',
+     u'Ministro de Fomento y autor de la división provincial de 1833'),
+    ('madoz', u'File:Pascual Madoz, de José Nin y Tudó (1873), Congreso de los Diputados.jpg',
+     u'Pascual Madoz', u'El autor del diccionario en el que Colinas ocupa nueve líneas'),
+    ('osuna1848', u'File:Mariano Téllez-Girón, XII duque de Osuna '
+     u'(Museo Nacional del Romanticismo de Madrid).JPG',
+     u'Mariano Téllez-Girón, XII duque de Osuna',
+     u'El titular de la casa cuyo archivo conserva el legajo de 1694'),
 ]
 
 

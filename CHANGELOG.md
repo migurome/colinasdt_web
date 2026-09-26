@@ -13,6 +13,30 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.26 — 26 de septiembre de 2026
+### Cinco caras más
+
+- **Cinco entradas que llevaban imagen provisional tienen ya retrato de contexto**:
+  Bermudo II (985-999), Alfonso VII (1129), Francisco Javier de Burgos (1833), Pascual
+  Madoz (1847) y Mariano Téllez-Girón, XII duque de Osuna (1848). Con los seis anteriores
+  son **once retratos**, y ninguno es una imagen de Colinas: el pie de la lámina lo dice
+  solo, con autor, obra y licencia.
+- **Bermudo II y Alfonso VII salen del mismo códice**, el *Compendio de crónicas de reyes*
+  de la BNE, iluminado hacia 1312-1325. Dos reyes pintados por la misma mano tres siglos
+  después de reinar: no son retratos, son la idea que entonces se tenía de ellos.
+- El de 1833 se eligió por lo que tiene en la mano: de las dos litografías de Javier de
+  Burgos que hay en la BNE se toma la de Valdivieso, donde **sostiene un mapa enrollado
+  rotulado «Mapa de España. División territorial»** —la suya, la que pone Colinas en Zamora.
+- **Cada retrato queda fijado a su fichero exacto de Commons**, no a una búsqueda: una
+  búsqueda puede traer mañana otra imagen distinta, y estos están comprobados uno a uno.
+  Se mantienen las dos condiciones del generador: **dominio público declarado** y **700 px
+  de ancho como mínimo**.
+- **De Sebastián Miñano (1826) no hay retrato utilizable**: el único que hay en Commons
+  está subido como CC BY-SA y el proyecto sólo usa dominio público declarado. Se queda con
+  imagen provisional, y queda escrito en el propio generador por qué.
+
+---
+
 ## v0.25 — 25 de septiembre de 2026
 ### La página del Catastro, a sangre
 

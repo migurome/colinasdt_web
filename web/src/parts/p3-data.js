@@ -60,8 +60,11 @@ const EVENTOS = [
   { id: 'bermudo', era: 2, y: '985–999', s: 992, n: 'cotejar',
     t: 'Nace un monasterio dúplice',
     p: 'Monjes y monjas en la misma casa y bajo el mismo gobierno, en el reinado de Bermudo II. La villa no la compró la familia fundadora: se la dio el rey, <b>a cambio de unas tierras que antes les había confiscado</b> en el Bierzo. El monasterio nace de una compensación.',
-    ilu: { src: 'img/prov/bermudo.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/bermudo.jpg', w: 725, h: 1427, ctx: true,
+      alt: 'Miniatura medieval: un rey coronado, sentado en el trono bajo un arco, con la espada en una mano y un globo dorado en la otra.',
+      cap: 'Vermudo II en el Compendio de crónicas de reyes, códice de hacia 1312-1325 (BNE). Se pintó tres siglos después de su reinado: no es un retrato, es la idea que entonces se tenía de él. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'Síntesis de la bibliografía sobre el documento de 1015' },
 
@@ -112,8 +115,11 @@ const EVENTOS = [
     q: '«per illam veredam quae discurrit de Castro Ferronio, et ad Carvalio… et tornat inde per ipsam veredam quae discurrit ad Villa Aceif, et deinde per terminum de Axarifes»',
     p: 'Para confirmar el coto del monasterio de Santa Marta de Tera, Alfonso VII tiene que decir por dónde va exactamente la raya, «según la fijó su bisabuelo Fernando I». Así que el documento se pone a andar.|Sale de Castro Ferronnio <b>por una vereda</b>, llega a un carbajal, tuerce por una carral, pasa por San Pelayo, por la carral de Comdesa, por Villa Aceif, y termina en el término de Axarifes.|Una vereda es un camino de ganado. Éste, el que baja del enclave, es <b>el camino más antiguo de este término del que tenemos noticia</b>: en 1129 ya estaba hecho y ya tenía nombre.',
     nota: 'Los demás mojones del deslinde son un carbajal, una carral, San Pelayo de Armentario Fláiniz, la carral de Comdesa, Villa Aceif y el término de Axarifes. Dos de esos nombres vuelven a sonar a árabe: <b>Aceif y Axarifes</b>.',
-    ilu: { src: 'img/prov/d1129.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/d1129.jpg', w: 762, h: 1407, ctx: true,
+      alt: 'Miniatura medieval del mismo códice: un rey barbado, con corona de oro y manto azulado sobre forro rojo, sentado con la espada al costado.',
+      cap: 'Alfonso VII, en el mismo códice que Vermudo II (BNE, hacia 1312-1325). Es el rey que confirma el coto y manda decir por dónde va la raya; de Colinas, aquí, no hay nada. <span class="mono">autor desconocido · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'ed. Quintana Prieto, Santa Marta de Tera, Zamora, 1991, doc. XI · texto latino en la nota 25 de González Rodríguez, Brigecio 10 (2000)' },
 
@@ -338,8 +344,11 @@ const EVENTOS = [
   { id: 'provincia', era: 4, y: '1833', d: '30 de noviembre', s: 1833, n: 'contexto',
     t: 'Provincia de Zamora',
     p: 'La nueva división territorial adscribe Colinas a Zamora, y en 1834 al partido judicial de Benavente. En 1752 se había catastrado bajo Valladolid.',
-    ilu: { src: 'img/prov/provincia.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/provincia.jpg', w: 819, h: 1200, ctx: true,
+      alt: 'Litografía decimonónica de un hombre de mediana edad, con levita y condecoraciones, que sostiene un mapa enrollado rotulado «Mapa de España. División territorial».',
+      cap: 'Francisco Javier de Burgos, litografía de Domingo Valdivieso (BNE). Sostiene un mapa enrollado con el rótulo «División territorial»: la suya, la de 1833, la que pone Colinas en Zamora. <span class="mono">Domingo Valdivieso y Henarejos · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'Real Decreto de 30 de noviembre de 1833' },
 
@@ -358,16 +367,22 @@ const EVENTOS = [
     q: '«Hay un monte encinal con el mismo nombre del pueblo, que forma con otros una cordillera de 2 horas hasta San Juanico»',
     p: 'Madoz describe una aldea con ayuntamiento propio, en una ladera orientada al sur, con 35 casas en 6 calles, iglesia de San Juan Bautista, cementerio y buenas aguas. Produce trigo y lino, cría ganado lanar y pesca barbos. Y dice que en su término están los despoblados de Castroferrol y Pobladura de Trasmonte.',
     nota: 'La frase del monte es el apoyo más firme que tiene el topónimo: no eran unas colinas cualesquiera, había un encinar llamado «Colinas», en fila con otros cerros a lo largo de unos ocho o diez kilómetros. Lo que no dice es cuál nombró a cuál.',
-    ilu: { src: 'img/prov/madoz.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/madoz.jpg', w: 1400, h: 1916, ctx: true,
+      alt: 'Retrato al óleo de un hombre mayor y calvo, de levita negra y corbata blanca, con un libro grueso bajo el brazo y la mano apoyada en una mesa con más libros.',
+      cap: 'Pascual Madoz por José Nin y Tudó, 1873, Congreso de los Diputados. Es el autor del diccionario que dedica nueve líneas al pueblo; el cuadro no tiene nada que ver con él. <span class="mono">José Nin y Tudó · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'Madoz, Diccionario geográfico-estadístico-histórico, t. VI, Madrid, 1847, p. 521 · facsímil leído a resolución completa (Internet Archive)' },
 
   { id: 'osuna1848', era: 4, y: '1848', d: '18 de marzo', s: 1848, n: 'visto',
     t: 'Por qué estos papeles existen',
     p: 'La Casa de Osuna autentica ante un juzgado de Madrid sus títulos de 1694 sobre los diezmos de <b>quince lugares, Colinas entre ellos</b>, frente al Promotor Fiscal como representante de la Hacienda Nacional. Auto del 18 de marzo, cotejo el 20. El diezmo estaba suprimido desde 1837, así que esto ya no es cobrar: es <b>liquidar derechos</b>. Y es la razón de que el legajo de 1694 se copiara, se guardara y hoy se pueda leer.',
-    ilu: { src: 'img/prov/osuna1848.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* Retrato de contexto: la cara de quien da nombre al documento,
+       no una imagen de Colinas. El pie de la lámina lo dice solo. */
+    img: { src: 'img/ret/osuna1848.jpg', w: 756, h: 1050, ctx: true,
+      alt: 'Retrato de cuerpo entero de un joven de uniforme oscuro con charreteras de plata, apoyado en un pedestal de piedra donde descansa su chacó.',
+      cap: 'Mariano Téllez-Girón por Valentín Carderera, hacia 1833, Museo Nacional del Romanticismo. Retratado a los diecinueve años, once antes de heredar; en 1848 es el titular de la casa cuyo archivo guarda el legajo de 1694. <span class="mono">Valentin Carderera y Solano · Wikimedia Commons, Public domain</span>' },
     tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 62-68 · el traslado se había sacado en Madrid el 18 de enero de 1842, por D. Claudio Sanz y Barca [?]' },
 
@@ -605,7 +620,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.25';
+const VERSION = '0.26';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -613,6 +628,14 @@ const VERSIONES_VISIBLE = true;
 const RAIL_VISIBLE = false;
 
 const VERSIONES = [
+  { v: '0.26', f: '26 de septiembre de 2026', t: 'Cinco caras más',
+    c: [
+      '<b>Cinco entradas que estaban con imagen provisional tienen ya retrato de contexto</b>: Bermudo II, Alfonso VII, Javier de Burgos, Pascual Madoz y el XII duque de Osuna. Con los seis de antes, once.',
+      'Bermudo II y Alfonso VII salen <b>del mismo códice</b>, hacia 1312-1325: dos reyes pintados por la misma mano tres siglos después de reinar. No son retratos, y el pie lo dice.',
+      'El de 1833 no es una cara cualquiera: <b>sostiene el mapa rotulado «División territorial»</b>, que es justo lo que esa entrada cuenta.',
+      'De Miñano (1826) <b>no hay retrato en dominio público</b>, así que se queda con su imagen provisional. El hueco también es un dato.'
+    ],
+    p: 'Quedan cuarenta y dos entradas con imagen provisional; casi ninguna tiene una cara que buscar.' },
   { v: '0.25', f: '25 de septiembre de 2026', t: 'La página del Catastro, a sangre',
     c: [
       '<b>En 1752 la imagen llena ya la lámina de borde a borde</b>, igual que los retratos. Se ve la letra del escribano grande, a cambio de perder los márgenes de la página.',
