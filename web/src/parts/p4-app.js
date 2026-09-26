@@ -309,17 +309,24 @@
           <div class="puntos" aria-hidden="true"></div>
           <div class="carrusel" tabindex="0" aria-label="${esc(e.y + ': ' + e.t)}">${lam}</div></article>`;
       });
+      /* La presentación puede no existir: entonces la portada es una sola
+         lámina, y no una diapositiva en blanco esperando texto. */
+      const hayLede = !!Orig['.lede-txt'];
+      const sigue = 'Desliza hacia arriba para empezar la línea';
       h = `<article class="post post-portada" data-i="-1">
-          <div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span></div>
-          <div class="carrusel" tabindex="0" aria-label="Portada y presentación">
+          <div class="puntos" aria-hidden="true"><span class="punto on"></span>${
+            hayLede ? '<span class="punto"></span>' : ''}</div>
+          <div class="carrusel" tabindex="0" aria-label="${
+            hayLede ? 'Portada y presentación' : 'Portada'}">
             <section class="lam l-cubierta">
               <div class="lam-cuerpo" id="hueco-portada"></div>
-              <div class="lam-pie"><span class="t">Desliza al lado para la presentación</span></div>
+              <div class="lam-pie"><span class="t">${
+                hayLede ? 'Desliza al lado para la presentación' : sigue}</span></div>
             </section>
-            <section class="lam l-presenta">
+            ${hayLede ? `<section class="lam l-presenta">
               <div class="lam-cuerpo arriba" id="hueco-lede"></div>
-              <div class="lam-pie"><span class="t">Desliza hacia arriba para empezar la línea</span></div>
-            </section>
+              <div class="lam-pie"><span class="t">${sigue}</span></div>
+            </section>` : ''}
           </div></article>` + h;
       feed.innerHTML = h;
       this.posts = Array.prototype.slice.call(feed.querySelectorAll('.post'));
@@ -491,7 +498,7 @@
       const pre = document.getElementById('hueco-lede');
       if (Orig['.portada']) cub.appendChild(Orig['.portada'].el);
       if (Orig['#filtros']) cub.appendChild(Orig['#filtros'].el);
-      if (Orig['.lede-txt']) pre.appendChild(Orig['.lede-txt'].el);
+      if (pre && Orig['.lede-txt']) pre.appendChild(Orig['.lede-txt'].el);
       const lede = document.querySelector('.lede');
       if (lede) lede.classList.add('vacia');
       this.adjuntado = true;

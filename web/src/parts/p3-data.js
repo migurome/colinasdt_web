@@ -704,7 +704,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.34';
+const VERSION = '0.35';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -718,6 +718,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.35', f: '26 de septiembre de 2026', t: 'La portada, de otra manera',
+    c: [
+      '<b>Arranca por lo que hay, no por lo que falta</b>: «Doscientos veintidós habitantes, y detrás de ellos mil años de gente con nombre». La segunda frase se queda igual, porque es la regla de la casa.',
+      '<b>Fuera la presentación larga.</b> Los cinco párrafos que resumían el sello, el monasterio, los nueve nombres y los silos ya estaban contados —mejor— en sus propias entradas. En el teléfono desaparece con ellos la lámina que los llevaba: la portada es ahora una sola.',
+      'El floroncillo de la cabecera cambia de dibujo: la cruz es la misma y lo de debajo se ha vuelto a trazar.'
+    ],
+    p: 'Menos texto en la puerta y más camino hacia la línea, que es donde está el trabajo.' },
   { v: '0.34', f: '26 de septiembre de 2026', t: 'Menos adorno en la pedanía',
     c: [
       '<b>La entrada de la autovía dice ahora sólo lo que le pasó a la carretera</b>: la N-525 se queda sin tráfico y cierra lo que vivía de los que pasaban. Sale de ella la comparación con la serie de población.',

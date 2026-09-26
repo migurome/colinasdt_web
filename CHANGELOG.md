@@ -13,6 +13,27 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.35 — 26 de septiembre de 2026
+### La portada, de otra manera
+
+- **Otra frase de arranque.** Decía «bajo un pueblo que nunca tuvo escudo hay un monasterio
+  del siglo X que el pueblo ha olvidado»; dice ahora **«Doscientos veintidós habitantes, y
+  detrás de ellos mil años de gente con nombre»**. La segunda frase no se toca: «Aquí va lo
+  que dicen las fuentes, y de cada dato, cuánto está probado».
+- Las dos cifras están documentadas en la propia línea: los 222 habitantes del padrón, y los
+  mil años que van de la primera mención escrita —962, «villa Kastro Ferronio»— a hoy. Los
+  nombres más antiguos son los nueve del diploma de 1015.
+- **Fuera la presentación de cinco párrafos.** El sello de 1876, el monasterio, los nueve
+  nombres y los silos del Calcolítico están contados en sus entradas, con su grado de prueba y
+  su fuente al pie; repetirlos en la puerta era contarlos dos veces y peor.
+- En teléfono, la portada **deja de tener segunda lámina**: el feed se monta ahora con o sin
+  presentación, en vez de dejar una diapositiva en blanco esperando un texto que ya no está.
+- **El floroncillo de la cabecera, redibujado.** La cruz es la misma —mástil, travesaño y
+  peana—; debajo, en lugar de la almendra, dos trazos que bajan del travesaño, se juntan sobre
+  el mástil y vuelven a subir.
+
+---
+
 ## v0.34 — 26 de septiembre de 2026
 ### Menos adorno en la pedanía
 

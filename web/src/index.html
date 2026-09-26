@@ -637,9 +637,14 @@ summary:hover{color:var(--almagre)}
 <main>
 <div class="vista vista-on" id="v-linea">
 <header class="wrap portada">
+  <!-- El floron: la cruz de siempre y, debajo, dos trazos que bajan del
+       travesano, se juntan sobre el mastil y vuelven a subir. La curva es la
+       misma que tenia la almendra que habia aqui; el trazo, mirado de cerca,
+       dibuja una eme. De lejos es adorno. -->
   <svg class="floron" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
     <path d="M24 4v40M14 12h20M17 44h14"/>
-    <path d="M24 12c-5 4-8 9-8 14s3 10 8 14c5-4 8-9 8-14s-3-10-8-14z" stroke-width="1.1"/>
+    <path d="M15.2 38.5C15.6 33 17 28.4 19.2 24.6L24 31.4 28.8 24.6C31 28.4 32.4 33 32.8 38.5"
+      stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
   </svg>
   <span class="rotulo">Historia · territorio · identidad</span>
 
@@ -648,20 +653,10 @@ summary:hover{color:var(--almagre)}
     <span class="chico">de Trasmonte</span>
   </h1>
 
-  <p class="lema">Bajo un pueblo que nunca tuvo escudo hay un monasterio del siglo X que el
-    pueblo ha olvidado. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
+  <p class="lema">Doscientos veintidós habitantes, y detrás de ellos mil años de gente con
+    nombre. Aquí va lo que dicen las fuentes, y de cada dato, cuánto está probado.</p>
 
 </header>
-
-<section class="wrap lede" aria-label="Presentación">
-  <div class="lede-txt">
-    <p>En diciembre de 1876 el alcalde de Colinas escribe al Gobernador Civil que el sello del ayuntamiento es «el único que existe y ha existido en este municipio». Ese sello lleva las armas de España. El pueblo no tuvo nunca emblema propio.</p>
-    <p>Novecientos años antes, en el pago que la tradición llama «el Convento de San Juan», había un monasterio dúplice, Castroferrol, que un documento de 1015 sitúa donde discurre el Tera «y de la otra parte el Almucera». Las zanjas del regadío lo sacaron a la luz en 1993. El nombre ya no lo recordaba nadie.</p>
-    <p>Ese mismo documento nombra a nueve personas que vivían allí el 22 de enero de 1015: Frater Joanis, Veila, Absub, Evite Monde, Muza, Gundisaluo, Hauiue, Nazarus y Amorum. Es la gente más antigua del término que conocemos por su nombre.</p>
-    <p>Y dos mil años antes que eso, al otro lado del pueblo, alguien cavaba silos en la Edad del Cobre, justo debajo de donde hoy están las bodegas.</p>
-    <p>Esta web reúne lo que el proyecto ha podido comprobar hasta septiembre de 2026. No todo está al mismo nivel de prueba, y la línea temporal lo dice en cada entrada.</p>
-  </div>
-</section>
 
 <section class="wrap sec" id="linea" aria-labelledby="linea-t">
   <div class="sec-head">
@@ -1592,7 +1587,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.34';
+const VERSION = '0.35';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1606,6 +1601,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.35', f: '26 de septiembre de 2026', t: 'La portada, de otra manera',
+    c: [
+      '<b>Arranca por lo que hay, no por lo que falta</b>: «Doscientos veintidós habitantes, y detrás de ellos mil años de gente con nombre». La segunda frase se queda igual, porque es la regla de la casa.',
+      '<b>Fuera la presentación larga.</b> Los cinco párrafos que resumían el sello, el monasterio, los nueve nombres y los silos ya estaban contados —mejor— en sus propias entradas. En el teléfono desaparece con ellos la lámina que los llevaba: la portada es ahora una sola.',
+      'El floroncillo de la cabecera cambia de dibujo: la cruz es la misma y lo de debajo se ha vuelto a trazar.'
+    ],
+    p: 'Menos texto en la puerta y más camino hacia la línea, que es donde está el trabajo.' },
   { v: '0.34', f: '26 de septiembre de 2026', t: 'Menos adorno en la pedanía',
     c: [
       '<b>La entrada de la autovía dice ahora sólo lo que le pasó a la carretera</b>: la N-525 se queda sin tráfico y cierra lo que vivía de los que pasaban. Sale de ella la comparación con la serie de población.',
@@ -2185,17 +2187,24 @@ const VERSIONES = [
           <div class="puntos" aria-hidden="true"></div>
           <div class="carrusel" tabindex="0" aria-label="${esc(e.y + ': ' + e.t)}">${lam}</div></article>`;
       });
+      /* La presentación puede no existir: entonces la portada es una sola
+         lámina, y no una diapositiva en blanco esperando texto. */
+      const hayLede = !!Orig['.lede-txt'];
+      const sigue = 'Desliza hacia arriba para empezar la línea';
       h = `<article class="post post-portada" data-i="-1">
-          <div class="puntos" aria-hidden="true"><span class="punto on"></span><span class="punto"></span></div>
-          <div class="carrusel" tabindex="0" aria-label="Portada y presentación">
+          <div class="puntos" aria-hidden="true"><span class="punto on"></span>${
+            hayLede ? '<span class="punto"></span>' : ''}</div>
+          <div class="carrusel" tabindex="0" aria-label="${
+            hayLede ? 'Portada y presentación' : 'Portada'}">
             <section class="lam l-cubierta">
               <div class="lam-cuerpo" id="hueco-portada"></div>
-              <div class="lam-pie"><span class="t">Desliza al lado para la presentación</span></div>
+              <div class="lam-pie"><span class="t">${
+                hayLede ? 'Desliza al lado para la presentación' : sigue}</span></div>
             </section>
-            <section class="lam l-presenta">
+            ${hayLede ? `<section class="lam l-presenta">
               <div class="lam-cuerpo arriba" id="hueco-lede"></div>
-              <div class="lam-pie"><span class="t">Desliza hacia arriba para empezar la línea</span></div>
-            </section>
+              <div class="lam-pie"><span class="t">${sigue}</span></div>
+            </section>` : ''}
           </div></article>` + h;
       feed.innerHTML = h;
       this.posts = Array.prototype.slice.call(feed.querySelectorAll('.post'));
@@ -2367,7 +2376,7 @@ const VERSIONES = [
       const pre = document.getElementById('hueco-lede');
       if (Orig['.portada']) cub.appendChild(Orig['.portada'].el);
       if (Orig['#filtros']) cub.appendChild(Orig['#filtros'].el);
-      if (Orig['.lede-txt']) pre.appendChild(Orig['.lede-txt'].el);
+      if (pre && Orig['.lede-txt']) pre.appendChild(Orig['.lede-txt'].el);
       const lede = document.querySelector('.lede');
       if (lede) lede.classList.add('vacia');
       this.adjuntado = true;
