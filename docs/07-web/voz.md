@@ -122,6 +122,59 @@ El comparador de cuatro láminas está en `web/src/prueba-voz-4.html`, y lo gene
 
 **En la línea no cambia nada hasta que se vote.**
 
+---
+
+---
+
+## La cuarta y la quinta ronda: las dos puntas de la línea (26-IX-2026)
+
+Con éstas se acaba de comparar. **La pedanía** son once entradas, de 1971 a hoy: los setenta y
+dos titulares de la carretera, el pueblo pidiendo dejar de ser municipio, el archivo que se va a
+Quiruelas, el plano del IRYDA con su toponimia, 1976, la concentración, la figura de entidad
+local menor que aquí falta, la excavación de 1993, la autovía, los 222 habitantes y este
+proyecto. **Antes del nombre** son tres, las más antiguas: los silos del Calcolítico,
+Petavonium y la ocupación tardorromana.
+
+Se escriben igual que las dos eras anteriores —**A es lo publicado hoy**, y B, C y D son
+propuestas—, y se votan en [el mismo artefacto](https://claude.ai/artifact/Ss75iBzxEfVE8ZG4D5bz9r).
+
+| Qué | Dónde |
+|---|---|
+| Los textos de B, C y D | [`web/voces.json`](../../web/voces.json) |
+| El comparador de la pedanía | `web/src/prueba-voz-5.html` — `python web/gen-voz.py 5` |
+| El de antes del nombre | `web/src/prueba-voz-1.html` — `python web/gen-voz.py 1` |
+
+Dos cautelas de escritura que esta ronda obligó a tomar:
+
+- **1976 no se dramatiza.** La entrada de Cecilia se escribe en las cuatro voces con los mismos
+  hechos y la misma frase de cierre: se cuenta porque ocurrió aquí, y no es un símbolo del
+  pueblo. La voz cambia el ritmo, no el trato.
+- **Lo interpretado sigue diciéndose.** En la entrada de la autovía, las cuatro voces dicen que
+  el pueblo llevaba cuarenta años perdiendo gente antes de que la A-52 existiera. El sello de
+  grado de prueba ya lo marca; ninguna de las cuatro lo contradice.
+
+### El resultado del ayuntamiento, y cinco empates (26-IX-2026)
+
+| A · Técnica | B · Sobria | C · Microhistoria | D · Escena |
+|---|---|---|---|
+| — | 1847 · 1857 · 1950 | 1833 · 1848 · 1870 · 1876 · 1945 · 1956 · 1970 | 1894 |
+
+**Once entradas resueltas: C 7, B 3, D 1.** Y **cinco con dos corazones**, que siguen abiertas:
+
+| Año | Entrada | Las dos que gustaron |
+|---|---|---|
+| 1842 | La cifra que el INE descalifica | **B** y **C** |
+| 1863 | Las vías pecuarias | **C** y **D** |
+| 1860-1889 | La venta de los propios | **C** y **D** |
+| 1905 | Colinas, cabecera de camino | **B** y **D** |
+| 1958-59 | La unidad mínima y la escuela | **B** y **C** |
+
+En el artefacto esas cinco vuelven a salir **solas, y sólo con esas dos voces**. Lo demás de la
+era baja a la lista de resultados y no vuelve a preguntar. La regla, escrita para que no se
+olvide: **una entrada con voz elegida no se vuelve a preguntar nunca**.
+
+---
+
 ## Las cuatro voces
 
 ### B · Sobria narrativa
@@ -186,11 +239,14 @@ proyecto necesita, con sus quince marcas `[?]`—.
 
 | Era | Entradas | Voz |
 |---|---|---|
-| Antes del nombre | 3 | pendiente |
+| **Antes del nombre** | **3** | 🗳 **en votación desde el 26-IX-2026 (v0.33)** |
 | **Castroferrol** | **11** | ✅ **reescrita el 25-IX-2026 (v0.15)** |
 | **Lugar del conde de Benavente** | **20** | ✅ **votada y aplicada el 26-IX-2026 (v0.29)** |
-| **El ayuntamiento** | **16** | 🗳 **en votación desde el 26-IX-2026** |
-| La pedanía | 11 | pendiente |
+| **El ayuntamiento** | **16** | ✅ **once votadas** · 🗳 **cinco en empate** |
+| **La pedanía** | **11** | 🗳 **en votación desde el 26-IX-2026 (v0.33)** |
+
+Las sesenta y una entradas están ya escritas en las cuatro voces: no falta ninguna por
+comparar. Lo que falta es votar, y aplicar lo votado.
 
 **El resultado de la primera era**, medido igual que el diagnóstico:
 

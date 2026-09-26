@@ -13,6 +13,29 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.33 — 26 de septiembre de 2026
+### La línea entera, a cuatro voces
+
+- **Las dos eras que faltaban entran en votación.** *La pedanía* —once entradas, de los
+  setenta y dos titulares de 1971 al proyecto de hoy— y *Antes del nombre* —los silos del
+  Calcolítico, Petavonium y la ocupación tardorromana—. **2.681 palabras nuevas**, y ni un
+  dato que no estuviera ya en la entrada, en su pie de imagen o en su ficha de fuente.
+- Con ellas, **las sesenta y una entradas de la línea están escritas cuatro veces cada una**.
+  No queda ninguna por comparar.
+- Como en las dos eras anteriores, **A es el texto publicado hoy** y B, C y D son propuestas.
+  Los comparadores van en `web/src/prueba-voz-5.html` y `web/src/prueba-voz-1.html`
+  (`python web/gen-voz.py 5` y `python web/gen-voz.py 1`).
+- **El ayuntamiento quedó votado en once de sus dieciséis entradas.** Las otras cinco
+  —1842, 1863, los propios, el camino de 1905 y la escuela de 1959— se llevaron **dos
+  corazones cada una**. En el artefacto vuelven a salir solas, y sólo con esas dos voces: no
+  hay que leerlas otra vez, basta con quitar el corazón de la que no se queda.
+- **Una entrada con voz elegida ya no vuelve a preguntar**, esté en la era que esté: el
+  artefacto separa ahora, dentro de cada era, lo decidido —una línea por entrada— de lo que
+  sigue abierto.
+- ⚠️ **En la línea publicada no cambia ni una palabra todavía.**
+
+---
+
 ## v0.32 — 26 de septiembre de 2026
 ### Ninguna foto en el cajón
 
