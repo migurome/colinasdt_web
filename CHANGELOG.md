@@ -13,6 +13,26 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.30 — 26 de septiembre de 2026
+### El ayuntamiento, a cuatro voces
+
+- **La era del ayuntamiento entra en votación**: dieciséis entradas, de 1833 a 1970,
+  escritas en cuatro voces. **2.875 palabras nuevas**, y ni un dato que no estuviera ya en la
+  fuente.
+- Son los años en que Colinas es municipio: la provincia nueva de 1833, la cifra de 1842 que
+  el propio INE descalifica, las nueve líneas de Madoz, la venta de los bienes de propios, el
+  único sello, el primer maestro con nombre, el máximo de 625 habitantes y la concentración
+  parcelaria que deshace el minifundio.
+- Como en la era anterior, **A es el texto publicado hoy** y B, C y D son propuestas. El
+  comparador va en `web/src/prueba-voz-4.html` (`python web/gen-voz.py 4`).
+- **El artefacto de votos lleva ya las tres eras**: arriba la que se vota; debajo, las dos
+  decididas, con lo elegido marcado. La era del conde queda cerrada ahí como **ya votada**, y
+  en ella se ha corregido también la frase del cura de 1694, por lo mismo que se corrigió en
+  la web.
+- ⚠️ **En la línea publicada no cambia ni una palabra todavía.**
+
+---
+
 ## v0.29 — 26 de septiembre de 2026
 ### El papel, a la vista
 

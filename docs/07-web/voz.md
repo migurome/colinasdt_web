@@ -107,6 +107,21 @@ Y el reparto vuelve a decir lo mismo que en Castroferrol, con la línea aún má
 
 ---
 
+---
+
+## La tercera ronda: el ayuntamiento (26-IX-2026)
+
+Dieciséis entradas, de 1833 a 1970: la provincia nueva, los censos, la desamortización de los
+propios, el único sello, el primer maestro con nombre, el máximo de población y la
+concentración parcelaria. Se escriben igual que la era anterior —**A es lo publicado hoy**, y
+B, C y D son propuestas— y se votan en [el mismo artefacto](https://claude.ai/artifact/Ss75iBzxEfVE8ZG4D5bz9r), que ahora lleva las tres eras:
+arriba la que se vota, debajo las dos ya decididas.
+
+El comparador de cuatro láminas está en `web/src/prueba-voz-4.html`, y lo genera
+`python web/gen-voz.py 4`.
+
+**En la línea no cambia nada hasta que se vote.**
+
 ## Las cuatro voces
 
 ### B · Sobria narrativa
@@ -174,7 +189,7 @@ proyecto necesita, con sus quince marcas `[?]`—.
 | Antes del nombre | 3 | pendiente |
 | **Castroferrol** | **11** | ✅ **reescrita el 25-IX-2026 (v0.15)** |
 | **Lugar del conde de Benavente** | **20** | ✅ **votada y aplicada el 26-IX-2026 (v0.29)** |
-| El ayuntamiento | 16 | pendiente |
+| **El ayuntamiento** | **16** | 🗳 **en votación desde el 26-IX-2026** |
 | La pedanía | 11 | pendiente |
 
 **El resultado de la primera era**, medido igual que el diagnóstico:

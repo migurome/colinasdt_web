@@ -650,7 +650,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.29';
+const VERSION = '0.30';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -664,6 +664,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.30', f: '26 de septiembre de 2026', t: 'El ayuntamiento, a cuatro voces',
+    c: [
+      '<b>La tercera era se pone a votación</b>: dieciséis entradas, de 1833 a 1970, escritas de cuatro maneras. Dos mil ochocientas palabras nuevas, y ningún dato que no estuviera ya en la fuente.',
+      'Son los años en que el pueblo tiene ayuntamiento propio: la provincia nueva, los censos, la venta de los bienes del común, el único sello, el primer maestro con nombre y la concentración parcelaria.',
+      '<b>En la línea no cambia nada hasta que se vote</b>, igual que en las dos eras anteriores.'
+    ],
+    p: 'Con ésta van tres eras escritas a cuatro voces y cuarenta y siete entradas comparadas; quedan catorce, en los dos extremos de la línea.' },
   { v: '0.29', f: '26 de septiembre de 2026', t: 'El papel, a la vista',
     c: [
       '<b>Diez entradas cambian su imagen provisional por el facsímil del propio documento</b>: la plana donde el provisor se niega, la notificación al cura de Colinas, la carta de la ermita, las tres ejecutorias en su papel sellado, el asiento de 1591, el índice donde Pobladura ya no está y la entrada de Miñano. Todas se ven enteras, con su signatura al pie.',
