@@ -381,7 +381,7 @@ const EVENTOS = [
 
   { id: 'provincia', era: 4, y: '1833', d: '30 de noviembre', s: 1833, n: 'contexto',
     t: 'Provincia de Zamora',
-    p: 'La nueva división territorial adscribe Colinas a Zamora, y en 1834 al partido judicial de Benavente. En 1752 se había catastrado bajo Valladolid.',
+    p: 'Un decreto firmado en Madrid el 30 de noviembre de 1833 divide España en provincias, y cada pueblo amanece en una.|A Colinas le toca Zamora, y al año siguiente el partido judicial de Benavente. Hasta entonces era de la provincia de Valladolid, y así se había catastrado en 1752.|<b>No se movió ni una linde: se movió el papel.</b> Y desde ese papel se contará, se votará y se pagará durante los dos siglos siguientes.',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/provincia.jpg', w: 819, h: 1200, ctx: true,
@@ -407,7 +407,7 @@ const EVENTOS = [
   { id: 'madoz', era: 4, y: '1847', s: 1847, n: 'visto',
     t: 'Un monte que se llama como el pueblo',
     q: '«Hay un monte encinal con el mismo nombre del pueblo, que forma con otros una cordillera de 2 horas hasta San Juanico»',
-    p: 'Madoz describe una aldea con ayuntamiento propio, en una ladera orientada al sur, con 35 casas en 6 calles, iglesia de San Juan Bautista, cementerio y buenas aguas. Produce trigo y lino, cría ganado lanar y pesca barbos. Y dice que en su término están los despoblados de Castroferrol y Pobladura de Trasmonte.',
+    p: 'Madoz describe una aldea con ayuntamiento propio, en una ladera orientada al sur: treinta y cinco casas en seis calles, iglesia de San Juan Bautista, cementerio y buenas aguas. Trigo y lino, ganado lanar, barbos en el río.|Y una frase que vale más que el resto: <b>hay un monte encinal que se llama como el pueblo</b>, en fila con otros cerros a lo largo de dos horas de camino.|Dice también que en el término están los despoblados de Castroferrol y Pobladura de Trasmonte.',
     nota: 'La frase del monte es el apoyo más firme que tiene el topónimo: no eran unas colinas cualesquiera, había un encinar llamado «Colinas», en fila con otros cerros a lo largo de unos ocho o diez kilómetros. Lo que no dice es cuál nombró a cuál.',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
@@ -420,7 +420,7 @@ const EVENTOS = [
 
   { id: 'osuna1848', era: 4, y: '1848', d: '18 de marzo', s: 1848, n: 'visto',
     t: 'Por qué estos papeles existen',
-    p: 'La Casa de Osuna autentica ante un juzgado de Madrid sus títulos de 1694 sobre los diezmos de <b>quince lugares, Colinas entre ellos</b>, frente al Promotor Fiscal como representante de la Hacienda Nacional. Auto del 18 de marzo, cotejo el 20. El diezmo estaba suprimido desde 1837, así que esto ya no es cobrar: es <b>liquidar derechos</b>. Y es la razón de que el legajo de 1694 se copiara, se guardara y hoy se pueda leer.',
+    p: 'En 1848 el diezmo lleva once años abolido. Aun así, la Casa de Osuna se presenta en un juzgado de Madrid con sus papeles de 1694 y pide que se autentiquen: los títulos sobre los diezmos de quince lugares, Colinas entre ellos.|Enfrente está el Promotor Fiscal, en nombre de la Hacienda Nacional. El auto es del 18 de marzo; el cotejo, del 20.|Ya no se pelea por cobrar: se pelea por cuánto valía lo que se ha perdido. Y ése es el motivo de que el legajo de 1694 se copiara entero y se guardara. <b>Este pueblo conoce su siglo XVII porque alguien, en 1848, tenía que liquidar cuentas.</b>',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
     img: { src: 'img/ret/osuna1848.jpg', w: 756, h: 1050, ctx: true,
@@ -432,7 +432,7 @@ const EVENTOS = [
 
   { id: 'censo1857', era: 4, y: '1857', s: 1857, n: 'cotejar',
     t: 'Primer censo moderno: 386 habitantes',
-    p: 'Quince años antes se contaban 132. Nadie triplica su población en ese tiempo: o la cifra de 1842 se quedaba corta, o el municipio cambió de término. Y ese mismo año, el 22 de julio, la Gaceta nombra cura de Colinas a <b>D. Pedro Ramos</b>.',
+    p: '386 habitantes. Quince años antes se habían contado 132.|Nadie triplica su población en quince años: <b>o la cifra de 1842 se quedaba corta, o el municipio cambió de término</b>. La serie sigue pendiente de cotejar.|Y ese mismo año, el 22 de julio, la Gaceta nombra cura de Colinas a don Pedro Ramos.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
     img: { src: 'img/doc/censo1857.jpg', w: 1400, h: 1961,
@@ -467,7 +467,7 @@ const EVENTOS = [
 
   { id: 'distritos1870', era: 4, y: '1870', s: 1870, n: 'visto',
     t: 'Con quién va Colinas cuando se vota',
-    p: 'Para las elecciones se agrupa con Barcial del Barco, Arcos de la Polvorosa, Santa Colomba de las Monjas, Villanázar, Sitrama, Santa Croya y Melgar de Tera. En 1877 queda en el «segundo distrito: Micereces de Tera». Y un itinerario oficial de ese mismo año pasa por «Benavente, Santa Cristina, <b>Vecilla, Colinas, Quiruelas</b>, Sitrama…»: es el camino por el que se iba y se venía.',
+    p: 'Cuando hay elecciones, un pueblo de doscientos habitantes no vota solo: se agrupa. Colinas lo hace con otros ocho del valle, y en 1877 queda en el «segundo distrito», con cabeza en Micereces de Tera.|Esas agrupaciones dicen menos de política que de geografía: se juntaba a la gente que podía llegar andando al mismo sitio.|Y hay una prueba en el mismo año. Un itinerario oficial va «Benavente, Santa Cristina, Vecilla, Colinas, Quiruelas, Sitrama…»: <b>ése era el camino por el que se iba y se venía</b>, y Colinas está en él.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
     img: { src: 'img/doc/distritos1870.jpg', w: 1400, h: 1895,
@@ -479,14 +479,14 @@ const EVENTOS = [
   { id: 'sello', era: 4, y: '1876', d: 'diciembre', s: 1876, n: 'visto',
     t: 'El único sello',
     q: '«va estampado el único que existe y ha existido en este municipio»',
-    p: 'El alcalde remite al Gobernador Civil el sello del Ayuntamiento Constitucional. Lleva las armas reales de España, y el archivo municipal no guarda noticia de ningún otro. Colinas nunca tuvo escudo propio: cualquier emblema será el primero.',
+    p: 'En diciembre de 1876 el alcalde de Colinas tiene que mandar al Gobernador Civil una muestra del sello del Ayuntamiento. Lo estampa, lo remite y añade una frase cuyo valor no podía sospechar: que va estampado <b>«el único que existe y ha existido en este municipio»</b>.|El sello lleva las armas reales de España. Ni una espiga, ni un río, ni una torre: lo que hay dentro no es del pueblo, es del Estado.|Siglo y medio después, ese papel es <b>el único emblema histórico que Colinas tiene</b>. Y como no dice nada de Colinas, cualquier emblema que se funde ahora será el primero.',
     img: { src: 'img/sello-1876.png', w: 560, h: 642, alt: 'Impronta oval del sello con la leyenda Ayuntamiento Constitucional de Colinas de Trasmonte y las armas reales bajo corona.', cap: 'Impronta del sello, ampliada. Leyenda: AYUNTAM.TO CONSTIT.L DE COLINAS DE TRASMONTE.' },
     tr: 'vineta',
     f: 'AHN, SIGIL-TINTA_ZAMORA,20,N.31' },
 
   { id: 'maestro1894', era: 4, y: '1894', s: 1894, n: 'visto',
     t: 'El maestro se llama Valentín Rodríguez',
-    p: 'Puesto 76 del escalafón del magisterio de la provincia de Zamora. Es el <b>primer maestro de Colinas</b> que el proyecto conoce por su nombre.',
+    p: 'Escalafón del magisterio de Zamora, 1894. Puesto 76.|Valentín Rodríguez, maestro de Colinas.|Ni cuántos niños, ni dónde, ni cuánto tiempo.|<b>Es el primer maestro del pueblo que sabemos nombrar.</b>',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
     img: { src: 'img/doc/maestro1894.jpg', w: 1400, h: 1919,
@@ -509,7 +509,7 @@ const EVENTOS = [
 
   { id: 'juzgado1945', era: 4, y: '1945', s: 1945, n: 'visto',
     t: 'Al juzgado de Santibáñez, y sin Quiruelas',
-    p: 'Colinas pasa al Juzgado Comarcal de Santibáñez de Tera, junto con Villanázar. <b>Quiruelas no está en ese grupo.</b> Veintisiete años después será Quiruelas quien lo absorba.',
+    p: 'En 1945 se reorganizan los juzgados y Colinas queda adscrito al Comarcal de Santibáñez de Tera, con Villanázar. En ese grupo no está Quiruelas.|Merece la pena fijarse, porque el mapa administrativo no siempre apunta adonde uno cree: en 1945, el sitio al que Colinas «pertenecía» era Santibáñez.|<b>Veintisiete años más tarde el pueblo dejará de ser municipio y se incorporará a Quiruelas</b>, que aquí ni aparece.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
     img: { src: 'img/doc/juzgado1945.jpg', w: 1400, h: 1873,
@@ -520,7 +520,7 @@ const EVENTOS = [
 
   { id: 'max1950', era: 4, y: '1950', s: 1950, n: 'cotejar',
     t: 'Máximo histórico: 625 habitantes',
-    p: 'Un siglo de crecimiento casi sin pausa. Desde aquí la población sólo baja.',
+    p: '625 habitantes: el máximo de toda la serie. Un siglo de crecimiento casi sin pausa, desde los 386 de 1857.|<b>Desde aquí la población sólo baja.</b> La cifra sigue pendiente de cotejar.',
     /* No hay facsímil del papel, pero sí del terreno: la imagen enseña
        lo que el documento midió o contó. */
     img: { src: 'img/doc/max1950.jpg', w: 1400, h: 731,
@@ -531,7 +531,7 @@ const EVENTOS = [
 
   { id: 'vuelo1956', era: 4, y: '1956–57', s: 1956, n: 'visto',
     t: 'El vuelo americano retrata el minifundio',
-    p: 'Las fotografías aéreas muestran el término en haces de <b>tiras estrechas</b> y caminos sinuosos. Son las 5.560 parcelas que el decreto de 1970 va a contar, y la última imagen del paisaje agrario que describía el Catastro de 1752.',
+    p: 'Entre 1956 y 1957 unos aviones fotografían España entera desde el aire, y en esas fotos sale Colinas: el término partido en haces de tiras estrechas, con caminos que dan vueltas para llegar a todas.|Cada tira es una parcela. Son las 5.560 que el decreto de 1970 contará una por una, catorce de media por propietario.|<b>Es la última fotografía del paisaje que describía el Catastro de 1752</b>: el mismo minifundio, doscientos años después. Catorce años más tarde ya no estará.',
     /* La foto aérea es la prueba del minifundio: se ve entera, con su
        leyenda, porque recortarla sería quitarle justo lo que prueba. */
     img: { src: 'img/doc/vuelo1956.jpg', w: 1400, h: 1370,
@@ -554,7 +554,7 @@ const EVENTOS = [
 
   { id: 'decreto1970', era: 4, y: '1970', d: '8 de octubre', s: 1970, n: 'visto',
     t: 'Concentración parcelaria',
-    p: 'El Decreto 3119/1970 declara de utilidad pública la concentración de Colinas: 1.043 hectáreas, 405 propietarios y 5.560 parcelas, casi catorce por dueño.',
+    p: 'El decreto pone cifras a lo que ya se veía en la foto aérea: 1.043 hectáreas, 405 propietarios, 5.560 parcelas. <b>Casi catorce parcelas por dueño</b>, repartidas por todo el término.|Concentrar significa deshacer eso: juntar lo de cada uno y volver a dibujar el mapa. Es la mayor transformación del paisaje de este pueblo desde que hay documentos.|Y no vino impuesta del todo desde fuera: dos años antes la comarca «Benavente-Tera» había sido declarada sujeta a ordenación rural, y <b>la concentración la pidieron los propios agricultores</b>.',
     q: '«cuyo perímetro será, en principio, el del término municipal del mismo nombre»',
     nota: 'No salió de la nada: dos años antes, un decreto de 11 de julio de 1968 había declarado la comarca «Benavente-Tera» sujeta a ordenación rural. Y la concentración <b>la pidieron los propios agricultores</b>.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
@@ -715,7 +715,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.36';
+const VERSION = '0.37';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -729,6 +729,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.37', f: '26 de septiembre de 2026', t: 'El ayuntamiento, escrito como se votó',
+    c: [
+      '<b>Once entradas de 1833 a 1970 cambian de redacción</b> y pasan a la voz elegida: la provincia nueva, Madoz y su monte, el duque de Osuna, el censo de 1857, el distrito, el único sello, el primer maestro con nombre, el juzgado de Santibáñez, el máximo de 625 habitantes, el vuelo americano y la concentración.',
+      'Ganan <b>la microhistoria en siete</b> —donde hay un gesto o un objeto: el sello, el camino, la foto aérea—, <b>la sobria en tres</b> —donde el dato es una cifra— y <b>la escena en una</b>, la del maestro.',
+      'Quedan cinco entradas de esta era <b>con dos voces marcadas</b>, y hasta que se deshaga el empate siguen como estaban. Ni un dato nuevo: lo que cambia es el orden y el aire.'
+    ],
+    p: 'Tres de las cinco eras están ya escritas en la voz que se eligió, entrada por entrada.' },
   { v: '0.36', f: '26 de septiembre de 2026', t: 'Los retratos se dan la vuelta',
     c: [
       '<b>En el teléfono, la lámina limpia de cada retrato lleva ahora abajo un renglón pequeño con quién es</b>, sobre la propia foto.',

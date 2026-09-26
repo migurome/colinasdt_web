@@ -13,6 +13,26 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.37 — 26 de septiembre de 2026
+### El ayuntamiento, escrito como se votó
+
+- **Once de las dieciséis entradas de la era pasan a su voz elegida.** La provincia de 1833, el
+  monte de Madoz, la Casa de Osuna liquidando diezmos en 1848, el primer censo moderno, el
+  distrito electoral, el sello de 1876, el maestro Valentín Rodríguez, el juzgado de
+  Santibáñez, el máximo de 625 habitantes, el vuelo americano y el decreto de concentración.
+- **El reparto: C 7, B 3, D 1.** La microhistoria gana donde hay un gesto o un objeto —el
+  alcalde estampando el sello, el camino que se llama por el pueblo, el término visto desde el
+  aire—; la sobria, donde el dato es una cifra; la escena, en el maestro, que es un renglón de
+  un escalafón.
+- **Las cinco en empate no se tocan**: 1842, las vías pecuarias, la venta de los propios, el
+  camino de 1905 y la escuela de 1959 se quedan como estaban hasta que se elija una de las dos
+  voces marcadas.
+- Como en las eras anteriores, **ni un dato nuevo entra con la redacción**: cada cifra, cada
+  nombre y cada cita estaban ya en la entrada, en su pie de imagen o en su ficha de fuente. Lo
+  que cambia es el orden, el ritmo y la consecuencia dicha en voz alta.
+
+---
+
 ## v0.36 — 26 de septiembre de 2026
 ### Los retratos se dan la vuelta
 

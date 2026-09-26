@@ -165,7 +165,8 @@ Dos cautelas de escritura que esta ronda obligó a tomar:
 |---|---|---|---|
 | — | 1847 · 1857 · 1950 | 1833 · 1848 · 1870 · 1876 · 1945 · 1956 · 1970 | 1894 |
 
-**Once entradas resueltas: C 7, B 3, D 1.** Y **cinco con dos corazones**, que siguen abiertas:
+**Once entradas resueltas: C 7, B 3, D 1**, <b>aplicadas a la línea el 26-IX-2026</b> (v0.37).
+Y **cinco con dos corazones**, que siguen abiertas y, mientras tanto, como estaban:
 
 | Año | Entrada | Las dos que gustaron |
 |---|---|---|
@@ -248,7 +249,7 @@ proyecto necesita, con sus quince marcas `[?]`—.
 | **Antes del nombre** | **3** | 🗳 **en votación desde el 26-IX-2026 (v0.33)** |
 | **Castroferrol** | **11** | ✅ **reescrita el 25-IX-2026 (v0.15)** |
 | **Lugar del conde de Benavente** | **20** | ✅ **votada y aplicada el 26-IX-2026 (v0.29)** |
-| **El ayuntamiento** | **16** | ✅ **once votadas** · 🗳 **cinco en empate** |
+| **El ayuntamiento** | **16** | ✅ **once votadas y aplicadas el 26-IX-2026 (v0.37)** · 🗳 **cinco en empate** |
 | **La pedanía** | **11** | 🗳 **en votación desde el 26-IX-2026 (v0.33)** |
 
 Las sesenta y una entradas están ya escritas en las cuatro voces: no falta ninguna por
