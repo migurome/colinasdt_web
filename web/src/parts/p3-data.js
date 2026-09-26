@@ -494,8 +494,11 @@ const EVENTOS = [
   { id: 'vuelo1956', era: 4, y: '1956–57', s: 1956, n: 'visto',
     t: 'El vuelo americano retrata el minifundio',
     p: 'Las fotografías aéreas muestran el término en haces de <b>tiras estrechas</b> y caminos sinuosos. Son las 5.560 parcelas que el decreto de 1970 va a contar, y la última imagen del paisaje agrario que describía el Catastro de 1752.',
-    ilu: { src: 'img/prov/vuelo1956.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La foto aérea es la prueba del minifundio: se ve entera, con su
+       leyenda, porque recortarla sería quitarle justo lo que prueba. */
+    img: { src: 'img/doc/vuelo1956.jpg', w: 1400, h: 1370,
+      alt: 'Ortofoto aérea en blanco y negro del término, partido en cientos de tiras largas y estrechas. Una línea amarilla marca el límite del término y una roja la raya con Quiruelas; hay tres rótulos: Quiruelas de Vidriales, Colinas de Trasmonte y Vecilla de Trasmonte.',
+      cap: 'El término entero en el vuelo americano de 1956-57. <b>Todo él está partido en tiras largas y estrechas</b>: son las 5.560 parcelas que el decreto de 1970 contará una a una. En amarillo, el límite del término; en rojo, la raya con Quiruelas, que dejó de ser línea municipal en 1972. <span class="mono">Ortofoto: IGN / CNIG, AMS 1956-1957 (serie B), servicio WMS PNOA histórico · límite reconstruido por el proyecto</span>' },
     tr: 'portada',
     f: 'IGN, vuelo americano serie B, AMS 1956-1957' },
 
@@ -650,7 +653,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.30';
+const VERSION = '0.31';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -664,6 +667,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.31', f: '26 de septiembre de 2026', t: 'El término desde el aire',
+    c: [
+      '<b>La entrada del vuelo americano enseña ya la fotografía</b>: el término entero en 1956, partido en tiras largas y estrechas, con el límite superpuesto y la raya con Quiruelas que dejó de existir en 1972.',
+      'Se ve <b>entera, con su leyenda</b>: recortarla sería quitarle justo lo que prueba.',
+      'Es el retrato aéreo más antiguo que existe de este término: <b>el vuelo de 1945-46 no cubre Colinas</b>, según el propio servicio del IGN.'
+    ],
+    p: 'De la era del ayuntamiento, siete entradas siguen con trama; casi todas tienen su BOE en el repositorio.' },
   { v: '0.30', f: '26 de septiembre de 2026', t: 'El ayuntamiento, a cuatro voces',
     c: [
       '<b>La tercera era se pone a votación</b>: dieciséis entradas, de 1833 a 1970, escritas de cuatro maneras. Dos mil ochocientas palabras nuevas, y ningún dato que no estuviera ya en la fuente.',

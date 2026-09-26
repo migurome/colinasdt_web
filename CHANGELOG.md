@@ -13,6 +13,26 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.31 — 26 de septiembre de 2026
+### El término desde el aire
+
+- **La entrada de 1956-57 deja la trama provisional y enseña la ortofoto.** El término
+  entero, en blanco y negro, partido en cientos de tiras largas y estrechas: las 5.560
+  parcelas que el decreto de 1970 contará una a una.
+- Va **con el límite superpuesto** —amarillo el del término, rojo la raya con Quiruelas, que
+  dejó de ser línea municipal en 1972— y **con su leyenda**: se ve entera, porque recortarla
+  sería quitarle justo lo que prueba.
+- **Es el retrato aéreo más antiguo que hay de este término.** El vuelo americano de la
+  serie A (1945-46) **no cubre Colinas**: según el propio servicio del IGN, los vuelos que
+  pasan por aquí empiezan en el de 1956-57.
+- La imagen estaba descargada desde el 23-IX en
+  [`docs/04-cartografia/vuelos-historicos/`](docs/04-cartografia/vuelos-historicos/), con el
+  encuadre y la capa WMS anotados. Lo único que faltaba era enseñarla.
+- Crédito al pie, como los demás facsímiles: **IGN / CNIG**, AMS 1956-1957, servicio WMS
+  PNOA histórico; el límite es el reconstruido por el proyecto, no el del IGN.
+
+---
+
 ## v0.30 — 26 de septiembre de 2026
 ### El ayuntamiento, a cuatro voces
 
