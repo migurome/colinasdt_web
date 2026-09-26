@@ -49,7 +49,11 @@ Románico en Castilla y León* de la **Fundación Santa María la Real**.
    ✅ **Hecho para los once retratos de contexto** (26-IX-2026): autor, obra, licencia y
    enlace a Commons van escritos en el pie de la propia imagen, y en
    [`docs/03-archivos/retratos-commons.tsv`](docs/03-archivos/retratos-commons.tsv).
-   ⚠️ **Pendiente para los seis facsímiles.** (La ilustración de 1006 ya no se publica:
+   ✅ **Hecho también para los diez facsímiles que entraron el 26-IX-2026** (1591, 1693,
+   1694 ×2, 1756, 1757, 1772, 1804, Pobladura y Miñano): cada uno lleva al pie su signatura
+   de archivo y de dónde sale la reproducción.
+   ⚠️ **Pendiente para los seis facsímiles antiguos** —las figuras de la excavación, el
+   Catastro y el sello de 1876—, que hoy llevan pie pero no signatura completa. (La ilustración de 1006 ya no se publica:
    las ilustraciones interpretadas están apagadas desde v0.27.)
    ⚠️ **El retrato del conde de Aranda no viene de Commons.** Es un detalle del que pintó
    **Ramón Bayeu en 1769** —Museo de Huesca, sala 7—, tomado de la reproducción publicada

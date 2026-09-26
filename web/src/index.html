@@ -1034,7 +1034,7 @@ const EVENTOS = [
 
   { id: 'pecheros1526', era: 3, y: '1526', s: 1526, n: 'visto',
     t: 'Veinticinco vecinos pecheros',
-    p: 'La <b>medición de población más antigua</b> que el proyecto tiene de Colinas, sesenta y cinco años anterior al vecindario de 1591. El lugar aparece escrito «Colinas» entre los 274 asientos de la villa de Benavente y su tierra, que suman 3.681 pecheros: exactamente la cifra que el propio censo escribe en su fila de totales.',
+    p: 'Veinticinco vecinos que pagan pechos. Es la medición de población más antigua que tenemos de Colinas, sesenta y cinco años anterior al vecindario de 1591.|El asiento va entre los 274 de la villa de Benavente y su tierra, que suman 3.681 pecheros: <b>exactamente el total que el propio censo escribe al pie</b>. Las cuentas cuadran, así que la cifra se puede creer.',
     nota: 'En la misma lista hay dos lugares que nadie ha identificado: «Vezinas», con 21 vecinos, y «Vecilla del Chantre», con 16. La hipótesis de que esa Vecilla fuera la de Trasmonte queda <b>descartada</b>: en 1591 las dos aparecen por separado en la misma lista.',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
@@ -1046,7 +1046,7 @@ const EVENTOS = [
 
   { id: 'p1551', era: 3, y: '1551', s: 1551, n: 'sinleer',
     t: 'Martín Alonso, vecino de Colinas, va a pleito',
-    p: 'Contra Pedro Alonso de Soguillo, vecino de Quintanilla de Urz. Es el vecino de Colinas más antiguo cuyo nombre conocemos.',
+    p: 'Martín Alonso, vecino de Colinas, pleitea contra Pedro Alonso de Soguillo, vecino de Quintanilla de Urz. Del asunto no sabemos nada: el legajo está sin leer.|Queda el nombre, y no es poco: <b>es el vecino de Colinas más antiguo que sabemos nombrar</b>. Aparece porque discutió.',
     ilu: { src: 'img/prov/p1551.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -1054,16 +1054,19 @@ const EVENTOS = [
 
   { id: 'c1591', era: 3, y: '1591', s: 1591, n: 'visto',
     t: 'Veintiocho vecinos, y el lugar mediano de la provincia',
-    p: 'Veintisiete pecheros, ningún hidalgo y un clérigo, en la provincia de las tierras del conde de Benavente. Y es <b>exactamente el lugar mediano</b>: la mediana de los 117 lugares de la provincia es de 28 vecinos. Colinas no es ni grande ni pequeño; está en el centro justo de su comarca.',
+    p: 'Veintisiete pecheros. Un clérigo. Ningún hidalgo.|La provincia del conde tiene ciento diecisiete lugares. Ordenados por vecinos, el del medio tiene veintiocho.|Colinas tiene veintiocho. <b>El lugar mediano, exactamente.</b>|En sesenta y cinco años ha ganado dos vecinos. Benavente, un setenta y tres por ciento.',
     nota: 'Cotejados los 115 lugares del señorío en 1526 con los 117 de 1591, <b>no desaparece ninguno</b>. La villa de Benavente crece un 73 %; su tierra, un 9 %; Colinas, de 25 a 27 pecheros, un 8 %. Dentro del campo no hay tendencia: 57 lugares pierden y 56 ganan.',
-    ilu: { src: 'img/prov/c1591.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
-    tr: 'portada',
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/c1591.jpg', w: 1285, h: 133,
+      alt: 'Dos líneas de una tabla impresa: «Colinas de Trasmonte», y a la derecha las cifras 28, 27 y 1.',
+      cap: 'El asiento del pueblo en el vecindario de 1591: veintiocho vecinos, veintisiete de ellos pecheros y un clérigo. <span class="mono">Censo de Castilla de 1591, vecindario de las tierras del conde de Benavente, p. 667 · ed. facsímil del INE</span>' },
+    tr: 'caja',
     f: 'Censo de la Corona de Castilla, 1591 · vecindario de las tierras del conde de Benavente' },
 
   { id: 'p1600', era: 3, y: '1600–1608', s: 1604, n: 'sinleer',
     t: 'Concejo contra concejo: Colinas y Vecilla',
-    p: 'Los pleitos entre pueblos vecinos suelen describir mojones y aprovechamientos, a veces con planos. Es la fuente más prometedora para el término antiguo, y está por pedir.',
+    p: 'Ocho años de pleito entre el concejo de Colinas y el de Vecilla. Los pleitos de término describen mojones y aprovechamientos, y a veces traen plano.|<b>Es la fuente más prometedora que hay para el término antiguo</b>, y está sin pedir: de ella tenemos la signatura y nada más.',
     ilu: { src: 'img/prov/p1600.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -1071,7 +1074,7 @@ const EVENTOS = [
 
   { id: 'c1613', era: 3, y: '1613', s: 1613, n: 'cotejar',
     t: 'Chirivoga copia el Tumbo Negro, y mueve el monasterio de sitio',
-    p: 'Felipe III envía al deán de Salamanca a averiguar qué iglesias del obispado de Astorga son del Real Patronato. Su equipo copia el Tumbo Negro —hoy es el único testimonio de los diplomas de 1006 y 1015— y, al encontrarse con un monasterio de Castroferrol del que ya nadie se acordaba, se lo adjudica a Villaferrueña, un pueblo de nombre parecido y no lejos del Tera. Llegan a rebautizarlo «Castroferrueña». Su iglesia pasa al patronato real como heredera del monasterio.',
+    p: 'Felipe III manda al deán de Salamanca a averiguar qué iglesias del obispado de Astorga son del Real Patronato. Su equipo copia el Tumbo Negro, y gracias a esa copia conocemos hoy los diplomas de 1006 y de 1015.|En el libro se encuentran un monasterio de Castroferrol del que ya no se acordaba nadie, y se lo adjudican a Villaferrueña —nombre parecido, no lejos del Tera—; llegan a rebautizarlo «Castroferrueña». Su iglesia pasa al patronato real como heredera del monasterio.|<b>No fue un descuido, sino el modo de agregar una parroquia a las rentas de la Corona.</b> El error siguió en pie en la bibliografía hasta el año 2000.',
     nota: 'El autor del artículo de referencia lo llama «una tergiversación absolutamente interesada». No fue un descuido: era el modo de agregar la parroquia a las rentas de la Corona. El error siguió en pie en la bibliografía hasta el año 2000.',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
@@ -1083,17 +1086,20 @@ const EVENTOS = [
 
   { id: 'diezmos1693', era: 3, y: '1693', d: '16 de diciembre', s: 1693, n: 'visto',
     t: 'El Nuncio manda, y Astorga no obedece',
-    p: 'El Nuncio de Su Santidad libra mandamiento para que los curas del obispado de Astorga restituyan al conde-duque de Benavente los diezmos de las «casas de Rey» —la misma casa diezmera que el Catastro declarará en Colinas cincuenta y nueve años después—. <b>El provisor de Astorga no lo cumple</b>, alegando letras inhibitorias del «Metropolitano de Salamanca» [?].',
+    p: 'El 16 de diciembre de 1693 el Nuncio de Su Santidad libra mandamiento para que los curas del obispado de Astorga le devuelvan al conde-duque de Benavente los diezmos de las «casas de Rey». Una de esas casas está en Colinas, y seguirá estando: el Catastro la declarará cincuenta y nueve años más tarde.|El provisor de Astorga no obedece. Dice que está inhibido por letras de un metropolitano [?] y se queda quieto.|Detrás del papel hay dos hombres con nombre y con minuta: el abogado Juan Gutiérrez Coronel y el procurador Francisco de Maza. <b>Y no es el primer intento</b>: el propio despacho remite a otros autos suyos de dos meses y medio antes.',
     nota: 'No es la primera vez que el Nuncio actúa: el despacho remite a sus propios autos de «primero de Octubre del año pasado de mil y seiscientos y noventa y tres», dos meses y medio antes. Los juristas que lo mueven tienen nombre: el abogado Ldo. D. Juan Gutiérrez Coronel y el procurador Francisco de Maza, que en la lectura de la misma plana se había leído antes «Malaza».',
-    ilu: { src: 'img/prov/diezmos1693.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/diezmos1693.jpg', w: 1123, h: 1632,
+      alt: 'Plana manuscrita del siglo XVIII, con dos sellos en seco en el margen superior y la escritura corrida de un escribano.',
+      cap: 'Aquí acaba el mandamiento —«Dadas en Madrid a diez y seis días del mes de Diciembre de mil y seiscientos y noventa y tres años»— y empieza la negativa: que el tribunal de Astorga «se hallaba inhibido por el de Salamanca» y no podía ejecutar lo mandado. <span class="mono">AHNOB, OSUNA, C.466, D.90, img. 45 (copia de 1842) · PARES, Archivos Estatales</span>' },
     tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 45-46 y 38 (copia de 1842)' },
 
   { id: 'nuncio1694', era: 3, y: '1694', d: '19 de enero', s: 1694, n: 'visto',
     t: 'Veinticuatro horas, so pena de excomunión',
     q: '«recoger las agravatorias que tiene libradas» y «reducir sus mandamientos a simple citación»',
-    p: 'Desde Madrid, D. Federico Caccia [?] —Arzobispo de Milán, Nuncio y Colector General Apostólico bajo Inocencio XII— le da al provisor de Astorga <b>veinticuatro horas</b>, so pena de excomunión mayor <i>latae sententiae</i> y doscientos ducados, y manda que se le <b>denuncie por público excomulgado desde los púlpitos</b>. Y no manda sentenciar: <b>manda deshacer</b>, sin embargo de cualesquiera autos del Ordinario y del Metropolitano. Es el papel que se leerá en Colinas once días después.',
+    p: 'Desde Madrid, el Nuncio no discute: cuenta el tiempo. Le da al provisor de Astorga <b>veinticuatro horas</b> para recoger las agravatorias que tenía libradas, so pena de excomunión mayor y doscientos ducados, y ordena que si no lo hace se le denuncie por público excomulgado desde los púlpitos.|Fíjese en lo que no manda: no manda sentenciar. Manda deshacer, sin embargo de cualesquiera autos del Ordinario o del Metropolitano.|Lo firma un auditor, Guido Antonio Torna [?], ante un notario, en un tribunal de Madrid que no ha estado aquí nunca. <b>Once días después, ese papel se lee en Colinas</b>, en una parroquia de ciento y pico almas.',
     nota: 'El tribunal, por dentro: firma «el Señor Auditor = Guido Antonius Torna[nus]» [?], ante el notario Baltasar Hernández Men[tero]º [?]. Y se deshace aquí una contradicción del propio proyecto: el papel no dice que haya un metropolitano <i>de</i> Salamanca, sino «el Metropolitano <b>que reside en</b> la Salamanca Vieja» —dónde se sienta el juez, no de qué sede es—. Qué sea «la Salamanca Vieja» sigue sin entenderse.',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
@@ -1106,25 +1112,31 @@ const EVENTOS = [
   { id: 'apela1694', era: 3, y: '1694', d: '30 de enero', s: 1694, n: 'visto',
     t: 'El cura de Colinas apela',
     q: '«lo obedece con el respeto debido […] y que en cuanto a su cumplimiento no ha lugar, y desde luego de este Despacho y sus autos APELA»',
-    p: 'Once días antes, en Madrid, el Nuncio de Su Santidad había dado al provisor de Astorga <b>veinticuatro horas</b> para retirar sus autos, so pena de excomunión mayor y doscientos ducados, y mandado que se le denunciase por público excomulgado desde los púlpitos. El pleito va por los diezmos de la «Casa que llaman de Rey». Cuando el despacho llega a Colinas, el cura obedece por fórmula y no cumple: es la <b>primera resistencia escrita de alguien de Colinas</b> a una orden del señor.',
-    nota: 'En este papel el cura no tiene nombre. Lo tiene cuatro meses después: el 12 de mayo se le notifica en persona al Licenciado D. Antonio García Bernardo de Quirós [?], «Cura de este Lug[ar]», por el notario Francisco Domínguez, vecino de Benavente. El [?] queda sólo en «Quirós».',
-    ilu: { src: 'img/prov/apela1694.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    p: 'El despacho llega a Colinas el 30 de enero y el cura lo recibe. Lo obedece «con el respeto debido»: es la fórmula, y no cuesta nada. Luego escribe lo otro: que en cuanto a su cumplimiento no ha lugar, y que apela.|Es decir, acata y no entrega. Enfrente tiene al conde-duque de Benavente, al Nuncio de Su Santidad y una excomunión mayor puesta por escrito.|<b>Es la primera vez que alguien de Colinas le dice que no, por escrito, a una orden del señor.</b> Y tiene nombre, escrito con todas las letras por el notario: <b>el licenciado Antonio García Bernardo de Quirós</b>, cura de este lugar.',
+    nota: '<s>En este papel el cura no tiene nombre; lo tiene cuatro meses después.</s> <b>Corregido el 26-IX-2026</b>, al leer la plana a resolución completa para ponerla en esta entrada: el <b>30 de enero</b> el notario ya notifica «al Licenciado D.n Antonio García Bernardo de Quirós, Cura de dicho Lugar, en su persona». El nombre estaba desde el primer día. Lo del 12 de mayo es una segunda notificación, no el hallazgo del nombre. Queda por ver si el original de 1694 —no esta copia de 1842— lo nombra también.',
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/apela1694.jpg', w: 1123, h: 1633,
+      alt: 'Plana manuscrita con dos notas al margen, «Notificación» y «Otra», que separan dos diligencias del mismo día.',
+      cap: 'La plana de las notificaciones del 30 de enero. Abajo, la de Colinas: el notario Francisco Domínguez se la hace al cura en su persona, «que dijo le obedece con el respeto debido». <span class="mono">AHNOB, OSUNA, C.466, D.90, img. 49 (copia limpia de 1842) · PARES, Archivos Estatales</span>' },
     tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 49-50 (copia limpia de 1842) · el nombre, en OSUNA, C.466, D.89, img. 28-29, y D.90, img. 55' },
 
   { id: 'curas1694', era: 3, y: '1694', d: 'mayo', s: 1694, n: 'visto',
     t: 'Doce curas, y un tribunal inhibido',
-    p: 'El despacho recorre la comarca y <b>doce curas quedan con nombre y respuesta</b>: Grijalba, Santibáñez de Vidriales, Ginestacio, San Román del Valle, Villaveza de Valverde, Morales de Valverde, San Pedro de la Viña, Fuente Encalada, Villageriz [?]… En Santibáñez el notario va <b>tres veces</b> a casa del cura. El de San Pedro de la Viña contesta con la carta guardada: el provisor de Astorga está inhibido por letras del «Metropolitano de Salamanca» [?], «como con efecto lo está inhibido». <b>El tribunal que firma el despacho no tenía jurisdicción para firmarlo.</b> Los curas recurren a la Real Chancillería de Valladolid por vía de fuerza, y al menos uno gana Real Provisión y se niega a entregar los diezmos.',
+    p: 'El despacho recorre el valle en mayo: doce parroquias, doce curas, doce respuestas. En Santibáñez el notario tiene que volver tres veces a casa del cura.|En San Pedro de la Viña le contestan con una carta ya guardada: el provisor de Astorga está inhibido. <b>El tribunal que firmó la orden no tenía jurisdicción para firmarla</b>, y en el valle se sabía.|Los curas acuden a la Chancillería de Valladolid por vía de fuerza; al menos uno gana Real Provisión y se niega a entregar los diezmos. Ese pleito sigue sin localizar.',
     nota: 'La lectura del metropolitano es dudosa, y varios topónimos y apellidos del vaciado llevan [?]. <b>El pleito de la Chancillería sigue sin localizar</b>: es uno de los frentes abiertos del proyecto.',
-    ilu: { src: 'img/prov/curas1694.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/curas1694.jpg', w: 1400, h: 1275,
+      alt: 'Carpetilla manuscrita encabezada «Rosinos de Vidriales, Villabeza de Valverde, S. Pedro de Zamudio y otros pueblos», con la fecha «28 Enero 1694» subrayada.',
+      cap: 'La carpetilla de la copia de 1842 enumera los lugares cuyos curas habían cobrado los diezmos de las «Casas llamadas de Rey». En mitad de la lista, <b>Colinas de Trasmonte</b>. <span class="mono">AHNOB, OSUNA, C.466, D.90 · PARES, Archivos Estatales</span>' },
     tr: 'portada',
     f: 'AHNOB, OSUNA, C.466, D.90, img. 49-57 · vaciado en curas-1694.tsv · el obispo es D. Fray Antonio de Sanjurjo y Miranda; su provisor, el Dr. D. Antonio de Miranda' },
 
   { id: 'apeo1706', era: 3, y: '1706', s: 1706, n: 'visto',
     t: 'Un pago que se llama San Pelayo',
-    p: 'El apeo del término de Vecilla de Trasmonte orienta sus parcelas con cuatro referencias —«azia la vega», «azia Vezilla», <b>«azia Pobladura»</b> y <b>«azia Colinas»</b>—: trata a Pobladura y a Colinas como dos vecinos distintos, y deja a Pobladura <b>fuera</b> del término de Colinas. Y registra un pago llamado <b>San Pelayo</b>, el mismo nombre que un mojón del deslinde de 1129.',
+    p: 'Un apeo no se escribe para nosotros: se escribe para que cada uno sepa dónde acaba lo suyo. El de Vecilla de Trasmonte, en 1706, va orientando parcela por parcela con cuatro referencias: hacia la vega, hacia Vecilla, hacia Pobladura, hacia Colinas.|Dicho de otro modo: en 1706 <b>Pobladura y Colinas son dos vecinos distintos</b>, y Pobladura queda fuera del término de Colinas. Eso es lo que este papel prueba, y no es poco.|Además aparece un pago llamado San Pelayo. Un mojón del deslinde de 1129 se llamaba igual. Tentador, pero no prueba nada: San Pelayo es advocación corriente de esta ribera.',
     nota: 'Que el nombre se repita en 1129, en 1706 y en 1768 no prueba que sean el mismo sitio: <b>San Pelayo es advocación corriente de esta ribera</b> —Vega de Tera es parroquia de San Pelayo en el Censo de Aranda—. Ninguno de los tres prueba nada sobre los otros.',
     ilu: { src: 'img/prov/apeo1706.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
@@ -1133,7 +1145,7 @@ const EVENTOS = [
 
   { id: 'catastro', era: 3, y: '1752', d: '9 de noviembre', s: 1752, n: 'visto',
     t: 'El Catastro de Ensenada: el primer retrato completo',
-    p: '27 vecinos, el cura incluido, y 26 casas, diez de ellas inhabitables. Un término de 2.372 fanegas, un tercio de monte. El concejo tiene molino harinero y casa de fragua; hay un solo herrero, Santiago Zerrón. El río Tera es del conde de Benavente, y le rinde 200 reales al año.',
+    p: 'Veintisiete vecinos, el cura incluido, y veintiséis casas, diez de ellas inhabitables. Un término de 2.372 fanegas, un tercio de monte.|El concejo tiene molino harinero y casa de fragua, y hay un solo herrero, Santiago Zerrón. El río Tera es del conde de Benavente y le rinde doscientos reales al año.|Cuando se les pregunta con qué derecho cobra, los vecinos responden que <b>no pueden dar razón en virtud de qué privilegio</b>. Pagaban sin saber por qué.',
     q: '«no pueden dar razón en virtud de qué privilegio goza estos derechos»',
     nota: 'Así responden los vecinos (28.ª) cuando se les pregunta por el título de lo que cobra el conde. Nadie en el pueblo sabía por qué pagaba.',
     img: { src: 'img/catastro-1752-f372.jpg', w: 720, h: 1054, llena: true, alt: 'Página manuscrita del Catastro de Ensenada de Colinas de Trasmonte, en letra caligráfica del siglo XVIII.', cap: 'Final de la respuesta 3.ª, con los lindes del término, e inicio de la 4.ª (AGS, libro 654, imagen 0372).' },
@@ -1143,19 +1155,25 @@ const EVENTOS = [
   { id: 'ermita1756', era: 3, y: '1756', d: '6 de abril', s: 1756, n: 'visto',
     t: 'Hay una ermita en el término',
     q: '«componer la Ermita que ay en su territorio respectivo y ponerla decente de Ornatos»',
-    p: 'El obispo de Astorga escribe al conde-duque de Benavente: don Matheo Villalva, prestamero del de San Juan de Colinas de Trasmonte y <b>ahijado del propio conde-duque</b>, tiene que arreglarla. Y hay dada orden de retenerle «la Cota de 200 r[eale]s cada año» para pagar la obra.',
+    p: 'Abril de 1756. El obispo de Astorga escribe al conde-duque.|Hay una ermita en el término de Colinas. Está para arreglar.|Que la componga don Matheo Villalva, que cobra el préstamo de San Juan y es ahijado del conde-duque. Y que le retengan doscientos reales al año hasta que esté hecha.|<b>No sabemos de qué advocación era, ni dónde estuvo, ni cuándo se perdió.</b> Sabemos que existió porque alguien discutió quién la pagaba.',
     nota: 'La carta <b>no dice de qué advocación es la ermita</b>. El «San Juan Bautista» que trae el catálogo de PARES es del catálogo, no del papel. Y no se ha buscado todavía dónde estuvo ni cuándo se perdió.',
-    ilu: { src: 'img/prov/ermita1756.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/ermita1756.jpg', w: 1400, h: 1929,
+      alt: 'Primer folio de una carta manuscrita, con el sello del archivo de Osuna abajo a la izquierda y la tinta de la otra cara transparentada.',
+      cap: 'La carta del obispo de Astorga al conde-duque: que don Matheo Villalva componga «la Ermita que ay en su territorio respectivo» y la ponga «decente de Ornatos», y que se le retenga «la Cota de 200 rr. cada año». <span class="mono">AHNOB, OSUNA, CT.271, D.21 · Astorga, 6-IV-1756 · PARES, Archivos Estatales</span>' },
     tr: 'portada',
     f: 'AHNOB, OSUNA, CT.271, D.21 · Astorga, 6 de abril de 1756' },
 
   { id: 'arcipreste1757', era: 3, y: '1757', s: 1757, n: 'visto',
     t: 'La cabeza eclesiástica de tres valles vive aquí',
     q: '«Cura del Lugar de Colinas y Arcipreste del Arciprestazgo de Vidriales, Tera y Valverde»',
-    p: 'Así se titula <b>don Francisco Escudero</b> en una ejecutoria de la Chancillería. Un pueblo de ciento y pico almas, sin hidalgos y sin ayuntamiento propio, es la residencia del arcipreste de <b>los tres valles</b>. La parroquia pesa más que el lugar.',
-    ilu: { src: 'img/prov/arcipreste1757.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    p: 'Cuando don Francisco Escudero firma en una ejecutoria de la Chancillería, se titula entero: cura del lugar de Colinas y arcipreste del arciprestazgo de Vidriales, Tera y Valverde.|Es decir: la cabeza eclesiástica de tres valles vive aquí. En un lugar de ciento y pico almas, sin un solo hidalgo y sin ayuntamiento propio.|<b>La parroquia pesa más que el lugar.</b> Lo que Colinas no es en lo civil, lo es en lo eclesiástico.',
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/arcipreste1757.jpg', w: 848, h: 1189,
+      alt: 'Plana de papel sellado con el rótulo «Sello quarto, veinte maravedís, año de mil setecientos y cinquenta y siete» y, debajo, letra de canciollería muy apretada.',
+      cap: 'La plana de la ejecutoria, en papel sellado de 1757. En ella don Francisco Escudero se titula cura de Colinas y arcipreste de Vidriales, Tera y Valverde. <span class="mono">ARCHV, Registro de Ejecutorias, caja 3250, 23 · PARES, Archivos Estatales</span>' },
     tr: 'portada',
     f: 'ARCHV, Registro de Ejecutorias, caja 3250, 23 (leído dos veces en la misma plana)' },
 
@@ -1174,25 +1192,31 @@ const EVENTOS = [
 
   { id: 'pobladura', era: 3, y: '1591 → 1768', s: 1768, n: 'visto',
     t: 'Pobladura de Trasmonte desaparece',
-    p: 'En 1526 el escribano lo había anotado de su mano: <b>«Pobladura de Trasmonte — Despoblado por la peste»</b>, quince pecheros. Pero no fue el final: en 1591 sigue viva, con once vecinos. En el Censo de Aranda, el obispado de Astorga cuenta <b>cinco Pobladuras y ninguna «de Trasmonte»</b>. Entre las dos fechas el lugar se acaba, esta vez para siempre. <b>El hueco también es un dato</b>: se despobló, se rehizo y volvió a desaparecer.',
+    p: 'En 1526 el escribano anotó «Pobladura de Trasmonte — Despoblado por la peste», quince pecheros. No fue el final: en 1591 el lugar sigue vivo, con once vecinos.|En el Censo de Aranda, el obispado de Astorga cuenta cinco Pobladuras y ninguna «de Trasmonte». Entre las dos fechas se acaba, esta vez para siempre.|<b>No sabemos ni el año ni la causa.</b> El hueco también es un dato: se despobló, se rehizo y volvió a desaparecer.',
     nota: 'No se sabe ni el año ni la causa del final. El asiento de 1526 tampoco dice <b>qué</b> peste. Y la identificación moderna que hace el INE de aquel asiento —49.236, Vidayanes— contradice la localización que este proyecto defiende; el apeo de 1706 la sitúa al lado de Colinas, no a treinta kilómetros.',
-    ilu: { src: 'img/prov/pobladura.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
-    tr: 'portada',
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/pobladura.jpg', w: 1400, h: 408,
+      alt: 'Columnas de un índice impreso de pueblos; entre ellas, cinco líneas seguidas que empiezan por «Pobladura».',
+      cap: 'El índice del Censo de Aranda para el obispado de Astorga: Pobladura de la Sierra, de las Regueras, de Somoza, de Yuso y del Valle. <b>Ninguna «de Trasmonte».</b> <span class="mono">Censo de Aranda, «Relación de pueblos» · ed. INE</span>' },
+    tr: 'caja',
     f: 'INE, Censo de Pecheros. Carlos I, 1528, t. II, fol. 507 rº, inscr. 102 · Censo de 1591 · Censo de Aranda, «Relación de pueblos»' },
 
   { id: 'aniversarios1772', era: 3, y: '1772', s: 1772, n: 'visto',
     t: 'Tres aniversarios, y un pleito por el segundo',
-    p: 'La iglesia parroquial de Colinas tiene <b>tres aniversarios dotados y fundados</b> por «el B.r D.n Pedro Prieto, cura que fue de…»: es la primera fundación piadosa documentada de la parroquia. Sobre el segundo de ellos obtiene ejecutoria <b>Simón Prieto Montero</b>, clérigo de menores, contra Francisco Gutiérrez, de Friera de Valverde.',
+    p: 'Un aniversario es una misa que alguien deja pagada para que se diga por él todos los años, cuando ya no esté. En la iglesia de Colinas hay tres, y los tres los dejó fundados un cura, Pedro Prieto [?].|<b>Es la primera fundación piadosa que tenemos documentada de esta parroquia</b>: la primera vez que alguien de aquí dispone de lo suyo para después de muerto.|Por el segundo de los tres se pleitea. Simón Prieto Montero, clérigo de menores, obtiene ejecutoria de la Chancillería contra Francisco Gutiérrez, vecino de Friera de Valverde.',
     nota: 'El nombre del fundador lleva [?]: el catálogo de PARES lee «Bartolomé» donde el facsímil parece decir «bachiller».',
-    ilu: { src: 'img/prov/aniversarios1772.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/aniversarios1772.jpg', w: 795, h: 1116,
+      alt: 'Plana de papel sellado de 1772, con el escudo impreso en el ángulo y el texto de la ejecutoria a renglón seguido.',
+      cap: 'La ejecutoria de los aniversarios, en papel sellado de 1772: la gana Simón Prieto Montero, clérigo de menores. <span class="mono">ARCHV, Registro de Ejecutorias, caja 3359, 51 · PARES, Archivos Estatales</span>' },
     tr: 'portada',
     f: 'ARCHV, Registro de Ejecutorias, caja 3359, 51' },
 
   { id: 'floridablanca', era: 3, y: '1787', s: 1787, n: 'visto',
     t: 'Ciento cincuenta y seis personas, y ningún hidalgo',
-    p: 'El censo de Floridablanca cuenta el pueblo uno a uno: 156 habitantes, 90 varones y 66 mujeres. Los clasifica por oficio y deja dieciocho casillas vacías: ni escribano, ni abogado, ni comerciante, ni estudiante, ni sacristán, ni un solo hidalgo. Hay un cura, 16 labradores, 14 jornaleros, 6 artesanos y 8 criados. Casi tantos jornaleros como labradores: la mitad de los hombres con oficio no trabajaba tierra propia.',
+    p: 'Ciento cincuenta y seis habitantes, noventa varones y sesenta y seis mujeres, contados uno a uno.|El impreso clasifica por oficio y aquí deja dieciocho casillas vacías: ni escribano, ni abogado, ni comerciante, ni estudiante, ni sacristán, ni un solo hidalgo. Hay un cura, dieciséis labradores, catorce jornaleros, seis artesanos y ocho criados.|<b>Casi tantos jornaleros como labradores</b>: la mitad de los hombres con oficio no trabajaba tierra propia.',
     nota: 'El desglose por tramos de edad dentro de cada estado civil no es verosímil —ningún soltero entre 25 y 40 años y diecisiete entre 40 y 50—: el impreso se rellenó por bloques. Los totales, en cambio, cuadran los tres.',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
@@ -1204,16 +1228,19 @@ const EVENTOS = [
 
   { id: 'casa1804', era: 3, y: '1804', s: 1804, n: 'visto',
     t: 'Domingo Bernardo pleitea por una casa vinculada',
-    p: 'Contra Alonso Gavilla y su mujer, de Morales del Rey, sobre la vinculación de una casa. Es la tercera y última de las ejecutorias de la Chancillería que el proyecto tiene de este término.',
+    p: 'Una casa vinculada no se vende: pasa entera al siguiente de la familia.|Por una de ésas pleitea Domingo Bernardo contra Alonso Gavilla y su mujer, de Morales del Rey. 1804.|<b>Es la última de las tres ejecutorias que tenemos de este término.</b>|Quién era vecino de dónde, todavía no está claro: el facsímil no se ha leído entero.',
     nota: 'El [?] está en quién era vecino de dónde: el catálogo no lo deja claro y el facsímil no se ha leído entero.',
-    ilu: { src: 'img/prov/casa1804.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/casa1804.jpg', w: 906, h: 1292,
+      alt: 'Plana de papel sellado con el escudo real y la leyenda «Hispaniarum Rex Carolus IV», y el rótulo «Sello quarto, quarenta maravedís, año de mil ochocientos y quatro».',
+      cap: 'La última de las tres ejecutorias del término, en papel sellado de 1804, con el escudo de Carlos IV. <span class="mono">ARCHV, Registro de Ejecutorias, caja 3767, 43 · PARES, Archivos Estatales</span>' },
     tr: 'portada',
     f: 'ARCHV, Registro de Ejecutorias, caja 3767, 43' },
 
   { id: 'incendio1814', era: 3, y: '1814', s: 1814, n: 'cotejar',
     t: 'Arde el archivo de la catedral de Astorga',
-    p: 'Con él se pierde el Tumbo Negro, el cartulario que copiaba los diplomas de Castroferrol. Desde entonces, lo que sabemos del monasterio depende de una copia del siglo XVII de un libro perdido.',
+    p: 'Arde el archivo de la catedral de Astorga y con él se quema el Tumbo Negro, el cartulario que copiaba los diplomas de Castroferrol.|Queda la copia que mandó hacer el deán de Salamanca en 1613, para otro asunto. <b>Todo lo que sabemos del monasterio depende de ella</b>: una copia del siglo XVII de un libro que ya no existe.',
     ilu: { src: 'img/prov/incendio1814.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -1221,12 +1248,15 @@ const EVENTOS = [
 
   { id: 'minano', era: 3, y: '1826', s: 1826, n: 'visto',
     t: 'Un pueblo «cercado de colinas»',
-    p: 'Miñano lo llama Colinas a secas, sin «de Trasmonte»: aldea de señorío con alcalde pedáneo, provincia de Valladolid, partido de Benavente, obispado de Astorga. 55 vecinos, 226 habitantes. Una parroquia y un pósito —el granero del común, que no aparece en ninguna otra fuente—. Con el molino y la fragua de 1752, son tres las casas que el concejo sostenía por su cuenta.',
+    p: '«Cercado de colinas.» Así lo despacha Miñano en 1826. Y lo llama Colinas a secas, sin «de Trasmonte».|Aldea de señorío. Alcalde pedáneo. Ni villa ni ayuntamiento.|Cincuenta y cinco vecinos. Doscientos veintiséis habitantes, sin cotejar.|Una parroquia y un pósito: el granero del común. <b>No aparece en ninguna otra fuente.</b>|Con el molino y la fragua, tres casas sostenía el concejo por su cuenta.',
     q: '«Sit. al S. del valle de Vidriales, á la orilla del rio Tera, 2 leguas al S. O. de la villa de Benavente, cercado de colinas»',
     nota: 'Los vecindarios de Miñano se tienen por menos fiables que los de Madoz, y sus 226 habitantes siguen sin cotejar. El obispado de Astorga, en cambio, queda dicho por escrito veintiún años antes que Madoz.',
-    ilu: { src: 'img/prov/minano.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
-    tr: 'portada',
+    /* El facsímil del propio documento. No es un adorno: es la prueba,
+       y por eso se ve entera y no recortada. */
+    img: { src: 'img/doc/minano.jpg', w: 751, h: 355,
+      alt: 'Columna de un diccionario impreso del siglo XIX; la entrada empieza en versales: «COLINAS, Ald. S. de España».',
+      cap: 'La entrada entera, de nueve líneas: «55 vecinos, 226 hab., 1 parroquia, 1 pósito… cercado de colinas». <span class="mono">Miñano, Diccionario geográfico-estadístico, t. III, Madrid, 1826, p. 142 · ejemplar de la Universidad de Granada</span>' },
+    tr: 'caja',
     f: 'Miñano, Diccionario geográfico-estadístico de España y Portugal, t. III, Madrid, 1826, p. 142 (ejemplar digitalizado de la Universidad de Granada)' },
 
   { id: 'provincia', era: 4, y: '1833', d: '30 de noviembre', s: 1833, n: 'contexto',
@@ -1508,7 +1538,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.28';
+const VERSION = '0.29';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -1522,6 +1552,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.29', f: '26 de septiembre de 2026', t: 'El papel, a la vista',
+    c: [
+      '<b>Diez entradas cambian su imagen provisional por el facsímil del propio documento</b>: la plana donde el provisor se niega, la notificación al cura de Colinas, la carta de la ermita, las tres ejecutorias en su papel sellado, el asiento de 1591, el índice donde Pobladura ya no está y la entrada de Miñano. Todas se ven enteras, con su signatura al pie.',
+      '<b>La era del conde de Benavente queda en la voz votada</b>: diecinueve entradas cambian de redacción y una se queda como estaba. B 9, C 6, D 4, A 1.',
+      '⚠️ <b>Una cautela corregida a la vista</b>: al leer la plana para ponerla en la web se vio que el cura de 1694 <b>sí está nombrado el 30 de enero</b>. Lo que decía el proyecto queda tachado, no borrado.'
+    ],
+    p: 'De la era del conde, dieciséis de veinte entradas enseñan ya una imagen de verdad. De las cuatro que faltan, tres son legajos sin leer.' },
   { v: '0.28', f: '26 de septiembre de 2026', t: 'Veinte entradas, cuatro voces',
     c: [
       '<b>La era del conde de Benavente se pone a votación</b>: sus veinte entradas, de 1526 a 1826, escritas de cuatro maneras distintas. Cuatro mil cuatrocientas palabras nuevas, y ni un dato que no estuviera ya en el papel.',

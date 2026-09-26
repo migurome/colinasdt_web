@@ -85,6 +85,28 @@ con lo ya elegido marcado. El recuento de la cabecera cuenta sólo la era en vot
 aplica entrada por entrada, como se hizo con Castroferrol, y entonces —y sólo entonces—
 cambia `p3-data.js`.
 
+### El resultado, entrada por entrada (26-IX-2026)
+
+| A · Técnica | B · Sobria | C · Microhistoria | D · Escena |
+|---|---|---|---|
+| 1768 | 1526 · 1551 · 1600 · 1613 · 1694 (curas) · 1752 · Pobladura · 1787 · 1814 | 1693 · 1694 (Nuncio) · 1694 (apela) · 1706 · 1757 · 1772 | 1591 · 1756 · 1804 · 1826 |
+
+**Recuento: B 9, C 6, D 4, A 1.** Diecinueve entradas cambian de redacción; una se queda como
+estaba.
+
+Y el reparto vuelve a decir lo mismo que en Castroferrol, con la línea aún más clara:
+
+- **La sobria gana donde el hecho es una cifra o un acto de documento** —los cuatro censos, los
+  dos pleitos sin leer, el incendio del archivo—. Donde el dato ya pesa, la escena estorba.
+- **La microhistoria gana donde hay un pulso**: el Nuncio contra el provisor, el cura que apela,
+  el apeo que orienta sus parcelas, el arcipreste de tres valles.
+- **La escena gana donde el documento es una frase**: el asiento de 1591, la ermita, la casa
+  vinculada, las nueve líneas de Miñano.
+- **La técnica gana una vez**, en 1768, donde el hallazgo es una línea de la mano del cura y no
+  hacía falta tocarla.
+
+---
+
 ## Las cuatro voces
 
 ### B · Sobria narrativa
@@ -151,7 +173,7 @@ proyecto necesita, con sus quince marcas `[?]`—.
 |---|---|---|
 | Antes del nombre | 3 | pendiente |
 | **Castroferrol** | **11** | ✅ **reescrita el 25-IX-2026 (v0.15)** |
-| **Lugar del conde de Benavente** | **20** | 🗳 **en votación desde el 26-IX-2026** |
+| **Lugar del conde de Benavente** | **20** | ✅ **votada y aplicada el 26-IX-2026 (v0.29)** |
 | El ayuntamiento | 16 | pendiente |
 | La pedanía | 11 | pendiente |
 

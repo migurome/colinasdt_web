@@ -13,6 +13,41 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.29 — 26 de septiembre de 2026
+### El papel, a la vista
+
+- **Diez entradas dejan la imagen provisional y enseñan el facsímil de su propio documento.**
+  No había que buscar nada: estaban desde el 23-IX en `docs/01-fuentes-primarias/`, que es
+  donde el criterio obliga a tenerlas. Ahora también se ven.
+
+  | Año | Qué se ve |
+  |---|---|
+  | 1591 | El asiento del pueblo: 28 vecinos, 27 pecheros, un clérigo |
+  | 1693 | La plana donde acaba el mandamiento del Nuncio y empieza la negativa del provisor |
+  | 1694 | La notificación del 30 de enero en Colinas, con el «obedece con el respeto debido» |
+  | 1694 | La carpetilla de 1842, con la lista de pueblos y Colinas en medio |
+  | 1756 | La carta del obispo sobre la ermita, con los 200 reales al año |
+  | 1757 · 1772 · 1804 | Las tres ejecutorias, cada una en su papel sellado |
+  | 1591→1768 | El índice del Censo de Aranda: cinco Pobladuras, y ninguna «de Trasmonte» |
+  | 1826 | Las nueve líneas de Miñano, enteras |
+
+  Los documentos **se ven enteros**, no a sangre: recortar un facsímil lo deja sin leer. Y cada
+  uno lleva **su signatura en el pie**, dentro de la propia lámina.
+- **La era del conde de Benavente queda en la voz votada.** Diecinueve entradas cambian de
+  redacción y una — 1768 — se queda como estaba. **B 9, C 6, D 4, A 1.** El reparto, y lo que
+  enseña, en [`docs/07-web/voz.md`](docs/07-web/voz.md).
+- ⚠️ **Una cautela del proyecto, corregida a la vista.** La entrada del cura que apela decía
+  que en ese papel no tenía nombre y que el nombre llegaba cuatro meses después. Al leer la
+  plana a resolución completa para meterla en la web, resulta que **el 30 de enero el notario
+  ya le notifica «al Licenciado D.n Antonio García Bernardo de Quirós, Cura de dicho Lugar, en
+  su persona»**. La frase vieja queda **tachada, no borrada**, y la nueva dice qué se leyó y
+  dónde. Queda por ver si el original de 1694 —no la copia de 1842— lo nombra también.
+- De las veinte entradas de esta era, **dieciséis enseñan ya una imagen de verdad**: once
+  facsímiles y cinco retratos de contexto. De las cuatro que siguen con trama, **tres son
+  legajos catalogados y sin leer**.
+
+---
+
 ## v0.28 — 26 de septiembre de 2026
 ### Veinte entradas, cuatro voces
 
