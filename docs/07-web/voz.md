@@ -53,6 +53,38 @@ Las cuatro redacciones se pusieron una al lado de otra en un artefacto con votos
 
 ---
 
+---
+
+## La segunda ronda: el conde de Benavente (26-IX-2026)
+
+Las veinte entradas de 1526 a 1826, también en cuatro voces. Hay una diferencia con la
+primera ronda, y conviene saberla antes de votar:
+
+> En Castroferrol, **A** era la redacción vieja (etiqueta `v0.14`) y **B** la sobria que ya
+> se había publicado. Esta era **no se ha reescrito nunca**, así que A y B habrían sido el
+> mismo texto. Por eso aquí **A es lo que hay publicado hoy** y **B es una propuesta
+> sobria escrita para la ocasión**, igual que C y D.
+
+- **A · Técnica** — la que hay en la web ahora mismo.
+- **B · Sobria** — una idea por frase, la consecuencia dicha.
+- **C · Microhistoria** — empieza por la persona o el objeto y cuenta el hecho.
+- **D · Escena** — frase corta, presente, más silencio.
+
+Dónde está cada cosa:
+
+| Qué | Dónde |
+|---|---|
+| Los textos de B, C y D | [`web/voces.json`](../../web/voces.json) |
+| El comparador, cuatro láminas por entrada | `web/src/prueba-voz-3.html`, que genera `python web/gen-voz.py 3` |
+| La votación, con corazón y recuento | [el artefacto de voces](https://claude.ai/artifact/Ss75iBzxEfVE8ZG4D5bz9r) |
+
+El artefacto lleva ahora **las dos eras**: arriba la que se vota, debajo la de Castroferrol
+con lo ya elegido marcado. El recuento de la cabecera cuenta sólo la era en votación.
+
+**Nada de esto está publicado en la línea todavía.** Son propuestas: cuando se vote, se
+aplica entrada por entrada, como se hizo con Castroferrol, y entonces —y sólo entonces—
+cambia `p3-data.js`.
+
 ## Las cuatro voces
 
 ### B · Sobria narrativa
@@ -119,7 +151,7 @@ proyecto necesita, con sus quince marcas `[?]`—.
 |---|---|---|
 | Antes del nombre | 3 | pendiente |
 | **Castroferrol** | **11** | ✅ **reescrita el 25-IX-2026 (v0.15)** |
-| Lugar del conde de Benavente | 20 | pendiente |
+| **Lugar del conde de Benavente** | **20** | 🗳 **en votación desde el 26-IX-2026** |
 | El ayuntamiento | 16 | pendiente |
 | La pedanía | 11 | pendiente |
 

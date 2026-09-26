@@ -13,6 +13,28 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.28 — 26 de septiembre de 2026
+### Veinte entradas, cuatro voces
+
+- **La era del conde de Benavente entra en votación.** Sus veinte entradas, de 1526 a 1826,
+  quedan escritas en cuatro voces: **4.396 palabras nuevas**, y ni un dato que no estuviera
+  ya en el documento. Lo que cambia es el orden, el ritmo y la consecuencia.
+- **Aquí A es lo publicado, no lo viejo.** En Castroferrol, A venía de la etiqueta `v0.14` y
+  B era la sobria ya publicada; esta era **no se había reescrito nunca**, así que A y B
+  habrían sido el mismo texto. Por eso la sobria se ha escrito también a mano, y va en
+  `web/voces.json` junto a la microhistoria y la escena.
+- `gen-voz.py` **aprende a trabajar por eras**: `python web/gen-voz.py 3` deja el comparador
+  en `web/src/prueba-voz-3.html`, con las cuatro redacciones de cada entrada una al lado de
+  otra. Si `voces.json` trae B para esa era, B sale de ahí y A pasa a rotularse «la que
+  hay».
+- **El artefacto de votos lleva ya las dos eras**: arriba la que se vota, debajo Castroferrol
+  con lo elegido marcado. Los votos anteriores siguen donde estaban —la clave de cada voto
+  es `entrada__voz`— y el recuento de la cabecera cuenta sólo la era en votación.
+- ⚠️ **En la línea publicada no cambia ni una palabra todavía.** Son propuestas. Se aplican
+  cuando se voten, entrada por entrada, que es lo que enseñó la primera ronda.
+
+---
+
 ## v0.27 — 26 de septiembre de 2026
 ### El Aranda que sí lo vio
 

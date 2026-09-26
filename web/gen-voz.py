@@ -11,23 +11,24 @@ Arriba y abajo se recorre la era de Castroferrol; al lado, las cuatro voces:
 A y B se leen de los datos de verdad —A de git, B del fichero vivo—, asi que
 no pueden desincronizarse. C y D salen de web/voces.json.
 
-    python web/gen-voz.py
+    python web/gen-voz.py            la era de Castroferrol (2)
+    python web/gen-voz.py 3          la del conde de Benavente
+
+En una era que todavia no se ha reescrito, A y B serian el mismo texto: si
+voces.json trae B para esas entradas, B sale de alli y A se queda como "la
+que hay publicada".
 """
 import io
 import json
 import os
 import re
 import subprocess
+import sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HEAD = os.path.join(RAIZ, 'web/src/parts/p1-head.html')
-SAL = os.path.join(RAIZ, 'web/src/prueba-voz.html')
-ERA = 2
-
-VOCES = [('A', u'A · Técnica', u'la original'),
-         ('B', u'B · Sobria', u'la publicada'),
-         ('C', u'C · Microhistoria', u'narrada'),
-         ('D', u'D · Escena', u'frase corta')]
+ERA = int(sys.argv[1]) if len(sys.argv) > 1 else 2
+SAL = os.path.join(RAIZ, 'web/src/prueba-voz%s.html' % ('' if ERA == 2 else '-%d' % ERA))
 
 LEE = """
 const fs = require('fs');
@@ -95,13 +96,23 @@ def parrafos(t):
     return u''.join(u'<p class="prosa">%s</p>' % x for x in t.split(u'|') if x.strip())
 
 
+# ¿la sobria está escrita a mano para esta era? Entonces A es lo publicado
+BdeMano = any('B' in extra.get(e['id'], {}) for e in viva if e['era'] == ERA)
+VOCES = [('A', u'A · Técnica', u'la que hay' if BdeMano else u'la original'),
+         ('B', u'B · Sobria', u'propuesta' if BdeMano else u'la publicada'),
+         ('C', u'C · Microhistoria', u'narrada'),
+         ('D', u'D · Escena', u'frase corta')]
+
+
 def texto(e, clave):
+    d = extra.get(e['id'], {})
     if clave == 'A':
+        if BdeMano:                       # era sin reescribir: A es lo vivo
+            return parrafos(e['p'])
         v = vieja.get(e['id'])
         return parrafos(v['p']) if v else u'<p class="prosa">—</p>'
-    if clave == 'B':
+    if clave == 'B' and not d.get('B'):
         return parrafos(e['p'])
-    d = extra.get(e['id'], {})
     return parrafos(d.get(clave, u'—'))
 
 
@@ -152,7 +163,7 @@ PAG = u"""<!doctype html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..600&display=swap">
 <style>
 /* ═══ COMPARADOR DE VOZ — generado, no se edita a mano ═════════════════
-   Lo hace web/gen-voz.py. Arriba y abajo, la era de Castroferrol; al lado,
+   Lo hace web/gen-voz.py. Arriba y abajo, una era entera; al lado,
    cuatro redacciones de la misma entrada. Sin imágenes y sin tratamientos:
    aquí sólo se juzga el texto. noindex y sin enlace desde el sitio.
    ═══════════════════════════════════════════════════════════ */

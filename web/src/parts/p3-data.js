@@ -620,7 +620,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.27';
+const VERSION = '0.28';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -634,6 +634,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.28', f: '26 de septiembre de 2026', t: 'Veinte entradas, cuatro voces',
+    c: [
+      '<b>La era del conde de Benavente se pone a votación</b>: sus veinte entradas, de 1526 a 1826, escritas de cuatro maneras distintas. Cuatro mil cuatrocientas palabras nuevas, y ni un dato que no estuviera ya en el papel.',
+      'Aquí <b>A es lo que hay publicado</b>, porque esta era nunca se reescribió; la sobria, la microhistoria y la escena son las tres propuestas.',
+      '<b>En la línea no cambia nada todavía.</b> Se vota primero, como se hizo con Castroferrol, y se aplica entrada por entrada.'
+    ],
+    p: 'La voz se elige por entrada y no por era: eso fue lo que enseñó la primera votación.' },
   { v: '0.27', f: '26 de septiembre de 2026', t: 'El Aranda que sí lo vio',
     c: [
       '<b>El retrato de 1768 cambia</b>: se va la copia decimonónica y entra el que le pintó Ramón Bayeu <b>en 1769, un año después del recuento</b>, hoy en el Museo de Huesca. Del natural, y casi contemporáneo del papel.',
