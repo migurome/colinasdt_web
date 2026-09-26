@@ -52,7 +52,7 @@
 
 | Fuente | Qué hay guardado | Dónde |
 |---|---|---|
-| **Gazeta y BOE, 1857-1976** | **12 PDF**, de la desamortización de los propios (1857-1889) a la concentración parcelaria | [`boe-gazeta/facsimil/`](01-fuentes-primarias/boe-gazeta/facsimil/) |
+| **Gazeta y BOE, 1857-1976** | **17 PDF**, de la desamortización de los propios (1857-1889) a la concentración parcelaria. ⚠️ Los cinco últimos —escalafón de 1894, caminos de 1905, juzgados de 1945, unidad mínima de 1958 y escuelas de 1959— se descargaron el **26-IX-2026**: estaban leídos y citados, pero el PDF no se había guardado | [`boe-gazeta/facsimil/`](01-fuentes-primarias/boe-gazeta/facsimil/) |
 | **Decreto 354/1972** | El BOE núm. 45 con la incorporación a Quiruelas | [`incorporacion-1972/`](01-fuentes-primarias/incorporacion-1972/) |
 | **INE, metodología** | *Alteraciones de los municipios en los Censos desde 1842*, 14 pp. — la que descalifica el 132 de 1842 | [`03-archivos/`](03-archivos/) |
 

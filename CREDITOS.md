@@ -52,6 +52,9 @@ Románico en Castilla y León* de la **Fundación Santa María la Real**.
    ✅ **Hecho también para los diez facsímiles que entraron el 26-IX-2026** (1591, 1693,
    1694 ×2, 1756, 1757, 1772, 1804, Pobladura y Miñano): cada uno lleva al pie su signatura
    de archivo y de dónde sale la reproducción.
+   ✅ **Hecho también para las diecisiete planas oficiales y los mapas** que entraron el
+   26-IX-2026: cada una lleva al pie su referencia del BOE o de la Gaceta, o el servicio del
+   IGN del que sale.
    ⚠️ **Pendiente para los seis facsímiles antiguos** —las figuras de la excavación, el
    Catastro y el sello de 1876—, que hoy llevan pie pero no signatura completa. (La ilustración de 1006 ya no se publica:
    las ilustraciones interpretadas están apagadas desde v0.27.)

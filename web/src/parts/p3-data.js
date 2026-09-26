@@ -387,9 +387,12 @@ const EVENTOS = [
     q: '«sin rigor, por el procedimiento de imputaciones»',
     p: 'Es la primera cifra de la serie moderna de población, y viene del Censo de la Matrícula Catastral. El INE, al describir su propia metodología, dice que se hizo así, sin fecha de referencia, y que <b>«no aporta ningún dato numérico de confianza»</b>. Está documentado que la cifra existe; está documentado que no vale como medición.',
     nota: 'Y sin embargo el hoyo puede ser real. En vecinos la caída es igual de clara —55 en 1826, 33 en 1847—, con la misma proporción de almas por vecino en las dos fuentes, lo que descarta que sea un problema de unidad de cuenta. Entre 1826 y 1842 caben la primera guerra carlista, el cólera de 1834 y la desamortización. Queda abierto por los dos lados.',
-    ilu: { src: 'img/prov/matricula1842.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
-    tr: 'portada',
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/matricula1842.jpg', w: 1400, h: 1980,
+      alt: 'Página impresa moderna con el epígrafe «Censo de 1842» y un párrafo de texto debajo.',
+      cap: 'La metodología del propio INE, sobre el censo de 1842: «Fue realizado sin rigor por el procedimiento de imputaciones […] su baja calidad no aporta ningún dato numérico de confianza». <span class="mono">INE, Alteraciones de los municipios en los Censos de Población desde 1842, p. 7</span>' },
+    tr: 'caja',
     f: 'INE, Alteraciones de los municipios desde 1842, metodología' },
 
   { id: 'madoz', era: 4, y: '1847', s: 1847, n: 'visto',
@@ -419,8 +422,11 @@ const EVENTOS = [
   { id: 'censo1857', era: 4, y: '1857', s: 1857, n: 'cotejar',
     t: 'Primer censo moderno: 386 habitantes',
     p: 'Quince años antes se contaban 132. Nadie triplica su población en ese tiempo: o la cifra de 1842 se quedaba corta, o el municipio cambió de término. Y ese mismo año, el 22 de julio, la Gaceta nombra cura de Colinas a <b>D. Pedro Ramos</b>.',
-    ilu: { src: 'img/prov/censo1857.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/censo1857.jpg', w: 1400, h: 1961,
+      alt: 'Primera plana de la Gaceta de Madrid de 1857, con la cabecera grabada, el escudo real y cinco columnas de texto apretado.',
+      cap: 'La Gaceta del 22 de julio de 1857. En la sección de Gracia y Justicia, entre los curatos de la diócesis de Astorga: <b>«Para el de Colinas de Trasmonte á D. Pedro Ramos»</b>. <span class="mono">Gaceta de Madrid núm. 1.660, 22-VII-1857 · BOE-A-1857-7483</span>' },
     tr: 'portada',
     f: 'Censo de población (INE), serie pendiente de cotejo · el nombramiento, Gaceta de Madrid, 22-VII-1857, BOE-A-1857-7483' },
 
@@ -428,25 +434,34 @@ const EVENTOS = [
     t: 'Las vías pecuarias del término, reconocidas',
     p: 'Acta de reconocimiento de las vías pecuarias del término. En el mismo expediente hay copia del reconocimiento de la <b>Cañada Real Sanabresa</b>, de 1895. Por aquí pasaba ganado trashumante, y alguien vino a medir por dónde.',
     nota: 'El expediente <b>no está digitalizado</b>: se sabe que existe y dónde está, no lo que dice. Es de los pocos casos en que haría falta ir en persona.',
-    ilu: { src: 'img/prov/pecuarias1863.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
-    tr: 'portada',
+    /* No hay facsímil del papel, pero sí del terreno: la imagen enseña
+       lo que el documento midió o contó. */
+    img: { src: 'img/doc/pecuarias1863.jpg', w: 1400, h: 940,
+      alt: 'Mapa topágrafico antiguo en color, con curvas de nivel, los pueblos en rojo y los arroyos en azul; arriba a la derecha se leen los rótulos «Vereda» y «de ganados».',
+      cap: 'El expediente de 1863 no está digitalizado, pero lo que midieron sigue dibujado: al nordeste del término, el mapa rotula <b>«Vereda» y «Vereda del ganado»</b>. <span class="mono">IGN, MTN50 de primera edición —anterior a 1972—, servicio WMS</span>' },
+    tr: 'caja',
     f: 'AHN, DIVERSOS-MESTA, 746, Exp. 38' },
 
   { id: 'propios1866', era: 4, y: '1860–1889', s: 1866, n: 'visto',
     t: 'La desamortización vende los bienes de propios',
     p: 'Siete asientos de la Gazeta registran ventas de <b>bienes de propios</b> de Colinas, con sus meses: enero de 1866, mayo de 1873… Lo que era del común —montes, prados, eras— pasa a manos particulares.',
     nota: 'Está documentado que hubo ventas. <b>No está leído qué se vendió ni a quién</b>: los asientos dan la referencia, no el contenido.',
-    ilu: { src: 'img/prov/propios1866.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/propios1866.jpg', w: 1400, h: 1913,
+      alt: 'Plana de la Gaceta con una tabla: número de orden, corporación, mes y año, e importe.',
+      cap: 'El asiento de la venta, en su renglón: <b>«Idem de Colinas de Trasmonte — Enero 1866 — 106,667»</b>. Es una de las siete anotaciones que registran la venta de los bienes del común. <span class="mono">Gaceta de Madrid, 24-IX-1868 · BOE-A-1868-8172</span>' },
     tr: 'portada',
     f: 'Gazeta de Madrid, siete asientos entre 1860 y 1889 · vaciado en la ficha boe-gazeta' },
 
   { id: 'distritos1870', era: 4, y: '1870', s: 1870, n: 'visto',
     t: 'Con quién va Colinas cuando se vota',
     p: 'Para las elecciones se agrupa con Barcial del Barco, Arcos de la Polvorosa, Santa Colomba de las Monjas, Villanázar, Sitrama, Santa Croya y Melgar de Tera. En 1877 queda en el «segundo distrito: Micereces de Tera». Y un itinerario oficial de ese mismo año pasa por «Benavente, Santa Cristina, <b>Vecilla, Colinas, Quiruelas</b>, Sitrama…»: es el camino por el que se iba y se venía.',
-    ilu: { src: 'img/prov/distritos1870.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/distritos1870.jpg', w: 1400, h: 1895,
+      alt: 'Plana de la Gaceta a tres columnas, con los partidos judiciales y los pueblos de cada distrito electoral.',
+      cap: 'El distrito, escrito pueblo a pueblo: partido judicial de Benavente, primer distrito, Micereces de Tera —y en la lista, <b>Colinas de Trasmonte</b>—. <span class="mono">Gaceta de Madrid, 30-IX-1870 · BOE-A-1870-7800</span>' },
     tr: 'portada',
     f: 'BOE-A-1870-7800 · BOE-A-1877-1187 y BOE-A-1877-3272' },
 
@@ -461,8 +476,11 @@ const EVENTOS = [
   { id: 'maestro1894', era: 4, y: '1894', s: 1894, n: 'visto',
     t: 'El maestro se llama Valentín Rodríguez',
     p: 'Puesto 76 del escalafón del magisterio de la provincia de Zamora. Es el <b>primer maestro de Colinas</b> que el proyecto conoce por su nombre.',
-    ilu: { src: 'img/prov/maestro1894.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/maestro1894.jpg', w: 1400, h: 1919,
+      alt: 'Tabla impresa titulada «Escalafón definitivo de los Maestros», con columnas de número, nombre, pueblo en que sirven y antigüedad en años, meses y días.',
+      cap: 'Número 203 de orden y <b>76 de su clase</b>: «Valentín Rodríguez — Colinas de Trasmonte», con nueve años, diez meses y veinticinco días de servicio. <span class="mono">Gaceta de Madrid núm. 302, 29-X-1894, p. 332 · BOE-A-1894-6665</span>' },
     tr: 'portada',
     f: 'BOE-A-1894-6665, escalafón del magisterio, provincia de Zamora' },
 
@@ -470,25 +488,34 @@ const EVENTOS = [
     t: 'Colinas, cabecera de un camino vecinal',
     q: '«De Colinas de Trasmonte al Cubo de Benavente»',
     p: 'Así lo nombra el plan de caminos vecinales: por Colinas, no por los pueblos mayores que el itinerario atraviesa después —Quiruelas, Quintanilla, Brime de Urz, Cunquilla, Granucillo, Grijalba, Villaobispo, Santibáñez y Brime de Sog—. <b>Colinas es la cabecera.</b>',
-    ilu: { src: 'img/prov/camino1905.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/camino1905.jpg', w: 1400, h: 1890,
+      alt: 'Plana de la Gaceta con tablas de caminos vecinales y, arriba a la derecha, la lista de los de la Diputación de Zamora.',
+      cap: 'El camino, con su nombre entero: <b>«De Colinas de Trasmonte al Cubo de Benavente»</b>, por Quiruelas de Vidriales, Quintanilla, Brime de Urz, Granucillo, Grijalba, Santibáñez… <span class="mono">Gaceta de Madrid núm. 160, 9-VI-1905, p. 969 · BOE-A-1905-3586</span>' },
     tr: 'portada',
     f: 'BOE-A-1905-3586' },
 
   { id: 'juzgado1945', era: 4, y: '1945', s: 1945, n: 'visto',
     t: 'Al juzgado de Santibáñez, y sin Quiruelas',
     p: 'Colinas pasa al Juzgado Comarcal de Santibáñez de Tera, junto con Villanázar. <b>Quiruelas no está en ese grupo.</b> Veintisiete años después será Quiruelas quien lo absorba.',
-    ilu: { src: 'img/prov/juzgado1945.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/juzgado1945.jpg', w: 1400, h: 1873,
+      alt: 'Plana del Boletín Oficial del Estado a tres columnas, con la demarcación de los juzgados, partido por partido.',
+      cap: 'Partido judicial de Benavente, juzgado comarcal de <b>Santibáñez de Tera</b>: entre sus juzgados de paz, Colinas de Trasmonte. Quiruelas aparece en el grupo de al lado, el de Santibáñez de Vidriales. <span class="mono">BOE núm. 92, 2-IV-1945, p. 2592 · BOE-A-1945-3382</span>' },
     tr: 'portada',
     f: 'BOE-A-1945-3382' },
 
   { id: 'max1950', era: 4, y: '1950', s: 1950, n: 'cotejar',
     t: 'Máximo histórico: 625 habitantes',
     p: 'Un siglo de crecimiento casi sin pausa. Desde aquí la población sólo baja.',
-    ilu: { src: 'img/prov/max1950.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
-    tr: 'portada',
+    /* No hay facsímil del papel, pero sí del terreno: la imagen enseña
+       lo que el documento midió o contó. */
+    img: { src: 'img/doc/max1950.jpg', w: 1400, h: 731,
+      alt: 'Dos fotografías aéreas del mismo casco, una al lado de otra: a la izquierda en blanco y negro, rotulada «Vuelo americano, 1956-57»; a la derecha en color, «PNOA 2023».',
+      cap: 'El casco seis años después del máximo, y el mismo casco hoy. Las casas están casi en los mismos sitios; lo que cambió fue <b>cuánta gente había dentro</b>. <span class="mono">Ortofotos: IGN / CNIG — AMS 1956-1957 y PNOA 2023</span>' },
+    tr: 'caja',
     f: 'Censo de población (INE), serie pendiente de cotejo' },
 
   { id: 'vuelo1956', era: 4, y: '1956–57', s: 1956, n: 'visto',
@@ -506,8 +533,11 @@ const EVENTOS = [
     t: 'La unidad mínima de cultivo, y una escuela',
     q: '«una Escuela mixta, servida por Maestra, en el casco del Ayuntamiento de Colinas de Trasmonte»',
     p: 'En 1958 se fija la <b>unidad mínima de cultivo</b> del término: por debajo de esa superficie una finca ya no puede partirse. Al año siguiente se crea definitivamente la escuela.',
-    ilu: { src: 'img/prov/escuela1959.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/escuela1959.jpg', w: 1400, h: 1985,
+      alt: 'Plana del BOE a dos columnas con la relación de escuelas creadas, ordenada por provincias.',
+      cap: 'Bajo el epígrafe de Zamora: <b>«Una Escuela mixta, servida por Maestra, en el casco del Ayuntamiento de Colinas de Trasmonte»</b>. <span class="mono">BOE núm. 174, 22-VII-1959, p. 10023 · BOE-A-1959-9954</span>' },
     tr: 'portada',
     f: 'BOE-A-1958-9342 · Orden de 7 de julio de 1959, BOE-A-1959-9954' },
 
@@ -516,8 +546,11 @@ const EVENTOS = [
     p: 'El Decreto 3119/1970 declara de utilidad pública la concentración de Colinas: 1.043 hectáreas, 405 propietarios y 5.560 parcelas, casi catorce por dueño.',
     q: '«cuyo perímetro será, en principio, el del término municipal del mismo nombre»',
     nota: 'No salió de la nada: dos años antes, un decreto de 11 de julio de 1968 había declarado la comarca «Benavente-Tera» sujeta a ordenación rural. Y la concentración <b>la pidieron los propios agricultores</b>.',
-    ilu: { src: 'img/prov/decreto1970.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/decreto1970.jpg', w: 1400, h: 1981,
+      alt: 'Plana del BOE a dos columnas, con varios decretos de concentración parcelaria uno detrás de otro.',
+      cap: 'El <b>Decreto 3119/1970</b>, entre los de otras zonas. Dice que la concentración la motivaron «los agricultores de la misma en solicitud de concentración», y que la zona pertenece a la comarca de ordenación rural de «Benavente-Tera». <span class="mono">BOE núm. 257, 27-X-1970, p. 17434 · BOE-A-1970-50433</span>' },
     tr: 'portada',
     f: 'BOE núm. 257, de 27 de octubre de 1970, p. 17434 · el decreto de 1968, citado en BOE-A-1976-7522' },
 
@@ -525,8 +558,11 @@ const EVENTOS = [
     t: 'Setenta y dos nombres, por una carretera',
     p: 'Se publican los titulares de las fincas del término afectadas por la expropiación de la <b>carretera C-620</b>, de Benavente a Sitrama de Tera. El acto se convoca para el 25 de junio <b>en el Ayuntamiento de Colinas</b>. Setenta y dos nombres: es la lista de vecinos más larga que el proyecto tiene de este término.',
     nota: 'Los nombres vienen de <b>reconocimiento óptico del boletín</b> y están normalizados. Hay que cotejarlos uno a uno antes de darlos por buenos: un apellido mal leído en una lista de vecinos no es un detalle.',
-    ilu: { src: 'img/prov/titulares1971.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/titulares1971.jpg', w: 1400, h: 1984,
+      alt: 'Tabla del BOE con columnas de expediente, finca, propietario, superficie a expropiar, paraje y clasificación catastral.',
+      cap: 'Los setenta y dos, finca por finca, con el paraje al lado: Guadaño, Valdemanzanas, Canal, Gala. Al final de la lista, el <b>Ayuntamiento de Colinas</b> y el Estado. <span class="mono">BOE núm. 138, 10-VI-1971, p. 9423 · BOE-A-1971-40309</span>' },
     tr: 'portada',
     f: 'BOE-A-1971-40309' },
 
@@ -534,16 +570,22 @@ const EVENTOS = [
     t: 'El pueblo pide dejar de ser municipio',
     q: '«en atención a la escasez de población, dificultad para mantener los servicios mínimos obligatorios y deseo de mejorarlos»',
     p: 'El Ayuntamiento de Colinas acuerda, con quórum legal, solicitar su incorporación a Quiruelas de Vidriales; Quiruelas la acepta y el Consejo de Ministros la aprueba. No hubo «reclamación alguna» en el plazo de información pública. El concejo que en 1752 tenía molino y fragua propios se disuelve a petición suya.',
-    ilu: { src: 'img/prov/fin-municipio.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/fin-municipio.jpg', w: 1400, h: 1987,
+      alt: 'Plana del BOE a dos columnas con varios decretos de incorporación de municipios, uno detrás de otro.',
+      cap: 'El <b>Decreto 354/1972</b>: el Ayuntamiento de Colinas «adoptó acuerdo, con quórum legal, de solicitar la incorporación de su Municipio al limitrofe de Quiruelas de Vidriales […] en atención a la escasez de población». <span class="mono">BOE núm. 45, 22-II-1972, p. 3172 · Decreto 354/1972, de 10 de febrero</span>' },
     tr: 'portada',
     f: 'Decreto 354/1972, de 10 de febrero · BOE núm. 45, de 22 de febrero de 1972, pp. 3172-3173 (BOE-A-1972-33978)' },
 
   { id: 'juzgado1972', era: 5, y: '1972', d: '27 de junio', s: 1972, n: 'visto',
     t: 'El archivo se va a Quiruelas',
     p: 'Cuatro meses después de la incorporación se suprime el <b>Juzgado de Paz</b> de Colinas, y su documentación y su archivo pasan al de Quiruelas. No es un detalle administrativo: es adónde fueron a parar los papeles del pueblo, y por dónde hay que empezar a buscarlos.',
-    ilu: { src: 'img/prov/juzgado1972.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/juzgado1972.jpg', w: 1400, h: 1971,
+      alt: 'Plana del BOE con las órdenes de supresión de juzgados de paz, a dos columnas.',
+      cap: 'La orden suprime el Juzgado de Paz de Colinas y manda su documentación y archivo al de Quiruelas de Vidriales, <b>«el que se hará cargo»</b>. <span class="mono">BOE núm. 189, 8-VIII-1972, p. 14454 · BOE-A-1972-1185</span>' },
     tr: 'portada',
     f: 'Orden de 27 de junio de 1972, BOE-A-1972-1185' },
 
@@ -551,9 +593,12 @@ const EVENTOS = [
     t: 'El término, dibujado',
     p: 'Los seis planos del IRYDA dibujan el término finca a finca. Rotulan los cinco confrontantes —Quiruelas de Vidriales, Manganeses de la Polvorosa, Santa Cristina de la Polvorosa, Vecilla de Trasmonte y Aguilar de Tera— y, con ellos, los nombres de los pagos: El Valle, Vallondo, El Pendón, Las Tapias, Los Llanos, Las Porqueras. Es toponimia que no recoge ninguna otra fuente.',
     link: { href: '#termino', t: 'Ver el plano y los lindes' },
-    ilu: { src: 'img/prov/plano1975.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
-    tr: 'portada',
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/plano1975.jpg', w: 1400, h: 1025,
+      alt: 'Plano general del término dibujado a línea, con todas las fincas numeradas, los términos vecinos rotulados alrededor y, abajo a la derecha, la carátula del IRYDA.',
+      cap: 'El término entero, dibujado finca a finca: <b>«COLINAS DE TRASMONTE, provincia Zamora, escala 1:5.000, fecha plano I-75, realizador A. Figal»</b>. <span class="mono">IRYDA, plano general de la concentración parcelaria, I-1975 · Junta de Castilla y León</span>' },
+    tr: 'caja',
     f: 'IRYDA, plano general de la concentración parcelaria, I-75, A. Figal · Junta de Castilla y León' },
 
   { id: 'cecilia', era: 5, y: '1976', d: '2 de agosto', s: 1976, n: 'cotejar',
@@ -568,9 +613,12 @@ const EVENTOS = [
   { id: 'acuerdo1977', era: 5, y: '1977', d: '1 de marzo', s: 1977, n: 'visto',
     t: 'De 5.560 parcelas a 993 fincas',
     p: 'Se aprueba el acuerdo de concentración. Termina el paisaje agrario que describía el Catastro. El año anterior se había aprobado el plan de obras que lo acompaña: «red de caminos y red de saneamiento».',
-    ilu: { src: 'img/prov/acuerdo1977.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
-    tr: 'portada',
+    /* La plana oficial donde el pueblo está escrito. Se ve entera:
+       lo que prueba es el renglón, y el renglón vive en su página. */
+    img: { src: 'img/doc/acuerdo1977.jpg', w: 1400, h: 494,
+      alt: 'Tres fotografías aéreas del mismo pueblo, una al lado de otra, rotuladas «Vuelo 1956-57», «Vuelo 1973-86» y «Vuelo 2023».',
+      cap: 'Lo que hizo la concentración, visto desde el aire: las tiras estrechas de 1956, los bloques grandes y los caminos rectos del vuelo siguiente, y el término de hoy. <b>No es el acuerdo: es su efecto.</b> <span class="mono">Ortofotos: IGN / CNIG — AMS 1956-1957, Interministerial 1973-1986 y PNOA 2023</span>' },
+    tr: 'caja',
     f: 'Junta de Castilla y León, ficha de la concentración parcelaria · el plan de obras, Orden de 26 [?]-II-1976, BOE-A-1976-7522' },
 
   { id: 'registro1986', era: 5, y: '1986', s: 1986, n: 'visto',
@@ -599,8 +647,11 @@ const EVENTOS = [
   { id: 'p2024', era: 5, y: '2024', s: 2024, n: 'cotejar',
     t: '222 habitantes',
     p: 'Un 64 % menos que en 1950.',
-    ilu: { src: 'img/prov/p2024.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* No hay facsímil del papel, pero sí del terreno: la imagen enseña
+       lo que el documento midió o contó. */
+    img: { src: 'img/doc/p2024.jpg', w: 1400, h: 1370,
+      alt: 'Ortofoto aérea en color del término entero, con una línea amarilla que marca el límite y una roja la raya con Quiruelas; rotulados, Quiruelas de Vidriales, Colinas de Trasmonte y Vecilla de Trasmonte.',
+      cap: 'El término hoy, con el mismo encuadre que la foto de 1956 y el mismo límite superpuesto. Donde había cientos de tiras hay ahora <b>parcelas grandes y caminos rectos</b>. <span class="mono">Ortofoto: IGN / CNIG, PNOA 2023 · límite reconstruido por el proyecto</span>' },
     tr: 'portada',
     f: 'Padrón municipal (INE), pendiente de cotejo' },
 
@@ -653,7 +704,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.31';
+const VERSION = '0.32';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -667,6 +718,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.32', f: '26 de septiembre de 2026', t: 'Ninguna foto en el cajón',
+    c: [
+      '<b>Diecisiete entradas más enseñan su imagen</b>: la plana del BOE o de la Gaceta donde el pueblo está escrito, el plano de la concentración, el mapa viejo con sus veredas y el término visto desde el aire en 1956, en 1973 y hoy.',
+      'Cinco de esas planas <b>no estaban descargadas</b> —el escalafón del maestro, el camino vecinal, la demarcación de juzgados, la unidad mínima y la escuela—: el propio proyecto tenía apuntada su dirección desde hacía días.',
+      'Quedan catorce entradas con trama, y <b>de ninguna de ellas hay una imagen en el archivo</b>: son legajos sin pedir, diplomas que sólo viven en una copia del XVII, o cifras.'
+    ],
+    p: 'De sesenta y una entradas, cuarenta y cinco enseñan ya un documento, un retrato o una fotografía.' },
   { v: '0.31', f: '26 de septiembre de 2026', t: 'El término desde el aire',
     c: [
       '<b>La entrada del vuelo americano enseña ya la fotografía</b>: el término entero en 1956, partido en tiras largas y estrechas, con el límite superpuesto y la raya con Quiruelas que dejó de existir en 1972.',

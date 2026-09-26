@@ -13,6 +13,35 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.32 — 26 de septiembre de 2026
+### Ninguna foto en el cajón
+
+- **Diecisiete entradas dejan la trama y enseñan imagen.** Doce son **la plana oficial donde
+  el pueblo está escrito** —la Gaceta que nombra cura a don Pedro Ramos, el asiento de la
+  venta de los propios, el distrito electoral, el escalafón con Valentín Rodríguez en el
+  número 76, el camino vecinal, la demarcación de juzgados, la escuela mixta, el decreto de
+  concentración, los setenta y dos titulares finca a finca, el decreto que disuelve el
+  municipio y la orden que manda el archivo a Quiruelas—, más la metodología del INE que
+  descalifica el censo de 1842.
+- Las otras cinco son **terreno**: el plano del IRYDA de 1975 con todas las fincas dibujadas,
+  la comparación de los tres vuelos, el casco en 1956 y hoy, el término en 2023 y el MTN50 de
+  primera edición —donde siguen rotuladas **«Vereda» y «Vereda del ganado»**, que es lo que
+  el expediente de 1863, no digitalizado, fue a medir—.
+- ⚠️ **Cinco de esas planas no estaban descargadas.** El escalafón de 1894, los caminos de
+  1905, los juzgados de 1945, la unidad mínima de 1958 y las escuelas de 1959 estaban leídos,
+  citados y verificados, pero el PDF no se había guardado. La dirección exacta la tenía el
+  propio proyecto en su vaciado de la Gazeta. Ya están en
+  [`boe-gazeta/facsimil/`](docs/01-fuentes-primarias/boe-gazeta/facsimil/), y el índice de
+  facsímiles lo dice.
+- **Cada plana se ve entera**, con su referencia al pie: lo que prueba es el renglón, y el
+  renglón vive en su página.
+- **Quedan catorce entradas con trama.** De ninguna hay imagen en el archivo: cinco son
+  diplomas medievales que sólo viven en una copia del siglo XVII, dos son legajos de la
+  Chancillería que nadie ha pedido, y el resto son cifras, un archivo que ardió o —en el caso
+  de 1976— una entrada que el proyecto ha decidido no ilustrar.
+
+---
+
 ## v0.31 — 26 de septiembre de 2026
 ### El término desde el aire
 
