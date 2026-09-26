@@ -49,7 +49,13 @@ Románico en Castilla y León* de la **Fundación Santa María la Real**.
    ✅ **Hecho para los once retratos de contexto** (26-IX-2026): autor, obra, licencia y
    enlace a Commons van escritos en el pie de la propia imagen, y en
    [`docs/03-archivos/retratos-commons.tsv`](docs/03-archivos/retratos-commons.tsv).
-   ⚠️ **Pendiente para los seis facsímiles y la ilustración de 1006.**
+   ⚠️ **Pendiente para los seis facsímiles.** (La ilustración de 1006 ya no se publica:
+   las ilustraciones interpretadas están apagadas desde v0.27.)
+   ⚠️ **El retrato del conde de Aranda no viene de Commons.** Es un detalle del que pintó
+   **Ramón Bayeu en 1769** —Museo de Huesca, sala 7—, tomado de la reproducción publicada
+   por *El Pirineo Aragonés* el 21-VIII-2020. **La pintura está en dominio público; las
+   condiciones de esa reproducción no constan.** Hay que pedirle al museo una imagen con
+   sus términos, o volver a la de Commons, que es la misma obra a 435 px.
 2. **Comprobar las condiciones de reutilización** de cada archivo, una por una. Aquí se han agrupado
    por sentido común, y el sentido común **no es una licencia**: PARES, el IGN, el Catastro y el INE
    tienen cada uno sus términos, y no se han leído uno a uno. ⚠️ **Está sin verificar.**

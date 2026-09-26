@@ -13,6 +13,31 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.27 — 26 de septiembre de 2026
+### El Aranda que sí lo vio
+
+- **El retrato del conde de Aranda cambia.** Sale la copia decimonónica de Jover sobre el
+  original de Inza, y entra un detalle del retrato que le encargó la Universidad Sertoriana
+  a **Ramón Bayeu en 1769** —un año después del recuento que lleva su nombre—, óleo de
+  276 × 196 cm hoy en la sala 7 del **Museo de Huesca**. Es del natural y casi
+  contemporáneo del papel que cuenta la entrada.
+- ⚠️ **La reproducción no viene de Commons** y no declara condiciones de reutilización: se
+  ha tomado de *El Pirineo Aragonés*, 21-VIII-2020. La pintura está en dominio público
+  —Bayeu murió en 1793—; la fotografía, no consta. Queda dicho en el pie de la lámina, en
+  la hoja de créditos y en [`CREDITOS.md`](CREDITOS.md), y lo limpio sería pedirle al museo
+  una imagen con sus términos.
+- El generador deja de buscarlo en Commons: los retratos que **no** vienen de allí van en
+  una lista aparte que escribe igual su fila de crédito, para que regenerar la hoja no
+  borre la procedencia.
+- **Las ilustraciones interpretadas dejan de publicarse.** La única que había —la abadesa
+  de 1006 y su comunidad— sigue en los datos con su pie y su aviso, pero no sale en la web.
+  Todo lo que dibuja pasa ahora por una sola puerta, `ILUSTRACIONES_VISIBLES`: apagarlas es
+  una palabra, no una poda, y volver también.
+- **Las imágenes provisionales se quedan.** No interpretan nada: son tramas que marcan el
+  hueco de lo que falta.
+
+---
+
 ## v0.26 — 26 de septiembre de 2026
 ### Cinco caras más
 

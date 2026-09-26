@@ -278,9 +278,9 @@ const EVENTOS = [
     nota: 'El documento dice <b>«San Juan» a secas</b>: el «Bautista» lo añade Madoz. Y San Juan es advocación corriente en el valle —tres parroquias de veintitrés—, así que el nombre no distingue nada: le quita al topónimo San Juan del término todo valor como indicio. La fecha de la relación, «en 1.º de noviembre de 1768», lleva [?].',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
-    img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 1865, ctx: true,
-      alt: 'Retrato del conde de Aranda con casaca azul bordada y banda roja, sobre una cartela con su título.',
-      cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>No es un retrato del natural</b>: es una copia decimonónica, de hacia 1878, del que pintó Joaquín Inza. <span class="mono">Francisco Jover y Casanova · Museo del Prado, P003445 · Wikimedia Commons, dominio público</span>' },
+    img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 913, ctx: true,
+      alt: 'Detalle de un retrato al óleo del siglo XVIII: un hombre con peluca blanca, casaca azul bordada en oro y faja rosa, con bastón de mando; a un lado un globo terráqueo, y al fondo una columna y un paisaje.',
+      cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>Se lo pintan del natural al año siguiente</b>, en 1769, por encargo de la Universidad Sertoriana de Huesca. <span class="mono">Ramón Bayeu, 1769 · Museo de Huesca, sala 7 (detalle) · reproducción de El Pirineo Aragonés, 21-VIII-2020</span>' },
     tr: 'portada',
     f: 'INE, Censo de Aranda, obispado de Astorga, asiento 173, R.A.H. 01-181' },
 
@@ -620,14 +620,27 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.26';
+const VERSION = '0.27';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
    queda entero: ponlo en true y vuelve, marcas, arrastre y rótulo. */
 const RAIL_VISIBLE = false;
+/* Las ilustraciones interpretadas —las que dibujan lo que ningún documento
+   enseña— no salen en la web mientras se decide qué papel tienen en un
+   proyecto que se sostiene sobre pruebas. No se borran: siguen en los datos,
+   con su pie y su aviso, y vuelven poniendo esto en true. Una imagen
+   provisional no interpreta nada, así que ésas se quedan. */
+const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.27', f: '26 de septiembre de 2026', t: 'El Aranda que sí lo vio',
+    c: [
+      '<b>El retrato de 1768 cambia</b>: se va la copia decimonónica y entra el que le pintó Ramón Bayeu <b>en 1769, un año después del recuento</b>, hoy en el Museo de Huesca. Del natural, y casi contemporáneo del papel.',
+      '<b>Las ilustraciones interpretadas dejan de salir en la web.</b> La de 1006 —la abadesa y su comunidad— sigue en los datos, con su aviso y su pie; simplemente no se publica mientras se decide qué sitio tiene un dibujo en una página que sólo enseña pruebas.',
+      'Las <b>imágenes provisionales se quedan</b>: son tramas, no interpretan nada, y marcan el hueco de lo que falta.'
+    ],
+    p: 'La pintura de Bayeu está en dominio público; de la reproducción no constan las condiciones, y queda anotado en CRÉDITOS junto a lo demás que falta comprobar.' },
   { v: '0.26', f: '26 de septiembre de 2026', t: 'Cinco caras más',
     c: [
       '<b>Cinco entradas que estaban con imagen provisional tienen ya retrato de contexto</b>: Bermudo II, Alfonso VII, Javier de Burgos, Pascual Madoz y el XII duque de Osuna. Con los seis de antes, once.',

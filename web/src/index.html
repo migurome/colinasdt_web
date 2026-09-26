@@ -1166,9 +1166,9 @@ const EVENTOS = [
     nota: 'El documento dice <b>«San Juan» a secas</b>: el «Bautista» lo añade Madoz. Y San Juan es advocación corriente en el valle —tres parroquias de veintitrés—, así que el nombre no distingue nada: le quita al topónimo San Juan del término todo valor como indicio. La fecha de la relación, «en 1.º de noviembre de 1768», lleva [?].',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
-    img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 1865, ctx: true,
-      alt: 'Retrato del conde de Aranda con casaca azul bordada y banda roja, sobre una cartela con su título.',
-      cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>No es un retrato del natural</b>: es una copia decimonónica, de hacia 1878, del que pintó Joaquín Inza. <span class="mono">Francisco Jover y Casanova · Museo del Prado, P003445 · Wikimedia Commons, dominio público</span>' },
+    img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 913, ctx: true,
+      alt: 'Detalle de un retrato al óleo del siglo XVIII: un hombre con peluca blanca, casaca azul bordada en oro y faja rosa, con bastón de mando; a un lado un globo terráqueo, y al fondo una columna y un paisaje.',
+      cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>Se lo pintan del natural al año siguiente</b>, en 1769, por encargo de la Universidad Sertoriana de Huesca. <span class="mono">Ramón Bayeu, 1769 · Museo de Huesca, sala 7 (detalle) · reproducción de El Pirineo Aragonés, 21-VIII-2020</span>' },
     tr: 'portada',
     f: 'INE, Censo de Aranda, obispado de Astorga, asiento 173, R.A.H. 01-181' },
 
@@ -1508,14 +1508,27 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.26';
+const VERSION = '0.27';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
    queda entero: ponlo en true y vuelve, marcas, arrastre y rótulo. */
 const RAIL_VISIBLE = false;
+/* Las ilustraciones interpretadas —las que dibujan lo que ningún documento
+   enseña— no salen en la web mientras se decide qué papel tienen en un
+   proyecto que se sostiene sobre pruebas. No se borran: siguen en los datos,
+   con su pie y su aviso, y vuelven poniendo esto en true. Una imagen
+   provisional no interpreta nada, así que ésas se quedan. */
+const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.27', f: '26 de septiembre de 2026', t: 'El Aranda que sí lo vio',
+    c: [
+      '<b>El retrato de 1768 cambia</b>: se va la copia decimonónica y entra el que le pintó Ramón Bayeu <b>en 1769, un año después del recuento</b>, hoy en el Museo de Huesca. Del natural, y casi contemporáneo del papel.',
+      '<b>Las ilustraciones interpretadas dejan de salir en la web.</b> La de 1006 —la abadesa y su comunidad— sigue en los datos, con su aviso y su pie; simplemente no se publica mientras se decide qué sitio tiene un dibujo en una página que sólo enseña pruebas.',
+      'Las <b>imágenes provisionales se quedan</b>: son tramas, no interpretan nada, y marcan el hueco de lo que falta.'
+    ],
+    p: 'La pintura de Bayeu está en dominio público; de la reproducción no constan las condiciones, y queda anotado en CRÉDITOS junto a lo demás que falta comprobar.' },
   { v: '0.26', f: '26 de septiembre de 2026', t: 'Cinco caras más',
     c: [
       '<b>Cinco entradas que estaban con imagen provisional tienen ya retrato de contexto</b>: Bermudo II, Alfonso VII, Javier de Burgos, Pascual Madoz y el XII duque de Osuna. Con los seis de antes, once.',
@@ -1771,6 +1784,10 @@ const VERSIONES = [
 
   const reales = EVENTOS.filter((e) => !e.sil);
   const eraDe = (id) => ERAS.find((x) => x.id === id);
+  /* Una ilustración interpretada sólo sale si el proyecto la deja salir; una
+     imagen provisional no interpreta nada y sale siempre. Todo lo que dibuja
+     pasa por aquí, para que apagarlas sea una palabra y no una poda. */
+  const iluDe = (e) => (e.ilu && (ILUSTRACIONES_VISIBLES || e.ilu.prov)) ? e.ilu : null;
 
   /* ═══════════ 1. Línea temporal — modo documento ═══════════ */
   const tl = $('#tl');
@@ -1790,10 +1807,11 @@ const VERSIONES = [
         e.img.ctx ? '<b>Retrato de contexto.</b> ' : ''}${e.img.cap}</figcaption></figure>`
       : '';
     /* la ilustracion nunca se presenta como el facsimil: el pie la separa */
-    if (e.ilu) {
-      fig += `<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
-        e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
-        e.ilu.cap} ${esc(e.ilu.gen || '')}</figcaption></figure>`;
+    const il = iluDe(e);
+    if (il) {
+      fig += `<figure class="ev-fig ev-ilu"><img src="${il.src}" width="${il.w}" height="${
+        il.h}" loading="lazy" alt="${esc(il.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
+        il.cap} ${esc(il.gen || '')}</figcaption></figure>`;
     }
     html += `<li class="ev" id="ev-${e.id}" data-n="${e.n}" data-era="${e.era}">
       <div class="ev-when"><span class="ev-year">${e.y}</span>${e.d ? `<span class="ev-date">${e.d}</span>` : ''}</div>
@@ -1951,12 +1969,13 @@ const VERSIONES = [
             e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${ct}${e.img.cap}</figcaption></figure>`
           : `<p class="fuente pie-ilu">${ct}${e.img.cap}</p>`);
       }
-      if (e.ilu && !e.ilu.prov) {
+      const il = iluDe(e);
+      if (il && !il.prov) {
         B.push(caja
-          ? `<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
-            e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
-            e.ilu.cap}</figcaption></figure>`
-          : `<p class="fuente pie-ilu"><b>Ilustración interpretada.</b> ${e.ilu.cap}</p>`);
+          ? `<figure class="ev-fig ev-ilu"><img src="${il.src}" width="${il.w}" height="${
+            il.h}" loading="lazy" alt="${esc(il.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
+            il.cap}</figcaption></figure>`
+          : `<p class="fuente pie-ilu"><b>Ilustración interpretada.</b> ${il.cap}</p>`);
       }
       if (e.nota) B.push(`<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>`);
       return B;
@@ -1988,10 +2007,10 @@ const VERSIONES = [
     /* Se elige entrada por entrada. Si no es 'caja', la imagen pasa a ser el
        fondo de la lamina y su pie baja al texto: la referencia no se pierde. */
     trato(e) {
-      return (e.ilu || e.img) ? (e.tr || 'caja') : 'caja';
+      return (iluDe(e) || e.img) ? (e.tr || 'caja') : 'caja';
     },
     capa(e, primera) {
-      const im = e.ilu || e.img;
+      const im = iluDe(e) || e.img;
       if (!im || this.trato(e) === 'caja') return '';
       const pos = e.pos ? ` style="object-position:${e.pos}"` : '';
       return `<div class="ilu"><img src="${im.src}" width="${im.w}" height="${
@@ -2001,7 +2020,8 @@ const VERSIONES = [
       /* La firma de archivo salió de aqui: ocupaba media pantalla y está
          entera en «Las fuentes». Lo que no puede salir es la cautela de que
          un dibujo no es prueba: una lamina se comparte suelta. */
-      const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada')
+      const il = iluDe(e);
+      const t = il ? (il.prov ? 'Imagen provisional' : 'Ilustración interpretada')
         : (e.img && e.img.ctx ? 'Retrato de contexto' : '');
       /* el grado de prueba viaja aqui desde que la banda de arriba se quito */
       const sl = e.n ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : '';
@@ -2023,7 +2043,7 @@ const VERSIONES = [
         /* una lamina de partida con todo dentro; repartir() decide si desborda */
         const tr = this.trato(e);
         /* un documento es papel claro y pide mas velo que una ilustracion */
-        const ct = tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc');
+        const ct = tr === 'caja' ? '' : ' t-' + tr + (iluDe(e) ? '' : ' t-doc');
         const lam = `<section class="lam lam-1${ct}" aria-label="${esc(e.y + ' · ' + e.t)}">${
           this.capa(e, true)}<div class="lam-cuerpo arriba">${
           this.bloques(e).join('')}</div>${this.pie(e)}</section>`;
@@ -2155,7 +2175,8 @@ const VERSIONES = [
            entradas con imagen de verdad —documento, retrato o ilustracion—;
            las provisionales no, que no hay nada que mirar. Va despues del
            reparto para quedar la ultima, detras de las continuaciones. */
-        const solo = (e.ilu && !e.ilu.prov) ? e.ilu : (e.img || null);
+        const il = iluDe(e);
+        const solo = (il && !il.prov) ? il : (e.img || null);
         if (solo) {
           const r = document.createElement('section');
           /* Un documento se ve entero: recortarlo lo deja sin leer. Una pintura
@@ -2185,7 +2206,7 @@ const VERSIONES = [
       const d = document.createElement('section');
       const tr = this.trato(e);
       /* la continuacion no cambia de fondo a media entrada */
-      d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc'));
+      d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr + (iluDe(e) ? '' : ' t-doc'));
       d.setAttribute('aria-label', e.y + ' · continuación');
       d.innerHTML = this.capa(e, false) +
         '<div class="lam-cuerpo arriba"></div>' + this.pie(e);

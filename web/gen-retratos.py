@@ -44,6 +44,7 @@ MIN = 700
 # Sin retrato utilizable, y por eso no estan aqui:
 #   minano  — de Sebastian de Miñano solo hay en Commons un retrato subido
 #             como CC BY-SA, y el proyecto solo usa dominio publico declarado.
+#   aranda1768 — ya no viene de Commons: ver FUERA, aqui debajo.
 RETRATOS = [
     ('bermudo', u'File:Vermudo II no Compendio de crónicas de reyes.jpg',
      u'Bermudo II de León',
@@ -59,8 +60,6 @@ RETRATOS = [
      u'El rey que envía al deán de Salamanca a averiguar qué iglesias son del Real Patronato'),
     ('nuncio1694', u'File:Pope Innocent XII.PNG', u'Inocencio XII',
      u'El papa bajo cuyo pontificado actúa el Nuncio contra el provisor de Astorga'),
-    ('aranda1768', u'File:Pedro Pablo Abarca de Bolea, Count of Aranda.jpg',
-     u'El conde de Aranda', u'El censo de 1768 se ordena bajo su presidencia y lleva su nombre'),
     ('floridablanca', u'File:Goya - José Moñino y Redondo, I conde de Floridablanca.jpg',
      u'El conde de Floridablanca', u'El censo de 1787 se ordena bajo su gobierno y lleva su nombre'),
     # de las dos litografias de la BNE se toma esta, no la de De Craene: en
@@ -75,6 +74,30 @@ RETRATOS = [
      u'(Museo Nacional del Romanticismo de Madrid).JPG',
      u'Mariano Téllez-Girón, XII duque de Osuna',
      u'El titular de la casa cuyo archivo conserva el legajo de 1694'),
+]
+
+
+# Retratos que NO vienen de Commons. El script no los descarga —la imagen ya
+# esta en el repositorio—, pero escribe su fila en la hoja de creditos para que
+# la procedencia no se pierda cada vez que se regenera.
+#
+# El de Aranda se cambio el 26-IX-2026: antes estaba la copia decimononica de
+# Jover, y ahora esta el retrato que le pinto Ramon Bayeu en 1769, un ano
+# despues del recuento. La pintura es de dominio publico; de la reproduccion no
+# consta con que condiciones se publica, y eso queda dicho en su pie de lamina
+# y en CREDITOS.md.
+FUERA = [
+    ['aranda1768', u'El conde de Aranda',
+     u'El censo de 1768 se ordena bajo su presidencia y lleva su nombre',
+     u'— (no procede de Commons)',
+     u'Ramón Bayeu y Subías (1746-1793)',
+     u'Pedro Pablo Abarca de Bolea, X conde de Aranda — óleo, 276 × 196 cm, encargo de la '
+     u'Universidad Sertoriana; Museo de Huesca, sala 7 (detalle)',
+     u'1769',
+     u'obra en dominio público; reproducción con condiciones sin declarar',
+     u'https://elpirineoaragones.com/2020/08/21/san-juan-de-la-pena-recuerda-el-legado-del-x-'
+     u'conde-de-aranda-como-militar-diplomatico-e-industrial-ilustrado/',
+     u'1400x913'],
 ]
 
 
@@ -180,14 +203,15 @@ def main(solo=None):
         for r in filas:
             print(u'  ' + u' | '.join(r[:5]))
         return
-    cab = ['entrada', 'quien', 'por_que_sale', 'fichero_commons', 'autor',
-           'obra', 'fecha_obra', 'licencia', 'pagina_commons', 'tamano']
+    filas += [list(f) for f in FUERA]          # los que no son de Commons
+    cab = ['entrada', 'quien', 'por_que_sale', 'fichero', 'autor',
+           'obra', 'fecha_obra', 'licencia', 'pagina', 'tamano']
     with io.open(CREDITOS, 'w', encoding='utf-8', newline='') as fh:
         fh.write(u'\t'.join(cab) + u'\n')
         for r in filas:
             fh.write(u'\t'.join(x.replace('\t', ' ') for x in r) + u'\n')
-    print(u'\n%d retratos, %d descartados. Créditos en %s'
-          % (len(filas), len(fallos), os.path.relpath(CREDITOS, RAIZ)))
+    print(u'\n%d retratos (%d fuera de Commons), %d descartados. Créditos en %s'
+          % (len(filas), len(FUERA), len(fallos), os.path.relpath(CREDITOS, RAIZ)))
 
 
 if __name__ == '__main__':

@@ -42,6 +42,10 @@
 
   const reales = EVENTOS.filter((e) => !e.sil);
   const eraDe = (id) => ERAS.find((x) => x.id === id);
+  /* Una ilustración interpretada sólo sale si el proyecto la deja salir; una
+     imagen provisional no interpreta nada y sale siempre. Todo lo que dibuja
+     pasa por aquí, para que apagarlas sea una palabra y no una poda. */
+  const iluDe = (e) => (e.ilu && (ILUSTRACIONES_VISIBLES || e.ilu.prov)) ? e.ilu : null;
 
   /* ═══════════ 1. Línea temporal — modo documento ═══════════ */
   const tl = $('#tl');
@@ -61,10 +65,11 @@
         e.img.ctx ? '<b>Retrato de contexto.</b> ' : ''}${e.img.cap}</figcaption></figure>`
       : '';
     /* la ilustracion nunca se presenta como el facsimil: el pie la separa */
-    if (e.ilu) {
-      fig += `<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
-        e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
-        e.ilu.cap} ${esc(e.ilu.gen || '')}</figcaption></figure>`;
+    const il = iluDe(e);
+    if (il) {
+      fig += `<figure class="ev-fig ev-ilu"><img src="${il.src}" width="${il.w}" height="${
+        il.h}" loading="lazy" alt="${esc(il.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
+        il.cap} ${esc(il.gen || '')}</figcaption></figure>`;
     }
     html += `<li class="ev" id="ev-${e.id}" data-n="${e.n}" data-era="${e.era}">
       <div class="ev-when"><span class="ev-year">${e.y}</span>${e.d ? `<span class="ev-date">${e.d}</span>` : ''}</div>
@@ -222,12 +227,13 @@
             e.img.h}" loading="lazy" alt="${esc(e.img.alt)}"><figcaption>${ct}${e.img.cap}</figcaption></figure>`
           : `<p class="fuente pie-ilu">${ct}${e.img.cap}</p>`);
       }
-      if (e.ilu && !e.ilu.prov) {
+      const il = iluDe(e);
+      if (il && !il.prov) {
         B.push(caja
-          ? `<figure class="ev-fig ev-ilu"><img src="${e.ilu.src}" width="${e.ilu.w}" height="${
-            e.ilu.h}" loading="lazy" alt="${esc(e.ilu.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
-            e.ilu.cap}</figcaption></figure>`
-          : `<p class="fuente pie-ilu"><b>Ilustración interpretada.</b> ${e.ilu.cap}</p>`);
+          ? `<figure class="ev-fig ev-ilu"><img src="${il.src}" width="${il.w}" height="${
+            il.h}" loading="lazy" alt="${esc(il.alt)}"><figcaption><b>Ilustración interpretada.</b> ${
+            il.cap}</figcaption></figure>`
+          : `<p class="fuente pie-ilu"><b>Ilustración interpretada.</b> ${il.cap}</p>`);
       }
       if (e.nota) B.push(`<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>`);
       return B;
@@ -259,10 +265,10 @@
     /* Se elige entrada por entrada. Si no es 'caja', la imagen pasa a ser el
        fondo de la lamina y su pie baja al texto: la referencia no se pierde. */
     trato(e) {
-      return (e.ilu || e.img) ? (e.tr || 'caja') : 'caja';
+      return (iluDe(e) || e.img) ? (e.tr || 'caja') : 'caja';
     },
     capa(e, primera) {
-      const im = e.ilu || e.img;
+      const im = iluDe(e) || e.img;
       if (!im || this.trato(e) === 'caja') return '';
       const pos = e.pos ? ` style="object-position:${e.pos}"` : '';
       return `<div class="ilu"><img src="${im.src}" width="${im.w}" height="${
@@ -272,7 +278,8 @@
       /* La firma de archivo salió de aqui: ocupaba media pantalla y está
          entera en «Las fuentes». Lo que no puede salir es la cautela de que
          un dibujo no es prueba: una lamina se comparte suelta. */
-      const t = e.ilu ? (e.ilu.prov ? 'Imagen provisional' : 'Ilustración interpretada')
+      const il = iluDe(e);
+      const t = il ? (il.prov ? 'Imagen provisional' : 'Ilustración interpretada')
         : (e.img && e.img.ctx ? 'Retrato de contexto' : '');
       /* el grado de prueba viaja aqui desde que la banda de arriba se quito */
       const sl = e.n ? `<span class="sello">${mk(e.n)}<span>${NIVELES[e.n].t}</span></span>` : '';
@@ -294,7 +301,7 @@
         /* una lamina de partida con todo dentro; repartir() decide si desborda */
         const tr = this.trato(e);
         /* un documento es papel claro y pide mas velo que una ilustracion */
-        const ct = tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc');
+        const ct = tr === 'caja' ? '' : ' t-' + tr + (iluDe(e) ? '' : ' t-doc');
         const lam = `<section class="lam lam-1${ct}" aria-label="${esc(e.y + ' · ' + e.t)}">${
           this.capa(e, true)}<div class="lam-cuerpo arriba">${
           this.bloques(e).join('')}</div>${this.pie(e)}</section>`;
@@ -426,7 +433,8 @@
            entradas con imagen de verdad —documento, retrato o ilustracion—;
            las provisionales no, que no hay nada que mirar. Va despues del
            reparto para quedar la ultima, detras de las continuaciones. */
-        const solo = (e.ilu && !e.ilu.prov) ? e.ilu : (e.img || null);
+        const il = iluDe(e);
+        const solo = (il && !il.prov) ? il : (e.img || null);
         if (solo) {
           const r = document.createElement('section');
           /* Un documento se ve entero: recortarlo lo deja sin leer. Una pintura
@@ -456,7 +464,7 @@
       const d = document.createElement('section');
       const tr = this.trato(e);
       /* la continuacion no cambia de fondo a media entrada */
-      d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr + (e.ilu ? '' : ' t-doc'));
+      d.className = 'lam lam-cont' + (tr === 'caja' ? '' : ' t-' + tr + (iluDe(e) ? '' : ' t-doc'));
       d.setAttribute('aria-label', e.y + ' · continuación');
       d.innerHTML = this.capa(e, false) +
         '<div class="lam-cuerpo arriba"></div>' + this.pie(e);
