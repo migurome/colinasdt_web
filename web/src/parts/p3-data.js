@@ -715,7 +715,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.37';
+const VERSION = '0.38';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -729,6 +729,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.38', f: '27 de septiembre de 2026', t: 'El feed, con el teléfono tumbado',
+    c: [
+      '<b>Girar el teléfono ya no te echa del feed.</b> Hasta ahora la línea en pantalla completa se encendía por ancho, y un teléfono tumbado mide 850 de ancho: se caía a la vista de documento sobre una pantalla de 390 de alto. Ahora se enciende también por alto.',
+      '<b>Tumbado, la lámina va a dos columnas</b>, con su corondel en medio: cabe lo mismo que de pie y la medida de línea sigue siendo de lectura, en vez de renglones de ochocientos píxeles. Los tamaños se miden en alto, que es lo que escasea.',
+      'Y el <b>retrato tumbado se ve entero</b>, no recortado a una franja: el nombre baja debajo de la foto, en tinta sobre el papel.'
+    ],
+    p: 'Comprobado entrada por entrada, de pie y tumbado: mismo número de láminas y ni una palabra perdida en el reparto.' },
   { v: '0.37', f: '26 de septiembre de 2026', t: 'El ayuntamiento, escrito como se votó',
     c: [
       '<b>Once entradas de 1833 a 1970 cambian de redacción</b> y pasan a la voz elegida: la provincia nueva, Madoz y su monte, el duque de Osuna, el censo de 1857, el distrito, el único sello, el primer maestro con nombre, el juzgado de Santibáñez, el máximo de 625 habitantes, el vuelo americano y la concentración.',

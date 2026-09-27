@@ -399,7 +399,13 @@
         let cuerpo = base.querySelector('.lam-cuerpo');
         cuerpo.innerHTML = '';
         let abiertas = 0;
-        const cabe = () => cuerpo.scrollHeight <= cuerpo.clientHeight + 1;
+        /* Tumbado, el cuerpo va a dos columnas: lo que no cabe se va a una
+           tercera columna que queda fuera de la caja, y eso se ve en el
+           ancho. De pie no hay columnas y la pregunta es la de siempre. */
+        const cc = getComputedStyle(cuerpo).columnCount;
+        const multi = cc !== 'auto' && cc !== '1';
+        const cabe = () => cuerpo.scrollHeight <= cuerpo.clientHeight + 1 &&
+          (!multi || cuerpo.scrollWidth <= cuerpo.clientWidth + 1);
         /* tope de laminas por entrada: antes de perder texto, la lamina rueda */
         const nueva = () => {
           if (abiertas >= 14) return false;
@@ -673,9 +679,12 @@
     }
   };
 
-  /* Conmutación documento ⇄ feed, por ancho de pantalla */
+  /* Conmutacion documento <-> feed. Por ancho, que es el telefono de pie; y
+     por alto, que es el mismo telefono tumbado: 850 de ancho y 390 de alto
+     no es una pantalla de documento, por mucho que mida 850. */
   (function modo() {
-    const mq = window.matchMedia('(max-width: 760px)');
+    const mq = window.matchMedia(
+      '(max-width: 760px), (orientation: landscape) and (max-height: 560px)');
     const sec = $('#linea'), p = $('#linea-p');
     const TXT = {
       doc: 'La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.',
@@ -709,6 +718,14 @@
       if (!Estado.movil) return;
       clearTimeout(tr);
       tr = setTimeout(() => Feed.repartir(), 220);
+    });
+    /* Girar el telefono no cambia el umbral —de pie y tumbado, las dos son
+       feed— pero cambia la caja de arriba abajo: hay que volver a repartir
+       con calma, cuando el navegador ya ha dado las medidas nuevas. */
+    window.addEventListener('orientationchange', () => {
+      if (!Estado.movil) return;
+      clearTimeout(tr);
+      tr = setTimeout(() => Feed.repartir(), 320);
     });
   })();
 

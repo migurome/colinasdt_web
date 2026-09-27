@@ -13,6 +13,36 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.38 — 27 de septiembre de 2026
+### El feed, con el teléfono tumbado
+
+- **Girar el teléfono ya no te echaba del feed, te echaba de la línea.** El modo feed se
+  encendía por ancho —760 píxeles o menos— y un teléfono en horizontal mide 850 o 900 de
+  ancho: se caía a la vista de documento sobre una pantalla de 390 de alto. Ahora el umbral es
+  **`(max-width:760px), (orientation:landscape) and (max-height:560px)`**, el mismo en la hoja
+  de estilo y en el guión, así que no pueden desincronizarse.
+- **Tumbado, el cuerpo de la lámina va a dos columnas**, con su corondel de un píxel en medio.
+  Cabe lo mismo que de pie —comprobado: de una a tres láminas por entrada en las dos
+  orientaciones— y la medida de línea sigue siendo de lectura, en vez de renglones de
+  ochocientos píxeles.
+- Se usa `column-fill: balance`: cuando el texto es corto reparte lo que hay entre las dos
+  columnas en vez de dejar la derecha vacía, y cuando es largo desborda a una tercera columna
+  que queda fuera de la caja. **El reparto mide justo eso**: sigue preguntando si cabe, pero
+  tumbado la respuesta está en el ancho y no en el alto. Nada se parte por el corondel: ni la
+  cabecera, ni una cita, ni una figura.
+- Los tamaños de tipo pasan a medirse en **`vh`**: un título del 9 % del ancho, tumbado, no
+  cabe de alto.
+- **El retrato tumbado se ve entero.** A 390 píxeles de alto, recortarlo al borde no dejaba
+  cara que mirar: ahora se ve completo sobre el papel, y el nombre baja debajo de la foto, en
+  tinta, en lugar de ir sobre una banda oscura de punta a punta. El giro sigue igual.
+- Al girar el aparato se vuelve a repartir: el umbral no cambia —de pie y tumbado son feed—
+  pero la caja cambia de arriba abajo.
+- **Comprobado en un navegador de verdad**, a 844×390 y a 390×844: las sesenta entradas se
+  reparten, ninguna llega al tope de catorce láminas y **no se pierde ni una palabra** por el
+  camino.
+
+---
+
 ## v0.37 — 26 de septiembre de 2026
 ### El ayuntamiento, escrito como se votó
 
