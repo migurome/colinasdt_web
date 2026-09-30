@@ -690,7 +690,24 @@
       doc: 'La escala está dibujada a proporción, así que los huecos son silencios reales de las fuentes. Lleva un corte para que quepa el yacimiento de la Edad del Cobre. Pulsa una marca para ir a su entrada, o filtra por grado de prueba.',
       feed: 'Una entrada por pantalla, entera: desliza hacia arriba para pasar a la siguiente. Sólo cuando no cabe —porque el texto es largo o lleva cita o imagen— continúa al lado.'
     };
+    /* El alto de verdad de la pantalla. La hoja de estilo no lo sabe: `svh`
+       es el alto con la barra del navegador desplegada y `lvh` el alto sin
+       ella, y la pantalla va cambiando entre los dos. Medido de menos, por
+       debajo de la lamina asoma la siguiente; medido de mas, el pie se va
+       debajo de la barra. visualViewport es lo unico que sabe cuanto se ve
+       ahora mismo. */
+    let alto = 0;
+    function medirAlto() {
+      const vv = window.visualViewport;
+      const h = Math.round(vv ? vv.height : window.innerHeight);
+      if (!h || Math.abs(h - alto) < 2) return false;
+      alto = h;
+      document.documentElement.style.setProperty('--alto-feed', h + 'px');
+      return true;
+    }
+
     function ajustar() {
+      medirAlto();
       Estado.movil = mq.matches;
       if (mq.matches) {
         sec.classList.add('feed-on');
@@ -713,19 +730,29 @@
     }
     mq.addEventListener ? mq.addEventListener('change', ajustar) : mq.addListener(ajustar);
     ajustar();
+    /* Cambiar el alto no es solo repartir otra vez: es volver a encajar. Si
+       la lamina crece o mengua sin reencajar, el feed se queda a medio
+       camino entre dos entradas, que es justo lo que se venia viendo. */
     let tr = null;
-    window.addEventListener('resize', () => {
+    function reajustar() {
+      const cambia = medirAlto();
       if (!Estado.movil) return;
-      clearTimeout(tr);
-      tr = setTimeout(() => Feed.repartir(), 220);
-    });
+      Feed.repartir();
+      if (cambia) requestAnimationFrame(() => Feed.irA(Feed.actual));
+    }
+    const refrescar = (ms) => { clearTimeout(tr); tr = setTimeout(reajustar, ms); };
+    window.addEventListener('resize', () => refrescar(200));
+    /* La barra del navegador al esconderse no dispara `resize` en todos los
+       telefonos, pero si mueve el visualViewport: es el aviso mas fiable. */
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', () => refrescar(160));
+    }
     /* Girar el telefono no cambia el umbral —de pie y tumbado, las dos son
-       feed— pero cambia la caja de arriba abajo: hay que volver a repartir
-       con calma, cuando el navegador ya ha dado las medidas nuevas. */
+       feed— pero cambia la caja de arriba abajo, y el alto tarda un momento
+       en asentarse: se mide con calma, y dos veces. */
     window.addEventListener('orientationchange', () => {
-      if (!Estado.movil) return;
-      clearTimeout(tr);
-      tr = setTimeout(() => Feed.repartir(), 320);
+      refrescar(320);
+      setTimeout(reajustar, 700);
     });
   })();
 

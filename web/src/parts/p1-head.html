@@ -429,8 +429,15 @@ summary:hover{color:var(--almagre)}
   .sec.feed-on .tl,
   .vista-on .lede.vacia{display:none}
   .sec.feed-on{padding:0;border-top:0}
-  .sec.feed-on .feed-wrap{display:block;position:fixed;inset:0;z-index:10;
-    height:100svh;background:var(--papel)}
+  /* El alto lo pone el guión, medido sobre la pantalla de verdad: con la
+     barra del navegador entrando y saliendo, `svh` se queda corto —y por
+     debajo asoma la lámina siguiente— y `lvh` se pasa. Los dos valores de
+     antes se quedan como respaldo para el primer pintado.
+     Sin `bottom`: con un alto explícito, tener los cuatro lados puestos es
+     pedirle al navegador que decida cuál se salta. */
+  .sec.feed-on .feed-wrap{display:block;position:fixed;top:0;left:0;right:0;z-index:10;
+    height:100svh;height:100dvh;height:var(--alto-feed,100dvh);
+    background:var(--papel);overscroll-behavior:none}
 
   /* la portada, como primera lámina */
   .post-portada .lam{padding-top:clamp(26px,9vw,52px);grid-template-rows:minmax(0,1fr) auto}
@@ -655,8 +662,11 @@ summary:hover{color:var(--almagre)}
    que aprende es que, en dos columnas, el desbordamiento se ve en el ancho.
    ═══════════════════════════════════════════════════════════════════ */
 @media (orientation:landscape) and (max-height:560px){
-  .lam{padding:14px 22px 8px;gap:7px}
-  .puntos{top:7px;left:22px}
+  /* Tumbado, la muesca y la barra de gestos se comen un lado entero: el
+     texto se aparta de ellas y no al revés. */
+  .lam{padding:14px max(22px,env(safe-area-inset-right)) 8px
+       max(22px,env(safe-area-inset-left));gap:7px}
+  .puntos{top:7px;left:max(22px,env(safe-area-inset-left))}
 
   /* `balance` y no `auto`: cuando el texto es corto reparte lo que hay entre
      las dos columnas en vez de dejar la derecha vacia, y cuando es largo

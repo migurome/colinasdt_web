@@ -715,7 +715,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.38';
+const VERSION = '0.39';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -729,6 +729,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.39', f: '30 de septiembre de 2026', t: 'La lámina mide lo que se ve',
+    c: [
+      '<b>Ya no asoma por abajo la entrada siguiente.</b> La lámina se medía con el alto de pantalla que da la hoja de estilo, y ese alto no es el que se ve: cuando la barra del navegador se esconde —en horizontal, enseguida— la pantalla crece y la lámina se queda corta.',
+      'Ahora el alto lo mide el propio guión sobre la pantalla de verdad, y lo vuelve a medir cada vez que cambia: al girar el teléfono y al aparecer o esconderse la barra. Y no sólo mide: <b>vuelve a encajar la lámina</b>, para que no se quede a medio camino entre dos entradas.',
+      'Tumbado, el texto se aparta además de la muesca y de la barra de gestos, que en horizontal se comen un lado entero.'
+    ],
+    p: 'Comprobado con la barra del navegador entrando y saliendo: la lámina mide lo que se ve, ni un píxel más.' },
   { v: '0.38', f: '27 de septiembre de 2026', t: 'El feed, con el teléfono tumbado',
     c: [
       '<b>Girar el teléfono ya no te echa del feed.</b> Hasta ahora la línea en pantalla completa se encendía por ancho, y un teléfono tumbado mide 850 de ancho: se caía a la vista de documento sobre una pantalla de 390 de alto. Ahora se enciende también por alto.',

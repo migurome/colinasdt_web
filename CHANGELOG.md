@@ -13,6 +13,31 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.39 — 30 de septiembre de 2026
+### La lámina mide lo que se ve
+
+- **Por debajo de la lámina asomaba la entrada siguiente.** El feed medía su alto en `svh`,
+  que es el alto **más pequeño** que puede tener la ventana: el que queda con la barra del
+  navegador desplegada. En cuanto la barra se esconde —y tumbado se esconde enseguida— la
+  pantalla es más alta que la lámina, y el hueco lo ocupa la entrada de abajo.
+- **Ahora el alto lo mide el guión**, con `visualViewport`, que es lo único que sabe cuánto se
+  ve ahora mismo, y lo publica en una variable que usa la hoja de estilo. `dvh` y `svh` se
+  quedan de respaldo para el primer pintado y para quien no entienda ninguno de los dos.
+- Se vuelve a medir **al girar el aparato y cuando la barra aparece o se esconde** —el aviso
+  fiable no es `resize`, que no todos los teléfonos disparan, sino el del `visualViewport`—.
+  Y al cambiar el alto no basta con repartir otra vez: **el feed vuelve a encajar** en la
+  entrada que estaba, para no quedarse a medio camino entre dos.
+- La caja del feed deja de tener los cuatro lados puestos a la vez con un alto explícito, que
+  era pedirle al navegador que decidiera cuál se saltaba.
+- **Tumbado, el texto se aparta de la muesca y de la barra de gestos**, que en horizontal se
+  comen un lado entero: los márgenes de la lámina toman el mayor entre los 22 píxeles de
+  siempre y lo que pida la pantalla.
+- Comprobado en un navegador de verdad, a 844×390 y a 390×844, fingiendo que la barra se
+  esconde: **la caja y la lámina siguen al alto visible al píxel**, y el reparto sigue sin
+  perder ni una palabra.
+
+---
+
 ## v0.38 — 27 de septiembre de 2026
 ### El feed, con el teléfono tumbado
 
