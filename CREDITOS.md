@@ -142,8 +142,10 @@ comprobación del límite catastral sobre el MTN50 está en el archivo del proye
    los dos artículos de 1993 llevan ya autor, artículo, revista, figura, página y vía —ISSN o
    Dialnet—; el folio del Catastro, su signatura del AGS y PARES; y la impronta del sello, la
    del AHN. **Ninguna imagen publicada se queda sin firma al pie**: comprobado sobre los datos,
-   45 de 45. (La ilustración de 1006 no se publica: las ilustraciones interpretadas están
-   apagadas desde v0.27.)
+   45 de 45. (Las **tres ilustraciones interpretadas** —la abadesa de 1006, el campamento de
+   Petavonium y la villa de 1073— **no se publican**: están apagadas desde v0.27, a la
+   espera de decidir qué papel tienen. Cada una lleva ya en los datos su pie, su aviso y
+   la máquina con que se generó, para que encenderlas no exija escribir nada.)
    ⚠️ **El retrato del conde de Aranda no viene de Commons.** Es un detalle del que pintó
    **Ramón Bayeu en 1769** —Museo de Huesca, sala 7—, tomado de la reproducción publicada
    por *El Pirineo Aragonés* el 21-VIII-2020. **La pintura está en dominio público; las

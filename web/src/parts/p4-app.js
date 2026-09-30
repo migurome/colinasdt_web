@@ -44,8 +44,14 @@
   const eraDe = (id) => ERAS.find((x) => x.id === id);
   /* Una ilustración interpretada sólo sale si el proyecto la deja salir; una
      imagen provisional no interpreta nada y sale siempre. Todo lo que dibuja
-     pasa por aquí, para que apagarlas sea una palabra y no una poda. */
-  const iluDe = (e) => (e.ilu && (ILUSTRACIONES_VISIBLES || e.ilu.prov)) ? e.ilu : null;
+     pasa por aquí, para que apagarlas sea una palabra y no una poda.
+     Y apagar tampoco deja el hueco en blanco: si la entrada tenía trama, la
+     ilustración la lleva dentro y la trama vuelve a su sitio. */
+  const iluDe = (e) => {
+    if (!e.ilu) return null;
+    if (ILUSTRACIONES_VISIBLES || e.ilu.prov) return e.ilu;
+    return e.ilu.trama || null;
+  };
 
   /* ═══════════ 1. Línea temporal — modo documento ═══════════ */
   const tl = $('#tl');

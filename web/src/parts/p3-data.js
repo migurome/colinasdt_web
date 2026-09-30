@@ -28,8 +28,14 @@ const EVENTOS = [
   { id: 'petavonium', era: 1, y: '19 a.C.', s: -19, n: 'contexto',
     t: 'Petavonium, a quince kilómetros',
     p: 'Campamento de la Legio X Gemina en Rosinos de Vidriales, y después del Ala II Flavia, hasta mediados del siglo III. No es Colinas: es el mundo romano que la rodea, y así hay que contarlo.',
-    ilu: { src: 'img/prov/petavonium.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* No es un facsímil ni una foto: es una ilustración interpretada, y de un
+       sitio que no es Colinas. El pie tiene que decir las dos cosas. */
+    ilu: { src: 'img/petavonium-19ac.jpg', w: 1400, h: 933,
+      alt: 'Ilustración interpretada: un campamento romano amurallado visto desde un alto, con barracones alineados, plaza de armas y caballerizas, y en primer término jinetes con un estandarte.',
+      cap: 'El campamento de Petavonium, en Rosinos de Vidriales, dibujado con lo que se sabe de un campamento de ala de caballería: recinto, barracones, plaza y cuadras. <b>Ni la planta, ni los edificios, ni el estandarte que se ve a la izquierda constan en fuente alguna</b>; la unidad que estuvo aquí se llamó <i>Ala II Flavia Hispanorum civium Romanorum</i>. Y no es Colinas: es lo que había a quince kilómetros.',
+      gen: 'Generada con ChatGPT el 26-IX-2026',
+      trama: { src: 'img/prov/petavonium.jpg', w: 1000, h: 667, prov: true,
+        alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' } },
     tr: 'portada',
     f: 'Contexto regional · inventario, §9' },
 
@@ -106,8 +112,14 @@ const EVENTOS = [
     q: '«uilla que dicunt Colinas, in riba de Teira»',
     p: '<i>uilla que dicunt Colinas.</i>|Cuatro palabras en un diploma de la catedral de León, puestas ahí para situar otra propiedad que sí importaba.|<b>Es la primera vez que el nombre existe por escrito.</b> 1073.|De los dos nombres que van a convivir un tiempo, Castroferrol acabará en despoblado. Colinas sigue ahí.',
     nota: 'La cita viene de un artículo, no del facsímil: falta ir al diploma 1186 de la colección de la catedral de León y verlo con los propios ojos. Y el documento escribe <b>«Colinas» a secas</b>: el «de Trasmonte» no está ahí.',
-    ilu: { src: 'img/prov/d1073.jpg', w: 1000, h: 667, prov: true,
-      alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
+    /* El diploma dice cinco palabras: una villa, junto al Tera. Lo demás de
+       esta lámina lo pone el dibujo, y el pie lo dice. */
+    ilu: { src: 'img/colinas-1073.jpg', w: 1400, h: 933,
+      alt: 'Ilustración interpretada: un valle al atardecer con un pequeño caserío de casas de piedra y paja, tierras de labor en franjas y un río que se pierde hacia el horizonte.',
+      cap: 'La villa junto al río, que es exactamente lo que el diploma dice y nada más: «uilla que dicunt Colinas, in riba de Teira». <b>Ni el número de casas, ni su forma, ni el reparto de las tierras constan en fuente alguna</b>: de 1073 no se conserva en este término ni una piedra fechada.',
+      gen: 'Generada con ChatGPT el 25-IX-2026',
+      trama: { src: 'img/prov/d1073.jpg', w: 1000, h: 667, prov: true,
+        alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' } },
     tr: 'portada',
     f: 'RUIZ ASENCIO, Col. doc. de la catedral de León, IV (1032-1109), León 1989, doc. 1186 · cit. GONZÁLEZ RODRÍGUEZ, Brigecio 17 (2007)' },
 
@@ -715,7 +727,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.42';
+const VERSION = '0.43';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -729,6 +741,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.43', f: '30 de septiembre de 2026', t: 'Dos ilustraciones, guardadas y apagadas',
+    c: [
+      'La hoja donde se eligen los textos y las imágenes guardaba <b>dos decisiones sin aplicar</b>: la versión ilustrada del campamento de Petavonium y la de la villa de 1073. Quedan aplicadas, con su pie, su aviso y de qué máquina salen.',
+      '⚠️ <b>Pero no se encienden.</b> Desde v0.27 este proyecto no publica ilustraciones interpretadas —las que dibujan lo que ningún documento enseña— mientras no se decida qué papel tienen en una web que se sostiene sobre pruebas. <b>Esa decisión sigue sin tomarse</b>, y una imagen bonita no la toma por nadie.',
+      'Sí se arregla algo que estaba mal pensado: apagar una ilustración dejaba el hueco en blanco. Ahora <b>cada ilustración lleva su trama dentro</b>, y si no sale, vuelve la trama. Apagarlas sigue siendo una palabra; encenderlas, también.'
+    ],
+    p: 'Se guarda lo elegido y se respeta la regla: dos cosas que no tenían por qué estorbarse.' },
   { v: '0.42', f: '30 de septiembre de 2026', t: 'Colinas, la primera de la lista',
     c: [
       'Leído ya <b>entero</b> el original de 1694 —las treinta y seis planas, una por una—, resulta que la copia de 1842 <b>no lo copiaba todo</b>. El legajo no lleva un despacho: lleva <b>tres</b>. El de enero manda; el de <b>10 de mayo</b> repite porque el de enero no bastó; y el del <b>26 de mayo</b> ya no manda.',

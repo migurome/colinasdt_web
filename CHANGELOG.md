@@ -13,6 +13,28 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.43 — 30 de septiembre de 2026
+### Dos ilustraciones, guardadas y apagadas
+
+La hoja de las entradas —donde se eligen textos e imágenes— guardaba **dos decisiones tomadas y
+sin aplicar**. Se aplican.
+
+- **Petavonium** y **la villa de 1073** dejan de tener sólo trama provisional: cada una lleva ya
+  su **ilustración interpretada** en los datos, con `alt`, con pie que dice **qué consta y qué no**
+  —en Petavonium, ni la planta ni el estandarte; en 1073, ni el número de casas ni las tierras—
+  y con la máquina y la fecha en que se generaron.
+- ⚠️ **No se encienden.** `ILUSTRACIONES_VISIBLES` sigue en `false` desde v0.27: el proyecto no
+  publica ilustraciones interpretadas **mientras no decida qué papel tienen**, y esa decisión no
+  la toma un commit. **En la web no cambia nada visible.**
+- **Se arregla, eso sí, un defecto del interruptor.** Apagar una ilustración dejaba el hueco en
+  blanco en las entradas que antes tenían trama. Ahora **cada ilustración lleva su trama dentro**
+  y `iluDe()` la devuelve cuando la puerta está cerrada: apagar vuelve a ser una palabra y no una
+  poda, en los dos sentidos.
+- Entra al repositorio la última imagen generada que estaba suelta, y
+  [`CREDITOS.md`](CREDITOS.md) pasa a decir **tres** ilustraciones apagadas donde decía una.
+
+---
+
 ## v0.42 — 30 de septiembre de 2026
 ### Colinas, la primera de la lista
 
