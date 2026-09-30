@@ -13,6 +13,40 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.40 — 30 de septiembre de 2026
+### Las licencias, leídas
+
+Dos deudas que el propio proyecto tenía apuntadas en
+[`CREDITOS.md`](CREDITOS.md), y que no dependían de nadie más.
+
+- **Los seis facsímiles antiguos ya llevan firma completa al pie.** Eran los últimos con pie
+  pero sin signatura: las cuatro figuras de los dos artículos de 1993 —ahora con autor,
+  artículo, revista, número de figura, página y vía, ISSN o Dialnet—, el folio 372 del Catastro
+  de Ensenada —AGS, libro 654, por PARES— y la impronta del sello de 1876 —AHN,
+  SIGIL-TINTA_ZAMORA,20,N.31—. Comprobado sobre los datos: **45 de 45 imágenes publicadas
+  llevan firma**.
+- **Leídas las condiciones de reutilización de los cuatro archivos**, una por una, y escritas
+  en CREDITOS.md con su enlace y su fecha de consulta: PARES, el IGN y el CNIG, el INE y el
+  Catastro. El fichero decía que se habían agrupado «por sentido común» y que «el sentido
+  común no es una licencia». Tenía razón.
+- ⚠️ **Una no se cumplía.** La licencia del IGN —Orden FOM/2807/2015, CC-BY 4.0— no pide una
+  mención genérica: pide una **fórmula**, «`<identificador del producto> <fecha> CC-BY 4.0
+  <atribución de productores>`», y pide que se muestre «visible junto con los datos, de forma
+  legible y a pie de mapa, imagen». Los pies decían «Ortofotos: IGN / CNIG», que menciona el
+  origen y no es la fórmula. **Corregidas las cinco láminas** —1863, 1950, 1956, 1977 y 2024—
+  con los identificadores y las atribuciones de la tabla del Sistema Cartográfico Nacional:
+  `Orto-AMS`, `Orto-Interministerial`, `PNOA` y `MTN50_raster`.
+- Añadida también la fórmula del INE —«Fuente: Sitio web del INE, www.ine.es», CC BY 4.0— al
+  pie de la plana de 1842, la única imagen suya que se publica.
+- **PARES ya se cumplía** —archivo, signatura y mención al Ministerio de Cultura en cada
+  lámina— y **el Catastro no afecta a nada publicado**: su única imagen está en el archivo del
+  proyecto, no en la línea. Queda dicho por si algún día entra.
+- Sigue abierto **el único permiso sin resolver**: las condiciones de la reproducción del
+  retrato de Aranda publicada por *El Pirineo Aragonés*. La pintura está en dominio público; la
+  fotografía de la pintura, no consta.
+
+---
+
 ## v0.39 — 30 de septiembre de 2026
 ### La lámina mide lo que se ve
 

@@ -43,6 +43,89 @@ Románico en Castilla y León* de la **Fundación Santa María la Real**.
 
 ---
 
+## Las cuatro licencias, leídas
+
+Leídas el **30 de septiembre de 2026**, cada una en su propia página. Lo que va entre comillas
+está copiado del texto oficial; lo demás es lectura del proyecto, y se dice cuál es cuál.
+
+### IGN y CNIG — la que no cumplíamos
+
+La licencia se apoya en la **Orden FOM/2807/2015**, cuyo artículo 4 dice, literalmente, que el
+uso de los productos de datos geográficos digitales «tendrá carácter libre y gratuito, siempre
+que se mencione el origen y propiedad de los datos, con el alcance y forma que autorice la
+licencia de uso correspondiente». Esa licencia es **CC-BY 4.0**, y el reconocimiento **tiene
+fórmula**:
+
+> «`<identificador del producto> <fecha> CC-BY 4.0 <atribución de productores>`»
+>
+> «Esta mención de atribución obligatoria se mostrará **visible junto con los datos**, de forma
+> legible y **a pie de mapa, imagen**, presentación o ventana de visualización.»
+
+⚠️ **El proyecto no la cumplía.** Los pies decían «Ortofotos: IGN / CNIG — AMS 1956-1957 y
+PNOA 2023», que menciona el origen pero no es la fórmula. Corregido el 30-IX-2026 en las cinco
+láminas que llevan imágenes suyas, con los identificadores y las atribuciones que da la tabla
+de productos del Sistema Cartográfico Nacional:
+
+| Producto | Identificador | Atribución que exige |
+|---|---|---|
+| Vuelo americano, 1956-1957 | `Orto-AMS` | Centro Geográfico del Ejército de Tierra |
+| Vuelo interministerial | `Orto-Interministerial` | Instituto Geográfico Nacional y Comunidades autónomas |
+| Ortofoto actual | `PNOA` | IGN, Fondo Español de Garantía Agraria, Comunidades autónomas y CNIG |
+| Mapa topográfico 1:50.000 | `MTN50_raster` | Instituto Geográfico Nacional |
+
+- Licencia: [`Condiciones_licenciaUso_IGN.pdf`](https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf)
+  · tabla de productos: [scne.es/productos.php](https://www.scne.es/productos.php)
+
+### PARES — Portal de Archivos Españoles
+
+La información descriptiva y las imágenes de **documentos en dominio público** conservados en los
+Archivos Estatales y accesibles por PARES **pueden reproducirse y utilizarse sin permiso previo**,
+con mención al Ministerio de Cultura y cita de la fuente —archivo, signatura, URL—. Lo que **no**
+está en dominio público sólo puede reproducirse para uso privado con fines culturales,
+científicos o educativos.
+
+✅ **El proyecto cumple**: todo lo que viene de PARES —el pleito de los diezmos, las tres
+ejecutorías, el Catastro de Ensenada y el sello de 1876— lleva archivo, signatura y mención en
+el pie de la propia lámina.
+
+- [Aviso legal de PARES](https://pares.cultura.gob.es/comunes/aviso-legal.html)
+
+### INE — Instituto Nacional de Estadística
+
+Autoriza la reutilización, comercial o no, de la información cuya fuente original sea el propio
+INE, con dos condiciones: **no desnaturalizar el sentido** de la información y **citar la
+fuente**. El propio INE da la fórmula: «Fuente: Sitio web del INE: www.ine.es» cuando no se
+tratan los datos, y «Elaboración propia con datos extraídos del sitio web del INE» cuando sí. La
+licencia general de la información estadística del sitio es **CC BY 4.0**.
+
+✅ Añadida la fórmula al pie de la plana de 1842, que es la única imagen del INE que se publica.
+Las **series y los porcentajes** que el proyecto calcula —la caída desde 1950, el 64 % de menos—
+son elaboración propia sobre datos del INE, y así están dichos en sus entradas.
+
+- [Aviso legal del INE](https://ine.es/dyngs/AYU/index.htm?cid=125)
+
+### Catastro — Dirección General del Catastro
+
+La licencia de la Sede Electrónica limita el uso de sus contenidos a la descarga y el uso
+privado, siempre que el contenido **permanezca íntegro** y **se cite la fuente** —al amparo de la
+Ley 37/2007, de reutilización de la información del sector público—, y la descarga masiva de
+datos y cartografía exige identificación y aceptación de una licencia-tipo (Resolución de 23 de
+marzo de 2011).
+
+ℹ️ **Hoy no afecta a nada publicado**: ninguna imagen de la línea viene del Catastro. La
+comprobación del límite catastral sobre el MTN50 está en el archivo del proyecto, no en la web.
+**Si alguna vez entra, tendrá que llevar la cita y la fecha de descarga.**
+
+- [Condiciones de uso de la Sede Electrónica del Catastro](https://www.catastro.hacienda.gob.es/ayuda/condicionesuso.htm)
+
+> Queda **un archivo sin resolver**: la reproducción del retrato de Aranda publicada por *El
+> Pirineo Aragonés*, cuyas condiciones no constan. La pintura está en dominio público; la
+> fotografía de esa pintura, no lo sabemos. Sigue pendiente pedirle al Museo de Huesca una
+> imagen con sus términos.
+
+
+---
+
 ## Lo que falta hacer
 
 1. ~~**Acreditar cada imagen junto a la imagen**, en la propia web, no sólo en las fichas.~~
@@ -55,17 +138,22 @@ Románico en Castilla y León* de la **Fundación Santa María la Real**.
    ✅ **Hecho también para las diecisiete planas oficiales y los mapas** que entraron el
    26-IX-2026: cada una lleva al pie su referencia del BOE o de la Gaceta, o el servicio del
    IGN del que sale.
-   ⚠️ **Pendiente para los seis facsímiles antiguos** —las figuras de la excavación, el
-   Catastro y el sello de 1876—, que hoy llevan pie pero no signatura completa. (La ilustración de 1006 ya no se publica:
-   las ilustraciones interpretadas están apagadas desde v0.27.)
+   ✅ **Hecho también para los seis facsímiles antiguos** (30-IX-2026): las cuatro figuras de
+   los dos artículos de 1993 llevan ya autor, artículo, revista, figura, página y vía —ISSN o
+   Dialnet—; el folio del Catastro, su signatura del AGS y PARES; y la impronta del sello, la
+   del AHN. **Ninguna imagen publicada se queda sin firma al pie**: comprobado sobre los datos,
+   45 de 45. (La ilustración de 1006 no se publica: las ilustraciones interpretadas están
+   apagadas desde v0.27.)
    ⚠️ **El retrato del conde de Aranda no viene de Commons.** Es un detalle del que pintó
    **Ramón Bayeu en 1769** —Museo de Huesca, sala 7—, tomado de la reproducción publicada
    por *El Pirineo Aragonés* el 21-VIII-2020. **La pintura está en dominio público; las
    condiciones de esa reproducción no constan.** Hay que pedirle al museo una imagen con
    sus términos, o volver a la de Commons, que es la misma obra a 435 px.
-2. **Comprobar las condiciones de reutilización** de cada archivo, una por una. Aquí se han agrupado
-   por sentido común, y el sentido común **no es una licencia**: PARES, el IGN, el Catastro y el INE
-   tienen cada uno sus términos, y no se han leído uno a uno. ⚠️ **Está sin verificar.**
+2. ~~**Comprobar las condiciones de reutilización** de cada archivo, una por una.~~
+   ✅ **Leídas las cuatro el 30 de septiembre de 2026**, y no decían lo mismo que el sentido
+   común: ver [Las cuatro licencias, leídas](#las-cuatro-licencias-leídas), aquí arriba.
+   **El IGN no pedía una mención genérica: pedía una fórmula, y al pie de la imagen.** Se ha
+   corregido el mismo día en las cinco láminas que llevan ortofoto o mapa suyo.
 3. **Decidir la licencia del trabajo propio** —fichas, tablas, transcripciones, cronología y
    código—, que hoy no lleva ninguna.
 
