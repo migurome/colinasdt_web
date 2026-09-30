@@ -69,22 +69,25 @@ extra = json.loads(io.open(os.path.join(RAIZ, 'web/voces.json'), encoding='utf-8
 
 head = io.open(HEAD, encoding='utf-8').read()
 estilo = re.search(r'<style>(.*)</style>', head, re.S).group(1)
-MQ = '@media (max-width:760px){'
-movil, pos = '', estilo.find(MQ)
+# El bloque del feed es el que lleva dentro el carrusel, se llame como se
+# llame su media query: en v0.38 dejo de ser solo `(max-width:760px)` y este
+# generador se quedo mudo sin avisar. Ahora se busca por lo que contiene.
+movil, pos = '', estilo.find('@media ')
 while pos >= 0:
-    j, prof = pos + len(MQ), 1
+    abre = estilo.find('{', pos)
+    j, prof = abre + 1, 1
     while prof:
         if estilo[j] == '{':
             prof += 1
         elif estilo[j] == '}':
             prof -= 1
         j += 1
-    cuerpo = estilo[pos + len(MQ):j - 1]
+    cuerpo = estilo[abre + 1:j - 1]
     if '.carrusel{' in cuerpo:
         movil = cuerpo
         break
-    pos = estilo.find(MQ, j)
-assert movil
+    pos = estilo.find('@media ', j)
+assert movil, 'no encuentro el bloque de estilo del feed'
 
 
 def esc(t):

@@ -13,6 +13,38 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.41 — 30 de septiembre de 2026
+### El papel de 1694, cotejado
+
+La tarea que el propio proyecto tenía marcada 🚨 como la primera de las que se pueden hacer
+sin pedirle nada a nadie: **el D.89, el original de 1694**, del que sólo estaba leído lo citado,
+mientras todo el frente descansaba en **una copia de 1842**.
+
+- **Leída y cotejada la notificación al cura de Colinas del 30 de enero.** No estaba donde la
+  ficha suponía: la imagen **28** es la notificación de **mayo**; la de enero es la **21**,
+  segunda diligencia de la plana.
+- ✅ **El original nombra al cura ese mismo día**: «al Lic[encia]do D.ⁿ Ant[oni]o Gar[cí]a
+  Ber[nar]do de Quirós, cura de d[ic]ho lugar, en su persona». **Queda cerrada la cautela** que
+  la entrada de 1694 arrastraba desde el 26-IX —«queda por ver si el original lo nombra
+  también»—, y el copista de 1842 sale reforzado: no añadió el nombre.
+- ⚠️ **Y aparece la primera divergencia léxica entre original y copia.** El notario escribe en
+  1694 que el cura «lo obedece con el **acatamiento** debido»; el copista, en 1842, «con el
+  **respeto** debido». **La web citaba al copista**: la frase entrecomillada de la entrada venía
+  de la copia. Corregida la entrada, su cita, su cautela y **las tres redacciones que están en
+  votación**, para que la variante no vuelva a entrar al aplicarlas.
+- La regla que sale de aquí, escrita en la ficha del legajo: **la copia de 1842 es fiel en el
+  hecho y no siempre literal en la palabra**. Para lo que se afirma sirve; para lo que se
+  entrecomilla, hay que ir al original.
+- 🐛 **Y de paso, un fallo propio.** Al cambiar en v0.38 la media query del feed, el generador
+  del comparador de voces dejó de encontrar el bloque de estilo del teléfono **y se quedó mudo sin
+  avisar**: lo buscaba por el texto exacto de la consulta. Ahora lo busca por lo que contiene
+  —el carrusel—, y los cinco comparadores se han vuelto a generar.
+- En la ficha queda además **un mapa de lo que hay en cada imagen** del D.89 hasta donde se ha
+  podido situar: carpetilla, despacho, el auto del 28 de enero, las notificaciones de enero y
+  las de mayo. **El resto del legajo sigue sin leer.**
+
+---
+
 ## v0.40 — 30 de septiembre de 2026
 ### Las licencias, leídas
 

@@ -804,8 +804,10 @@ El legajo enumera los lugares **cuatro veces, y las cuatro de distinta manera**:
 > ✅ **La copia de 1842 (D.90) queda leída entera: las treinta y dos planas, 37-68.** No le falta
 > ninguna.
 >
-> **Lo que queda de este legajo** es el **D.89** —el original de 1694, imágenes **1-36**—, del que
-> sólo está leído lo citado. ⚠️ **Y la urgencia es baja, por una razón que conviene decir**: la
+> **Lo que queda de este legajo** es el **D.89** —el original de 1694, imágenes **1-36**—. El
+> **30-IX-2026** se leíó su tramo decisivo —la notificación del 30 de enero, imagen 21— y se
+> cotejó con la copia: ver [el primer tramo del cotejo](#-tar-01-primer-tramo-el-original-cotejado-30-de-septiembre-de-2026).
+> El resto sigue sin leer. ⚠️ **Y la urgencia es baja, por una razón que conviene decir**: la
 > copia de 1842 **transcribe el mismo expediente en letra limpia**, y cada vez que se han podido
 > confrontar las dos, la copia ha resultado fiel —y ha corregido al original tres lecturas nuestras,
 > no al revés—. El D.89 sirve para **cotejar**, no para descubrir.
@@ -813,6 +815,54 @@ El legajo enumera los lugares **cuatro veces, y las cuatro de distinta manera**:
 > Con el facsímil ya dentro del proyecto
 > ([`facsimil/c466-d89-d90-diezmos-1694/`](facsimil/c466-d89-d90-diezmos-1694/)), es trabajo de
 > lectura, no de adquisición.
+
+---
+
+## ✅ `TAR-01`, primer tramo: el original cotejado (30 de septiembre de 2026)
+
+El D.89 —el papel de 1694— estaba sin leer, y la ficha decía que servía «para cotejar, no para
+descubrir». Se ha cotejado el pasaje que más pesa en la web: **la notificación al cura de Colinas
+del 30 de enero**.
+
+### Dónde estaba
+
+No donde lo buscaba la ficha. La imagen **28** es la notificación de **mayo**, la que esta ficha ya
+tenía transcrita. La de **enero** está en la **imagen 21**, segunda diligencia de la plana, con su
+nota al margen. Lo que se ha podido situar del original, leyendo a resolución completa:
+
+| Imágenes | Qué hay |
+|---|---|
+| 1-2 | Carpetilla —«Cajón 5, Leg. 4, Núm. 15… Año 1694»— y guarda |
+| 3-18 | La petición y el despacho, con las fórmulas de la autoridad apostólica |
+| 19 | El auto de **28 de enero**, ante D.ⁿ Juan Antúnez `[?]` |
+| **21** | **Las notificaciones del 30 de enero. La segunda es la de Colinas** |
+| 24-30 | Las notificaciones de **mayo**, una por parroquia; la de Colinas, en la 28 |
+| 31-36 | Cierre y diligencias |
+
+### Lo que el cotejo resuelve
+
+✅ **El original nombra al cura el 30 de enero, igual que la copia.** Dice, con todas las letras:
+«al Lic[encia]do D.ⁿ Ant[oni]o Gar[cí]a Ber[nar]do de Quirós, cura de d[ic]ho lugar, en su
+persona». La cautela que quedaba abierta en la entrada de la web —«si el original lo nombra
+también»— **queda cerrada**, y **el copista de 1842 sale reforzado**: no añadió el nombre.
+
+### Lo que el cotejo corrige
+
+⚠️ **Las dos planas no dicen la misma palabra.** El notario, en 1694, escribe que el cura
+
+> «lo obedece con el **acatamiento** debido»
+
+y el copista, en 1842, escribe
+
+> «lo obedece con el **respeto** debido».
+
+Es la primera divergencia léxica documentada entre el D.89 y el D.90, y **la web citaba al
+copista**: la frase entrecomillada de la entrada de 1694 venía de la copia. Corregido el mismo día
+—la entrada cita ya el original y dice la variante—.
+
+> **Lo que enseña el caso**, y vale para el resto del legajo: la copia de 1842 es **fiel en el
+> hecho y no siempre literal en la palabra**. Para lo que se afirma sirve; para lo que se
+> entrecomilla, **hay que ir al original**.
 
 ---
 

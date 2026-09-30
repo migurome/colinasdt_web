@@ -229,16 +229,16 @@ const EVENTOS = [
 
   { id: 'apela1694', era: 3, y: '1694', d: '30 de enero', s: 1694, n: 'visto',
     t: 'El cura de Colinas apela',
-    q: '«lo obedece con el respeto debido […] y que en cuanto a su cumplimiento no ha lugar, y desde luego de este Despacho y sus autos APELA»',
-    p: 'El despacho llega a Colinas el 30 de enero y el cura lo recibe. Lo obedece «con el respeto debido»: es la fórmula, y no cuesta nada. Luego escribe lo otro: que en cuanto a su cumplimiento no ha lugar, y que apela.|Es decir, acata y no entrega. Enfrente tiene al conde-duque de Benavente, al Nuncio de Su Santidad y una excomunión mayor puesta por escrito.|<b>Es la primera vez que alguien de Colinas le dice que no, por escrito, a una orden del señor.</b> Y tiene nombre, escrito con todas las letras por el notario: <b>el licenciado Antonio García Bernardo de Quirós</b>, cura de este lugar.',
-    nota: '<s>En este papel el cura no tiene nombre; lo tiene cuatro meses después.</s> <b>Corregido el 26-IX-2026</b>, al leer la plana a resolución completa para ponerla en esta entrada: el <b>30 de enero</b> el notario ya notifica «al Licenciado D.n Antonio García Bernardo de Quirós, Cura de dicho Lugar, en su persona». El nombre estaba desde el primer día. Lo del 12 de mayo es una segunda notificación, no el hallazgo del nombre. Queda por ver si el original de 1694 —no esta copia de 1842— lo nombra también.',
+    q: '«lo obedece con el acatamiento debido […] y en cuanto a su cumplimiento no ha lugar, y desde luego de este despacho y sus autos APELA»',
+    p: 'El despacho llega a Colinas el 30 de enero y el cura lo recibe. Lo obedece «con el acatamiento debido»: es la fórmula, y no cuesta nada. Luego escribe lo otro: que en cuanto a su cumplimiento no ha lugar, y que apela.|Es decir, acata y no entrega. Enfrente tiene al conde-duque de Benavente, al Nuncio de Su Santidad y una excomunión mayor puesta por escrito.|<b>Es la primera vez que alguien de Colinas le dice que no, por escrito, a una orden del señor.</b> Y tiene nombre, escrito con todas las letras por el notario: <b>el licenciado Antonio García Bernardo de Quirós</b>, cura de este lugar.',
+    nota: '<s>En este papel el cura no tiene nombre; lo tiene cuatro meses después.</s> <b>Corregido el 26-IX-2026</b>, al leer la plana a resolución completa para ponerla en esta entrada: el <b>30 de enero</b> el notario ya notifica «al Licenciado D.n Antonio García Bernardo de Quirós, Cura de dicho Lugar, en su persona». El nombre estaba desde el primer día. Lo del 12 de mayo es una segunda notificación, no el hallazgo del nombre. <b>Cotejado con el original el 30-IX-2026</b>: el D.89 —el papel de 1694, imagen 21— también lo nombra ese mismo 30 de enero, así que el nombre no lo puso el copista. Pero las dos planas no dicen la misma palabra: <b>el original escribe «con el acatamiento debido» y la copia de 1842 lo moderniza en «con el respeto debido»</b>. Esta entrada citaba al copista; ahora cita al notario.',
     /* El facsímil del propio documento. No es un adorno: es la prueba,
        y por eso se ve entera y no recortada. */
     img: { src: 'img/doc/apela1694.jpg', w: 1123, h: 1633,
       alt: 'Plana manuscrita con dos notas al margen, «Notificación» y «Otra», que separan dos diligencias del mismo día.',
-      cap: 'La plana de las notificaciones del 30 de enero. Abajo, la de Colinas: el notario Francisco Domínguez se la hace al cura en su persona, «que dijo le obedece con el respeto debido». <span class="mono">AHNOB, OSUNA, C.466, D.90, img. 49 (copia limpia de 1842) · PARES, Archivos Estatales</span>' },
+      cap: 'La plana de las notificaciones del 30 de enero. Abajo, la de Colinas: el notario Francisco Domínguez se la hace al cura en su persona, «que dijo le obedece con el respeto debido» —donde el original de 1694 escribe «acatamiento»—. <span class="mono">AHNOB, OSUNA, C.466, D.90, img. 49 (copia limpia de 1842) · PARES, Archivos Estatales</span>' },
     tr: 'portada',
-    f: 'AHNOB, OSUNA, C.466, D.90, img. 49-50 (copia limpia de 1842) · el nombre, en OSUNA, C.466, D.89, img. 28-29, y D.90, img. 55' },
+    f: 'AHNOB, OSUNA, C.466, D.90, img. 49-50 (copia limpia de 1842) · original: D.89, img. 21, notificación del 30 de enero · la segunda, de 12 de mayo: D.89, img. 28-29, y D.90, img. 55' },
 
   { id: 'curas1694', era: 3, y: '1694', d: 'mayo', s: 1694, n: 'visto',
     t: 'Doce curas, y un tribunal inhibido',
@@ -715,7 +715,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.40';
+const VERSION = '0.41';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -729,6 +729,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.41', f: '30 de septiembre de 2026', t: 'El papel de 1694, cotejado',
+    c: [
+      'Todo lo que este proyecto sabía del pleito de 1694 venía de <b>una copia hecha en 1842</b>. Se ha ido por fin al original, y se ha leído el pasaje que más pesa: la notificación al cura de Colinas del 30 de enero. Estaba en la imagen 21, no en la que la ficha suponía.',
+      '✅ <b>El original sí nombra al cura ese mismo día</b>, con todas las letras. La cautela que quedaba abierta se cierra, y el copista de 1842 sale reforzado: no añadió el nombre.',
+      '⚠️ <b>Pero las dos planas no dicen la misma palabra.</b> En 1694 el notario escribe que el cura «lo obedece con el <b>acatamiento</b> debido»; en 1842 el copista lo moderniza en «con el <b>respeto</b> debido». <b>Esta web citaba al copista.</b> Desde hoy cita al notario, y dice la variante.'
+    ],
+    p: 'La copia de 1842 es fiel en el hecho y no siempre literal en la palabra: para lo que se afirma sirve; para lo que se entrecomilla, hay que ir al original.' },
   { v: '0.40', f: '30 de septiembre de 2026', t: 'Las licencias, leídas',
     c: [
       'El proyecto se debía a sí mismo dos cosas, y las dos están hechas. La primera: <b>los seis facsímiles antiguos ya llevan firma completa al pie</b> —las cuatro figuras de los artículos de 1993, con su autor, revista, figura y página; el folio del Catastro y el sello de 1876, con su signatura de archivo—. <b>Ninguna de las 45 imágenes publicadas se queda sin decir de dónde sale.</b>',
