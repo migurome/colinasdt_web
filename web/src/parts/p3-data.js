@@ -231,14 +231,14 @@ const EVENTOS = [
     t: 'El cura de Colinas apela',
     q: '«lo obedece con el acatamiento debido […] y en cuanto a su cumplimiento no ha lugar, y desde luego de este despacho y sus autos APELA»',
     p: 'El despacho llega a Colinas el 30 de enero y el cura lo recibe. Lo obedece «con el acatamiento debido»: es la fórmula, y no cuesta nada. Luego escribe lo otro: que en cuanto a su cumplimiento no ha lugar, y que apela.|Es decir, acata y no entrega. Enfrente tiene al conde-duque de Benavente, al Nuncio de Su Santidad y una excomunión mayor puesta por escrito.|<b>Es la primera vez que alguien de Colinas le dice que no, por escrito, a una orden del señor.</b> Y tiene nombre, escrito con todas las letras por el notario: <b>el licenciado Antonio García Bernardo de Quirós</b>, cura de este lugar.',
-    nota: '<s>En este papel el cura no tiene nombre; lo tiene cuatro meses después.</s> <b>Corregido el 26-IX-2026</b>, al leer la plana a resolución completa para ponerla en esta entrada: el <b>30 de enero</b> el notario ya notifica «al Licenciado D.n Antonio García Bernardo de Quirós, Cura de dicho Lugar, en su persona». El nombre estaba desde el primer día. Lo del 12 de mayo es una segunda notificación, no el hallazgo del nombre. <b>Cotejado con el original el 30-IX-2026</b>: el D.89 —el papel de 1694, imagen 21— también lo nombra ese mismo 30 de enero, así que el nombre no lo puso el copista. Pero las dos planas no dicen la misma palabra: <b>el original escribe «con el acatamiento debido» y la copia de 1842 lo moderniza en «con el respeto debido»</b>. Esta entrada citaba al copista; ahora cita al notario.',
+    nota: '<s>En este papel el cura no tiene nombre; lo tiene cuatro meses después.</s> <b>Corregido el 26-IX-2026</b>, al leer la plana a resolución completa para ponerla en esta entrada: el <b>30 de enero</b> el notario ya notifica «al Licenciado D.n Antonio García Bernardo de Quirós, Cura de dicho Lugar, en su persona». El nombre estaba desde el primer día. Lo del 12 de mayo es una segunda notificación, no el hallazgo del nombre. <b>Cotejado con el original el 30-IX-2026</b>: el D.89 —el papel de 1694, imagen 21— también lo nombra ese mismo 30 de enero, así que el nombre no lo puso el copista. Pero las dos planas no dicen la misma palabra: <b>el original escribe «con el acatamiento debido» y la copia de 1842 lo moderniza en «con el respeto debido»</b>. Esta entrada citaba al copista; ahora cita al notario. <b>Leído el legajo entero ese mismo día</b>: de las quince diligencias del original, <b>sólo ésta dice «acatamiento»</b> —las demás dicen «respeto», que es lo que el copista puso también aquí—. Y el papel sigue: el <b>12 de mayo</b> este mismo cura ya no apela —«dixo lo oya», dice que lo oye—, y el <b>26 de mayo</b> el provisor de Astorga lo pone <b>el primero de una lista de siete</b> a los que amenaza con publicar por excomulgados en las tablillas de las iglesias. <b>El legajo se acaba ahí</b>: no consta que llegara a hacerse.',
     /* El facsímil del propio documento. No es un adorno: es la prueba,
        y por eso se ve entera y no recortada. */
     img: { src: 'img/doc/apela1694.jpg', w: 1123, h: 1633,
       alt: 'Plana manuscrita con dos notas al margen, «Notificación» y «Otra», que separan dos diligencias del mismo día.',
       cap: 'La plana de las notificaciones del 30 de enero. Abajo, la de Colinas: el notario Francisco Domínguez se la hace al cura en su persona, «que dijo le obedece con el respeto debido» —donde el original de 1694 escribe «acatamiento»—. <span class="mono">AHNOB, OSUNA, C.466, D.90, img. 49 (copia limpia de 1842) · PARES, Archivos Estatales</span>' },
     tr: 'portada',
-    f: 'AHNOB, OSUNA, C.466, D.90, img. 49-50 (copia limpia de 1842) · original: D.89, img. 21, notificación del 30 de enero · la segunda, de 12 de mayo: D.89, img. 28-29, y D.90, img. 55' },
+    f: 'AHNOB, OSUNA, C.466, D.90, img. 49-50 (copia limpia de 1842) · original: D.89, img. 21, notificación del 30 de enero · la segunda, de 12 de mayo: D.89, img. 28-29, y D.90, img. 55 · la lista de excomulgables del 26 de mayo: D.89, img. 34-35' },
 
   { id: 'curas1694', era: 3, y: '1694', d: 'mayo', s: 1694, n: 'visto',
     t: 'Doce curas, y un tribunal inhibido',
@@ -715,7 +715,7 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.41';
+const VERSION = '0.42';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
@@ -729,6 +729,13 @@ const RAIL_VISIBLE = false;
 const ILUSTRACIONES_VISIBLES = false;
 
 const VERSIONES = [
+  { v: '0.42', f: '30 de septiembre de 2026', t: 'Colinas, la primera de la lista',
+    c: [
+      'Leído ya <b>entero</b> el original de 1694 —las treinta y seis planas, una por una—, resulta que la copia de 1842 <b>no lo copiaba todo</b>. El legajo no lleva un despacho: lleva <b>tres</b>. El de enero manda; el de <b>10 de mayo</b> repite porque el de enero no bastó; y el del <b>26 de mayo</b> ya no manda.',
+      '★ <b>Cuenta a los que no han cumplido y los nombra, y empieza por Colinas de Trasmonte.</b> Siete curas, y si en un día no entregan, el provisor manda <b>publicarlos por excomulgados y ponerlos en las tablillas de las iglesias</b>, fuera de los oficios. Para un cura de aldea eso no es una multa: es quedarse sin pueblo.',
+      '⚠️ <b>Y ahí se acaba el papel.</b> Detrás de esa plana viene la cubierta. No consta que el tercer despacho se notificara, ni que la excomunión se publicara, ni que nadie entregara nada. <b>El legajo no dice cómo acabó</b>, y esta web tampoco lo va a decir.'
+    ],
+    p: 'De paso, el cotejo cierra dos dudas viejas de la nómina de curas y corrige un apellido: el original manda sobre la copia cuando el hombre firma de su mano.' },
   { v: '0.41', f: '30 de septiembre de 2026', t: 'El papel de 1694, cotejado',
     c: [
       'Todo lo que este proyecto sabía del pleito de 1694 venía de <b>una copia hecha en 1842</b>. Se ha ido por fin al original, y se ha leído el pasaje que más pesa: la notificación al cura de Colinas del 30 de enero. Estaba en la imagen 21, no en la que la ficha suponía.',

@@ -13,6 +13,41 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.42 — 30 de septiembre de 2026
+### Colinas, la primera de la lista
+
+Segunda mitad de `TAR-01`, y la que no se esperaba. Leídas **las treinta y seis imágenes del
+D.89**, plana a plana, el original **no era un traslado del D.90**: traía papel que no estaba
+leído en ninguna parte del proyecto.
+
+- ★★★ **El pleito se lleva con tres despachos, no con uno.** El **auto de 28 de enero**; un
+  **segundo despacho de 10 de mayo de 1694** (img. 27-28), que es lo que explica la segunda
+  notificación de Colinas; y un **tercero, de 26 de mayo** (img. 34-35), que ya no manda:
+  **cuenta a los que no han cumplido y los nombra**.
+- ★★★ **Y empieza por Colinas.** «A los Curas de **Colinas de Trasmonte**, San Román del Valle,
+  Bardemozar `[?]`, Fuente Encalada y S. Pedro la Viña, Santibáñez de Vidriales, Ginestacio»: si
+  en **un día** no cumplen, «declaramos a los rebeldes por públicos excomulgados» y se les manda
+  **publicar en las tablillas de las iglesias**, privados «de ellas y de las horas canónicas y
+  divinos oficios».
+- ⚠️ **El legajo se acaba en esa plana**: detrás viene la cubierta. **No consta** que el tercer
+  despacho se notificara ni que la excomunión se publicara. *El hueco también es un dato.*
+- ★★ **En mayo el cura de Colinas ya no apela**: «dixo lo oya». Ni obedece ni recurre. El mismo
+  notario anota lo mismo en San Román del Valle el mismo día, así que es fórmula de notario —pero
+  en enero había otra cosa.
+- ✅ **Queda explicado el «acatamiento» de v0.41.** De las quince diligencias del original,
+  **sólo la de Colinas** usa esa palabra; las demás dicen «respeto», y Mózar —la anterior, del
+  mismo notario y el mismo día— no usa fórmula ninguna. **El copista de 1842 no inventó: niveló**,
+  y al nivelar borró lo único que distinguía esta respuesta de las otras catorce.
+- La nómina de curas, cotejada entera contra el original. **Resiste**, salvo cuatro cosas, y las
+  cuatro se corrigen a mejor: el cura de San Pedro de la Viña es **Juan** de Albar González —no
+  había dos, y firma de su mano las dos veces—; el de Fuente Encalada es Tomás **Próspero** de
+  Oña, no «Crespo»; «Villa de la B…» `[?]` es **la Verdenosa**; y Ginestacio se notifica el
+  **2 de febrero**. También: el auto de enero lo firma el **Lic.do D. Suero Antonio Téllez**.
+- Y una pista, escrita en la cubierta por otra mano: **«Ymportta p.ᵃ el pleito de V.ᵃ nueba de las
+  Peras»** `[?]`. Este legajo se guardó porque servía para otro pleito.
+
+---
+
 ## v0.41 — 30 de septiembre de 2026
 ### El papel de 1694, cotejado
 

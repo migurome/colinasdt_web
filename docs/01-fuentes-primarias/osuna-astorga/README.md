@@ -805,9 +805,11 @@ El legajo enumera los lugares **cuatro veces, y las cuatro de distinta manera**:
 > ninguna.
 >
 > **Lo que queda de este legajo** es el **D.89** —el original de 1694, imágenes **1-36**—. El
-> **30-IX-2026** se leíó su tramo decisivo —la notificación del 30 de enero, imagen 21— y se
-> cotejó con la copia: ver [el primer tramo del cotejo](#-tar-01-primer-tramo-el-original-cotejado-30-de-septiembre-de-2026).
-> El resto sigue sin leer. ⚠️ **Y la urgencia es baja, por una razón que conviene decir**: la
+> **30-IX-2026** se leyó **entero**, plana a plana: primero su tramo decisivo —la notificación del
+> 30 de enero, imagen 21— y después las treinta y seis imágenes. Ver
+> [el primer tramo](#-tar-01-primer-tramo-el-original-cotejado-30-de-septiembre-de-2026) y
+> [el legajo completo](#-tar-01-completo-el-d89-leído-entero-30-de-septiembre-de-2026).
+> **No era sólo un traslado del D.90: traía dos despachos que nadie había leído.** ⚠️ **Y la urgencia es baja, por una razón que conviene decir**: la
 > copia de 1842 **transcribe el mismo expediente en letra limpia**, y cada vez que se han podido
 > confrontar las dos, la copia ha resultado fiel —y ha corregido al original tres lecturas nuestras,
 > no al revés—. El D.89 sirve para **cotejar**, no para descubrir.
@@ -834,10 +836,12 @@ nota al margen. Lo que se ha podido situar del original, leyendo a resolución c
 |---|---|
 | 1-2 | Carpetilla —«Cajón 5, Leg. 4, Núm. 15… Año 1694»— y guarda |
 | 3-18 | La petición y el despacho, con las fórmulas de la autoridad apostólica |
-| 19 | El auto de **28 de enero**, ante D.ⁿ Juan Antúnez `[?]` |
+| 19 | El auto de **28 de enero**, <s>ante D.ⁿ Juan Antúnez `[?]`</s> → lo firma el **Lic.do D. Suero Antonio Téllez**, ante el notario **Juan Fernández** |
 | **21** | **Las notificaciones del 30 de enero. La segunda es la de Colinas** |
 | 24-30 | Las notificaciones de **mayo**, una por parroquia; la de Colinas, en la 28 |
 | 31-36 | Cierre y diligencias |
+
+> ⚠️ **Este mapa se quedó corto, y en un punto era falso.** Las notificaciones de enero **empiezan al pie de la 20**, no en la 21, y siguen hasta la 26; y las imágenes 27 a 35 no son «cierre y diligencias» sino **dos despachos más**. Lo sustituye [el mapa de abajo](#el-mapa-del-d89-corregido), hecho leyendo las treinta y seis planas.
 
 ### Lo que el cotejo resuelve
 
@@ -863,6 +867,121 @@ copista**: la frase entrecomillada de la entrada de 1694 venía de la copia. Cor
 > **Lo que enseña el caso**, y vale para el resto del legajo: la copia de 1842 es **fiel en el
 > hecho y no siempre literal en la palabra**. Para lo que se afirma sirve; para lo que se
 > entrecomilla, **hay que ir al original**.
+
+---
+
+## ✅ `TAR-01`, completo: el D.89, leído entero (30 de septiembre de 2026)
+
+Después del primer tramo se leyó **el resto del original**: las treinta y seis imágenes, plana a
+plana y a resolución completa. Y la ficha se equivocaba al decir que este legajo servía «para
+cotejar, no para descubrir»: **había papel que no estaba leído en ninguna parte del proyecto**, y
+en él **Colinas aparece en el sitio que más pesa de todo el pleito**.
+
+### El mapa del D.89, corregido
+
+| Imágenes | Qué hay |
+|---|---|
+| 1-2 | Carpetilla —«Cajón 5, Leg. 4, Núm. 15… Año 1694»— y guarda |
+| 3-18 | La petición y el **primer despacho**, con las letras del Nuncio insertas |
+| **19-20** | El **auto de Astorga de 28 de enero**, firmado por el **Lic.do D. Suero Antonio Téllez**, ante el notario **Juan Fernández** |
+| **20 (pie) – 26** | **Primera ronda: doce notificaciones, del 30 de enero al 20 de febrero.** La de Colinas es la segunda, en la **21** |
+| **27-28** | ★★ Un **segundo despacho**, dado en **Astorga el 10 de mayo de 1694** por el Dr. D. Antonio de Miranda, ante Juan Fernández |
+| **28 (pie) – 34** | **Segunda ronda: siete notificaciones, del 12 al 18 de mayo. La abre Colinas** |
+| **34 (pie) – 35** | ★★★ Un **tercer despacho**, **Astorga, 26 de mayo de 1694**: amenaza de **excomunión pública**. **Colinas va el primero de la lista** |
+| 36 | Cubierta, y en ella una nota de otra mano: «Ymportta p.ᵃ el pleito de **V.ᵃ nueba de las Peras**» `[?]` |
+
+> **El pleito no se lleva con un papel, sino con tres.** El de enero manda; el de mayo repite
+> porque el de enero no bastó; el del 26 de mayo ya no manda: **cuenta a los que no han cumplido y
+> los nombra**. Eso explica por qué Colinas fue notificada dos veces, que era una rareza sin
+> explicar en esta ficha.
+
+### ★★★ Colinas, la primera de la lista de excomulgables
+
+> «…y libramos el pres[en]te, y por él […] **a los Curas de Colinas de Trasmonte, San Román del
+> Valle, Bardemozar** `[?]`**, Fuente Encalada y S. Pedro la Viña, Santibáñez de Vidriales,
+> Ginestacio** y más personas a quien tocare […] que **dentro de un día**, que les damos de
+> benignidad, cumplan lo que les está mandado por d[ic]hos despachos […]; y pasado d[ic]ho término,
+> constando … en caso de el [in]cumplim[ien]to, **declaramos a los rebeldes por públicos
+> excomulgados**, y como a tales mandamos a los arciprestes `[?]` […] de este obispado que,
+> constándoles de la notificación, **les publiquen por tales y los pongan en las tablillas de las
+> iglesias**, […] privándoles de ellas y **de las horas canónicas y divinos oficios**…»
+>
+> *Dado en Astorga a veinte y seis de mayo de mil seiscientos y noventa y quatro años.*
+> Firma **D.ʳ Miranda**; ante **Juan Fernández**.
+> — AHNOB, OSUNA, C.466, **D.89, img. 34-35**
+
+- **Siete parroquias**, y **Colinas encabeza la lista**. Son, una por una, las siete que habían sido
+  notificadas por segunda vez entre el 12 y el 18 de mayo.
+- La pena no es dinero. Es **el nombre puesto en la tablilla de la iglesia**, donde lo lee el pueblo
+  entero, y quedarse fuera de los oficios y de las horas canónicas. **Para un cura de aldea es la
+  ruina civil**, no sólo la espiritual.
+- ⚠️ **El tercer nombre de la lista no se deja leer.** Se escribe algo como **«Bardemozar»**: por
+  el lugar que ocupa debería ser **Bercianos de Vidriales**, notificado el 15 de mayo, pero **las
+  letras no lo dan**. Queda en duda.
+- ⚠️ **Y aquí se acaba el legajo.** Detrás de esta plana viene la cubierta. **No consta que este
+  tercer despacho llegara a notificarse**, ni que la excomunión se publicara, ni que los curas
+  entregaran. *El hueco también es un dato*: **el papel no dice cómo acabó**.
+
+### ★★ En mayo, el cura de Colinas ya no apela: dice que lo oye
+
+El 12 de mayo, con el segundo despacho en la mano, el notario **Francisco Domínguez** vuelve a
+Colinas. Y la respuesta que anota **no es la de enero**:
+
+> «…al D.ⁿ **Antonio García Bernardo de Quirós, cura del lugar de Colinas**, en su persona, que
+> **dixo lo oya**. De que doy fe. Lo firmé.» — D.89, img. 28-29
+
+**«Lo oya»** —lo oye— es la respuesta mínima que cabe dar: ni obedece, ni apela, ni se compromete
+a nada. El mismo día y el mismo notario anotan lo mismo en **San Román del Valle**, así que es
+fórmula de notario y no ocurrencia del cura; pero **es lo que hay en el papel**, y en enero había
+otra cosa.
+
+### ✅ «Acatamiento» es palabra de Colinas, y de nadie más
+
+El primer tramo del cotejo dejó abierto por qué el original escribe «acatamiento» donde la copia de
+1842 escribe «respeto». **Leyendo las quince diligencias del original, la respuesta es clara**:
+
+| Qué dice el original | Dónde |
+|---|---|
+| «lo obedece **con el acatamiento debido**» | **sólo en Colinas**, 30 de enero |
+| «lo obedece con el **respeto** debido» | Grijalba, Santibáñez, Fuente Encalada, Villageriz, la Verdenosa, San Román, Villaveza, Morales, Ginestacio, San Pedro de la Viña |
+| «lo obedece con la **moderación y respeto** debido» | Bercianos de Vidriales, 15 de mayo |
+| sin fórmula: «lo obedece, y **por el temor de las censuras** está presto de entregar» | Mózar, 30 de enero —la diligencia **inmediatamente anterior** a la de Colinas, del mismo notario y el mismo día |
+
+> **El copista de 1842 no inventó nada: niveló.** Escribió en Colinas la palabra que veía en todas
+> las demás planas. Pero al nivelarla borró **lo único que distinguía esta respuesta de las otras
+> catorce**, que es justo el pasaje que esta web entrecomilla.
+
+### Lo que el cotejo corrige en la nómina de curas
+
+Todo lo demás de [`curas-1694.tsv`](curas-1694.tsv) —fechas, lugares, nombres, respuestas—
+**resiste el cotejo**. Cambian cuatro cosas, y las cuatro a mejor:
+
+| | La copia decía | El original dice | Cómo se sabe |
+|---|---|---|---|
+| ✅ | «D. **Justo** `[?]` (febrero) / D. **Juan** (mayo) de Albar González»: *«o son dos clérigos o una de las dos lecturas falla»* | **Juan de Albar González**, uno solo | **él mismo firma** las dos veces: «Ju.ᵒ de Albar González» (img. 26) y «Juan de Albar González» (img. 31) |
+| ⚠️ | Fuente Encalada: «Ldo. D. Tomás **Crespo** de Oña» | **Tomás Próspero de Oña** | su firma (img. 23) y el cuerpo de la diligencia de mayo (img. 30) |
+| ✅ | «**Villa de la B…** `[?]`», *«lectura del topónimo dudosa»* | **la Verdenosa** | img. 24, y el mismo topónimo en la petición del procurador |
+| ✅ | Ginestacio, «1694-02 `[?]`» | **2 de febrero de 1694** | img. 24: «a dos días del mes de febrero» |
+
+Y dos nombres más quedan afinados: el auto de enero lo firma el **Lic.do D. Suero Antonio Téllez**
+—la ficha leía «[Josef] Antonio Téllez» `[?]`—, y el cura de Villageriz **firma de su mano**
+«D.ⁿ Ysidro **Balado Taladriz**», donde la copia se había leído «Prada Valadriz» `[?]`.
+
+### La nota de la cubierta, que es una pista
+
+La última imagen no es una plana: es la **cubierta**, y alguien escribió en ella, con otra letra y
+seguramente más tarde:
+
+> «**Ymportta p.ᵃ el pleito. de V.ᵃ nueba de las peras**» `[?]`
+
+Es decir: **este legajo se guardó porque servía para otro pleito**, el de **Villanueva de las
+Peras**. No se sabe cuál ni de cuándo. Queda anotado por si algún día aparece.
+
+> **Lo que queda abierto**, y no depende de leer más este legajo:
+> — el final del pleito, que **este papel no cuenta**;
+> — el topónimo «Bardemozar» `[?]` de la lista del 26 de mayo;
+> — qué fue **la Verdenosa**, que se notifica en 1694 y no está en el mapa de hoy;
+> — y el **pleito de Villanueva de las Peras** de la cubierta.
 
 ---
 

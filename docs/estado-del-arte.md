@@ -133,12 +133,14 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 **24 piezas.** Por orden de lo que aportan:
 
-1. 🚨 **`TAR-01` — el D.89.** Las 36 imágenes del **original de 1694**, de las que sólo se había
-   leído lo citado. Todo lo que sostenía ese frente descansaba en **una copia de 1842**.
-   ✅ **Primer tramo hecho el 30-IX-2026**: leída y cotejada la notificación del 30 de enero
-   —imagen **21**, no la 28—. El original **sí nombra al cura** ese día, luego la copia no inventó
-   el nombre; pero **no dicen la misma palabra** —«acatamiento» en 1694, «respeto» en 1842—, y la
-   web citaba la copia. **Sigue abierto el resto del legajo.**
+1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
+   plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
+   da tres cosas: la copia **es fiel en el hecho** —fechas, lugares, curas y respuestas resisten—;
+   **no siempre es literal en la palabra** —«acatamiento» en 1694, «respeto» en 1842, y la web
+   citaba la copia—; y **el original traía papel que nadie había leído**: **dos despachos más**, de
+   10 y de **26 de mayo de 1694**, y en el segundo **Colinas encabeza una lista de siete curas
+   amenazados con excomunión pública**. Ver
+   [la ficha del legajo](01-fuentes-primarias/osuna-astorga/README.md).
 2. ★ **`TAR-11` — digitalizar el término histórico** sobre el MTN50 de 1.ª edición. Desbloquea medio
    frente de cartografía.
 3. **`TAR-02` a `TAR-10` — los nueve artículos de *Brigecio* sin abrir.** Tres traen capa de texto y
