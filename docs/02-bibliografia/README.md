@@ -25,7 +25,7 @@ como imagen.
 | `lobato-vidal-1992-despoblados-valles-brigecio2.pdf` | LOBATO VIDAL, J. C.: «Despoblados medievales en los valles de Benavente», *Brigecio* **2** (1992), pp. 43-54 | ✅ parcial |
 | `martin-benito-2000-vecilla-tramonte-1706-brigecio10.pdf` | MARTÍN BENITO, J. I.: «El término de Vecilla de Tramonte en un documento de 1706», *Brigecio* **10** (2000), pp. 133-152 | ✅ parcial |
 | `gonzalez-rodriguez-2000-resena-coleccion-astorga-brigecio10.pdf` | Reseña de la *Colección documental de la catedral de Astorga, I*, *Brigecio* **10** (2000), pp. 232-234 | ✅ |
-| `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | «Monasterios, caminos de peregrinación e infraestructura viaria en el norte de Zamora», *Brigecio* **10** (2000), pp. 45-66 | ⏳ |
+| `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | «Monasterios, caminos de peregrinación e infraestructura viaria en el norte de Zamora», *Brigecio* **10** (2000), pp. 45-66 | ✅ **entero** |
 | `garcia-caballero-1992-despoblados-condado-brigecio2.pdf` | GARCÍA CABALLERO, A.: «Los despoblados en el Condado de Benavente (ss. XVI-XVIII)», *Brigecio* **2** (1992), pp. 55-80 | ⏳ |
 | `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | «El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales», *Brigecio* **6** (1996), pp. 11-30 | ⏳ |
 | `regueras-lopez-1989-sigillatas-azoague-brigecio1.pdf` | «Sigillatas en relieve y estampadas de Villanueva de Azoague», *Brigecio* **1** (1989), pp. 47-58 | ⏳ |
@@ -64,7 +64,7 @@ como imagen.
 
 | Fichero | Capa de texto | Por qué está aquí |
 |---|:-:|---|
-| `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | ❌ 22 pp. | ★ Mismo autor y mismo número que el artículo de Castroferrol: **el que más promete de los nueve** |
+| `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | ✅ 22 pp., leídas a imagen el 1-X-2026 | ★ Cumplió lo que prometía: **tres menciones de Castroferrol**, la ruta de peregrinación del Tera y la confirmación del latín de 1015 → [la ficha](../01-fuentes-primarias/castroferrol-962-1170/README.md) |
 | `garcia-caballero-1992-despoblados-condado-brigecio2.pdf` | ❌ 25 pp. | Pobladura y Castroferrol desde la serie de despoblados del condado |
 | `blanco-iglesias-2013-arquitectura-barro-brigecio23.pdf` | ✅ 12 pp. | El adobe y el tapial: materia para el emblema y para el patrimonio |
 | `imagineria-gotica-tera-vidriales-brigecio18-19.pdf` | ✅ 19 pp. | Si queda algo mueble de la parroquia de San Juan |

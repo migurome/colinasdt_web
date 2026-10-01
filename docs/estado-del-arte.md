@@ -21,9 +21,9 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **53 piezas pendientes**, **20 se
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **52 piezas pendientes**, **19 se
 pueden trabajar desde aquí** y **33 necesitan a una persona** —o una compra, o un correo—.
-Otras **cuatro ya están hechas** y se han marcado como tales el 1 de octubre.
+Otras **cinco ya están hechas** y se han marcado como tales el 1 de octubre.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -39,14 +39,14 @@ decisión expresa. Ver §7.
 | Fichas y documentos de trabajo (`.md`) | **36** |
 | Tablas de datos (`.tsv`) | **21** |
 | Artículos científicos en PDF | **26** |
-| …de ellos, leídos entero o en parte | **17** |
-| …sin abrir | **9** |
+| …de ellos, leídos entero o en parte | **18** |
+| …sin abrir | **8** |
 | Frentes de investigación abiertos formalmente | **18** |
 | …cerrados | **8** |
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **360** |
-| Tareas de las 24 que se podían hacer desde aquí, **hechas** | **4** |
+| Tareas de las 24 que se podían hacer desde aquí, **hechas** | **5** |
 
 > 📏 **Recontado el 1 de octubre de 2026**: `.md`, `.tsv`, entradas publicadas y marcas `[?]`.
 > Las dos primeras filas —ficheros de fuente y peso del corpus— **siguen siendo la medición del
@@ -125,7 +125,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 | 9 | Chancillería de Valladolid | ⚠️ sentencias leídas; **los pleitos hay que pedirlos** | usuario (`ARCH-07`, `ARCH-08`) |
 | 10 | Fondo Osuna — vaciado sistemático | ⚠️ **el D.89 leído entero** (`TAR-01` ✅); el fondo, no | ambos (`TAR-19`, `TAR-21`, `TAR-22`) |
 | 11 | Floridablanca y Miñano | ✅ cerrado · dos flecos | aquí (`TAR-17`) |
-| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **9 artículos sin abrir** | aquí (`TAR-02` a `TAR-10`) |
+| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **8 artículos sin abrir** (`TAR-05` ✅) | aquí (`TAR-02` a `TAR-10`) |
 | 13 | AHP de Zamora | ⚠️ abierto, con cuatro pistas duras y fechadas | usuario (`ARCH-12` a `ARCH-15`) |
 | 14 | IGN / CNIG | ✅ **cerrado**: el límite está digitalizado (`TAR-11` ✅) y los tres códigos catastrales, identificados (`TAR-13` ✅) · fleco: georreferenciar el plano IRYDA | aquí (`TAR-12`) |
 | 15 | Riesco Chueca 2018 — el topónimo | ⚠️ abierto: **hace falta el libro de 2018** | usuario (`LIB-05`) |
@@ -137,7 +137,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 ## 4. Lo que se puede hacer desde aquí, sin pedirle nada a nadie
 
-**20 piezas**, y **cuatro ya hechas**. Por orden de lo que aportan:
+**19 piezas**, y **cinco ya hechas**. Por orden de lo que aportan:
 
 1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
    plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
@@ -156,9 +156,16 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
    y sin anotar son **Navianos de Valverde** (DGC 49151) y **Villanázar** (DGC 49285). De paso se
    ha medido quién hay al otro lado de la raya: **Villanázar comparte 3.729 m** con Colinas —el
    23 % del perímetro— y **Navianos no lo toca**, se queda a 1.104 m.
-3. **`TAR-02` a `TAR-10` — los nueve artículos de *Brigecio* sin abrir.** Tres traen capa de texto y
-   se leen de corrido; **seis son escaneos** y hay que leerlos a imagen, que es lento. El que más
-   promete es `TAR-05`: **mismo autor y mismo número** que el artículo que sostiene Castroferrol.
+3. **`TAR-02`, `TAR-03`, `TAR-04` y `TAR-06` a `TAR-10`: los ocho artículos de *Brigecio* que
+   quedan sin abrir.** Tres traen capa de texto y se leen de corrido; los demás son escaneos y hay
+   que leerlos a imagen, que es lento.
+   ✅ **`TAR-05`, hecha el 1-X-2026**, que era el que más prometía —mismo autor y mismo número que
+   el artículo que sostiene Castroferrol— y cumplió: **tres menciones del monasterio**, la del
+   documento de 1015 **confirmando desde fuera** la corrección que el proyecto hizo sobre el
+   latín, y la identificación del sitio **con San Juan-El Valle** dicha con todas las letras. Lo
+   que el autor **interpreta** —que el valle del Tera era ruta de peregrinación y el monasterio
+   uno de sus jalones— queda escrito como interpretación suya →
+   [la ficha de Castroferrol](01-fuentes-primarias/castroferrol-962-1170/README.md).
 4. **`TAR-14`, `TAR-18`, `TAR-21`, `TAR-22`** — cuatro dudas concretas que se pueden cerrar con lo
    que ya hay en casa o en abierto, incluida la verificación del recuento de **1587**.
 5. ✅ **`TAR-24` — la procedencia de cada imagen: HECHA el 30-IX-2026**, en v0.40. **45 de 45

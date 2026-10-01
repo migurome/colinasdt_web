@@ -443,3 +443,96 @@ cuelga de la frase sobre Castroferrol, no de la de Colinas**. Queda como **pista
 - **1033: un «condado» o *comisso* de Riba de Tera**, con **Pelayo Daniel** como *comisario*
   *(Ms. 4.357, fol. 52r)*. ★ **El valle tenía aparato administrativo propio y nombre**, y Colinas
   está dentro de él.
+
+---
+
+## ✅ 9. `TAR-05`: el artículo de al lado, leído (1 de octubre de 2026)
+
+En el **mismo número 10 de *Brigecio*** y del **mismo autor** hay un segundo artículo
+—«Monasterios, caminos de peregrinación e infraestructura viaria en el norte de Zamora»,
+pp. 45-66— que el proyecto tenía descargado y sin abrir. Leído entero, página a página.
+**Castroferrol sale tres veces**, y una de ellas dice algo que esta ficha no decía.
+
+### ★★★ Castroferrol, puesto en una ruta de peregrinación
+
+> «Así en el valle del Tera, en lo que hemos llamado la *Vía de Sanabria*, o si se prefiere la
+> *Ruta de Occidente* hacia Santiago de Compostela, en palabras de Augusto Quintana Prieto,
+> encontramos noticias de un nutrido número de estas fundaciones. **Remontando el curso del río en
+> su confluencia con el Almucera, en las inmediaciones del actual Colinas de Trasmonte se
+> encontraba el monasterio de San Miguel de Castroferrol**, documentado al menos desde el siglo X y
+> levantado probablemente sobre un asentamiento bajoimperial». — **pp. 48-49**
+
+Y al enumerar las salidas de Benavente:
+
+> «La otra alternativa, probablemente las más socorrida, a juzgar por las numerosas advocaciones
+> jacobeas y monasterios del valle, era **seguir la ruta del Tera** buscando las tierras orensanas a
+> través de Sanabria». — **p. 61**
+
+> ⚠️ **Hay que separar las dos cosas, y aquí es fácil confundirlas.**
+> **Lo documentado**: que el monasterio existe, que está entre el Tera y el Almucera y que se
+> documenta desde el siglo X.
+> **Lo interpretado por el autor**: que el valle del Tera funcionaba como ruta de peregrinación
+> hacia Santiago y que estos monasterios eran sus jalones.
+> De Castroferrol **no hay ni un documento que mencione peregrinos, hospital ni albergue**. Entra en
+> el cuadro **por estar donde está**, no por lo que diga su papel.
+
+### ★★ Y tenía reliquias: lo dice el documento de 1015 que esta ficha ya citaba
+
+> «[Contaba] con **despojos de diversos santos** el monasterio de San Miguel de Castroferronio,
+> junto a los ríos Tera y Almucera, según un documento de 1015». — **p. 56**
+
+La nota 55 da el latín, y es **el mismo pasaje que esta ficha cita más arriba**, leído hasta
+el final:
+
+> «*… in cuius honore edificatus est arcisterio Sancti Michaeli archangeli et Sancta Maria semper
+> virginis, **vel sanctis qui in ipso loco reconditos sunt**, bocabulum villa quod dicent Castro
+> Ferronio, discurrente ribulo Teira et de alia parte Almuçara*»
+> — AHN, Cód. 1195-b, fol. 686v.-687v.
+
+✅ **Es una confirmación desde fuera de la corrección que esta ficha hizo**: San Miguel y Santa
+María son los **titulares**; las reliquias son **de otros** santos, sin nombrar. El autor lo lee
+igual, y lo lee en su propio artículo de al lado.
+
+★ **Y le pone un porqué que aquí no estaba.** En el argumento de este artículo, tener reliquias es
+exactamente lo que convertía a un monasterio en meta de visita: «existiendo una relación
+proporcional entre la afluencia de visitantes y la cantidad y la calidad de los despojos
+atesorados» (p. 57). Dicho de otro modo: la cláusula que esta ficha resolvió como una cuestión de
+advocaciones es, **para su propio autor, el dato que mete a Castroferrol en el mapa de la
+peregrinación**.
+
+### ✅ La identificación con San Juan-El Valle, con todas las letras
+
+La nota 12 no deja lugar a dudas:
+
+> «Su ubicación debe corresponder al yacimiento arqueológico de **San Juan-El Valle**».
+
+### ⚠️ Tres cabos que deja este artículo
+
+| | Qué | Dónde |
+|---|---|---|
+| **Por conseguir** | LARRÉN IZQUIERDO, H. (coord.), *Arqueología e infraestructura agraria en el valle del Tera (Zamora)*, Madrid, 1999, **pp. 70-74**: cuatro páginas sobre San Juan-El Valle que el proyecto no tiene | nota 12 |
+| **Por comprobar** | **AHN, Códices, 1195-B, fol. 68r** `[?]`, donde el autor dice haber visto «noticias sobre este monasterio». Esta ficha cita los **ff. 686v-687**: o es otro folio del mismo tumbo, o es una errata | nota 12 |
+| **Para el pleito de 1694** | QUINTANA PRIETO, A., «El monasterio de San Pedro de Zamudia», *Stvdia Monastica* IX (1967), pp. 287-325. **San Pedro de Zamudia es uno de los lugares notificados en 1694 y su cura sigue sin nombre** | nota 30 |
+
+### ⚠️ Y dos divergencias del autor consigo mismo, en el mismo número
+
+| | En «Castroferrol» (pp. 33-44) | En «Monasterios, caminos…» (pp. 45-66) |
+|---|---|---|
+| El latín | «vel sanctis qui in ipso loco **reconditae** sunt» | «vel sanctis qui in ipso loco **reconditos** sunt» |
+| El folio | AHN, ms. 1195B, ff. 686v-**687r** | AHN, Cód. 1195-b, fol. 686v.-**687v** |
+
+No cambia el sentido, pero **mientras no se vea el tumbo no se puede decir cuál de las dos
+transcripciones es la buena**. Queda donde debe: en el lado de las cautelas, no en el del dato.
+
+### El valle, de paso
+
+- **San Pedro de Zamudia** era monasterio, en el valle de Valverde (p. 51).
+- **San Salvador de Villaverde**, «en San Pedro de la Viña, cercano al antiguo campamento romano de
+  *Petavonium*, **en la vía romana de Astorga a Braga**» (p. 51). Los dos lugares vuelven a salir
+  en el pleito de diezmos de 1694.
+- Hay **advocación jacobea en Vecilla de Trasmonte** (p. 58), el pueblo con el que Colinas pleiteó
+  ocho años.
+- La calzada de *Bracara* a *Asturica* «discurría por el **Valle de Vidriales, el Tera y La
+  Carballeda**, teniendo por centros más importantes la ciudad-campamento de *Petavonium* en
+  Rosinos de Vidriales y *Veniatia*, tal vez Villardeciervos» (p. 47).
+
