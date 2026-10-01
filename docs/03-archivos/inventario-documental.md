@@ -1051,7 +1051,96 @@ el análisis diplomático más detallado es de **Augusto Quintana Prieto**.
 | CABERO DOMÍNGUEZ, Mª C. (1995): *Astorga y su territorio en la Edad Media (s. IX-XIV)*, León, pp. 80, 81, 88 y 93 | La localización de Castroferrol. ⚠️ El artículo de 2000 advierte que **incurre en errores cronológicos** |
 | LARRÉN IZQUIERDO, H. (coord.) (1999): *Arqueología e infraestructura agraria en el valle del Tera (Zamora)*, Madrid, p. 22 | El yacimiento «San Miguel» de Quiruelas, segundo candidato para el emplazamiento del monasterio |
 
-### 8.2 Pobladura de Trasmonte — ✅ localizada, y **fuera** del término
+### 8.2 Pobladura de Trasmonte — **fuera** del término · ⚠️ **el sitio exacto, reabierto**
+
+> 🚨🚨 **1 de octubre de 2026: aparece la descripción documental del término de
+> Pobladura, y no cuadra con el sitio.** Al leer `TAR-06` —GARCÍA CABALLERO, A., «Los despoblados
+> en el Condado de Benavente (ss. XVI-XVII-XVIII)», *Brigecio* **2** (1992), pp. 55-80— resulta que
+> **Pobladura de Trasmonte tiene entrada propia** en el inventario de los **45 despoblados del
+> conde**, levantado sobre los libros *becerro* de **1446** y **1545** y el **Catastro de
+> Ensenada**. Y la entrada trae lo que a este apartado le faltaba: **los nombres de sus vecinos de
+> término**.
+>
+> > **POBLADURA DE TRASMONTE.-** Es de la merindad de Valverde:
+> > «Paga 390 mrs. de *pedido;* de *martiniega* 24 mrs. cada vecino, y medio carro de paja.
+> > **Tiene un molino en la *almocera*, cuyo fuero pagan los hermanos Martín y Andrés Díez**»
+> > (B-1446).
+> > Ocupa de norte a sur **un cuarto de legua**, y **medio de levante a poniente**, siendo de una y
+> > tres cuartos su circunferencia.
+> > **Confronta con *Villaofín* al norte y con *La Cervilla*, a levante.**
+> > Tienen propiedades en su término **siete vecinos de Villanázar, seis de Vecilla y uno de
+> > Navianos** y el señor Conde de Benavente (C. de E.-1750).
+> > — pp. 71
+>
+> ★★★ **Un molino en la Almucera, en 1446.** «La *almocera*» es **el arroyo de Colinas**. Es la
+> noticia más antigua que este proyecto tiene de un ingenio en ese cauce, y viene con **dos nombres
+> propios del siglo XV**: *Martín* y *Andrés Díez*, que pagaban su fuero.
+>
+> ★★ **Y Pobladura tenía concejo.** La entrada de **VILLAOFÍN**, dos páginas más adelante, lo dice
+> sin querer: «**Paga el concejo de *Pobladura de Trasmonte*** en cada año, de fuero del término de
+> Villaofín, tres cargas, una fanega, una hemina y dos celemines de pan mediado» (B-1446). En 1446
+> Pobladura no era un cuerpo de vecinos cualquiera: **era un concejo que arrendaba el término
+> despoblado de al lado**. Y Villaofín, añade, «**confina con el término de Vecilla (de
+> Trasmonte)**».
+>
+> ✅ **La tabla de vecindarios confirma el 11 de 1591 y lo pone donde debe.** El artículo cierra con
+> el estado censal de los ocho despoblados que aún tenían gente en el quinientos:
+>
+> | | 1530 | 1591 |
+> |---|---:|---:|
+> | **Pobladura de Trasmonte** | **15** | **11** |
+>
+> Son **las mismas cifras** que este proyecto tiene —los 15 del Censo de Pecheros y los **11 del
+> vecindario de 1591**—, pero contadas aquí **dentro de los despoblados del Condado de Benavente**.
+> ★ **Eso tumba del todo la identificación del editor del INE**, que colgaba esos 11 vecinos del
+> «Monte de Pobladura» de **Valderas**. No era Valderas: era el despoblado de la merindad de
+> Valverde.
+>
+> ### 🚨 Y ahora lo que obliga a reabrir el sitio
+>
+> **Los dos lindes que da el artículo siguen vivos, y este proyecto ya los tenía en sus propias
+> tablas sin saber lo que eran:**
+>
+> | Linde | Dónde está hoy | En qué capa |
+> |---|---|---|
+> | **La Cervilla**, a levante | **«Pico de la Cervilla»**, 42,01286 N · 5,77847 O — **2.738 m ENE del casco y DENTRO del término de Colinas**, polígono 004 | Catastro **y** plano IRYDA de 1975 —dos capas, emparejamiento exacto— |
+> | **Villaofín**, al norte | 41,99029 N · 5,79652 O — **1.804 m SE del casco**, fuera del término | **sólo OpenStreetMap**: una capa |
+>
+> Si Pobladura quedaba **al sur de Villaofín y al poniente de La Cervilla**, y medía lo que el
+> artículo dice —un cuarto de legua por media, ≈ **1.045 × 2.090 m**—, su centro cae hacia
+> **41,9856 N · 5,7911 O**: **2.489 m al SSE del casco de Colinas**, **fuera del término**
+> —comprobado contra el polígono— y a **4.813 m de «El Raso Pobladura»**, que es donde este
+> apartado la dio por localizada el 22 de septiembre.
+>
+> **Qué se mantiene y qué no:**
+>
+> - ✅ **Se mantiene lo principal**: Pobladura **no estaba en el término de Colinas**. Las dos
+>   posiciones candidatas caen fuera.
+> - ⚠️ **No se mantiene el sitio.** Hay ahora **dos localizaciones a casi cinco kilómetros una de
+>   otra**, y cada una se apoya en un tipo de prueba distinto: **el topónimo del despoblado**, que
+>   sobrevive al SSO en Navianos en tres registros; y **los topónimos de sus dos vecinos de
+>   término**, que sobreviven al SSE y al ENE. **No se elige por simpatía**, igual que no se eligió
+>   entre Madoz y Lobato Vidal.
+> - ⚠️ **Y las dos cautelas que pesan**: un paraje es una **superficie** y lo que aquí se compara
+>   son **puntos**; y «Villaofín» descansa en **una sola capa**, la más débil de las tres que el
+>   proyecto maneja.
+>
+> 🔎 **La prueba que lo dirime, y está al alcance**: el artículo da **medidas** del término de
+> Pobladura. Si en el parcelario —que el proyecto tiene descargado para Colinas, Quiruelas,
+> Villanázar y Navianos— aparece un bloque de parajes de esas proporciones al sur de Villaofín y al
+> poniente del Pico de la Cervilla, el asunto queda cerrado por geometría y no por cita. Queda
+> anotado como **`TAR-26`**.
+>
+> ★ **De paso, dos cosas más del mismo inventario**: en 1750 **vecinos de Colinas tenían
+> propiedades en el despoblado de Requejo** (p. 72), a la vera del Órbigo; y el despoblado que el
+> artículo llama **«San Miguel de Ciudadela y Sansueña»** es **el campamento de Rosinos de
+> Vidriales** —*Petavonium*—, «la penúltima mansión de una vía que unía Braga con Astorga» (p. 73).
+>
+> ⚠️ **Y un hueco que conviene decir**: **Castroferrol no está en el inventario.** De los 45
+> despoblados del conde, ninguno es él. La explicación más probable es que **nunca fue del conde**
+> —era de la mitra de Astorga— y este inventario sólo recoge lo que rendía al Condado; pero eso es
+> **interpretación**, no dato.
+
 
 > ✅ **RESUELTO el 22 de septiembre de 2026, por la noche.** El despoblado está localizado: el
 > **MTN50 de primera edición** rotula «**El Raso Pobladura**» en término de **Navianos de

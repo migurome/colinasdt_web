@@ -26,7 +26,7 @@ como imagen.
 | `martin-benito-2000-vecilla-tramonte-1706-brigecio10.pdf` | MARTÍN BENITO, J. I.: «El término de Vecilla de Tramonte en un documento de 1706», *Brigecio* **10** (2000), pp. 133-152 | ✅ parcial |
 | `gonzalez-rodriguez-2000-resena-coleccion-astorga-brigecio10.pdf` | Reseña de la *Colección documental de la catedral de Astorga, I*, *Brigecio* **10** (2000), pp. 232-234 | ✅ |
 | `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | «Monasterios, caminos de peregrinación e infraestructura viaria en el norte de Zamora», *Brigecio* **10** (2000), pp. 45-66 | ✅ **entero** |
-| `garcia-caballero-1992-despoblados-condado-brigecio2.pdf` | GARCÍA CABALLERO, A.: «Los despoblados en el Condado de Benavente (ss. XVI-XVIII)», *Brigecio* **2** (1992), pp. 55-80 | ⏳ |
+| `garcia-caballero-1992-despoblados-condado-brigecio2.pdf` | GARCÍA CABALLERO, A.: «Los despoblados en el Condado de Benavente (ss. XVI-XVIII)», *Brigecio* **2** (1992), pp. 55-80 | ✅ **entero** · 🚨 Pobladura de Trasmonte, con ficha, lindes y medidas |
 | `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | «El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales», *Brigecio* **6** (1996), pp. 11-30 | ⏳ |
 | `regueras-lopez-1989-sigillatas-azoague-brigecio1.pdf` | «Sigillatas en relieve y estampadas de Villanueva de Azoague», *Brigecio* **1** (1989), pp. 47-58 | ⏳ |
 | `vara-nuevo-2009-vocabulario-tera-1-brigecio18-19.pdf` · `-2010-...-2-brigecio20.pdf` | VARA GALLEGO, C. y NUEVO CUERVO, L. C.: «Vocabulario del valle del Tera» (I) y (II) | ✅ **los dos, 25-IX** → [`significado-de-los-nombres.md`](../04-cartografia/significado-de-los-nombres.md) |
@@ -60,22 +60,27 @@ como imagen.
 > autoría, y **poner un apellido con `[?]` no es marcar una duda, es fabricar un dato**. El autor lo
 > daba desde septiembre el [índice de *Brigecio*](brigecio-indice-articulos.tsv) de este proyecto.
 
-### Y los que siguen sin abrir — **nueve**
+### Los que ya se han leído — **cinco, entre el 30-IX y el 1-X de 2026**
+
+| Fichero | Tarea | Qué dio |
+|---|:-:|---|
+| `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | `TAR-05` | ★★ **Tres menciones de Castroferrol**: lo pone en la **Vía de Sanabria** hacia Santiago —interpretación del autor—, dice que **tenía reliquias** citando el latín de 1015 que **confirma desde fuera** la corrección del proyecto, e identifica el sitio con **San Juan-El Valle** → [la ficha](../01-fuentes-primarias/castroferrol-962-1170/README.md) |
+| `garcia-caballero-1992-despoblados-condado-brigecio2.pdf` | `TAR-06` | 🚨🚨 **Pobladura de Trasmonte, con ficha propia** entre los 45 despoblados del conde: lindes, medidas, **un molino en la Almucera en 1446** y la tabla 1530/1591. **Reabre dónde estuvo** → [inventario § 8.2](../03-archivos/inventario-documental.md) |
+| `blanco-iglesias-2013-arquitectura-barro-brigecio23.pdf` | `TAR-02` | ⚠️ **No nombra a Colinas.** Queda la técnica del valle —tapial, adobe, la *gloria*— y el vocabulario de las bodegas → [patrimonio](../05-patrimonio/README.md) |
+| `imagineria-gotica-tera-vidriales-brigecio18-19.pdf` | `TAR-03` | 🚨 **Colinas no está en el catálogo** de los dos valles. De la parroquia de San Juan **no queda nada catalogado** |
+| `restos-mozarabes-ayoo-2021-brigecio31.pdf` | `TAR-04` | ⚠️ **No nombra a Colinas.** Deja una fecha de horizonte: los monasterios del Tera y Vidriales se fundan **hacia 860-870** |
+
+### Y los que siguen sin abrir — **cuatro**
 
 | Fichero | Capa de texto | Por qué está aquí |
 |---|:-:|---|
-| `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | ✅ 22 pp., leídas a imagen el 1-X-2026 | ★ Cumplió lo que prometía: **tres menciones de Castroferrol**, la ruta de peregrinación del Tera y la confirmación del latín de 1015 → [la ficha](../01-fuentes-primarias/castroferrol-962-1170/README.md) |
-| `garcia-caballero-1992-despoblados-condado-brigecio2.pdf` | ❌ 25 pp. | Pobladura y Castroferrol desde la serie de despoblados del condado |
-| `blanco-iglesias-2013-arquitectura-barro-brigecio23.pdf` | ✅ 12 pp. | El adobe y el tapial: materia para el emblema y para el patrimonio |
-| `imagineria-gotica-tera-vidriales-brigecio18-19.pdf` | ✅ 19 pp. | ✅ **entero** · Colinas no está en el catálogo |
-| `restos-mozarabes-ayoo-2021-brigecio31.pdf` | ✅ 14 pp. | ✅ **entero** · no nombra a Colinas |
 | `martin-benito-2001-cofradia-vecilla-brigecio11.pdf` | ❌ 15 pp. | La cofradía de la Virgen de la Vega de Vecilla, s. XVIII |
 | `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | ❌ 19 pp. | El paralelo más cercano de «Las Bodegas» |
 | `san-salvador-villaverde-vidriales-brigecio11.pdf` | ❌ 20 pp. | El otro San Salvador del valle, para comparar con el de 1006 |
 | `regueras-lopez-1989-sigillatas-azoague-brigecio1.pdf` | ❌ 12 pp. | Paralelo cerámico del nivel tardorromano de San Juan-El Valle |
 
-> **Seis de los nueve son escaneos sin capa de texto** y hay que leerlos a imagen, que es lento. Van
-> registrados como `TAR-02` … `TAR-10` en
+> **Los cuatro son escaneos sin capa de texto** y hay que leerlos a imagen, que es lento. Van
+> registrados como `TAR-07` … `TAR-10` en
 > [`material-pendiente.tsv`](../03-archivos/material-pendiente.tsv).
 
 > ⚠️ Un artículo de la lista, «Los Manrique de Lara y el legado heráldico de don Fadrique»

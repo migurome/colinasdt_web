@@ -23,7 +23,7 @@ Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o co
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
 Chancillería y **cuatro ediciones de diplomática medieval**. De las **49 piezas pendientes**, **16 se
 pueden trabajar desde aquí** y **33 necesitan a una persona** —o una compra, o un correo—.
-Otras **ocho ya están hechas**, y las marcas se han puesto al día el 1 de octubre.
+Otras **nueve ya están hechas**, y las marcas se han puesto al día el 1 de octubre.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -39,14 +39,14 @@ decisión expresa. Ver §7.
 | Fichas y documentos de trabajo (`.md`) | **36** |
 | Tablas de datos (`.tsv`) | **21** |
 | Artículos científicos en PDF | **26** |
-| …de ellos, leídos entero o en parte | **21** |
-| …sin abrir | **5** |
+| …de ellos, leídos entero o en parte | **22** |
+| …sin abrir | **4** |
 | Frentes de investigación abiertos formalmente | **18** |
 | …cerrados | **8** |
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **360** |
-| Tareas de las 24 que se podían hacer desde aquí, **hechas** | **8** |
+| Tareas de las 24 que se podían hacer desde aquí, **hechas** | **9** |
 
 > 📏 **Recontado el 1 de octubre de 2026**: `.md`, `.tsv`, entradas publicadas y marcas `[?]`.
 > Las dos primeras filas —ficheros de fuente y peso del corpus— **siguen siendo la medición del
@@ -125,7 +125,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 | 9 | Chancillería de Valladolid | ⚠️ sentencias leídas; **los pleitos hay que pedirlos** | usuario (`ARCH-07`, `ARCH-08`) |
 | 10 | Fondo Osuna — vaciado sistemático | ⚠️ **el D.89 leído entero** (`TAR-01` ✅); el fondo, no | ambos (`TAR-19`, `TAR-21`, `TAR-22`) |
 | 11 | Floridablanca y Miñano | ✅ cerrado · dos flecos | aquí (`TAR-17`) |
-| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **5 artículos sin abrir** (hechos `TAR-02` a `TAR-05`) | aquí (`TAR-06` a `TAR-10`) |
+| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **4 artículos sin abrir** (hechos `TAR-02` a `TAR-06`) | aquí (`TAR-07` a `TAR-10`) |
 | 13 | AHP de Zamora | ⚠️ abierto, con cuatro pistas duras y fechadas | usuario (`ARCH-12` a `ARCH-15`) |
 | 14 | IGN / CNIG | ✅ **cerrado**: el límite está digitalizado (`TAR-11` ✅) y los tres códigos catastrales, identificados (`TAR-13` ✅) · fleco: georreferenciar el plano IRYDA | aquí (`TAR-12`) |
 | 15 | Riesco Chueca 2018 — el topónimo | ⚠️ abierto: **hace falta el libro de 2018** | usuario (`LIB-05`) |
@@ -137,7 +137,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 ## 4. Lo que se puede hacer desde aquí, sin pedirle nada a nadie
 
-**16 piezas**, y **ocho ya hechas**. Por orden de lo que aportan:
+**16 piezas**, y **nueve ya hechas**. Por orden de lo que aportan:
 
 1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
    plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
@@ -156,9 +156,13 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
    y sin anotar son **Navianos de Valverde** (DGC 49151) y **Villanázar** (DGC 49285). De paso se
    ha medido quién hay al otro lado de la raya: **Villanázar comparte 3.729 m** con Colinas —el
    23 % del perímetro— y **Navianos no lo toca**, se queda a 1.104 m.
-3. **`TAR-06` a `TAR-10`: los cinco artículos de *Brigecio* que quedan sin abrir.** Los cinco son
-   **escaneos sin capa de texto** y hay que leerlos a imagen, que es lento. El que más promete es
-   `TAR-06`, los **despoblados del Condado de Benavente**, por Pobladura y por Castroferrol.
+3. **`TAR-07` a `TAR-10`: los cuatro artículos de *Brigecio* que quedan sin abrir.** Los cuatro son
+   **escaneos sin capa de texto** y hay que leerlos a imagen, que es lento.
+   🚨 **`TAR-06`, hecha el 1-X-2026**, y era el que más prometía: **Pobladura de Trasmonte
+   tiene ficha propia** entre los 45 despoblados del conde, con **lindes, medidas, un molino en la
+   Almucera en 1446** y la tabla de vecindarios 1530/1591. **Y reabre dónde estuvo**: sus dos
+   lindes sobreviven como parajes y no caen donde el proyecto la había situado →
+   [inventario § 8.2](03-archivos/inventario-documental.md). De ahí sale **`TAR-26`**.
    ✅ **`TAR-02`, `TAR-03` y `TAR-04`, hechos el 1-X-2026**, y los tres con el mismo resultado:
    **ninguno nombra a Colinas**. El que más dice es el que menos trae, `TAR-03`: es el **catálogo
    especializado de la imaginería gótica de los dos valles**, hecho pieza a pieza, y **de la
