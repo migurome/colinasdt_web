@@ -65,12 +65,21 @@
 | **Vuelos 1956-57, 1973-86 y 2023** | 5 ortofotos del término con el límite superpuesto | [`04-cartografia/vuelos-historicos/`](04-cartografia/vuelos-historicos/) |
 | **Concentración parcelaria (IRYDA)** | Recorte de la hoja 3, «El Valle» | [`04-cartografia/concentracion-parcelaria-1975-77/`](04-cartografia/concentracion-parcelaria-1975-77/) |
 
-> ⚠️ **Un cabo suelto en el punto 4.** De los tres códigos catastrales descargados, **sólo uno está
-> identificado**: el **DGC 49189 = INE 49171 = Quiruelas de Vidriales**, que es el que contiene el
-> término de Colinas (polígonos 004 y 005) → [`limite-del-termino.md`](04-cartografia/limite-del-termino.md).
-> Los otros dos, **DGC 49151 y DGC 49285**, se bajaron para el barrido de parajes de los términos
-> vecinos, `[?]` **pero no se ha dejado anotado cuáles son**, y los códigos de la Dirección General
-> del Catastro **no coinciden con los del INE**. Hay que resolverlo antes de citarlos.
+> ✅ **El cabo suelto del punto 4, atado el 1 de octubre de 2026** (`TAR-13`). Los tres códigos
+> están identificados, y el nombre lo dan **los propios metadatos INSPIRE** de cada descarga
+> —`A.ES.SDGC.CP.MD..<código>.xml`, campo `gmd:title`—:
+>
+> | Código DGC | Término | Qué pinta aquí |
+> |---|---|---|
+> | **49189** | **Quiruelas de Vidriales** (INE 49171) | **Contiene el término de Colinas**: polígonos rústicos 004 y 005 |
+> | **49285** | **Villanázar** | **Vecino por el sureste**: comparte **3.729 m** con el contorno de Colinas, el 23 % de su perímetro |
+> | **49151** | **Navianos de Valverde** | **No toca a Colinas**: su borde norte se queda a **1.104 m** al sur. Se bajó para el barrido de parajes de la zona, no por vecindad |
+>
+> Las dos últimas cifras están medidas, no supuestas →
+> [`limite-del-termino.md`](04-cartografia/limite-del-termino.md), «¿Y quién hay al otro lado?».
+> ⚠️ **Los códigos de la Dirección General del Catastro no son los del INE** —Quiruelas es 49189
+> para el Catastro y 49171 para el INE—, así que al citar hay que decir de cuál se habla. Los del
+> INE de Villanázar y Navianos **no se han comprobado** y aquí no se dan.
 
 ## 5. Bibliografía
 

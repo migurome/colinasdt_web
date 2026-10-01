@@ -21,11 +21,12 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las 57 piezas pendientes, **24 se
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **53 piezas pendientes**, **20 se
 pueden trabajar desde aquí** y **33 necesitan a una persona** —o una compra, o un correo—.
+Otras **cuatro ya están hechas** y se han marcado como tales el 1 de octubre.
 
-Y hay un desfase que conviene decir en voz alta: **la web va cuatro días por detrás de la
-investigación**, por decisión expresa. Ver §7.
+Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
+decisión expresa. Ver §7.
 
 ---
 
@@ -35,18 +36,23 @@ investigación**, por decisión expresa. Ver §7.
 |---|---:|
 | Ficheros de fuente dentro del proyecto | **412** |
 | Peso del corpus | **515 MB** |
-| Fichas y documentos de trabajo (`.md`) | **28** |
-| Tablas de datos (`.tsv`) | **18** |
+| Fichas y documentos de trabajo (`.md`) | **36** |
+| Tablas de datos (`.tsv`) | **21** |
 | Artículos científicos en PDF | **26** |
 | …de ellos, leídos entero o en parte | **17** |
 | …sin abrir | **9** |
 | Frentes de investigación abiertos formalmente | **18** |
 | …cerrados | **8** |
 | …abiertos | **10** |
-| Entradas en la línea temporal publicada | **33** |
-| Marcas de duda `[?]` vivas en la documentación | **257** |
+| Entradas en la línea temporal publicada | **60** |
+| Marcas de duda `[?]` vivas en la documentación | **360** |
+| Tareas de las 24 que se podían hacer desde aquí, **hechas** | **4** |
 
-> ⚠️ **Las 257 dudas no son 257 preguntas distintas**: son las veces que aparece la marca, y una
+> 📏 **Recontado el 1 de octubre de 2026**: `.md`, `.tsv`, entradas publicadas y marcas `[?]`.
+> Las dos primeras filas —ficheros de fuente y peso del corpus— **siguen siendo la medición del
+> 22 de septiembre** y no se han vuelto a contar; el árbol entero, sin `.git`, pesa hoy **599 MB**.
+
+> ⚠️ **Las 360 dudas no son 360 preguntas distintas**: son las veces que aparece la marca, y una
 > misma duda puede repetirse en tres ficheros. **Lo que la cifra mide es la disciplina, no la
 > ignorancia**: cada una de esas marcas es un sitio donde el proyecto se negó a rellenar un hueco.
 
@@ -117,11 +123,11 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 | 7 | Anuario 1993 del IEZ | ✅ cerrado | — |
 | 8 | Archivo Diocesano de Astorga | 🚨 **abierto, y es el frente con más que dar** | usuario (`ARCH-01` a `ARCH-06`) |
 | 9 | Chancillería de Valladolid | ⚠️ sentencias leídas; **los pleitos hay que pedirlos** | usuario (`ARCH-07`, `ARCH-08`) |
-| 10 | Fondo Osuna — vaciado sistemático | ⚠️ tres unidades leídas; el fondo, no | ambos (`TAR-01`, `TAR-19`) |
+| 10 | Fondo Osuna — vaciado sistemático | ⚠️ **el D.89 leído entero** (`TAR-01` ✅); el fondo, no | ambos (`TAR-19`, `TAR-21`, `TAR-22`) |
 | 11 | Floridablanca y Miñano | ✅ cerrado · dos flecos | aquí (`TAR-17`) |
 | 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **9 artículos sin abrir** | aquí (`TAR-02` a `TAR-10`) |
 | 13 | AHP de Zamora | ⚠️ abierto, con cuatro pistas duras y fechadas | usuario (`ARCH-12` a `ARCH-15`) |
-| 14 | IGN / CNIG | ⚠️ muy avanzado · falta **digitalizar el límite** | aquí (`TAR-11`) |
+| 14 | IGN / CNIG | ✅ **cerrado**: el límite está digitalizado (`TAR-11` ✅) y los tres códigos catastrales, identificados (`TAR-13` ✅) · fleco: georreferenciar el plano IRYDA | aquí (`TAR-12`) |
 | 15 | Riesco Chueca 2018 — el topónimo | ⚠️ abierto: **hace falta el libro de 2018** | usuario (`LIB-05`) |
 | 16 | El agujero de 1842 | ⚠️ **media respuesta**: el 132 es una imputación del INE, no una medición | usuario (`ARCH-05`, `ARCH-20`) |
 | 17 | Madoz, releído entero | ✅ cerrado · fleco: «San Juanico» | aquí (`TAR-15`) |
@@ -131,7 +137,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 ## 4. Lo que se puede hacer desde aquí, sin pedirle nada a nadie
 
-**24 piezas.** Por orden de lo que aportan:
+**20 piezas**, y **cuatro ya hechas**. Por orden de lo que aportan:
 
 1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
    plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
@@ -141,14 +147,25 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
    10 y de **26 de mayo de 1694**, y en el segundo **Colinas encabeza una lista de siete curas
    amenazados con excomunión pública**. Ver
    [la ficha del legajo](01-fuentes-primarias/osuna-astorga/README.md).
-2. ★ **`TAR-11` — digitalizar el término histórico** sobre el MTN50 de 1.ª edición. Desbloquea medio
-   frente de cartografía.
+2. ✅ **`TAR-11` — el término histórico: HECHA el 22-IX-2026**, y por mejor camino del que esta
+   lista proponía. **No se calcó el ráster** —leer a ojo un 1:50.000 habría dado 300-400 m de
+   error—: se tomó el **parcelario del Catastro**, cuyos polígonos rústicos no se fusionaron en
+   1972, y se comprobó contra el MTN50 anterior a esa fecha. **1.026,6 ha y 16.345 m de
+   perímetro** → [el límite, en coordenadas](04-cartografia/limite-del-termino.md).
+   ✅ Y con él **`TAR-13`, hecha el 1-X-2026**: los dos códigos catastrales que estaban descargados
+   y sin anotar son **Navianos de Valverde** (DGC 49151) y **Villanázar** (DGC 49285). De paso se
+   ha medido quién hay al otro lado de la raya: **Villanázar comparte 3.729 m** con Colinas —el
+   23 % del perímetro— y **Navianos no lo toca**, se queda a 1.104 m.
 3. **`TAR-02` a `TAR-10` — los nueve artículos de *Brigecio* sin abrir.** Tres traen capa de texto y
    se leen de corrido; **seis son escaneos** y hay que leerlos a imagen, que es lento. El que más
    promete es `TAR-05`: **mismo autor y mismo número** que el artículo que sostiene Castroferrol.
 4. **`TAR-14`, `TAR-18`, `TAR-21`, `TAR-22`** — cuatro dudas concretas que se pueden cerrar con lo
    que ya hay en casa o en abierto, incluida la verificación del recuento de **1587**.
-5. **`LIMP-01`, `LIMP-02`** — higiene: **las ejecutorias están duplicadas en el disco** (una copia
+5. ✅ **`TAR-24` — la procedencia de cada imagen: HECHA el 30-IX-2026**, en v0.40. **45 de 45
+   imágenes publicadas llevan firma al pie**, y las condiciones de los cuatro archivos están
+   leídas una por una. **La del IGN no se cumplía** —pide una fórmula, no una mención— y se
+   corrigió el mismo día → [`CREDITOS.md`](../CREDITOS.md).
+6. **`LIMP-01`, `LIMP-02`** — higiene: **las ejecutorias están duplicadas en el disco** (una copia
    con la extensión rota `.jg`) y el índice de facsímiles da una cifra que se quedó atrás.
 
 > ⚠️ **`LIMP-01` borra ficheros.** Están verificados idénticos por md5 y la copia buena es
@@ -192,6 +209,9 @@ Los dos registros están pensados para trabajarse **por identificador**, sin reh
 **Reglas de mantenimiento**, para que los registros no mientan:
 
 1. `estado` sólo pasa a `obtenido` cuando **la pieza está en el proyecto**, no cuando se ha pedido.
+   Para las tareas (`TAR-*`) el estado equivalente es **`hecho`**, y hay que ponerlo **el día que
+   se hacen**: un registro miente igual por quedarse corto que por pasarse. El 1-X-2026 había
+   **cuatro** tareas hechas marcadas como pendientes.
 2. Una vía que se prueba **se marca aunque falle**. Lo contrario lleva a probarla otra vez dentro de
    un mes.
 3. Lo que se consiga **se vacía en su ficha**, y aquí queda sólo el puntero. Este fichero mide; no

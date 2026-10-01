@@ -175,6 +175,57 @@ que el sitio está del lado bueno de la raya.
 
 ---
 
+## 7 bis. ¿Y quién hay al otro lado? (1 de octubre de 2026)
+
+Esta ficha medía el contorno y decía que **10.295 m siguen siendo límite municipal vigente de
+Quiruelas con sus vecinos**, sin decir **con qué vecinos**. Al cerrar `TAR-13` —identificar los dos
+códigos catastrales que estaban descargados y sin anotar— se ha podido medir uno de ellos.
+
+**El método.** Se proyecta el anillo de Colinas a **UTM 30N sobre ETRS89** y se mide, segmento a
+segmento, la distancia al contorno rústico del vecino. *Comprobación de que la proyección no
+desvía*: el anillo reproyectado da **1.026,6 ha y 16.345 m**, que son exactamente las cifras que
+esta ficha tenía medidas por otro camino el 22 de septiembre.
+
+| Código DGC | Término | Raya con Colinas |
+|---|---|---|
+| **49285** | **Villanázar** | **3.729 m — el 23 % del perímetro**, por el sureste |
+| **49151** | **Navianos de Valverde** | **ninguna.** Su borde norte se queda a **1.104 m** al sur de Colinas |
+
+### El reparto del perímetro, hasta donde llega lo medido
+
+| Tramo | m | % |
+|---|---:|---:|
+| Raya con **Quiruelas de Vidriales**, hoy interior | 6.050 | 37 |
+| Raya con **Villanázar** | **3.729** | **23** |
+| **Vecinos cuyo parcelario no está descargado** | 6.567 | 40 |
+
+> **Navianos de Valverde no era vecino de Colinas.** Su parcelario se bajó para el barrido de
+> parajes de la zona, y está bien que esté; pero **no sirve para nada del límite**, y conviene que
+> quede dicho antes de que alguien lo cite como colindante.
+
+### ⚠️ Lo que se ve de paso: los dos parcelarios no casan vértice a vértice
+
+En los 3.729 m de raya con Villanázar, la separación entre el contorno de Colinas y el de
+Villanázar es:
+
+| | |
+|---|---|
+| Mediana | **4 m** |
+| Percentil 90 | **27 m** |
+| Máxima | **123 m** |
+
+Es decir: **en la mayor parte del tramo las dos líneas son la misma** —cuatro metros es el ruido de
+digitalización—, pero **hay trechos en que se separan decenas de metros**. Es el artefacto conocido
+de los parcelarios catastrales, que se levantan término por término y no se cosen entre sí: dos
+hojas vecinas dejan astillas de tierra sin asignar o asignada dos veces.
+
+**No invalida el polígono de esta ficha**, que se eligió por otras tres comprobaciones; pero **pone
+número** a lo que el punto 6 decía sin él —«no se ha medido la desviación mojón a mojón—»: en el
+lado de Villanázar, **la incertidumbre del contorno es de unos pocos metros, con puntas de más de
+cien**.
+
+---
+
 ## 8. Ficheros
 
 | Fichero | Qué es |
@@ -193,4 +244,4 @@ de la información. La base del MTN50 de primera edición es del **Instituto Geo
 
 ---
 
-*Ficha redactada el 22 de septiembre de 2026.*
+*Ficha redactada el 22 de septiembre de 2026; punto 7 bis añadido el 1 de octubre de 2026.*
