@@ -784,6 +784,7 @@ docs/
     ign-historico/                      ★ MTN50 de 1.ª edición y planimetrías, georreferenciados
     concentracion-parcelaria-1975-77/  ★ 6 planos IRYDA: el término dibujado
   05-patrimonio/
+    README.md                           ★ La arquitectura de barro del valle, y el hueco de Colinas
   06-identidad-simbolos/
     repertorio-simbolico.md             ★ Materia prima para escudo, colores y marca
     metodo-heraldico.md                 ★ Cómo se funda un escudo: 3 precedentes de la comarca

@@ -30,7 +30,7 @@ como imagen.
 | `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | «El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales», *Brigecio* **6** (1996), pp. 11-30 | ⏳ |
 | `regueras-lopez-1989-sigillatas-azoague-brigecio1.pdf` | «Sigillatas en relieve y estampadas de Villanueva de Azoague», *Brigecio* **1** (1989), pp. 47-58 | ⏳ |
 | `vara-nuevo-2009-vocabulario-tera-1-brigecio18-19.pdf` · `-2010-...-2-brigecio20.pdf` | VARA GALLEGO, C. y NUEVO CUERVO, L. C.: «Vocabulario del valle del Tera» (I) y (II) | ✅ **los dos, 25-IX** → [`significado-de-los-nombres.md`](../04-cartografia/significado-de-los-nombres.md) |
-| `blanco-iglesias-2013-arquitectura-barro-brigecio23.pdf` | BLANCO IGLESIAS, S.: «La arquitectura de barro en los valles de Vidriales», *Brigecio* **23** (2013), pp. 309-319 | ⏳ **con capa de texto** |
+| `blanco-iglesias-2013-arquitectura-barro-brigecio23.pdf` | BLANCO IGLESIAS, S.: «La arquitectura de barro en los valles de Vidriales», *Brigecio* **23** (2013), pp. 309-319 | ✅ **entero** · no nombra a Colinas |
 
 ### ★★★ Y los de heráldica, que abren el frente nº 18
 
@@ -67,8 +67,8 @@ como imagen.
 | `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | ✅ 22 pp., leídas a imagen el 1-X-2026 | ★ Cumplió lo que prometía: **tres menciones de Castroferrol**, la ruta de peregrinación del Tera y la confirmación del latín de 1015 → [la ficha](../01-fuentes-primarias/castroferrol-962-1170/README.md) |
 | `garcia-caballero-1992-despoblados-condado-brigecio2.pdf` | ❌ 25 pp. | Pobladura y Castroferrol desde la serie de despoblados del condado |
 | `blanco-iglesias-2013-arquitectura-barro-brigecio23.pdf` | ✅ 12 pp. | El adobe y el tapial: materia para el emblema y para el patrimonio |
-| `imagineria-gotica-tera-vidriales-brigecio18-19.pdf` | ✅ 19 pp. | Si queda algo mueble de la parroquia de San Juan |
-| `restos-mozarabes-ayoo-2021-brigecio31.pdf` | ✅ 14 pp. | El contexto material de los nombres de 1015 |
+| `imagineria-gotica-tera-vidriales-brigecio18-19.pdf` | ✅ 19 pp. | ✅ **entero** · Colinas no está en el catálogo |
+| `restos-mozarabes-ayoo-2021-brigecio31.pdf` | ✅ 14 pp. | ✅ **entero** · no nombra a Colinas |
 | `martin-benito-2001-cofradia-vecilla-brigecio11.pdf` | ❌ 15 pp. | La cofradía de la Virgen de la Vega de Vecilla, s. XVIII |
 | `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | ❌ 19 pp. | El paralelo más cercano de «Las Bodegas» |
 | `san-salvador-villaverde-vidriales-brigecio11.pdf` | ❌ 20 pp. | El otro San Salvador del valle, para comparar con el de 1006 |
