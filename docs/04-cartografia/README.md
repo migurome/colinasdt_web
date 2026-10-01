@@ -21,6 +21,10 @@
 
 `plano-general-vista.png` — versión reducida (3.200 px) del plano general, para consulta rápida.
 
+`plano-general.tfw` + `plano-general.prj` — ✅ **la georreferenciación**, en EPSG:25830
+(UTM 30N / ETRS89). Con estos dos ficheros al lado, el TIF se abre ya colocado en cualquier SIG.
+`comprobacion_georreferenciacion.jpg` — el plano con el límite catastral y los parajes encima.
+
 **Formato:** TIFF bitonal, compresión CCITT G4. Originales de ~10.800 × 14.700 px (≈160 Mpx).
 
 ### Identificación de la fuente
@@ -43,7 +47,7 @@ Los TIF originales del servidor están **girados 90°**. Los que hay aquí ya es
 > **Ojo: enderezado no significa norte arriba.** Estos planos están dibujados con el eje largo del
 > término en horizontal, no orientados al norte. **Cada hoja lleva su propia rosa de los vientos en
 > el cajetín**, y esa es la referencia buena. Al montar el mapa de la web hay que georreferenciar,
-> no suponer.
+> no suponer. ✅ **Y el plano general ya está georreferenciado**: ver abajo, `TAR-12`.
 
 ### Los cinco polígonos, y dónde cae cada uno
 
@@ -534,3 +538,76 @@ Documentación administrativa pública procedente del **IRYDA**, difundida por l
 y León** en su servicio de consulta de concentraciones parcelarias. Al usarla en la web debe
 acreditarse el organismo productor y la serie, junto con la referencia del Decreto 3119/1970. El
 expediente completo se conserva en el **Área de Estructuras Agrarias** de Zamora.
+
+---
+
+## ✅ `TAR-12` — El plano general de 1975, con coordenadas (1 de octubre de 2026)
+
+**El plano ya se puede superponer a cualquier mapa.** Quedan junto al TIF un **fichero de mundo**
+(`plano-general.tfw`) y su **sistema de referencia** (`plano-general.prj`, EPSG:25830 —UTM 30N
+sobre ETRS89—). Con los tres ficheros en la misma carpeta, QGIS, ArcGIS o GDAL abren
+`plano-general.tif` colocado en su sitio, sin tocar nada.
+
+### Cómo se hizo, y por qué así
+
+Un plano de concentración no trae cuadrícula ni coordenadas: sólo la escala y una rosa de los
+vientos. Lo habitual sería pinchar puntos de control a ojo, que es justo lo que este proyecto se
+tiene prohibido —leer un rótulo a ojo da **300-400 m de error**—. Se hizo al revés: **no se
+pincha nada; se casa la silueta entera**.
+
+1. **Sacar del ráster la mancha del término.** El interior está partido en parcelas, así que no
+   vale buscar «la región cerrada»: se inunda el papel **desde fuera** y se toma la pieza mayor
+   de lo que el agua no alcanza. Salen **936.877 píxeles** de silueta.
+2. **Medir las dos figuras por sus momentos** —centroide, eje principal y semiejes—: la mancha
+   dibujada en 1975 y el [polígono del término](limite-del-termino.md) medido en el Catastro de
+   2026. Eso da la semilla del giro y de la escala sin intervenir a mano.
+3. **Afinar maximizando la *intersección sobre unión*** de las dos siluetas. ⚠️ La primera versión
+   usaba «qué parte de la mancha cae dentro del polígono» y **encontró la trampa**: encoger el
+   plano hasta que todo cabe da el 100 %. Con *intersección / unión* encoger ya no sale gratis.
+
+### El resultado
+
+| | |
+|---|---|
+| **Giro** | **33,877°** — el norte cae **33,88° a la derecha de la vertical** del papel |
+| **Tamaño de píxel** | **0,4179 m** en el terreno |
+| **Resolución del escaneo** | **304 ppp** a 1:5.000 |
+| **Cobertura de la hoja** | **6.152 × 4.507 m** |
+| **Acuerdo de las dos siluetas** | **97,3 %** de intersección sobre unión |
+
+| Esquina del TIF | UTM 30N / ETRS89 | Geográficas |
+|---|---|---|
+| superior izquierda | 264.004,9 E · 4.654.511,4 N | 42,00726 N · 5,84978 O |
+| superior derecha | 269.112,0 E · 4.657.940,2 N | 42,03962 N · 5,78952 O |
+| inferior izquierda | 266.516,8 E · 4.650.770,0 N | 41,97435 N · 5,81799 O |
+| inferior derecha | 271.623,9 E · 4.654.198,8 N | 42,00669 N · 5,75775 O |
+
+### ★★ Dos comprobaciones que no entraron en el ajuste
+
+**1. La rosa de los vientos del cajetín.** La aguja que **A. Figal** dibujó en 1975 se midió aparte
+—aislada por erosión de la imagen y medida por su eje principal—: marca el norte a **33,44°** de
+la vertical del papel. El ajuste, hecho sólo con la silueta y el polígono catastral, dice
+**33,88°**. **Se separan 0,44°.** El plano confirma su propia georreferenciación.
+
+**2. La resolución del escaneo.** La escala salió del ajuste, no se impuso: **0,4179 m por píxel**.
+A 1:5.000 eso son **304 puntos por pulgada**. ★ **Nadie metió ese número**: que caiga sobre los
+300 ppp de un escaneo normal es señal de que la escala declarada en el cajetín y la del ajuste son
+la misma.
+
+![El plano de 1975 con el límite catastral de 2026 encima](concentracion-parcelaria-1975-77/comprobacion_georreferenciacion.jpg)
+
+> **Lo que enseña la comprobación.** En rojo, el límite del término medido en el **Catastro de
+> 2026**; en azul, los **52 parajes** del parcelario —que **no** intervinieron en el ajuste—; en
+> verde, el **casco** y la flecha del **norte**. La línea roja sigue el trazo de 1975 en todo el
+> contorno: el pico del norte, el lóbulo del este, la muesca del sur y el meandro del Tera.
+
+> ⚠️ **Tres cautelas.**
+> - El ajuste es una **semejanza** —giro, escala y traslación—, no una deformación elástica. No
+>   corrige el alabeo del papel ni los defectos del escaneo, y por eso el acuerdo es 97,3 % y no
+>   100 %.
+> - El 2,7 % que no casa **no es todo error de ajuste**: el perímetro de la concentración de 1970
+>   y la raya catastral de hoy **no tienen por qué ser idénticos**. Dónde difieren es, de hecho,
+>   una pregunta interesante que este ajuste deja planteada.
+> - **Esto georreferencia el plano general, no las cinco hojas** de polígono. Cada una cubre un
+>   trozo del término y su silueta no es la del término entero, así que el método de arriba no les
+>   vale tal cual.
