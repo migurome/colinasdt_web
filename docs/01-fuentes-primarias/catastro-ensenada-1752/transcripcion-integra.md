@@ -193,12 +193,13 @@ dos columnas del PDF.
 
 ### 16ª — Cuantía anual de diezmos y primicias
 > A la décima sexta dijeron que por una regulación hecha por un quinquenio les parece que la
-> **carga de diezmos** monta en cada un año: **cinquenta y seis fanegas de trigo**, **[v]einte y
-> cinco de zenteno**, **diez de zebada**, **seis zelemines de garbanzos**, **seis de cantudas** y
+> **carga de diezmos** monta en cada un año: **cinquenta y seis fanegas de trigo**,
+> <s>[v]einte y cinco</s> → **ciento veinte y cinco de zenteno**, **diez de zebada**,
+> **seis zelemines de garbanzos**, **seis de cantudas** y
 > **tres de lentejas**, **veinte y tres cántaros de vino**, **cinquenta y seis libras de lana**,
 > **trece corderos**, **seis cerdillos**, **seis libras de añinos**, **setenta libras de lino**,
 > **tres fanegas de linaza**, **quarenta y seis reales** en especie de las **soldadas de mozos
-> sirvientes**, y **treinta reales de los diezmos de los pozos** (sic).
+> sirvientes**, y **treinta reales de los diezmos de los pozos**.
 >
 > Y la **carga de primicias** importa en cada un año, por la misma regulación de un quinquenio,
 > **doce fanegas de trigo, dos de zenteno y una de zebada**. Remítense para maior justificación a
@@ -442,7 +443,8 @@ nuestra extracción):
 | 10ª | «Las quatrocientas ocho zelemines y medio» | «Las quatrocientas **[fanegas y]** ocho zelemines y medio» | Sin la restitución no cuadra la suma; con ella sí: 400+400+636+800+120+16 = **2.372** ✔ |
 | 23ª | «por razón de la leña del monte **tiene** este Común utilidad alguna» | «…**no** tiene…» | Falta la negación; el sentido lo exige, y lo confirma «por ser vaja y no usa de ella» |
 | 25ª | «importan quinientos treita y quatro reales» | **534 reales — así en el manuscrito** | La suma de las 12 partidas da 634 r. **El desajuste es del original de 1752, no de la edición**: verificado. Ver abajo |
-| 16ª | «**ceinte** y veinte y cinco de zenteno» | «[v]einte y cinco» | Errata evidente |
+| 16ª | «**ceinte** y veinte y cinco de zenteno» | <s>«[v]einte y cinco»</s> → ★ **«ciento, veinte y cinco»** | 🚨 **Corregido el 1-X-2026 sobre el manuscrito** (`ensenada-18.jpg`, ×1,9): el «ceinte» de la edición es **«ciento»**, no «veinte». Son **125 fanegas de centeno**, no 25. Ver abajo |
+| 16ª | «los diezmos de los **pozos** (sic)» | **«pozos», y no es errata** | ✅ **El (sic) se retira el 1-X-2026.** La **28.ª** del mismo documento dice «diez maravedís del **diezmo del agua de los pozos**» entre los derechos enajenados de la Corona. Es el mismo derecho |
 | 18ª | «cada cabeza de **vaíca** tres reales de tres libras de la lana» | «cada cabeza de **vacía**» | *Oveja vacía* = la que no cría ese año; de una vaca no se saca lana. Lectura segura por el sentido |
 | 14ª | «cantudas y **mentejas**» | «lentejas» | Errata evidente |
 | 12ª | «cien zepas plantadas en tierra producen cinco cántaras» | «en tierra **[de primera]**» | La serie exige el término que falta (primera 5 / segunda 4 / tercera 2) |
@@ -578,3 +580,50 @@ esto es hipótesis, no conclusión.
 
 **Para el mapa de la web: 1.043 ha.** No convertir fanegas, y explicar por qué las dos cifras de
 1752 se apartan — es en sí mismo un buen pasaje sobre cómo se medía la tierra antes de medirla.
+
+---
+
+## 🚨 La cifra del centeno de la 16.ª — corregida sobre el manuscrito (1 de octubre de 2026)
+
+**Esta transcripción decía que el diezmo de centeno eran 25 fanegas. Son 125.** El error no vino
+de la edición impresa, sino de nuestra enmienda: la edición trae «cinquenta y seis fanegas de
+trigo, **ceinte** / y veinte y cinco de zenteno», y aquí se leyó ese «ceinte» como una errata de
+«veinte», descartando la palabra. **El manuscrito dice «ciento»**, leído en `ensenada-18.jpg`
+ampliada: «cinquenta y seis fane- / gas de trigo, **ciento, veinte** / y cinco de zenteno, diez de
+/ zebada…».
+
+**Y la propia declaración lo confirma, sin necesidad de paleografía.** La **10.ª** dice lo que se
+siembra cada año:
+
+| | Fanegas sembradas al año | Según la 10.ª |
+|---|---:|---|
+| **Trigo** | **175** | 135 de 1.ª calidad + 40 de 2.ª |
+| **Centeno** | **418** | 100 de 2.ª + 318 de 3.ª |
+| **Cebada** | **102** | 65 de 1.ª + 37 de 2.ª |
+
+Este pueblo siembra **2,4 veces más centeno que trigo**. Con 125 fanegas de diezmo de centeno
+frente a 56 de trigo la razón es **2,23** —casi la misma—. Con 25 sería **0,45**, es decir, el
+pueblo diezmaría el doble de trigo que de centeno **sembrando menos de la mitad**. ★ **La lectura
+del facsímil y el uso del suelo dicen lo mismo.**
+
+> ✅ **Y el «(sic)» de los «pozos» se retira.** Se llegó a considerar leer «po**ll**os» —el «diezmo
+> de los pollos» existe— y se descartó: la **28.ª** declara, entre los derechos enajenados de la
+> Corona que goza el conde, «**diez maravedís del diezmo del agua de los pozos**». Las dos
+> respuestas hablan del mismo derecho, y la 16.ª lo tasa en **treinta reales**. **No hacía falta
+> enmendar nada: hacía falta leer dos respuestas juntas.**
+
+### ⚠️ Y al hacerlo aparece una contradicción, y es del documento
+
+| Lo que dice | Dónde |
+|---|---|
+| Toda la carga de diezmos de **cebada** del lugar monta **diez fanegas** al año | **16.ª** |
+| Sólo del **segundo cosechero**, el conde percibe **diez y seis fanegas de zebada** | **28.ª** |
+| La fanega sembrada de cebada produce **18** fanegas en 1.ª calidad y **16** en 2.ª —cuatro veces lo del trigo—, y se siembran **102** | **12.ª** y **10.ª** |
+
+**La parte es mayor que el todo**, y el rendimiento declarado no cabe en el diezmo declarado. Las
+tres cifras están verificadas sobre el facsímil —`ensenada-13`, `-14`, `-18`—, así que **no es un
+fallo de transcripción: es del original de 1752**.
+
+> ★ **Es el tercer número de estas Respuestas que no se sostiene**, con las **leguas de la 3.ª**
+> —imposibles— y las **fanegas de la 10.ª** —cortas en un 24 %—. **Lo que esta declaración hace
+> bien es describir; contar, no siempre.** Y conviene decirlo cada vez que se cite una cifra suya.

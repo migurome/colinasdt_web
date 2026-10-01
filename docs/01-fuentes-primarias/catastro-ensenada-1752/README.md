@@ -446,9 +446,29 @@ Benavente sólo cobra **las alcabalas**, y por encabezamiento:
 > ★ **«Los diezmos al cura» es la pauta de la comarca**, no una singularidad de Colinas. Lo que
 > Colinas añade es la excepción del **segundo cosechero**, que va al conde.
 > ⚠️ **Y aparecen dos figuras que la ficha de Colinas no tiene anotadas**: la **primicia** y el
-> **voto de Santiago**. `[?]` **No se sabe si Colinas las declara**: la 15.ª transcrita aquí no las
-> menciona, pero **no se ha vuelto al facsímil a buscarlas**. Es comprobación barata y queda
-> apuntada.
+> **voto de Santiago**. <s>`[?]` No se sabe si Colinas las declara: la 15.ª transcrita aquí no las
+> menciona, pero no se ha vuelto al facsímil a buscarlas.</s>
+>
+> ✅ **`TAR-14`, hecha el 1 de octubre de 2026**, leyendo la 15.ª entera sobre el facsímil
+> —`ensenada-17.jpg` completa y `ensenada-18.jpg`, mitad superior—. **La respuesta es una de
+> cada**:
+>
+> | | Colinas, 1752 | |
+> |---|---|---|
+> | **Primicia** | ✅ **SÍ la declara, dos veces** | 15.ª: «de **primicia ocho zelemines de trigo** el labrador que coge las tres especies… y el de primicias **pertenece enteramente a la Yglesia de este lugar**» · 16.ª: **doce fanegas de trigo, dos de centeno y una de cebada** al año |
+> | **Voto de Santiago** | ❌ **NO lo declara** | No está en la 15.ª, ni en la 16.ª, ni en la 26.ª o la 27.ª, ni en ninguna de las **cuarenta** respuestas |
+>
+> 🚨 **Y esta ficha se equivocaba al decir que la 15.ª no menciona la primicia**: la menciona,
+> y la transcripción de este mismo proyecto ya la traía. El `[?]` era innecesario en esa mitad.
+>
+> ⚠️ **Lo que vale el «no» del voto de Santiago.** Es **ausencia documentada, no exención
+> probada**: que los peritos no lo declararan no prueba que no se pagara. Pero la diferencia con
+> Villaferruéña —mismo obispado, mismo año, mismo formulario— **queda registrada**, y es de las
+> cosas que un cotejo comarcal más amplio podría explicar.
+>
+> ★ **De paso, la vuelta al facsímil dejó dos cosas más**: el diezmo de centeno de la 16.ª no
+> eran 25 fanegas sino **125**, y el «(sic)» de «los diezmos de los pozos» **sobraba** —la 28.ª lo
+> explica— → [`transcripcion-integra.md`](transcripcion-integra.md).
 
 **3. ✅ Confirmada la intendencia de Valladolid, y con el nombre del intendente.** La certificación
 que cierra las Respuestas de Villaferrueña dice:

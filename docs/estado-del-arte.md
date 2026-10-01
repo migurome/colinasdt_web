@@ -21,9 +21,9 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **48 piezas pendientes**, **15 se
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **47 piezas pendientes**, **14 se
 pueden trabajar desde aquí** y **33 necesitan a una persona** —o una compra, o un correo—.
-Otras **diez ya están hechas**, y las marcas se han puesto al día el 1 de octubre.
+Otras **once ya están hechas**, y las marcas se han puesto al día el 1 de octubre.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -46,7 +46,7 @@ decisión expresa. Ver §7.
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **360** |
-| Tareas de las 25 que se podían hacer desde aquí, **hechas** | **10** |
+| Tareas de las 25 que se podían hacer desde aquí, **hechas** | **11** |
 
 > 📏 **Recontado el 1 de octubre de 2026**: `.md`, `.tsv`, entradas publicadas y marcas `[?]`.
 > Las dos primeras filas —ficheros de fuente y peso del corpus— **siguen siendo la medición del
@@ -137,7 +137,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 ## 4. Lo que se puede hacer desde aquí, sin pedirle nada a nadie
 
-**15 piezas**, y **diez ya hechas**. Por orden de lo que aportan:
+**14 piezas**, y **once ya hechas**. Por orden de lo que aportan:
 
 1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
    plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
