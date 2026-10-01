@@ -355,12 +355,18 @@ una edición web y no del original:
   > final**. **El despoblamiento definitivo ocurre después de 1587**, y en **1752** el Catastro de
   > Villanázar ya lo llama «el **despoblado** de Pobladura de Trasmonte».
   > ★★ **Y hay excavación**: según la misma fuente, **en 1991 se excavó el pago «Los Paredones»**,
-  > que se identifica con Pobladura. **El proyecto no tiene esa memoria de intervención.**
+  > que se identifica con Pobladura. **El proyecto no tiene esa memoria de intervención** (→ `ARCH-19`).
+  > ✅ **1-X-2026: y el sitio ya está cerrado, y es éste.** La planimetría del IGN rotula «Los
+  > Paredones» y «Pobladura» juntos, entre Villanázar y Vecilla, y el reparto de propietarios de
+  > 1750 lo confirma por geometría → **§ 8.2**, `TAR-26`.
   > 🚨 **Y aparece una tercera posición sobre dónde estaba.** El término de Villanázar, en 1752,
   > «lindaba … **al norte con el despoblado de Pobladura de Trasmonte**», y el autor precisa que
   > **«Pobladura de Trasmonte estaba entre Villanázar y Vecilla de Trasmonte»**. **Madoz la pone en
-  > el término de Colinas; esto la pone al norte de Villanázar.** ⚠️ **No se elige**: se anota que
-  > hay **tres posiciones** —Madoz, Lobato Vidal y ésta— y que la dirime un deslinde, no una cita.
+  > el término de Colinas; esto la pone al norte de Villanázar.** <s>⚠️ **No se elige**: se anota que
+  > hay **tres posiciones** —Madoz, Lobato Vidal y ésta— y que la dirime un deslinde, no una cita.</s>
+  > ✅ **1-X-2026: ya se eligió, y la dirimió la geometría.** No eran tres posiciones distintas: **Lobato
+  > Vidal y Martín Benito dicen lo mismo** —al norte de Villanázar es entre Villanázar y Vecilla—, y
+  > ahí está → **§ 8.2**, `TAR-26`.
   > → MARTÍN BENITO, J. I., «En la merindad de Valverde. Villanázar», *Brigecio* 21-22 (2011-2012), pp. 145-168.
   > ⚠️ **Sigue sin saberse de qué peste habla**, ni si los 15 pecheros son los que quedaban o los
   > que hubo.
@@ -1131,6 +1137,41 @@ el análisis diplomático más detallado es de **Augusto Quintana Prieto**.
 > Bacillares**», «**A.º del Camino**», «de la Rega…» `[?]` y, al noroeste, «**Villaof…**»,
 > cortado por la junta de dos hojas.
 >
+> #### 🚨 4 bis. Y aquí falta algo que este inventario ya tenía escrito
+
+> **Añadido horas más tarde, el mismo 1 de octubre.** El apartado de arriba se escribió como si el
+> rótulo «Los Paredones» de la planimetría fuese un hallazgo nuevo. **No lo es: este inventario
+> lleva meses con «Los Paredones» dentro, y con algo mucho mejor que un rótulo.** Es un fallo de
+> lectura propia y se corrige a la vista.
+>
+> | Lo que ya constaba, y dónde | Qué dice |
+> |---|---|
+> | **§ 8.1 de este mismo fichero** | «**en 1991 se excavó el pago «Los Paredones», que se identifica con Pobladura**» — MARTÍN BENITO, *Brigecio* 21-22 (2011-2012) |
+> | **§ 8.1, la misma página** | El Catastro de **Villanázar de 1752**: su término «lindaba … **al norte con el despoblado de Pobladura de Trasmonte**», y el autor precisa que «**Pobladura de Trasmonte estaba entre Villanázar y Vecilla de Trasmonte**» |
+> | **La lista de los cinco yacimientos** del proyecto de regadío del Tera | «2. **Pobladura-Los Paredones (Villanázar)**», situado sobre el MTN 1:50.000 — LARRÉN IZQUIERDO (coord.), *Arqueología e infraestructura agraria en el valle del Tera* |
+>
+> ★★★ **Con esto, «Los Paredones» deja de ser un topónimo y pasa a ser un yacimiento excavado**,
+> catalogado con el nombre del despoblado pegado delante: *Pobladura-Los Paredones*. Y la cautela
+> que este proyecto se repite —«un topónimo no es una excavación»— **aquí no hace falta: hay
+> excavación**, de 1991, en el mismo sitio donde la planimetría escribe el nombre y donde el
+> reparto de 1750 pone el término.
+>
+> 🚨 **Y obliga a decir una cosa incómoda.** El 25 de septiembre este inventario anotó que había
+> **tres posiciones** —Madoz, Lobato Vidal y Martín Benito— y que «**no se elige**». **Dos de las
+> tres decían lo mismo y señalaban aquí.** Tres días después se eligió —y se eligió una **cuarta**,
+> «El Raso Pobladura», que no era ninguna de las tres—. El error no fue de búsqueda: fue **no
+> releer lo que el propio fichero ya tenía** antes de concluir.
+>
+> ✅ **La cuenta final, entonces, son seis líneas independientes** y todas en el mismo sitio: el
+> reparto de propietarios de **1750**, el linde norte de Villanázar en el Catastro de **1752**, la
+> descripción de **Lobato Vidal (1992)**, la **excavación de 1991** en *Pobladura-Los Paredones*,
+> el **MTN50 de 1.ª edición** y la **planimetría** del IGN. Enfrente queda **una**: el artículo de
+> Colinas de Madoz, que su propia entrada de «Pobladura» desmiente.
+>
+> 🔎 **Y sube de valor una tarea que ya estaba apuntada**: `ARCH-19`, **la memoria de la
+> excavación de 1991**, en el Servicio Territorial de Cultura de la Junta o en el IEZ. Ya no es
+> «por si acaso»: es **el expediente del sitio**.
+
 > #### 5. Lobato Vidal tenía razón, y este proyecto lo había descartado
 >
 > Escribió en 1992 que de Pobladura «sólo queda su nombre en el solar que ocupa lo que fue su
