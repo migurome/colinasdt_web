@@ -21,9 +21,9 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **49 piezas pendientes**, **16 se
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **48 piezas pendientes**, **15 se
 pueden trabajar desde aquí** y **33 necesitan a una persona** —o una compra, o un correo—.
-Otras **nueve ya están hechas**, y las marcas se han puesto al día el 1 de octubre.
+Otras **diez ya están hechas**, y las marcas se han puesto al día el 1 de octubre.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -46,7 +46,7 @@ decisión expresa. Ver §7.
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **360** |
-| Tareas de las 24 que se podían hacer desde aquí, **hechas** | **9** |
+| Tareas de las 25 que se podían hacer desde aquí, **hechas** | **10** |
 
 > 📏 **Recontado el 1 de octubre de 2026**: `.md`, `.tsv`, entradas publicadas y marcas `[?]`.
 > Las dos primeras filas —ficheros de fuente y peso del corpus— **siguen siendo la medición del
@@ -127,7 +127,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 | 11 | Floridablanca y Miñano | ✅ cerrado · dos flecos | aquí (`TAR-17`) |
 | 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **4 artículos sin abrir** (hechos `TAR-02` a `TAR-06`) | aquí (`TAR-07` a `TAR-10`) |
 | 13 | AHP de Zamora | ⚠️ abierto, con cuatro pistas duras y fechadas | usuario (`ARCH-12` a `ARCH-15`) |
-| 14 | IGN / CNIG | ✅ **cerrado**: el límite está digitalizado (`TAR-11` ✅) y los tres códigos catastrales, identificados (`TAR-13` ✅) · fleco: georreferenciar el plano IRYDA | aquí (`TAR-12`) |
+| 14 | IGN / CNIG | ✅ **cerrado**: límite digitalizado (`TAR-11` ✅), códigos catastrales (`TAR-13` ✅) y 🚨 **Pobladura de Trasmonte, localizada** (`TAR-26` ✅) · fleco: georreferenciar el plano IRYDA | aquí (`TAR-12`) |
 | 15 | Riesco Chueca 2018 — el topónimo | ⚠️ abierto: **hace falta el libro de 2018** | usuario (`LIB-05`) |
 | 16 | El agujero de 1842 | ⚠️ **media respuesta**: el 132 es una imputación del INE, no una medición | usuario (`ARCH-05`, `ARCH-20`) |
 | 17 | Madoz, releído entero | ✅ cerrado · fleco: «San Juanico» | aquí (`TAR-15`) |
@@ -137,7 +137,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 ## 4. Lo que se puede hacer desde aquí, sin pedirle nada a nadie
 
-**16 piezas**, y **nueve ya hechas**. Por orden de lo que aportan:
+**15 piezas**, y **diez ya hechas**. Por orden de lo que aportan:
 
 1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
    plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
@@ -161,8 +161,13 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
    🚨 **`TAR-06`, hecha el 1-X-2026**, y era el que más prometía: **Pobladura de Trasmonte
    tiene ficha propia** entre los 45 despoblados del conde, con **lindes, medidas, un molino en la
    Almucera en 1446** y la tabla de vecindarios 1530/1591. **Y reabre dónde estuvo**: sus dos
-   lindes sobreviven como parajes y no caen donde el proyecto la había situado →
-   [inventario § 8.2](03-archivos/inventario-documental.md). De ahí sale **`TAR-26`**.
+   lindes sobreviven como parajes y no caen donde el proyecto la había situado. De ahí salió
+   **`TAR-26`**, 🚨 **cerrada ese mismo día**: Pobladura estuvo **entre Villanázar y Vecilla
+   de Trasmonte**, en **41,9835 N · 5,7796 O**, y no en Navianos. Lo deciden el **reparto de
+   propietarios de 1750** —barrido de 15.375 posiciones sobre el parcelario— y, en ese sitio,
+   el rótulo: **«A.º de Pobladura» en el MTN50 de 1.ª edición y «Pobladura» dos veces en la
+   planimetría**, con **«Los Paredones»** al lado →
+   [inventario § 8.2](03-archivos/inventario-documental.md).
    ✅ **`TAR-02`, `TAR-03` y `TAR-04`, hechos el 1-X-2026**, y los tres con el mismo resultado:
    **ninguno nombra a Colinas**. El que más dice es el que menos trae, `TAR-03`: es el **catálogo
    especializado de la imaginería gótica de los dos valles**, hecho pieza a pieza, y **de la

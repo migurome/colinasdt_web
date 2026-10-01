@@ -1051,7 +1051,120 @@ el análisis diplomático más detallado es de **Augusto Quintana Prieto**.
 | CABERO DOMÍNGUEZ, Mª C. (1995): *Astorga y su territorio en la Edad Media (s. IX-XIV)*, León, pp. 80, 81, 88 y 93 | La localización de Castroferrol. ⚠️ El artículo de 2000 advierte que **incurre en errores cronológicos** |
 | LARRÉN IZQUIERDO, H. (coord.) (1999): *Arqueología e infraestructura agraria en el valle del Tera (Zamora)*, Madrid, p. 22 | El yacimiento «San Miguel» de Quiruelas, segundo candidato para el emplazamiento del monasterio |
 
-### 8.2 Pobladura de Trasmonte — **fuera** del término · ⚠️ **el sitio exacto, reabierto**
+### 8.2 Pobladura de Trasmonte — **fuera** del término · ✅ **y el sitio, cerrado**
+
+> 🚨🚨🚨 **`TAR-26`, resuelto el 1 de octubre de 2026: Pobladura de Trasmonte estuvo
+> entre Villanázar y Vecilla de Trasmonte, en 41,9835 N · 5,7796 O**, y el nombre sigue escrito
+> ahí en dos capas de cartografía oficial. El apartado que sigue a éste la dio por localizada el 22
+> de septiembre en «El Raso Pobladura», en Navianos, **a 5.377 m de aquí**. Esa conclusión
+> **se retira**, y abajo se explica por qué y qué queda en pie de ella.
+>
+> #### 1. Primero, una corrección propia: la legua estaba mal convertida
+>
+> Este apartado escribió el 1 de octubre que un cuarto de legua por media eran
+> <s>≈ **1.045 × 2.090 m**</s>. **Eso sale de una legua de 4.180 m, que este proyecto no usa en
+> ningún otro sitio.** La legua castellana legal son **5.572,7 m**, y es la que emplean
+> [`04-cartografia`](../04-cartografia/README.md) —«media legua (2.786 m)»— y el análisis del
+> Catastro de 1752 —«tres leguas y media ≈ 19,5 km»—. **Las medidas buenas de Pobladura son:**
+>
+> | Lo que dice el Becerro | En metros |
+> |---|---:|
+> | de norte a sur, **un cuarto de legua** | **1.393 m** |
+> | de levante a poniente, **media** | **2.786 m** |
+> | de circunferencia, **una y tres cuartos** | **9.752 m** |
+> | → superficie del rectángulo que eso describe | **388 ha** |
+>
+> ★ **Y de paso, un dato de forma.** Un rectángulo de 1.393 × 2.786 m tiene de perímetro 1,5
+> leguas, no 1,75. El Becerro da **un 17 % más**: su Pobladura **no era un rectángulo**, sino una
+> figura irregular. Para Colinas, en cambio, el Catastro de 1752 declara 1 legua × ¾ y 3½ de
+> circunferencia, que es **exactamente** el perímetro del rectángulo —una cifra de escribano, no de
+> campo—. **Las de Pobladura parecen medidas; las de Colinas, calculadas.**
+>
+> #### 2. Quién es quién en el parcelario, que había que saber antes de medir nada
+>
+> El término municipal de **Villanázar** son **tres bloques rústicos**, y cada uno tiene su
+> pueblo. Preguntado al Catastro por una parcela urbana de cada núcleo (`Consulta_DNPRC`), responde
+> con la calle, y la calle dice el nombre:
+>
+> | Bloque | ha | Lo que contesta el Catastro | Es |
+> |---|---:|---|---|
+> | `49285A002` | 430,6 | «CL IGLESIA **VECILLA** 6» | **Vecilla de Trasmonte** — 41,99459 N · 5,79417 O |
+> | `49285A001` | 706,5 | «CL MEDIO 1» | **Villanázar** — 41,97418 N · 5,78079 O |
+> | `49285A003` | 729,4 | «CL RETUERTA **MOZAR** 9» | **Mózar de Valverde** — 41,95331 N · 5,77621 O |
+> | `49189A004` + `A005` | 1.026,7 | «CL IGLESIA **COLINAS** 8» | **Colinas** — y las 1.026,7 ha **cuadran al decimal** con las 1.026,6 del polígono que este proyecto ya tenía medido |
+>
+> #### 3. La prueba que lo dirime: de quién era la tierra en 1750
+>
+> El propio artículo da el dato decisivo sin saberlo: en el Catastro de Ensenada, la tierra de
+> Pobladura la tenían **siete vecinos de Villanázar, seis de Vecilla y uno de Navianos**. Si un
+> despoblado se reparte entre sus vecinos de término —que es lo que les pasa—, **el reparto
+> municipal de hoy sobre su superficie debería parecerse a ese 7-6-1**: 50 % · 43 % · 7 %.
+>
+> Se ha paseado un rectángulo de las medidas declaradas por **toda la comarca**, en rejilla de
+> 100 m —15.375 posiciones, de las que 3.850 celdas tienen parcelario conocido—, puntuando cada
+> posición por lo cerca que queda de ese 7-6-1:
+>
+> | Posición | Reparto que da | Error |
+> |---|---|---:|
+> | ★ **La mejor de toda la comarca**: 41,98615 N · 5,78717 O | Villanázar **52 %** · Vecilla **42 %** | **5,3 %** |
+> | La caja colgada de los lindes del Becerro —Villaofín al N, La Cervilla a levante— | Villanázar 50 % · Vecilla 46 % | 5,9 % — **mejor que el 99,9 % de las posiciones** |
+> | El sitio de Lobato Vidal, entre Villanázar y Vecilla | Villanázar 66 % · Vecilla 31 % | 17,5 % — mejor que el 95,3 % |
+> | **«El Raso Pobladura»**, en Navianos | **Navianos 100 %** · Villanázar **0 %** · Vecilla **0 %** | **57,5 %** |
+>
+> 🚨 **«El Raso Pobladura» falla al revés.** Está a 1,2 km de Navianos, y a **4,7 km de
+> Villanázar** y **5,4 km de Vecilla** —de donde eran **trece de los catorce propietarios**—.
+> Nadie tiene la mitad de sus tierras a cinco kilómetros de casa y una sola a uno.
+>
+> #### 4. Y entonces se miró el mapa en ese sitio, que es lo que faltaba
+>
+> | Capa | Lo que rotula | Dónde |
+> |---|---|---|
+> | **MTN50 de 1.ª edición** (IGN) | «**A.º de Pobladura**» | 41,9832 N · 5,7799 O |
+> | **Planimetrías** —minutas de campo— (IGN) | «**Pobladura**» **dos veces**: en redonda negrita con un ▲ de señal, y en cursiva debajo | 41,9839 N · 5,7793 O |
+>
+> **Las dos lecturas se separan 92 m.** Son dos levantamientos distintos, hechos con décadas de
+> diferencia, y ponen el nombre en el mismo sitio —y ese sitio **cae dentro** del rectángulo que el
+> reparto de 1750 eligió por su cuenta, a 692 m de su centro—.
+>
+> ★★ **Y alrededor, en la misma plana de la planimetría**: «**Los Paredones**» —*paredones*: lo
+> que queda en pie de lo que se cayó—, «**El Carrascal**» con su «M.te encinar», «**A.º del
+> Bacillares**», «**A.º del Camino**», «de la Rega…» `[?]` y, al noroeste, «**Villaof…**»,
+> cortado por la junta de dos hojas.
+>
+> #### 5. Lobato Vidal tenía razón, y este proyecto lo había descartado
+>
+> Escribió en 1992 que de Pobladura «sólo queda su nombre en el solar que ocupa lo que fue su
+> término, es decir, **entre Villanázar y Vecilla de Trasmonte, no distando de ambos un
+> kilómetro, entre los arroyos de la Regalona y del Camino**». Medido contra el punto:
+>
+> | Lo que dijo | Lo medido | |
+> |---|---:|---|
+> | entre Villanázar y Vecilla | **1.047 m** y **1.720 m** | ✅ el primero clava; el segundo se le va —y un término es una superficie, no un punto— |
+> | «arroyo **del Camino**» | la planimetría rotula «**A.º del Camino**» ahí mismo | ✅ |
+> | «arroyo de la **Regalona**» | la planimetría rotula «de la Rega…» `[?]`; el MTN50, «**Regatón**»; y el Catastro de Villanázar, un «**DESAGUE DEL REGATON**» | ⚠️ **parecido, no idéntico**. No se da por el mismo nombre |
+>
+> ✅ **Y la entrada propia de Madoz también tenía razón**: «POBLADURA, desp. … **térm. de
+> Villanazar**». El punto cae, hoy, **dentro del término municipal de Villanázar**.
+>
+> #### 6. Qué queda de «El Raso Pobladura», y qué no
+>
+> - ✅ **El topónimo sigue ahí y no se borra**: el MTN50 de 1.ª edición lo rotula, el Nomenclátor
+>   del IGN registra «Pobladura (Paraje)» en Navianos y el Catastro de Navianos, «EL RASO». **Hay
+>   dos «Pobladura» en esta comarca, a 5.377 m uno de otro**, y eso es un hecho, no un error.
+> - ❌ **Lo que se retira es la identificación**: que *ese* sea el solar del despoblado de 1446. El
+>   reparto de 1750 lo desmiente, y el otro tiene el nombre, los lindes, las medidas, los dos
+>   arroyos de Lobato Vidal y unos «Paredones» al lado.
+> - ✅ **Lo que no se mueve, y era la pregunta del proyecto**: Pobladura **no estaba en el término
+>   de Colinas**. Está **3.310 m al este del casco**, en término de Villanázar.
+>
+> #### 7. ⚠️ El cabo que queda suelto
+>
+> El Becerro dice «confronta … con **La Cervilla, a levante**». El «Pico de la Cervilla» del
+> Catastro está **3.260 m al NORTE** del punto, no al este. O el monte de La Cervilla era mucho
+> mayor de lo que hoy conserva su nombre —y el Catastro de Villanázar de 1752 habla de «el monte
+> **y término** de La Cervilla», que suena a eso—, o el escribano del Becerro orientó a ojo.
+> **Queda dicho y sin resolver.**
+
 
 > 🚨🚨 **1 de octubre de 2026: aparece la descripción documental del término de
 > Pobladura, y no cuadra con el sitio.** Al leer `TAR-06` —GARCÍA CABALLERO, A., «Los despoblados
@@ -1107,10 +1220,11 @@ el análisis diplomático más detallado es de **Augusto Quintana Prieto**.
 > | **Villaofín**, al norte | 41,99029 N · 5,79652 O — **1.804 m SE del casco**, fuera del término | **sólo OpenStreetMap**: una capa |
 >
 > Si Pobladura quedaba **al sur de Villaofín y al poniente de La Cervilla**, y medía lo que el
-> artículo dice —un cuarto de legua por media, ≈ **1.045 × 2.090 m**—, su centro cae hacia
-> **41,9856 N · 5,7911 O**: **2.489 m al SSE del casco de Colinas**, **fuera del término**
-> —comprobado contra el polígono— y a **4.813 m de «El Raso Pobladura»**, que es donde este
-> apartado la dio por localizada el 22 de septiembre.
+> artículo dice —un cuarto de legua por media, <s>≈ 1.045 × 2.090 m</s> → **1.393 × 2.786 m**—,
+> su centro cae hacia <s>41,9856 N · 5,7911 O</s> → **41,984 N · 5,794 O**, fuera del término de
+> Colinas. **✅ Esta estimación resultó buena**: está a 1,3 km del sitio que `TAR-26` cerró ese
+> mismo día, y el error de la legua no la movía casi —porque el punto lo fijaban los lindes, no el
+> tamaño—. Se conserva porque muestra el camino.
 >
 > **Qué se mantiene y qué no:**
 >
@@ -1125,11 +1239,9 @@ el análisis diplomático más detallado es de **Augusto Quintana Prieto**.
 >   son **puntos**; y «Villaofín» descansa en **una sola capa**, la más débil de las tres que el
 >   proyecto maneja.
 >
-> 🔎 **La prueba que lo dirime, y está al alcance**: el artículo da **medidas** del término de
-> Pobladura. Si en el parcelario —que el proyecto tiene descargado para Colinas, Quiruelas,
-> Villanázar y Navianos— aparece un bloque de parajes de esas proporciones al sur de Villaofín y al
-> poniente del Pico de la Cervilla, el asunto queda cerrado por geometría y no por cita. Queda
-> anotado como **`TAR-26`**.
+> ✅ **`TAR-26`, hecha el mismo día.** Se paseó la caja por toda la comarca, se puntuó cada
+> posición contra el reparto de propietarios de 1750 y luego se miró la cartografía histórica en
+> el sitio que ganó. **Está resuelto arriba, al principio de este apartado § 8.2.**
 >
 > ★ **De paso, dos cosas más del mismo inventario**: en 1750 **vecinos de Colinas tenían
 > propiedades en el despoblado de Requejo** (p. 72), a la vera del Órbigo; y el despoblado que el
@@ -1142,7 +1254,11 @@ el análisis diplomático más detallado es de **Augusto Quintana Prieto**.
 > **interpretación**, no dato.
 
 
-> ✅ **RESUELTO el 22 de septiembre de 2026, por la noche.** El despoblado está localizado: el
+> ⚠️ **RETIRADO el 1 de octubre de 2026 → véase el principio de este § 8.2.** Lo que sigue se conserva
+> porque el topónimo de Navianos existe y la búsqueda fue correcta; lo que **no** se sostiene es
+> la identificación con el despoblado de 1446.
+>
+> <s>✅ **RESUELTO el 22 de septiembre de 2026, por la noche.** El despoblado está localizado:</s> el
 > **MTN50 de primera edición** rotula «**El Raso Pobladura**» en término de **Navianos de
 > Valverde**, en **41,9545 N · 5,8316 O**, es decir **3.368 m fuera del límite del término de
 > Colinas** y 5,8 km al SSO del casco. Detalle, comprobaciones y cautelas en

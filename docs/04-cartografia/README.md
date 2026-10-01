@@ -378,7 +378,13 @@ Y aparecen ecos de las fuentes escritas:
   Candidato, no identificación.
 - **La Regata**, **Los Arenales**, **Las Eras** — los tres están también en el **apeo de Vecilla de
   1706**.
-- **Villaofín** (41,99029 · −5,79652), el despoblado que Lobato Vidal sitúa en Villanázar.
+- ★ **Villaofín** (41,99029 · −5,79652), el despoblado que Lobato Vidal sitúa en Villanázar.
+  ✅ **1-X-2026: ya no descansa en una sola capa.** El **Catastro de Villanázar** registra el
+  paraje **`VILLAFIN`** (código 167) en 41,99417 · −5,77771, y las **planimetrías del IGN**
+  rotulan «**Villaof…**» —cortado por la junta de dos hojas— hacia 41,9871 · −5,7894. **Tres
+  capas, y se separan hasta 1,6 km**: un despoblado es una superficie, no un punto. Es el linde
+  norte de **Pobladura de Trasmonte** según el Becerro de 1446 →
+  [`inventario § 8.2`](../03-archivos/inventario-documental.md).
 - **El Moro**, **Las Viñas**, **La Capilla**, **El Calvario**, **Los Quiñones**, **Los Baldíos**.
 - Y en el callejero: **Calle Vereda**, **Calle Cañada**, **Camino Zamorano**, **Camino de Sitrama** —
   nombres de vía pecuaria, que enlazan con la *vereda* del deslinde de 1129.

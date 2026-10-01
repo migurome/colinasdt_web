@@ -81,6 +81,19 @@ del monte de La Cervilla** en dirección a Colinas de Trasmonte».
 > Colinas.** El *pico* de nuestro parcelario es **su extremo**.
 > — MARTÍN BENITO, J. I., «En la merindad de Valverde. Villanázar», *Brigecio* 21-22 (2011-2012).
 
+> ⚠️ **Y un cabo suelto, del 1 de octubre de 2026.** Un tercer testimonio nombra La Cervilla: el
+> **Becerro de 1446** dice que **Pobladura de Trasmonte** «confronta … con **La Cervilla, a
+> levante**». Pero Pobladura ha quedado localizada en **41,9835 N · 5,7796 O**
+> (→ [`inventario § 8.2`](../03-archivos/inventario-documental.md)), y desde ahí el «Pico de la
+> Cervilla» del Catastro cae **3.260 m al NORTE**, no a levante. Tampoco el casco de Villanázar
+> —41,97418 N · 5,78079 O, leído en el propio parcelario— lo tiene a levante: lo tiene **al norte,
+> a 4,3 km**.
+>
+> **Dos salidas, y no se elige**: o el **monte y término** de La Cervilla era mucho mayor que el
+> pago que hoy conserva su nombre —y la fórmula de 1752, «el monte **y término** de La Cervilla»,
+> suena justamente a eso—, o los rumbos de estos inventarios son de escribano y no de brújula.
+> **La identificación del nombre se mantiene; la orientación, no se usa como prueba.**
+
 ---
 
 ## ⚠️ 4. Dos avisos, y uno importa

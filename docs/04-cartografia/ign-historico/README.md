@@ -55,6 +55,10 @@ cualquiera pueda reconstruir la georreferenciación sin más datos.
 | `mtn50-1ed_pobladura_41.9440_-5.8500_41.9660_-5.8150.jpg` | MTN50 1.ª ed. | ★ «**El Raso Pobladura**», en Navianos de Valverde: el despoblado de **Pobladura de Trasmonte** |
 | `mtn50-1ed_pobladura_rotulo.jpg` | *(recorte)* | El rótulo, ampliado, con el punto del nomenclátor |
 | `comprobacion_limite-catastral-sobre-mtn50.jpg` | *(montaje)* | El límite catastral del término sobre la línea de mojones |
+| `mtn50-1ed_pobladura-villanazar_41.975_-5.805_41.999_-5.772.jpg` | MTN50 1.ª ed. | 🚨 **La franja Villanázar–Vecilla**, donde **sí** estuvo Pobladura de Trasmonte |
+| `minuta_pobladura-villanazar_41.975_-5.805_41.999_-5.772.jpg` | Planimetrías | El mismo encuadre, en minuta de campo —la capa que lo cierra |
+| `mtn50-1ed_pobladura-villanazar_rotulo.jpg` | *(recorte)* | «**A.º de Pobladura**», ampliado |
+| `minuta_pobladura-villanazar_rotulo.jpg` | *(recorte)* | «**Pobladura**», «**Los Paredones**» y los arroyos, ampliados |
 
 ---
 
@@ -221,3 +225,37 @@ regenerarlas con la URL de arriba y el `bbox` del nombre del fichero.
 ---
 
 *Ficha redactada el 22 de septiembre de 2026.*
+
+---
+
+## 🚨🚨 El hallazgo del 1 de octubre de 2026: **Pobladura, escrita dos veces**
+
+Esta vía ya había dado un topónimo el 22 de septiembre —«El Raso Pobladura», en Navianos—. El 1
+de octubre dio **otro con el mismo nombre, a 5.377 m**, y es el bueno.
+
+Cuando `TAR-06` trajo los lindes y las medidas del despoblado, y el reparto de propietarios de 1750
+señaló por geometría la franja entre **Villanázar** y **Vecilla de Trasmonte**
+(→ [`inventario § 8.2`](../../03-archivos/inventario-documental.md)), se pidieron las dos capas de
+ese encuadre. Las dos escriben el nombre:
+
+| Capa | Rótulo | Posición |
+|---|---|---|
+| **MTN50 de 1.ª edición** | «**A.º de Pobladura**» | 41,9832 N · 5,7799 O |
+| **Planimetrías** | «**Pobladura**» en redonda negrita con un ▲ de señal, **y otra vez** en cursiva debajo | 41,9839 N · 5,7793 O |
+
+**Se separan 92 m.** Y la planimetría trae, en la misma plana, el resto del paisaje del despoblado:
+
+![El rótulo de la planimetría: Pobladura, Los Paredones y los arroyos](minuta_pobladura-villanazar_rotulo.jpg)
+
+- «**Los Paredones**» — lo que queda en pie de lo que se cayó.
+- «**A.º del Camino**» y «de la Rega…» `[?]` — los **dos arroyos** entre los que **Lobato Vidal**
+  situó el despoblado en 1992, y que este proyecto no había sabido encontrar.
+- «**El Carrascal**» con su «M.te encinar», «**A.º del Bacillares**».
+- Al noroeste, «**Villaof…**» — el linde norte que da el Becerro de **1446**—, cortado por la junta
+  de dos hojas de minuta.
+
+> ★★ **La moraleja de método, y es nueva.** El 22 de septiembre esta ficha concluyó que el nombre
+> no estaba entre Villanázar y Vecilla porque **no aparecía en el parcelario del Catastro**. Estaba:
+> en la cartografía **histórica** del mismo sitio. *El error de siempre —generalizar desde una
+> sola comprobación— tiene esta forma inversa: concluir que algo no existe porque la capa que se
+> miró no lo trae.* **Aquí hay tres capas y hay que mirarlas las tres.**

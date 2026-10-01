@@ -187,7 +187,23 @@ Valverde**.
 > Trasmonte, **no distando de ambos un kilómetro**». Este paraje está a **4.769 m de Villanázar** y a
 > **5.459 m de Vecilla**.
 
-#### ✅ Y entonces se miró el mapa — que es lo que había que hacer desde el principio
+#### 🚨 **RETIRADO el 1 de octubre de 2026.** Lo de abajo se conserva; la conclusión, no
+
+> **Pobladura de Trasmonte no estuvo aquí.** El 1 de octubre, al leer el inventario de los
+> despoblados del Condado (`TAR-06`) y medir el parcelario contra él (`TAR-26`), el sitio quedó
+> cerrado **entre Villanázar y Vecilla de Trasmonte, en 41,9835 N · 5,7796 O**, a **5.377 m** de
+> este paraje de Navianos. Lo decide un dato que esta ficha no tenía: en **1750** la tierra de
+> Pobladura la tenían **siete vecinos de Villanázar, seis de Vecilla y uno de Navianos** —trece de
+> catorce de los dos pueblos que estaban al lado del *otro* sitio—. Y allí, además, **el MTN50 de
+> 1.ª edición rotula «A.º de Pobladura» y la planimetría escribe «Pobladura» dos veces**, con
+> «Los Paredones» al lado. Todo el razonamiento y las medidas están en
+> [`inventario § 8.2`](../../03-archivos/inventario-documental.md).
+>
+> **Lo que sí sigue en pie de esta sección:** el topónimo de Navianos **existe** —hay **dos**
+> «Pobladura» en la comarca—, la identificación del INE con Valderas **sigue siendo falsa**, y
+> Pobladura **sigue estando fuera del término de Colinas**, que era la pregunta.
+
+#### <s>✅ Y entonces se miró el mapa — que es lo que había que hacer desde el principio</s>
 
 En el **MTN50 de primera edición**, en ese punto exacto, está rotulado:
 
@@ -203,7 +219,7 @@ En el **MTN50 de primera edición**, en ese punto exacto, está rotulado:
 | **Nomenclátor Geográfico Básico** (IGN) | «**Pobladura** (Paraje)», Navianos de Valverde |
 | **Catastro**, parcelario de Navianos | «**EL RASO**» — la otra mitad, a 94 m del punto |
 
-**Ahí estuvo Pobladura de Trasmonte.** El ráster, con su encuadre en el nombre, queda en
+<s>**Ahí estuvo Pobladura de Trasmonte.**</s> — **no**: ahí hay un topónimo con ese nombre, y es otro. El ráster, con su encuadre en el nombre, queda en
 [`04-cartografia/ign-historico/`](../../04-cartografia/ign-historico/README.md).
 
 En la misma plana aparecen, alrededor, el «**Camino de San Pedro de Zamudia**» —otro de los lugares
@@ -213,15 +229,23 @@ del vecindario de 1591—, el «**Cº de Valdesón**» y, al suroeste, **Castró
 > sitio**, y dónde. **No es una excavación**: no hay aquí vestigio arqueológico documentado, y un
 > topónimo no fecha nada.
 >
-> `[?]` **Y sigue sin cuadrar con Lobato Vidal.** Se buscó su sitio expresamente: en el punto medio
+> ✅ **Y aquí estaba la pista, y se desechó.** —*anotado el 1 de octubre*: **Lobato Vidal tenía razón**.
+> Lo que falló no fue su descripción, sino **buscar un «Pobladura» en la lista de nombres del
+> parcelario** en vez de mirar la **cartografía histórica** de ese punto, que es donde está escrito.
+> El Catastro moderno, en efecto, **no** conserva ahí el nombre; el MTN50 de 1.ª edición y las
+> planimetrías, **sí**. *Es el mismo error de siempre, en su forma inversa: concluir desde una
+> sola comprobación que algo no existe.*
+>
+> <s>`[?]` **Y sigue sin cuadrar con Lobato Vidal.** Se buscó su sitio expresamente: en el punto medio
 > entre Villanázar y Vecilla de Trasmonte —los dos pueblos distan **2.499 m**— el parcelario da
 > **Los Arrotos, Prado, Carrales, Mangas, Desagüe los Jarales** y **Castillo**. Ningún Pobladura. Y
 > en las **127 parajes** que el muestreo del parcelario de **Villanázar** devuelve, **tampoco**.
-> O describe otra cosa, o se equivocó.
+> <s>O describe otra cosa, o se equivocó.</s>
 
 > ✅ **Lo que sí queda cerrado, y era la pregunta del proyecto:** Pobladura de Trasmonte **no estaba
-> en el término de Colinas**. Está **3.368 m fuera del límite**, en término de **Navianos de
-> Valverde**. El artículo de Colinas de Madoz, que es la única fuente que la pone dentro, **se
+> en el término de Colinas**. <s>Está 3.368 m fuera del límite, en término de Navianos de
+> Valverde.</s> → **está 3.310 m al este del casco, en término de Villanázar** —que es, además,
+> lo que dice la entrada propia de Madoz—. **Fuera, en los dos casos.** El artículo de Colinas de Madoz, que es la única fuente que la pone dentro, **se
 > equivoca** — y lo dice su propia entrada de «Pobladura», que la manda a Villanázar.
 
 > 🔎 **Nota de método, otra vez la misma.** El editor del INE identificó un topónimo por parecido de
