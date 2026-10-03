@@ -712,6 +712,114 @@ Ocampo» (CSIC) / Diputación de Zamora, pp. 37-48. ISSN 0213-8212.
 - Dispersión probable del yacimiento **hasta el propio casco urbano**: aparecieron restos al
   cimentar las casas más septentrionales del pueblo.
 
+### 7.1 bis ★★ El paralelo de nuestras rosetas, leído en su fuente — `TAR-10`
+
+> **3 de octubre de 2026.** El § 7.1 decía, siguiendo al artículo de 1993, que la cerámica gris
+> estampillada de San Juan-El Valle tiene «**paralelos en Villanueva de Azoague**». Esa fuente
+> estaba descargada y **sin abrir** desde el 22 de septiembre. Ya está leída entera, y con ella el
+> **estudio completo** del que es resumen.
+
+| | |
+|---|---|
+| El resumen | **LÓPEZ RODRÍGUEZ, J. R.** y **REGUERAS GRANDE, F.**, «Sigillatas en relieve y estampadas de Villanueva de Azoague (Zamora). **Un posible obrador de cerámicas tardorromanas**», *Brigecio* **1** (1989), **pp. 47-58** — 12 planas, escaneo sin capa de texto, leídas a imagen |
+| 🚨 El estudio completo | Los mismos, «Cerámicas tardorromanas de Villanueva de Azoague (Zamora)», ***BSAA*** **LIII** (1987), **pp. 115-166** — **52 planas, CON capa de texto**. ✔ **Descargado el 3-X-2026** de **UVaDOC** (Universidad de Valladolid), en abierto → [`02-bibliografia/`](../02-bibliografia/lopez-regueras-1987-ceramicas-azoague-bsaa53.pdf), texto en `research/raw/bsaa1987-ceramicas-azoague.txt`. **Pendiente de leer entero** (`TAR-28`) |
+| El yacimiento | **«Los Villares»**, término de **Villanueva de Azoague**, **villa romana** de más de 2 ha sobre el **Esla**, parcelas 231-235 de la concentración de 1964. Excavación de urgencia en **septiembre de 1985**, tres catas en la cuneta de un camino, **sin estructuras** |
+| Dónde están las piezas | ★★ **Museo de Zamora** — lo dice el artículo de 1989, y la excavación la codirigió **D. Jorge Juan Fernández, entonces director del Museo** |
+
+#### ✅ Lo primero: la cita de 1993 se comprueba, y es exacta
+
+El artículo de 1993 remite a «**LÓPEZ y REGUERAS, 1989: 57, fig. 2**» para los paralelos y a
+«**1989: 51**» para la hipótesis del taller. **Las dos referencias son buenas**: la p. 57 **es** la
+fig. 2, y en ella hay **platos de borde vuelto «a marli» y cuencos** con la decoración estampada
+**en el borde y en el fondo** —bandas de círculos concéntricos, rosetas radiadas, palmetas—; y en
+la p. 51 **está** el razonamiento del obrador. Igual de exacta es la cautela cronológica que 1993
+atribuye a 1987: los autores escriben, en efecto, que «**no sabemos la amplitud del retraso
+temporal de estas sigillatas respecto a los paralelos extranjeros**».
+
+> ★ **El equipo de 1993 citó bien.** No es poco: este proyecto ha encontrado ya varias citas que no
+> resisten la comprobación. **Ésta sí.**
+
+#### 🚨 Lo segundo, y es una cautela: la cita **va en un solo sentido**
+
+El artículo de Azoague enumera **dónde más** ha aparecido su cerámica estampada. Son **cuatro
+puntos, y Colinas no está**:
+
+| Paralelo citado en 1987 y 1989 | |
+|---|---|
+| Un fondo de plato en **Baños de Valdearados** (Burgos) | + una tapadera |
+| Varios fragmentos de **Villafáfila** (Zamora) | |
+| Otro, **inédito**, de la villa de **Requejo**, en Santa Cristina de la Polvorosa (Zamora) | |
+| Una tapadera de **Conimbriga** (Portugal) | |
+
+**Y no podía estar**: San Juan-El Valle se excavó en **1993**, cuatro años después. De modo que el
+paralelo **lo establece el equipo de 1993**, no el de Azoague, y descansa en **dos fragmentos**
+—un plato con una roseta estampillada y un cuenco de borde vuelto con rosetas en el propio
+borde— cotejados **contra un dibujo publicado**. Nadie ha comparado las pastas.
+
+> ⚠️ **Y los propios autores de Azoague avisan de lo que puede confundirse.** Insisten en que su
+> producción es **rarísima** —«ciertamente poco», dicen de sus cuatro paralelos— y en que en la
+> Meseta «**el panorama está dominado por la TSHT, en la que existen piezas estampadas que son las
+> que más se prodigan en los yacimientos meseteños**». Dicho de otro modo: **la roseta estampillada
+> es un motivo común**, y una roseta sola no basta para adscribir una pieza a este alfar.
+>
+> **Las dos lecturas quedan abiertas, y ninguna se elige:**
+> (a) que las piezas de Colinas sean **el quinto punto conocido de una cerámica muy rara** —lo que
+> sería notable, y pondría al término en la órbita de un obrador concreto—; o
+> (b) que sean **TSHt estampada corriente**, la cerámica más abundante de la Meseta en esos siglos,
+> y el parecido sea genérico.
+>
+> ✅ **Y esto tiene solución material, no bibliográfica**: las piezas de Azoague están en el **Museo
+> de Zamora**, y las de Colinas llevan numeración de excavación de la Junta (`93/27/…`). **Si los dos
+> lotes están en el mismo edificio, una sola consulta lo cierra** → `ARCH-24`.
+
+#### ⚠️ Lo tercero: la cronología concuerda, pero **no es confirmación independiente**
+
+| | |
+|---|---|
+| Azoague, por los punzones | estilo **A(ii) de Hayes**: **mitad del s. IV a mitad del s. V** |
+| Azoague, por los cuencos | grupo gris **marsellés**, que Hayes sitúa en el **s. V** |
+| Azoague, por la TSHt en relieve | **s. V** |
+| Conclusión de los autores | «**siglo V?**» — con interrogante suyo |
+| San Juan-El Valle, fase 1 | **fines del s. IV – s. V** |
+
+> ⚠️ **Concuerdan, y eso no prueba nada por sí solo**: el equipo de 1993 fechó su fase 1 **usando
+> este paralelo**, entre otros elementos. Las dos fechas están en **la misma cadena**, no en dos
+> cadenas que se encuentren. Lo que sí queda es que la cadena **está entera y es consultable**.
+
+#### ✅ Y una errata del proyecto, corregida sobre el facsímil
+
+El texto extraído del artículo de 1993 —`research/raw/anuario1993-sanjuan-elvalle.txt`— dice que el
+grupo marsellés lo situó en el siglo V «<s>Rayes</s>». **Mirado el facsímil impreso** del *Anuario
+1993* (`Documentacion/anuario-1993-0037-0048.pdf`, plana 21), lo que dice es **«Hayes»** —**John W.
+Hayes**, el autor de *Late Roman Pottery*—. **El error es del OCR, no de la fuente**, y el artículo
+de Azoague lo confirma: cita a Hayes dieciocho veces.
+
+> 📏 **Y otra, heredada.** El § 7.3 copia del artículo de 1993 «REGUERAS GRANDE, **J. R.**». La
+> firma del artículo dice **FERNANDO REGUERAS GRANDE**: la inicial es **F.** El proyecto copió bien
+> —el error es de la bibliografía de 1993—, pero ahora que las dos piezas están leídas **se
+> corrige y se dice de quién era**. ⚠️ Y al revés, el índice de Dialnet invierte el orden de los
+> autores: la firma impresa es **López Rodríguez primero**.
+
+#### ★ Lo que el artículo trae y no toca a Colinas, pero conviene saber
+
+- Azoague combina en una misma pieza **relieve y estampilla**, lo que los autores dicen que es
+  «**la primera vez que se documenta una cosa así**» entre miles de piezas de TSHt.
+- Entre los frisos figurados hay **venationes**, **pescadores**, **delfines** y un orante entre
+  fieras que leen como **Daniel entre los leones**. Y dicen de esa imagen que es, que ellos sepan,
+  «**el más antiguo documento cristiano existente en la provincia de Zamora**».
+  ⚠️ **Es contexto, no prueba de nada en Colinas**: aquí no hay ninguna pieza figurada.
+- Hay **moldes de TSHt**, arcilla calcinada, fragmentos vitrificados y pellas de arcilla pinzada
+  con huellas digitales —material de horno—. Aun así los autores **no dan por probado** el alfar:
+  no aparecieron desechos de cocción ni estructuras.
+- 📏 **Y un descuido de imprenta del estudio de 1987**, que conviene no copiar: su primera línea
+  sitúa el yacimiento «a **1° 59' latitud N y 41° 59' longitud O**». **Las dos etiquetas están
+  cambiadas**, y la longitud va referida al **meridiano de Madrid**, como corresponde a la hoja 308
+  del Instituto Geográfico y Catastral que ellos citan. Debe leerse **41° 59' N** y **1° 59' O de
+  Madrid**, que son **5° 40' O de Greenwich** —Madrid está a 3° 41' 15" O—: y ahí es, en efecto,
+  donde cae Villanueva de Azoague. **La cuenta cierra al minuto.**
+
+---
+
 ### 7.2 ★ El Calcolítico del valle del Tera — ✅ **OBTENIDO Y LEÍDO** (22 de septiembre de 2026)
 
 PÉREZ RODRÍGUEZ, Francisco Javier; SANZ GARCÍA, Francisco Javier; MARCOS CONTRERAS, Gregorio José;
@@ -783,11 +891,17 @@ Ocampo, **pp. 123-124** (sección colectiva, sin autor en el índice). PDF en `d
   pp. 261-284.
 - LÓPEZ RODRÍGUEZ, J. R. (1985): *Terra Sigillata hispánica tardía de la Península Ibérica*,
   Salamanca.
-- LÓPEZ RODRÍGUEZ, J. R. y REGUERAS GRANDE, J. R. (1987): «Cerámicas tardorromanas de Villanueva de
-  Azoague (Zamora)», *BSAA*, LIII, Valladolid, pp. 115-166.
-- LÓPEZ RODRÍGUEZ, J. R. y REGUERAS GRANDE, J. R. (1989): «Sigillatas en relieve y estampadas de
-  Villanueva de Azoague (Zamora). Un posible obrador de cerámicas tardorromanas», *Brigecio* 1,
-  Benavente, pp. 47-58.
+- LÓPEZ RODRÍGUEZ, J. R. y REGUERAS GRANDE, <s>J. R.</s> **F.** (1987): «Cerámicas tardorromanas de
+  Villanueva de Azoague (Zamora)», *BSAA*, LIII, Valladolid, pp. 115-166.
+  ✅ **Obtenido el 3-X-2026** → [`02-bibliografia/`](../02-bibliografia/lopez-regueras-1987-ceramicas-azoague-bsaa53.pdf)
+- LÓPEZ RODRÍGUEZ, J. R. y REGUERAS GRANDE, <s>J. R.</s> **F.** (1989): «Sigillatas en relieve y
+  estampadas de Villanueva de Azoague (Zamora). Un posible obrador de cerámicas tardorromanas»,
+  *Brigecio* 1, Benavente, pp. 47-58. ✅ **Leído entero el 3-X-2026** (`TAR-10`) → § 7.1 bis
+
+> 📏 **La inicial, corregida el 3 de octubre de 2026.** Es **Fernando** Regueras Grande, no
+> «J. R.». Este apartado copiaba **fielmente** la bibliografía del artículo de 1993, que es donde
+> está el error; se ha visto al leer la firma impresa de los dos artículos. Se corrige **diciendo
+> de quién era**.
 - SANZ GARCÍA, F. J. y VIÑÉ ESCARTÍN, A. I. (1991): «Prado de "Los Llamares", Villafáfila.
   Excavación arqueológica de urgencia», *Anuario 1991*, IEZ Florián de Ocampo, pp. 33-45.
 

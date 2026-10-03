@@ -432,6 +432,16 @@ bordes engrosados. Piezas dibujadas: 93/24/A/1, 93/24/B/2, /37, /38, 93/24/C/1, 
 > lenguaje gráfico moderno, es difícil de superar. Ahora está **dibujada y a mano**, con número de
 > inventario para citarla.
 
+> 📏 **Y el 3 de octubre de 2026 conviene añadir lo que el paralelo sí y no sostiene** (`TAR-10`,
+> leído el artículo de Villanueva de Azoague en su fuente). **Para el uso gráfico no cambia nada**:
+> la roseta de **93/27/115** salió del suelo de Colinas, está dibujada y está inventariada, y eso
+> basta. **Para lo que se escriba junto a ella, sí cambia algo**: decir «la cerámica del alfar de
+> Azoague» sería ir más lejos de lo que hay. El paralelo lo propuso el equipo de **1993**, sobre
+> **dos fragmentos** y **contra un dibujo publicado**; los autores de Azoague **no citan a Colinas**
+> —no podían: escribieron en 1987 y 1989— y avisan de que **en la Meseta la estampada que más se
+> prodiga es la TSHt**, donde la roseta es motivo corriente. **Lo seguro es la roseta; lo propuesto
+> es de qué taller salió** → [inventario § 7.1 bis](../03-archivos/inventario-documental.md).
+
 **3. La retícula incisa plenomedieval (s. XI).** En la fig. 4:
 
 | Pieza | Decoración |

@@ -14,6 +14,7 @@
 | `riesco-chueca-2010-conjeturas-toponimia-anuario2008.pdf` | RIESCO CHUECA, P. (2010): «Nuevas conjeturas de toponimia zamorana», *Anuario 2008*, IEZ «Florián de Ocampo», pp. 359-436 | **En abierto**, Centro de Estudios Paisaje y Territorio |
 | `mata-guerra-2005-archivo-piedad-brigecio15.pdf` | DE LA MATA GUERRA, J. C. (2005): «Avance de los trabajos de inventario del **Archivo del Hospital de la Piedad de Benavente**», *Brigecio* **15**, pp. 105-128 — ✅ **con capa de texto** | **Dialnet, en abierto** (art. 2002801), 3-X-2026 |
 | `gonzalez-rodriguez-1998-escrituras-piedad-brigecio8.pdf` | GONZÁLEZ RODRÍGUEZ, R. (1998): «Escrituras fundamentales del Hospital de la Piedad de Benavente», *Brigecio* **8**, pp. 169-192 — ❌ sin capa de texto, **sin abrir** (`TAR-27`) | **Dialnet, en abierto** (art. 1402364), 3-X-2026 |
+| `lopez-regueras-1987-ceramicas-azoague-bsaa53.pdf` | LÓPEZ RODRÍGUEZ, J. R. y REGUERAS GRANDE, F. (1987): «Cerámicas tardorromanas de Villanueva de Azoague (Zamora)», *BSAA* **LIII**, pp. 115-166 — ✅ **con capa de texto**, 52 pp. · **el estudio completo del paralelo de nuestras rosetas**, sin abrir (`TAR-28`) | **UVaDOC (Univ. de Valladolid), en abierto**, 3-X-2026 |
 | `brigecio-indice-articulos.tsv` · [`brigecio-vaciado.md`](brigecio-vaciado.md) | ✅ Índice **completo** de *Brigecio*: **477 artículos**, los 30 registros de ejemplar, del nº 1 (1989) al nº 35 (2025) | Vaciado del catálogo de **Dialnet** (revista 7311) |
 
 ### Los facsímiles de *Brigecio* (22 de septiembre de 2026)
@@ -72,27 +73,29 @@ como imagen.
 | `imagineria-gotica-tera-vidriales-brigecio18-19.pdf` | `TAR-03` | 🚨 **Colinas no está en el catálogo** de los dos valles. De la parroquia de San Juan **no queda nada catalogado** |
 | `restos-mozarabes-ayoo-2021-brigecio31.pdf` | `TAR-04` | ⚠️ **No nombra a Colinas.** Deja una fecha de horizonte: los monasterios del Tera y Vidriales se fundan **hacia 860-870** |
 
-### El lote `TAR-07` … `TAR-10` — **tres leídos, uno por abrir**
+### El lote `TAR-07` … `TAR-10` — ✅ **LOS CUATRO LEÍDOS**
 
 | Fichero | Capa de texto | Por qué está aquí |
 |---|:-:|---|
 | `martin-benito-2001-cofradia-vecilla-brigecio11.pdf` | ✅ 15 pp., leídas a imagen el 3-X-2026 | 🚨🚨 La Regla de 1730 da a **Colinas la mitad de los cargos** de la cofradía, y el acuerdo de 1748 trae dos vecinos con nombre |
 | `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | ✅ 19 pp., leídas a imagen el 1-X-2026 | ★★ Nombra a «Las Bodegas» dos veces, da dos yacimientos inéditos más y lleva a la fecha de 2330 a. C. |
 | `san-salvador-villaverde-vidriales-brigecio11.pdf` | ✅ 20 pp., leídas a imagen el 3-X-2026 | 🚨🚨 **Colinas pagaba rentas al priorato de Villaverde en el siglo XVIII**, y el otro San Salvador resulta ser **otra casa** — y confirma de refilón dónde está Castroferrol |
-| `regueras-lopez-1989-sigillatas-azoague-brigecio1.pdf` | ❌ 12 pp. | Paralelo cerámico del nivel tardorromano de San Juan-El Valle |
+| `regueras-lopez-1989-sigillatas-azoague-brigecio1.pdf` | ✅ 12 pp., leídas a imagen el 3-X-2026 | ★★ **La cita de 1993 se comprueba y es exacta** — pero el paralelo **va en un solo sentido** y descansa en dos fragmentos. Y lleva al **estudio completo de 1987**, ya descargado |
 
 > **Los cuatro son escaneos sin capa de texto** y hay que leerlos a imagen, que es lento. Van
 > registrados como `TAR-07` … `TAR-10` en
 > [`material-pendiente.tsv`](../03-archivos/material-pendiente.tsv).
 >
-> ✅ **A 3 de octubre de 2026 quedan tres leídos y uno por abrir**: sólo las sigillatas de Azoague
-> (`TAR-10`).
+> ✅ **A 3 de octubre de 2026 los cuatro están leídos**, y con ellos **se cierra el lote de
+> *Brigecio* que estaba descargado y sin abrir**. Lo que han abierto, en cambio, son **dos piezas
+> nuevas** —`TAR-27` y `TAR-28`— y **dos archivos** —`ARCH-23` y `ARCH-24`—.
 
 > ⚠️ Un artículo de la lista, «Los Manrique de Lara y el legado heráldico de don Fadrique»
 > (*Brigecio* 33-34), **devolvió 404 en Dialnet**. Queda pendiente.
 
 **Textos extraídos** para búsqueda, en `research/raw/`:
-`anuario1993-edad-del-cobre.txt` y `riesco-chueca-2019-unidades-superficie.txt`.
+`anuario1993-edad-del-cobre.txt`, `riesco-chueca-2019-unidades-superficie.txt`,
+`mata-guerra-2005-archivo-piedad.txt` y `bsaa1987-ceramicas-azoague.txt`.
 
 ## Qué aportó cada uno
 

@@ -21,10 +21,10 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **40 piezas pendientes**, **10 se
-pueden trabajar desde aquí** y **30 necesitan a una persona** —o una compra, o un correo—.
-Otras **diecisiete ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
-**bloqueada por criterio**. Sesenta y tres filas en total.
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **41 piezas pendientes**, **10 se
+pueden trabajar desde aquí** y **31 necesitan a una persona** —o una compra, o un correo—.
+Otras **dieciocho ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
+**bloqueada por criterio**. Sesenta y cinco filas en total.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -35,20 +35,20 @@ decisión expresa. Ver §7.
 
 | | |
 |---|---:|
-| Ficheros de fuente dentro del proyecto | <s>412</s> **352** |
-| Peso del corpus | <s>515 MB</s> **522 MB** |
+| Ficheros de fuente dentro del proyecto | <s>412</s> **353** |
+| Peso del corpus | <s>515 MB</s> **524 MB** |
 | Fichas y documentos de trabajo (`.md`) | **36** |
 | Tablas de datos (`.tsv`) | **21** |
-| Artículos científicos en PDF | **28** |
-| …de ellos, leídos entero o en parte | **26** |
+| Artículos científicos en PDF | **29** |
+| …de ellos, leídos entero o en parte | **27** |
 | …sin abrir | **2** |
 | Frentes de investigación abiertos formalmente | **18** |
 | …cerrados | **8** |
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **311** |
-| Tareas que se podían hacer desde aquí | **28** |
-| …**hechas** | **17** |
+| Tareas que se podían hacer desde aquí | **29** |
+| …**hechas** | **18** |
 | …pendientes | **10** |
 | …sin vía | **1** |
 
@@ -144,7 +144,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 | 9 | Chancillería de Valladolid | ⚠️ sentencias leídas; **los pleitos hay que pedirlos** | usuario (`ARCH-07`, `ARCH-08`) |
 | 10 | Fondo Osuna — vaciado sistemático | ⚠️ **el D.89 leído entero** (`TAR-01` ✅); el fondo, no | ambos (`TAR-19`, `TAR-21`, `TAR-22`) |
 | 11 | Floridablanca y Miñano | ✅ cerrado · dos flecos | aquí (`TAR-17`) |
-| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **1 artículo sin abrir** (hechos `TAR-02` a `TAR-09`) · 🚨 y `TAR-09` abrió **un archivo nuevo**, el del Hospital de la Piedad (`ARCH-23`) | aquí (`TAR-10`, `TAR-27`) |
+| 12 | *Brigecio* — vaciado y lectura | ✅✅ **CERRADO el 3-X-2026**: vaciado completo y **los diez artículos descargados, leídos** (`TAR-02` a `TAR-10`) · 🚨 y de paso abrieron **dos archivos** (`ARCH-23`, `ARCH-24`) y **dos lecturas** | aquí (`TAR-27`, `TAR-28`) |
 | 13 | AHP de Zamora | ⚠️ abierto, con cuatro pistas duras y fechadas | usuario (`ARCH-12` a `ARCH-15`) |
 | 14 | IGN / CNIG | ✅ **cerrado**: límite digitalizado (`TAR-11` ✅), códigos catastrales (`TAR-13` ✅) y 🚨 **Pobladura de Trasmonte, localizada** (`TAR-26` ✅) · ✅ **el plano IRYDA de 1975, georreferenciado** (`TAR-12` ✅) | — **frente cerrado** |
 | 15 | Riesco Chueca 2018 — el topónimo | ⚠️ abierto: **hace falta el libro de 2018** | usuario (`LIB-05`) |
@@ -180,8 +180,15 @@ aportan:
    y sin anotar son **Navianos de Valverde** (DGC 49151) y **Villanázar** (DGC 49285). De paso se
    ha medido quién hay al otro lado de la raya: **Villanázar comparte 3.729 m** con Colinas —el
    23 % del perímetro— y **Navianos no lo toca**, se queda a 1.104 m.
-3. **`TAR-10`: el último artículo de *Brigecio* sin abrir** —las sigillatas de Azoague—, un
-   **escaneo sin capa de texto** que hay que leer a imagen. Y detrás de él, `TAR-27`.
+3. ✅✅ **El lote de *Brigecio* está cerrado: los diez artículos, leídos.** Quedan en su lugar
+   `TAR-27` —las escrituras del Hospital de la Piedad— y `TAR-28` —el estudio completo de
+   Azoague, 52 pp. **con capa de texto**—, los dos ya descargados.
+   ★★ **`TAR-10`, hecho el 3-X-2026**: la cita con la que el artículo de 1993 sostiene el
+   paralelo de **nuestras rosetas** se ha comprobado **y es exacta**. Pero el paralelo **va en un
+   solo sentido** —Azoague escribe antes de que Colinas se excave— y descansa en **dos
+   fragmentos**: lo seguro es la roseta, lo propuesto es de qué taller salió, y **lo cierra el
+   Museo de Zamora**, que el proyecto no tenía registrado →
+   [inventario § 7.1 bis](03-archivos/inventario-documental.md).
    🚨🚨 **`TAR-09`, hecho el 3-X-2026**, y ha sido el que más lejos ha llegado: el priorato de
    **San Salvador de Villaverde** —del **Hospital de la Piedad de Benavente** desde 1525— cobraba
    rentas **en Colinas** en el siglo XVIII, según un **Libro Becerro inédito**; **el Catastro de

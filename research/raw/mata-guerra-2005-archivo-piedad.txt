@@ -1,0 +1,993 @@
+105
+Avance de los trabajos de inventario del
+Archivo del Hospital de la Piedad de Benavente
+JUAN CARLOS DE LA MATA GUERRA*
+INTRODUCCIÓN
+Los trabajos de inventariado del Archivo del Hospital de la Piedad de Benavente
+comenzaron en julio de 2004, como consecuencia de las gestiones y acuerdo realizado
+entre el Centro de Estudios Benaventanos “Ledo del Pozo” y el Patronato del Hospital de
+la Piedad. Ya en 1998 el C.E.B., según se daba cuenta en uno de los números de su revista
+Brigecio, diseñaba un ambicioso proyecto de ordenación y catalogación de buena parte
+de los fondos documentales de la ciudad, entre los cuales se incluían los pertenecientes 
+al Hospital de la Piedad1. 
+A través de estas páginas intentaremos explicar de forma sencilla y concisa la im-
+portancia documental de los fondos de este archivo, su estado, la metodología empleada
+y el cuadro clasiﬁ catorio, lo cual nos proporcionará un avance del futuro y más amplio
+inventario.
+IMPORTANCIA DOCUMENTAL DE LOS FONDOS
+En principio y antes de analizar la importancia documental del A.H.P.B., diremos
+que se trata de un archivo con un interesante y nada desdeñable volumen de documenta-
+ción histórica. La importancia documental se ha de entender tanto desde el punto de vista 
+cuantitativo como cualitativo, teniendo en cuenta los casi quinientos años de vigencia de 
+esta institución. Una buena parte de las series que lo integran proporcionan información 
+sobre los títulos de propiedad y régimen de funcionamiento del hospital, si bien el mayor 
+volumen de la documentación es la referente a la administración y contabilidad, tanto de 
+aquellas propiedades inclusas en su patrimonio como del propio hospital. Una volumen
+signiﬁ cativo de los fondos está integrado por registros y proporciona interesante informa-
+ción sobre la recepción y asistencia a los enfermos.
+El Archivo consta de dos fondos documentales diferenciados, el generado por el propio
+* Licenciado en Historia
+1 Brigecio. Revista de Estudios de Benavente y sus tierras, nº 8. 1998. pág 171, cit. 4.
+
+106
+Hospital de la Piedad y el proveniente del antiguo Hospital de San José de Convalecien-
+tes, institución benéﬁ ca que se integró con la anterior en 1962. El fondo documental del
+Hospital está formado por 257 legajos y 133 libros, mientras que el fondo del Hospital de 
+San José de Convalecientes está compuesto por 30 legajos.
+El estado de conservación de la documentación es bueno en general, sobre todo en 
+lo concerniente al fondo del Hospital de la Piedad, no apreciándose en general deterioro 
+alguno por humedad y siendo apenas constatable la acción de xilófagos y microorganismos 
+que tanto han perjudicado las condiciones o estado de otros archivos históricos. En cambio 
+el fondo correspondiente al Hospital de San José de Convalecientes presenta un estado de
+conservación deﬁ ciente, observándose cierta degradación, causada seguramente por haber 
+estado almacenado en el pasado en algún desván o sitio inapropiado.
+I. FONDO DOCUMENTAL DEL HOSPITAL DE LA PIEDAD
+HISTORIA DE LA INSTITUCIÓN
+Es sin duda el Hospital de la Piedad la fundación que contará con medios técnicos, 
+humanos y espirituales del resto de hospitales que existieron en Benavente (Hospital de San 
+Juan Bautista, Hospital de San José de Convalecientes, Hospital de San Antón, Hospital
+de San Juan de Letrán o de los viejos pobres, etc.). Para su salvaguardia y atención los 
+condes de Benavente instituyeron una cofradía que se tituló también de Nuestra Señora de
+la Piedad. En las ordenanzas fundacionales se establece la obligación de que los cofrades 
+estuvieran presentes en determinadas festividades. Mediante la creación y dotación de 
+este tipo de hospitales de beneﬁ cencia, sus fundadores, buscaban también una forma de 
+procurarse los beneﬁ cios espirituales que su piadosa y generosa acción pudiese reportar. 
+Entre las funciones espirituales del hospital y su cofradía hay que destacar también el
+procurar una buena muerte y entierro de los pobres que hubiesen fallecido en el mismo.
+En estas instituciones los cuidados espirituales eran de suma importancia, por ello era
+constante la preocupación de la Iglesia y de los propios Patronos del Hospital porque
+no se descuidasen sus ﬁ nes religiosos. Así en las ordenanzas se establecen una serie de 
+prescripciones concernientes a la administración de sacramentos y consuelo espiritual a 
+los enfermos pobres, peregrinos y transeúntes.
+Es necesario conocer que el Hospital de la Piedad debe su fundación y sostenimiento 
+a D. Alonso Pimentel, V conde de Benavente, y a su esposa, Dña. Ana de Velasco y He-
+rrera. Se puede decir que es obra exclusiva de los condes, quienes dotaron al hospital de 
+importantes propiedades y rentas para su sostenimiento, obteniendo las licencias Reales
+para su fundación datan del 21 de agosto de 1510. Un documento clave en la historia de
+la fundación es la Bula otorgada por León X, que ponía al Hospital bajo la protección Pa-
+pal, con lo cual se evitaba la intervención de la jurisdicción eclesiástica ordinaria, en este
+caso del Obispo de Oviedo, a cuya diócesis pertenecía Benavente. La fundación es objeto 
+de diversas concesiones y privilegios pontiﬁ cios, así como de importantes indulgencias
+otorgadas a quien visitase su capilla. La fama de los beneﬁ cios espirituales del Hospital 
+de la Piedad rebasó incluso los límites regionales, por ello se hizo acreedor de toda clase
+de donativos y beneﬁ ciario de numerosas mandas testamentarias.
+
+107
+La adquisición de terrenos para el hospital se constata en junio de 1517, iniciándose 
+seguidamente su construcción. Los Pimentel sufragaron los gastos de su construcción y 
+dotación de bienes muebles, tanto los destinados al culto como los derivados para la asis-
+tencia a los enfermos y acogidos. Para su sostenimiento le hicieron los condes benaven-
+tanos destinatario de sucesivas y cuantiosas donaciones, tanto en bienes raíces como en
+bienes muebles.
+Sus Ordenanzas fundacionales datan de 1520, y en ellas se dictaban las normas por las
+cuales ha de regirse el Hospital. Como modelo para su gobierno y administración siguen el
+patrón del Hospital de los Reyes de Santiago de Compostela, creado unos años antes, y del
+cual toman como referencia sus constituciones y ordenanzas. Entre las disposiciones para la 
+regulación y funcionamiento del Hospital se estipula que en él se pueden acoger los peregrinos 
+y transeúntes pobres, con la condición de que sean éstos de fuera de la villa de Benavente, y
+con la exclusión de ciertas enfermedades. Para su gobierno se instituye también una cofradía 
+titulada también de Nuestra Señora de la Piedad. Es ésta una fundación singular, instituida 
+de tal forma que sus patronos la dotan de un cuerpo legal mediante el cual pueden ejercer un
+control efectivo y preeminencia absoluta sobre el hospital, tratando además de disuadir toda 
+interferencia jurídica, económica o de carácter religioso de cualquier otro poder o institución.
+Con el ﬁ n de evitar que la fundación pudiera ser objeto de incautación por parte del Estado
+o particulares, en el documento fundacional se advertía que quedaría revocada la donación
+y todos los bienes volverían a los Patronos de sangre. Esto explicaría la existencia en una 
+intensa y abundante documentación referente a consultas, dictámenes y correspondencia entre 
+la Casa condal o sus oﬁ cinas de administración, mediante la cual se constata una intervención 
+continuada tutela y férreo control sobre esta institución benéﬁ ca.
+En 1759 hubieron de ser redactadas nuevas ordenanzas, si bien se tomaron como base 
+las anteriores de 1520. La reforma obedece al celo de sus patronos por preservar la funda-
+ción, amenazada, según se apunta por la decadencia en su funcionamiento. Con posteriori-
+dad, durante la Guerra de la Independencia, el ediﬁ cio fue utilizado como hospital militar 
+y como intendencia militar o acuartelamiento por las tropas napoleónicas. Durante esta
+ocupación fueron esquilmados todo tipo de enseres, ropas, alimentos y demás bienes.
+El Hospital sobrevivió a los procesos desamortizadores del siglo XIX y a los cambios que 
+se produjeron en terreno asistencial y hospitalario, pues con el establecimiento del régimen
+liberal la Administración sustituyó a la Iglesia en el control de las fundaciones benéﬁ cas,
+como eran hermandades, cofradías, obras pías y por supuesto los hospitales. La intervención
+estatal en el ámbito benéﬁ co resultaría regulada por la Ley General de beneﬁ cencia de 1849, 
+mediante la cual se creaban las Juntas municipales y provinciales de beneﬁ cencia. Su función 
+principal sería el control e inspección, tanto de la gestión de estos establecimientos como de
+las actuaciones y recursos de estas instituciones benéﬁ cas de fundación particular.
+En 1872 se documenta un interesante pleito en defensa del Hospital a cargo de don 
+José Serrano. Así mismo se logró modiﬁ car las cláusulas fundacionales que limitaban la
+asistencia a los vecinos de la villa. Su patrimonio se vería aminorado sensiblemente por 
+sucesivos desbarajustes administrativos durante las primeras décadas del siglo XX, al caer 
+la gestión económica del hospital en manos de representantes nombrados con poco acierto 
+por la Casa de Osuna. Éstos administradores resultarían poco escrupulosos con los obje-
+tivos de la fundación. La vida económica del mismo resultaría seriamente comprometida
+al ser hipotecadas buena parte de sus láminas rentilicias en las primeras décadas del siglo
+
+108
+XX. Sus rentas continuarían devaluándose al mismo tiempo que su función asistencial
+fue perdiendo efectividad. Como consecuencia de la intervención del ministerio de la 
+Gobernación se nombró un Patronato para reconducir la institución y acabar con el caos 
+administrativo que venía sufriendo durante décadas.
+El ediﬁ cio fue habilitado en varias ocasiones como hospital militar, lo cual alteraría
+notablemente la vida y funcionamiento normal de esta fundación benéﬁ ca. En algunos otros 
+momentos de su historia coexistió su uso con la asistencia hospitalaria militar. Durante la
+guerra civil española se transformó en un hospital de carácter militar y durante la postgue-
+rra pasaría al control del servicio nacional de Beneﬁ cencia Pública y Auxilio Social. En
+1962 el ediﬁ cio pasaría a convertirse en residencia de ancianos mediante la fusión con el
+antiguo Hospital de San José de Convalecientes. En cualquier caso el Hospital de la Piedad 
+de Benavente es una institución benéﬁ ca que de una forma u otra ha tenido continuidad y 
+que ha sobrevivido a lo largo de los siglos.
+METODOLOGÍA EMPLEADA
+El proceso de organización del archivo ha consistido en clasiﬁ car, ordenar y describir 
+un signiﬁ cativo volumen documental. Dicho proceso, en un conjunto documental como
+este que nos ocupa, no ha sido tarea fácil. Se plantea en primer lugar la diﬁ cultad de iden-
+tiﬁ car los libros y legajos pertenecientes a cada una de las dos instituciones, los cuales 
+como fondos diferenciados es necesario clasiﬁ car y separar físicamente, ya que se hallaban 
+entremezclados y compilados al máximo, aprovechando por ello cualquier hueco dentro
+del armario contenedor. Posteriormente ha sido necesario clasiﬁ car también cada uno de
+los dos fondos en orden a los bloques documentales que los constituyen, ya fuesen éstos 
+temáticos, cronológicos, etc.
+La descripción es otra de las labores fundamentales en el proceso de organización. El 
+nivel de descripción archivística se ha deducido de dos parámetros fundamentales, como es 
+la densidad histórica de la unidad objeto de resumen y el orden que las unidades guardan 
+en el fondo documental. La producción documental, que se aprecia como sistemática al
+menos desde el siglo XVIII, había ido formando un conjunto de volumen considerable, 
+ello en buena medida por mera aposición de documentos procedentes de las distintas fun-
+ciones de la institución benéﬁ ca. En otros casos su inventariación se resumía en simples
+índices o someros inventarios de legajos, descritos insuﬁ cientemente. En aras de una mejor 
+identiﬁ cación ha sido necesaria la redacción varios centenares de ﬁ chas que describen el 
+contenido de los expedientes. Éstas se incluirán posteriormente en su ﬁ chero en el lugar 
+adecuado según la sección o serie a que pertenezcan dentro del cuadro de clasiﬁ cación.
+Se plantea así como primordial la necesidad de establecer un cuadro de clasiﬁ cación 
+de los fondos documentales ﬁ jando las secciones y series que lo integran. El “modelo”
+de organización utilizado es en buena medida el derivado de los cuadros de clasiﬁ cación
+existentes y el que dimana de la especiﬁ cidad que esta documentación ha impuesto. Una 
+de las normas y criterios que en la organización de los fondos precisamente hemos tenido 
+en cuenta, es el respeto a los bloques documentales que en origen se habían dispuesto en 
+un determinado orden. A este respecto señalaremos que comenzamos el trabajo de inven-
+tariación basado en la economía y sencillez de las secciones y series, con el ﬁ n de facilitar
+
+109
+la tarea del futuro investigador.
+La mayor parte de la documentación se ha colocado en contenedores más adecuados,
+como son las cajas de cartón, fácilmente identiﬁ cables mediante una rotulación o etiquetado 
+exterior. Resta solamente instalar deﬁ nitivamente la documentación como son determina-
+dos libros de gran formato, así como aquellos legajos que por su volumen requieren cajas
+contenedoras especiales.
+EL ARCHIVO: SU FORMACIÓN, EMPLAZAMIENTO E INSTALACIONES
+Una faceta interesante es el proceso de formación del archivo y su régimen de funcio-
+namiento. Así en las nuevas ordenanzas del Hospital de 1759, refundición de las anteriores, 
+se señalan las obligaciones del personal del hospital con respecto al archivo. Así se indica
+que: “el Archivo de papeles deste Hospital se gobierne y cuide como aquí se manda”
+(ordenanza 123), también se señala que: “Aya Archivo de papeles de este Hospital y las 
+cargas que tuviere” (ordenanza 124) y se precisa que personas o empleados del Hospital 
+deben de tener acceso al archivo: “El escribano del Hospital asista a las Actas que en el se
+hicieren y tengan una llave del Archivo y Arca”(ordenanza 117). [Ordenanzas del Hospital
+de la Piedad de Benavente. Libro 37. Madrid 15, septiembre de 1759].
+Conocemos por informaciones y planos del propio archivo que éste se localizaba a 
+ﬁ nales del siglo XVIII en otras dependencias diferentes a las actuales, situadas seguramente
+junto a la sala de peregrinos y próximas a una de las escaleras interiores del ediﬁ cio. En la
+actualidad el depósito se ubica en su crujía principal, concretamente en una sala situada al 
+lado izquierdo que divide el zaguán de acceso al Hospital. La sala de archivo, ocasional-
+mente utilizada como sala de juntas, dispone fundamentalmente de un amplio y antiguo 
+armario, en el cual se hallaban apilados libros y legajos sin orden ni concierto aparente.
+El armario de archivo se compone de dos cuerpos. El superior o principal se encuen-
+tra compartimentado en cuarto calles de estantes o anaqueles que se cierran por sendas
+puertas en cada uno de los lados. El cuerpo inferior o bajo del armario, está reducido a una 
+calle de estantes. Los bajos del armario son independientes del cuerpo principal o superior 
+y poseen puertas abatibles. La decoración combina policromía de verdes y rojos en los 
+cercos, listones y aristas. En los paneles o casetones interiores de las puertas se alternan
+módulos decorados en rojo con remarque azul, en contraposición a aquellos que aparecen
+decorados en azul con remarque añil. En los cercos laterales del mueble es de apreciar una
+arquitectura decorativa formada a base de dinteles con repisillas, en las cuales se alternan
+los tonos ya mencionados. El alero del mueble que remata el armario, está decorado con
+labores de ebanistería compuesta de motivos vegetales y conchas a cada lado, y en ellas se
+combinan varios tonos de verde y añil. Coronan el conjunto dos peanas que lucen ﬂ ameando
+grandes hojas que envuelven hermosas frutas. Todo ello viene a ﬂ anquear una panoplia
+decorada con orla de laureas y conchas a cada lado. En el centro, inscrito en una cartela se
+puede leer en tonos dorados sobre fondo verde: “RENOBOSE EN 1844”.
+El mueble es merecedor de una urgente restauración, ya que se halla en estado de 
+notable deterioro. Su conservación es necesaria tanto por su valor como pieza singular, 
+como por su valor histórico y testimonial, ya que durante varios siglos ha servido para
+albergar o contener este importante archivo.
+
+110
+PROCESO DE ORGANIZACIÓN
+ALCANCE Y CONTENIDO
+Una vez realizado el examen de los documentos pudimos comprobar la existencia
+de una cierta coherencia organizativa previa, aunque en buena parte alterada, ya que la
+documentación había sido apilada sin orden ni concierto para que cupiese en los estantes
+del armario. En estas circunstancias la búsqueda de datos e información resultaba parti-
+cularmente difícil y en no pocas ocasiones estéril, tanto para el posible investigador como 
+para los consiliarios del Patronato.
+La ordenación de este voluminoso conjunto documental obedecía a criterios a sim-
+ple vista inasequibles, pues se hallaban además almacenados de una forma anárquica,
+diﬁ cultando las labores de búsqueda o localización, tanto a los custodios o depositarios
+del archivo como a los investigadores que por allí pudiesen acercarse. Un examen más 
+paciente y riguroso de los mismos permite encontrar cierta lógica en la distribución de 
+los documentos dentro de los legajos, observándose una cierta ordenación cronológica y
+temática de los mismos, aunque no sistemática.
+Una de las características reseñables de este archivo es la previa disposición de la do-
+cumentación en varios bloques, sin duda fruto de la propia formación y evolución histórica 
+de la institución. Fue necesario así reconstruir dichos bloques, hecho para el cual hubimos
+de rastrear entre la masa documental hasta encontrar varios inventarios de archivo, los cuales 
+nos permitieron encontrar cierta lógica a tal distribución. Tomando pues como referencia
+los instrumentos de descripción antiguos con los que contaba el archivo, se ha procedido
+en lo posible a la identiﬁ cación de las diferentes unidades de instalación (libros, legajos,
+carpetas, etc.). A este respecto han sido útiles también los tejuelos, carpetillas, anotaciones,
+etc., que presentaban algunos de los legajos más antiguos de este fondo documental. Al 
+menos en un primer momento este factor ha facilitado la labor de identiﬁ cación de los 
+mismos y su correspondencia con lo consignado en los inventarios.
+En base a estos instrumentos de archivo se han podido ordenar buena parte de las 
+distintas series del archivo y la documentación más antigua que lo integra. Esta operación
+no se ha podido llevar a cabo de una forma sistemática, ya que algunos de los legajos eran
+irreconocibles con respecto a los inventarios, pues cuando no habían desaparecido física-
+mente habían perdido su tejuelo o la cartela identiﬁ cativa. También se aprecia una separación
+funcional de la documentación en libros y legajos, hecho que también se observa en los 
+inventarios existentes. Esta estructuración o distribución responde, al parecer, a la primitiva
+ubicación del archivo en un mueble con varios cajones. Ello se constata en los tejuelos o
+cartelas que responden a 16 de legajos más antiguos que forman el archivo. Precisamente
+estos legajos contienen la documentación referente a la fundación, gobierno y patrimonio
+del Hospital durante los primeros siglos de su existencia, si bien los tres primeros legajos
+de este bloque han desaparecido casi totalmente. De esta forma en se puede constatar la
+siguiente distribución: Cajón I (Legs, I, II, III, IV), Cajón II (Legs. V, VI, VII, VIII), Cajón
+III (Legs. IX, X, XI, XII), Cajón IV (Legs. XIII, XIV, XV y XVI).
+Otro bloque de legajos fácilmente identiﬁ cable, por conservar éstos sus tejuelos o 
+cartelas, son los correspondientes a cuentas antiguas del hospital. Esta documentación
+abarca un periodo comprendido entre 1781 y 1836, aunque ha sido necesario comprobar 
+
+111
+y ordenar cronológicamente su contenido. En el resto la identiﬁ cación ha sido más com-
+plicada y ha podido realizarse gracias a los inventarios de archivo conservados, pues no
+todos los legajos que ﬁ guraban en índice o inventario han llegado íntegros hasta nuestros
+días. Algunos habían desaparecido y otros perdido buena parte de su contenido. A esta 
+diﬁ cultad se une el hecho de que algunos otros carecían de tejuelo, fajín o cartela que
+pudiera hacerlos identiﬁ cables de alguna manera. La mayor diﬁ cultad se planteaba con un
+buen número de legajos desbaratados, los cuales consistían en simples atados de papeles
+sueltos o reunidos sin criterio aparente alguno. Como pudimos comprobar en época con-
+temporánea se dejó de ordenar, identiﬁ car y asignar número a los legajos, los cuales fueron
+simplemente agregados al fondo sin inventariar. Así para dar continuidad física a cada uno 
+de estos bloques, agrupaciones éstas formadas en su día en orden a criterios elementales,
+como era la separación física libros y legajos. En otros casos esta agrupación se realizó 
+en orden a su contenido. Este era el caso de un bloque de legajos que contenía las cuentas
+del hospital, y al cual se le había asignado un orden y número de legajo diferente al resto 
+de la documentación.
+Los mencionados inventarios permiten establecer la pérdida y alteraciones sufridas
+durante el periodo que cronológicamente abarcan, sobre todo mediante confrontación com-
+parativa. El inventario del siglo XIX es de gran utilidad, pues responde a la última ordena-
+ción efectiva que se hizo de este fondo, ya que los realizados posteriormente consistieron
+en agregaciones a las series documentales ya establecidas o en anotaciones efectuadas en 
+la documentación más contemporánea y de la cual no se ha localizado relación o inventario 
+alguno. Así en algún momento de la historia contemporánea de la institución, probablemente 
+durante la instalación en el ediﬁ cio de un hospital militar durante la guerra civil española
+de los años 1936-1939 o quizá durante el periodo de postguerra, tuvo lugar un intento
+deﬁ ciente de clasiﬁ cación. Consistió éste, simplemente, en una nueva numeración de los
+fajines de los legajos con lápiz rojo. Por ello se aprecia en algunos de los libros y legajos
+una anotaciones realizadas de una forma deﬁ ciente y apresurada, buscando únicamente la
+secuenciación de la documentación y sin tener en cuenta las ordenaciones más antiguas.
+La pérdida de documentos ha debido de ser considerable a lo largo de la historia de 
+la institución benéﬁ ca. En primer lugar porque en el pasado se veía en los documentos 
+sólo el valor administrativo y concluida su vigencia se consideraba en muchas ocasiones
+debían ser destruidos por inútiles. En segundo lugar a causa de los expurgos ocasionados 
+por el traslado de la documentación a otras dependencias del propio ediﬁ cio, así como las
+reorganizaciones del fondo por parte de los archiveros y administradores de la institución. 
+Más recientemente no hay que olvidar las sustracciones causadas por las intrusiones en el
+archivo de los llamados “curiosos de archivo”. Con todo la mayor pérdida de documen-
+tación, según se deriva de los instrumentos de archivo (inventarios, índices de legajos y
+libros, relación de documentos extraídos del archivo, etc.), debió ser la provocada por la
+saca de documentos con destino a las oﬁ cinas de la Casa condal. Estas extracciones estu-
+vieron  condicionadas por los patronos de la institución, siendo obligadas o necesarias en
+muchas ocasiones para avalar derechos ante las distintas administraciones o ser aportadas
+en pleitos. También las realizadas a diferentes administraciones del Estado, fundamental-
+mente a raíz de la creación de las Juntas de Beneﬁ cencia y a la intervención del Estado 
+en este tipo de fundaciones.
+
+112
+DESCRIPCIÓN DEL FONDO DOCUMENTAL DEL HOSPITAL DE LA PIEDAD
+1. ADMINISTRACIÓN GENERAL 
+FUNDACIÓN Y GOBIERNO
+En esta serie se han incluido los documentos sobre fundación y gobierno del hospi-
+tal. Esta serie se halla integrada en primer lugar por los ya mencionados 18 legajos que 
+fueron rotulados y numerados correlativamente mediante cartelas o tejuelos, seguramente
+en el siglo XVIII. En ellos se localiza la documentación más antigua del archivo. A estos
+primeros 18 legajos se fueron agregando sucesivamente nuevos legajos durante los siglos
+posteriores, aunque carecen de los mencionados tejuelos identiﬁ cativos hasta un total de 
+52 unidades de instalación.
+- Actas. Incluye esta subserie las actas de los diferentes órganos de gobierno como son los
+Acuerdos de la Junta Directiva de 1828-1846, 1848-1890 y los Libros de Acuerdos y Resoluciones
+de 1891-1918, 1929-1831 1931-1945, 1946-1952 y 1952-1962. No se conserva libro de acuerdos
+como tal anterior al siglo XIX, aunque sí algunos acuerdos antiguos que aparecen insertos en libros
+de diferente temática o asuntos concernientes al hospital.
+- Ordenanzas. Constituyen la plena conﬁ rmación de la importancia de esta fundación,
+así como de la regulación e intervención de los Patronos de Sangre en la vida del hospital y
+de las disposiciones emanadas de la voluntad de la familia Pimentel para regular el funcio-
+namiento de su fundación. De las Ordenanzas fundacionales de 1526 se conserva un traslado
+en cuadernillo de 26 folios, fechado en 1704. En cambio se halla en el archivo el original de
+las nuevas ordenanzas, refundición y renovación de las anteriores, efectuadas en 1759.
+- Bulas y Privilegios. Hay que destacar a este respecto la pérdida casi total de la colec-
+ción de bulas y documentos pontiﬁ cios con los que se distinguió al Hospital. El “bulario” 
+estaba formado por bulas de León X, Clemente VII, Gregorio XIII, Paulo III de Juan Popio
+como delegado del Papa Julio III, además de una Provisión de Rectoría de Paulo III, un 
+Breve de comisión del Cardenal Laurencio y un traslado de un Breve de León X. De todas 
+ellas se conserva tan sólo la Bula de Gregorio XIII y alguno de los Breves.
+RÉGIMEN INTERIOR
+- Consultas y correspondencia. Esta subserie implica a una amplia y variada docu-
+mentación de carácter administrativo, tanto de la rectoría-administración del hospital como 
+de las funciones propias de secretaría. Está así formada por consultas, informes, dictáme-
+nes, nombramientos de cargos y ordenes para la administración del hospital. En ella se 
+incluye la correspondencia mantenida entre los rectores y administradores del mismo con
+los Patronos, y especialmente con secretaría de cámara y demás oﬁ cinas de la Casa de 
+Osuna, así como con diversas instancias administrativas con el Ayuntamiento de la Villa
+y el jefe político de la provincia, con los apoderados del hospital ante diversas instancias,
+con arrendatarios y particulares, etc.
+- Archivo. Se han hallado dos inventarios, los cuales son ambos muy interesantes
+
+113
+por cuanto ofrecen valiosa información sobre el contenido del archivo. Así se conserva un 
+cuadernillo que reza como: “Inventario de papeles pertenecientes al Hospital de Nra. Sª.
+De la Piedad de esta villa de Benavente, por orden de cajones y legajos”. Se trata de un 
+inventario de legajos y expedientes sin data, aunque las últimas anotaciones están fechadas 
+en 1815. Consta de 36 folios r.-v., en aceptable estado de conservación. Es de suma utilidad 
+para constatar la pérdida de documentación sufrida por el archivo, por cuanto ofrece una 
+relación de los documentos existentes en el mismo hasta la fecha de su ejecución. El otro
+documento es una “Copia de Inventario de papeles que se custodian en el archivo de este
+Santo Hospital, veriﬁ cado en 10 de mayo de 1884 por el Rector–administrador D. Manuel
+Tejedor y Álvarez”. Se trata tan solo, y en contraposición con el anterior, de un inventa-
+rio de legajos y libros, por lo cual éste no desciende a la descripción de los expedientes
+incluidos en cada legajo. Su mayor aportación es precisamente una relación de libros que
+el “inventario de papeles”, anteriormente mencionado, no incluía.
+Otro instrumento para conocer la evolución y formación del mismo es un libro
+inventario del Archivo fechado en 1829 (Libro 20). La documentación esta relacionada
+en diferentes apartados por orden alfabético, si bien incluye también otras anotaciones
+posteriores efectuadas en 1835 y 1851. Con referencia a estas revisiones de inventario se
+indica en las páginas iniciales que el libro contiene un “Diario de todos los documentos 
+que existen en el archivo de papeles de dicho Hospital, reformado en 1829”. También se
+señala que “En 1835 se reformó el archivo viejo de esta Santa Casa y se hallan anotados a
+la conclusión del yndice de archivo, corren en este mismo yndice y libro”. Igualmente se
+conservan algunas otras relaciones más someras o incompletas de legajos del archivo.
+- Personal. En ella se incluye la documentación relativa a la provisión de cargos,
+salarios, memorias y reclamaciones por los empleados, etc. Entre la documentación se
+encuentra un libro de pensiones de empleados y dependientes de 1760/1866.
+2. CAPILLA Y ADMINISTRACIÓN DE ASUNTOS RELIGIOSOS
+La existencia de un volumen signiﬁ cativo de documentación que en principio no tiene
+relación directa con las funciones administrativas y económicas propias de un hospital,
+sino particularmente con los ﬁ nes y aspectos religiosos de este tipo fundaciones, nos ha
+llevado, dentro del organigrama y cuadro de clasiﬁ cación de este fondo documental, a 
+formar una serie y subseries en la que incluir la documentación concerniente a la capilla
+y administración de asuntos religiosos concernientes al Hospital de la Piedad. Entre ellos
+aquellos relacionados con la regencia de la propia capilla del hospital, las capellanías y 
+obras pías vinculadas a la misma, visitas, etc.
+- Capilla. En esta subserie hemos incluido la documentación derivada de la función
+y administración religiosa del hospital, de suma importancia para la vida cotidiana del 
+mismo, toda vez que la función asistencial y vida espiritual o religiosa en este tipo de 
+instituciones estaban estrechamente unidas. Así dentro del régimen de vida del hospital 
+estaban concisamente reguladas la obligatoriedad y asistencia de los cofrades y asilados
+a las funciones religiosas. Entre las responsabilidades asignadas al capellán mayor del
+hospital, según rezan las ordenanzas para su gobierno, se encontraba precisamente el
+control de los ornamentos de la capilla y la supervisión en el cumplimiento de las cargas 
+
+114
+de misas de las diversas capellanías fundadas en el hospital. Así se señala expresamente 
+en las ordenanzas para el gobierno del Hospital: “Que el Administrador haga inventarios 
+de la capilla”. La capilla del Hospital se hallaba regentada por un capellán mayor, asistido 
+por varios capellanes, sacristán y organista.
+Otras funciones de carácter estrictamente espiritual o religioso eran la administración
+de sacramentos, el cumplimiento de cargas de misas y demás servicios religiosos, así como
+obras pías, entre ellas la dotación de cargas de trigo para las viudas pobres. Se conservan
+varios libros de cargas y cumplimiento de misas de 1764, 1793, 1839-1860, libro licencias 
+de confesión de 1898-1929, etc. También se conserva un libro de Visitas del Obispado de
+Oviedo a la capilla del Hospital de 1871-1877.
+- Obras Pías. Entre ellas hay que mencionar el traslado de una Provisión de d. Antonio 
+Pimentel para que se diese una carga de trigo cada semana a los pobres vergonzantes fechada 
+en 1554. Existía también la ya mencionada dotación de trigo para viudas pobres.
+- Capellanías. Una capellanía vinculada al Hospital era la instituida en 1520 por Diego
+de Daza, vecino de Benavente, para que se le dijesen misas cada semana en la Capilla del 
+Hospital de la Piedad, según se señala en su carta de testamento.
+-  Priorato de Villaverde. Este priorato constituyó una encomienda de los Pimentel en 
+el siglo XV, siendo incorporado al Hospital de la Piedad merced a una bula de Clemente
+VII. Además de la casa la casa- convento de dicho priorato, sita en el lugar de San Pedro 
+de la Viña, comprendía un cuantioso lote de propiedades, en su mayor parte situadas en el
+valle de Vidriales. Entre la documentación referida a este priorato se encuentra en el archivo
+un libro de Noticias de la fundación del Priorato de San Salvador de Villaverde, fechado 
+en 1799 (Leg. 175 Exp. 1). Lamentablemente no se han localizado en el archivo los dos
+libros de Visitas y recuento de efectos del Priorato de Villaverde (fechados en 1580-1641
+y 1700-1867), los cuales ﬁ guraban en los inventarios de archivo.
+3. ADMINISTRACIÓN ECONÓMICA
+Es sin duda la sección más completa del archivo, tanto en número de unidades de 
+instalación como en su seriación. En la ordenación de la documentación integrante de esta
+sección hemos continuado aplicando los criterios anteriormente expuestos. Contando con
+los cuadros de clasiﬁ cación existentes para este tipo de archivos, además del orden en que 
+originalmente estaban dispuestos los legajos y de estudiar la composición y desarrollo de 
+los ingresos y de los gastos de esta fundación. La conjugación ﬂ exible, sin rigideces ni 
+apriorismos, de estos tres parámetros (cuadros de clasiﬁ cación existentes sobre este tipo de 
+instituciones, disposición original de los legajos y libros y estudios sobre la organización
+y funcionamiento de hospitales de beneﬁ cencia) ha condicionado y está condicionando la 
+organización deﬁ nitiva de la documentación de este importante archivo benaventano.
+De acuerdo con estas directrices y con el principio de restringir al máximo el número 
+de series, intentando más la sucesión y tramitación administrativa que la parcelación en 
+conceptos y temas, hemos reunido en el apartado de contabilidad no sólo la documentación 
+que responde estrictamente a dicho enunciado (ingresos y gastos, cargo y data, etc.), sino 
+también los pasos antecedentes a estos justiﬁ cantes, como son los presupuestos. Hay que
+
+115
+advertir que la misma disposición de los legajos favorecía este método, con lo que en modo 
+alguno hemos forzado la documentación original. En este método como en otros muchos
+coinciden orden de tramitación y colocación archivística.
+PATRIMONIO Y ADMINISTRACIÓN DE PROPIEDADES
+En relación con la administración y hacienda del hospital el archivo ofrece varios 
+conjuntos documentales que a continuación señalamos:
+- Patrimonio. Se encuentra protocolos y documentación relativa a los bienes muebles
+o raíces del Hospital, sobre donaciones, adquisiciones, arrendamientos, ventas, fundación,
+cartas de pago y subrogación de censos, etc.. Entre los libros se encuentra un Libro Becerro 
+de foros y zensos del hospital de Nuestra Señora de la Piedad. (data del siglo XVIII y consta 
+de 320 folios numerados, si bien solamente 320 de ellos fueron utilizados). También varios 
+libros de apeos de 1560, de 1694, 1741- 1747 y el Libro de arrendamientos de 1843.
+- Inventarios. Se conservan varios inventarios de bienes (Libro Inventario de alha-
+jas, de 1638-1675, de 1754 - 1846, , de 1854, etc.), de visitas y recuentos de efectos de 
+1700-1800.
+- Pleitos. Incluye la documentación judicial derivada de la administración de los bienes 
+del hospital, además de cierta cantidad de pleitos y ejecutorias.
+- Contabilidad. La documentación de contabilidad evidencia las características admi-
+nistrativas y de recursos económicos de la fundación benéﬁ ca, pero salvo en la forma de
+consignar las cuentas y a veces en la denominación de las mismas, todas forman parte de 
+una misma función y proceso contable. Un primer bloque de esta serie lo forman 45 legajos
+que contienen cuentas y sus correspondientes justiﬁ cantes desde 1781 a 1836, y que tiene
+su continuidad en otros 37 legajos que incluyen las cuentas de granos y maravedís desde
+1837 a 1882. A éstos se suma otro pequeño bloque de 3 legajos consignados  simplemente
+como cuentas, que abarca las comprendidas entre 1883 y 1885. Como Cuentas de Rectoría-
+Administración se enuncia otro legajo que incluye diversas cuentas correspondientes a los 
+años de 1883 a 1899. Las denominadas cuentas de mayordomía, que son en deﬁ nitiva otra 
+forma de denominar esta función contable, incluyen en su sólo legajo diversas cuentas que
+datan del mismo periodo comprendido entre 1883 y 1898. El resto de legajos de esta serie,
+que se cifran en 76, incluyen diarios de libramientos, justiﬁ cantes de cuentas, cuadernos
+de recibos, borradores de gastos, cuentas ordinarias, cuentas de rectoría administración, 
+resúmenes de cuentas, justiﬁ cantes de cargas cumplidas, gastos generales, etc., que abar-
+can un amplio periodo desde 1886 a 1960. A ellos hay que sumar otro legajo que incluye
+diferentes presupuestos de gastos fechados entre 1902 y 1954.
+En cuanto a los libros de contabilidad existentes es de reseñar el Libro de cuentas 
+del mayordomo Isidoro Enríquez de 1823 a 1828, de entradas de caudales de 1777, de 
+notas para la formación de cobradores de 1862-1873. A ellos se unen una serie de libros
+como son los de caja, general de contabilidad, de libramientos, de cuentas del patronato,
+de cuentas bancarias, etc., que abarcan de forma desigual el amplio periodo comprendido 
+entre 1919 a 1963.
+
+116
+4. ASISTENCIA BENÉFICA Y HOSPITALARIA
+En esta sección se incluye aquella documentación concerniente a la asistencia benéﬁ -
+co-hospitalaria propiamente dicha una vez creadas las secciones y series correspondientes 
+a la administración y gobierno del hospital. En ellas hemos incluido la documentación
+de registro relativa a la entrada y salida de enfermos, defunciones, alimentación y resto 
+de funciones estrictamente asistenciales, así como la escasa documentación que se ha 
+conservado sobre la asistencia médica diagnósticos, farmacia, etc.
+Se guardan diversos libros de entradas y salidas de enfermos que comprenden un
+extenso periodo entre 1702 y 1937 (no se conservan los anteriores a esta fecha, aunque se
+constata la desaparición del libro de entradas y salidas de 1697-1702, el cual ﬁ gura en el 
+inventario de 1884). Se hallan en el archivo también varios libros de defunciones datados 
+entre 1876 y 1937. Un numeroso grupo s lo forman los libros titulados como “de alimentos 
+de enfermos”, los cuales cubren un amplio periodo cronológico entre 1876 y 1956. Aun-
+que son ciertamente escasos, se conserva algún libro de asistencia médica propiamente
+dicha, como es el Libro de diagnósticos y tratamientos (1915-1919) o el Libro registro del
+consultorio médico de mujeres (1915-1916), etc.
+BIBLIOTECA
+Cuatro misales (Misale romanorum), un misal latino-castellano, dos breviarios 
+(Breviarium romanorum), unos evangelios y unas epístolas (1902). Dos antifonarios, un
+cantollano, de Ferdinandus de Isasi y un ejemplar de In Sacram Scripturam, de A. Lapide. 
+Un tratado de Medicina y Terapéutica, de Brouardel, en 10 tomos, de la Ed. Sucesores
+de Hernando, 1906. El Tratado de Cirugía clínica y operatoria, de Dentu y Delbet, en 11 
+tomos, publicado en Madrid por la Ed. Hernando y Compañía; y por último una Historia 
+de España, del Padre Mariana, publicada en 5 tomos por Gaspar y Roig editores.
+II. UN FONDO AGREGADO: HOSPITAL DE CONVALECIENTES
+Como hemos indicado el Archivo del Hospital de la Piedad incluye dos fondos do-
+cumentales, el del Hospital de la Piedad y el agregado del Hospital de San José de Con-
+valecientes, cuya fundación y patrimonio se agregaron al anterior en 1963, al igual que su 
+archivo como fondo documental a parte.
+Consta este fondo de 30 legajos, de los cuales 21 incluyen documentación contable 
+desde 1692 a 1950, mientras que los nueve restantes contienen documentación adminis-
+trativa de los siglos XVI al XX (fundación, gobierno, administración, propiedades, pleitos, 
+etc.). El estado de conservación es deﬁ ciente en su conjunto.
+RESEÑA HISTÓRICA DEL HOSPITAL DE SAN JOSÉ DE CONVALECIENTES
+En 1764, Don Luis Ángulo Mendoza y Doña Luisa Muñiz y Collados legaron cuan-
+
+117
+tiosos bienes para la fundación de un establecimiento de carácter benéﬁ co donde pudiesen
+ser acogidos temporalmente y pasar la convalecencia, aquellos enfermos que libres ya de 
+calenturas saliesen o fuesen dados de alta en el Hospital de San Juan. Sin embargo este
+loable propósito no llegaría a ponerse ejecución hasta el año 1685, en que don José de 
+Vergara y su esposa doña Jerónima de Uña y Herrera, acordaron la fundación deﬁ nitiva de 
+esta benéﬁ ca institución, mediante testamento otorgado con fecha de 2 de octubre de del
+año 1685: “para refugio de todos los pobres que salieren de la enfermedad, del Hospital
+de San Juan de esta villa de Benavente”. Por dicho testamento fueron nombrados apode-
+rados “ad hoc” o albaceas, don Alonso Molano (contador de los Estados de Benavente y
+su alcalde mayor), don Antonio de Melgar (cura párroco de Santa María la Mayor) y el 
+presbítero don Juan Gómez Salazar, quienes con las formalidades requeridas fundaron 
+este Hospital de San José, vulgo de los Convalecientes, el 19 de diciembre de ese mismo
+año: ”En la casa principal de la morada de dicho José de Vergara y doña Jerónima de Uña 
+y Herrera, su mujer; en la puerta principal de cuya casa, se pondrá una imagen de talla del 
+Glorioso Patriarca San José, con cuya advocación se ha de titular el dicho Hospital, en el 
+que serán admitidos todos los pobres del Hospital de San Juan, que vengan sin calentura
+a la convalecencia, ni otro achaque de su enfermedad”.
+Para su buen gobierno fue nombrado por los fundadores un Patronato, compuesto
+éste por “un Patrón de sangre y cuatro compatronos”. El primero en ostentar el cargo, 
+por voluntad expresa de los fundadores, fue don Andrés de Uña y Herrera, hermano de 
+la fundadora. Cuando se extinguiese la línea de los Uñas y Herreras, según se estipulaba,
+sucederían a éstos en dicho Patronazgo el pariente más cercano a don José de Vergara. El
+mencionado Patronato tenía entre sus funciones la de elegir y nombrar a los cargos del 
+Hospital, como eran el capellán, mayordomo, escribano y enfermera. Sus bienes se verían 
+afectados por las leyes desamortizadoras durante el siglo XIX, vendiéndose muchas de las 
+heredades que formaban su patrimonio y rentas. Nuevamente entre 1889 y 1895 fueron
+vendidas algunas de sus propiedades, esta vez por los administradores de la institución, con 
+el objeto de realizar algunas obras de acondicionamiento del ediﬁ co-hospital. Este ediﬁ cio 
+que aún se conserva, aunque alterado en parte, se encontraba ubicado en la conocida antaño 
+como Plazuela de Convalecientes junto a la Plaza de la Madera.
+En el año 1900 se decidió por la Junta de Patronato, presidida por entonces por don
+Bernardino Seísdedos, párroco de Santa María la Mayor, realizar gestiones encaminadas a 
+extender la función benéﬁ ca de este establecimiento a los ancianos desamparados. Para la 
+consecución de este objetivo fue solicitada la modiﬁ cación y ampliación de las cláusulas fun-
+dacionales del Hospital. A tal efecto, con la protección y asesoramiento de don Mateo Silvela 
+y doña Rafaela Tordesillas, se llevaron a cabo gestiones con la comunidad de religiosas de
+la Congregación de las Hermanitas de los Pobres, con el ﬁ n de que pudiesen regentar dicho
+asilo-hospital. En 1962 se acuerda la agregación de este Hospital al de la Piedad, pasando
+a constituir ambos un único patronato, trasladándose las religiosas y los asilados desde el
+Hospital de Convalecientes de San José a este ediﬁ cio del Hospital de la Piedad2. 
+2 A falta de la conclusión de los trabajos de organización del conjunto del archivo, hemos considerado 
+posponer la publicación de la descripción del fondo documental del Hospital de San José de Convalecientes
+para una próxima ocasión.
+
+118
+VALORACIÓN FINAL
+Son muchas las posibilidades investigativas que ofrece este archivo, no dudando que en
+un futuro muy próximo proporcione los frutos esperados. Para garantizar su preservación,
+así como para facilitar el acceso al mismo de los potenciales investigadores, sería nece-
+sario que dotarlo de los medios materiales y humanos suﬁ cientes para su mejor gestión y
+utilidad. Sería pues necesario estudiar, por el Patronato y la dirección del establecimiento,
+la fórmula más adecuada para garantizar su conservación e integridad, así como facilitar 
+su consulta con las suﬁ cientes garantías. En este sentido podría plantearse en un futuro 
+incluso la posibilidad y conveniencia de trasladarlo en calidad de depósito y como fondo
+agregado al Archivo Municipal de Benavente, toda vez que el Patronato del Hospital de
+la Piedad carece de medios económicos y humanos para proporcionar este servicio. Otra
+opción podría venir de la mano de la ﬁ rma de algún convenio de colaboración y asistencia 
+por parte del Patronato con alguna fundación o institución, como el que ha permitido la
+realización de los presentes trabajos de organización e inventariación con el Centro de 
+Estudios Benaventanos “Ledo del Pozo”.
+BIBLIOGRAFÍA
+DE LA MATA GUERRA, J. C. y MARTÍN BENITO, J. I., “A Santiago de Galicia por el 
+señorío de Benavente”, en Actas “Congreso sobre O camiño Xacobeo en Ourense”, pp. 
+209-208. Ourense,1997.
+GONZÁLEZ RODRÍGUEZ, R., “Escrituras del Hospital de la Piedad de Benavente”, en
+Brigecio nº 8, C.E.B. Ledo del Pozo, Benavente, 2005.
+GONZÁLEZ RODRÍGUEZ, R., “El Monasterio de San Salvador de Villaverde de Vidriales", 
+en Brigecio nº 11, C.E.B. Ledo del Pozo. Benavente, 2001.
+LEDO DEL POZO, J., “Historia de la nobilísima villa de Benavente”, pp. 327-329. Zamora, 1853.
+REGUERAS GRANDE, F., “Pinturas del Hospital de la Piedad (Benavente)”, en Brigecio
+nº 6, pp. 11-149. Salamanca 1961.
+HIDALGO MUÑOZ, E., “Las Fundaciones religiosas de los condes de Benavente”, en
+“Más vale volando”. Por el Condado de Benavente. Catálogo Exposición., C.E.B. Ledo
+del Pozo, pp. 32-39. Benavente, 1998.
+MUÑOZ MIÑAMBRES, J., “Camino Ruta de la Plata. Hospital de la Piedad y mansión de 
+peregrino”, en Benavente Año 70, nº 3 y 4. Benavente, 1970.
+MUÑOZ MIÑAMBRES, J., “Nueva Historia de Benavente”, pp. 113-128. Zamora, 1982.
+
+119
+ANEXO I
+CUADRO DE CLASIFICACIÓN
+FONDO DOCUMENTAL DEL HOSPITAL DE LA PIEDAD
+1. ADMINISTRACIÓN GENERAL
+- Fundación y Gobierno
+Privilegios y Bulas
+  
+Ordenanzas
+  
+Actas
+- Régimen Interior y Correspondencia
+Archivo
+Personal
+Obras
+2. CAPILLA Y ADMINISTRACIÓN ECLESIÁSTICA
+Capilla
+Capellanías
+Obras Pías 
+Priorato de Villaverde
+3. ADMINISTRACIÓN ECONÓMICA
+ - Patrimonio y Administración de propiedades
+Libro Becerro de heredades
+  
+Inventarios
+  
+Apeos
+ 
+Arrendamientos
+ 
+Pleitos
+  
+Correspondencia
+ - Contabilidad
+  
+Cuentas
+4. ASISTENCIA BENÉFICA–HOSPITALARIA
+Registro y Movimiento de enfermos
+Asistencia Médico-Hospitalaria
+5. DOCUMENTACIÓN AJENA
+
+120
+6. BIBLIOTECA
+FONDO DOCUMENTAL DEL HOSPITAL DE SAN JOSÉ DE CONVALECIENTES
+FUNDACIÓN Y GOBIERNO
+PATRIMONIO
+ADMINISTRACIÓN ECONÓMICA
+ANEXO II
+INVENTARIO
+FONDO DEL HOSPITAL DE LA PIEDAD
+RELACIÓN DE LEGAJOS
+Legajo 1 al 45. Cuentas 1781-1836
+Legajo 46 al 88. Cuentas 1837-1889
+Legajo 89 al 92. Cuentas 1883-1890
+Legajo 93. Cuentas de Rectoría-Administración 1883-1889/1895/1895-1899
+Legajo 94. Cuentas de Mayordomía 1883-1888
+Legajo 95. Cuentas de mayordomía, cuadernos de recibos, borradores de gastos 
+1884/1886-1889/1892-1894
+Legajo 96. Diarios de libramientos 1886-1890
+Legajo 97 a 107. Cuentas de mayordomía 1888-1899
+Legajo108 a 127. Cuentas de Rectoría-administración 1899-1901
+Cuentas anuales 1900
+Cuadernos de recibos 1899-1915
+Borradores de cuentas 1902
+Justiﬁ cantes de revista 1914
+Legajo 128. Cuentas ordinarias 1915-1916
+Legajo 129. Cuentas, justiﬁ cantes y libramientos 1917
+Legajo 130. Cuentas y libramientos 1917
+Legajo 131. Cuentas de Rectoría-administración 1909/1919/1921-1923/1925
+Legajo 132. Cuentas anuales 1901-1914
+Legajo 133 Cuentas de Rectoría-administración 1901-1914
+Legajo 134 Resúmenes de cuentas 1914-1917
+Legajo 135. Cuentas de Rectoría-administración 1918
+Legajo 136. Libramientos 1918
+Legajo 137. Cuentas de Rectoría-administración 1919
+Legajo 138. Cuentas de Rectoría-administración 1920
+Legajo 139. Justiﬁ cantes de cargas cumplidas 1921-1923
+Legajo 140. Justiﬁ cantes de cargas cumplidas. Libramientos 1916
+Legajo 141. Cuentas de Rectoría-administración 1919-1920
+Legajo 142. Justiﬁ cantes de cargas 1927-1930
+Legajo 143. Cuentas de Rectoría-administración. Justiﬁ cantes 1925-1926
+Legajo 144. Cuentas de Rectoría-administración 1927
+Legajo 145. Cuentas de Rectoría-administración 1929-1930
+
+121
+Legajo 146. Justiﬁ cantes de cargas 1927
+Legajo 147. Justiﬁ cantes de cargas 1928-1930
+Legajo 148. Cuentas y justiﬁ cantes. 1920-1923
+Legajo 149. Cuentas y libramientos. 1931
+Legajo 150. Cuentas 1932
+Legajo 151 a 152. Justiﬁ cantes y Libramientos 1932-1935
+Legajo 153. Justiﬁ cantes y libramientos 1936
+Legajo 154. Libramientos 1933
+Legajo 155. Cuenta de pagos a justiﬁ car por el servicio de jornales del H. Militar 1938
+Legajo 156. Gastos generales 1937-1939
+Legajo 157 a 159. Cuentas de socorros a Hospitalizados 1938-1939
+Legajo 160. Operaciones especiales por estancias de reintegro y relaciones de es-
+tancias 1938-1939
+Legajo 161 a 162. Cuentas. Adquisición de víveres 1937-1939
+Legajo 163. Cuentas de suministros y efectos del Hospital Militar 1938-1939
+Legajo 164. Cuentas de pagos a justiﬁ car por el servicio de adquisiciones y operaciones 
+1937-1939
+Legajo 165. Cuentas de farmacia 1938-1939
+Legajo 166. Cuentas 1929-1931
+Legajo 167 a 170. Cuentas 1942-1958
+Legajo 171. Cargaremes  1946-1960
+Legajo 172. Presupuestos 1902/ 1933-1934/1936-1937/1944/1954
+Legajo 173. Donaciones S.XVI
+Legajo 174. Bulas y privilegios Pontiﬁ cios s. XVI
+Legajo 175. Priorato de Villaverde
+Legajo 176. Donaciones y propiedades en Salamanca
+Legajo 177. Escrituras de ventas y censos
+Legajo 178. Escrituras y adquisiciones de propiedades
+Legajo 179. Escrituras de venta, cesión, fueros y reconocimientos
+Legajo 180. Escrituras de venta, adjudicaciones y redenciones de censos
+Legajo 181. Escrituras de venta, trueque y reconocimiento de censos
+Legajo 182. Escrituras de venta y subrogación de censos
+Legajo 183. Escrituras de venta y fundación de censos
+Legajo 184. Escrituras censos
+Legajo 185. Apeos de heredades
+Legajo 186. Pleitos con la jurisdicción eclesiástica
+Legajo 187. Estancias de militares
+Legajo 188. Escrituras de compras
+Legajo 189. Cuentas 1780-1783
+Legajo 190. Cuentas 1784-1877/1789-180l
+Legajo 191. Correspondencia , peticiones y varios 1791-1850
+Legajo 192. Correspondencia 1777-1799
+Legajo 193. Correspondencia 1764/1777-1799/1807
+Legajo 194. Correspondencia y varios S.XVII-1942 
+Legajo 195.Correspondencia 1798-1809/1814/1816/1821-182/1838-1843/1846-1848/1853
+Legajo 196. Correspondencia y suministros 1809/1819-1823/1829
+Legajo 197. Correspondencia 1758-1780/1804-1818/1821
+Legajo 198. Papeletas de arriendos y granos 1790-1848
+Legajo 199. Correspondencia 1763/1777/1779-1884
+
+122
+Legajo 200. Relaciones de estancias de militares enfermos 1833-1836/1851-1854
+Legajo 201. Resúmenes de estancias de militares 1865-1878
+Legajo 202. Resúmenes de estancias de militares 1856-1864
+Legajo 203. Correspondencia 1826-1829. Créditos contraídos 1829-1834
+Legajo 204. Correspondencia 1833 –1836.Varios 1824/1831
+Legajo 205. Correspondencia y Varios (informes y declaraciones, etc.) s.XVI-XIX
+Legajo 206. Administración (reparos a ctas., pleito, correspondencia, personal, etc.)
+1755/1772-1773/1778/1781-1783/1790-1799/1801-1802
+Legajo 207. Cuentas y correspondencia con Valentín Andrés Bermúdez, apoderado
+del Hospital en Madrid 1869
+Legajo 208. Deudas por suministros de medicinas 1790/1798/1814-1815/1817
+Legajo 209. Cantidades en depósito en la Tesorería de la Casa de Osuna 1858- 
+1866/1870-1872 . Cuentas de granos y maravedís 1865-1876
+Legajo 210. Copias simples de apeos y relación de heredades pertenecientes al Hos-
+pital  en Benavente y pueblos de su jurisdicción 1740-1942/1867
+Legajo 211. Expedientes de propiedades y asuntos judiciales s. XIX
+Legajo 212. Estadísticas y relaciones de propiedades, rentas y valores 1872-1873
+Legajo 213. Estados del movimiento de enfermos. 1860-1883
+Legajo 214. Correspondencia 1846-1855
+Legajo 215. Correspondencia sobre administración de propiedades 1814-1855
+Legajo 216. Correspondencia con D. Joaquín Sanz Brieva, apoderado del Hospital
+en Madrid y D. Félix de Prada, administrador del Hospital 1856-1862
+Legajo 217. Correspondencia entre el apoderado y el administrador del Hospital
+1866-1870
+Legajo 218. Correspondencia 1871-1873/1880
+Legajo 219. Correspondencia 1855-1883
+Legajo 220. Correspondencia, solicitudes referentes a propiedades del Hospital 1855-
+1883/1887-1900. Cuentas e ingresos  1859-1869
+Legajo 221. Administración de propiedades, cuentas y correspondencia 
+1869/1871/1873-1889/1899/1902
+Legajo 222. Adquisición del Cementerio de San Lázaro 1868/1873
+Legajo 223. Correspondencia y recurso contra aplicación de leyes desamortizadoras
+1870-1872
+Legajo 224. Correspondencia, cuentas y operaciones de crédito 1880-1884
+Legajo 225. Correspondencia 1777/1791-1792. Dotaciones de vacantes para la 
+prebenda de granos a viudas pobres 1779-1787. Nombramientos de empleados y 
+viudedades 1842-1848/1856-1877/1880
+Legajo 226. Entradas de militares y cuentas de estancias y reparaciones
+1846/1853/1879-1880/1883/1890/1896
+Legajo 227. Correspondencia y dotaciones de cargas destinadas a viudas pobres 
+1796-1798/ 1888/1890
+Legajo 228. Recetas despachadas a empleados del Hospital en las farmacias 1880-1890
+Legajo 229. Escrituras de propiedades (ventas, arrendamientos, expedientes de in-
+formación posesoria, foros, hipotecas, etc.) s. XIX
+Legajo 230. Arrendamientos 1844-1856
+Legajo 231. Cuentas de rectoría y caudales 1877-1883
+Legajo 232. Cuentas de mayordomía 1877-1882
+Legajo 233. Acción de la Real Compañía de Filipinas 1785-1788/1791
+Legajo 234. Memoria y razón de las acciones que posee el Hospital de la Real  Com-
+
+123
+pañía de Filipinas. 1785/1788/1791
+Legajo 235. Cuentas, recibos y correspondencia sobre vales reales en posesión del
+Hospital 1800-1830
+Legajo 236. Asuntos testamentarios. 1844/1859/1861-1862. Varios (cuentas, cobra-
+dores de granos, arrendamientos, partidas sacramentales, reparaciones, información
+de propiedades, etc.) s. XIX
+Legajo 237. Correspondencia y documentación sobre propiedades y asuntos econó-
+micos 1763-1817
+Legajo 238. Correspondencia 1770/1778/1787
+Legajo 239 Notas de alimentación de enfermos 1888-1898
+Legajo 240. Varios (honorarios, memorias, cuentas, relaciones de enfermos, obras, 
+presupuestos, etc.) 1912-1914/1929-1961
+Legajo 241. Inventarios de efectos 1917/1929/1933/1937
+Legajo 242. Minutas para el nombramiento de curatos 1822-1929
+Legajo 243. Estancias de militares 1796/1800-1808
+Legajo 244. Asuntos testamentarios de D. Antonio de Vega y Dña. Margarita Caste-
+llanos 1840-1845/1850/1854/11856-1858/1869-1872
+Legajo 245. Documentos de Calahorra, Marquesado de Zenet 1789/17971805/1813- 
+1816/1820
+Legajo 246. Documentos del Marquesado de Javalquinto s. XV-XX
+Legajo 247. Liquidación, división y adjudicación de los bienes de la Princesa de
+Anglona. 1861
+Legajo 248. Propiedades de Villaornate. s. XVII-XVIII
+Legajo 249. Asuntos eclesiásticos, patronato y presentación s. XV-XIX
+Legajo 250. Escrituras y arrendamientos 1843-1856
+Legajo 251. Varios 1930-1962
+Legajo 252. Inventarios y copia de las Ordenanzas 1759-1760/1794/1814/1884
+Legajo 253. Propiedades de Rota y Puerto de Santa María (escrituras, certiﬁ caciones
+de registro, documentos judiciales cumplimentados)s. XIX-XX
+Legajo 254. Planos y proyectos de obras 1799/1888/1894/1897
+Legajo 255. Documentos judiciales cumplimentados 1906-1907/1911-
+1912/1923/1937
+Legajo 256. Correspondencia y asuntos administrativos s. XVIII-XIX
+Legajo 257. Correspondencia y facturas 1930-1931
+RELACIÓN DE LIBROS
+Libro 1. Cuentas del mayordomo Isidro Enríquez 1823-1828
+Libro 2. Entradas y salidas de enfermos 1687 – 1702 *
+Libro 3. Entradas y salidas de enfermos 1702 - 1710
+Libro 4. Entradas y salidas de enfermos 1710 - 1741
+Libro 5. Entradas y salidas de enfermos 1741 - 1780
+Libro 6. Entradas y salidas de enfermos 1763 - 1804
+Libro 7. Entradas y salidas de enfermos 1781 - 1803
+Libro 8. Entradas y salidas de enfermos 1803 - 1808
+Libro 9. Entradas y salidas de enfermos 1804 - 1819
+Libro 10. Entradas y salidas de enfermos 1808- 1814
+Libro 11. Entradas y salidas de enfermos 1819 - 1826
+Libro 12. Entradas y salidas de enfermos 1814 - 1829
+
+124
+Libro 13. Entradas y salidas de enfermos 1829 - 1844
+Libro 14. Entradas y salidas de enfermos 1844 - 1857
+Libro 15. Apeos antiguos. Priorazgo de Villaverde  1560 – 1562
+Libro 16. Apeos 1741 –1747
+Libro 17. Apeos 1694 (1701 Copia, 1836 Reformado)
+Libro 18. Arrendamientos 1843
+Libro 19. Libro becerro de heredades, foros y censos. S. XVIII
+Libro 20. Inventario del Archivo 1829/1835 /1851
+Libro 21. Inventario de alhajas 1521-1675
+Libro 22. Inventario de alhajas 1754 - 1846
+Libro 23. Inventario de alhajas 1854
+Libro 24. Dotaciones de huérfanas 1564- 1574
+Libro 25. Dotaciones de huérfanas 1816
+Libro 26. Visitas y recuento de efectos 1700- 1800
+Libro 27. Visitas del Priorato de Villaverde 1580- 1641*
+Libro 28. Visitas al Priorato de Villaverde 1700 – 1867*
+Libro 29. Visitas por el Obispo de Oviedo 1871 – 1877
+Libro 30. Cargas y cumplimiento de misas 1764
+Libro 31. Cargas de misas 1793
+Libro 32. Acuerdos de la Junta Directiva 1828 – 1846*
+Libro 33. Acuerdos de la Junta Directiva 1848 – 1890
+Libro 34. Pensiones de empleados y dependientes 1760 – 1866
+Libro 35. Entradas de Caudales 1777
+Libro 36. Salidas de Caudales
+Libro 37. Ordenanzas 1759
+Libro 38. Entradas generales diarias a cargo de la Despensa 1856 – 1876
+Libro 39. Salidas diarias a cargo de la despensa 1856 – 1874
+Libro 40. Libro de Alimentos de Enfermos 1876 –1878
+Libro 41. Libro de Alimentos de Enfermos 1878 – 1880
+Libro 42. Libro de Alimentos de Enfermos 1880 - 1882
+Libro 43. Libro de Alimentos de Enfermos 1882 - 1883
+Libro 44. Libro de Alimentos de Enfermos 1883 - 1885
+Libro 45. Libro de Alimentos de Enfermos 1885 - 1887
+Libro 46. Libro de Alimentos de Enfermos 1887 - 1888
+Libro 47. Libro de Alimentos de Enfermos 1889 - 1891
+Libro 48. Libro de Alimentos de Enfermos 1891 - 1892
+Libro 49. Libro de Alimentos de Enfermos 1892
+Libro 50. Libro de Alimentos de Enfermos 1894 - 1895
+Libro 51. Libro de Alimentos de Enfermos 1895
+Libro 52. Libro de Alimentos de Enfermos 1896
+Libro 53. Libro de Alimentos de Enfermos 1897
+Libro 54. Libro de Alimentos de Enfermos 1898 - 1899
+Libro 55. Libro de Alimentos de Enfermos 1893
+Libro 56. Libro de Alimentos de Enfermos 1900
+Libro 57. Libro de Alimentos de Enfermos 1900 - 1902
+Libro 58. Libro de Alimentos de Enfermos 1902 - 1903
+Libro 59. Libro de Alimentos de Enfermos 1906 - 1908
+Libro 60. Libro de Alimentos de Enfermos 1915 - 1916
+Libro 61. Libro de Alimentos de Enfermos 1916
+
+125
+Libro 62. Libro de Alimentos de Enfermos 1916 - 1917
+Libro 63. Libro de Alimentos de Enfermos 1917 - 1918
+Libro 64. Libro de Alimentos de Enfermos 1918
+Libro 65. Libro de Alimentos de Enfermos 1918 - 1919
+Libro 66. Libro de Alimentos de Enfermos 1919 - 1920
+Libro 67. Libro de Alimentos de Enfermos 1920 – 1921
+Libro 68. Libro de Alimentos de Enfermos 1924 - 1925
+Libro 69. Libro de Alimentos de Enfermos 1925
+Libro 70. Libro de Alimentos de Enfermos 1926 – 1927
+Libro 71. Libro de Alimentos de Enfermos 1928
+Libro 72. Libro de Alimentos de Enfermos 1929
+Libro 73. Libro de Alimentos de Enfermos 1930
+Libro 74. Libro de Alimentos de Enfermos 1931 - 1932
+Libro 75. Libro de Alimentos de Enfermos 1932 - 1933
+Libro 76. Libro de Alimentos de Enfermos 1933
+Libro 77. Libro de Alimentos de Enfermos 1934
+Libro 78. Libro de Alimentos de Enfermos 1935 - 1936
+Libro 79. Libro de Alimentos de Enfermos 1936 - 1937
+Libro 80. Libro de Alimentos de Enfermos 1937
+Libro 81. Libro de notas para la formación de cobradores. 1862 – 1873
+Libro 82. Libro de acuerdos y resoluciones 1891 – 1918
+Libro 83. Libro de acuerdos y resoluciones 1929 - 1931
+Libro 84. Libro de acuerdos y resoluciones 1931 – 1945
+Libro 85. Libro de acuerdos y resoluciones 1946 – 1952
+Libro 86. Libro de acuerdos y resoluciones 1952 – 1962
+Libro 87. Libro de Diagnósticos y Tratamientos 1915 – 1919
+Libro 88. Registro del consultorio médico de mayores 1915 – 1916
+Libro 89. Libro de Entradas de Despensa 1900 – 1916
+Libro 90. Libro de Efectos y útiles 1937
+Libro 91. Libro de cumplimiento de misas obligatorias y voluntarias 1839 – 1860
+Libro 92. Libro de licencias de confesión 1898 – 1929
+Libro 93. Libro de defunciones 1903 – 1956
+Libro 94. Libro Registro de personal de la Vicaría San Millán 1892
+Libro 95. Libro de entradas y salidas de enfermos 1857 – 1870
+Libro 96. Libro de entradas y salidas de enfermos 1871 – 1886
+Libro 97. Libro de entradas y salidas de enfermos 1886 – 1898
+Libro 98. Libro de entradas y salidas de enfermos 1898 – 1903
+Libro 99. Libro de entradas y salidas de enfermos 1903 – 1909
+Libro 100. Libro de entradas y salidas de enfermos 1909 – 1917
+Libro 101. Libro de entradas y salidas de enfermos 1917 – 1937
+Libro 102 Libreta de uso del enfermero (entradas y salidas) 1919 – 1923
+Libro 103. Libro de entradas y salidas 1931 – 1937
+Libro 104. Libreta de entradas y salidas 1924 – 1928
+Libro 105. Libreta de entradas y salidas 1928 – 1937
+Libro 106. Libro de caja 1919 – 1920
+Libro 107. Libro Mayor 1918 – 1936
+Libro 108. Libro de Caja 1924 – 1929
+Libro 109. Cuentas de abastecedores (Contiene Exp. Inventario 1931) 1930 – 1933
+Libro 110. Cuenta de Gastos de Administración con cargo a la 10ª 1930 – 1936
+
+126
+Libro 111. Cuenta de la 10ª de los ingresos para gastos de Administración 1936 – 1958
+Libro 112. Cuenta de Administración 1930-1934
+Libro 113. Cuentas de Abastecedores 1934 – 1937
+Libro 114. Cuentas de Administración 1934 – 1936
+Libro 115. Libro general de Contabilidad 1931 – 1936
+Libro 116. Libro de Libramientos 1898 – 1928
+Libro 117. Libro cuenta del Patronato 1935 - 1940
+Libro 118. Relación de pagos por el servicio de pagos de socorro a hospitalizados
+(Hospital Provincial y Hospital Civil Nª. Señora de la Piedad)
+Libro 119. Cuenta General 1930 – 1934
+Libro 120. Cuenta con el Banco Central de Benavente 1934 – 1957
+Libro 121. Libro Mayor 1936 – 1960
+Libro 122 Cuenta con el Banco Herrero 1930 – 1934
+Libro 122. Cuenta con la sucursal del Banco de España en Zamora 1932 – 1954
+Libro 123. Cuenta con el Banco Herrero y Espacial de Crédito 1934 – 1963
+Libro 124. Cuenta con el Banco Herrero 1934 – 1947
+Libro 125. Libro de efectos (entradas) 1937
+Libro 126. Libro de registro de entrada de documentos 1929 – 1952
+Libro 127. Libro registro de salida de documentos y comunicados 1929 – 1935
+Libro 128. Salidas de telegramas de expediciones y facturaciones 1938
+Libro 129. Telegramas salidas 1937 – 1938
+Libro 130. Entrada de correspondencia 1963 – 1972
+Libro 131. Libro maestro de cargo y data 1816 – 1828
+Libro 132. Libro de registro de personal. Vicaría de San Millán. 1892 – 1931
+Libro 133. Libro de la Obra Pía de Benavides. Elecciones de huérfanas y sorteos 1785
+Libro 134. Ejecutoria de Hidalguía y vizcainía de José de Llona 1776
+Libro 135. Inventario y balances de la Sociedad “Dehesa de Brive” 1944 – 1945
+Libro 136. Libro auxiliar de caja de la Sociedad “Dehesa de Brive” 1944
+Libro 137. Libro Mayor de la Sociedad “Dehesa de Brive” 1944 – 1945
+Libro 138. Inventarios y balances de la Sociedad “Dehesa de Brive” 1945
+Libro 139. Libreta de cuentas de Gregorio García, administrador de viñas y propie-
+dades de Dña. Jacoba Vargas e Hijos. 1852-1857
+FONDO DEL HOSPITAL DE SAN JOSÉ DE CONVALECIENTES
+RELACIÓN DE LEGAJOS 
+Legajo 1. Cuentas 1692-1700
+Legajo 2. Cuentas 1701-1708
+Legajo 3. Cuentas 1713-1721
+Legajo 4. Cuentas 1723-1727
+* Los Libros que ﬁ guran en este inventario con los números: 2 (Entradas y salidas de enfermos 1687
+– 1702), 27 ( Visitas del Priorato de Villaverde 1580- 1641), 28 ( Visitas al Priorato de Villaverde 1700 – 1867)
+y 32 ( Acuerdos de la Junta Directiva 1828 – 1846), si bien aparecen relacionados en los inventarios antiguos
+que se conservan de este archivo, lamentablemente no han podido ser localizados hasta la fecha. No obstante
+hemos querido dejar constancia de forma su existencia, aunque actualmente no se encuentren formando parte
+de este fondo documental y estén por lo tanto “desaparecidos”. Ello por si pudiesen ser localizados algún día y 
+reintegrados a este archivo al que pertenecen.
+
+127
+Legajo 5. Cuentas 1728-1730
+Legajo 6. Cuentas 1730-1733
+Legajo 7. Cuentas 1734-1742
+Legajo 8. Cuentas 1744-1763
+Legajo 9. Cuentas 1766-1777
+Legajo 10. Cuentas 1778-1790
+Legajo 11. Cuentas 1777-1800
+Legajo 12. Cuentas 1791-1798
+Legajo 13. Cuentas 1800-1804/1807-1808
+Legajo 14. Cuentas 1819-1824/ 1830-1832
+Legajo 15. Cuentas 1836-1837
+Legajo 16. Cuentas 1841-1848
+Legajo 17. Cuentas 1894-1902
+Legajo 18. Cuentas 1904-1916
+Legajo 19. Cuentas 1917-1929
+Legajo 20. Cuentas 1920-1940
+Legajo 21. Cuentas 1941-1950
+Legajo 22 a 30. Fundación, gobierno y administración S. XVII-S.XX
+Libro de Becerro de foros del Hospital de la Piedad. Foto E. P. Mencía.
+
+128
+Armario del Archivo del Hospital de la Piedad. Foto E. P. Mencía.
+Breve Pontiﬁ cio de Paulo III. Archivo del Hospital de la Piedad. Foto E. P. Mencía.
