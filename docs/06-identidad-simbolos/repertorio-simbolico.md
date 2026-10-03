@@ -442,6 +442,17 @@ bordes engrosados. Piezas dibujadas: 93/24/A/1, 93/24/B/2, /37, /38, 93/24/C/1, 
 > prodiga es la TSHt**, donde la roseta es motivo corriente. **Lo seguro es la roseta; lo propuesto
 > es de qué taller salió** → [inventario § 7.1 bis](../03-archivos/inventario-documental.md).
 
+> ★★ **Y el mismo día, leído el estudio completo** (`TAR-28`), **el paralelo sale reforzado —y la
+> distinción que esta ficha hizo, sostenida—.** El estudio de 1987 publica **a tamaño real los 22
+> punzones** del taller y dice que su cerámica tiene «**poca relación**» con la TSHt estampada
+> **en decoración y en forma**. De ahí, dos cosas:
+> — **93/27/115** lleva la estampación **en el propio borde vuelto**, que es el rasgo **formal**
+> del grupo de Azoague y no el de la TSHt: el paralelo ya no depende sólo del motivo.
+> — **93/27/175** lleva **cruces dentro de los círculos**, y **entre los 22 punzones de Azoague no
+> hay ninguna cruz**: encaja con el rótulo «TSHt» del pie de figura, que es como esta ficha la
+> clasificó.
+> ⚠️ **Sigue siendo lectura de dibujos, no de piezas** → [inventario § 7.1 ter](../03-archivos/inventario-documental.md).
+
 **3. La retícula incisa plenomedieval (s. XI).** En la fig. 4:
 
 | Pieza | Decoración |

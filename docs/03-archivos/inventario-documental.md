@@ -820,6 +820,103 @@ de Azoague lo confirma: cita a Hayes dieciocho veces.
 
 ---
 
+### 7.1 ter ★★★ El repertorio de punzones de Azoague, a la vista — `TAR-28`
+
+> **3 de octubre de 2026, el mismo día.** Leído también el **estudio completo** del que el artículo
+> de *Brigecio* es resumen: **52 planas**, en tres partes —I. La excavación; II. Una sigillata
+> tardía figurada; III. Sigillata gris y estampada—. Y trae **lo único que puede cerrar la
+> pregunta sin salir de casa**.
+
+#### 🚨 La frase que vuelve excluyentes las dos lecturas
+
+> «Hemos de advertir además que tanto en lo referente a las decoraciones como a las formas, **poca
+> relación se puede establecer con la coetánea TSHt estampada**, mientras que su **máxima
+> vinculación respecto a las formas la muestran con las cerámicas "paleocristianas" francesas**, de
+> las que en muchos casos parecen ser una mera transposición.» — **p. 138**
+
+**Lo dicen ellos**, y cambia el planteamiento: una pieza **no puede parecerse un poco a las dos**.
+O está en el grupo de Azoague, o es TSHt estampada. La pregunta deja de ser vaga.
+
+#### ✅ Y dan los rasgos con los que se distingue
+
+| | El grupo de Azoague |
+|---|---|
+| **Forma** | plato grande de **borde vuelto «a marli»**, **forma 1 de Rigoir** (= Hayes 59) |
+| **Pie** | **ninguno** —ni esbozo—; en su lugar, acanaladuras de apoyo |
+| **Borde** | por lo general con **moldura de refuerzo** en el extremo |
+| **Engobe** | sólo **interior y borde**; la base queda alisada o bruñida |
+| **Dónde va la decoración** | **en el fondo Y en el borde** |
+| **Lo que nunca lleva** | **burilado** («guillochis») en el borde —a diferencia de los platos franceses— |
+| A veces | **«chevrons»** impresos en la pared externa, que se traslucen al interior |
+
+#### ★★★ Los veintidós punzones, publicados a tamaño real
+
+![Los punzones de la cerámica estampada de Villanueva de Azoague](../../assets/img/azoague1987-fig4-punzones.jpg)
+
+*Fig. 4 del estudio de 1987, **p. 126** — ⚠️ ojo: la figura va impresa **muy lejos del catálogo que
+la cita**, que está en las pp. 150-152.*
+
+Son **22 punzones**, y los autores los agrupan así: **ocho circulares (A1-A8)**, **siete palmetas
+(B1-B7)**, **cinco cuadrados (C1-C5)**, **una columna (D)** y **una arquería (E)**. Los que aquí
+importan:
+
+| Punzón | Como lo describen | Dónde aparece |
+|---|---|---|
+| **A3** | dos círculos concéntricos, **el exterior de línea cortada** | **el más abundante en cuencos** |
+| **A7** | **tres círculos, el de fuera dentado** | **sólo en platos**, en el borde y en el fondo |
+| **A8** | «especie de **roseta circular** compuesta por **ángulos convergentes**» | en **bordes** de plato, en fondos, y en **un solo cuenco** |
+
+#### ★★ Lo que con esto se puede decir de las dos piezas de Colinas
+
+> ⚠️ **Advertencia de alcance.** Lo que sigue es **lectura de este proyecto sobre dibujos
+> publicados**, no sobre piezas. No sustituye a un ceramista, y no pretende hacerlo: sirve para
+> saber **qué hay que mirar** cuando alguien tenga las piezas delante.
+
+**93/27/115 — el paralelo sale reforzado, y por la forma.** El dibujo de 1993 la da como **borde
+vuelto con la estampación en el propio borde**, que es **justamente el rasgo** que el estudio de
+1987 describe como suyo —decoración en el borde, sin burilado— y que dice que **no** es el de la
+TSHt. Hasta hoy el paralelo se apoyaba en **un motivo**, la roseta, que es común; ahora se apoya
+además en **dónde está puesto**, que no lo es. `[?]` El punzón del borde parece de la serie **A**
+—círculo pequeño con trazos radiales, del tipo **A3, A4 o A5**—, pero **eso no se decide sobre un
+dibujo a escala reducida**, y aquí no se decide.
+
+**93/27/175 — el rótulo «TSHt» sale confirmado.** Sus círculos llevan dentro **cruces o flores de
+cuatro brazos**, y **entre los 22 punzones de Azoague no hay ninguna cruz**: los ocho circulares
+son círculos lisos, dentados o radiados, **nunca cruciformes**. ⚠️ La ausencia en una lista de 22
+punzones de **una sola** excavación es argumento débil —otro alfar pudo tener más—, pero apunta en
+el mismo sentido que el pie de figura de 1993.
+
+> ✅ **Y eso sostiene una corrección que el proyecto ya había hecho por su cuenta.** El 6 de
+> septiembre se separó **93/27/115** (gris estampillada) de **93/27/175** (TSHt) leyendo el pie de
+> figura, contra el inventario heredado, que las metía juntas. **El repertorio de Azoague sostiene
+> esa separación** → [repertorio simbólico](../06-identidad-simbolos/repertorio-simbolico.md).
+
+#### ⚠️ Dos cautelas que el estudio completo obliga a añadir
+
+**1. Los propios excavadores no dan el alfar por probado.** Las conclusiones de su excavación son
+mucho más humildes que el resumen de 1989: «**No se localizó ninguna clase de estructuras**»; la
+cuneta estaba removida por la concentración parcelaria, lo que «otorga un carácter incierto a la
+estratigrafía»; el material estampado salía de una «**bolsada**» que **había vaciado el dueño de la
+finca** antes de que ellos llegaran. Y cierran:
+
+> «Mientras tanto **debemos contentarnos más con abrir fecundas incógnitas que con asentar
+> hipótesis todavía demasiado frágiles**.» — **p. 123**
+
+**2. De los dos fragmentos de Colinas, sólo hay uno dibujado.** El artículo de 1993 dice que son
+**dos** los fragmentos de cerámica gris estampillada —«un **plato**, que presenta como motivo
+decorativo una roseta estampillada, y un **cuenco de borde vuelto**, con las estampaciones de
+rosetas en el mismo borde»—, pero **su fig. 3 sólo rotula uno** como tal: `93/27/115`. **El segundo
+no está publicado**, o no va rotulado así. Parte de la base del paralelo **no se puede ver**.
+
+#### ★ Y un dato de dispersión que el resumen de 1989 no da
+
+Para la cerámica **figurada** —no la estampada— el estudio de 1987 señala un fragmento aparecido en
+**El Alba, Villalazán (Zamora)**, a unos **70 km al S** de Los Villares, y dice que es «**el único
+resto documentado fuera de nuestro yacimiento y que con seguridad pertenece al mismo taller**».
+Había sido interpretado como cerámica **megarense** y como la lucha de Hércules con el león de Nemea.
+
+---
+
 ### 7.2 ★ El Calcolítico del valle del Tera — ✅ **OBTENIDO Y LEÍDO** (22 de septiembre de 2026)
 
 PÉREZ RODRÍGUEZ, Francisco Javier; SANZ GARCÍA, Francisco Javier; MARCOS CONTRERAS, Gregorio José;
@@ -893,7 +990,7 @@ Ocampo, **pp. 123-124** (sección colectiva, sin autor en el índice). PDF en `d
   Salamanca.
 - LÓPEZ RODRÍGUEZ, J. R. y REGUERAS GRANDE, <s>J. R.</s> **F.** (1987): «Cerámicas tardorromanas de
   Villanueva de Azoague (Zamora)», *BSAA*, LIII, Valladolid, pp. 115-166.
-  ✅ **Obtenido el 3-X-2026** → [`02-bibliografia/`](../02-bibliografia/lopez-regueras-1987-ceramicas-azoague-bsaa53.pdf)
+  ✅ **Obtenido y leído el 3-X-2026** (`TAR-28`) → § 7.1 ter
 - LÓPEZ RODRÍGUEZ, J. R. y REGUERAS GRANDE, <s>J. R.</s> **F.** (1989): «Sigillatas en relieve y
   estampadas de Villanueva de Azoague (Zamora). Un posible obrador de cerámicas tardorromanas»,
   *Brigecio* 1, Benavente, pp. 47-58. ✅ **Leído entero el 3-X-2026** (`TAR-10`) → § 7.1 bis
