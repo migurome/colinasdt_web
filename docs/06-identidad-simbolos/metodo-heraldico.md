@@ -415,8 +415,23 @@ Grandeza de primera clase*, **Madrid, Imprenta de Lorenzo Francisco Mojados, 175
 de Pimentel»**, y una de las **dos obras capitales del siglo XVIII sobre la Casa de Benavente**,
 junto con la *Historia de la Nobilísima Villa de Benavente* de **José Ledo del Pozo**.
 
-⚠️ **No está digitalizada en abierto.** Google Books sólo da la ficha; circula en el mercado
-anticuario.
+<s>⚠️ **No está digitalizada en abierto.** Google Books sólo da la ficha; circula en el mercado
+anticuario.</s>
+
+> 🚨 **3 de octubre de 2026: hay edición moderna, y sale de donde menos se esperaba.** Leyendo
+> `TAR-27` —un artículo sobre las escrituras del Hospital de la Piedad, que no va de heráldica—
+> aparece la cita completa: **I. BERDUM DE ESPINOSA, *Derechos de los Condes de Benavente a la
+> grandeza de primera clase*, Madrid, 1753. ★ **Ed. Facsímil, Madrid, 1997**, fol. 6v-8r**
+> —GONZÁLEZ RODRÍGUEZ (1998), *Brigecio* 8, nota 20—. La edición de **1997** la publicó en Madrid
+> **E y P libros antiguos** `[?]`. **Es un libro impreso moderno, no una pieza de anticuario**:
+> se busca en bibliotecas y se compra, que es otra cosa que rastrear el original de 1753.
+>
+> ★ **Y da el folio exacto de lo que aquí importa**: **fol. 6v-8r**, donde Berdum trata **las cinco
+> veneras**. Con un dato de contenido que conviene saber antes de usarlas: Berdum **llama
+> *fábula*** a la tradición que liga las conchas con la llegada de los restos de Santiago, y
+> prefiere relacionarlas con **la participación de antepasados Pimentel en la batalla de Clavijo**.
+> ⚠️ Clavijo es **batalla legendaria**: no se está cambiando una leyenda por un hecho, sino una
+> leyenda por otra, y la fuente del XVIII elige la segunda.
 
 > ★★ **Pero la lámina, que es lo que este proyecto necesita, sí está accesible.** El **Centro de
 > Estudios Benaventanos «Ledo del Pozo»** —la misma institución que publica *Brigecio* y que firma

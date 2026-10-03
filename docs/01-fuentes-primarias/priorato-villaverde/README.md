@@ -222,10 +222,58 @@ las pone. Cruzando los dos:
 | ⚠️ **Libro 27** | Visitas del Priorato de Villaverde, **1580-1641** | **NO LOCALIZADO en 2005.** Figuraba en los inventarios antiguos |
 | ⚠️ **Libro 28** | Visitas al Priorato de Villaverde, **1700-1867** | **NO LOCALIZADO en 2005.** Ídem |
 
-> 📏 **Una errata de imprenta, para que no confunda.** El inventario de 2005 describe el Libro
-> Becerro diciendo que «consta de **320** folios numerados, si bien solamente **320** de ellos fueron
-> utilizados». **Las dos cifras no pueden ser la misma**: una de las dos está mal, y no se puede
-> saber cuál. Se anota tal cual.
+> ✅ **La errata del inventario de 2005, resuelta el mismo día.** Decía que el Libro Becerro «consta
+> de **320** folios numerados, si bien solamente **320** de ellos fueron utilizados», lo que no puede
+> ser. **El artículo de 1998 del que de la Mata parafrasea da la cifra buena**: **320 folios
+> numerados, de los que están escritos 230**. Es un <s>320</s> por **230**.
+
+### 🚨 Y el *Libro Becerro* no es lo que su nombre sugiere
+
+Lo describe **el mismo González Rodríguez**, tres años antes de citarlo:
+
+> «el principal instrumento de descripción del archivo, el denominado ***Libro de Bezerro de foros
+> y zensos del hospital de Nuestra señora de la Piedad*. Se trata de **un inventario-catálogo de
+> toda la documentación del hospital de la Piedad correspondiente a los siglos XVI, XVII y
+> XVIII**. El libro, de gran tamaño, está encuadernado en pergamino —de ahí su denominación—.
+> Consta de **320 folios numerados**, si bien solamente una parte de ellos —concretamente **230
+> folios**— están escritos. La mayor parte del texto es obra de **una misma persona que escribe en
+> la segunda mitad del siglo XVIII**. El autor extractó con encomiable minuciosidad el contenido de
+> toda la documentación de la institución, **distribuyéndola por asuntos y fechas**.»
+> — GONZÁLEZ RODRÍGUEZ (1998), **p. 170**
+
+**Tres consecuencias, y las tres importan:**
+
+1. ✅ **La identificación de la [§ 6](#6--dónde-está-ese-papel-el-inventario-de-2005-da-las-signaturas)
+   deja de ser propuesta.** No hace falta cruzar a dos autores: **es el mismo**. González Rodríguez
+   **describe el libro en 1998** y **lo cita en 2001** por el folio. Y de la Mata (2005) lo
+   inventaría como **Libro 19**, con el mismo título y los mismos 320 folios. ★★★ **Son el mismo
+   libro.**
+2. 🚨 **Lo que trae no es un libro de rentas: es un índice de archivo.** La lista de los veintidós
+   lugares con **Colinas** dentro **no es la cuenta de un año**: es el **extracto que un archivero
+   de la segunda mitad del XVIII** hizo de los papeles del priorato. Eso explica el «en el siglo
+   XVIII» sin año del artículo de 2001: **el siglo es el del compilador**, no necesariamente el de
+   la renta.
+3. ★★ **Y por eso puede valer más que el original.** El propio González Rodríguez cuenta que el
+   **`Cajón I, legajo I`** —donde el Becerro dice que estaban **las escrituras fundacionales del
+   hospital**— **ha desaparecido del archivo**, «en fecha imposible de precisar, pero sin duda
+   posterior a la confección del Becerro». **El Becerro describe papeles que ya no existen.**
+
+> 📌 **Y da la signatura antigua de lo que aquí interesa.** Los papeles del priorato estaban en el
+> **`Cajón I, legajo III`**, «en el que se incluían **todas las escrituras relacionadas con las
+> posesiones del hospital en el monasterio de San Salvador de Villaverde**» —hoy una miscelánea—.
+> Es, con toda probabilidad `[?]`, el origen del **Legajo 175** de de la Mata.
+
+> ⚠️ **Una nota de conservación, y no es menor.** En 1998 el archivo estaba **sin ordenar** —«los
+> papeles y libros se amontonan … de una forma totalmente anárquica»—; se inventarió **a partir de
+> julio de 2004**. Y del propio Libro Becerro dice el autor que «ya en fechas muy recientes,
+> alguien … **subrayó con bolígrafo** aquellos pasajes más útiles o interesantes a su parecer».
+
+> 📏 **Lectura parcial, y se dice.** Esto sale de **`TAR-27`**, leído el 3-X-2026 **sólo hasta la
+> p. 179 de 192**: la introducción, el estudio y el principio del apéndice. **Las transcripciones
+> de 1517 y 1526 quedan sin terminar de leer.** Lo visto hasta aquí dice que la **fundación y
+> dotación de 1517 no nombra ningún lugar del valle del Tera** —son juros sobre Benavente y
+> molinos del Órbigo—: **la renta de Colinas, si existió, llega con la anexión de 1525**, no con la
+> fundación.
 
 > ⚠️ **Y una cautela sobre el acceso.** Es un **archivo de fundación particular**, no público: se
 > entra por el **Patronato del Hospital de la Piedad**, y la vía razonable es el **Centro de Estudios
