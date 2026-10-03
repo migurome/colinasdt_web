@@ -453,16 +453,70 @@ trae una corrección de método: **el INE publica dos series, no una.**
 >
 > El máximo histórico se mantiene en **1950** en las dos series: 625 de derecho, 621 de hecho.
 
-### 6.2 Colinas de Trasmonte **como localidad** (padrón, 2000-2024)
+### 6.2 Colinas de Trasmonte **como localidad** — ✅ **la serie entera, 2000-2025, del INE**
 
-| Año | Hab. | Año | Hab. | Año | Hab. |
-|---:|---:|---:|---:|---:|---:|
-| 2000 | 403 | 2008 | 339 | 2016 | 278 |
-| 2002 | 381 | 2010 | 322 | 2017 | 271 |
-| 2004 | 376 | 2012 | 301 | **2024** | **222** |
-| 2006 | 345 | 2014 | 287 | | |
+> ✅✅ **`TAR-16`, hecho el 3 de octubre de 2026.** La tabla que había aquí venía **de tercera
+> mano** —de la ficha de Wikipedia, que las atribuía al INE— y tenía **once años sueltos**. Se ha
+> consultado el **Nomenclátor del INE** directamente, año por año.
+>
+> **Las once cifras heredadas son correctas, las once.** Y ahora están **los veintiséis años**, con
+> **sexo** y con el reparto **núcleo / diseminado**, que el proyecto no tenía
+> → [`padron-colinas-2000-2025.tsv`](padron-colinas-2000-2025.tsv).
 
-Y por delante, los recuentos de Antiguo Régimen (§4.1, §5.1, §5.2 y §5.3):
+| Año | **Total** | H | M | núcleo | disem. | | Año | **Total** | H | M | núcleo | disem. |
+|---:|---:|---:|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|
+| 2000 | **403** | 191 | 212 | 382 | 21 | | 2013 | **302** | 153 | 149 | 284 | 18 |
+| 2001 | **390** | 187 | 203 | 370 | 20 | | 2014 | **287** | 145 | 142 | 269 | 18 |
+| 2002 | **381** | 185 | 196 | 362 | 19 | | 2015 | **285** | 148 | 137 | 267 | 18 |
+| 2003 | **372** | 182 | 190 | 354 | 18 | | 2016 | **278** | 148 | 130 | 262 | 16 |
+| 2004 | **376** | 185 | 191 | 358 | 18 | | 2017 | **271** | 142 | 129 | 254 | 17 |
+| 2005 | **355** | 175 | 180 | 337 | 18 | | 2018 | **256** | 138 | 118 | 240 | 16 |
+| 2006 | **345** | 170 | 175 | 328 | 17 | | 2019 | **245** | 134 | 111 | 230 | 15 |
+| 2007 | **336** | 164 | 172 | 319 | 17 | | 2020 | **245** | 135 | 110 | 228 | 17 |
+| 2008 | **339** | 163 | 176 | 320 | 19 | | 2021 | **236** | 131 | 105 | 219 | 17 |
+| 2009 | **332** | 165 | 167 | 314 | 18 | | 2022 | **234** | 128 | 106 | 216 | 18 |
+| 2010 | **322** | 160 | 162 | 304 | 18 | | 2023 | **231** | 126 | 105 | 222 | 9 |
+| 2011 | **302** | 150 | 152 | 284 | 18 | | **2024** | **222** | 124 | 98 | 216 | 6 |
+| 2012 | **301** | 151 | 150 | 283 | 18 | | **2025** | **215** | **118** | **97** | 209 | 6 |
+
+**Código de unidad poblacional del INE: `49 · 171 · 00 01 00`** — provincia **49 Zamora**,
+municipio **171 Quiruelas de Vidriales**, entidad singular **COLINAS DE TRASMONTE**; con núcleo
+`00 01 01` y diseminado `00 01 99`.
+
+> 🚨 **Y hay una ruptura de serie que hay que decir, porque es del propio INE:**
+>
+> «**Hasta 1 de enero de 2023**, las poblaciones eran calculadas a partir de las cifras de
+> población provenientes de las **Revisiones anuales de los Padrones municipales**… **Desde el 1 de
+> enero de 2024, las poblaciones se calculan a partir de la información del Censo Anual de
+> Población**.»
+>
+> **2024 y 2025 no son el mismo instrumento que 2000-2023.** Son comparables como orden de
+> magnitud, no como medición idéntica. La columna `instrumento` del TSV lo lleva fila por fila.
+
+#### ★ Tres cosas que la serie completa enseña y la de once años sueltos no
+
+**1. El diseminado se vacía más deprisa que el pueblo.** De **21 habitantes en 2000 a 6 en
+2025**: un **−71 %**, frente al **−45 %** del núcleo (382 → 209). ⚠️ **Pero ojo al escalón de
+2023**: el diseminado pasa de **18 a 9** de golpe, justo en el año anterior al cambio de
+instrumento. **Puede ser despoblación real o puede ser recuento**, y con seis personas no se
+distingue. Se anota sin elegir.
+
+**2. El pueblo cambia de sexo mayoritario en 2012.** Hasta **2011** hay **más mujeres que hombres**
+—en 2000, **212 mujeres frente a 191 hombres**—; desde **2012** se invierte, y la brecha se
+ensancha hasta **118 hombres y 97 mujeres en 2025**. ⚠️ **Es lo que dicen los números, no una
+causa**: con doscientas personas, un puñado de defunciones o de bajas mueve el signo.
+
+**3. La caída no es lisa.** Hay **tres repuntes** —**2004** (+4 sobre 2003), **2008** (+3 sobre
+2007) y **2013** (+1 sobre 2012)— y un **año plano**, 2019-2020, los dos en **245**. El tramo más
+brusco es **2010 → 2011**, de **322 a 302**: **veinte personas en un año**, el 6,2 %.
+
+> 📏 **Cómo se ha consultado, para que se pueda repetir.** El Nomenclátor del INE
+> (`ine.es/nomen2`) **no responde a peticiones directas** —devuelve error 500 o 400—: es una
+> aplicación con sesión. Se ha consultado **con navegador**, seleccionando el año en el desplegable
+> `aniosRapida` y buscando «Colinas de Trasmonte», **veintiséis veces, una por año**. Las cifras se
+> han leído de la tabla de resultados, no de ningún intermediario.
+
+**Y por delante, los recuentos de Antiguo Régimen** (§ 4.1, § 5.1, § 5.2 y § 5.3):
 
 | Año | Fuente | Dato |
 |---|---|---|
@@ -595,9 +649,14 @@ de los municipios en los Censos de Población desde 1842*, ficha del municipio 4
 septiembre de 2026. Coinciden con la serie de **población de derecho**, y el cotejo ha añadido la
 serie de hecho y corregido la etiqueta de 1857 y 1860.
 
-> **Sigue pendiente**, y es lo que queda de tercera mano: el **padrón de 2000-2024 (§6.2)**. Los
-> datos de 2017 y 2024 sí están confirmados por vía independiente. Vía para el resto: INE,
-> estadística del Padrón continuo por entidades singulares de población.
+> <s>**Sigue pendiente**, y es lo que queda de tercera mano: el **padrón de 2000-2024 (§6.2)**.</s>
+> ✅✅ **HECHO el 3 de octubre de 2026 (`TAR-16`).** Consultado el **Nomenclátor del INE** año por
+> año: **las once cifras heredadas son correctas**, y la serie está ahora **completa de 2000 a
+> 2025**, con sexo y con el reparto núcleo/diseminado → § 6.2 y
+> [`padron-colinas-2000-2025.tsv`](padron-colinas-2000-2025.tsv).
+>
+> ✅ **Con esto, toda la serie demográfica del proyecto —de 1842 a 2025— está cotejada contra el
+> INE**, y ya no queda nada de tercera mano en el § 6.
 
 ---
 
