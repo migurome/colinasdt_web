@@ -21,9 +21,9 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **40 piezas pendientes**, **9 se
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **39 piezas pendientes**, **8 se
 pueden trabajar desde aquí** y **31 necesitan a una persona** —o una compra, o un correo—.
-Otras **diecinueve ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
+Otras **veinte ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
 **bloqueada por criterio**. Sesenta y cinco filas en total.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
@@ -40,16 +40,16 @@ decisión expresa. Ver §7.
 | Fichas y documentos de trabajo (`.md`) | **36** |
 | Tablas de datos (`.tsv`) | **21** |
 | Artículos científicos en PDF | **29** |
-| …de ellos, leídos entero o en parte | **28** |
-| …sin abrir | **1** |
+| …de ellos, leídos entero o en parte | **29** |
+| …sin abrir | **0** |
 | Frentes de investigación abiertos formalmente | **18** |
 | …cerrados | **8** |
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **311** |
 | Tareas que se podían hacer desde aquí | **29** |
-| …**hechas** | **19** |
-| …pendientes | **9** |
+| …**hechas** | **20** |
+| …pendientes | **8** |
 | …sin vía | **1** |
 
 > 📏 **Recontado el 2 de octubre de 2026**, y esta vez **con la base escrita**, que es lo que
@@ -181,7 +181,11 @@ aportan:
    ha medido quién hay al otro lado de la raya: **Villanázar comparte 3.729 m** con Colinas —el
    23 % del perímetro— y **Navianos no lo toca**, se queda a 1.104 m.
 3. ✅✅ **El lote de *Brigecio* está cerrado: los diez artículos, leídos.** Quedan en su lugar
-   `TAR-27` —las escrituras del Hospital de la Piedad—, ya descargado.
+   ✅ **`TAR-27`, hecho también el 3-X-2026**: las escrituras del Hospital de la Piedad explican
+   **qué es de verdad el *Libro Becerro*** —un **inventario-catálogo de todo el archivo**, no un
+   libro de rentas—, dan la **ed. facsímil de 1997 de Berdum de Espinosa** para el frente nº 18,
+   y enseñan que **la cofradía de la Vega seguía el modelo de 1526 de la casa de Benavente**.
+   ⚠️ **Con esto no queda ningún PDF descargado sin abrir en la biblioteca.**
    ★★★ **Y `TAR-28`, abierto y cerrado el mismo día**: el estudio completo de Azoague publica
    **los 22 punzones del taller a tamaño real** y afirma que su cerámica tiene «poca relación»
    con la TSHt **en decoración y en forma**. Con eso, **el paralelo de la roseta sale reforzado

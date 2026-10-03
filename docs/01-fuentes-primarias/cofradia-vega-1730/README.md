@@ -135,6 +135,28 @@ El **acuerdo de 1748** —el segundo documento del cuadernillo— se cierra con 
   designados llevaban las andas y otros cuatro lo inhumaban, y el ausente pagaba **un cuarterón de
   cera**.
 
+> ★★ **Y no se inventó nada: seguía el modelo de la casa.** Leídas el 3 de octubre de 2026
+> (`TAR-27`) las **ordenanzas del Hospital de la Piedad de Benavente**, aprobadas por el **V conde
+> en 1526** —**78 epígrafes**, editadas por GONZÁLEZ RODRÍGUEZ, *Brigecio* 8 (1998)—, el esqueleto
+> es el mismo que el de esta Regla de 1730, doscientos años después:
+>
+> | Hospital de la Piedad, **1526** | Virgen de la Vega, **1730** |
+> |---|---|
+> | «se ordenó que **aya dos abades**» (ep. 29) | **dos abades**, uno de Vecilla y otro de Colinas |
+> | «**seis diputados**» (ep. 30) | **tres diputados** |
+> | **mayordomo** de la cobranza (ep. 27) | **depositario** «de caudal» |
+> | oficios **nombrados cada año**, el día de la Circuncisión (ep. 40) | oficios **anuales**, con carrera cabildero → abad |
+> | penas en **libras y cuarterones de cera** | penas en **un cuarterón de cera** |
+> | «**dos cofrades** que tengan cuidado de los visitar aquel día con la noche» (ep. 12) | a los enfermos **se les vela de dos en dos** |
+> | **seis** personas sacan el cuerpo del cofrade muerto (ep. 14) | **cuatro** llevan las andas y **cuatro** lo inhuman |
+> | cofradía **mixta**, marido y mujer cuentan por **un cofrade** (ep. 1) | hermandad **mixta**, de hombres y mujeres |
+>
+> ⚠️ **Esto no prueba dependencia.** Buena parte de ese esqueleto es **formulario común** de las
+> cofradías castellanas de la época, y la Regla de 1730 **no cita** las ordenanzas de 1526. Lo que
+> sí se puede decir es que **la cofradía de Colinas y Vecilla no estaba fuera de norma**: usó la
+> forma que la casa de Benavente había fijado por escrito en su propia fundación. ★ **Y lo que
+> añade de suyo —repartir los dos abades entre dos pueblos— no está en el modelo: es local.**
+
 > ⚠️ **La cofradía estaba en crisis cuando se escribió la Regla.** Ya no se decían las **doce misas
 > anuales** de antes y se había retirado el pan, vino y carne de los sacerdotes. A mediados de siglo
 > seguía: «*los cofrades se hallan apurados y sus escotes no alcanzan a pagar estas limosnas*». De

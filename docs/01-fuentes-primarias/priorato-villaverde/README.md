@@ -268,12 +268,34 @@ Lo describe **el mismo González Rodríguez**, tres años antes de citarlo:
 > julio de 2004**. Y del propio Libro Becerro dice el autor que «ya en fechas muy recientes,
 > alguien … **subrayó con bolígrafo** aquellos pasajes más útiles o interesantes a su parecer».
 
-> 📏 **Lectura parcial, y se dice.** Esto sale de **`TAR-27`**, leído el 3-X-2026 **sólo hasta la
-> p. 179 de 192**: la introducción, el estudio y el principio del apéndice. **Las transcripciones
-> de 1517 y 1526 quedan sin terminar de leer.** Lo visto hasta aquí dice que la **fundación y
-> dotación de 1517 no nombra ningún lugar del valle del Tera** —son juros sobre Benavente y
-> molinos del Órbigo—: **la renta de Colinas, si existió, llega con la anexión de 1525**, no con la
-> fundación.
+> ✅ **`TAR-27` leído entero**, las 24 planas (pp. 169-192), el 3 de octubre de 2026. La
+> **fundación y dotación de 1517 no nombra ningún lugar del valle del Tera** —son **juros** sobre
+> las rentas de Benavente y los Barrios de Salas, **pisones** del Órbigo, los **cinco molinos de
+> Villabrázaro**, una bodega y una viña en la propia villa—: **la renta de Colinas, si existió,
+> llega con la anexión de 1525**, no con la fundación.
+
+### 📌 Los tres documentos transcritos — y los tres salen del legajo del priorato
+
+| | Fecha | Qué es | Cómo se conserva |
+|---:|---|---|---|
+| **1** | **1517, junio, 3** · Cigales | Escritura de **fundación y dotación** por Alonso Pimentel, V conde | **Copia simple de un traslado de 1755** por Pablo Pérez · ⚠️ «plagado de evidentes errores de transcripción» |
+| **2** | **1517, junio, 27** · Cigales | **Doña Ana de Herrera y Velasco renuncia** a sus derechos sobre lo donado | Traslado **sin fecha**, cuadernillo de 6 folios |
+| **3** | **1526, febrero, 28** · Benavente | **Ordenanzas** del hospital, **78 epígrafes** | Traslado de **1704**, cuadernillo de 26 folios cosidos, por **Esteban Pérez de Prado, notario público y apostólico** de Benavente |
+
+**Los tres llevan la misma signatura: `Archivo del Hospital de la Piedad, Cajón I, leg. III`** —el
+legajo que, según el propio editor, **era el del priorato de Villaverde** y hoy es una miscelánea—.
+**Ninguno de los originales se ha localizado**: son traslados del XVIII, salvo el de las
+ordenanzas, que es de 1704.
+
+> ★ **Y un tercer notario apostólico de Benavente, para la lista.** A **Francisco Domínguez**
+> —que notifica en Colinas en 1694 y autoriza el traslado del recibo de los quindenios— se suma
+> **Esteban Pérez de Prado**, que copia estas ordenanzas en **1704**. El oficio deja rastro, y lo
+> deja **en este archivo** → [`osuna-astorga`](../osuna-astorga/README.md).
+
+> 📌 **Y el arca del archivo está en las propias ordenanzas**, epígrafe 73: «ay **una arca en la
+> sala de la cámara alta** en que están todas las llaves y **scripturas de doctación y hazienda** del
+> hospital, ay **dos llaves**, tiene la una el administrador y la otra los abades». El archivo que
+> hoy guarda el *Libro Becerro* **nació mandado por escrito en 1526**.
 
 > ⚠️ **Y una cautela sobre el acceso.** Es un **archivo de fundación particular**, no público: se
 > entra por el **Patronato del Hospital de la Piedad**, y la vía razonable es el **Centro de Estudios
