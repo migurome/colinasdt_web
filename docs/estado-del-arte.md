@@ -21,9 +21,9 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **40 piezas pendientes**, **11 se
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **39 piezas pendientes**, **10 se
 pueden trabajar desde aquí** y **29 necesitan a una persona** —o una compra, o un correo—.
-Otras **quince ya están hechas**; **cinco** se han dado por **sin vía** y **una** está **bloqueada
+Otras **dieciséis ya están hechas**; **cinco** se han dado por **sin vía** y **una** está **bloqueada
 por criterio**. Sesenta y una filas en total.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
@@ -40,16 +40,16 @@ decisión expresa. Ver §7.
 | Fichas y documentos de trabajo (`.md`) | **36** |
 | Tablas de datos (`.tsv`) | **21** |
 | Artículos científicos en PDF | **26** |
-| …de ellos, leídos entero o en parte | **23** |
-| …sin abrir | **3** |
+| …de ellos, leídos entero o en parte | **24** |
+| …sin abrir | **2** |
 | Frentes de investigación abiertos formalmente | **18** |
 | …cerrados | **8** |
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **311** |
 | Tareas que se podían hacer desde aquí | **27** |
-| …**hechas** | **15** |
-| …pendientes | **11** |
+| …**hechas** | **16** |
+| …pendientes | **10** |
 | …sin vía | **1** |
 
 > 📏 **Recontado el 2 de octubre de 2026**, y esta vez **con la base escrita**, que es lo que
@@ -139,7 +139,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 | 9 | Chancillería de Valladolid | ⚠️ sentencias leídas; **los pleitos hay que pedirlos** | usuario (`ARCH-07`, `ARCH-08`) |
 | 10 | Fondo Osuna — vaciado sistemático | ⚠️ **el D.89 leído entero** (`TAR-01` ✅); el fondo, no | ambos (`TAR-19`, `TAR-21`, `TAR-22`) |
 | 11 | Floridablanca y Miñano | ✅ cerrado · dos flecos | aquí (`TAR-17`) |
-| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **3 artículos sin abrir** (hechos `TAR-02` a `TAR-06` y `TAR-08`) | aquí (`TAR-07`, `TAR-09`, `TAR-10`) |
+| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **2 artículos sin abrir** (hechos `TAR-02` a `TAR-08`) | aquí (`TAR-09`, `TAR-10`) |
 | 13 | AHP de Zamora | ⚠️ abierto, con cuatro pistas duras y fechadas | usuario (`ARCH-12` a `ARCH-15`) |
 | 14 | IGN / CNIG | ✅ **cerrado**: límite digitalizado (`TAR-11` ✅), códigos catastrales (`TAR-13` ✅) y 🚨 **Pobladura de Trasmonte, localizada** (`TAR-26` ✅) · ✅ **el plano IRYDA de 1975, georreferenciado** (`TAR-12` ✅) | — **frente cerrado** |
 | 15 | Riesco Chueca 2018 — el topónimo | ⚠️ abierto: **hace falta el libro de 2018** | usuario (`LIB-05`) |
@@ -151,7 +151,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 ## 4. Lo que se puede hacer desde aquí, sin pedirle nada a nadie
 
-**13 piezas**, y **trece ya hechas**. Por orden de lo que aportan:
+**12 piezas**, y **dieciséis ya hechas**. Por orden de lo que aportan:
 
 1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
    plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
@@ -170,8 +170,12 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
    y sin anotar son **Navianos de Valverde** (DGC 49151) y **Villanázar** (DGC 49285). De paso se
    ha medido quién hay al otro lado de la raya: **Villanázar comparte 3.729 m** con Colinas —el
    23 % del perímetro— y **Navianos no lo toca**, se queda a 1.104 m.
-3. **`TAR-07`, `TAR-09` y `TAR-10`: los tres artículos de *Brigecio* que quedan sin abrir.** Los
-   tres son **escaneos sin capa de texto** y hay que leerlos a imagen, que es lento.
+3. **`TAR-09` y `TAR-10`: los dos artículos de *Brigecio* que quedan sin abrir.** Los dos son
+   **escaneos sin capa de texto** y hay que leerlos a imagen, que es lento.
+   🚨 **`TAR-07`, hecho el 3-X-2026**, y era el que menos prometía: la **Regla de la cofradía
+   de la Virgen de la Vega**, de **1730**, reserva **a Colinas un abad y un cabildero** de los
+   dos de cada oficio. **Media hermandad por estatuto** →
+   [la cofradía](01-fuentes-primarias/cofradia-vega-1730/README.md).
    ✅ **`TAR-08`, hecho el 1-X-2026**: «Las Peñas» de Quiruelas **nombra a «Las Bodegas» de
    Colinas dos veces**, añade dos yacimientos calcolíticos inéditos al lado y, cotejado con la
    fuente primaria, saca **la fecha absoluta que al valle le faltaba**: 2330 a. C. en Los Bajos

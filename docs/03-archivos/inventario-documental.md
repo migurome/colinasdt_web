@@ -1162,7 +1162,14 @@ el análisis diplomático más detallado es de **Augusto Quintana Prieto**.
 > «El Raso Pobladura», que no era ninguna de las tres—. El error no fue de búsqueda: fue **no
 > releer lo que el propio fichero ya tenía** antes de concluir.
 >
-> ✅ **La cuenta final, entonces, son seis líneas independientes** y todas en el mismo sitio: el
+> ⭐ **Añadido el 3 de octubre: y hay una séptima.** `TAR-07` —la Regla de la cofradía de la
+> Virgen de la Vega, *Brigecio* 11 (2001)— identifica a Pobladura en **nota 4**, sin vacilar:
+> «**Pobladura de Trasmonte, despoblado entre Villanázar y Vecilla**», y remite a **García
+> Caballero p. 71**, a **Lobato Vidal p. 50** y a **LARRÉN (coord.) (1999), pp. 74-78** —las
+> planas de la excavación de *Pobladura-Los Paredones*—. Es el mismo autor que publicó el apeo
+> de Vecilla de 1706 → [la cofradía](../01-fuentes-primarias/cofradia-vega-1730/README.md).
+>
+> ✅ **La cuenta final, entonces, son seis líneas independientes** —siete con ésta— y todas en el mismo sitio: el
 > reparto de propietarios de **1750**, el linde norte de Villanázar en el Catastro de **1752**, la
 > descripción de **Lobato Vidal (1992)**, la **excavación de 1991** en *Pobladura-Los Paredones*,
 > el **MTN50 de 1.ª edición** y la **planimetría** del IGN. Enfrente queda **una**: el artículo de
