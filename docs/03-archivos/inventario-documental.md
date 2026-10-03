@@ -1687,6 +1687,151 @@ engrosados. **Sin** triángulos incisos rellenos de puntos ni decoración a pein
 > ⚠️ **Lo que sigue sin cambiar:** para **Las Bodegas** sigue **sin haber datación absoluta**. Lo
 > que ha mejorado no es su fecha, sino **el anclaje del paralelo** del que cuelga. Decirlo así.
 
+#### ✅✅ `LIB-11` — la memoria de 1991 de «Los Bajos», obtenida y leída (3 de octubre de 2026)
+
+PÉREZ RODRÍGUEZ, F. J.; SANZ GARCÍA, F. J.; MARCOS CONTRERAS, G. J.; MARTÍN CARBAJO, M. Á. y
+MISIEGO TEJEDA, J. C.: «**Intervención arqueológica en el yacimiento "Los Bajos" (Vecilla de
+Trasmonte, Zamora)**», *Anuario del IEZ «Florián de Ocampo»* **1991**, **pp. 149-173**.
+✅ **En abierto en Dialnet** (art. **6564836**) →
+[`02-bibliografia/`](../02-bibliografia/anuario1991-los-bajos-vecilla-pp149-173.pdf), **con capa
+de texto**, en `research/raw/anuario1991-los-bajos.txt`.
+
+> 📏 **Dos correcciones de ficha, sobre la cita que los propios autores hacen de sí mismos.** El
+> registro daba <s>«en **los yacimientos** de "Los Bajos"»</s> y <s>pp. 149-**172**</s>, que es como lo
+> cita *Brigecio* 6 (1996). El título real va en **singular** —«en **el yacimiento**»— y las páginas
+> son **149-173**.
+
+**⚠️ Lo primero, y es un resultado: Colinas no aparece ni una vez.** Y no podía: «Las Bodegas» no se
+excavó hasta **1993**. Esta memoria sirve **de contexto y de ancla**, no de mención.
+
+##### ★★★ Lo que sí da, y el proyecto no tenía: una coordenada
+
+> «El yacimiento se encuentra en la amplia vega del río Tera, **unido por el S.E. al casco urbano de
+> Vecilla** (sus coordenadas coinciden con los **41° 59' 30" de latitud N. y los 02° 06' 20" de
+> longitud O.**, de la hoja n.º **308 "Villafáfila"**, del M.T.N.E., escala 1:50.000).» — p. 149
+
+**La longitud está referida al meridiano de Madrid**, aunque el artículo no lo diga: es la
+convención de las hojas del Instituto Geográfico, y es la única lectura que cae en Zamora.
+Madrid está a **3° 41' 15" O** de Greenwich, luego:
+
+| | |
+|---|---|
+| Como lo escribe el artículo | 41° 59' 30" N · **2° 06' 20" O de Madrid** |
+| Reducido a Greenwich | **41° 59' 30" N · 5° 47' 35" O** |
+| En decimal | **41,99167 · −5,79306** |
+
+> ✅ **Y la conversión se comprueba contra la geometría que el proyecto ya tenía.** Ese punto cae
+> **fuera** del término de Colinas —como debe, porque Los Bajos es de Vecilla— **pero a sólo 875 m**
+> de la raya, hacia el NO. Si la reducción estuviera mal, caería a kilómetros
+> → [`termino-colinas.geojson`](../04-cartografia/limite-del-termino.md).
+
+| Distancia desde «Los Bajos» | |
+|---|---:|
+| a la **raya de Colinas** | **875 m** |
+| a **Pobladura-Los Paredones** (`TAR-26`) | **1.436 m** |
+| a **San Juan-El Valle**, parcela 1.296 | **2.629 m** |
+
+> ⚠️ **Lo que no se da por bueno es el nombre de la hoja.** El artículo llama a la hoja 308
+> «**Villafáfila**»; el estudio de Villanueva de Azoague de 1987 cita **la misma hoja 308** para un
+> sitio que está sobre el Esla. **Una de las dos atribuciones de nombre puede estar mal** `[?]`, y
+> este proyecto **no se apoya en el nombre de la hoja**, sino en los grados.
+
+##### ★★ Y una cosa que ata los tres yacimientos: **los excavó el mismo canal**
+
+La intervención de 1991 se hizo «durante los meses de **agosto y septiembre de 1991**» por el
+proyecto «**Acequia de enlace de los sectores X y XI de la zona regable de la margen izquierda del
+río Tera**», del **IRYDA**, ejecutado por **TRAGSA**, con cargo al **1 % cultural** de la Ley 16/1985
+y supervisión de la **Unidad Técnica de Arqueología del Servicio Territorial de Cultura de Zamora**.
+**Es el mismo proyecto, y el mismo sector X, que en 1993 sacó a la luz «Las Bodegas» y
+«San Juan-El Valle»** en el término de Colinas. ★ **Los tres yacimientos del proyecto los descubrió
+la misma zanja de riego**, con dos años de diferencia.
+
+##### Lo excavado en 1991, en corto
+
+- **Método**: sondeos de 1 m² cada 4 m. **Seis** en el canal principal, cubriendo **158 m**, con
+  resultado **negativo en todo el trayecto**; **treinta y uno** en el canal de aspersión, tres
+  ampliados y dos grupos unidos en **dos grandes áreas**.
+- **Extensión del poblado: casi 7 hectáreas**, con «estratificación horizontal y no vertical».
+- **Tres fosas u hoyos** de perfil en cubeta (boca ~80 cm, profundidad media 40 cm). Uno,
+  **AQ-46**, relleno **sólo de cantos rodados quemados, sin tierra**, con las paredes rubefactadas y
+  dos esquirlas de hueso quemadas: los autores **no deciden para qué servía** y dejan las preguntas
+  escritas.
+- **Dos grandes bolsadas de tierra negra** al sureste, interpretadas como **lechos lacustres de un
+  antiguo lavajo o charca**, usado quizá como basurero o como punto de agua.
+- **Cerámica**: a mano, cocción reductora, **17,2 % decorada**. Formas: **cuencos 44 %, vasos
+  globulares 34 %, orzas 19 %, ollas 3 %**. Técnicas: incisión 74,3 %, incisa/impresa 14,2 %,
+  impresa 6,9 %, plástica 4,6 %.
+  > ⚠️ **Ojo a no mezclar cifras.** Los porcentajes que este § 8.3 compara con «Las Bodegas»
+  > —globulares 58 %, cuencos 36 %— son los de «**Los Bajos II**», el sector excavado en **1993**,
+  > no los de esta campaña de 1991. **Son dos intervenciones distintas en el mismo yacimiento.**
+- ★★ **Y una segunda fase, medieval**, en la zona noroeste: cerámica gris a torneta **del s. XII**
+  (`91/24/0/45`) y producciones de los **ss. XIII-XIV**. Los autores concluyen que es el
+  «**probable preludio de la fundación del cercano pueblo de Vecilla de Trasmonte, que en parte se
+  localiza sobre el área de dispersión de estos materiales**».
+  > ★ **Eso interesa aquí.** **Vecilla de Trasmonte** —el pueblo con el que Colinas pleiteó ocho
+  > años y con el que compartía la cofradía de la Vega— tiene **debajo una ocupación de los ss.
+  > XII-XIV**, y el casco actual se asienta en parte sobre ella. **No es prueba de nada sobre
+  > Colinas**, pero es el mismo patrón que San Juan-El Valle, con su sala del s. XI.
+
+#### ★★ Y el artículo gemelo: las dos piezas metálicas
+
+MARCOS CONTRERAS, G. J.; MARTÍN CARBAJO, M. Á.; MISIEGO TEJEDA, J. C.; PÉREZ RODRÍGUEZ, F. J. y
+SANZ GARCÍA, F. J.: «**Dos piezas metálicas del Calcolítico precampaniforme zamorano: "Los Bajos"
+(Vecilla de Trasmonte, Zamora)**», ***Zephyrus*** **46** (1993), **pp. 301-307**.
+✅ **En abierto en UVaDOC / revistas USAL** →
+[`02-bibliografia/`](../02-bibliografia/zephyrus46-1993-piezas-metalicas-los-bajos.pdf), **con capa
+de texto**. La memoria de 1991 ya lo citaba **«en prensa»**: son piezas gemelas.
+
+| | |
+|---|---|
+| **Puñal** | sigla **`91/24/51` del Museo de Zamora** · lámina rectangular, **118 mm** conservados y **38 mm** de anchura máxima, sección lenticular de **2,8 mm**, empuñadura con **cuatro escotaduras** enfrentadas dos a dos y una acanaladura longitudinal en cada cara · **martilleado en frío** |
+| **Cincel** | sigla **`91/24/52` del Museo de Zamora** · sólo el extremo distal, **44,3 mm**, sección 11 × 5,9 mm, filo en abanico de 16 mm · «tipología simple», de vida larga |
+| Dónde salieron | **Área de Excavación 2**, la del lavajo: «las dos únicas piezas metálicas de entidad recuperadas… lo hayan sido precisamente aquí» |
+| Análisis | **Fluorescencia de rayos X**, por el **Dr. Salvador Rovira** (Museo de América): **cobre por encima del 98 %** en las tres lecturas. Puñal: As 0,76 / 0,66 %, Ni 0,60 / 0,29 %, Sb 0,23 / 0,19 %, Sn 0,010 %. Cincel: As **1,102 %**, Zn 0,245 %, Pb 0,061 %, **sin estaño** |
+
+> ★ **Sin alfar, pero con mina probable.** No hay crisoles ni escorias en Los Bajos, de modo que los
+> autores **no afirman producción local**; pero la señalan como posible —hay crisoles en «Las
+> Pozas», La Alameda y Villardondiego— y apuntan el origen del mineral «**casi con seguridad de los
+> veneros cupríferos de Muga de Alba**». ⚠️ Y advierten, citando a Rovira, que **la comparación
+> analítica de metales sólo vale cuando se conocen todos los componentes del proceso fundidor**,
+> «cosa casi imposible en la mayoría de los casos».
+
+> ✅✅ **Y esto refuerza `ARCH-24` con un dato duro.** Las piezas de Los Bajos llevan sigla
+> **`91/24/…` del Museo de Zamora**, dicho con todas las letras. Las de Colinas llevan **`93/24/…`**
+> (Las Bodegas) y **`93/27/…`** (San Juan-El Valle): **el mismo formato, de campañas del mismo
+> equipo y el mismo organismo supervisor, dos años después**. La deducción de que el material de
+> Colinas está en el **Museo de Zamora** sigue siendo deducción —ningún texto lo dice—, pero ahora
+> **se apoya en un caso vecino documentado**.
+
+##### 🚨 Una tensión de fechas que conviene dejar escrita
+
+Puestas en fila las tres cifras que el valle tiene, **no encajan del todo**:
+
+| Qué | De dónde | Cuándo |
+|---|---|---|
+| **C-14** de carbón de la base del **hoyo n.º 8** | **Los Bajos II** (campaña de **1993**) | **4280 ± 70 BP = 2330 a. C.** |
+| **C-14** del nivel III | **Los Bajos I** (campaña de **1991**) | **5670 ± 60 BP** — «a todas luces errónea», dicen ellos |
+| **Tipología** del puñal y el cincel | **Los Bajos I**, Área 2 | «**sobre el s. XXI a. C.**» |
+
+Y en el artículo de 1993 los mismos autores sostienen que **Los Bajos I es *anterior* a Los
+Bajos II**, porque «mostraba un índice de relación con Las Pozas más alto».
+
+> ⚠️ **Si las tres cosas valen a la vez, algo sobra.** La tipología pone Los Bajos **I** en el
+> s. XXI a. C.; el radiocarbono pone Los Bajos **II** en el s. XXIV; y el argumento cerámico dice
+> que **I es anterior a II**. **Las tres no pueden ser verdad en sentido estricto.**
+>
+> **Lo prudente, y es lo que aquí se hace: no elegir.** Una fecha tipológica sobre **dos** objetos de
+> cobre tiene un margen de siglos —los propios autores la dan entre corchetes, «posterior a
+> Zambujal… anterior a las fases Campaniformes»—, y **un solo C-14 de un solo silo no fecha un
+> sector entero**. Lo que resiste de todo ello es lo que este inventario ya decía: **la segunda
+> mitad del III milenio a. C.** 📏 **No citar el «s. XXI a. C.» como fecha del valle.**
+
+> ✅ **Y una comprobación que sí sale limpia.** Este § 8.3 dice que «Las Bodegas» comparte
+> porcentajes con **Los Bajos II**. Comprobado sobre el facsímil de 1993: la datación de **2330 a.
+> C.** es **de ese mismo sector**, el II —la plana 66, antes de que empiece el apartado de Las
+> Bodegas en la 70—. De modo que **el paralelo del que cuelga Las Bodegas es justo el que lleva la
+> fecha**. La cautela de arriba no cambia: **Las Bodegas sigue sin datación propia.**
+
 #### ✅ `TAR-08` — «Las Peñas» de Quiruelas, leída entera (1 de octubre de 2026)
 
 MARTÍN BENITO, J. I. y BLANCO MAJADO, J.: «El yacimiento calcolítico de "Las Peñas" (Quiruelas de

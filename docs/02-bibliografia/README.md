@@ -9,6 +9,8 @@
 |---|---|---|
 | `anuario1993-edad-del-cobre-tera-pp49-78.pdf` | PÉREZ RODRÍGUEZ, F. J.; SANZ GARCÍA, F. J.; MARCOS CONTRERAS, G. J.; MARTÍN CARBAJO, M. Á.; MISIEGO TEJEDA, J. C. (1994): «Algunos aspectos de la Edad del Cobre en el Valle medio del río Tera», *Anuario 1993*, IEZ «Florián de Ocampo», pp. 49-78 | **Dialnet, en abierto** (art. 6563899) |
 | `anuario1993-intervenciones-zamora-pp123-124.pdf` | «Intervenciones arqueológicas en la provincia de Zamora. 1993», *Anuario 1993*, IEZ «Florián de Ocampo», pp. 123-124 | **Dialnet, en abierto** (art. 6563901) |
+| `anuario1991-los-bajos-vecilla-pp149-173.pdf` | PÉREZ RODRÍGUEZ, F. J.; SANZ GARCÍA, F. J.; MARCOS CONTRERAS, G. J.; MARTÍN CARBAJO, M. Á. y MISIEGO TEJEDA, J. C. (1991): «Intervención arqueológica en el yacimiento «Los Bajos» (Vecilla de Trasmonte, Zamora)», *Anuario del IEZ «Florián de Ocampo»* 1991, pp. 149-173 — ✅ **con capa de texto**, leído el 3-X-2026 (`LIB-11`) | **Dialnet, en abierto** (art. 6564836) |
+| `zephyrus46-1993-piezas-metalicas-los-bajos.pdf` | MARCOS CONTRERAS, G. J. *et alii* (1993): «Dos piezas metálicas del Calcolítico precampaniforme zamorano: «Los Bajos» (Vecilla de Trasmonte, Zamora)», *Zephyrus* **46**, pp. 301-307 — ✅ **con capa de texto**, leído el 3-X-2026 · ★ el puñal y el cincel, **con sigla del Museo de Zamora** | **Revistas USAL, en abierto** |
 | `romanico-zamora-2002-santa-marta-de-tera.pdf` | RODRÍGUEZ MONTAÑÉS, J. M.: «Santa Marta de Tera», en *Enciclopedia del Románico en Castilla y León. Zamora*, Aguilar de Campoo, Fundación Santa María la Real, **2002** `[?]` *(año sin comprobar en portada)*, pp. 135-148 | **En abierto**, romanicodigital.com |
 | `riesco-chueca-2019-unidades-superficie-brigecio29.pdf` | RIESCO CHUECA, P. (2019): «Las viejas unidades de superficie en la provincia de Zamora. Distribución, antecedentes, pervivencia», *Brigecio* 29, pp. 175-202 | **Dialnet, en abierto** (art. 7274940) |
 | `riesco-chueca-2010-conjeturas-toponimia-anuario2008.pdf` | RIESCO CHUECA, P. (2010): «Nuevas conjeturas de toponimia zamorana», *Anuario 2008*, IEZ «Florián de Ocampo», pp. 359-436 | **En abierto**, Centro de Estudios Paisaje y Territorio |
@@ -95,7 +97,8 @@ como imagen.
 
 **Textos extraídos** para búsqueda, en `research/raw/`:
 `anuario1993-edad-del-cobre.txt`, `riesco-chueca-2019-unidades-superficie.txt`,
-`mata-guerra-2005-archivo-piedad.txt` y `bsaa1987-ceramicas-azoague.txt`.
+`mata-guerra-2005-archivo-piedad.txt`, `bsaa1987-ceramicas-azoague.txt`,
+`anuario1991-los-bajos.txt` y `zephyrus46-piezas-metalicas-los-bajos.txt`.
 
 ## Qué aportó cada uno
 
