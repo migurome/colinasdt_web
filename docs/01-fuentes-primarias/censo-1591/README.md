@@ -411,7 +411,7 @@ proyecto desconocía, los dos con signatura:
 | Año | **Colinas** | Instrumento | Fuente |
 |---|---:|---|---|
 | **1571** | **48 vecinos** | «Relación que envía el **alcalde mayor del adelantamiento del reino de León** a Su Majestad de las ciudades, villas y lugares de dicho partido y de los vecinos y parroquias que tienen» | **AGS, Cámara de Castilla, Leg. 2159, F-9** |
-| **1587** | **34 vecinos** | «Relación de **pilas y vecinos** remitida por el **obispo de Astorga** a Felipe II» | T. GONZÁLEZ, *Censo de población… en el siglo XVI*, Madrid 1829, pp. 180 y 183 |
+| **1587** | **34 vecinos** · ✅ **VERIFICADO EN LA FUENTE** | «Relación de **pilas y vecinos** remitida por el **obispo de Astorga** a Felipe II» | T. GONZÁLEZ, *Censo de población… en el siglo XVI*, Madrid 1829, **pp. 180 y 183** — ver abajo |
 
 ### 🚨 Y obligan a revisar la frase que este proyecto más repite
 
@@ -441,9 +441,10 @@ serie del XVI queda así:
    1591 es **fiscal**. Cuentan para cosas distintas y pueden contar distinto.
 3. **El propio autor desconfía.** Escribe que la merma «se habría producido», **«si damos por buenos
    los datos anteriores»**. No afirma la caída: la condiciona.
-4. ⚠️ **Estos datos no se han leído en su fuente.** Vienen de un artículo, no del facsímil.
-   **Este proyecto no da por verificado lo que no ha visto**, y las dos signaturas están anotadas
-   arriba precisamente para poder ir a comprobarlas.
+4. <s>⚠️ **Estos datos no se han leído en su fuente.** Vienen de un artículo, no del facsímil.</s>
+   ✅ **El de 1587, sí: leído en su facsímil el 3 de octubre de 2026** (`TAR-18`), ver el apartado
+   siguiente. ⚠️ **El de 1571 sigue sin ver**: su signatura es **AGS, Cámara de Castilla, leg.
+   2159, F-9**, y eso **no está digitalizado** —queda en la lista de lo que necesita una persona—.
 
 > **Lo que sí puede decirse ya, sin forzar nada:** la idea de una **meseta lisa de 1526 a 1768**
 > **queda en entredicho**, y el siglo XVI pasa de ser un tramo tranquilo a ser **un tramo sin
@@ -470,3 +471,91 @@ Con las mismas dos relaciones, el artículo da los pueblos de alrededor:
 > 🚨★ **Y Pobladura de Trasmonte está viva y contada**: **10 vecinos en 1571** y **9 en 1587**.
 > El proyecto la tenía ya despoblada en 1526. **No lo estaba**: se despuebla después.
 > → §8.2 del [inventario](../../03-archivos/inventario-documental.md).
+
+---
+
+## ✅✅ `TAR-18` — el recuento de 1587, leído en su facsímil (3 de octubre de 2026)
+
+> **Lo que faltaba era ver el papel.** La cifra de **34 vecinos en 1587** entró en este proyecto
+> **a través de un artículo**, con la cautela escrita de que no se había visto la fuente.
+> **Ya se ha visto.**
+
+### Dónde está, y cómo se consigue
+
+| | |
+|---|---|
+| Obra | **GONZÁLEZ, T.**, *Censo de población de las provincias y partidos de la Corona de Castilla en el siglo XVI*, Madrid, **Imprenta Real, 1829** |
+| Dónde está en abierto | ✅ **INE**, edición facsímil: `https://ine.es/prodyser/pubweb/censo_corona/Censo_Corona_F.pdf` — **414 planas**, ⚠️ **sin capa de texto**. El estudio introductorio va aparte, en `…/Censo_Corona_C.pdf` |
+| Lo que guarda el proyecto | [`relacion-astorga-1587-pp174-184.pdf`](relacion-astorga-1587-pp174-184.pdf) — **las once planas del obispado de Astorga**, recortadas del facsímil. **No se guarda el libro entero**: son 49 MB para dos planas útiles, y la URL queda escrita |
+
+### ✅ La línea, leída
+
+![Colinas y Pobladura en el arciprestazgo de Valdevidriales, 1587](colinas-pobladura-1587.jpg)
+
+**Plana 180, ARCIPRESTAZGO DE VALDEVIDRIALES**, dos asientos consecutivos:
+
+| | pilas | vecinos |
+|---|---:|---:|
+| **Colinas** | **1** | **34** |
+| **Pobladura** | **1** | **9** |
+
+✅ **Las dos cifras que el artículo daba, confirmadas al dígito.** Y confirmados también, en la
+misma plana, los vecinos que el artículo atribuía a los pueblos de alrededor: **«Becilla de
+Trasmonte» 14**, **«Mocare»** —Mózar— **23**, **Olmillos 17**.
+⚠️ **Villanázar no está en esta plana**: pertenece a otro arciprestazgo `[?]`, y su cifra de 1587
+**sigue sin verificar**.
+
+### 🚨 Y la plana 183 cierra la relación: fecha, firma y signatura del original
+
+> «… lo que se contenia en la fé de los dichos memoriales, á que me refiero, en testimonio de lo
+> cual su Señoría lo firma de su nombre. **Fecho en la ciudad de Astorga á veinte y ocho de Marzo
+> de mil y quinientos y ochenta y siete años.** = **D. Episcopus Astoricensis**. = Por mandado del
+> Obispo de Astorga = **Lucas Niño, Secretario**.»
+>
+> «**Concuerda con la relacion original que obra en el legajo núm. 137 de los fechos del Real
+> Patronato Eclesiástico.** *Está rubricado.*»
+
+**De ahí salen tres cosas que el proyecto no tenía:**
+
+1. ✅ **La fecha exacta: 28 de marzo de 1587**, no «1587» a secas.
+2. ✅ **Quién la hizo**: la firma el obispo de Astorga y la refrenda su secretario **Lucas Niño**;
+   y el método se dice en la propia plana: cada **arcipreste** la hizo en su arciprestazgo **ante
+   escribano**, y a falta de él **dando fe los curas y jurando *in verbo Sacerdotis***.
+3. 🚨 **Dónde está el original**: **legajo n.º 137 de los fechos del Real Patronato
+   Eclesiástico** —serie del **Archivo General de Simancas**—. Es una signatura nueva, y de ella
+   salen **todas** las relaciones diocesanas de 1587, no sólo la de Astorga: la de Almería, en la
+   plana 173, remite al mismo legajo → `ARCH-25`.
+
+### ★ Y lo que la plana regala de contexto
+
+- **El obispado de Astorga tenía en 1587 veinticuatro arciprestazgos y una vicaría**, con
+  **913 pilas y 40.622 vecinos** en total (plana 183).
+- El **arciprestazgo de Valdevidriales**, el de Colinas, tenía **44 pilas y 1.512 vecinos**.
+- ★★ **Colinas (34) era dos veces y media Vecilla de Trasmonte (14)**, el pueblo con el que
+  pleiteó ocho años y con el que compartía, por estatuto, **la mitad de los cargos de la cofradía
+  de la Virgen de la Vega** → [la cofradía](../cofradia-vega-1730/README.md). **Ciento cuarenta
+  años antes de la Regla, el socio menor en vecinos era Vecilla.**
+- 🚨★ **Pobladura figura como pila propia, con su cura y sus nueve vecinos, inmediatamente
+  después de Colinas.** No es una mención de pasada: es **una parroquia viva en 1587**, listada
+  por el obispo → [inventario § 8.2](../../03-archivos/inventario-documental.md).
+- ★ **Hay dos Granucillos**: «Granuncillo, su anejo» **11** y «Granuncillo del Valle» **96**. Eso
+  apoya leer como **dos lugares distintos** el «Granucillo» y el «Granucillino» de la lista de
+  rentas del priorato de Villaverde → [el priorato](../priorato-villaverde/README.md).
+- ★ **«S. Pedro de Zamuda», 19 vecinos**, en la **vicaría de Benavente** (plana 182). Es **San
+  Pedro de Zamudia**, uno de los quince lugares notificados en el pleito de diezmos de **1694** y
+  cuyo topónimo este proyecto resolvió el 30-IX-2026 → [`osuna-astorga`](../osuna-astorga/README.md).
+- Las grafiías de la plana, para quien busque: «**Colinas**» y «**Pobladura**» **a secas**, sin
+  apellido; «Becilla de Trasmonte», «Mocare», «Meficereces» (Micereces), «S. Pedro Dece»
+  (San Pedro de Ceque), «Brecianos», «Grijalva», «S. Pedro de Laviña» (San Pedro de la Viña).
+
+> ⚠️ **Lo que esto no hace.** No resuelve la serie del siglo XVI: sigue habiendo **48 vecinos en
+> 1571 y 28 en 1591**, y el de **1571 sigue sin verse** —AGS, Cámara de Castilla, leg. 2159, F-9—.
+> Las **cuatro cautelas** de arriba siguen en pie **menos la cuarta, y sólo para 1587**.
+
+---
+
+## Nota de reutilización del facsímil de 1829
+
+El libro de **Tomás González (1829)** está en **dominio público**. El facsímil del que proceden
+estas planas lo publica el **Instituto Nacional de Estadística (INE)** en su web; se cita así, y se
+enlaza el PDF completo, del que aquí sólo se guardan **once planas**.

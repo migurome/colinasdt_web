@@ -1627,6 +1627,25 @@ histórica del término**, no sólo en una curiosidad.
 > [`02-bibliografia/lobato-vidal-1992-despoblados-valles-brigecio2.pdf`](../02-bibliografia/lobato-vidal-1992-despoblados-valles-brigecio2.pdf).
 > ⚠️ El artículo anuncia **un mapa** de los despoblados que **el escaneo de Dialnet no incluye**.
 
+#### ✅ Y una comprobación de 1587, sobre el facsímil (3 de octubre de 2026)
+
+`TAR-18` ha ido a ver el libro de **Tomás González (1829)** del que este inventario tomaba, **de
+oídas**, los nueve vecinos de Pobladura en 1587. **Están, y están así**: en la plana **180**, bajo
+el **ARCIPRESTAZGO DE VALDEVIDRIALES**, y en el asiento **inmediatamente siguiente al de Colinas**:
+
+| | pilas | vecinos |
+|---|---:|---:|
+| **Colinas** | **1** | **34** |
+| **Pobladura** | **1** | **9** |
+
+> 🚨★ **Pobladura no es un recuerdo en 1587: es una parroquia.** Tiene **pila bautismal propia**
+> y entra en la relación que el **obispo de Astorga** firmó para Felipe II el **28 de marzo de
+> 1587**, hecha arciprestazgo por arciprestazgo ante escribano. Es **un testimonio más, y de los
+> más duros**, de que el despoblado **se despuebla después**
+> → [`censo-1591`](../01-fuentes-primarias/censo-1591/README.md).
+
+---
+
 ### 8.3 ★ «Las Bodegas» — el segundo yacimiento, y el más antiguo
 
 > **Hallazgo del 22 de septiembre de 2026.** El término tenía **dos** yacimientos excavados en
