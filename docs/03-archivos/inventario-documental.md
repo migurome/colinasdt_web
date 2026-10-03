@@ -1627,6 +1627,36 @@ histórica del término**, no sólo en una curiosidad.
 > [`02-bibliografia/lobato-vidal-1992-despoblados-valles-brigecio2.pdf`](../02-bibliografia/lobato-vidal-1992-despoblados-valles-brigecio2.pdf).
 > ⚠️ El artículo anuncia **un mapa** de los despoblados que **el escaneo de Dialnet no incluye**.
 
+#### 🚨🚨 Miñano, 1827: Pobladura **fue anejo de Mózar**, y va **entre Villanázar y Vecilla**
+
+`TAR-17` ha ido a ver el **Suplemento** del Diccionario de Miñano, y la remisión que trae lleva a
+un artículo del propio Diccionario —**MOZAR**, t. **VI** (1827), **pp. 168-169**— que este proyecto
+**no había leído**. Dice esto:
+
+> «**A la falda del monte de la Cervilla, y al cuarto de legua agua arriba, hay una porcion de
+> lugares y aldeas**, siendo este de Mozar el último, y son, el anejo **Villanazar**; **un Desp. que
+> en otro tiempo fue anejo de este lugar, llama\[d\]o Pobladura de Trasmonte**; **Becilla de
+> Trasmonte**, **Colinas de Trasmonte**, **Quiruelas**…»
+
+**Dos cosas, y las dos nuevas.**
+
+1. 🚨 **La dependencia parroquial: Pobladura fue anejo de Mózar.** El proyecto tenía que en
+   **1587** tenía **pila propia**, que en **1706** era vecina de Vecilla y que en el XVI-XVII se
+   despuebla; **no tenía de quién dependió**. ⚠️ Miñano escribe «**en otro tiempo**», que no es una
+   fecha: queda como **noticia de 1827**, no como cronología.
+2. ✅✅ **La posición, y coincide con `TAR-26`.** La lista sube el río desde Mózar, «el último», y
+   el orden es **Villanázar → Pobladura → Becilla de Trasmonte → Colinas**. Es decir: **Pobladura
+   entre Villanázar y Vecilla**, que es donde este proyecto la situó el 1 de octubre de 2026 **por
+   un camino sin relación alguna** —el barrido del reparto de propietarios de 1750 y, después, el
+   rótulo de la planimetría—.
+   ⚠️ **Una lista no es una coordenada**: da orden, no distancia. Pero **el orden es el mismo**, y
+   lo escribe un impreso de **1827** → [Miñano](../01-fuentes-primarias/minano-1826/README.md).
+
+> ★★ **Y de paso, La Cervilla deja de ser sólo un nombre de linde.** El mismo artículo la describe:
+> una **dehesa**, un **monte**, «**toda de encinas**», con «pastos para muchas cabezas de ganado
+> lanar **que de tierra de Campos vienen á pastar en el invierno**». Eso explica por qué aparece
+> siempre como linde y nunca como población: **no era un lugar**.
+
 #### ✅ Y una comprobación de 1587, sobre el facsímil (3 de octubre de 2026)
 
 `TAR-18` ha ido a ver el libro de **Tomás González (1829)** del que este inventario tomaba, **de
