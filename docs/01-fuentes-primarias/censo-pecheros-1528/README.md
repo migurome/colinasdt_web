@@ -165,11 +165,21 @@ Y el proyecto ya tenía dos más:
 > 🚨 **Tres fuentes independientes del mismo señorío, a lo largo de sesenta y cinco años, registran
 > pegado a Colinas un lugar que nadie ha identificado. Y 1526 y 1591 dan la misma cifra: 21.**
 >
-> **Lo documentado:** existe, está al lado de Colinas, y ni el INE ni PARES saben qué es.
+> **Lo documentado:** existe, está al lado de Colinas <s>en el mapa</s> **en la lista**, y ni el
+> INE ni PARES saben qué es.
 > **Lo interpretado:** que fuera un lugar poblado —21 vecinos en 1526— hoy desaparecido, es decir,
-> **un despoblado vecino de Colinas**.
+> <s>**un despoblado vecino de Colinas**</s> **un despoblado**.
 > ⚠️ **Lo que no se afirma:** que las tres grafías sean el mismo sitio, ni dónde estaba. Que las dos
 > cifras coincidan **puede indicar identidad o puede indicar que una fuente copió de otra**.
+
+> ✅✅ **IDENTIFICADO el 3 de octubre de 2026 (`TAR-21`): es `Cejinas`, despoblado de la zona
+> norte del término de Santa Colomba de las Monjas.** Lo resuelve una **cuarta grafía**,
+> «**Jecinas**», en la relación de pilas y vecinos del obispo de Astorga de **1587** —**1 pila, 27
+> vecinos**, entre **Sta. Coloma** y **Sta. Christina**, arciprestazgo de Villafáfila—.
+>
+> 🚨 **Y corrige lo interpretado aquí arriba**: <s>vecino de Colinas</s>. Está a **11,1 km al
+> ESE**, **al otro lado de Benavente**. **La vecindad era de renglón, no de suelo**
+> → [`censo-1591`, § 7](../censo-1591/README.md).
 
 ### ❌ 4 bis. «Vecilla del Chantre»: la hipótesis, y por qué cae el mismo día
 

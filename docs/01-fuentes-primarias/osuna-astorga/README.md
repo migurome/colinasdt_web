@@ -980,8 +980,65 @@ Peras**. No se sabe cuál ni de cuándo. Queda anotado por si algún día aparec
 > **Lo que queda abierto**, y no depende de leer más este legajo:
 > — el final del pleito, que **este papel no cuenta**;
 > — el topónimo «Bardemozar» `[?]` de la lista del 26 de mayo;
-> — qué fue **la Verdenosa**, que se notifica en 1694 y no está en el mapa de hoy;
+> — <s>qué fue **la Verdenosa**, que se notifica en 1694 y no está en el mapa de hoy</s>
+>   ✅ **resuelto el 3-X-2026**, ver abajo;
 > — y el **pleito de Villanueva de las Peras** de la cubierta.
+
+---
+
+## ✅✅ `TAR-22` — **la Verdenosa, identificada** (3 de octubre de 2026)
+
+> **El último topónimo del legajo que no estaba en el mapa.** Se notifica el **2 de febrero de
+> 1694**, tiene **cura propio** —Ldo. D. **Santiago Fernández de Arrabalde**—, el cabildo de
+> Astorga la tenía **en la merindad de la Polvorosa**, y **no aparece en ningún mapa actual**.
+
+### La prueba: la relación del obispo de Astorga de 1587
+
+Leída en `TAR-18`, la relación que el obispo firmó el **28 de marzo de 1587** nombra **todas las
+pilas de su obispado**. En la **plana 175**, **ARCIPRESTAZGO DE PARAMO Y VEGA**:
+
+| | pilas | vecinos |
+|---|---:|---:|
+| Becilla | 1 | 14 |
+| **Morales de Rey** | 1 | 50 |
+| 🚨 **La Verdeñosa** | **1** | **80** |
+| **Villaferrueña** | 1 | 17 |
+| Ozaniego | 1 | 16 |
+| Alixa | 1 | 113 |
+| Navianos | 1 | 44 |
+
+**Dos cosas de golpe.** La grafía impresa lleva **eñe** —«**La Verdeñosa**»—, y la posición la
+encaja **entre Morales de Rey y Villaferrueña**. Y **con 80 vecinos en 1587 era de las mayores de
+su arciprestazgo**: más que Morales de Rey, casi cinco veces Villaferrueña. **No era una aldea: era
+un pueblo**, y por eso tenía cura propio en 1694.
+
+### ✅ Y por eso no está en el mapa: **dejó de llamarse así en 1925**
+
+| | |
+|---|---|
+| Se llamaba | **Verdenosa de la Polvorosa** —de ahí la merindad que da el cabildo— |
+| Qué pasó | En **1925** se unió con **Redelga de la Polvorosa**, que estaba **a menos de medio kilómetro**, formando una sola localidad |
+| Cómo se llama hoy | **Santa María de la Vega** (Zamora), municipio propio desde entonces, **desgajado de Morales de Rey** |
+| Dónde | **42,0856 N · −5,8097** — a **8,9 km al N** del centro del término de Colinas |
+| Qué queda de ella | **uno de los dos barrios** del pueblo actual |
+
+> ✔ **Y encaja con Madoz**, que al describir el curso del **río Eria** enumera, dejando a la
+> derecha, «**Arrabalde, Villaferrueña, la Verdeñosa**» —los tres seguidos, y en ese orden—.
+> ★ Obsérvese de paso que el cura de 1694 se apellidaba **de Arrabalde**, que es el pueblo
+> inmediatamente anterior en esa misma enumeración. ⚠️ **Coincidencia anotada, no argumento**: un
+> apellido toponimico no prueba naturaleza.
+
+> ★★ **Fuerza del enlace.** Tres cosas independientes dicen lo mismo: **(1)** la relación de 1587 la
+> pone entre Morales de Rey y Villaferrueña; **(2)** Madoz la pone en el Eria junto a Villaferrueña;
+> **(3)** la historia administrativa dice que **Verdenosa de la Polvorosa** se fundió en 1925 con
+> Redelga y se segregó de **Morales de Rey**. ⚠️ **Lo que falta** es la coordenada **del barrio**:
+> la que aquí se da es la del **pueblo unido**, y Verdenosa era uno de sus dos núcleos, a medio
+> kilómetro del otro. **No se da por pinchada en el mapa: se da por identificada.**
+
+> 📏 **Y explica la lectura dudosa de 1842.** La copia escribía «**Villa de la B…**» `[?]` donde
+> el original de 1694 dice «**la Verdenosa**». Con el nombre completo —**Verdenosa de la
+> Polvorosa**— se entiende que un copista del XIX, ante un pueblo que ya casi nadie nombraba así,
+> escribiera cualquier cosa.
 
 ---
 

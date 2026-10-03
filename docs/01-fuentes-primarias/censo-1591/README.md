@@ -239,7 +239,7 @@ del vecindario de 1591—, el «**Cº de Valdesón**» y, al suroeste, **Castró
 > <s>`[?]` **Y sigue sin cuadrar con Lobato Vidal.** Se buscó su sitio expresamente: en el punto medio
 > entre Villanázar y Vecilla de Trasmonte —los dos pueblos distan **2.499 m**— el parcelario da
 > **Los Arrotos, Prado, Carrales, Mangas, Desagüe los Jarales** y **Castillo**. Ningún Pobladura. Y
-> en las **127 parajes** que el muestreo del parcelario de **Villanázar** devuelve, **tampoco**.
+> en las **127 parajes** que el muestreo del parcelario de **Villanázar** devuelve, **tampoco**.</s>
 > <s>O describe otra cosa, o se equivocó.</s>
 
 > ✅ **Lo que sí queda cerrado, y era la pregunta del proyecto:** Pobladura de Trasmonte **no estaba
@@ -297,7 +297,11 @@ térm. de **Verdenosa**»— queda resuelto: en 1591 figura «**La Verdenos que 
 astorga**», hoy **Verdenosa de la Polvorosa**, con **52 vecinos**, de los cuales **14 hidalgos**.
 No era una errata.
 
-### `[?]` 7. Un nombre que queda apuntado: «Xecinas»
+### ✅ 7. Un nombre que queda apuntado: «Xecinas» — **y que el 3-X-2026 queda identificado**
+
+> ✅✅ **Resuelto. Es `Cejinas`, despoblado del término de Santa Colomba de las Monjas.** El
+> razonamiento, la cuarta grafia y la corrección de lo que este proyecto había supuesto, al
+> final de este apartado.
 
 Inmediatamente después de Colinas, la lista trae «**Xeçinas**», 21 vecinos, con marca de nota.
 El término de Colinas tiene un pago llamado **Valancinas**, y OpenStreetMap lo escribe «Las
@@ -338,6 +342,68 @@ aparece pegado a Colinas en la lista. Lo dirimiría la nota de la edición.
 > ⚠️ **Que 1526 y 1591 coincidan en 21 puede indicar identidad — o que una fuente copió de otra.**
 > No se afirma que las tres grafías sean el mismo sitio.
 >
+
+---
+
+#### ✅✅ `TAR-21`, cerrado el 3 de octubre de 2026: **la cuarta grafía lo sitúa**
+
+Lo ha resuelto **otra fuente, buscada para otra cosa**: la **relación de pilas y vecinos que el
+obispo de Astorga firmó el 28 de marzo de 1587**, impresa por T. González (1829) y leída aquí en
+`TAR-18`. En la **plana 175**, dentro del **ARCIPRESTAZGO DE VILLAFÁFILA**, entre dos pueblos que
+siguen existiendo:
+
+| | pilas | vecinos |
+|---|---:|---:|
+| Castro Gonzalo | 2 | 77 |
+| Millas | 1 | 30 |
+| Arcos | 1 | 26 |
+| **Sta. Coloma** | 1 | 19 |
+| 🚨 **Jecinas** | **1** | **27** |
+| **Sta. Christina** | 1 | 24 |
+| Requejo | 1 | 18 |
+| Manganeses | 1 | 42 |
+| Villafáfila | 6 | 381 |
+
+**«Jecinas» es «Xeçinas»**: en esta escritura, *J* y *X* son la misma letra. Y la relación **no
+ordena por conde ni por alcabala, sino por arciprestazgo y por proximidad**, de modo que la
+posición sí informa: cae **entre Santa Colomba de las Monjas y Santa Cristina de la Polvorosa**.
+
+✅ **Y ahí está.** Las descripciones del término de **Santa Colomba de las Monjas** recogen que
+«**en su zona norte se encontraba el despoblado de Cejinas**» —y Santa Cristina de la Polvorosa
+queda, en efecto, **al norte** de Santa Colomba—.
+
+| | |
+|---|---|
+| Las cuatro grafías | **Vezinas** (1526) · **Ce\[z\]inas** `[?]` (1565 `[?]`) · **Jecinas** (1587) · **Xeçinas** (1591) |
+| Las cifras | **21** pecheros (1526) · **27** vecinos (1587) · **21** vecinos (1591) |
+| Qué era | **parroquia con pila propia** en 1587 —no un pago— |
+| Dónde | **zona norte del término de Santa Colomba de las Monjas** (Zamora) |
+| Hoy | **despoblado**, con el nombre **Cejinas** |
+
+> ★★ **Fuerza del enlace: propuesta fuerte, no identificación cerrada.** Se apoya en **dos
+> afirmaciones independientes que coinciden**: (a) la relación de 1587 pone a «Jecinas» entre
+> Santa Coloma y Santa Cristina; (b) la descripción del término de Santa Colomba pone a «Cejinas»
+> en su zona norte. ⚠️ **Pero (b) no procede de un estudio científico**, y **no hay coordenada**:
+> sólo «la zona norte» de un término. **Falta verlo en un trabajo de toponimia o en el parcelario**
+> → `TAR-29`.
+
+> 🚨📏 **Y esto corrige una interpretación de este proyecto.** Aquí se escribió que el lugar
+> sería <s>«un despoblado **vecino de Colinas**»</s> y <s>«un vecino desaparecido de Colinas»</s>.
+> **No lo era.** Santa Colomba de las Monjas está a **11,1 km al ESE** del centro del término de
+> Colinas, **al otro lado de Benavente**. Lo que estaba junto a Colinas **era el asiento en la
+> lista, no el lugar en el suelo**: las tres fuentes son **rollos fiscales del señorío**, y en
+> ellos la vecindad es de renglón.
+>
+> ⚠️ **Es la trampa de siempre**, y conviene dejarla escrita: **de la proximidad en una lista no se
+> sigue la proximidad en el mapa.** El proyecto la evitó con Pobladura —donde sí se comprobó sobre
+> el terreno— y no la evitó aquí.
+
+> ⚠️ **Y cae de paso la conjetura de «Valancinas».** El pago de Colinas llamado **Valancinas /
+> Las Valencinas** no tiene nada que ver: Cejinas está a once kilómetros y en otro arciprestazgo.
+> El parecido era de oído.
+
+---
+
 > ★ **Y hay un segundo sin identificar en la misma lista de 1526**: «**Vecilla del Chantre**», 16
 > pecheros (inscr. 76). Como **«Vecilla de Trasmonte» no aparece en todo el censo de 1528** —
 > comprobado en los dos tomos—, es **candidata**, y se dice como hipótesis. ⚠️ En contra juega que

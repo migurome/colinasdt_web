@@ -21,10 +21,10 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **37 piezas pendientes**, **5 se
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **36 piezas pendientes**, **4 se
 pueden trabajar desde aquí** y **32 necesitan a una persona** —o una compra, o un correo—.
-Otras **veintitrés ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
-**bloqueada por criterio**. Sesenta y seis filas en total.
+Otras **veinticinco ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
+**bloqueada por criterio**. Sesenta y siete filas en total.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -47,9 +47,9 @@ decisión expresa. Ver §7.
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **311** |
-| Tareas que se podían hacer desde aquí | **29** |
-| …**hechas** | **23** |
-| …pendientes | **5** |
+| Tareas que se podían hacer desde aquí | **30** |
+| …**hechas** | **25** |
+| …pendientes | **4** |
 | …sin vía | **1** |
 
 > 📏 **Recontado el 2 de octubre de 2026**, y esta vez **con la base escrita**, que es lo que
@@ -236,8 +236,14 @@ aportan:
    que el autor **interpreta** —que el valle del Tera era ruta de peregrinación y el monasterio
    uno de sus jalones— queda escrito como interpretación suya →
    [la ficha de Castroferrol](01-fuentes-primarias/castroferrol-962-1170/README.md).
-4. **`TAR-14`, `TAR-18`, `TAR-21`, `TAR-22`** — cuatro dudas concretas que se pueden cerrar con lo
-   que ya hay en casa o en abierto, incluida la verificación del recuento de **1587**.
+4. ✅✅ **`TAR-14`, `TAR-18`, `TAR-21` y `TAR-22`, las cuatro hechas.** 🚨 Las dos últimas, el
+   **3-X-2026 y con la misma fuente**: la relación de pilas y vecinos del **obispo de Astorga de
+   1587**, leída para otra cosa, **identifica los dos topónimos que el proyecto no sabía situar**.
+   «**Xeçinas**» es **Cejinas**, despoblado de Santa Colomba de las Monjas —y **no estaba junto a
+   Colinas**: eso era el renglón, no el suelo—; y «**la Verdenosa**» es **Verdenosa de la
+   Polvorosa**, que en **1925** se fundió con Redelga y pasó a llamarse **Santa María de la Vega**.
+   <s>cuatro dudas concretas que se pueden cerrar con lo
+   que ya hay en casa o en abierto, incluida la verificación del recuento de **1587**.</s>
 5. ✅ **`TAR-24` — la procedencia de cada imagen: HECHA el 30-IX-2026**, en v0.40. **45 de 45
    imágenes publicadas llevan firma al pie**, y las condiciones de los cuatro archivos están
    leídas una por una. **La del IGN no se cumplía** —pide una fórmula, no una mención— y se
