@@ -34,7 +34,8 @@ De los 477 títulos, éstos son los que tocan el término, su valle, sus fuentes
 | 1992, 2 | Los despoblados en el Condado de Benavente (Siglos XVI-XVII-XVIII) | Abundio García Caballero | 55-80 | ✅ | **Leído entero el 1-X-2026** (`TAR-06`). 🚨🚨 El inventario de los **45 despoblados del conde**, sobre los Becerros de 1446 y 1545. **Pobladura de Trasmonte tiene entrada propia**: lindes —Villaofín al N, La Cervilla a levante—, medidas, **un molino en la Almucera en 1446** y dos nombres; más la tabla 1530/1591 (15 → 11). **Reabre dónde estuvo** → [inventario § 8.2](../03-archivos/inventario-documental.md). |
 | 1998, 8 | Noticias arqueológicas sobre la casa de los obispos de Astorga en Santa Marta de Tera (Zamora) | Manuel Arias Martínez | 87-98 |  | La casa de los obispos de Astorga en Santa Marta de Tera. |
 | 1998, 8 | Una lucerna en terra sigilata hispánica tardía de la villa de Villanueva de Azoague | María Teresa Amaré Tafalla | 297-300 |  | Lucerna TSHt del mismo yacimiento de referencia. |
-| 2001, 11 | El monasterio de San Salvador de Villaverde de Vidriales | Rafael González Rodríguez | 43-62 |  | El otro San Salvador del valle, en Villaverde de Vidriales. |
+| 2001, 11 | El monasterio de San Salvador de Villaverde de Vidriales | Rafael González Rodríguez | 43-62 | ✅ | **Leído entero el 3-X-2026** (`TAR-09`). 🚨🚨 En la **p. 53**, **Colinas** figura entre los **veintidós lugares** de los que el priorato cobraba rentas **en el siglo XVIII** —según el *Libro Becerro* inédito del **Hospital de la Piedad de Benavente**—, y **el Catastro de 1752 no lo dice**. ★★ Además cierra la comparación con el San Salvador de 1006 —**son dos casas**— y confirma de refilón que **Castroferrol está «en el tramo final, ya en su unión con el valle del Tera»** → [el priorato de Villaverde](../01-fuentes-primarias/priorato-villaverde/README.md). |
+| 2005, 15 | Avance de los trabajos de inventario del Archivo del Hospital de la Piedad de Benavente | Juan Carlos de la Mata Guerra | 105-128 | ✅ | **Leído el 3-X-2026** (`TAR-09`), descargado a raíz de él. 🚨 Da las **signaturas** de los papeles del priorato que nombran a Colinas: **Libro 19** (becerro de foros y censos, s. XVIII), **Libros 15, 16 y 17** (apeos de 1560-62, 1741-47 y **1694**) y **Legajo 175, Exp. 1**. ⚠️ Dos libros de visitas al priorato **no se localizaron** en 2005. |
 | 2001, 11 | La regla de la cofradía de la Virgen de la Vega de Vecilla de Trasmonte en el siglo XVIII | José Ignacio Martín Benito | 99-114 | ✅ | **Leído entero el 3-X-2026** (`TAR-07`). 🚨🚨 El título real es «**La regla** de la cofradía… **en el siglo XVIII**». El **capítulo 16** de la Regla de **1730** reserva a **Colinas** un **abad** y un **cabildero** de los dos de cada oficio: **media hermandad por estatuto**. Y el acuerdo de **1748** lo firman **Francisco y Julián Carrera**, que en 1752 son perito y fiel de fechos de Colinas → [la cofradía](../01-fuentes-primarias/cofradia-vega-1730/README.md). |
 | 2001, 11 | Colección documental del Monasterio de San Esteban de Nogales, (1149-1498) | Rafael González Rodríguez; Gregoria Cavero Domínguez | 212-214 |  | Reseña de la colección de San Esteban de Nogales. |
 | 2000, 10 | Castroferrol, un enclave monástico altomedieval en el valle del Tera | Rafael González Rodríguez | 33-44 | 📕 | Castroferrol. **La pieza del frente nº 6. Facsímil leído entero.** |
@@ -184,7 +185,7 @@ De los 477 títulos, éstos son los que tocan el término, su valle, sus fuentes
 - La influencia de los grabados de Peter de Jode en la escultura leonesa — Arantzazu Oricheta García (pp. 99-112)
 - Las hermandades leonesas (1282-1235) — Eduardo Fuentes Ganzo (pp. 113-140)
 - Privilegios y pergaminos de la villa de Benavente (siglo XV) — Vidal Aguado Seisdedos; Pascual Martínez Sopena; Rafael González Rodríguez (pp. 141-168)
-- Escrituras fundamentales del Hospital de la Piedad de Benavente — Rafael González Rodríguez (pp. 169-192)
+- Escrituras fundamentales del Hospital de la Piedad de Benavente — Rafael González Rodríguez (pp. 169-192) 📕 **descargado 3-X-2026, sin abrir** (`TAR-27`)
 - Los "hilos" que tejen la trama del poder local — Sonsoles Gómez Carbonero (pp. 193-210)
 - Crisis obrera y conflictividad social en el nordeste zamorano (1898-1920) — José Ignacio Martín Benito (pp. 211-242)
 - El habla de la zona de Benavente (I) — Manuel Barrio Prada (pp. 243-272)
@@ -237,7 +238,7 @@ De los 477 títulos, éstos son los que tocan el término, su valle, sus fuentes
 
 - Descripción morfológica de la armadura instalada en la Torre del Caracol — Saturnino Prieto Morillo (pp. 9-28)
 - Orisgonta — Luis A. Grau Lobo; Ernesto Callejo (pp. 29-42)
-- El monasterio de San Salvador de Villaverde de Vidriales — Rafael González Rodríguez (pp. 43-62) ★
+- El monasterio de San Salvador de Villaverde de Vidriales — Rafael González Rodríguez (pp. 43-62) ★ ✅ **leído 3-X-2026**
 - Las hermandades leonesas (II) — Eduardo Fuentes Ganzo (pp. 63-78)
 - Las acuñaciones benaventanas en tiempos de Enrique IV — León España (pp. 79-98)
 - La regla de la cofradía de la Virgen de la Vega de Vecilla de Trasmonte en el siglo XVIII — José Ignacio Martín Benito (pp. 99-114) ★
@@ -321,7 +322,7 @@ De los 477 títulos, éstos son los que tocan el término, su valle, sus fuentes
 - La banda de música municipal de Benavente y la figura del maestro Lupicino Jiménez Camino (1923-1949) — Manuel Fernández del Hoyo (pp. 37-64)
 - Santo Tirso en Villarrín de Campos (Zamora) — Elías Rodríguez Rodríguez (pp. 65-78)
 - La Mota de Castrogonzalo. Una fortificación terrera en al alfoz medieval de Benavente — Rafael González Rodríguez (pp. 79-104)
-- Avance de los trabajos de inventario del Archivo del Hospital de la Piedad de Benavente — Juan Carlos de la Mata Guerra (pp. 105-128)
+- Avance de los trabajos de inventario del Archivo del Hospital de la Piedad de Benavente — Juan Carlos de la Mata Guerra (pp. 105-128) ★★ ✅ **leído 3-X-2026**
 - El entorno de Benavente en el "Jardín de Flores Curiosas" de Antonio de Torquemada — José Ignacio Martín Benito (pp. 129-144)
 - La religiosidad colectiva de los zamoranos en la segunda mitad del siglo XVIII — Fernando Manzano Ledesma (pp. 145-168)
 - Estado del Palacio de Toral de los Guzmanes (León) a finales del siglo XIX — Javier Revilla Casado (pp. 169-186)

@@ -558,6 +558,36 @@ Respuestas Generales, **Leg. 654**— y que resume así sus cargas señoriales:
 
 ---
 
+## ⚠️ Lo que estas Respuestas **no** dicen: un tercer acreedor, del 3 de octubre de 2026
+
+Las Respuestas Generales declaran **dos cargas** sobre el lugar, y sólo dos: el **foro perpetuo al
+conde de Benavente** —41 fanegas 8 celemines de pan mediado— y el **censo al 3 %** a favor del
+**hospital de San Juan de la ciudad de Astorga**.
+
+> 🚨 **Y hay una fuente del mismo siglo que añade un tercero.** La lectura de `TAR-09` —**GONZÁLEZ
+> RODRÍGUEZ, R.**, «El monasterio de San Salvador de Villaverde de Vidriales», *Brigecio* 11 (2001),
+> p. 53— pone a **Colinas** entre los **veintidós lugares** de los que **el priorato de San Salvador
+> de Villaverde** cobraba rentas **en el siglo XVIII**. Ese priorato pertenecía desde **1525** al
+> **Hospital de la Piedad de Benavente**. El dato sale de un manuscrito inédito, el *Libro Becerro*
+> de ese hospital → [el priorato de Villaverde](../priorato-villaverde/README.md).
+
+**Y aquí no está.** El Catastro se hizo en **1752**, dentro del mismo siglo, y **no nombra ni al
+priorato ni al Hospital de la Piedad**.
+
+| Lo que dice una fuente | Lo que dice la otra |
+|---|---|
+| *Libro Becerro* del Hospital de la Piedad, s. XVIII: **Colinas paga al priorato** | Respuestas Generales de Colinas, 1752: **dos cargas, y ninguna es ésa** |
+
+> ★ **«El hueco también es un dato», y no se resuelve a favor de ninguna.** La explicación más
+> probable es de **género documental**: las Generales declaran lo que paga **el concejo**, y un foro
+> o censo sobre **fincas de vecinos concretos** no sale ahí, sino en las **Respuestas Particulares**
+> y en los **Libros de lo Real**, donde el priorato figuraría como **hacendado forastero
+> eclesiástico**. ⚠️ **Este proyecto sólo tiene las Generales** —`ARCH-10`—. Pero caben otras
+> salidas, y hasta verlo **ninguna se elige**: que la renta fuera minúscula, que la lista no sea de
+> 1752 —dice «en el siglo XVIII», sin año—, o que ese «Colinas» sea otro.
+
+---
+
 ## Nota de reutilización
 
 Las imágenes proceden del Portal de Archivos Españoles (PARES), Ministerio de Cultura. Uso

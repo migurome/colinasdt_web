@@ -493,6 +493,50 @@ el final:
 María son los **titulares**; las reliquias son **de otros** santos, sin nombrar. El autor lo lee
 igual, y lo lee en su propio artículo de al lado.
 
+---
+
+## ★★ El **otro** San Salvador del valle, leído — y Castroferrol confirmado de refilón
+
+> **3 de octubre de 2026 (`TAR-09`).** Esta ficha tenía abierta una comparación: el documento de
+> **1006** dedica el monasterio de Castroferrol a **San Salvador**, y en el valle de Vidriales hay
+> **otro San Salvador**, el de **Villaverde**. Se ha leído entera su monografía —GONZÁLEZ
+> RODRÍGUEZ, R., *Brigecio* 11 (2001), pp. 43-62, 20 planas a imagen—.
+
+### ✅ Son dos casas distintas, y lo dice el propio autor
+
+En su primera página, al situar la suya, enumera el valle entero:
+
+> «el valle de Vidriales contaría con **tres fundaciones medievales conocidas**. Una **en su
+> cabecera: San Fructuoso de Ageo**; otra **en el tramo final, ya en su unión con el valle del
+> Tera: San Miguel de Castroferrol**; y **este que nos ocupa, prácticamente en el centro del
+> valle**, muy próximo al antiguo campamento romano de *Petavonium*, en Rosinos de Vidriales.»
+> — **p. 44**
+
+| | **San Salvador de Castroferrol** | **San Salvador de Villaverde** |
+|---|---|---|
+| Dónde | **término de Colinas de Trasmonte**, confluencia **Tera-Almucera** | término de **San Pedro de la Viña**, centro del valle de Vidriales |
+| Primera noticia | **1006** `[?]` —la fecha es enmienda— | **1100** (diploma de Sahagún) |
+| Advocación después | pasa a **San Miguel** | sigue **San Salvador** |
+| Quién lo tuvo | abadesa Benedicta → catedral de Astorga | Munio Fernández → Sahagún → Cluny → Pimentel → Hospital de la Piedad |
+| Final | desaparece en la Edad Media | llega **al siglo XX**, y sus ruinas siguen en pie |
+
+> ★★ **Y de paso, un testimonio más de dónde está el nuestro — el más limpio de todos.** Ese
+> paréntesis sitúa a Castroferrol «en el tramo final, ya en su unión con el valle del Tera», que es
+> el término de Colinas. Vale **más** que una afirmación directa porque **el autor no está
+> defendiendo esa tesis aquí**: la usa de referencia para colocar otra cosa. ⚠️ **No es
+> independiente**, eso sí: es **el mismo autor** del artículo de 2000 sobre Castroferrol, de modo
+> que confirma su constancia, no añade una voz nueva.
+
+> ★ **El arroyo es el mismo.** El priorato de Villaverde «describe una suave ladera hasta
+> encontrarse con el **arroyo de La Almucera**, principal curso fluvial colector de toda la
+> comarca» (p. 44). El Almucera es **el arroyo de Colinas**. **Los dos San Salvadores están sobre
+> el mismo cauce**: uno cerca de la cabecera, el otro en la desembocadura. ⚠️ **Es geografía, no
+> argumento**: nada indica que las dos casas tuvieran relación alguna.
+
+> 🚨 **Lo que sí es nuevo, y no va aquí**: ese artículo pone a **Colinas** entre los veintidós
+> lugares de los que el priorato de Villaverde cobraba rentas en el siglo XVIII
+> → [el priorato de Villaverde](../priorato-villaverde/README.md).
+
 ★ **Y le pone un porqué que aquí no estaba.** En el argumento de este artículo, tener reliquias es
 exactamente lo que convertía a un monasterio en meta de visita: «existiendo una relación
 proporcional entre la afluencia de visitantes y la cantidad y la calidad de los despojos
@@ -527,9 +571,11 @@ transcripciones es la buena**. Queda donde debe: en el lado de las cautelas, no 
 ### El valle, de paso
 
 - **San Pedro de Zamudia** era monasterio, en el valle de Valverde (p. 51).
-- **San Salvador de Villaverde**, «en San Pedro de la Viña, cercano al antiguo campamento romano de
-  *Petavonium*, **en la vía romana de Astorga a Braga**» (p. 51). Los dos lugares vuelven a salir
-  en el pleito de diezmos de 1694.
+- ✅ **San Salvador de Villaverde**, «en San Pedro de la Viña, cercano al antiguo campamento romano
+  de *Petavonium*, **en la vía romana de Astorga a Braga**» (p. 51). Los dos lugares vuelven a salir
+  en el pleito de diezmos de 1694. ★★ **Y su monografía ya está leída** —`TAR-09`, 3-X-2026—:
+  **no es éste**, y además **confirma dónde está el nuestro**
+  → [el priorato de Villaverde](../priorato-villaverde/README.md) y el apartado de abajo.
 - Hay **advocación jacobea en Vecilla de Trasmonte** (p. 58), el pueblo con el que Colinas pleiteó
   ocho años.
 - La calzada de *Bracara* a *Asturica* «discurría por el **Valle de Vidriales, el Tera y La

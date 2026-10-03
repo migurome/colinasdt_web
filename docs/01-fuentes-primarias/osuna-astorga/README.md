@@ -985,6 +985,46 @@ Peras**. No se sabe cuál ni de cuándo. Queda anotado por si algún día aparec
 
 ---
 
+## ★ Lo que ese mismo mapa de lugares vuelve a dar, el 3 de octubre de 2026
+
+Al leer `TAR-09` —el priorato de **San Salvador de Villaverde**, del Hospital de la Piedad de
+Benavente— aparece una **lista de veintidós lugares** de los que ese priorato cobraba rentas en el
+siglo XVIII. **Cuatro de ellos son de los quince notificados en 1694**:
+
+| En la nómina de 1694 | En las rentas del priorato (s. XVIII) |
+|---|:-:|
+| Mózar [de Valverde] | ✅ |
+| **Colinas de Trasmonte** | ✅ |
+| Santibáñez de Vidriales | ✅ |
+| Bercianos de Vidriales | ✅ |
+
+> ⚠️ **Y no es un hallazgo: es una advertencia.** Son **dos cosas distintas** que no deben juntarse.
+> El legajo de 1694 va de los **diezmos de las casas dezmeras de Rey** que toca a S. E. —el
+> conde-duque—; la lista del priorato va de **rentas de un beneficio eclesiástico**. Que coincidan
+> cuatro nombres **no prueba ninguna relación**: es que son los mismos pueblos de la misma comarca,
+> que es donde el conde tenía sus derechos y donde el priorato tenía sus tierras.
+>
+> Lo único que sí se puede decir, y es estructural: **detrás de las dos cosas está la misma casa**.
+> El Hospital de la Piedad lo funda el **V conde de Benavente**, los dos sacerdotes del priorato los
+> sigue nombrando **el conde de Benavente** en tiempos de Madoz, y los diezmos de 1694 se reclaman
+> **para el conde-duque**. Colinas pagaba a los Pimentel **por más de una puerta**
+> → [el priorato de Villaverde](../priorato-villaverde/README.md).
+
+### ★ Y un nombre que se repite, que no se resuelve
+
+Quien notifica en **Colinas** el 12 de mayo de 1694 es **Francisco Domínguez**, *notario público y
+apostólico vecino de Benavente*. Y el traslado del recibo de los *quindenios* del priorato que cita
+el artículo de 2001 lo autoriza **«Francisco Domínguez, notario apostólico»** —sobre un recibo
+fechado en **Madrid, 24 de enero de 1736**—.
+
+> ⚠️ **No se identifica.** Median **cuarenta y dos años**; *Francisco Domínguez* es nombre común; y
+> el artículo no dice de dónde era el suyo ni cuándo hizo el traslado —la fecha de 1736 es la del
+> recibo, no la de la copia—. **Podría ser el mismo hombre al final de su carrera, un hijo, o nadie.**
+> Se anota únicamente porque es **comprobable**: el oficio de notario apostólico en Benavente deja
+> rastro, y quien vea el *Libro Becerro* lo verá firmado.
+
+---
+
 ## Nota de reutilización
 
 **Archivo Histórico de la Nobleza**, fondo **Osuna**, signaturas `OSUNA,CT.271,D.16-35` y

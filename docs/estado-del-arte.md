@@ -21,10 +21,10 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **39 piezas pendientes**, **10 se
-pueden trabajar desde aquí** y **29 necesitan a una persona** —o una compra, o un correo—.
-Otras **dieciséis ya están hechas**; **cinco** se han dado por **sin vía** y **una** está **bloqueada
-por criterio**. Sesenta y una filas en total.
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **40 piezas pendientes**, **10 se
+pueden trabajar desde aquí** y **30 necesitan a una persona** —o una compra, o un correo—.
+Otras **diecisiete ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
+**bloqueada por criterio**. Sesenta y tres filas en total.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -35,20 +35,20 @@ decisión expresa. Ver §7.
 
 | | |
 |---|---:|
-| Ficheros de fuente dentro del proyecto | **412** |
-| Peso del corpus | **515 MB** |
+| Ficheros de fuente dentro del proyecto | <s>412</s> **352** |
+| Peso del corpus | <s>515 MB</s> **522 MB** |
 | Fichas y documentos de trabajo (`.md`) | **36** |
 | Tablas de datos (`.tsv`) | **21** |
-| Artículos científicos en PDF | **26** |
-| …de ellos, leídos entero o en parte | **24** |
+| Artículos científicos en PDF | **28** |
+| …de ellos, leídos entero o en parte | **26** |
 | …sin abrir | **2** |
 | Frentes de investigación abiertos formalmente | **18** |
 | …cerrados | **8** |
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **311** |
-| Tareas que se podían hacer desde aquí | **27** |
-| …**hechas** | **16** |
+| Tareas que se podían hacer desde aquí | **28** |
+| …**hechas** | **17** |
 | …pendientes | **10** |
 | …sin vía | **1** |
 
@@ -63,8 +63,13 @@ decisión expresa. Ver §7.
 > sumaba mal porque metía en el segundo grupo las cinco **sin vía** y la **bloqueada**, que no
 > son lo mismo que pendientes. Ahora van en su propia línea.
 >
-> Las dos primeras filas —ficheros de fuente y peso del corpus— **siguen siendo la medición del
-> 22 de septiembre** y no se han vuelto a contar; el árbol entero, sin `.git`, pesa hoy **599 MB**.
+> ✅ **Y el 3 de octubre de 2026 se cierran también las dos primeras filas**, que arrastraban la
+> medición del 22 de septiembre: <s>412 ficheros</s> **352** y <s>515 MB</s> **522 MB**, contados con
+> **la misma base que el índice de facsímiles** —todo lo que hay bajo `docs/` que no sea `.md` ni
+> `.tsv`, sin ocultos— → [`facsimiles.md`](facsimiles.md). **Bajan los ficheros y sube el peso**:
+> bajan porque el recuento viejo contaba cosas que ya no están o nunca fueron material, y sube
+> porque entretanto han entrado planos, rásteres y PDF. Las cifras tachadas **no son reproducibles**
+> —no decían qué contaban— y por eso se tachan en vez de corregirse.
 
 > ⚠️ **Las 311 dudas no son 311 preguntas distintas**: son las veces que aparece la marca, y una
 > misma duda puede repetirse en tres ficheros. **Lo que la cifra mide es la disciplina, no la
@@ -139,7 +144,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 | 9 | Chancillería de Valladolid | ⚠️ sentencias leídas; **los pleitos hay que pedirlos** | usuario (`ARCH-07`, `ARCH-08`) |
 | 10 | Fondo Osuna — vaciado sistemático | ⚠️ **el D.89 leído entero** (`TAR-01` ✅); el fondo, no | ambos (`TAR-19`, `TAR-21`, `TAR-22`) |
 | 11 | Floridablanca y Miñano | ✅ cerrado · dos flecos | aquí (`TAR-17`) |
-| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **2 artículos sin abrir** (hechos `TAR-02` a `TAR-08`) | aquí (`TAR-09`, `TAR-10`) |
+| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **1 artículo sin abrir** (hechos `TAR-02` a `TAR-09`) · 🚨 y `TAR-09` abrió **un archivo nuevo**, el del Hospital de la Piedad (`ARCH-23`) | aquí (`TAR-10`, `TAR-27`) |
 | 13 | AHP de Zamora | ⚠️ abierto, con cuatro pistas duras y fechadas | usuario (`ARCH-12` a `ARCH-15`) |
 | 14 | IGN / CNIG | ✅ **cerrado**: límite digitalizado (`TAR-11` ✅), códigos catastrales (`TAR-13` ✅) y 🚨 **Pobladura de Trasmonte, localizada** (`TAR-26` ✅) · ✅ **el plano IRYDA de 1975, georreferenciado** (`TAR-12` ✅) | — **frente cerrado** |
 | 15 | Riesco Chueca 2018 — el topónimo | ⚠️ abierto: **hace falta el libro de 2018** | usuario (`LIB-05`) |
@@ -151,7 +156,12 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 ## 4. Lo que se puede hacer desde aquí, sin pedirle nada a nadie
 
-**12 piezas**, y **dieciséis ya hechas**. Por orden de lo que aportan:
+**10 piezas pendientes**, y **diecisiete ya hechas** —más una **sin vía**—. Por orden de lo que
+aportan:
+
+> 📏 **Corregido el 3 de octubre de 2026.** Esta línea decía <s>12 piezas</s>, que no salía de
+> ninguna cuenta: las pendientes marcadas `claude` en el registro **eran 10, y lo siguen siendo**
+> —se cerró `TAR-09` y se abrió `TAR-27`—. Se corrige a la vista, no se borra.
 
 1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
    plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
@@ -170,8 +180,15 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
    y sin anotar son **Navianos de Valverde** (DGC 49151) y **Villanázar** (DGC 49285). De paso se
    ha medido quién hay al otro lado de la raya: **Villanázar comparte 3.729 m** con Colinas —el
    23 % del perímetro— y **Navianos no lo toca**, se queda a 1.104 m.
-3. **`TAR-09` y `TAR-10`: los dos artículos de *Brigecio* que quedan sin abrir.** Los dos son
-   **escaneos sin capa de texto** y hay que leerlos a imagen, que es lento.
+3. **`TAR-10`: el último artículo de *Brigecio* sin abrir** —las sigillatas de Azoague—, un
+   **escaneo sin capa de texto** que hay que leer a imagen. Y detrás de él, `TAR-27`.
+   🚨🚨 **`TAR-09`, hecho el 3-X-2026**, y ha sido el que más lejos ha llegado: el priorato de
+   **San Salvador de Villaverde** —del **Hospital de la Piedad de Benavente** desde 1525— cobraba
+   rentas **en Colinas** en el siglo XVIII, según un **Libro Becerro inédito**; **el Catastro de
+   1752 no lo dice**, y el hueco queda escrito. De paso cierra la comparación de los dos San
+   Salvadores —**son dos casas**— y **abre un archivo entero** con signaturas, incluidos **tres
+   apeos** que serían nóminas de vecinos de 1560, 1694 y 1741-47 →
+   [el priorato de Villaverde](01-fuentes-primarias/priorato-villaverde/README.md).
    🚨 **`TAR-07`, hecho el 3-X-2026**, y era el que menos prometía: la **Regla de la cofradía
    de la Virgen de la Vega**, de **1730**, reserva **a Colinas un abad y un cabildero** de los
    dos de cada oficio. **Media hermandad por estatuto** →
