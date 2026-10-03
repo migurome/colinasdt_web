@@ -27,7 +27,7 @@ como imagen.
 | `gonzalez-rodriguez-2000-resena-coleccion-astorga-brigecio10.pdf` | Reseña de la *Colección documental de la catedral de Astorga, I*, *Brigecio* **10** (2000), pp. 232-234 | ✅ |
 | `gonzalez-rodriguez-2000-monasterios-caminos-brigecio10.pdf` | «Monasterios, caminos de peregrinación e infraestructura viaria en el norte de Zamora», *Brigecio* **10** (2000), pp. 45-66 | ✅ **entero** |
 | `garcia-caballero-1992-despoblados-condado-brigecio2.pdf` | GARCÍA CABALLERO, A.: «Los despoblados en el Condado de Benavente (ss. XVI-XVIII)», *Brigecio* **2** (1992), pp. 55-80 | ✅ **entero** · 🚨 Pobladura de Trasmonte, con ficha, lindes y medidas |
-| `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | «El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales», *Brigecio* **6** (1996), pp. 11-30 | ⏳ |
+| `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | «El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales», *Brigecio* **6** (1996), pp. <s>11-30</s> → **11-29** | ✅ **entero** · ★ nombra a «Las Bodegas» de Colinas |
 | `regueras-lopez-1989-sigillatas-azoague-brigecio1.pdf` | «Sigillatas en relieve y estampadas de Villanueva de Azoague», *Brigecio* **1** (1989), pp. 47-58 | ⏳ |
 | `vara-nuevo-2009-vocabulario-tera-1-brigecio18-19.pdf` · `-2010-...-2-brigecio20.pdf` | VARA GALLEGO, C. y NUEVO CUERVO, L. C.: «Vocabulario del valle del Tera» (I) y (II) | ✅ **los dos, 25-IX** → [`significado-de-los-nombres.md`](../04-cartografia/significado-de-los-nombres.md) |
 | `blanco-iglesias-2013-arquitectura-barro-brigecio23.pdf` | BLANCO IGLESIAS, S.: «La arquitectura de barro en los valles de Vidriales», *Brigecio* **23** (2013), pp. 309-319 | ✅ **entero** · no nombra a Colinas |
@@ -75,7 +75,7 @@ como imagen.
 | Fichero | Capa de texto | Por qué está aquí |
 |---|:-:|---|
 | `martin-benito-2001-cofradia-vecilla-brigecio11.pdf` | ❌ 15 pp. | La cofradía de la Virgen de la Vega de Vecilla, s. XVIII |
-| `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | ❌ 19 pp. | El paralelo más cercano de «Las Bodegas» |
+| `blanco-martin-1996-las-penas-quiruelas-brigecio6.pdf` | ✅ 19 pp., leídas a imagen el 1-X-2026 | ★★ Nombra a «Las Bodegas» dos veces, da dos yacimientos inéditos más y lleva a la fecha de 2330 a. C. |
 | `san-salvador-villaverde-vidriales-brigecio11.pdf` | ❌ 20 pp. | El otro San Salvador del valle, para comparar con el de 1006 |
 | `regueras-lopez-1989-sigillatas-azoague-brigecio1.pdf` | ❌ 12 pp. | Paralelo cerámico del nivel tardorromano de San Juan-El Valle |
 

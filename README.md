@@ -725,7 +725,6 @@ docs/
     ejecutorias-chancilleria/
       README.md                         ★ 1757, 1772, 1804: el arcipreste y los aniversarios
       facsimil/ejecutoria-{1757,1772,1804}/  Las 28 imágenes de las tres ejecutorias
-      facsimil/{1757,1772,1804}/        ⚠️ Copia duplicada, con la extensión rota «.jg» — a borrar
       detalle-*.png                     Los pasajes leídos, ampliados
     dezmeros-benavente/
       README.md                         ★ 1561/1565: la mención más antigua en imagen

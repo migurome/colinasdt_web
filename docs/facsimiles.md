@@ -14,15 +14,22 @@
 
 ~~**Estado a 23 de septiembre de 2026: 327 ficheros de fuente, 522 MB.**~~
 
-**Estado a 25 de septiembre de 2026: 412 ficheros de fuente, 515 MB.**
+~~**Estado a 25 de septiembre de 2026: 412 ficheros de fuente, 515 MB.**~~
 
-> ⚠️ **Dos avisos sobre esas cifras, para que el índice no engañe.** (a) De los 412, **28 son una
-> copia duplicada** de las tres ejecutorias de la Chancillería: las carpetas `facsimil/1757`,
-> `/1772` y `/1804` repiten, con la extensión rota «`.jg`», las mismas imágenes que
-> `facsimil/ejecutoria-*`. **Verificado idéntico por md5**; la copia buena es la segunda, y la
-> primera está anotada para borrar (`LIMP-01`). (b) **El peso baja aunque suban los ficheros**
-> porque el recuento anterior incluía material que después se recortó o se sustituyó por su
-> versión definitiva.
+**Estado a 3 de octubre de 2026: 349 ficheros de fuente, 518 MB.**
+
+> 📏 **Y esta vez con la base escrita**, que es lo que les faltaba a las cifras anteriores:
+> se cuenta **todo lo que hay bajo `docs/` que no sea `.md` ni `.tsv`** —es decir, **el
+> material**: facsímiles, planos, PDF, rásteres y capas; no lo que el proyecto escribe sobre
+> ellos—, sin ficheros ocultos. ⚠️ **Las cifras de septiembre no decían qué contaban**, así que
+> **no son reproducibles** y no deben compararse con ésta sin más: se tachan, no se corrigen.
+
+> ✅ **`LIMP-01`, hecho el 3 de octubre de 2026: la copia duplicada ya no está.** Las carpetas
+> `facsimil/1757`, `/1772` y `/1804` repetían, con la extensión rota «`.jg`», las mismas **28
+> planas** que `facsimil/ejecutoria-*` —10,8 MB—. **Se volvió a verificar por md5 antes de
+> borrar** —emparejando `…-NN.jg` con `pNN.jpg`, que es como se corresponden—: **las 28, copia
+> byte a byte**. Se comprobó además que **nada del proyecto apuntaba a ellas** salvo la propia
+> ficha de las ejecutorias, que se ha corregido. En el repositorio **ya no queda ningún `.jg`**.
 
 ---
 

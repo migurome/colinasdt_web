@@ -177,13 +177,18 @@ Súmense a **Martín Alonso (1551)**, que sigue sin digitalizar, y a los **28 ve
 
 | Fichero | Qué es |
 |---|---|
-| `facsimil/1757/` | Las 8 imágenes de `CAJA 3250,23` |
-| `facsimil/1772/` | Las 10 imágenes de `CAJA 3359,51` |
-| `facsimil/1804/` | Las 10 imágenes de `CAJA 3767,43` |
+| `facsimil/ejecutoria-1757/` | Las **8** imágenes de `CAJA 3250,23` — `p01.jpg` … `p08.jpg` |
+| `facsimil/ejecutoria-1772/` | Las **10** imágenes de `CAJA 3359,51` — `p01.jpg` … `p10.jpg` |
+| `facsimil/ejecutoria-1804/` | Las **10** imágenes de `CAJA 3767,43` — `p01.jpg` … `p10.jpg` |
 | `plana-1757.jpg`, `plana-1772.jpg`, `plana-1804.jpg` | La primera plana de texto de cada una |
 | `detalle-1757-arciprestazgo{,-bis}.png` | Las dos menciones del arciprestazgo, ampliadas |
 | `detalle-1772-aniversarios.png` | La cláusula de los tres aniversarios |
 | `detalle-1804-pedimento.png` | El pedimento de 1804 |
+
+> ✅ **Corregido el 3 de octubre de 2026.** Esta tabla nombraba <s>`facsimil/1757/`, `/1772/` y
+> `/1804/`</s>, que eran **la copia duplicada** —las mismas 28 planas con la extensión rota
+> «`.jg`»—. Esas carpetas **ya no existen** (`LIMP-01`); la copia buena, y la única, es
+> `facsimil/ejecutoria-*`.
 
 ---
 

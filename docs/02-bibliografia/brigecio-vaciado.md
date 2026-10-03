@@ -26,7 +26,7 @@ De los 477 títulos, éstos son los que tocan el término, su valle, sus fuentes
 |---|---|---|---:|:-:|---|
 | 2004, 14 | El escudo de Benavente | José Ignacio Martín Benito | 85-106 | ★★ | El escudo de Benavente: la heráldica de la cabeza de partido. |
 | 2002, 12 | El obispado de Astorga en el siglo XIII | Rafael González Rodríguez; Augusto Quintana Prieto | 222-224 |  | El obispado de Astorga en el siglo XIII. |
-| 1996, 6 | El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales (Zamora) | Joaquín Blanco Majado; José Ignacio Martín Benito | 11-30 | 📕 | Yacimiento calcolítico vecino: paralelo directo de «Las Bodegas». |
+| 1996, 6 | El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales (Zamora) | Joaquín Blanco Majado; José Ignacio Martín Benito | <s>11-30</s> → **11-29** | ✅ | **Leído entero el 1-X-2026** (`TAR-08`). ★ **Nombra a «Las Bodegas» de Colinas dos veces**: en un radio de 5 km con «Los Bajos», «Los Arenales» (Quiruelas) y «Sitramina» (Sitrama) —los dos últimos **inéditos**—, y entre las excavaciones de urgencia del III milenio. 🚨 Y al cotejarlo con la fuente primaria aparece **la fecha absoluta que al valle le faltaba**: Los Bajos, **4280 ± 70 BP = 2330 a. C.** → [inventario § 8.3](../03-archivos/inventario-documental.md). |
 | 1996, 6 | Repoblación y reorganización de la red viaria | Rafael González Rodríguez | 153-178 |  | Repoblación y red viaria. |
 | 1997, 7 | Estudio geoarqueológico del yacimiento de "La Corona"-"El Pesadero" (Manganeses de la Polvorosa, Zamora) | Jesús Francisco Jordá Pardo | 21-46 |  | Geoarqueología en Manganeses de la Polvorosa, linde norte. |
 | 1989, 1 | Sigillatas en relieve y estampadas de Villanueva de Azoague (Zamora) | Fernando Regueras Grande; José Ramón López Rodríguez | 47-58 | 📕 | Sigillatas estampadas de Villanueva de Azoague: **los paralelos de nuestras rosetas**. |
@@ -142,7 +142,7 @@ De los 477 títulos, éstos son los que tocan el término, su valle, sus fuentes
 
 ### 1996, Nº 6
 
-- El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales (Zamora) — Joaquín Blanco Majado; José Ignacio Martín Benito (pp. 11-30) ★
+- ✅ El yacimiento calcolítico de Las Peñas en Quiruelas de Vidriales (Zamora) — Joaquín Blanco Majado; José Ignacio Martín Benito (pp. <s>11-30</s> → **11-29**) ★ **leído entero el 1-X-2026**
 - Estudio geomorfológico del yacimiento protohistórico de Los Cuestos de la Estación, Benavente (Zamora) — Jesús Francisco Jordá Pardo (pp. 31-56)
 - Arqueología aérea de la Dehesa de Morales en Fuentes de Ropel (Zamora) — Julio del Olmo Martín (pp. 57-76)
 - Dedicaciones, consagraciones y monumenta consecrationes (ss.VI-XII) — Artemio Manuel Martínez Tejera (pp. 77-102)

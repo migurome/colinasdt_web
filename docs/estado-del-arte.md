@@ -21,9 +21,10 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **46 piezas pendientes**, **13 se
-pueden trabajar desde aquí** y **33 necesitan a una persona** —o una compra, o un correo—.
-Otras **doce ya están hechas**, y las marcas se han puesto al día el 1 de octubre.
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **40 piezas pendientes**, **11 se
+pueden trabajar desde aquí** y **29 necesitan a una persona** —o una compra, o un correo—.
+Otras **quince ya están hechas**; **cinco** se han dado por **sin vía** y **una** está **bloqueada
+por criterio**. Sesenta y una filas en total.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -39,20 +40,33 @@ decisión expresa. Ver §7.
 | Fichas y documentos de trabajo (`.md`) | **36** |
 | Tablas de datos (`.tsv`) | **21** |
 | Artículos científicos en PDF | **26** |
-| …de ellos, leídos entero o en parte | **22** |
-| …sin abrir | **4** |
+| …de ellos, leídos entero o en parte | **23** |
+| …sin abrir | **3** |
 | Frentes de investigación abiertos formalmente | **18** |
 | …cerrados | **8** |
 | …abiertos | **10** |
 | Entradas en la línea temporal publicada | **60** |
-| Marcas de duda `[?]` vivas en la documentación | **360** |
-| Tareas de las 25 que se podían hacer desde aquí, **hechas** | **12** |
+| Marcas de duda `[?]` vivas en la documentación | **311** |
+| Tareas que se podían hacer desde aquí | **27** |
+| …**hechas** | **15** |
+| …pendientes | **11** |
+| …sin vía | **1** |
 
-> 📏 **Recontado el 1 de octubre de 2026**: `.md`, `.tsv`, entradas publicadas y marcas `[?]`.
+> 📏 **Recontado el 2 de octubre de 2026**, y esta vez **con la base escrita**, que es lo que
+> faltaba: `.md`, `.tsv` y marcas `[?]` se cuentan sobre **todo el repositorio, sin `.git` y sin
+> ficheros ocultos** —queda fuera, por tanto, `.inventario-documental.backup.md`—; las entradas
+> publicadas, sobre `p3-data.js`; y las tareas, sobre `material-pendiente.tsv`.
+>
+> 🚨 **Y el recuento corrige dos cifras propias.** Las dudas vivas <s>360</s> son **311**:
+> no es que se hayan borrado, es que **cuarenta y nueve se han resuelto** en los dos últimos
+> días. Y las piezas pendientes <s>46</s> son **42**: el reparto «13 aquí / 33 a una persona»
+> sumaba mal porque metía en el segundo grupo las cinco **sin vía** y la **bloqueada**, que no
+> son lo mismo que pendientes. Ahora van en su propia línea.
+>
 > Las dos primeras filas —ficheros de fuente y peso del corpus— **siguen siendo la medición del
 > 22 de septiembre** y no se han vuelto a contar; el árbol entero, sin `.git`, pesa hoy **599 MB**.
 
-> ⚠️ **Las 360 dudas no son 360 preguntas distintas**: son las veces que aparece la marca, y una
+> ⚠️ **Las 311 dudas no son 311 preguntas distintas**: son las veces que aparece la marca, y una
 > misma duda puede repetirse en tres ficheros. **Lo que la cifra mide es la disciplina, no la
 > ignorancia**: cada una de esas marcas es un sitio donde el proyecto se negó a rellenar un hueco.
 
@@ -125,7 +139,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 | 9 | Chancillería de Valladolid | ⚠️ sentencias leídas; **los pleitos hay que pedirlos** | usuario (`ARCH-07`, `ARCH-08`) |
 | 10 | Fondo Osuna — vaciado sistemático | ⚠️ **el D.89 leído entero** (`TAR-01` ✅); el fondo, no | ambos (`TAR-19`, `TAR-21`, `TAR-22`) |
 | 11 | Floridablanca y Miñano | ✅ cerrado · dos flecos | aquí (`TAR-17`) |
-| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **4 artículos sin abrir** (hechos `TAR-02` a `TAR-06`) | aquí (`TAR-07` a `TAR-10`) |
+| 12 | *Brigecio* — vaciado y lectura | ✅ vaciado cerrado · ⚠️ **3 artículos sin abrir** (hechos `TAR-02` a `TAR-06` y `TAR-08`) | aquí (`TAR-07`, `TAR-09`, `TAR-10`) |
 | 13 | AHP de Zamora | ⚠️ abierto, con cuatro pistas duras y fechadas | usuario (`ARCH-12` a `ARCH-15`) |
 | 14 | IGN / CNIG | ✅ **cerrado**: límite digitalizado (`TAR-11` ✅), códigos catastrales (`TAR-13` ✅) y 🚨 **Pobladura de Trasmonte, localizada** (`TAR-26` ✅) · ✅ **el plano IRYDA de 1975, georreferenciado** (`TAR-12` ✅) | — **frente cerrado** |
 | 15 | Riesco Chueca 2018 — el topónimo | ⚠️ abierto: **hace falta el libro de 2018** | usuario (`LIB-05`) |
@@ -137,7 +151,7 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
 
 ## 4. Lo que se puede hacer desde aquí, sin pedirle nada a nadie
 
-**13 piezas**, y **doce ya hechas**. Por orden de lo que aportan:
+**13 piezas**, y **trece ya hechas**. Por orden de lo que aportan:
 
 1. ✅ **`TAR-01` — el D.89: HECHA el 30-IX-2026.** Las 36 imágenes del **original de 1694**, leídas
    plana a plana. Todo lo que sostenía ese frente descansaba en **una copia de 1842**, y el cotejo
@@ -156,8 +170,12 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
    y sin anotar son **Navianos de Valverde** (DGC 49151) y **Villanázar** (DGC 49285). De paso se
    ha medido quién hay al otro lado de la raya: **Villanázar comparte 3.729 m** con Colinas —el
    23 % del perímetro— y **Navianos no lo toca**, se queda a 1.104 m.
-3. **`TAR-07` a `TAR-10`: los cuatro artículos de *Brigecio* que quedan sin abrir.** Los cuatro son
-   **escaneos sin capa de texto** y hay que leerlos a imagen, que es lento.
+3. **`TAR-07`, `TAR-09` y `TAR-10`: los tres artículos de *Brigecio* que quedan sin abrir.** Los
+   tres son **escaneos sin capa de texto** y hay que leerlos a imagen, que es lento.
+   ✅ **`TAR-08`, hecho el 1-X-2026**: «Las Peñas» de Quiruelas **nombra a «Las Bodegas» de
+   Colinas dos veces**, añade dos yacimientos calcolíticos inéditos al lado y, cotejado con la
+   fuente primaria, saca **la fecha absoluta que al valle le faltaba**: 2330 a. C. en Los Bajos
+   → [inventario § 8.3](03-archivos/inventario-documental.md).
    🚨 **`TAR-06`, hecha el 1-X-2026**, y era el que más prometía: **Pobladura de Trasmonte
    tiene ficha propia** entre los 45 despoblados del conde, con **lindes, medidas, un molino en la
    Almucera en 1446** y la tabla de vecindarios 1530/1591. **Y reabre dónde estuvo**: sus dos
@@ -188,11 +206,10 @@ no hay un blasón. Y el método propio obliga a **justificar cuartel por cuartel
    imágenes publicadas llevan firma al pie**, y las condiciones de los cuatro archivos están
    leídas una por una. **La del IGN no se cumplía** —pide una fórmula, no una mención— y se
    corrigió el mismo día → [`CREDITOS.md`](../CREDITOS.md).
-6. **`LIMP-01`, `LIMP-02`** — higiene: **las ejecutorias están duplicadas en el disco** (una copia
-   con la extensión rota `.jg`) y el índice de facsímiles da una cifra que se quedó atrás.
-
-> ⚠️ **`LIMP-01` borra ficheros.** Están verificados idénticos por md5 y la copia buena es
-> `facsimil/ejecutoria-*`, pero **no se toca nada sin autorización expresa**.
+6. ✅ **`LIMP-01` y `LIMP-02` — HECHAS el 3-X-2026, con autorización expresa.** Las tres carpetas
+   duplicadas de las ejecutorias **ya no están** —28 planas, 10,8 MB, verificadas copia byte a
+   byte antes de borrar—, y el índice de facsímiles da ahora la cifra de hoy **y dice qué
+   cuenta**, que es lo que le faltaba → [`facsimiles.md`](facsimiles.md).
 
 ---
 

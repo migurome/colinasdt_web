@@ -1450,6 +1450,72 @@ engrosados. **Sin** triángulos incisos rellenos de puntos ni decoración a pein
 > **5670 ± 60 BP** que los propios autores consideran **«a todas luces errónea»**; la cronología se
 > fija por la cultura material. **No citar esa fecha como dato del valle.** Y para Las Bodegas no
 > hay datación absoluta: su adscripción es por paralelo con Los Bajos II.
+>
+> 🚨 **Pero esta cautela estaba incompleta, y se corrige el 1 de octubre de 2026.** <s>El valle
+> no tiene datación absoluta buena.</s> **Sí la tiene**, y en el mismo artículo que esta ficha
+> resume. Lo que ocurre es que «Los Bajos» da **dos** fechas y aquí sólo se había leído la mala:
+>
+> | Muestra | Fecha | Qué dicen los excavadores |
+> |---|---|---|
+> | — (campaña anterior) | **5670 ± 60 BP** | «**a todas luces errónea**» — no se usa |
+> | **carbón vegetal de la base del hoyo n.º 8** | **4280 ± 70 BP = 2330 a. C.** | la cultura material remite «a un momento pleno de la Edad del Cobre, **ratificado por la datación radiocarbónica**» |
+>
+> ★★ **O sea que el paralelo de Las Bodegas tiene ahora un número detrás**: «Los Bajos» está
+> fechado en **2330 a. C.** por carbón de la base de un silo. Y la referencia alta del Calcolítico
+> meseteño la pone **«Las Pozas»** de Casaseca de las Chanas, cuyo **hoyo 1 se remonta a
+> 2474 a. C.** —la fecha más arcaica del Calcolítico de la Meseta—. Entre esas dos cifras cabe el
+> desarrollo de estos poblados: **la segunda mitad del III milenio a. C.**
+>
+> ⚠️ **Lo que sigue sin cambiar:** para **Las Bodegas** sigue **sin haber datación absoluta**. Lo
+> que ha mejorado no es su fecha, sino **el anclaje del paralelo** del que cuelga. Decirlo así.
+
+#### ✅ `TAR-08` — «Las Peñas» de Quiruelas, leída entera (1 de octubre de 2026)
+
+MARTÍN BENITO, J. I. y BLANCO MAJADO, J.: «El yacimiento calcolítico de "Las Peñas" (Quiruelas de
+Vidriales, Zamora)», *Brigecio* **6** (1996), pp. 11-29. **19 planas, leídas a imagen.**
+
+★ **Nombra a Colinas dos veces, y las dos colocan a «Las Bodegas» en compañía:**
+
+> «El área es rica en yacimientos calcolíticos. En similares características de emplazamiento
+> —en llanura— se localizan **dentro de un radio menor a 5 km**: "Los Arenales" y "Sitramina"
+> (yacimientos **inéditos** en Quiruelas de Vidriales y Sitrama de Tera, respectivamente),
+> **"Las Bodegas" (Colinas de Trasmonte)** y "Los Bajos", en Vecilla de Trasmonte), **todos ellos
+> en la margen izquierda del Tera**» — p. 12
+
+> «Las excavaciones de urgencia efectuadas en "Las Cañamonas" de S. Cristóbal de Entreviñas,
+> "Los Bajos" de Vecilla de Transmonte, **"Las Bodegas" de Colinas de Trasmonte** y "Los Paradores
+> de Castrogonzalo" … evidencian una importante ocupación del territorio durante el III milenio
+> a.C. En el caso del **valle del Tera** podríamos hablar incluso … de una **densa ocupación**,
+> toda vez que son varios los yacimientos calcolíticos precampaniformes muy próximos entre sí»
+> — p. 25
+
+★ **Y aparecen dos yacimientos que este inventario no tenía**: «**Los Arenales**» (Quiruelas de
+Vidriales) y «**Sitramina**» (Sitrama de Tera), **inéditos en 1996**. No son los cinco del
+proyecto de regadío: son otros dos, conocidos por prospección. ⚠️ **No se les conoce coordenada**,
+y el artículo no la da.
+
+**Lo que el artículo permite decir del entorno de Las Bodegas** —por pertenecer al mismo grupo,
+no por haberlo visto en Colinas—:
+
+- El emplazamiento de estos poblados **carece de condiciones defensivas**: «los hábitats
+  precampaniformes de Los Valles de Benavente **no tuvieron especial preocupación por la defensa**
+  y sí, en cambio, **por la explotación de las inmediatas vegas** en las que se ubican» (p. 26).
+- Hay **metalurgia del cobre autóctona** en la comarca: crisoles de fundición en «Las Pozas» y
+  «Las Cañamonas», y en **Vecilla de Trasmonte** —a tres kilómetros— **un puñal y un cincel**.
+- Y una **red de comercio de variscita**: las cuentas de collar de Las Peñas responden al grupo de
+  **Palazuelo de las Cuevas**, y el mineral en bruto llegaba desde **las labores mineras del
+  Aliste**.
+
+> 🚨 **Una errata de la bibliografía, cazada porque el proyecto tiene la fuente primaria.**
+> Este artículo cita (p. 27) la fecha de «Los Bajos» como **«2230 a. C.»**. Los excavadores, en
+> el *Anuario* de 1993 que este proyecto tiene descargado, escriben **«4280 ± 70 B.P.
+> (2330 a. C.)»**. Son **cien años de diferencia** y la buena es la de los excavadores.
+> **Este proyecto cita 2330 a. C.**, y deja dicho por qué.
+
+> ⚠️ **Y lo que el artículo NO da**: ni una sola línea sobre **el material de Las Bodegas**, ni
+> su situación exacta. Para eso sigue haciendo falta el *Anuario* de 1993, que es de donde sale
+> todo lo de arriba en esta misma ficha.
+
 
 ---
 
