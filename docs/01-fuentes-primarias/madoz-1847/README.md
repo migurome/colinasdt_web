@@ -221,8 +221,55 @@ Es el dato más importante de la entrada para el **topónimo** y para el **emble
 - Concuerda con Miñano, que en 1826 describe el pueblo «**cercado de colinas**», y con la situación
   «en una ladera con esposicion al S.».
 
-> **Cautela.** Que el monte se llame como el pueblo **no dice cuál nombró a cuál**. Y «San Juanico»
-> hay que localizarlo: es un topónimo que el proyecto no tenía. → `04-cartografia`.
+> **Cautela.** Que el monte se llame como el pueblo **no dice cuál nombró a cuál**.
+> <s>Y «San Juanico» hay que localizarlo: es un topónimo que el proyecto no tenía.</s>
+
+#### ✅✅ `TAR-15` — «San Juanico», localizado (5 de octubre de 2026)
+
+**Es San Juanico el Nuevo**, localidad de **Camarzana de Tera**. Lo decide **el propio Madoz**, que
+es la mejor prueba disponible: en su entrada de **Camarzana** escribe que el término confina con
+«**San Juanico**, Santa Marta, Calzadilla y Junquera». **La forma corta «San Juanico» es suya, y
+designa ese lugar.**
+
+| | |
+|---|---|
+| Qué es | **San Juanico el Nuevo**, localidad del municipio de **Camarzana de Tera** (Zamora) |
+| Dónde | **42,0285 N · −6,053** · **777 m** de altitud, «en lo alto del valle del Tera» |
+| Desde Colinas | **20,7 km**, rumbo **277º — al Oeste**, valle del Tera arriba |
+| Desde cuándo | poblado **entre 1420 y 1440**, con vecinos de **San Pedro de Ceque**: es de los pueblos más jóvenes de la comarca |
+
+### ✅ La dirección cuadra
+
+La cordillera que describe Madoz iría **al oeste**, remontando la margen del Tera, y **sube**:
+Colinas y su vega andan por los **710-720 m** —San Juan-El Valle está a **719**— y San Juanico, a
+**777**. Que su propia descripción lo ponga «**en lo alto del valle del Tera**» encaja con que sea
+**el extremo alto de la cordillera**, y con que sea **el último pueblo de ese lado del valle**.
+
+### 🚨 Pero la medida **no cuadra**, y se dice
+
+Madoz da «**una cordillera de 2 horas hasta San Juanico**». **Son 20,7 km**, que a pie son
+**3,8 horas** a buen paso y **4,6** a paso normal. **El doble largo de lo que escribe.**
+
+> ⚠️ **Dos lecturas, y no se elige.** O **la estimación es mala** —Madoz compila de informantes
+> locales y sus distancias fallan a menudo, cosa que esta misma ficha ya ha documentado—, o
+> «**2 horas**» **mide la cordillera y no el camino**: el tramo de cerros que se ve desde el pueblo,
+> con San Juanico nombrado como el punto hacia el que va, no como el final medido.
+>
+> **Lo que sí queda cerrado es el topónimo**, que era la tarea: **San Juanico existe, está en el
+> mapa y es el de Camarzana.** La cifra de Madoz queda anotada como **discrepante**, no corregida:
+> no se enmienda a una fuente, se mide contra ella.
+
+### 📏 Y la respuesta estaba en casa
+
+Este proyecto **ya tenía el nombre**, en otra ficha y por otra puerta: **«San Juanico el Nuevo»**
+aparece en el **Censo de Pecheros de 1526** con **19 pecheros** y en el de **1591**, y allí se
+escribió —con razón, para aquella pregunta— que «**está en Camarzana de Tera, no en Colinas**»
+→ [`censo-pecheros-1528`](../censo-pecheros-1528/README.md). **Se descartó para una pregunta y no
+se volvió a traer para la otra.** Es el riesgo de las fichas separadas, y conviene anotarlo.
+
+> ★ **Y con `TAR-18` la serie de ese pueblo gana un punto**: la relación del obispo de Astorga de
+> **1587** lo trae como «**S. Juan el nuevo**», **1 pila, 17 vecinos**, en el arciprestazgo de
+> Valdevidriales. Queda: **19 pecheros (1526) · 17 vecinos (1587) · 8-14 (1591)**.
 
 ### 4. La raya del término, dicha por la fuente
 

@@ -122,6 +122,21 @@ señorío:
 > | «**Sant Juan el Nuevo**» — San Juanico el Nuevo — **19** pecheros — 49.033 |
 
 ⚠️ **Esto no resuelve el `[?]`**: San Juanico el Nuevo está en **Camarzana de Tera**, no en Colinas.
+
+> ✅✅ **Pero sí resuelve otra cosa, y se vio el 5 de octubre de 2026 (`TAR-15`).** **Madoz**, al
+> describir Colinas, dice que su monte encinal «forma con otros **una cordillera de 2 horas hasta
+> San Juanico**», y el proyecto llevaba un año con ese topónimo sin localizar. **Es éste**: el
+> propio Madoz usa la forma corta «San Juanico» en su entrada de **Camarzana**. Está a
+> **20,7 km al O** de Colinas, a **777 m**, valle del Tera arriba
+> → [`madoz-1847`](../madoz-1847/README.md).
+>
+> 📏 **La respuesta estaba aquí desde el principio.** Se descartó —con razón— para la pregunta de
+> 1526, y **no se volvió a traer para la de Madoz**. Anotado como lo que es: el riesgo de que cada
+> ficha mire sólo su propia pregunta.
+
+> ★ **Y la serie de ese pueblo gana un punto con `TAR-18`**: la relación del obispo de Astorga de
+> **1587** lo trae como «**S. Juan el nuevo**», **1 pila, 17 vecinos**, en el arciprestazgo de
+> Valdevidriales. Con eso: **19 pecheros (1526) · 17 vecinos (1587) · 8-14 vecinos (1591)**.
 Lo que aporta es que **el topónimo existía como lugar poblado en 1526** y que, por tanto, la
 pregunta sobre el «San Juan» de Colinas no se contesta apuntando a éste.
 
