@@ -223,6 +223,28 @@ Osuna-Benavente es mucho mayor y merece un vaciado propio.</s>
 > 📏 **Y una discrepancia del catálogo, anotada:** PARES describe `C.457,D.36` como *Unidad
 > Documental Simple*, «**1 Documento(s) en Papel. Hoja(s)**», y el visor tiene **85 imágenes**.
 
+> ✅✅✅ **`TAR-31` — el apeo se leyó el mismo día, entero, y dijo lo que se le pedía**
+> (5 de octubre de 2026, tarde) → [`apeo-cejinas-1663`](../01-fuentes-primarias/apeo-cejinas-1663/README.md).
+>
+> | | |
+> |---|---|
+> | **Qué es** | apeo mandado por la **Contaduría del estado de Benavente**, ante **Manuel Álvarez de Villegas**, notario de Benavente, andado por **tres vecinos de Arcos y tres de Santa Colomba de las Monjas** |
+> | **Cuánto** | **ff. 2r–43v**, 84 planas escritas + cubierta = **85 imágenes**, **tres manos** |
+> | ✅ **Dónde estaba** | encajado entre **Santa Colomba de las Monjas, Santa Cristina de la Polvorosa y Arcos de la Polvorosa**, a la vera del **río Órbigo** —que el apeo nombra— |
+> | ✅ **La parroquia** | hubo iglesia, y **sus tierras las poseía en 1663 la iglesia de Arcos**, con sección propia en el apeo |
+> | 🚨 **El nombre** | **seis grafías en el mismo cuaderno**: *Lexinas, Cexinas, Cejinas, Ceginas, Cesinas, Zesinas* |
+> | ❌ **Colinas** | **no aparece ni una vez** |
+>
+> 🔁 **Y corrige la premisa de `TAR-29`.** El apeo abre diciendo que Lexinas era **término
+> propio** del estado de Benavente, con **raya contra Santa Colomba, contra Arcos y contra
+> Velilla**. El barrido del parcelario miró **uno de cuatro términos posibles**: su negativo sigue
+> siendo cierto y sigue siendo cerrado, **pero no decide** → `TAR-32`.
+>
+> ✅📏 **Y la discrepancia del catálogo queda confirmada**, con moraleja: la unidad que PARES
+> describe como «1 Documento(s) en Papel. Hoja(s)» es **un cuaderno de cuarenta y dos folios**.
+> **El campo de extensión de PARES no es fiable; el tamaño real sólo lo dice el número de
+> imágenes, y el contenido sólo lo dice mirarlas.**
+
 #### 🚨🚨 2. El priorato de San Salvador de Villaverde **también está en un archivo público**
 
 La ficha de `TAR-09` decía que la documentación del priorato está en un **archivo de fundación

@@ -377,7 +377,7 @@ queda, en efecto, **al norte** de Santa Colomba—.
 | Las cuatro grafías | **Vezinas** (1526) · **Ce\[z\]inas** `[?]` (1565 `[?]`) · **Jecinas** (1587) · **Xeçinas** (1591) |
 | Las cifras | **21** pecheros (1526) · **27** vecinos (1587) · **21** vecinos (1591) |
 | Qué era | **parroquia con pila propia** en 1587 —no un pago— |
-| Dónde | **zona norte del término de Santa Colomba de las Monjas** (Zamora) |
+| Dónde | <s>**zona norte del término de Santa Colomba de las Monjas**</s> → 🚨 **término propio**, con raya contra **Santa Colomba de las Monjas**, **Arcos de la Polvorosa** y **Velilla**, y rumbo a **Santa Cristina de la Polvorosa** y al **río Órbigo** (apeo de **1663**) |
 | Hoy | **despoblado**, con el nombre **Cejinas** |
 
 > ★★ **Fuerza del enlace: propuesta fuerte, no identificación cerrada.** Se apoya en **dos
@@ -400,6 +400,46 @@ queda, en efecto, **al norte** de Santa Colomba—.
 > moderna, y pierden nombres—, **pero le quita una pata a la identificación**: la noticia de que
 > allí hubo un «Cejinas» **no recibe confirmación del parcelario**. **La propuesta se queda en
 > ★★ y con una comprobación menos.** Lo que falta es **Riesco Chueca** (`LIB-05`).
+
+> 🚨🚨 **5 de octubre de 2026, por la tarde: hay un apeo de 1663, y lo cambia casi todo.**
+> Se ha descargado y leído entero —**85 planas**— el **`OSUNA,C.457,D.36`** del Archivo Histórico
+> de la Nobleza: el **apeo del despoblado**, mandado hacer por la **Contaduría del estado de
+> Benavente** ante el notario **Manuel Álvarez de Villegas**, y andado por **tres vecinos de Arcos
+> y tres de Santa Colomba de las Monjas**
+> → [`apeo-cejinas-1663`](../apeo-cejinas-1663/README.md).
+>
+> ✅ **El lugar queda situado.** El apeo deslinda con **cuatro rumbos fijos** —«hacia Santa
+> Colomba», «hacia Santa Cristina», «hacia Arcos», «hacia el Río»— y nombra el río: el
+> **Órbigo**. **El despoblado estaba encajado entre Santa Colomba de las Monjas, Santa Cristina de
+> la Polvorosa y Arcos de la Polvorosa.** Es **exactamente** la posición que daba el orden de la
+> relación del obispo de 1587 —entre Sta. Coloma y Sta. Christina—: **lo que era un indicio de
+> lista resulta ser la descripción del terreno**.
+>
+> ✅ **Y la parroquia queda documentada.** El apeo trae una sección entera titulada «**Apeo de las
+> tierras de la Iglesia de Arcos que primero lo fueron de la de Zesinas**», y repite en los
+> deslindes «*tierra de la Iglesia de Cesinas que posee la de Arcos*». **Hubo iglesia, con
+> patrimonio propio, y pasó a la de Arcos** —lo que confirma por otra vía que en 1587 figurase
+> **con pila**, y no como anejo.
+>
+> 🚨 **Y el nombre se escribe de seis maneras en el mismo cuaderno**: **Lexinas, Cexinas,
+> Cejinas, Ceginas, Cesinas y Zesinas** —tres manos, un año, un solo lugar—. **La inestabilidad
+> gráfica que esta identificación necesitaba no hay que suponerla: está documentada**, y en los
+> papeles del propio señorío que lo administraba.
+>
+> ⚠️ **Lo que aún así no demuestra.** El apeo **no nombra a Colinas** —ni una vez en cuarenta y
+> dos folios— y **no dice nada de 1528**. La cadena **1587 → 1663 queda cerrada**; el eslabón
+> **«Vezinas» de 1528 sigue siendo propuesta, y se mantiene en ★★**.
+>
+> 📏🔁 **Y obliga a estrechar el negativo de `TAR-29`.** El apeo dice en su primera línea que
+> Lexinas era **término propio** —«*el término despoblado de Lexinas, propio de este Estado de
+> Benavente*—», con **raya contra Santa Colomba, contra Arcos y contra Velilla**. De modo que
+> <s>«el parcelario no lo confirma, y el negativo es cerrado»</s> → **el parcelario *de Santa
+> Colomba* no lo confirma, y ese negativo sigue siendo cerrado —pero mide uno solo de los términos
+> posibles**. **Arcos y Santa Cristina no se han barrido** → `TAR-32`.
+>
+> ★ **Y una comparación que vale la pena dejar escrita.** En la relación de 1587, **Colinas
+> declaró 34 vecinos y Jecinas 27**. Dos lugares del mismo tamaño, del mismo señorío y del mismo
+> obispado. **De uno, en 1663, quedaba una calle.**
 
 > 🚨📏 **Y esto corrige una interpretación de este proyecto.** Aquí se escribió que el lugar
 > sería <s>«un despoblado **vecino de Colinas**»</s> y <s>«un vecino desaparecido de Colinas»</s>.

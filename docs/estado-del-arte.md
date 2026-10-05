@@ -239,9 +239,14 @@ aportan:
 4. ✅✅ **`TAR-14`, `TAR-18`, `TAR-21` y `TAR-22`, las cuatro hechas.** 🚨 Las dos últimas, el
    **3-X-2026 y con la misma fuente**: la relación de pilas y vecinos del **obispo de Astorga de
    1587**, leída para otra cosa, **identifica los dos topónimos que el proyecto no sabía situar**.
-   «**Xeçinas**» es **Cejinas**, despoblado de Santa Colomba de las Monjas —y **no estaba junto a
+   «**Xeçinas**» es **Cejinas** —y **no estaba junto a
    Colinas**: eso era el renglón, no el suelo—; y «**la Verdenosa**» es **Verdenosa de la
    Polvorosa**, que en **1925** se fundió con Redelga y pasó a llamarse **Santa María de la Vega**.
+   🚨 **Y el 5-X-2026, `TAR-31`: el apeo de 1663 del propio señorío** (`OSUNA,C.457,D.36`,
+   85 planas leídas) **sitúa el despoblado** entre **Santa Colomba de las Monjas, Santa Cristina
+   de la Polvorosa y Arcos de la Polvorosa**, a la vera del **Órbigo**, y lo llama
+   **término propio** —no un pago de Santa Colomba, como aquí se escribió— →
+   [el apeo de 1663](01-fuentes-primarias/apeo-cejinas-1663/README.md).
    <s>cuatro dudas concretas que se pueden cerrar con lo
    que ya hay en casa o en abierto, incluida la verificación del recuento de **1587**.</s>
 5. ✅ **`TAR-24` — la procedencia de cada imagen: HECHA el 30-IX-2026**, en v0.40. **45 de 45

@@ -337,8 +337,47 @@ La segunda no recibe confirmación del parcelario**, que era la vía más barata
 
 > ⚠️ **Y una trampa que conviene señalar antes de que alguien caiga en ella.** El barrido devuelve
 > en ese mismo término un paraje llamado «**LAS VECILLAS**» (código 33, polígonos 1 y 3).
-> **No tiene nada que ver**: las grafías de 1587 y 1591 empiezan por **J/X** —«Jecinas»,
-> «Xeçinas»—, y eso no se reduce a «Vecillas». **Parecido de oído, como el de «Valancinas».**
+> **No tiene nada que ver.** <s>Las grafías de 1587 y 1591 empiezan por **J/X**, y eso no se reduce
+> a «Vecillas».</s> 🔁 **Ese argumento era malo y se corrige**: la grafía de 1528 empieza
+> justamente por **V** («Vezinas»), y el apeo de 1663 añade formas en **L‑, C‑ y Z‑**, de modo
+> que **la inicial no distingue nada**. **Lo que distingue es el cuerpo de la palabra**:
+> ‑*(x/j/g/s)inas* frente a ‑*cillas*. **Parecido de oído, como el de «Valancinas».**
 
 *Barrido del 5 de octubre de 2026. Los datos proceden de la Sede Electrónica del Catastro
 (Dirección General del Catastro, Ministerio de Hacienda) y deben citarse así.*
+
+---
+
+# 🚨🔁 `TAR-31` — el apeo de 1663 **estrecha este negativo** (5 de octubre de 2026, tarde)
+
+Horas después de cerrar `TAR-29` se leyó entero el **apeo del despoblado**, `OSUNA,C.457,D.36`
+(Archivo Histórico de la Nobleza, 85 planas, 1663)
+→ [`apeo-cejinas-1663`](../01-fuentes-primarias/apeo-cejinas-1663/README.md). **Dice algo que
+cambia el alcance de lo que aquí se afirmó.**
+
+> «*Copia del Apeo de las tierras que gozan varias Comunidades y Particulares en **el término
+> despoblado de Lexinas, propio de este Estado de Benavente***»
+
+Y a lo largo del cuaderno: «**la raya de Santa Colomba**», «**la raya del Lugar de Arcos**»,
+«**la raya de Velilla**», y el rumbo «**hacia Santa Cristina**».
+
+| | |
+|---|---|
+| ✅ **Sigue en pie** | **el Catastro de hoy no tiene en Santa Colomba de las Monjas ningún paraje llamado Cejinas**. El argumento alfabético no se toca |
+| 🔁 **Se estrecha** | <s>«el parcelario no lo confirma»</s> → **el parcelario de Santa Colomba no lo confirma** |
+| 🚨 **Y por qué** | en 1663 **Lexinas era término propio**, no un pago de Santa Colomba. Lindaba con **cuatro**: Santa Colomba, Arcos, Velilla y, por rumbo, Santa Cristina. **Se barrió uno** |
+
+> 📏 **De dónde venía la premisa, y por qué falló.** La idea de buscar en Santa Colomba no salía
+> de una fuente histórica: salía de **una descripción divulgativa** que ponía el despoblado «*en la
+> zona norte de ese término*». El barrido comprobó bien **lo que se le pidió comprobar**; lo que
+> estaba mal planteado era **la pregunta**. ★ **Y es el orden correcto de trabajo el que lo arregla:
+> primero el documento, después el parcelario.**
+
+> ⚠️ **Ruta intentada hoy y fallida, que se anota porque el hueco también es un dato.** Se quiso
+> barrer en el acto **Arcos de la Polvorosa** y **Santa Cristina de la Polvorosa**. El servicio
+> `ovcservweb` del Catastro **rechaza la conexión** desde esta máquina —`ECONNRESET`—, probado
+> con **dos clientes distintos** (`requests` y el contexto del navegador) y por **dos rutas**,
+> pocas horas después de haberle pedido las 233 parcelas de `TAR-29`. **No es un negativo del
+> Catastro: es una puerta cerrada hoy.** Queda como **`TAR-32`**.
+
+*Nota añadida el 5 de octubre de 2026.*
