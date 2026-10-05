@@ -73,6 +73,27 @@ signatura o edición de cada cosa y dónde está, en **[`../facsimiles.md`](../f
 > exactamente lo que el proyecto se prohíbe: una afirmación que hay que creer. Durante dos días
 > hubo bastantes.
 
+### 📏 0.1 Un tope que conviene saber antes de pedirle nada a PARES
+
+> **Comprobado el 5 de octubre de 2026 (`TAR-34`), y se escribe aquí para no volver a probarlo
+> cuatro veces:** **los archivos históricos provinciales no están en PARES.**
+
+| Buscado en PARES | Qué devuelve |
+|---|---|
+| «Archivo Histórico Provincial de **Zamora**» | **1 ficha, y es del AHN** (el Beato de Tábara) |
+| «Archivo Histórico Provincial de **Valladolid**» | **2 fichas**, y son **de la Chancillería y del Centro Documental de la Memoria Histórica** |
+| «protocolos notariales» + Benavente | **0 fichas** |
+
+En los tres casos lo que aparece son **documentos de otros archivos que mencionan al provincial**,
+no fondos servidos por él. PARES sirve los **archivos estatales**; los provinciales dependen de
+las comunidades autónomas y **van por su cuenta**.
+
+> ⚠️ **Cuatro tareas del registro comparten este tope, y ninguna avanza en línea:**
+> **`ARCH-10`** (libros maestros del Catastro, AHP Zamora) · **`ARCH-11`** (lo mismo por
+> Valladolid) · **`ARCH-14`** (ventas de bienes de propios) · **`ARCH-28`** (protocolos de
+> Benavente del último cuarto del XVI). **Las cuatro son de visita o de petición**, y no por
+> falta de haberlo intentado.
+
 ---
 
 ## 1. Archivo Histórico Nacional (AHN)
