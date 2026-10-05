@@ -704,7 +704,8 @@ feed.**
 Documentacion/                          Fuentes aportadas por el equipo (PDF originales)
 docs/
   estado-del-arte.md                    ★★ Qué se sabe, qué falta y quién puede conseguirlo
-  cronologia.md                         ★ Toda la historia fechada, con signatura por línea
+  cronologia.md                         ★ Toda la historia fechada — y con el papel en casa
+  cronologia-pendiente-de-papel.md      ★ Lo fechado y localizado que aún no se ha visto
   facsimiles.md                         ★ Dónde está el papel detrás de cada dato — 412 ficheros
   01-fuentes-primarias/
     osuna-astorga/

@@ -1,14 +1,25 @@
 # Cronología documentada de Colinas de Trasmonte
 
-> **Qué es esto.** Una sola línea de tiempo con **todo lo que el proyecto tiene fechado y con
-> signatura**, a 23 de septiembre de 2026. No añade nada nuevo: **reúne**, y al reunir enseña dónde
-> están los huecos.
+> **Qué es esto.** Una sola línea de tiempo con lo que el proyecto tiene fechado, con signatura
+> **y con el papel delante**. No añade nada nuevo: **reúne**, y al reunir enseña dónde están los
+> huecos.
 >
-> **Regla de la tabla:** cada fila lleva **fuente**. Si no tiene fuente, no está en la tabla.
-> La columna **«qué es»** distingue lo **documentado** de lo **interpretado**, que es el criterio
-> del proyecto.
+> ## 🚨 Regla de la tabla, endurecida el 5 de octubre de 2026
 >
-> ⚠️ Lo que aparece con `[?]` está dudoso **en la fuente o en la lectura**, y se dice dónde.
+> **Antes:** <s>cada fila lleva **fuente**; si no tiene fuente, no está en la tabla.</s>
+>
+> **Ahora:** cada fila lleva fuente **y el proyecto tiene esa fuente**. **No basta con que el
+> documento exista y esté citado: hay que haberlo visto.** Lo que depende de una edición por
+> comprar, de un legajo por pedir o de un facsímil por digitalizar **no entra aquí**: está en
+> **[`cronologia-pendiente-de-papel.md`](cronologia-pendiente-de-papel.md)**, con lo que hace
+> falta para traerlo.
+>
+> 📏 **Por qué.** Una cronología es lo primero que alguien lee y lo último que comprueba. Si
+> mezcla lo leído con lo citado de oídas, **presta a lo segundo la autoridad de lo primero**.
+> Separarlas no quita nada: **pone cada cosa donde se puede defender**.
+>
+> **Salieron trece filas.** La columna **«qué es»** sigue distinguiendo lo **documentado** de lo
+> **interpretado**, y lo que aparece con `[?]` está dudoso **en la fuente o en la lectura**.
 
 ---
 
@@ -18,17 +29,22 @@ El enclave que la documentación temprana nombra es **Castroferrol**, y su relac
 razonada —no dada por hecha— en
 [`castroferrol-962-1170/`](01-fuentes-primarias/castroferrol-962-1170/README.md).
 
+> 🚨 **Esta sección quedó casi vacía al endurecer la regla, y conviene decir por qué antes de
+> que nadie saque la conclusión equivocada.** **No es que no haya documentación altomedieval: es
+> que el proyecto no la tiene delante.** Nueve de sus once filas —**962, 1006, 1015, 1060, 1073,
+> 1077 y 1170** entre ellas— dependían de **tres colecciones diplomáticas publicadas que no están
+> en casa**: Ruiz Asencio (León), Cavero Domínguez y Martín López (Astorga) y Quintana Prieto
+> (Santa Marta de Tera). **Están localizadas, con volumen y número de documento**, y esperan en
+> [`cronologia-pendiente-de-papel.md`](cronologia-pendiente-de-papel.md).
+>
+> 📏 **Entre ellas, la más importante del proyecto:** la mención de **1073**, «*uilla que dicunt
+> Colinas, in riba de Teira*». **Sale de la tabla no porque se dude de ella, sino porque viene de
+> un artículo y no del diploma.** Es, con diferencia, **la fila que más urge recuperar**.
+
 | Año | Qué | Fuente | Qué es |
 |---|---|---|---|
-| **962** | Una viña en el entorno de Castroferrol linda con la de **Iahia**. **Todavía no hay monasterio.** | RUIZ ASENCIO, *Col. doc. catedral de León*, vol. II, doc. 353 | documentado |
 | **s. X, 2.ª mitad** `[?]` | ★★ **La catedral de León tiene intereses en Colinas**: su colección documental trae referencias a «**Villanázar, Colinas de Trasmonte o Castroferrol**» | GONZÁLEZ RODRÍGUEZ, *Brigecio* 17 (2007) → [`castroferrol-962-1170/`](01-fuentes-primarias/castroferrol-962-1170/README.md), §8 | `[?]` **el autor no identifica el documento concreto de Colinas**; no se atribuye ninguno |
-| **1006** `[?]` | Donación de **Oma Iuve**; el monasterio es de **San Salvador**, con la abadesa **Benedicta** | CAVERO DOMÍNGUEZ y MARTÍN LÓPEZ, *Col. doc. catedral de Astorga*, I, doc. 200 | ⚠️ **la fecha es una enmienda, no una lectura** |
-| **1015** | El monasterio es de **San Miguel Arcángel y Santa María**. Aparecen los habitantes, con nombres **mozárabes**: Absub, Muza, Hauiue, **Nazarus**, Salaman, Cidi Abzeidiz | *Ibid.*, doc. 214 | documentado |
-| **1060** | Castroferrol cae, en la división de las heredades de Osorio Fernández y doña Visclávara, en manos de **Diego Muñoz** | RUIZ ASENCIO, vol. IV (1032-1109), **doc. 1121** | documentado |
-| **1073** | 🚨🚨🚨 **COLINAS APARECE POR SU NOMBRE**: «*uilla que dicunt Colinas, **in riba de Teira***». **La mención más antigua del pueblo que el proyecto conoce**, cuatrocientos cincuenta y tres años antes del Censo de Pecheros | RUIZ ASENCIO, *Col. doc. Catedral de León*, IV (1032-1109), León 1989, **doc. 1186**, cit. GONZÁLEZ RODRÍGUEZ, *Brigecio* 17 (2007) | ⚠️ **localizado, no leído**: viene de un artículo, no del facsímil; y el diploma escribe «Colinas» a secas |
-| **1077** | El **castro de Mózar**, Tera abajo, cerca ya de su desembocadura en el Esla | *Ibid.* | documentado |
 | **1129** | ★★★ *Castro Ferronnio* es **hito del coto monástico de Santa Marta de Tera**, confirmado por **Alfonso VII** «según fue fijado por su bisabuelo Fernando I». El texto nombra una **vereda**, un **carvalio**, una **carral**, **San Pelayo**, la **carral de Comdesa**, **Villa Aceif** y **Axarifes** | QUINTANA PRIETO, *Santa Marta de Tera*, 1991, **doc. XI** *(transcrito en nota 25 del artículo que el proyecto sí tiene)* | documentado |
-| **1170** | **Fernando II** revalida esos límites por privilegio de confirmación | *Ibid.*, **doc. XII** | documentado |
 
 > ⚠️ **Nada de lo anterior dice «Colinas».** Dice *Castroferrol*. La identificación y el enredo con
 > Villaferrueña están discutidos en la ficha, no resueltos aquí.
@@ -42,11 +58,9 @@ razonada —no dada por hecha— en
 | **1526** | ★★★ **«Colinas» — 25 vecinos pecheros.** Es la **medición de población más antigua** que el proyecto tiene. En la misma lista, dos lugares que nadie ha identificado: «**Vezinas**» (21) y «**Vecilla del Chantre**» (16) | INE, *Censo de Pecheros. Carlos I, 1528*, t. II, fol. **505 vº**, inscr. **45** → [`censo-pecheros-1528/`](01-fuentes-primarias/censo-pecheros-1528/README.md) | documentado |
 | **1526** | ★★★ **«Pobladura de Trasmonte — Despoblado por la peste»**, 15 pecheros. Lo anota el escribano, no el editor | *Ibid.*, fol. **507 rº**, inscr. **102** | documentado; ⚠️ **no dice qué peste**, y la identificación moderna del INE (49.236 = Vidayanes) **contradice** la localización del proyecto. ⚠️ **Y no fue el final: en 1591 Pobladura sigue viva, con 11 vecinos** |
 | **1526-1591** | ★★★ **La comarca entera, medida dos veces.** Cotejados los **115** lugares del señorío en 1526 con los **117** de 1591, **no desaparece ninguno**. La villa de Benavente pasa de 379 a 656 pecheros (**+73 %**); su tierra, de 3.302 a 3.602 (**+9 %**); **Colinas, de 25 a 27 (+8 %)**. Dentro del campo no hay tendencia: 57 lugares pierden, 56 ganan | Sumas de los propios censos → [`censo-pecheros-1528/`](01-fuentes-primarias/censo-pecheros-1528/README.md), punto 6 | documentado |
-| **1551** | **Martín Alonso, vecino de Colinas de Trasmonte**, pleitea con Pedro Alonso de Soguillo, de Quintanilla de Urz, **sobre la posesión de cierto número de ovejas**. Es el vecino más antiguo que el proyecto conoce por su nombre | ARCHV, `PL CIVILES, TABOADA (OLV), CAJA 726,1` — ⚠️ **no digitalizado** | documentado |
 | **1561** `[?]` / **1565** `[?]` | ★★ **«Colinas»** —a secas— encabeza un asiento en el **folio 8** del cuaderno de *dezmeros* del conde-duque de Benavente, entre «moratones» y «Ce[z]inas», en un folio que abre «Quiruelas y Grijalua». **La mención más antigua que el proyecto tiene en imagen** | AHNOB, `OSUNA, C.426, D.135` → [`dezmeros-benavente/`](01-fuentes-primarias/dezmeros-benavente/README.md) | documentado; ⚠️ **asiento sin transcribir** y **fecha en disputa** |
 | **1591** | **28 vecinos** (27 pecheros, 0 hidalgos, 1 clérigo) en la provincia de las tierras del Conde de Benavente. ★★ **Y es exactamente el lugar mediano de la provincia**: la mediana de los 117 lugares es de 28 vecinos | Censo de la Corona de Castilla → [`censo-1591/`](01-fuentes-primarias/censo-1591/README.md) | documentado |
 | **1591** | ★★★ **Vecilla de Trasmonte sí está en el censo**, escrita «**Becilla**», con **15 vecinos, 14 pecheros y 1 clérigo** — en la lista de «**lugares hallados demás en esta sacada y Corregimiento de Benabente que pagan servicio**» | *Ibid.*, plana **670** | documentado; ⚠️ **anula un `[?]` del proyecto**: la transcripción anterior paraba una plana antes |
-| **1600-1608** `[probable]` | ★★ El **concejo de Colinas pleitea con el de Vecilla de Trasmonte** «**sobre el aprovechamiento del agua de la fuente o caño llamado *el Calero***» | ARCHV, `PL CIVILES, ALONSO RODRÍGUEZ (OLV), CAJA 368,1` — ⚠️ **no digitalizado**; PARES da las fechas como «probable» | documentado |
 | **1693** | El **Nuncio de Su Santidad** libra mandamiento para que los curas del obispado de Astorga restituyan al conde-duque los diezmos de las «**casas de Rey**». **El provisor de Astorga no lo cumple**, alegando inhibición del «Metropolitano de Salamanca» `[?]` | AHNOB, `OSUNA,C.466,D.90`, img. 45-46; **16 de diciembre de 1693** | documentado |
 | **1694** | 🚨🚨 **Madrid, 19 de enero: el Nuncio amenaza de excomunión al provisor de Astorga.** **D. Federico Caccia** `[?]`, Arzobispo de Milán, Nuncio y Colector General Apostólico bajo **Inocencio XII**, le da **veinticuatro horas** so pena de **excomunión mayor *latae sententiae*** y **200 ducados**, y manda que se le **denuncie por público excomulgado desde los púlpitos** | *Ibid.*, img. 46-47 | documentado; ★★ **es lo que hay detrás del papel que se leyó en Colinas once días después** |
 | **1694** | El **conde-duque de Benavente** aparece titulado «**Sumiller de Corps de la Real Persona de Su Majestad**» | *Ibid.*, img. 45 | documentado |
@@ -67,7 +81,7 @@ razonada —no dada por hecha— en
 | **1694** | El pleito va sobre los diezmos de la «**Casa que llaman de Rey**» —no «cavas»—, la misma **casa diezmera** que el Catastro de 1752 declara en Colinas, «la que elige después de una para sí el cura» | *Ibid.*, D.90 img. 55-58; Catastro de Ensenada, resp. 2.ª | documentado |
 | **1694** | El **provisor del obispado de Astorga**, a pedimento del conde-duque, manda a los curas de **quince lugares** —Colinas entre ellos— **restituirle los diezmos** de las «cavas dezmeras llamadas del Rey», tras pleito ante el Nuncio | *Ibid.*, data de Astorga, **28 de enero de 1694** | documentado |
 | **1848** | 🚨 **La Casa de Osuna autentica ante un juzgado de Madrid sus títulos de 1694 sobre los diezmos de quince lugares, Colinas entre ellos**, frente al **Promotor Fiscal como representante de la Hacienda Nacional**. Auto de **18 de marzo**, cotejo el **20** | AHNOB, `OSUNA,C.466,D.90`, img. 62-68 → [`osuna-astorga/`](01-fuentes-primarias/osuna-astorga/README.md) | documentado; suprimido el diezmo en 1837, esto es **liquidación de derechos**: toca al frente nº 13 |
-| **1706** | El **apeo de Vecilla de Trasmonte** registra un pago **San Pelayo** —el mismo nombre que el mojón de 1129— y sitúa **Pobladura fuera** del término de Colinas | ver inventario §8 | documentado |
+| **1706** | El **apeo de Vecilla de Trasmonte** registra un pago **San Pelayo** —el mismo nombre que el mojón de 1129— y sitúa **Pobladura fuera** del término de Colinas: orienta sus parcelas «azia la vega», «azia Vezilla», «azia **Pobladura**» y «azia **Colinas**» | ✅ MARTÍN BENITO, J. I., «El término de Vecilla de Tramonte en un documento de 1706», *Brigecio* 10 (2000), pp. 133-152 — **PDF en el proyecto** | documentado **por edición**; ⚠️ el apeo original **no se ha visto**, y el proyecto **no tiene su signatura** |
 | **1752** | **27 vecinos**. Término declarado de **2.372 fanegas**. El **río Tera es del conde** (200 r./año) | Catastro de Ensenada → [`catastro-ensenada-1752/`](01-fuentes-primarias/catastro-ensenada-1752/README.md) | documentado; ⚠️ **la cabida declarada es un 24 % baja** |
 | **1752** | **26 casas, y diez de ellas inhabitables.** Un solo clérigo en el pueblo, «**un clérigo presbítero, que es el cura párrocho**» —sin nombre— | *Ibid.*, respuestas 22.ª y 38.ª | documentado |
 | **1752** | ★ El conde cobra en Colinas un derecho menor **llamado «el Santuario»**: «quatro reales y veinte y seis marabedís por otro derecho que llaman **el S[an]tuario**» | *Ibid.*, resp. 2.ª, leído sobre `ensenada-03.jpg` | documentado; ⚠️ **no se sabe qué era ese derecho**, y **no se afirma** relación con la ermita ni con el topónimo *San Juan* |
@@ -104,19 +118,15 @@ razonada —no dada por hecha— en
 
 | Año | Qué | Fuente | Qué es |
 |---|---|---|---|
-| **1833** | Colinas queda en la **provincia de Zamora** | división provincial | documentado |
-| **1834** | **Partido judicial de Benavente** | — | documentado |
 | **1842** | ⚠️ **132**, cifra del **Censo de la Matrícula Catastral** — que el propio INE describe como hecho «**sin rigor, por el procedimiento de imputaciones**», sin fecha de referencia, y que «**no aporta ningún dato numérico de confianza**» | INE, *Alteraciones de los municipios*, metodología | **documentado que la cifra existe; documentado que no vale como medición** |
 | **1847** | **132 almas, 33 vecinos**, «con sus despoblados» | MADOZ, *Diccionario*, t. VI → [`madoz-1847/`](01-fuentes-primarias/madoz-1847/README.md) | documentado |
 | **1857** | Nombrado cura de Colinas **D. Pedro Ramos** | *Gaceta de Madrid*, 22-VII-1857, `BOE-A-1857-7483` | documentado |
 | **1857** | **386 habitantes** — primer censo moderno | INE | documentado |
 | **1860-1889** | ★★ **Desamortización**: siete asientos registran ventas de **bienes de propios** de Colinas, con meses de venta (enero de 1866, mayo de 1873…) | *Gazeta*, refs. en [`boe-gazeta/`](01-fuentes-primarias/boe-gazeta/README.md) | documentado que hubo ventas; ⚠️ **no se ha leído qué ni a quién** |
-| **1863** | **Acta de reconocimiento de las vías pecuarias del término** | AHN, `DIVERSOS-MESTA,746,Exp.38` — ⚠️ **no digitalizado** | documentado |
 | **1870** | Colinas se agrupa, para las elecciones, con Barcial del Barco, Arcos de la Polvorosa, Santa Colomba de las Monjas, **Villanázar**, Sitrama, Santa Croya y Melgar de Tera | `BOE-A-1870-7800` | documentado |
 | **1876** | 🚨 El alcalde **Andrés Pérez** remite al Gobernador Civil **el único sello que «existe y ha existido en este municipio»**: un **escudo real de España** con el nombre del pueblo alrededor. Y añade que, registrado el archivo, **nadie sabe desde cuándo se usa** | AHN, `SIGIL-TINTA_ZAMORA,20,N.31` → [`sello-1876/`](01-fuentes-primarias/sello-1876/README.md) | documentado |
 | **1877** | Colinas en el **«segundo distrito: Micereces de Tera»**; y un itinerario oficial pasa por «Benavente, Santa Cristina, **Vecilla, Colinas, Quiruelas**, Sitrama…» | `BOE-A-1877-1187` y `BOE-A-1877-3272` | documentado |
 | **1894** | El maestro de Colinas es **Valentín Rodríguez** (puesto 76 del escalafón de Zamora) | `BOE-A-1894-6665` | documentado |
-| **1895** | Reconocimiento de la **Cañada Real Sanabresa** (copia en el expediente de 1863) | AHN, `DIVERSOS-MESTA,746,Exp.38` | documentado |
 | **1905** | ★★ Plan de caminos vecinales: «**De Colinas de Trasmonte al Cubo de Benavente** por Quiruelas, Quintanilla, Brime de Urz, Cunquilla, Granucillo, Grijalba, Villaobispo, Santibáñez, Brime de Sog». **Colinas es la cabecera del itinerario** | `BOE-A-1905-3586` | documentado |
 | **1945** | Colinas al **Juzgado Comarcal de Santibáñez de Tera**, con Villanázar — y **sin Quiruelas** | `BOE-A-1945-3382` | documentado |
 | **1950** | **Máximo demográfico: 625 habitantes** de derecho (621 de hecho) | INE | documentado |
@@ -159,12 +169,22 @@ razonada —no dada por hecha— en
 
 Reunirlo todo enseña **dónde no hay nada**:
 
-1. **Entre 1170 y 1526 no hay una sola línea.** ⚠️ *(El 23 de septiembre el hueco se acortó en
-   veinticinco años: era 1170-1551 y ahora es 1170-1526, gracias al Censo de Pecheros.)* Siguen
-   siendo **más de tres siglos y medio** —todo el bajomedievo— sin un documento que nombre al
-   lugar. Es el hueco mayor del proyecto.
+0. 🚨 **Y desde el 5 de octubre de 2026 enseña algo más, que antes quedaba tapado: hasta 1526
+   esta cronología no se sostiene en papel propio.** Al exigir que la fuente **esté en casa**
+   salieron **trece filas**, y **nueve de ellas son anteriores a 1526** —incluida la mención de
+   **1073**, «*uilla que dicunt Colinas*», que es **la más antigua que el proyecto conoce**—.
+   **No se han perdido: están en
+   [`cronologia-pendiente-de-papel.md`](cronologia-pendiente-de-papel.md)**, con el encargo
+   concreto que trae cada una. **Tres libros recuperan siete de las nueve.**
+1. <s>**Entre 1170 y 1526 no hay una sola línea.**</s> 🔁 **Ahora el hueco con papel en casa es
+   mayor: va del siglo X a 1526**, con sólo dos apoyos —la noticia general de González Rodríguez
+   y el deslinde de **1129**, transcrito en la nota 25 de un artículo que sí se tiene—.
+   ⚠️ *(El hueco documental propiamente dicho sigue siendo 1170-1526, y el 23 de septiembre se
+   acortó en veinticinco años gracias al Censo de Pecheros.)* **Son dos cosas distintas y conviene
+   no confundirlas: una es lo que nadie escribió; otra es lo que escribieron y no hemos ido a
+   ver.**
 2. **Entre 1608 y 1752, siglo y medio con un solo dato** (el apeo de Vecilla de 1706, y es de
-   fuera). El XVII de Colinas está vacío.
+   fuera —y se conoce **por su edición**, no por el original—). El XVII de Colinas está vacío.
 3. **El XIX institucional está ahora bien cubierto** —desamortización, curatos, distritos,
    caminos, sello— **pero no hay ni un vecino con nombre entre 1804 y 1894**, salvo el alcalde de
    1876 y el cura de 1857.
@@ -173,9 +193,16 @@ Reunirlo todo enseña **dónde no hay nada**:
    digitalizadas) **está localizada y sin abrir**.
 5. **Las fuentes que llenarían los huecos están identificadas y no leídas**: los seis pleitos
    civiles de la Chancillería (sin digitalizar), los libros sacramentales y de fábrica de Astorga,
-   los protocolos notariales del AHP de Zamora.
+   los protocolos notariales del AHP de Zamora —y estos últimos **no se pueden barrer a
+   distancia**: los archivos históricos provinciales **no están en PARES**
+   → [`inventario-documental.md`, § 0.1](03-archivos/inventario-documental.md).
 
 ---
 
 *Reunida el 23 de septiembre de 2026 a partir de las fichas del propio proyecto. Cada afirmación
 remite a la ficha donde está verificada; esta página no verifica nada por su cuenta.*
+
+*Depurada el 5 de octubre de 2026 al endurecer la regla: sólo entra lo que el proyecto tiene
+delante. Las trece filas que salieron están íntegras en
+[`cronologia-pendiente-de-papel.md`](cronologia-pendiente-de-papel.md) —**ninguna se ha
+borrado**.*
