@@ -21,10 +21,10 @@ septiembre, **el nombre del pueblo escrito en 1073**.
 
 Lo que **no** tiene es lo que sólo se consigue **pidiéndolo en ventanilla o comprándolo**: los libros
 parroquiales de Astorga, los libros maestros del Catastro, los pleitos sin digitalizar de la
-Chancillería y **cuatro ediciones de diplomática medieval**. De las **35 piezas pendientes**, **2 se
-pueden trabajar desde aquí** y **33 necesitan a una persona** —o una compra, o un correo—.
-Otras **veintinueve ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
-**bloqueada por criterio**. Setenta filas en total.
+Chancillería y **cuatro ediciones de diplomática medieval**. De las **35 piezas pendientes**, **1 se
+puede trabajar desde aquí** y **34 necesitan a una persona** —o una compra, o un correo—.
+Otras **treinta ya están hechas**; **cinco** se han dado por **sin vía** y **una** está
+**bloqueada por criterio**. Setenta y una filas en total.
 
 Y hay un desfase que conviene decir en voz alta: **la web va por detrás de la investigación**, por
 decisión expresa. Ver §7.
@@ -35,8 +35,8 @@ decisión expresa. Ver §7.
 
 | | |
 |---|---:|
-| Ficheros de fuente dentro del proyecto | <s>412</s> **359** |
-| Peso del corpus | <s>515 MB</s> **539 MB** |
+| Ficheros de fuente dentro del proyecto | <s>412</s> **367** |
+| Peso del corpus | <s>515 MB</s> **541 MB** |
 | Fichas y documentos de trabajo (`.md`) | **36** |
 | Tablas de datos (`.tsv`) | **21** |
 | Artículos científicos en PDF | **31** |
@@ -48,8 +48,8 @@ decisión expresa. Ver §7.
 | Entradas en la línea temporal publicada | **60** |
 | Marcas de duda `[?]` vivas en la documentación | **311** |
 | Tareas que se podían hacer desde aquí | **32** |
-| …**hechas** | **29** |
-| …pendientes | **2** |
+| …**hechas** | **30** |
+| …pendientes | **1** |
 | …sin vía | **1** |
 
 > 📏 **Recontado el 2 de octubre de 2026**, y esta vez **con la base escrita**, que es lo que

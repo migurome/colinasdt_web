@@ -16,7 +16,7 @@
 
 ~~**Estado a 25 de septiembre de 2026: 412 ficheros de fuente, 515 MB.**~~
 
-**Estado a 3 de octubre de 2026: 359 ficheros de fuente, 539 MB.** *(recontado al cerrar `TAR-10`, con el que el lote de *Brigecio* queda leído entero; entre `TAR-09` y `TAR-10` han entrado **tres PDF** y un recorte)*
+**Estado a 5 de octubre de 2026: 367 ficheros de fuente, 541 MB.** *(recontado al cerrar `TAR-10`, con el que el lote de *Brigecio* queda leído entero; entre `TAR-09` y `TAR-10` han entrado **tres PDF** y un recorte)*
 
 > 📏 **Y esta vez con la base escrita**, que es lo que les faltaba a las cifras anteriores:
 > se cuenta **todo lo que hay bajo `docs/` que no sea `.md` ni `.tsv`** —es decir, **el

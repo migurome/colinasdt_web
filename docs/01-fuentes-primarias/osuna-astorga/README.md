@@ -1082,6 +1082,100 @@ fechado en **Madrid, 24 de enero de 1736**—.
 
 ---
 
+## ✅✅ `TAR-30` — quién nombraba al cura: **el legajo que lo guarda** (5 de octubre de 2026)
+
+> El barrido de `TAR-19` devolvió un expediente del **concejo de Quiruelas contra su señor**. Se ha
+> descargado y leído. **Colinas no sale en él** —se dice primero—, pero **el legajo que lo contiene
+> es exactamente donde vive una de las preguntas abiertas de este proyecto**.
+
+### 🚨 1. La concordia de 1582: un concejo que se quedó con la mitad de su parroquia
+
+**`OSUNA,C.454,D.2`** · 6 planas, resumen archivístico del siglo XVIII, **letra limpia** →
+[`facsimil/patronato-quiruelas-1582/`](facsimil/patronato-quiruelas-1582/)
+
+![El resumen de la concordia](facsimil/patronato-quiruelas-1582/concordia-p02.jpg)
+
+> «Una escrip[tu]ra de **Concordia**, que entre el Ex[celentísi]mo S[eño]r **D[o]n Juan Alphonso
+> Pimentel, 2.º de[l] nombre y 8.º de la Casa**… y de la [otra] **Pedro Alonso el Viejo, Miguel
+> Pérez el Viejo, Lorenzo Bueno y Bernardo Pérez, vecinos del Lugar de Quiruelas** por sí mismos, y
+> en voz y en nombre de los **Jurados, Concejo, Procurador y Hombres buenos** de d[ic]ho Lugar… en
+> **7 días del mes de Noviembre de 1582** años, ante **Estevan de Castro**, es[criba]no y notario
+> p[úbli]co… de la Villa de Benavente: hizieron y otorga[ro]n **sobre la Presenta[ci]ón del
+> Benefi[ci]o Curado de la S[an]ta Igl[esi]a Parrochial de N[uest]ra Señora del referido Lugar**,
+> conviniéndose en que **en la p[ri]m[er]a Vacante presenta[se] el d[ic]ho Conc[ej]o y Vez[in]os; y
+> en la Seg[un]da S. E.: y así subcesiva y Alternativam[en]te en las demás que ocurriesen de ally
+> adelante perpetuam[en]te para siempre jamás**…»
+
+| | |
+|---|---|
+| Qué se pleiteaba | **el derecho de presentación y patronato del curato** de Santa María de Quiruelas |
+| Cómo se arregló | **alternando**: una vacante el concejo, la siguiente el conde, **a perpetuidad** |
+| Quién lo confirmó | el **Lic. Llanos**, canónigo penitenciario y **provisor general del obispado de Astorga**, en Astorga, **19 de febrero de 1583**, ante **Antonio de Ocaris** `[?]` |
+| Y Roma | **Bula de Clemente VIII, 19 de noviembre de 1592** |
+
+> ★★ **Lo que esto demuestra, y no es poco: en este señorío un concejo podía quedarse con la mitad
+> del patronato de su propia parroquia**, por escrito, confirmado por el obispado y por Roma.
+> ⚠️ **Y lo que no demuestra: nada sobre Colinas.** Es Quiruelas. El paralelo da **la forma**, no el
+> hecho.
+
+> ★ **Y la forma rima con dos cosas que el proyecto ya tenía.** El **Catastro de 1752** dice que el
+> conde goza una **casa dezmera** «la que elige **después de una para sí el cura**»; y la **Regla de
+> 1730** da a **Colinas la mitad de los cargos** de la cofradía de la Vega. **Tres instituciones
+> distintas** —diezmo, patronato, cofradía— **y el mismo reparto: uno y uno, alternando.**
+> ⚠️ **Es analogía, no prueba.** Se anota porque describe un modo de hacer, no porque documente un
+> derecho de Colinas.
+
+### 🚨🚨 2. Y la carpetilla del legajo dice dónde hay que buscar
+
+![La carpetilla del legajo 454](facsimil/patronato-quiruelas-1582/carpetilla-leg454-p01.jpg)
+
+> «**LEG. 454, N.º 1-23.** Volumen que contiene… **certificación sobre pertenecer al conde el
+> patronato y presentación de los beneficios curados de S. Pedro de Ceque y otros (1766)**;
+> escr[itura] de **concordia entre el conde y el concejo de Torre del Valle sobre presentación de
+> beneficios (1576-1578)**; Apeo del término de S. [H]ilario (1680)… y **papeles que en su mayoría
+> se refieren al d[erec]ho de patronato y presentación que tenían los condes en los beneficios y
+> curatos del estado de Benavente**.»
+
+> 🚨🚨 **El legajo 454 de Osuna es el legajo del patronato de los curatos del estado de
+> Benavente.** Y Colinas **era** del estado de Benavente. La pregunta «**¿quién nombraba al cura de
+> Colinas?**» —que asoma en el pleito de 1694, en el préstamo de 1756 y en la respuesta 2.ª del
+> Catastro— **tiene aquí su estantería**.
+>
+> ★★ **Dos piezas concretas que hay que ver:**
+> — la **certificación de 1766** sobre los beneficios curados de **«S. Pedro de Ceque y otros»**:
+>   ese «**y otros**» es lo que hay que leer;
+> — la **concordia con el concejo de Torre del Valle, 1576-1578**: **un segundo pueblo** del mismo
+>   señorío que pleiteó lo mismo, **seis años antes** que Quiruelas. **No fue un caso aislado.**
+
+### ✅ 3. Y una duplicidad del catálogo, deshecha
+
+PARES devuelve la **bula de Clemente VIII de 1592** con **dos signaturas**: `OSUNA,C.454,D.1` y
+`OSUNA,CP.105,D.7`. **No son dos documentos.** La segunda imagen de `C.454,D.1` es una **«Ficha
+testigo de documento reinstalado»** del propio archivo:
+
+> «El/los documento/s **OSUNA, C.454, D.1** se han trasladado a **OSUNA, CP.105, D.7**.
+> Responsable: Inmaculada Mora Galán. Fecha: **17/6/2009**.»
+
+> 📏 **Citarlas como dos sería contar dos veces el mismo papel.** La signatura viva es
+> **`OSUNA,CP.105,D.7`**; `C.454,D.1` es la antigua.
+
+### ⚠️ 4. Y un error propio, que la propia regla del proyecto atrapó
+
+> **Se descargaron primero 51 imágenes del documento equivocado.** Al resolver las signaturas se
+> tomó **el primer enlace de la página de resultados de PARES**, que **no es el de la ficha
+> buscada**: lo que bajó fue `OSUNA,C.454,**D.4**`, un «Manuscrito sobre el origen y armas de
+> algunas familias nobles» —una genealogía de los de la Cerda—.
+>
+> **Lo delató el sello del propio folio**, que dice `OSUNA, C.454, D.4`. Es decir: **lo descubrió
+> mirar el facsímil**, que es justo lo que el criterio del proyecto obliga a hacer. Se anota aquí
+> para que nadie repita el atajo: **en PARES, el id hay que casarlo por el título, no por el orden**.
+
+> ⚠️ **Y un negativo técnico**: `OSUNA,CP.77,D.12` y `OSUNA,CP.104,D.11` —las dos piezas
+> apostólicas del priorato de Villaverde— **aparecen como digitalizadas en el catálogo pero el
+> visor no sirve imágenes**. Quedan en `ARCH-26`.
+
+---
+
 ## Nota de reutilización
 
 **Archivo Histórico de la Nobleza**, fondo **Osuna**, signaturas `OSUNA,CT.271,D.16-35` y
