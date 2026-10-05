@@ -181,8 +181,130 @@ Las tres están en el proyecto, con las 28 imágenes y la lectura de las cláusu
 | `OSUNA,CT.271,D.16-35` | Cartas de los obispos de Astorga dirigidas a los duques del Infantado, Béjar, Osuna y Benavente, sobre diferentes asuntos | 1646-01-14 / 1800-12-31 |
 
 **Digitalizado.** Fondo Osuna = archivo de la Casa de Benavente, el señorío al que perteneció
-Colinas en el Antiguo Régimen. Esta unidad es sólo la que PARES asocia al topónimo; el fondo
-Osuna-Benavente es mucho mayor y merece un vaciado propio.
+Colinas en el Antiguo Régimen. <s>Esta unidad es sólo la que PARES asocia al topónimo; el fondo
+Osuna-Benavente es mucho mayor y merece un vaciado propio.</s>
+
+---
+
+### ✅✅ 3.1 `TAR-19` — el barrido del catálogo, hecho (5 de octubre de 2026)
+
+> **Qué se ha hecho, para que se pueda repetir.** **Veinte búsquedas** contra el catálogo de PARES,
+> a cien resultados por página, anotando **todas** las fichas por archivo →
+> [`barrido-pares-2026-10-05.tsv`](barrido-pares-2026-10-05.tsv).
+>
+> ⚠️ **Y lo que este barrido NO puede hacer, dicho primero.** PARES **no tiene HTR para Osuna**:
+> esto busca **en las descripciones del catálogo**, no dentro de los documentos. **Un papel que
+> nombre a Colinas en su interior y no en su título sigue siendo invisible.** El barrido **sube el
+> suelo, no el techo**.
+
+#### 🚨🚨 1. Cejinas está en el archivo del señorío — y era despoblado **en 1663**
+
+| Signatura | Qué es | Fecha |
+|---|---|---|
+| ★★★ **`OSUNA,C.457,D.36`** | «**Apeo del despoblado de Cejinas, en el estado de Benavente**» — *«Copia simple del apeo de diferentes tierras del despoblado de Cejinas… que se hizo en el año **1663**»* · letra **humanística** · ✅ **digitalizado, 85 imágenes, sin restricciones** | **1663** |
+| `OSUNA,C.452,D.235-236` | Correspondencia sobre **un apeo en Cejinas** | 1773 |
+| `OSUNA,C.4208,D.4-21` | Censos del estado de Benavente de **1542 a 1578** | 1542-1860 |
+| `OSUNA,C.3904,D.6-12` | Testimonios del registro de la propiedad de Benavente: fincas de Mariano Té… | 1863 |
+
+> ✅✅ **Esto cierra por otro lado lo que `TAR-29` dejó abierto.** La identificación de
+> «Vezinas / Ce\[z\]inas / Jecinas / Xeçinas» con **Cejinas** se apoyaba en una noticia **no
+> científica**. Ahora hay **cuatro unidades del archivo del propio señorío** que lo nombran, y lo
+> nombran **como despoblado del estado de Benavente** —que es exactamente el señorío cuyos rollos
+> fiscales lo traían pegado a Colinas en el renglón—. **Cejinas deja de ser una noticia de internet
+> y pasa a ser un lugar documentado.**
+>
+> 🚨 **Y acota cuándo se vació.** Tenía **21 vecinos en 1591**; el apeo de **1663** lo llama ya
+> **despoblado**. **Se despuebla entre 1591 y 1663** —setenta y dos años de margen, que es mucho
+> mejor que ninguno—.
+>
+> ⚠️ **Lo que sigue sin probarse** es que ese Cejinas sea el de **Santa Colomba de las Monjas**.
+> **El apeo lo dirá**: un apeo nombra lindes.
+>
+> 📏 **Y una discrepancia del catálogo, anotada:** PARES describe `C.457,D.36` como *Unidad
+> Documental Simple*, «**1 Documento(s) en Papel. Hoja(s)**», y el visor tiene **85 imágenes**.
+
+#### 🚨🚨 2. El priorato de San Salvador de Villaverde **también está en un archivo público**
+
+La ficha de `TAR-09` decía que la documentación del priorato está en un **archivo de fundación
+particular** de Benavente, al que hay que pedir permiso (`ARCH-23`). **Parte de ella está además
+en el fondo Osuna**, catalogada:
+
+| Signatura | Qué es | Fecha | Imágenes |
+|---|---|---|:-:|
+| `OSUNA,CP.77,D.12` | Carta apostólica al obispo de Astorga, **Sancho de Acebes**, para hacer efectiva la toma de posesión | 1510-03-20 | ✅ |
+| `OSUNA,C.468,D.64` | **Toma de posesión del monasterio de San Salvador de Villaverde por Juan Pimentel** | 1510-03-20 | ❌ |
+| ★★★ `OSUNA,C.421,D.72` | **Acta de la toma de posesión que hizo el clérigo Gonzalo Mangaz en nombre de Juan Pimentel** | **1510-05-03** | ❌ |
+| `OSUNA,C.422,D.20` | Carta de poder de los administradores del Hospital de la Piedad | 1524-04-28 | ❌ |
+| ★★★ `OSUNA,C.422,D.21` | **Copia de un motu proprio de Clemente VII a favor de Alfonso Pimentel, V conde** | **1525-10-06** | ❌ |
+| `OSUNA,CP.104,D.11` | Letras apostólicas de Gregorio XIII sobre el Hospital de la Piedad | 1584-12-18 | ✅ |
+| `OSUNA,C.428,D.4` | Las mismas letras apostólicas | 1584-12-18 | ❌ |
+| `OSUNA,C.439,D.69-71` | Nombramiento de **capellán del Priorato** por Juan Ambrosio Pimentel | 1751-12-24 | ❌ |
+| `OSUNA,C.417,D.56` | Promesa de arras de Garci Fernández Manrique a Leonor Pimentel | 1482-03-09 | ❌ |
+
+> 🚨🚨 **Y dos de ellas son documentos que un editor dio por inéditos.** GONZÁLEZ RODRÍGUEZ (2001)
+> publicó en su apéndice, **del *Libro del Priorato* del archivo particular y marcándolos
+> INÉDITOS**, el **acta de toma de posesión de Gonzalo Magaz de 1510, mayo 3** y el **motu proprio
+> de Clemente VII de 1525**. **Las dos tienen ficha en PARES**, con la misma fecha y el mismo
+> clérigo —«Mangaz» en el catálogo, «Magaz» en la edición—.
+>
+> ⚠️ **No se afirma que sean el mismo ejemplar**: pueden ser el original y una copia, o dos copias.
+> **Lo que sí cambia es la vía**: lo que `ARCH-23` planteaba como una gestión ante un patronato
+> privado tiene **una puerta pública**, aunque esas dos unidades **no estén digitalizadas** y haya
+> que pedirlas → [el priorato](../01-fuentes-primarias/priorato-villaverde/README.md).
+
+#### ★★ 3. Quiruelas de Vidriales: un expediente concejo-contra-conde que el proyecto no tenía
+
+| Signatura | Qué es | Fecha | Imágenes |
+|---|---|---|:-:|
+| `OSUNA,C.466,D.6` | Censo sobre unos solares en el término de Quiruelas | **1455-04-10** | ❌ |
+| ★★★ `OSUNA,C.465,D.22` | **«Pleito sobre la posesión de los diezmos de las casas de los municipios del Obispado de Astorga»** | **1563-04-13 / 1593-07-17** | ❌ |
+| `OSUNA,C.454,D.2` | **Concordia** entre el V conde-duque y el **concejo de Quiruelas** | 1582-11-07 / 1583-02-19 | ✅ |
+| `OSUNA,C.454,D.1` | **Bula de Clemente VIII aprobando esa concordia** | 1592-11-19 | ✅ |
+| `OSUNA,CP.105,D.7` | La misma bula | 1592-11-19 | ✅ |
+| `OSUNA,C.454,D.30-31` | **Convenio** entre el conde y el concejo de Quiruelas | 1593-10-26 | ❌ |
+| `OSUNA,C.4208,D.22-31` | Censos del estado de Benavente de 1587 a 1628 | 1587-1860 | ❌ |
+| `OSUNA,CT.336,D.27-61` | Correspondencia de prélados y párrocos del Estado de Benavente | 1793 | ❌ |
+
+> 🚨 **El `C.465,D.22` es el abuelo del pleito que este proyecto tiene entero.** Mismo asunto —los
+> **diezmos de las casas dezmeras del obispado de Astorga**—, **ciento treinta años antes** del
+> despacho de 1694 que se notificó en Colinas. Y **están en cajas contiguas**: el de 1694 es
+> `OSUNA,C.466,D.89-90`. **El pleito de 1694 no empieza en 1694**
+> → [`osuna-astorga`](../01-fuentes-primarias/osuna-astorga/README.md).
+>
+> ★ **Y el concejo de Quiruelas pleiteó con su señor y firmó concordia**, con **bula papal** que la
+> aprueba. Quiruelas es el municipio al que Colinas se incorporó en 1972; en el siglo XVI era **otro
+> concejo del mismo señor**, y uno que se plantó. ⚠️ **Nada dice aún de Colinas**: la concordia
+> habrá que leerla.
+
+#### ⚠️ 4. Los negativos — que también son resultado
+
+| Búsqueda | Fichas |
+|---|---:|
+| «Colinas de Tra**ns**monte» · «Colinas de Tras monte» · «Colinas de Tramonte» | **0** cada una |
+| «**Castroferrol**» | **0 en todo PARES** |
+| «merindad de Valverde» · «Santa Colomba de las Monjas» | **0** |
+| «Pobladura de Trasmonte» | 4, **todas en la Chancillería**, **ninguna en Osuna** |
+| «Valdevidriales» | 2 |
+
+> 📏 **La grafiía del catálogo es una sola: «Colinas de Trasmonte».** Las variantes no devuelven
+> nada, de modo que **no hay fichas escondidas tras otra ortografía**. Es un negativo útil: cierra
+> una vía que había que probar.
+>
+> 🚨 **Y «Castroferrol» no está en ningún catálogo del Estado.** El monasterio del término, que
+> este proyecto documenta desde el siglo X, **no tiene ni una ficha en PARES**. Lo suyo está en la
+> **catedral de Astorga** y en el **AHN por vía de tumbos**, no en la descripción archivística.
+
+#### ★ 5. Y dos cosas de propina
+
+- `OSUNA` trae un «**Amojonamiento del término de Malucanes con el de Tamaral, en Mozar de
+  Valverde**»: **dos topónimos que el proyecto no tenía**, y en el pueblo cuyo artículo de Miñano
+  describe nuestro valle entero (`TAR-17`).
+- «**Verdenosa**» devuelve **21 fichas en la Chancillería de Valladolid**. `TAR-22` la identificó
+  —es **Verdenosa de la Polvorosa**, hoy Santa María de la Vega—; **su archivo judicial es
+  abundante**, por si alguna vez hace falta.
+
+---
+
 
 ---
 
