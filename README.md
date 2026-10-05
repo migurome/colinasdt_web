@@ -706,6 +706,7 @@ docs/
   estado-del-arte.md                    ★★ Qué se sabe, qué falta y quién puede conseguirlo
   cronologia.md                         ★ Toda la historia fechada — y con el papel en casa
   cronologia-pendiente-de-papel.md      ★ Lo fechado y localizado que aún no se ha visto
+  decisiones-pendientes.md              ★★ Lo que espera una decisión — seis asuntos
   facsimiles.md                         ★ Dónde está el papel detrás de cada dato — 412 ficheros
   01-fuentes-primarias/
     osuna-astorga/
