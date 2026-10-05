@@ -327,6 +327,60 @@ en el fondo Osuna**, catalogada:
 
 ---
 
+### ✅✅ 3.2 `TAR-33` — el legajo **454** entero, y lo que sale de él (5 de octubre de 2026)
+
+`ARCH-27` pedía ir a Toledo a ver el legajo del patronato. **Se enumeró primero en PARES, y resultó
+estar en abierto**: **21 unidades devueltas por el catálogo, las 21 digitalizadas**
+→ [`legajo-454-osuna.tsv`](legajo-454-osuna.tsv). Se bajaron y leyeron las que tocaban
+→ [el patronato de 1766](../01-fuentes-primarias/patronato-benavente-1766/README.md).
+
+| Unidad | Qué es | Planas |
+|---|---|---:|
+| ★★★ `C.454,D.19-20` | **la certificación de 1766**: los **siete beneficios** que la casa de Benavente presentaba *in solidum* en el obispado de Astorga **desde 1541** | **157** |
+| `C.454,D.21` | su carpetilla, que fecha las certificaciones (28 y 30 de junio, 2 de julio de 1766) | 1 |
+| ★★ `C.454,D.22-24` | **concordia con el concejo de La Torre del Valle**, Benavente, **4 de marzo de 1576** | 29 |
+| ★★★ `C.454,D.30-31` | **la aprobación apostólica de la concordia de Quiruelas**, Astorga, **26 de octubre de 1593** | 4 |
+| ★★ `C.454,D.42` | **donación del concejo de Villafer** al conde de su derecho de presentación, **9 de julio de 1583** | 1 |
+
+#### ❌ Colinas no está entre los siete
+
+**S. Pedro de Zeque · Bercianos de Vidriales · S. Juan el Nuevo · Olmillos · Aguilar de Tera ·
+Herreros de la Polvorosa**, y la **capellanía de D. Rodrigo en Comonte**. Barridas las 157 planas
+y sus notas marginales, **el nombre de Colinas no aparece**.
+
+> ⚠️ **Y el negativo tiene un límite que hay que respetar.** El auto manda certificar **sólo por
+> los beneficios que la petición expresa**, y la petición reclama patronato ***in solidum***.
+> **Un curato de patronato alterno —la figura de Quiruelas— no saldría en una lista así.**
+
+#### 🚨🚨 Y el dato que vale para todo el proyecto: **por qué Astorga no tiene nada medieval**
+
+Los **cuatro notarios mayores** del tribunal eclesiástico de Astorga cierran su certificación con un
+*otrosí* que nadie les había pedido, y lo firman en **Astorga, 4 de julio de 1766**:
+
+> «**los Papeles que consideramos por más Antiguos, son del siglo de quinientos en adelante**; y no
+> ha llegado a nuestra Noticia que en dichas Notarías se encuentren papeles de mayor Antigüedad:
+> bien que **por tradición se dice que los Instrumentos y papeles antiguos que había en dichas
+> Notarías, se extrajeron de ellas y llevaron a uno de los Pueblos del Reino de Galicia**.»
+
+> 📏 **Esto explica, con la autoridad de quien custodiaba los papeles, un hueco que este proyecto
+> viene topando desde el principio.** No es que no se haya buscado bien documentación medieval de
+> Colinas en Astorga: **en 1766 ya no estaba allí**.
+>
+> ⚠️ **Dicho con su matiz:** los notarios **afirman** el estado de su archivo —nada anterior a
+> quinientos— y **no afirman** el traslado, que dan como «*por tradición se dice*», **sin pueblo y
+> sin fecha**.
+
+#### ★★ Tres concejos, siete años, tres desenlaces
+
+**1576 Torre del Valle** —concordia alterna— · **1582 Quiruelas** —concordia alterna, aprobada por
+juez apostólico en 1593— · **1583 Villafer** —donación del derecho al conde—.
+
+> ★★ **Interpretado:** en el último cuarto del XVI los condes **estaban recogiendo, pueblo por
+> pueblo, el patronato de las parroquias de su estado**. ⚠️ **No hay papel de Colinas**, pero el
+> patrón dice **qué buscar y dónde**: una concordia o una donación **ante escribano de Benavente**,
+> **entre 1570 y 1600**. Eso vive en **protocolos notariales de Benavente**, no en Osuna.
+
+---
 
 ---
 

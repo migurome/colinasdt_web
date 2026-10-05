@@ -123,6 +123,12 @@ señorío:
 
 ⚠️ **Esto no resuelve el `[?]`**: San Juanico el Nuevo está en **Camarzana de Tera**, no en Colinas.
 
+> ✅ **Y el 5 de octubre de 2026 ganó un dato más, por otra vía (`TAR-33`).** La **certificación de
+> 1766** que la casa de Benavente obtuvo del tribunal eclesiástico de Astorga nombra, entre los
+> **siete beneficios curados que los condes presentaban *in solidum* desde 1541**, a «**S[a]n Juan
+> el Nuevo**». **La parroquia de San Juanico la nombraba el conde**
+> → [el patronato de 1766](../patronato-benavente-1766/README.md).
+
 > ✅✅ **Pero sí resuelve otra cosa, y se vio el 5 de octubre de 2026 (`TAR-15`).** **Madoz**, al
 > describir Colinas, dice que su monte encinal «forma con otros **una cordillera de 2 horas hasta
 > San Juanico**», y el proyecto llevaba un año con ese topónimo sin localizar. **Es éste**: el

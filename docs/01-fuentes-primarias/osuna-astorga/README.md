@@ -1174,6 +1174,29 @@ testigo de documento reinstalado»** del propio archivo:
 > apostólicas del priorato de Villaverde— **aparecen como digitalizadas en el catálogo pero el
 > visor no sirve imágenes**. Quedan en `ARCH-26`.
 
+### ✅✅ 5. La cadena, cerrada el mismo día — y el «*y otros*», leído (`TAR-33`)
+
+> **5 de octubre de 2026, tarde.** Se enumeró el legajo 454 en PARES y se bajaron las unidades
+> digitalizadas. **Dos resultados vuelven directamente sobre lo anterior.**
+
+> 🔁 **1. `C.454,D.30-31` no son «dos carpetillas vacías»**, como dice el catálogo. **`D.31`
+> lleva el texto íntegro de la aprobación apostólica de la concordia**, dada en **Astorga el 26 de
+> octubre de 1593** ante **Hernando de Rabanal**, por el **Lic. Ramiro de Soto**, provisor y juez
+> apostólico en virtud de la bula de Clemente VIII. **La cadena de 1582 queda completa hasta su
+> ejecución.**
+>
+> 🚨 **Y el reparto es más fuerte de lo que aquí se pudo decir.** No sólo alternaban: **la
+> primera vacante es del concejo**, y el conde quedaba obligado: «*hubiere de ser y fuese
+> obligado a dar su voz y presentación al tal clérigo que por dicho Concejo fuese presentado*»,
+> **inviolablemente para siempre jamás, con penas y censuras**.
+
+> ✅ **2. El «*y otros*» de la certificación de 1766 ya está leído, y Colinas no está en él.** Son
+> **siete beneficios y una capellanía**: S. Pedro de Zeque, Bercianos de Vidriales, S. Juan el
+> Nuevo, Olmillos, Aguilar de Tera, Herreros de la Polvorosa y la capellanía de D. Rodrigo en
+> Comonte. ⚠️ **Pero son los que la casa presentaba *in solidum*** —y lo de Quiruelas era
+> **alterno**, que es justo la figura que una lista así no recoge
+> → [el patronato de 1766](../patronato-benavente-1766/README.md).
+
 ---
 
 ## Nota de reutilización
