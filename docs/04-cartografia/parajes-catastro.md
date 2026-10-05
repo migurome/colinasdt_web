@@ -374,10 +374,17 @@ Y a lo largo del cuaderno: «**la raya de Santa Colomba**», «**la raya del Lug
 > primero el documento, después el parcelario.**
 
 > ⚠️ **Ruta intentada hoy y fallida, que se anota porque el hueco también es un dato.** Se quiso
-> barrer en el acto **Arcos de la Polvorosa** y **Santa Cristina de la Polvorosa**. El servicio
-> `ovcservweb` del Catastro **rechaza la conexión** desde esta máquina —`ECONNRESET`—, probado
-> con **dos clientes distintos** (`requests` y el contexto del navegador) y por **dos rutas**,
-> pocas horas después de haberle pedido las 233 parcelas de `TAR-29`. **No es un negativo del
-> Catastro: es una puerta cerrada hoy.** Queda como **`TAR-32`**.
+> barrer en el acto **Arcos de la Polvorosa** y **Santa Cristina de la Polvorosa**, y no se ha
+> podido. El diagnóstico, afinado, es éste:
+>
+> | Host | Resultado |
+> |---|---|
+> | `ovc.catastro.meh.es` — **el host de los servicios** | ❌ **`ECONNRESET`**, en `https` y en `http`, por las rutas `COVCCallejero.svc/json` y `ovccallejero.asmx`, con `requests` y con el contexto del navegador |
+> | `www1.sedecatastro.gob.es` | ✅ **200** —la Sede está viva—, pero la ruta del servicio **404** allí |
+> | `pares.cultura.gob.es`, `www.ine.es` | ✅ **200** |
+>
+> 📏 **Es decir: no es la red de esta máquina, ni el Catastro entero; es su host de servicios
+> web, que rechaza la conexión** —pocas horas después de haberle pedido las 233 parcelas de
+> `TAR-29`—. **No es un negativo del Catastro: es una puerta cerrada hoy.** Queda como **`TAR-32`**.
 
 *Nota añadida el 5 de octubre de 2026.*
