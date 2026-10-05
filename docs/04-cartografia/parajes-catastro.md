@@ -274,3 +274,71 @@ como autor y propietario de la información.
 ---
 
 *Ficha redactada el 22 de septiembre de 2026.*
+
+---
+
+# ✅ `TAR-29` — el parcelario de **Santa Colomba de las Monjas**, y un negativo que vale
+
+> **5 de octubre de 2026.** No es un término vecino de Colinas —está a **11,1 km al ESE**, al otro
+> lado de Benavente—, y se barre por una razón concreta: el **3 de octubre** este proyecto propuso
+> que el topónimo «**Vezinas / Ce\[z\]inas / Jecinas / Xeçinas**», que tres rollos fiscales del
+> señorío ponen pegado a Colinas **en el renglón** entre 1526 y 1591, sea el despoblado de
+> **Cejinas**, de la zona norte de ese término. **Había que ir a verlo**
+> → [`censo-1591`, § 7](../01-fuentes-primarias/censo-1591/README.md).
+
+## Cómo se ha barrido
+
+| | |
+|---|---|
+| Término | **Santa Colomba de las Monjas** · DGC **49222** · INE **49199** |
+| Servicio | el mismo que usó este proyecto para Quiruelas: `Consulta_DNPRC` del Catastro, leyendo `locs.lors.lorus.npa` |
+| Alcance | **polígonos 1 a 4** —no hay más—, parcelas **de 3 en 3** hasta agotar cada polígono |
+| Resultado | **233 parcelas con dato**, **40 parajes distintos** → [`parajes-santa-colomba-de-las-monjas.tsv`](parajes-santa-colomba-de-las-monjas.tsv) |
+
+## 🚨 **No hay ningún paraje llamado Cejinas** — y esta vez el negativo es cerrado
+
+Un muestreo normalmente **no puede probar una ausencia**: un paraje de una o dos parcelas escapa.
+**Aquí sí puede**, por una propiedad del propio Catastro que el barrido deja a la vista:
+
+> **Los códigos de paraje (`cpaj`) van en orden alfabético estricto y son correlativos.**
+> Comprobado sobre los cuarenta: **1 ADOVIRAS, 2 BLANCA, 3 BOCAS GRANDES, 5 BOTIJOS, 6 CANTO,
+> 7 CANTO BLANCO, 8 CMNO STA CRISTINA, 9 CORONAS, 11 EL BARRERO… 43 TRAS LA ALAMEDA**. **Sin una
+> sola excepción.**
+
+De los **43 códigos** que llega a usar el término, la muestra ha visto **40**. Los tres que faltan
+quedan **encajonados entre dos nombres conocidos**, y ninguno de los tres huecos admite «Cejinas»:
+
+| Hueco | Entre | y | ¿Cabe «CEJINAS»? |
+|---:|---|---|:-:|
+| **4** | BOCAS GRANDES | BOTIJOS | ❌ |
+| **10** | CORONAS | EL BARRERO | ❌ |
+| **38** | MONTE CERVATO | PICO DEL GRAJO | ❌ |
+
+**Y donde tendría que estar, no hay sitio**: «CEJINAS» ordena **después de CANTO BLANCO (7) y antes
+de CMNO STA CRISTINA (8)** —CE < CM—, y **los dos códigos están ocupados y son consecutivos**.
+
+> ✅ **Conclusión, y es firme dentro de lo que mide:** **el Catastro de hoy no tiene en Santa
+> Colomba de las Monjas ningún paraje llamado Cejinas.**
+
+## ⚠️ Lo que eso sí y no significa
+
+**No refuta el despoblado.** Un despoblado puede desaparecer del nomenclátor de parajes sin dejar
+de haber existido: los parajes del Catastro son **una capa administrativa moderna**, no un registro
+histórico, y el proyecto ya sabe que **recogen unos nombres y pierden otros**.
+
+**Sí quita un apoyo.** La identificación propuesta el 3 de octubre se sostenía en **dos patas**: la
+posición en la relación del obispo de 1587 —entre Sta. Coloma y Sta. Christina— y la noticia de
+que en la zona norte de ese término hubo un despoblado de ese nombre. **La primera sigue en pie.
+La segunda no recibe confirmación del parcelario**, que era la vía más barata de tenerla.
+
+> 📏 **La identificación se queda, pues, donde estaba: ★★ propuesta fuerte, no cerrada**, y con
+> **una comprobación menos**. Lo que queda por probar es **RIESCO CHUECA, *Toponimia de la
+> provincia de Zamora*** (`LIB-05`), que es trabajo de toponimia y no de catastro.
+
+> ⚠️ **Y una trampa que conviene señalar antes de que alguien caiga en ella.** El barrido devuelve
+> en ese mismo término un paraje llamado «**LAS VECILLAS**» (código 33, polígonos 1 y 3).
+> **No tiene nada que ver**: las grafías de 1587 y 1591 empiezan por **J/X** —«Jecinas»,
+> «Xeçinas»—, y eso no se reduce a «Vecillas». **Parecido de oído, como el de «Valancinas».**
+
+*Barrido del 5 de octubre de 2026. Los datos proceden de la Sede Electrónica del Catastro
+(Dirección General del Catastro, Ministerio de Hacienda) y deben citarse así.*

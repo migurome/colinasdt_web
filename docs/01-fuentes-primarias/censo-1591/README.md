@@ -387,6 +387,20 @@ queda, en efecto, **al norte** de Santa Colomba—.
 > sólo «la zona norte» de un término. **Falta verlo en un trabajo de toponimia o en el parcelario**
 > → `TAR-29`.
 
+> 🚨 **5 de octubre de 2026: el parcelario no lo confirma, y el negativo es cerrado.** Barrido el
+> término de **Santa Colomba de las Monjas** (DGC 49222) en el Catastro: **cuatro polígonos, 233
+> parcelas, 40 parajes**, y **ninguno se llama Cejinas**. Y esta vez la ausencia **se puede
+> afirmar**, porque los códigos de paraje del Catastro **van en orden alfabético estricto y
+> correlativo**: «CEJINAS» tendría que ir entre **CANTO BLANCO (7)** y **CMNO STA CRISTINA (8)**, y
+> esos dos códigos **son consecutivos**. Los tres códigos que la muestra no vio —**4, 10 y 38**—
+> caen en ventanas alfabéticas donde «Cejinas» no cabe
+> → [`parajes-catastro.md`](../../04-cartografia/parajes-catastro.md).
+>
+> ⚠️ **Eso no refuta el despoblado** —los parajes del Catastro son una capa administrativa
+> moderna, y pierden nombres—, **pero le quita una pata a la identificación**: la noticia de que
+> allí hubo un «Cejinas» **no recibe confirmación del parcelario**. **La propuesta se queda en
+> ★★ y con una comprobación menos.** Lo que falta es **Riesco Chueca** (`LIB-05`).
+
 > 🚨📏 **Y esto corrige una interpretación de este proyecto.** Aquí se escribió que el lugar
 > sería <s>«un despoblado **vecino de Colinas**»</s> y <s>«un vecino desaparecido de Colinas»</s>.
 > **No lo era.** Santa Colomba de las Monjas está a **11,1 km al ESE** del centro del término de
