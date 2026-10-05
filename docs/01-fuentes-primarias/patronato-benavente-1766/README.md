@@ -224,6 +224,23 @@ Enumerado el legajo en el catálogo: **21 unidades devueltas, y las 21 digitaliz
 | 📏 **Lo que quedaría** | las unidades de `C.454` **que el catálogo no devuelve** en la búsqueda por signatura, y que sólo se ven en el inventario de sala |
 | 🚨 **Y la vía que esto abre en su lugar** | si Colinas tuvo concordia o donación como Torre del Valle, Quiruelas y Villafer, **el escribano sería de Benavente y la fecha del último cuarto del XVI**. Eso se busca en **protocolos notariales de Benavente**, no en Osuna |
 
+### ⚠️ Y esa vía, comprobada el mismo día: **no se alcanza desde aquí**
+
+Los protocolos notariales de Benavente se custodian en el **Archivo Histórico Provincial de
+Zamora**. Buscado en PARES: «*protocolos notariales* Benavente» → **0 fichas**; «*Archivo
+Histórico Provincial de Zamora*» → **1 ficha, y es del AHN** (el Beato de Tábara). Buscados
+también los tres escribanos por su nombre:
+
+| Escribano | De qué escritura | En PARES |
+|---|---|:-:|
+| **Gaspar de Vega** | Torre del Valle, 1576 | — (1 ficha, ajena) |
+| **Estevan de Castro** | Quiruelas, 1582 | **0** |
+| **Pedro de la Plana** | Villafer, 1583 | **0** |
+
+> 📏 **Conclusión técnica, y vale para más cosas que ésta: el Archivo Histórico Provincial de
+> Zamora no está en PARES.** Sus protocolos **no se pueden barrer a distancia**. La vía que este
+> expediente abre es buena, pero **necesita a una persona en Zamora** → `ARCH-28`.
+
 ---
 
 ## Nota de reutilización
