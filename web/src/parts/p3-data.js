@@ -19,7 +19,7 @@ const ERAS = [
 const EVENTOS = [
   { id: 'bodegas', era: 1, y: 'III milenio a.C.', s: -2250, n: 'visto',
     t: 'Alguien cava silos donde hoy están las bodegas',
-    p: 'Al norte del pueblo, al pie del promontorio en el que están horadadas las bodegas —y que da nombre al pago—, cuatro hoyos-silo de la Edad del Cobre, de metro y medio de hondo y casi dos metros de diámetro, y una gran zanja de diez metros de ancho. La cerámica es lisa y de cocción reductora, con un motivo que los excavadores dan por inédito en la zona: pastillas en relieve.',
+    p: 'Alguien, hace más de cuatro mil años, cava un hoyo de metro y medio al pie del promontorio donde hoy están horadadas las bodegas. Después cava otro, y otro, y otro: cuatro.|Son silos, despensas enterradas. Dentro iba el grano, y el grano se guarda donde se piensa volver. Al lado quedó una zanja de diez metros de ancho que los excavadores no saben explicar.|La cerámica que aparece es lisa, cocida sin oxígeno, y lleva un motivo que dan por inédito en la zona: pastillas en relieve. <b>Cuatro mil años después, en ese mismo cerro se siguen horadando bodegas.</b>',
     nota: 'La zanja no está explicada: los autores barajan vertedero, drenaje de los silos, foso defensivo o el cauce fosilizado de un arroyo. Y la fecha viene por comparación con el yacimiento vecino de Los Bajos, no de una datación propia.',
     img: { src: 'img/bodegas-fig12-ceramica.jpg', w: 900, h: 1204, alt: 'Dibujos arqueológicos de cuencos y vasos calcolíticos lisos, con perfiles y numeración de inventario.', cap: 'Cerámica lisa y decorada de «Las Bodegas», piezas 93/24. Entre ellas, el motivo que los excavadores dan por <b>inédito en la zona</b>: pastillas en relieve. <span class="mono">Pérez Rodríguez, Sanz, Marcos, Martín Carbajo y Misiego, «Algunos aspectos de la Edad del Cobre en el Valle medio del río Tera», Anuario 1993, IEZ «Florián de Ocampo», pp. 49-78, fig. 12 (pp. 70-74) · ejemplar en acceso abierto en Dialnet, artículo 6563899</span>' },
     tr: 'portada',
@@ -27,7 +27,7 @@ const EVENTOS = [
 
   { id: 'petavonium', era: 1, y: '19 a.C.', s: -19, n: 'contexto',
     t: 'Petavonium, a quince kilómetros',
-    p: 'Campamento de la Legio X Gemina en Rosinos de Vidriales, y después del Ala II Flavia, hasta mediados del siglo III. No es Colinas: es el mundo romano que la rodea, y así hay que contarlo.',
+    p: 'A quince kilómetros de aquí, en Rosinos de Vidriales, hay un campamento romano: primero la Legio X Gemina, después el Ala II Flavia, que se queda hasta mediados del siglo III.|Durante casi tres siglos, lo que pasa en este valle pasa a la vista de una guarnición.|<b>De Colinas, en cambio, no hay noticia ninguna en todo ese tiempo.</b> Petavonium no cuenta la historia de este pueblo: cuenta el mundo en el que este término estaba, y por eso se pone aquí.',
     /* No es un facsímil ni una foto: es una ilustración interpretada, y de un
        sitio que no es Colinas. El pie tiene que decir las dos cosas. */
     ilu: { src: 'img/petavonium-19ac.jpg', w: 1400, h: 933,
@@ -41,7 +41,7 @@ const EVENTOS = [
 
   { id: 'tardorromano', era: 1, y: 's. IV–V', s: 400, n: 'visto',
     t: 'Primera ocupación en San Juan-El Valle',
-    p: 'Sigillata hispánica tardía, cerámica gris estampillada con rosetas, un cubilete del alfar de Melgar de Tera y vidrio tallado. A 200 metros, dos tumbas romanas cubiertas con tégulas.',
+    p: 'Entre los siglos IV y V alguien vive al oeste del pueblo, en el paraje de El Valle, y deja lo que se rompe: sigillata hispánica tardía, cerámica gris estampillada con rosetas, vidrio tallado.|Uno de los cacharros, un cubilete, viene del alfar de Melgar de Tera: <b>no todo lo que se usaba aquí se hacía aquí</b>.|A doscientos metros hay dos tumbas romanas cubiertas con tégulas. Es la primera ocupación excavada en este sitio: gente que come en vajilla fina, bebe en vaso traído de fuera y entierra a sus muertos al lado.',
     img: { src: 'img/excavacion-fig3-tardorromano.jpg', w: 900, h: 803, alt: 'Dibujos de cerámica y vidrio tardorromanos hallados en el yacimiento.', cap: 'Materiales tardorromanos del yacimiento: sigillata hispánica tardía (93/27/174 y 175), cerámica gris estampillada (93/27/115), cerámica común (93/27/168) y el vaso de vidrio (93/27/216). <span class="mono">Martín Carbajo, Misiego, Pérez Rodríguez, Sanz y Marcos, «“San Juan-El Valle”, un enclave tardorromano y plenomedieval en Colinas de Trasmonte (Zamora)», Anuario 1993, IEZ «Florián de Ocampo», pp. 37-48, fig. 3 (p. 44) · ISSN 0213-8212</span>' },
     f: 'Martín Carbajo et al., Anuario 1993, IEZ «Florián de Ocampo», pp. 37-48' },
 
@@ -123,7 +123,7 @@ const EVENTOS = [
     tr: 'portada',
     f: 'RUIZ ASENCIO, Col. doc. de la catedral de León, IV (1032-1109), León 1989, doc. 1186 · cit. GONZÁLEZ RODRÍGUEZ, Brigecio 17 (2007)' },
 
-  { id: 'd1129', era: 2, y: '1129', s: 1129, n: 'cotejar',
+  { id: 'd1129', era: 2, y: '1129', s: 1129, n: 'visto',
     t: 'Una vereda que baja de Castroferrol',
     q: '«per illam veredam quae discurrit de Castro Ferronio, et ad Carvalio… et tornat inde per ipsam veredam quae discurrit ad Villa Aceif, et deinde per terminum de Axarifes»',
     p: 'Para confirmar el coto del monasterio de Santa Marta de Tera, Alfonso VII tiene que decir por dónde va exactamente la raya, «según la fijó su bisabuelo Fernando I». Así que el documento se pone a andar.|Sale de Castro Ferronnio <b>por una vereda</b>, llega a un carbajal, tuerce por una carral, pasa por San Pelayo, por la carral de Comdesa, por Villa Aceif, y termina en el término de Axarifes.|Una vereda es un camino de ganado. Éste, el que baja del enclave, es <b>el camino más antiguo de este término del que tenemos noticia</b>: en 1129 ya estaba hecho y ya tenía nombre.',
@@ -314,10 +314,10 @@ const EVENTOS = [
     nota: 'El documento dice <b>«San Juan» a secas</b>: el «Bautista» lo añade Madoz. Y San Juan es advocación corriente en el valle —tres parroquias de veintitrés—, así que el nombre no distingue nada: le quita al topónimo San Juan del término todo valor como indicio. La fecha de la relación, «en 1.º de noviembre de 1768», lleva [?].',
     /* Retrato de contexto: la cara de quien da nombre al documento,
        no una imagen de Colinas. El pie de la lámina lo dice solo. */
-    img: { src: 'img/ret/aranda1768.jpg', w: 1400, h: 913, ctx: true,
+    img: { src: 'img/ret/aranda1768.jpg', w: 435, h: 559, ctx: true,
       quien: 'El conde de Aranda',
-      alt: 'Detalle de un retrato al óleo del siglo XVIII: un hombre con peluca blanca, casaca azul bordada en oro y faja rosa, con bastón de mando; a un lado un globo terráqueo, y al fondo una columna y un paisaje.',
-      cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>Se lo pintan del natural al año siguiente</b>, en 1769, por encargo de la Universidad Sertoriana de Huesca. <span class="mono">Ramón Bayeu, 1769 · Museo de Huesca, sala 7 (detalle) · reproducción de El Pirineo Aragonés, 21-VIII-2020</span>' },
+      alt: 'Retrato al óleo de cuerpo entero: un hombre con peluca blanca, casaca azul bordada en oro y faja rosa, con bastón de mando; a su alrededor un globo terráqueo, un cañón, planos enrollados y un yelmo con plumas sobre una mesa dorada.',
+      cap: 'El conde de Aranda, presidente del Consejo de Castilla: el recuento de 1768 se ordena bajo su presidencia y por eso lleva su nombre. <b>Se lo pintan del natural al año siguiente</b>, en 1769, por encargo de la Universidad Sertoriana de Huesca. <span class="mono">Ramón Bayeu, 1769 · óleo, 276 × 196 cm · Museo de Huesca · Wikimedia Commons, dominio público</span>' },
     tr: 'portada',
     f: 'INE, Censo de Aranda, obispado de Astorga, asiento 173, R.A.H. 01-181' },
 
@@ -406,7 +406,7 @@ const EVENTOS = [
   { id: 'matricula1842', era: 4, y: '1842', s: 1842, n: 'visto',
     t: 'Ciento treinta y dos, y el propio INE dice que no cuenta',
     q: '«sin rigor, por el procedimiento de imputaciones»',
-    p: 'Es la primera cifra de la serie moderna de población, y viene del Censo de la Matrícula Catastral. El INE, al describir su propia metodología, dice que se hizo así, sin fecha de referencia, y que <b>«no aporta ningún dato numérico de confianza»</b>. Está documentado que la cifra existe; está documentado que no vale como medición.',
+    p: 'La serie moderna de población de España empieza en 1842, y en la casilla de Colinas pone 132 habitantes.|Quien descalifica esa cifra no es este proyecto: es el propio INE. Al explicar cómo se hizo aquel recuento dice que fue «sin rigor, por el procedimiento de imputaciones», sin fecha de referencia, y que «no aporta ningún dato numérico de confianza».|Y sin embargo el hoyo puede ser verdad: en 1826 el pueblo tenía 55 vecinos y en 1847 tiene 33, con la misma proporción de almas por vecino en las dos fuentes. <b>Entre una fecha y otra caben la primera guerra carlista, el cólera de 1834 y la desamortización.</b> Queda abierto por los dos lados.',
     nota: 'Y sin embargo el hoyo puede ser real. En vecinos la caída es igual de clara —55 en 1826, 33 en 1847—, con la misma proporción de almas por vecino en las dos fuentes, lo que descarta que sea un problema de unidad de cuenta. Entre 1826 y 1842 caben la primera guerra carlista, el cólera de 1834 y la desamortización. Queda abierto por los dos lados.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
@@ -455,7 +455,7 @@ const EVENTOS = [
 
   { id: 'pecuarias1863', era: 4, y: '1863', s: 1863, n: 'sinleer',
     t: 'Las vías pecuarias del término, reconocidas',
-    p: 'Acta de reconocimiento de las vías pecuarias del término. En el mismo expediente hay copia del reconocimiento de la <b>Cañada Real Sanabresa</b>, de 1895. Por aquí pasaba ganado trashumante, y alguien vino a medir por dónde.',
+    p: 'En 1863 alguien recorre el término midiendo por dónde puede pasar el ganado, y lo escribe. Es un acta de reconocimiento de vías pecuarias, y en el mismo expediente hay otra de 1895, la de la Cañada Real Sanabresa.|Una vereda de ganado ya salía en el deslinde de 1129: por aquí se llevaban los rebaños desde mucho antes del papel que lo dice.|<b>Ese expediente no está digitalizado.</b> Se sabe que existe y dónde está, pero no lo que dice: es de los pocos casos en que hay que ir en persona.',
     nota: 'El expediente <b>no está digitalizado</b>: se sabe que existe y dónde está, no lo que dice. Es de los pocos casos en que haría falta ir en persona.',
     /* No hay facsímil del papel, pero sí del terreno: la imagen enseña
        lo que el documento midió o contó. */
@@ -467,7 +467,7 @@ const EVENTOS = [
 
   { id: 'propios1866', era: 4, y: '1860–1889', s: 1866, n: 'visto',
     t: 'La desamortización vende los bienes de propios',
-    p: 'Siete asientos de la Gazeta registran ventas de <b>bienes de propios</b> de Colinas, con sus meses: enero de 1866, mayo de 1873… Lo que era del común —montes, prados, eras— pasa a manos particulares.',
+    p: 'Los bienes de propios eran del pueblo: el monte de donde salía la leña, los prados donde iba el ganado, las eras donde se trillaba. Con ellos se pagaban las cosas del común.|Entre 1860 y 1889, siete asientos de la Gazeta registran que se venden. Enero de 1866, mayo de 1873, y así hasta siete.|Los asientos dan la referencia, no el contenido: sabemos que hubo ventas, no qué se vendió ni a quién. Lo que sí se sabe es el efecto: <b>lo que era de todos pasó a ser de alguien.</b>',
     nota: 'Está documentado que hubo ventas. <b>No está leído qué se vendió ni a quién</b>: los asientos dan la referencia, no el contenido.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
@@ -510,7 +510,7 @@ const EVENTOS = [
   { id: 'camino1905', era: 4, y: '1905', s: 1905, n: 'visto',
     t: 'Colinas, cabecera de un camino vecinal',
     q: '«De Colinas de Trasmonte al Cubo de Benavente»',
-    p: 'Así lo nombra el plan de caminos vecinales: por Colinas, no por los pueblos mayores que el itinerario atraviesa después —Quiruelas, Quintanilla, Brime de Urz, Cunquilla, Granucillo, Grijalba, Villaobispo, Santibáñez y Brime de Sog—. <b>Colinas es la cabecera.</b>',
+    p: '«De Colinas de Trasmonte al Cubo de Benavente.»|Así se llama el camino vecinal en el plan de 1905.|Después pasa por Quiruelas, Quintanilla, Brime, Granucillo, Grijalba, Santibáñez. Pueblos mayores.|<b>Pero el camino se llama por Colinas.</b> Aquí empieza.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
     img: { src: 'img/doc/camino1905.jpg', w: 1400, h: 1890,
@@ -555,7 +555,7 @@ const EVENTOS = [
   { id: 'escuela1959', era: 4, y: '1958–59', s: 1958, n: 'visto',
     t: 'La unidad mínima de cultivo, y una escuela',
     q: '«una Escuela mixta, servida por Maestra, en el casco del Ayuntamiento de Colinas de Trasmonte»',
-    p: 'En 1958 se fija la <b>unidad mínima de cultivo</b> del término: por debajo de esa superficie una finca ya no puede partirse. Al año siguiente se crea definitivamente la escuela.',
+    p: 'Dos órdenes seguidas, de dos ministerios distintos, dicen bastante de cómo era el pueblo a finales de los cincuenta.|La de 1958 fija la unidad mínima de cultivo: por debajo de esa superficie una finca ya no se puede partir. Es la ley reconociendo que el minifundio había llegado a su límite.|La de 1959 crea definitivamente <b>«una Escuela mixta, servida por Maestra, en el casco del Ayuntamiento de Colinas de Trasmonte»</b>. Una sola, mixta, y con maestra.|<b>Una para que la tierra no se siga troceando; otra para que los niños tengan dónde ir.</b>',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
     img: { src: 'img/doc/escuela1959.jpg', w: 1400, h: 1985,
@@ -579,7 +579,7 @@ const EVENTOS = [
 
   { id: 'titulares1971', era: 5, y: '1971', s: 1971, n: 'visto',
     t: 'Setenta y dos nombres, por una carretera',
-    p: 'Se publican los titulares de las fincas del término afectadas por la expropiación de la <b>carretera C-620</b>, de Benavente a Sitrama de Tera. El acto se convoca para el 25 de junio <b>en el Ayuntamiento de Colinas</b>. Setenta y dos nombres: es la lista de vecinos más larga que el proyecto tiene de este término.',
+    p: 'El Boletín publica los titulares de las fincas del término afectadas por la expropiación de la <b>carretera C-620</b>, de Benavente a Sitrama de Tera. El acto se convoca para el 25 de junio en el Ayuntamiento de Colinas, que todavía existe.|Son setenta y dos nombres, finca a finca y con su paraje al lado: Guadaño, Valdemanzanas, Canal, Gala. <b>Es la lista de vecinos más larga que el proyecto tiene de este término.</b>',
     nota: 'Los nombres vienen de <b>reconocimiento óptico del boletín</b> y están normalizados. Hay que cotejarlos uno a uno antes de darlos por buenos: un apellido mal leído en una lista de vecinos no es un detalle.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
@@ -592,7 +592,7 @@ const EVENTOS = [
   { id: 'fin-municipio', era: 5, y: '1972', d: '10 de febrero', s: 1972, n: 'visto',
     t: 'El pueblo pide dejar de ser municipio',
     q: '«en atención a la escasez de población, dificultad para mantener los servicios mínimos obligatorios y deseo de mejorarlos»',
-    p: 'El Ayuntamiento de Colinas acuerda, con quórum legal, solicitar su incorporación a Quiruelas de Vidriales; Quiruelas la acepta y el Consejo de Ministros la aprueba. No hubo «reclamación alguna» en el plazo de información pública. El concejo que en 1752 tenía molino y fragua propios se disuelve a petición suya.',
+    p: 'El Ayuntamiento se reúne. Hay quórum.|Acuerda pedir que lo incorporen a Quiruelas de Vidriales: «escasez de población, dificultad para mantener los servicios mínimos obligatorios».|Quiruelas acepta. El Consejo de Ministros aprueba.|Se abre plazo para reclamar. <b>No hubo «reclamación alguna».</b>|El pueblo que en 1752 tenía molino y fragua propios deja de ser municipio a petición suya.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
     img: { src: 'img/doc/fin-municipio.jpg', w: 1400, h: 1987,
@@ -614,7 +614,7 @@ const EVENTOS = [
 
   { id: 'plano1975', era: 5, y: '1975', d: 'enero', s: 1975, n: 'visto',
     t: 'El término, dibujado',
-    p: 'Los seis planos del IRYDA dibujan el término finca a finca. Rotulan los cinco confrontantes —Quiruelas de Vidriales, Manganeses de la Polvorosa, Santa Cristina de la Polvorosa, Vecilla de Trasmonte y Aguilar de Tera— y, con ellos, los nombres de los pagos: El Valle, Vallondo, El Pendón, Las Tapias, Los Llanos, Las Porqueras. Es toponimia que no recoge ninguna otra fuente.',
+    p: 'Un delineante, A. Figal, dibuja el término a escala 1:5.000 en enero de 1975, para que la concentración sepa qué está repartiendo. Seis planos, finca por finca.|Para dibujarlos hay que escribir los nombres: los cinco pueblos que confrontan —Quiruelas de Vidriales, Manganeses de la Polvorosa, Santa Cristina de la Polvorosa, Vecilla de Trasmonte y Aguilar de Tera— y los pagos de dentro: El Valle, Vallondo, El Pendón, Las Tapias, Los Llanos, Las Porqueras.|<b>Esa toponimia no la recoge ninguna otra fuente.</b> El plano que se hizo para deshacer el parcelario viejo es hoy lo que mejor lo guarda.',
     link: { href: '#termino', t: 'Ver el plano y los lindes' },
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
@@ -635,7 +635,7 @@ const EVENTOS = [
 
   { id: 'acuerdo1977', era: 5, y: '1977', d: '1 de marzo', s: 1977, n: 'visto',
     t: 'De 5.560 parcelas a 993 fincas',
-    p: 'Se aprueba el acuerdo de concentración. Termina el paisaje agrario que describía el Catastro. El año anterior se había aprobado el plan de obras que lo acompaña: «red de caminos y red de saneamiento».',
+    p: 'Se aprueba el acuerdo de concentración: <b>de 5.560 parcelas a 993 fincas</b>. El año anterior se había aprobado el plan de obras que lo acompaña, «red de caminos y red de saneamiento».|Con eso termina el paisaje agrario que describía el Catastro de 1752. En el vuelo siguiente ya no hay tiras: hay bloques grandes y caminos rectos.',
     /* La plana oficial donde el pueblo está escrito. Se ve entera:
        lo que prueba es el renglón, y el renglón vive en su página. */
     img: { src: 'img/doc/acuerdo1977.jpg', w: 1400, h: 494,
@@ -646,7 +646,7 @@ const EVENTOS = [
 
   { id: 'registro1986', era: 5, y: '1986', s: 1986, n: 'visto',
     t: 'La figura que a Colinas le falta',
-    p: 'Creado el Registro de Entidades Locales, <b>catorce pueblos de Zamora</b> se inscriben como entidad local menor entre 1986 y 2003. Colinas no es uno de ellos, y Quiruelas, su municipio, no tiene ninguna. <b>Vecilla de Trasmonte</b> —a 1.673 metros, del mismo apellido toponímico— se inscribe el 10 de octubre de 1986, con el número 4490008. Y <b>Aguilar de Tera</b>, confrontante del término y más pequeño que Colinas en 1768 —92 almas frente a 114—, se inscribe el 25 de julio de 2003 [?]. La figura que a Colinas le falta se constituyó en su propia raya.',
+    p: 'En 1986 se crea el Registro de Entidades Locales, y con él la manera de que un pueblo sin ayuntamiento tenga voz propia: la entidad local menor.|Catorce pueblos de Zamora se inscriben entre 1986 y 2003. Uno es Vecilla de Trasmonte, a 1.673 metros de aquí y del mismo apellido toponímico, el 10 de octubre de 1986. Otro es Aguilar de Tera, que confronta con este término y que en 1768 era más pequeño que Colinas: 92 almas frente a 114.|Colinas no se inscribe, y Quiruelas, su municipio, no tiene ninguna. <b>La figura que aquí falta se constituyó justo al otro lado de la raya.</b>',
     nota: 'La fecha es de <b>inscripción</b>, no de creación de la entidad; y en el caso de Aguilar no está comprobado si es constitución nueva o inscripción tardía. Esto es lo que decide si un emblema de Colinas puede ser oficial por sí mismo o se queda en emblema vecinal.',
     ilu: { src: 'img/prov/registro1986.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
@@ -655,13 +655,13 @@ const EVENTOS = [
 
   { id: 'excavacion', era: 5, y: '1993', d: '5–29 de julio', s: 1993, n: 'visto',
     t: 'Las zanjas del regadío destapan San Juan-El Valle',
-    p: 'Excavación de urgencia al oeste del pueblo, camino de Quiruelas, en el paraje que el plano de 1977 rotula «El Valle». La tradición oral lo llamaba «el Convento de San Juan»; el nombre de Castroferrol se había perdido.',
+    p: 'Las zanjas del regadío obligan a una excavación de urgencia al oeste del pueblo, camino de Quiruelas, en el paraje que el plano de 1977 rotula «El Valle».|La tradición oral llamaba a ese sitio <b>«el Convento de San Juan»</b>. El pueblo sabía que allí hubo algo; el nombre de Castroferrol se había perdido.',
     img: { src: 'img/excavacion-fig4-reticula.jpg', w: 900, h: 868, alt: 'Dibujos de ollas plenomedievales con estriado horizontal y retícula incisa.', cap: 'Cerámica plenomedieval con retícula incisa: piezas 93/27/19, /21, /31, /2 y /57. <span class="mono">Martín Carbajo, Misiego, Pérez Rodríguez, Sanz y Marcos, «“San Juan-El Valle”, un enclave tardorromano y plenomedieval en Colinas de Trasmonte (Zamora)», Anuario 1993, IEZ «Florián de Ocampo», pp. 37-48, fig. 4 (p. 45) · ISSN 0213-8212 · excavación del gabinete STRATO</span>' },
     f: 'Martín Carbajo et al., Anuario 1993, pp. 37-48 · gabinete STRATO' },
 
   { id: 'a52', era: 5, y: 'Fin. s. XX', s: 1998, n: 'interp',
     t: 'La autovía se lleva el tráfico',
-    p: 'Con la A-52, la N-525 se vacía de tráfico y cierran gasolineras, bares y comercios de carretera: todo lo que vivía de los que pasaban.',
+    p: 'Los que pasaban dejan de pasar. La autovía A-52 se lleva el tráfico de la N-525, y con el tráfico se van los clientes.|Cierran las gasolineras, cierran los bares, cierran los comercios de carretera: todo lo que vivía de los coches que cruzaban el casco.|<b>Durante décadas, estar en la carretera había sido una manera de estar en el mundo.</b> Desde ahora, el mundo pasa por otro sitio.',
     ilu: { src: 'img/prov/a52.jpg', w: 1000, h: 667, prov: true,
       alt: 'Imagen provisional: trama abstracta, en el color de la era y con la trama del grado de prueba, mientras la entrada no tenga ilustración.' },
     tr: 'portada',
@@ -727,20 +727,38 @@ const USOS = [
                        sigue en el repositorio, en CHANGELOG.md.
    VERSIONES    — de la más nueva a la más antigua.                        */
 
-const VERSION = '0.43';
+const VERSION = '0.44';
 const VERSIONES_VISIBLE = true;
 /* El raíl: la línea del tiempo haciendo de barra de desplazamiento en el
    teléfono. Retirado el 25-IX-2026 por estorbar en la mano. El código se
    queda entero: ponlo en true y vuelve, marcas, arrastre y rótulo. */
 const RAIL_VISIBLE = false;
 /* Las ilustraciones interpretadas —las que dibujan lo que ningún documento
-   enseña— no salen en la web mientras se decide qué papel tienen en un
-   proyecto que se sostiene sobre pruebas. No se borran: siguen en los datos,
-   con su pie y su aviso, y vuelven poniendo esto en true. Una imagen
-   provisional no interpreta nada, así que ésas se quedan. */
-const ILUSTRACIONES_VISIBLES = false;
+   enseña— no salían en la web mientras se decidía qué papel tienen en un
+   proyecto que se sostiene sobre pruebas. Una imagen provisional no interpreta
+   nada, así que ésas se quedan siempre.
+   Esto admite tres cosas: `false` las apaga todas, `true` las enciende todas y
+   una lista de ids enciende sólo ésas.
+   ✅ Decidido el 10-X-2026: sale sólo la que no se apoya en un documento que el
+   proyecto no ha visto. Petavonium es contexto arqueológico documentado; la
+   abadesa de 1006 y la villa de 1073 ilustran entradas que la cronología sacó
+   por falta de papel, y esperan a que entren LIB-02 y LIB-01. El día que
+   entren, se encienden añadiendo su id a esta lista y nada más. */
+const ILUSTRACIONES_VISIBLES = ['petavonium'];
 
 const VERSIONES = [
+  { v: '0.44', f: '10 de octubre de 2026', t: 'La línea entera tiene voz',
+    c: [
+      '<b>Se votaron las diecisiete entradas que faltaban</b> —las tres de «Antes del nombre», nueve de «La pedanía» y los cinco empates del ayuntamiento— y quedan aplicadas. <b>Quince cambian de redacción</b>; dos se quedan como estaban. Con ellas, las cincuenta y nueve entradas que entraban en votación tienen voz elegida y <b>no queda ningún empate</b>.',
+      '★ <b>La microhistoria gana diez de las diecisiete</b>, y las tres entradas sin documento —los silos, Petavonium, la ocupación tardorromana— se van las tres a ella: donde no hay papel sino yacimiento, la voz que empieza por el objeto gana sola. <b>Y «Muere Cecilia» se queda en la redacción técnica</b>, que es la forma más fuerte de cumplir lo que ya estaba escrito: 1976 no se dramatiza.',
+      '<b>Se enciende una ilustración interpretada</b>, la del campamento de Petavonium, que es contexto arqueológico documentado. La abadesa de 1006 y la villa de 1073 <b>siguen apagadas</b>: ilustran entradas que la cronología sacó por falta de papel, y serían dibujo sobre un documento que el proyecto no ha visto. La puerta admite ahora una lista, no sólo un sí o un no.',
+      '✅ <b>El retrato del conde de Aranda vuelve a Wikimedia Commons</b>, al mismo cuadro de Ramón Bayeu de 1769 pero con licencia declarada. Sale la reproducción de <i>El Pirineo Aragonés</i>, cuyas condiciones no constaban. ⚠️ Se gana la licencia y <b>se pierde tamaño</b>: de 1400 a 435 px, por debajo del mínimo que el proyecto se impone. La excepción queda escrita.',
+      '🚨 <b>Y la línea adelgaza: de 61 entradas a 47.</b> Las trece marcadas <b>«Por cotejar»</b> —la fuente existe y está citada, pero el proyecto no la ha comprobado— bajan a un bloque propio debajo de la línea, con su texto entero, su cautela y su fuente. Es la misma regla que la cronología se impuso el 5 de octubre, aplicada ahora a la página: <b>la línea sólo lleva lo que se tiene delante</b>. No se borra nada; se pone donde se puede defender.',
+      'Lo <b>«catalogado, sin leer»</b> sí se queda en la línea, 1073 incluida: su marca ya dice al lector exactamente lo que es. Y <b>1129 sube a «fuente vista»</b>, que es su nivel real: su texto latino lo transcribe la nota 25 de un artículo que el proyecto sí tiene.',
+      '⚠️ <b>Castroferrol se queda en cuatro entradas</b> de once, y la serie de población pierde sus dos extremos —el primer censo de 1857 y el máximo de 1950—, que siguen sin cotejar contra el INE. <b>Vuelven en cuanto se cotejen</b>: es una tarea, no un callejón.',
+      '⚖️ <b>El repositorio tiene licencia por primera vez</b>: <b>CC BY-NC 4.0</b> para el texto y los datos y <b>MIT</b> para el código. Hasta hoy no llevaba ninguna, que en la práctica es «todos los derechos reservados».'
+    ],
+    p: 'Ya no hay ninguna imagen publicada sin licencia declarada, ni ninguna entrada sin voz elegida, ni nada en la línea que el proyecto no haya visto.' },
   { v: '0.43', f: '30 de septiembre de 2026', t: 'Dos ilustraciones, guardadas y apagadas',
     c: [
       'La hoja donde se eligen los textos y las imágenes guardaba <b>dos decisiones sin aplicar</b>: la versión ilustrada del campamento de Petavonium y la de la villa de 1073. Quedan aplicadas, con su pie, su aviso y de qué máquina salen.',

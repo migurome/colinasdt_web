@@ -33,6 +33,18 @@ UA = {'User-Agent': 'ColinasDT/0.1 (historia local de Colinas de Trasmonte; '
                     'github.com/migurome/colinasdt_web)'}
 ANCHO = 1400
 MIN = 700
+# Anchuras minimas propias, por entrada. El minimo general da por supuesto que
+# de la obra hay en Commons una version decente, y hay casos en que no la hay:
+# entonces la eleccion real no es «grande o pequena», sino «pequena o con las
+# condiciones sin declarar», y se admite la pequena.
+MIN_PROPIO = {
+    # Decidido el 10-X-2026. Del Bayeu de 1769 solo hay en Commons 435 px.
+    # Se admite porque la alternativa era seguir publicando la reproduccion de
+    # El Pirineo Aragones, cuyas condiciones no constan. Se sustituye el dia
+    # que el Museo de Huesca de una imagen con sus terminos, o que alguien
+    # suba a Commons una version mayor.
+    'aranda1768': 435,
+}
 
 # id de la entrada → (fichero de Commons, quien es, por que sale aqui)
 #
@@ -44,8 +56,12 @@ MIN = 700
 # Sin retrato utilizable, y por eso no estan aqui:
 #   minano  — de Sebastian de Miñano solo hay en Commons un retrato subido
 #             como CC BY-SA, y el proyecto solo usa dominio publico declarado.
-#   aranda1768 — ya no viene de Commons: ver FUERA, aqui debajo.
+#   aranda1768 — vuelve a Commons el 10-X-2026, con excepcion de anchura:
+#             ver MIN_PROPIO, arriba.
 RETRATOS = [
+    ('aranda1768', u'File:Pedro Pablo Abarca de Bolea, conde de Aranda '
+     u'(Museo de Huesca).jpg', u'El conde de Aranda',
+     u'El censo de 1768 se ordena bajo su presidencia y lleva su nombre'),
     ('bermudo', u'File:Vermudo II no Compendio de crónicas de reyes.jpg',
      u'Bermudo II de León',
      u'El rey que entrega la villa en compensación por las tierras del Bierzo'),
@@ -81,24 +97,14 @@ RETRATOS = [
 # esta en el repositorio—, pero escribe su fila en la hoja de creditos para que
 # la procedencia no se pierda cada vez que se regenera.
 #
-# El de Aranda se cambio el 26-IX-2026: antes estaba la copia decimononica de
-# Jover, y ahora esta el retrato que le pinto Ramon Bayeu en 1769, un ano
-# despues del recuento. La pintura es de dominio publico; de la reproduccion no
-# consta con que condiciones se publica, y eso queda dicho en su pie de lamina
-# y en CREDITOS.md.
-FUERA = [
-    ['aranda1768', u'El conde de Aranda',
-     u'El censo de 1768 se ordena bajo su presidencia y lleva su nombre',
-     u'— (no procede de Commons)',
-     u'Ramón Bayeu y Subías (1746-1793)',
-     u'Pedro Pablo Abarca de Bolea, X conde de Aranda — óleo, 276 × 196 cm, encargo de la '
-     u'Universidad Sertoriana; Museo de Huesca, sala 7 (detalle)',
-     u'1769',
-     u'obra en dominio público; reproducción con condiciones sin declarar',
-     u'https://elpirineoaragones.com/2020/08/21/san-juan-de-la-pena-recuerda-el-legado-del-x-'
-     u'conde-de-aranda-como-militar-diplomatico-e-industrial-ilustrado/',
-     u'1400x913'],
-]
+# Esta lista esta vacia desde el 10-X-2026, y se deja puesta a proposito: era
+# la que sostenia al Aranda tomado de El Pirineo Aragones, con las condiciones
+# de la reproduccion sin declarar. Se decidio volver a Commons, asi que ahora
+# mismo TODO retrato de la linea tiene licencia declarada. El mecanismo se
+# queda por si vuelve a hacer falta —una imagen cedida por un museo, por
+# ejemplo—, pero una fila aqui significa que algo se publica sin licencia de
+# Commons, y eso hay que justificarlo por escrito.
+FUERA = []
 
 
 def api(**p):
@@ -186,7 +192,7 @@ def main(solo=None):
         if 'public domain' not in f['licencia'].lower():
             fallos.append((eid, quien, u'licencia %s, no se usa' % f['licencia']))
             continue
-        if f['w'] < MIN:
+        if f['w'] < MIN_PROPIO.get(eid, MIN):
             fallos.append((eid, quien, u'sólo %d px de ancho' % f['w']))
             continue
         destino = os.path.join(SALIDA, eid + '.jpg')

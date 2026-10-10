@@ -405,6 +405,42 @@ summary:hover{color:var(--almagre)}
   .fu-c{grid-column:1}
 }
 
+/* ═══════════ FUERA DE LA LÍNEA: LO QUE ESTÁ POR COTEJAR ═══════════
+   Mismo papel y misma tinta, pero sin trazo y sin marca en la escala: el
+   lector tiene que ver de un vistazo que esto NO es la línea. Va en caja,
+   con filete doble arriba, y la columna del año en tinta apagada en vez de
+   en teja. Decidido el 10-X-2026. */
+.aparte{margin-top:clamp(34px,5vw,62px);border-top:3px double var(--filo-fuerte);
+  padding-top:clamp(20px,3vw,32px)}
+.ap-head{display:grid;gap:.5em;max-width:62ch;margin-bottom:clamp(16px,2.4vw,26px)}
+.ap-head h3{font-size:clamp(1.1rem,2.6vw,1.375rem);font-weight:600;color:var(--apunte);
+  line-height:1.2}
+.ap-head p{font-size:.9375rem;line-height:1.5;color:var(--tinta-2)}
+.ap-era{display:flex;gap:14px;align-items:baseline;font-size:.8125rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.2em;color:var(--tenue);
+  margin-top:clamp(14px,2.4vw,26px);padding-bottom:6px;border-bottom:1px solid var(--filo)}
+.ap-era span{margin-left:auto;font-size:.6875rem;font-weight:600;letter-spacing:.14em;
+  color:var(--tenue);white-space:nowrap}
+.ap{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:0 var(--gap-tl);
+  padding-block:clamp(13px,1.8vw,19px);border-bottom:1px solid var(--papel-hondo)}
+.ap:last-child{border-bottom:none}
+.ap-a{grid-column:1;text-align:right;color:var(--tenue);font-size:1.125rem;line-height:1.25;
+  display:grid;gap:.1em;align-content:start}
+.ap-a .ap-dia{font-size:.75rem;letter-spacing:.04em}
+.ap-c{grid-column:2;min-width:0;display:grid;gap:.42em}
+.ap-c h5{font-size:1.0625rem;line-height:1.25;font-weight:600;color:var(--apunte)}
+.ap-c p{font-size:.9375rem;line-height:1.5;color:var(--tinta-2)}
+.ap-c .nivel{display:inline-flex;align-items:center;gap:8px;font-size:.6875rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--anil)}
+.ap-c .nivel .mk{width:10px;height:10px;border-width:1.5px}
+.ap-c .fuente{max-width:none}
+@media (max-width:640px){
+  .ap{grid-template-columns:1fr;gap:.25em}
+  .ap-a{grid-column:1;text-align:left;font-size:1.25rem;
+    grid-auto-flow:column;justify-content:start;gap:.5em;align-items:baseline}
+  .ap-c{grid-column:1}
+}
+
 /* ═══════════ PIE ═══════════ */
 .pie{padding-block:clamp(30px,5vw,64px);border-top:1px solid var(--filo-fuerte);
   display:grid;gap:.7em;max-width:78ch}

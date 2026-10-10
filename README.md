@@ -876,3 +876,19 @@ inventario con signaturas verificadas, transcripciones, y una lista priorizada d
   huecos por verosimilitud.
 - Se distingue siempre entre **lo documentado**, **lo interpretado** y **lo propuesto**. La web
   deberá mantener esa distinción visible para el lector.
+
+---
+
+## Licencia
+
+**No todo lleva la misma**, y la diferencia importa → [`LICENCIA.md`](LICENCIA.md).
+
+| Qué | Licencia |
+|---|---|
+| El trabajo propio: fichas, transcripciones, tablas, cronología y la documentación de `docs/` | **CC BY-NC 4.0** |
+| El código de `web/` | **MIT** → [`web/LICENSE`](web/LICENSE) |
+| Los facsímiles y las reproducciones | **la de cada archivo** → [`CREDITOS.md`](CREDITOS.md) |
+
+Fijada el 10 de octubre de 2026 (`TAR-25`). ⚠️ `NC` no es una licencia libre: **Wikimedia Commons
+no la admite**, y el proyecto, que toma de allí once retratos, no puede devolver nada. Está
+razonado en `LICENCIA.md`.

@@ -40,23 +40,41 @@
     if (el) Orig[sel] = { el: el, p: el.parentNode, n: el.nextSibling };
   });
 
-  const reales = EVENTOS.filter((e) => !e.sil);
+  /* ═══════════ Qué entra en la línea, y qué no ═══════════
+     Decidido el 10-X-2026, y es la misma regla que la cronología se impuso el
+     5-X: la línea sólo lleva lo que el proyecto tiene delante. Lo marcado
+     «Por cotejar» —la fuente existe y está citada, pero no se ha comprobado—
+     baja a su propio bloque, entero y con su razón escrita. No se borra nada:
+     se pone donde se puede defender.
+     Lo «catalogado, sin leer» SÍ se queda en la línea: lleva su marca, y su
+     marca ya dice al lector exactamente lo que es.
+     Esto es el único sitio donde se decide: la escala, los filtros, el
+     recuento y el feed salen todos de aquí. */
+  const fueraDeLinea = (e) => e.n === 'cotejar';
+  const enLinea = EVENTOS.filter((e) => !fueraDeLinea(e));
+  const aparte = EVENTOS.filter(fueraDeLinea);
+  const reales = enLinea.filter((e) => !e.sil);
   const eraDe = (id) => ERAS.find((x) => x.id === id);
   /* Una ilustración interpretada sólo sale si el proyecto la deja salir; una
      imagen provisional no interpreta nada y sale siempre. Todo lo que dibuja
      pasa por aquí, para que apagarlas sea una palabra y no una poda.
      Y apagar tampoco deja el hueco en blanco: si la entrada tenía trama, la
-     ilustración la lleva dentro y la trama vuelve a su sitio. */
+     ilustración la lleva dentro y la trama vuelve a su sitio.
+     Desde el 10-X-2026 el permiso puede ser de una sola entrada: la puerta
+     acepta una lista de ids, porque la decisión se tomó imagen por imagen. */
+  const iluVisible = (e) => (Array.isArray(ILUSTRACIONES_VISIBLES)
+    ? ILUSTRACIONES_VISIBLES.indexOf(e.id) >= 0
+    : !!ILUSTRACIONES_VISIBLES);
   const iluDe = (e) => {
     if (!e.ilu) return null;
-    if (ILUSTRACIONES_VISIBLES || e.ilu.prov) return e.ilu;
+    if (iluVisible(e) || e.ilu.prov) return e.ilu;
     return e.ilu.trama || null;
   };
 
   /* ═══════════ 1. Línea temporal — modo documento ═══════════ */
   const tl = $('#tl');
   let html = '', eraActual = 0;
-  EVENTOS.forEach((e) => {
+  enLinea.forEach((e) => {
     if (e.era !== eraActual) {
       eraActual = e.era;
       const era = eraDe(e.era);
@@ -94,6 +112,39 @@
   });
   tl.innerHTML = html;
   $('#linea-n').textContent = `${reales.length} entradas · del III milenio a.C. a 2026`;
+
+  /* ═══════════ 1 bis. Lo que está por cotejar ═══════════
+     Va entero —su texto, su cautela y su fuente—, pero fuera del trazo y sin
+     imagen: no es una entrada de la línea, es algo que aspira a serlo. */
+  (function fueraDeLaLinea() {
+    const caja = $('#aparte');
+    if (!caja) return;
+    if (!aparte.length) { caja.hidden = true; return; }
+    const eras = [];
+    aparte.forEach((e) => { if (eras.indexOf(e.era) < 0) eras.push(e.era); });
+    caja.innerHTML = `<div class="ap-head">
+        <span class="caps">${aparte.length} entradas · fuera del trazo</span>
+        <h3>Lo que está por cotejar</h3>
+        <p>La fuente existe y está citada, pero <b>el proyecto no la ha comprobado todavía</b>.
+        Desde el 10 de octubre de 2026 la línea sólo lleva lo que se tiene delante, y esto baja
+        aquí: no se quita, se pone donde se puede defender. Cada una dice qué le falta.</p>
+      </div>` + eras.map((id) => {
+      const r = eraDe(id);
+      return `<h4 class="ap-era">${esc(r ? r.t : '')}<span>${esc(r ? r.span : '')}</span></h4>`
+        + aparte.filter((e) => e.era === id).map((e) => `<article class="ap" id="ap-${e.id}">
+          <div class="ap-a"><span class="ap-anio">${esc(e.y)}</span>${
+            e.d ? `<span class="ap-dia">${esc(e.d)}</span>` : ''}</div>
+          <div class="ap-c">
+            <span class="nivel">${mk(e.n)}${NIVELES[e.n].t}</span>
+            <h5>${e.t}</h5>
+            ${e.q ? `<p class="cita">${e.q}</p>` : ''}
+            ${String(e.p).split('|').map((x) => x.trim()).filter(Boolean)
+              .map((x) => `<p>${x}</p>`).join('')}
+            ${e.nota ? `<p class="nota"><b>${NOTA_T[e.id] || 'Cautela'}</b>${e.nota}</p>` : ''}
+            <p class="fuente">${e.f}</p>
+          </div></article>`).join('');
+    }).join('');
+  })();
 
   /* El trazo rojo se construye al bajar */
   (function alBajar() {
@@ -296,7 +347,11 @@
       if (this.montado) return;
       const feed = $('#feed');
       let h = '';
+      /* se recorre EVENTOS entero para que `data-i` siga siendo el índice real
+         —el raíl y el reparto de láminas buscan por él—, y se salta lo que no
+         entra en la línea */
       EVENTOS.forEach((e, i) => {
+        if (fueraDeLinea(e)) return;
         if (e.sil) {
           h += `<article class="post post-sil" data-i="${i}"><div class="carrusel"><div class="lam l-sil">
             <div class="lam-cuerpo"><div class="caja"><div class="rango">${esc(e.y)}</div><p>${e.p}</p></div></div>

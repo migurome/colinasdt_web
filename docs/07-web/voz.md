@@ -76,7 +76,7 @@ Dónde está cada cosa:
 |---|---|
 | Los textos de B, C y D | [`web/voces.json`](../../web/voces.json) |
 | El comparador, cuatro láminas por entrada | `web/src/prueba-voz-3.html`, que genera `python web/gen-voz.py 3` |
-| La votación, con corazón y recuento | [el artefacto de voces](https://claude.ai/artifact/Ss75iBzxEfVE8ZG4D5bz9r) |
+| La votación, con corazón y recuento | [el artefacto de voces](https://claude.ai/artifact/31YSebwfdboJsA2bBaqWgm) |
 
 El artefacto lleva ahora **las dos eras**: arriba la que se vota, debajo la de Castroferrol
 con lo ya elegido marcado. El recuento de la cabecera cuenta sólo la era en votación.
@@ -114,7 +114,7 @@ Y el reparto vuelve a decir lo mismo que en Castroferrol, con la línea aún má
 Dieciséis entradas, de 1833 a 1970: la provincia nueva, los censos, la desamortización de los
 propios, el único sello, el primer maestro con nombre, el máximo de población y la
 concentración parcelaria. Se escriben igual que la era anterior —**A es lo publicado hoy**, y
-B, C y D son propuestas— y se votan en [el mismo artefacto](https://claude.ai/artifact/Ss75iBzxEfVE8ZG4D5bz9r), que ahora lleva las tres eras:
+B, C y D son propuestas— y se votan en [el mismo artefacto](https://claude.ai/artifact/31YSebwfdboJsA2bBaqWgm), que ahora lleva las tres eras:
 arriba la que se vota, debajo las dos ya decididas.
 
 El comparador de cuatro láminas está en `web/src/prueba-voz-4.html`, y lo genera
@@ -136,7 +136,7 @@ proyecto. **Antes del nombre** son tres, las más antiguas: los silos del Calcol
 Petavonium y la ocupación tardorromana.
 
 Se escriben igual que las dos eras anteriores —**A es lo publicado hoy**, y B, C y D son
-propuestas—, y se votan en [el mismo artefacto](https://claude.ai/artifact/Ss75iBzxEfVE8ZG4D5bz9r).
+propuestas—, y se votan en [el mismo artefacto](https://claude.ai/artifact/31YSebwfdboJsA2bBaqWgm).
 
 | Qué | Dónde |
 |---|---|
@@ -179,6 +179,42 @@ Y **cinco con dos corazones**, que siguen abiertas y, mientras tanto, como estab
 En el artefacto esas cinco vuelven a salir **solas, y sólo con esas dos voces**. Lo demás de la
 era baja a la lista de resultados y no vuelve a preguntar. La regla, escrita para que no se
 olvide: **una entrada con voz elegida no se vuelve a preguntar nunca**.
+
+---
+
+---
+
+## ✅ La última ronda: las diecisiete que faltaban (10-X-2026)
+
+Las tres de *Antes del nombre*, las nueve de *La pedanía* y los cinco empates del ayuntamiento,
+votadas en una sola sesión y **aplicadas a `p3-data.js` el mismo día**. Con ellas, **la línea
+entera tiene voz elegida y no queda ningún empate**.
+
+| A · Técnica | B · Sobria | C · Microhistoria | D · Escena |
+|---|---|---|---|
+| 1972 (el archivo) · 1976 | 1971 · 1977 · 1993 | III milenio · 19 a.C. · ss. IV-V · 1975 · 1986 · Fin s. XX · 1842 · 1863 · 1860-1889 · 1958-59 | 1972 (el municipio) · 1905 |
+
+**Recuento: C 10, B 3, A 2, D 2.** Quince entradas cambian de redacción; dos se quedan como
+estaban.
+
+Tres cosas que este reparto dice, y que no se veían en las rondas anteriores:
+
+- **Las tres entradas sin documento se van las tres a microhistoria.** Donde no hay papel sino
+  yacimiento —un silo, un campamento, un fragmento de sigillata—, la voz que empieza por el
+  objeto gana por unanimidad. Es la confirmación más limpia de lo que ya apuntaba Castroferrol:
+  **C gana donde hay una cosa que se puede tocar**.
+- **Los cuatro de los cinco empates se resuelven a C.** El empate no era indecisión: era que la
+  microhistoria y la escena se parecen cuando el hecho es pequeño. Puesta a elegir, gana la que
+  cuenta la consecuencia.
+- ★ **A gana dos veces, y una de ellas es Cecilia.** Es el resultado más coherente de toda la
+  votación. La cautela escrita para esa entrada decía que **1976 no se dramatiza**, que la voz
+  puede cambiar el ritmo pero no el trato; **elegir la redacción técnica —la que no narra— es la
+  forma más fuerte de cumplirla**. La otra, el archivo que se va a Quiruelas, es un traslado
+  administrativo que no mejora contándose de otra manera.
+
+> 📏 **De las sesenta y una entradas de la línea, cincuenta y nueve se han votado.** Las dos que
+> no —«222 habitantes» y «Recuperar el nombre, fundar un emblema»— salieron de la votación el
+> 26-IX-2026, y por una razón que sigue valiendo: **una cifra no se narra**.
 
 ---
 
@@ -246,11 +282,15 @@ proyecto necesita, con sus quince marcas `[?]`—.
 
 | Era | Entradas | Voz |
 |---|---|---|
-| **Antes del nombre** | **3** | 🗳 **en votación desde el 26-IX-2026 (v0.33)** |
+| **Antes del nombre** | **3** | ✅ **votada y aplicada el 10-X-2026** |
 | **Castroferrol** | **11** | ✅ **reescrita el 25-IX-2026 (v0.15)** |
 | **Lugar del conde de Benavente** | **20** | ✅ **votada y aplicada el 26-IX-2026 (v0.29)** |
-| **El ayuntamiento** | **16** | ✅ **once votadas y aplicadas el 26-IX-2026 (v0.37)** · 🗳 **cinco en empate** |
-| **La pedanía** | **11** | 🗳 **en votación desde el 26-IX-2026 (v0.33)** |
+| **El ayuntamiento** | **16** | ✅ **once el 26-IX-2026 (v0.37)**, ✅ **los cinco empates el 10-X-2026** |
+| **La pedanía** | **11** | ✅ **nueve votadas y aplicadas el 10-X-2026** · 2 fuera de votación |
+
+> ✅ **La línea entera tiene voz elegida, por primera vez desde que empezó esto.** Cincuenta y
+> nueve entradas votadas —las dos que faltan, «222 habitantes» y «Recuperar el nombre», salieron
+> de la votación el 26-IX-2026 porque una cifra no se narra— y **ninguna en empate**.
 
 Las sesenta y una entradas están ya escritas en las cuatro voces: no falta ninguna por
 comparar. Lo que falta es votar, y aplicar lo votado.

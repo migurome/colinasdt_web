@@ -13,6 +13,80 @@ Control de cambios de la web de Colinas de Trasmonte.
 
 ---
 
+## v0.44 — 10 de octubre de 2026
+### La línea entera tiene voz
+
+Las seis decisiones que estaban paradas se tomaron el 10 de octubre
+→ [`decisiones-pendientes.md`](docs/decisiones-pendientes.md). Cuatro se aplican aquí.
+
+- **Se votaron las diecisiete entradas que faltaban** —las tres de *Antes del nombre*, nueve de
+  *La pedanía* y los cinco empates del ayuntamiento— y quedan **aplicadas a `p3-data.js`**:
+  **quince cambian de redacción**, dos se quedan como estaban. Con ellas, **las cincuenta y nueve
+  entradas que entraban en votación tienen voz elegida y no queda ningún empate**. El reparto y
+  lo que dice están en [`docs/07-web/voz.md`](docs/07-web/voz.md).
+- ★ **La microhistoria gana diez de las diecisiete**, y **las tres entradas sin documento se van
+  las tres a ella**: donde no hay papel sino yacimiento —un silo, un campamento, un fragmento de
+  sigillata—, la voz que empieza por el objeto gana por unanimidad.
+- ★ **«Muere Cecilia» se queda en la redacción técnica.** Es el resultado más coherente de toda
+  la votación: la cautela escrita para esa entrada decía que **1976 no se dramatiza**, y elegir
+  la voz que no narra es la forma más fuerte de cumplirla.
+- **Se enciende una ilustración interpretada**: el **campamento de Petavonium**, que es contexto
+  arqueológico documentado. **La abadesa de 1006 y la villa de 1073 siguen apagadas**, y ahora
+  por una razón escrita: ilustran entradas que la cronología sacó por falta de papel, así que
+  serían dibujo sobre un documento que el proyecto no ha visto. Se encienden el día que entren
+  `LIB-02` y `LIB-01`.
+- **`ILUSTRACIONES_VISIBLES` admite ahora una lista de entradas**, no sólo `true` o `false`: la
+  decisión se tomó imagen por imagen y la puerta tenía que poder decirlo.
+- ✅ **El retrato del conde de Aranda vuelve a Wikimedia Commons.** Sale la reproducción de *El
+  Pirineo Aragonés*, cuyas condiciones no constaban, y entra el mismo cuadro —**Ramón Bayeu,
+  1769**, óleo de 276 × 196 cm del Museo de Huesca— **en dominio público declarado**. Con esto
+  **no queda ninguna imagen publicada sin licencia declarada**: era el último archivo sin
+  resolver de [`CREDITOS.md`](CREDITOS.md).
+- ⚠️ **Y se pierde tamaño: de 1400 a 435 px**, por debajo del mínimo de 700 que el proyecto se
+  impone para los retratos. Es el único tamaño en que la obra está en Commons. La excepción, con
+  su razón, queda escrita en `web/gen-retratos.py` (`MIN_PROPIO`); la lista `FUERA` —los retratos
+  sin licencia de Commons— **se queda vacía**.
+- La imagen ya no es un detalle sino **el cuadro entero**, así que cambian también el texto
+  alternativo y el pie.
+
+#### 🚨 La línea adelgaza: de 61 entradas a 47
+
+- **Las trece marcadas «Por cotejar» salen de la línea temporal** y bajan a un bloque propio
+  debajo, *Lo que está por cotejar*, **con su texto entero, su cautela y su fuente**. Es la misma
+  regla que la cronología se impuso el 5 de octubre
+  → [`cronologia.md`](docs/cronologia.md), aplicada ahora a la página: **la línea sólo lleva lo
+  que el proyecto tiene delante**. No se borra nada; se pone donde se puede defender.
+- **Lo «catalogado, sin leer» se queda dentro**, 1073 incluida: su marca ya dice al lector
+  exactamente lo que es, y sacarla dejaría la Alta Edad Media sin una sola mención del pueblo.
+- **1129 sube a «fuente vista».** Era el único desajuste que el cotejo dejó probado: su texto
+  latino lo transcribe la **nota 25** de un artículo que el proyecto sí tiene, y la cronología
+  ya lo daba por documentado.
+- ⚠️ **Castroferrol se queda en cuatro entradas de once** —1073, 1129, la sala y el silencio—, y
+  **la serie de población pierde sus dos extremos**: el primer censo moderno de 1857 (386
+  habitantes) y el máximo de 1950 (625). Los dos siguen marcados «pendiente de cotejo» contra el
+  INE, y **vuelven a la línea en cuanto se cotejen**. Es una tarea, no un callejón.
+- ⚠️ **También baja «Muere Cecilia»**, pendiente de citar por la prensa de la época, y
+  **«222 habitantes»**, del padrón sin cotejar.
+- **`ILUSTRACIONES_VISIBLES` no fue el único interruptor que cambió**: ahora hay un solo sitio
+  donde se decide qué entra en la línea (`fueraDeLinea`, en `p4-app.js`), y de ahí salen la
+  escala, los filtros, el recuento de la cabecera y el feed del teléfono. El filtro «Por cotejar»
+  desaparece solo, porque ya no hay nada que filtrar.
+
+#### ⚖️ El repositorio tiene licencia por primera vez
+
+- **`CC BY-NC 4.0` para el texto y los datos**, **`MIT` para el código de `web/`**
+  → [`LICENCIA.md`](LICENCIA.md) y [`web/LICENSE`](web/LICENSE). Hasta hoy el repositorio no
+  llevaba ninguna, lo que en la práctica significaba «todos los derechos reservados»: nadie podía
+  reutilizar nada legalmente, ni citando. Cierra `TAR-25`.
+- **Los facsímiles no entran**: conservan las condiciones de cada archivo, leídas una por una en
+  [`CREDITOS.md`](CREDITOS.md). **Tampoco las tres ilustraciones generadas**, que probablemente no
+  tienen autoría humana que licenciar; de ellas queda el modelo y el prompt, que es su procedencia.
+- ⚠️ **`NC` no es una licencia libre, y eso cuesta algo concreto**: **Wikimedia Commons no la
+  admite**. Este proyecto **toma** de Commons once retratos en dominio público y **no puede
+  devolver nada**. Queda escrito en `LICENCIA.md` para que la consecuencia no se olvide.
+
+---
+
 ## v0.43 — 30 de septiembre de 2026
 ### Dos ilustraciones, guardadas y apagadas
 

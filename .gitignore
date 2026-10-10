@@ -2,9 +2,9 @@
 # bibliografía y trabajo propio. La procedencia de cada pieza está en
 # CREDITOS.md y, con su signatura, en docs/facsimiles.md.
 #
-# ⚠️ PENDIENTE: acreditar cada reproducción junto a la imagen, y fijar la
-# licencia del trabajo propio. Registrado como TAR-24 y TAR-25 en
-# docs/03-archivos/material-pendiente.tsv.
+# La licencia del trabajo propio está fijada desde el 10-X-2026 en LICENCIA.md:
+# CC BY-NC 4.0 para texto y datos, MIT para el código de web/. Los facsímiles
+# conservan las condiciones de cada archivo.
 
 # Temporales de los scripts de edición (se escribe .tmp y se mueve)
 *.tmp

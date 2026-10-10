@@ -121,7 +121,7 @@ razonada —no dada por hecha— en
 | **1842** | ⚠️ **132**, cifra del **Censo de la Matrícula Catastral** — que el propio INE describe como hecho «**sin rigor, por el procedimiento de imputaciones**», sin fecha de referencia, y que «**no aporta ningún dato numérico de confianza**» | INE, *Alteraciones de los municipios*, metodología | **documentado que la cifra existe; documentado que no vale como medición** |
 | **1847** | **132 almas, 33 vecinos**, «con sus despoblados» | MADOZ, *Diccionario*, t. VI → [`madoz-1847/`](01-fuentes-primarias/madoz-1847/README.md) | documentado |
 | **1857** | Nombrado cura de Colinas **D. Pedro Ramos** | *Gaceta de Madrid*, 22-VII-1857, `BOE-A-1857-7483` | documentado |
-| **1857** | **386 habitantes** — primer censo moderno | INE | documentado |
+| **1857** | **386 habitantes** — primer censo moderno | INE | documentado; ⚠️ **la serie censal histórica no está cotejada contra las publicaciones del INE** —`TAR-16` cotejó el padrón 2000-2025, no ésta—, y por eso la web marca esta entrada «por cotejar» y la tiene **fuera de la línea** desde el 10-X-2026. La discordancia es real: se resuelve cotejando |
 | **1860-1889** | ★★ **Desamortización**: siete asientos registran ventas de **bienes de propios** de Colinas, con meses de venta (enero de 1866, mayo de 1873…) | *Gazeta*, refs. en [`boe-gazeta/`](01-fuentes-primarias/boe-gazeta/README.md) | documentado que hubo ventas; ⚠️ **no se ha leído qué ni a quién** |
 | **1870** | Colinas se agrupa, para las elecciones, con Barcial del Barco, Arcos de la Polvorosa, Santa Colomba de las Monjas, **Villanázar**, Sitrama, Santa Croya y Melgar de Tera | `BOE-A-1870-7800` | documentado |
 | **1876** | 🚨 El alcalde **Andrés Pérez** remite al Gobernador Civil **el único sello que «existe y ha existido en este municipio»**: un **escudo real de España** con el nombre del pueblo alrededor. Y añade que, registrado el archivo, **nadie sabe desde cuándo se usa** | AHN, `SIGIL-TINTA_ZAMORA,20,N.31` → [`sello-1876/`](01-fuentes-primarias/sello-1876/README.md) | documentado |
@@ -129,7 +129,7 @@ razonada —no dada por hecha— en
 | **1894** | El maestro de Colinas es **Valentín Rodríguez** (puesto 76 del escalafón de Zamora) | `BOE-A-1894-6665` | documentado |
 | **1905** | ★★ Plan de caminos vecinales: «**De Colinas de Trasmonte al Cubo de Benavente** por Quiruelas, Quintanilla, Brime de Urz, Cunquilla, Granucillo, Grijalba, Villaobispo, Santibáñez, Brime de Sog». **Colinas es la cabecera del itinerario** | `BOE-A-1905-3586` | documentado |
 | **1945** | Colinas al **Juzgado Comarcal de Santibáñez de Tera**, con Villanázar — y **sin Quiruelas** | `BOE-A-1945-3382` | documentado |
-| **1950** | **Máximo demográfico: 625 habitantes** de derecho (621 de hecho) | INE | documentado |
+| **1950** | **Máximo demográfico: 625 habitantes** de derecho (621 de hecho) | INE | documentado; ⚠️ **mismo caso que 1857**: la serie censal histórica está sin cotejar, la web la marca «por cotejar» y la tiene fuera de la línea |
 | **1958** | Se fija la **unidad mínima de cultivo** del término | `BOE-A-1958-9342` | documentado |
 | **1959** | Se crea **definitivamente** «una **Escuela mixta, servida por Maestra**, en el casco del Ayuntamiento de Colinas de Trasmonte» | Orden de 7-VII-1959, `BOE-A-1959-9954` | documentado |
 

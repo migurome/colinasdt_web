@@ -1,5 +1,44 @@
 # Lo que está esperando una decisión tuya
 
+> # ✅ Decidido el 10 de octubre de 2026
+>
+> **Las seis, decididas y aplicadas el mismo día.** Lo único que queda abierto es trabajo, no
+> elección.
+>
+> | | Asunto | Recomendaba | **Decidido** | Estado |
+> |---|---|---|---|---|
+> | **1** | Regla de evidencia en la web | A | **A** + «*por cotejar* fuera de la línea» | ✅ **la línea pasa de 61 entradas a 47** |
+> | **2** | 12 textos + 5 empates | los doce primero | **los doce primero** | ✅ **votadas las 17, aplicadas 15** |
+> | **3** | Las tres ilustraciones | C | **C** | ✅ **sólo Petavonium, encendido** |
+> | **4** | Licencia del trabajo propio | CC BY 4.0 + MIT | **CC BY-NC 4.0** + MIT | ✅ **escrita en `LICENCIA.md`** |
+> | **5** | Retrato de Aranda | B ahora, A en paralelo | **sólo B** | ✅ **el de Commons, a 435 px** |
+> | **6** | *Causa General* | B | **C** | 📋 **criterio fijado, lectura pendiente** |
+>
+> ### 🚨 Lo que el 1 se llevó por delante, y que conviene saber
+>
+> La regla elegida —«*«Por cotejar» se queda fuera de la línea temporal, el resto dentro*»— saca
+> **trece entradas**. Tres consecuencias que no se veían al decidir:
+>
+> - **Castroferrol se queda en cuatro entradas de once.** Dentro siguen **1073** —la mención más
+>   antigua del pueblo, que es `Catalogada, sin leer` y por tanto «el resto»—, **1129**, la sala
+>   y el silencio.
+> - ⚠️ **La serie de población pierde sus dos extremos**: el primer censo moderno de **1857**
+>   (386 habitantes) y el **máximo de 1950** (625). Los dos están marcados «pendiente de cotejo»
+>   contra el INE. **Vuelven en cuanto se cotejen**: es una tarea, no un callejón.
+> - **También bajan «Muere Cecilia»** y **«222 habitantes»**.
+>
+> **Sólo un nivel se recalificó**, y con prueba: **1129 pasa a `Fuente vista`**, porque su texto
+> latino lo transcribe la nota 25 de un artículo que el proyecto sí tiene. ⚠️ **1857 y 1950 no se
+> recalificaron**, aunque la cronología los dé por «documentado»: el campo fuente de la web dice
+> «serie pendiente de cotejo» y **es verdad** —`TAR-16` cotejó el padrón 2000-2025, no la serie
+> censal histórica—. **Aquí la web es la que está en lo cierto y la cronología la que se pasa de
+> frenada.**
+>
+> *Lo que sigue debajo es el documento tal como se preparó el 5 de octubre, con las opciones y
+> los porqués. Se conserva entero: es donde se ve qué se eligió sobre qué.*
+>
+> ---
+
 > **Qué es esto.** Todo lo que el proyecto tiene parado **porque hay que elegir**, no porque falte
 > trabajo. Seis asuntos. Cada uno dice **qué está en juego**, **las opciones**, **cuál
 > recomiendo y por qué**, y **qué pasa en cuanto contestes**.
@@ -7,7 +46,12 @@
 > 📏 **No hay ninguno urgente.** Pero **el 1 y el 3 se han vuelto más interesantes hoy**, porque
 > la cronología cambió de regla y eso los toca de lleno.
 >
-> *Preparado el 5 de octubre de 2026.*
+> 🗳 **Donde se eligen:** [la mesa de las seis decisiones](https://claude.ai/artifact/EnMFg1P298RvHbsbxCWTrc).
+> Cada asunto sale allí con sus opciones y su recomendación, y **el 1 lleva el cotejo de la web
+> contra la cronología, entrada por entrada**. Lo que marques queda guardado y se lee desde el
+> proyecto.
+>
+> *Preparado el 5 de octubre de 2026; los artefactos, vueltos a armar el 10 de octubre.*
 
 ---
 
@@ -59,7 +103,7 @@ la era 2 de la web.
 
 ## 2. 🗳 Los doce textos sin votar y los cinco empates
 
-**Dónde se hace:** [el artefacto de voces](https://claude.ai/artifact/Ss75iBzxEfVE8ZG4D5bz9r).
+**Dónde se hace:** [el artefacto de voces](https://claude.ai/artifact/31YSebwfdboJsA2bBaqWgm).
 **Esto no lo puedo hacer yo**: es elegir voz, y la voz es tuya.
 
 | Qué falta | Cuántas |
@@ -180,15 +224,25 @@ vivos**.
 
 ## Resumen
 
-| | Asunto | Recomiendo | ¿Difícil de deshacer? |
-|---|---|---|:-:|
-| **1** | Regla de evidencia en la web | **A** + cuadrar los niveles | no |
-| **2** | 12 textos + 5 empates | votar los 12 primero | no |
-| **3** | Las tres ilustraciones | **C** (sólo Petavonium) | no |
-| **4** | Licencia del trabajo propio | **CC BY 4.0** + MIT | **🚨 sí** |
-| **5** | Retrato de Aranda | **B** ahora, **A** en paralelo | no |
-| **6** | *Causa General* | **B** | parcialmente |
+| | Asunto | Recomendaba | **Se decidió** | ¿Difícil de deshacer? |
+|---|---|---|---|:-:|
+| **1** | Regla de evidencia en la web | **A** + cuadrar los niveles | **A** + un matiz propio | no |
+| **2** | 12 textos + 5 empates | votar los 12 primero | **los doce primero** | no |
+| **3** | Las tres ilustraciones | **C** (sólo Petavonium) | **C** | no |
+| **4** | Licencia del trabajo propio | **CC BY 4.0** + MIT | **CC BY-NC 4.0** | **🚨 sí** |
+| **5** | Retrato de Aranda | **B** ahora, **A** en paralelo | **sólo B** | no |
+| **6** | *Causa General* | **B** | **C** | parcialmente |
 
-> **Lo único que me bloquea de verdad es el 1.** Los demás puedo prepararlos del todo y dejarlos a
-> un paso, pero **el nivel de evidencia de la web no lo toco sin que decidas**, porque es
-> precisamente la regla que acabas de cambiar.
+### Dónde se apartó de lo que recomendaba, y qué significa
+
+- **4 · `NC` en vez de `BY` a secas.** Es una elección legítima y más restrictiva. ⚠️ Conviene
+  saber que `NC` **no es la licencia habitual en humanidades digitales**, que su alcance es
+  famosamente difuso —no hay definición cerrada de «uso comercial»— y que **excluye la reutilización
+  por Wikipedia y Wikimedia Commons**, que sólo admiten licencias libres. El proyecto *toma* de
+  Commons once retratos; con `NC` no podría *devolver* nada.
+- **5 · Sólo B, sin pedir al museo.** La web queda en regla hoy, y a cambio el retrato baja de
+  1400 a 435 px. No se escribe al Museo de Huesca.
+- **6 · C en vez de B.** Se leerá la *Causa General* y **podrán publicarse nombres cuando ya sean
+  públicos por otras vías**. ⚠️ Eso exige fijar antes qué cuenta como «público por otra vía»: no
+  es lo mismo un nombre en el BOE que uno en un foro. **Y afecta a vecinos con descendientes
+  vivos.** El criterio se escribe antes de abrir el legajo, no después.

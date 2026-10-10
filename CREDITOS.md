@@ -118,10 +118,13 @@ comprobación del límite catastral sobre el MTN50 está en el archivo del proye
 
 - [Condiciones de uso de la Sede Electrónica del Catastro](https://www.catastro.hacienda.gob.es/ayuda/condicionesuso.htm)
 
-> Queda **un archivo sin resolver**: la reproducción del retrato de Aranda publicada por *El
-> Pirineo Aragonés*, cuyas condiciones no constan. La pintura está en dominio público; la
-> fotografía de esa pintura, no lo sabemos. Sigue pendiente pedirle al Museo de Huesca una
-> imagen con sus términos.
+> ✅ **Resuelto el 10 de octubre de 2026.** Era la reproducción del retrato de Aranda publicada
+> por *El Pirineo Aragonés*, cuyas condiciones no constaban. Se ha sustituido por la del mismo
+> cuadro en **Wikimedia Commons**, en dominio público declarado, a costa de bajar de 1400 a
+> 435 px. **No queda ningún archivo con las condiciones sin declarar.**
+>
+> Lo que sí sigue siendo una mejora posible, no un problema: pedirle al Museo de Huesca una
+> imagen de más calidad con sus términos. Se decidió **no** hacerlo por ahora.
 
 
 ---
@@ -142,22 +145,32 @@ comprobación del límite catastral sobre el MTN50 está en el archivo del proye
    los dos artículos de 1993 llevan ya autor, artículo, revista, figura, página y vía —ISSN o
    Dialnet—; el folio del Catastro, su signatura del AGS y PARES; y la impronta del sello, la
    del AHN. **Ninguna imagen publicada se queda sin firma al pie**: comprobado sobre los datos,
-   45 de 45. (Las **tres ilustraciones interpretadas** —la abadesa de 1006, el campamento de
-   Petavonium y la villa de 1073— **no se publican**: están apagadas desde v0.27, a la
-   espera de decidir qué papel tienen. Cada una lleva ya en los datos su pie, su aviso y
-   la máquina con que se generó, para que encenderlas no exija escribir nada.)
-   ⚠️ **El retrato del conde de Aranda no viene de Commons.** Es un detalle del que pintó
-   **Ramón Bayeu en 1769** —Museo de Huesca, sala 7—, tomado de la reproducción publicada
-   por *El Pirineo Aragonés* el 21-VIII-2020. **La pintura está en dominio público; las
-   condiciones de esa reproducción no constan.** Hay que pedirle al museo una imagen con
-   sus términos, o volver a la de Commons, que es la misma obra a 435 px.
+   45 de 45. (De las **tres ilustraciones interpretadas**, el **10-X-2026** se encendió una:
+   el **campamento de Petavonium**, que ilustra contexto arqueológico documentado. **La abadesa
+   de 1006 y la villa de 1073 siguen apagadas**, y por una razón concreta: ilustran entradas que
+   la cronología sacó por falta de papel, así que serían imagen interpretada sobre un documento
+   que el proyecto no ha visto. Se encienden solas cuando entren `LIB-02` y `LIB-01`.)
+   ✅ **El retrato del conde de Aranda vuelve a Commons** (10-X-2026). Sale la reproducción de
+   *El Pirineo Aragonés*, cuyas condiciones no constaban, y entra el mismo cuadro de **Ramón
+   Bayeu, 1769** —óleo, 276 × 196 cm, Museo de Huesca— desde **Wikimedia Commons, en dominio
+   público declarado**. ⚠️ **Se admite a 435 px, por debajo del mínimo de 700 px** que el
+   proyecto se impone para los retratos: es el único tamaño en que la obra está en Commons, y
+   la alternativa era seguir publicando una imagen sin condiciones declaradas. La excepción
+   está escrita en `web/gen-retratos.py` (`MIN_PROPIO`). <b>Ya no queda ninguna imagen publicada
+   sin licencia declarada.</b>
 2. ~~**Comprobar las condiciones de reutilización** de cada archivo, una por una.~~
    ✅ **Leídas las cuatro el 30 de septiembre de 2026**, y no decían lo mismo que el sentido
    común: ver [Las cuatro licencias, leídas](#las-cuatro-licencias-leídas), aquí arriba.
    **El IGN no pedía una mención genérica: pedía una fórmula, y al pie de la imagen.** Se ha
    corregido el mismo día en las cinco láminas que llevan ortofoto o mapa suyo.
-3. **Decidir la licencia del trabajo propio** —fichas, tablas, transcripciones, cronología y
-   código—, que hoy no lleva ninguna.
+3. ~~**Decidir la licencia del trabajo propio** —fichas, tablas, transcripciones, cronología y
+   código—, que hoy no lleva ninguna.~~
+   ✅ **Decidido el 10-X-2026** → [`LICENCIA.md`](LICENCIA.md). **CC BY-NC 4.0** para el texto y
+   los datos, **MIT** para el código de `web/`. Los facsímiles no entran: siguen con las
+   condiciones de cada archivo, que son las que recoge este fichero.
+   ⚠️ **`NC` no es una licencia libre**, y eso tiene una consecuencia concreta que conviene no
+   olvidar: **Wikimedia Commons no la admite**. El proyecto toma de Commons once retratos y no
+   puede devolver nada.
 
-> Mientras eso no esté hecho, este fichero dice la verdad que se puede decir: **de dónde sale cada
-> cosa y qué queda por comprobar.** Es el criterio del proyecto aplicado a sí mismo.
+> Este fichero dice la verdad que se puede decir: **de dónde sale cada cosa y qué queda por
+> comprobar.** Es el criterio del proyecto aplicado a sí mismo.
